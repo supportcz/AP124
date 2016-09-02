@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BR.AS.HardwareTopology Version="0.0.0.1">
+  <Modules>
+    <Module Name="X20BM01" Type="X20BM01" X="250" Y="100" />
+    <Module Name="X20AI2322" Type="X20AI2322" X="250" Y="100" />
+    <Module Name="X20TB12" Type="X20TB12" X="250" Y="127" />
+    <Module Name="X20BM11q" Type="X20BM11" X="263" Y="100" />
+    <Module Name="X20DIF371f" Type="X20DIF371" X="263" Y="100" />
+    <Module Name="X20TB1F12" Type="X20TB1F" X="263" Y="127" />
+    <Module Name="X20BM11" Type="X20BM11" X="276" Y="100" />
+    <Module Name="X20DIF371" Type="X20DIF371" X="276" Y="100" />
+    <Module Name="X20TB1F" Type="X20TB1F" X="276" Y="127" />
+    <Module Name="X20BM11a" Type="X20BM11" X="289" Y="100" />
+    <Module Name="X20DIF371a" Type="X20DIF371" X="289" Y="100" />
+    <Module Name="X20TB1F1" Type="X20TB1F" X="289" Y="127" />
+    <Module Name="X20BM01a" Type="X20BM01" X="302" Y="100" />
+    <Module Name="X20PS2100a" Type="X20PS2100" X="302" Y="100" />
+    <Module Name="X20TB12a" Type="X20TB12" X="302" Y="127" />
+    <Module Name="X20BM11b" Type="X20BM11" X="315" Y="100" />
+    <Module Name="X20DOF322" Type="X20DOF322" X="315" Y="100" />
+    <Module Name="X20TB1F2" Type="X20TB1F" X="315" Y="127" />
+    <Module Name="X20BM11c" Type="X20BM11" X="328" Y="100" />
+    <Module Name="X20DOF322a" Type="X20DOF322" X="328" Y="100" />
+    <Module Name="X20TB1F3" Type="X20TB1F" X="328" Y="127" />
+    <Module Name="X20BM11d" Type="X20BM11" X="341" Y="100" />
+    <Module Name="X20DOF322b" Type="X20DOF322" X="341" Y="100" />
+    <Module Name="X20TB1F4" Type="X20TB1F" X="341" Y="127" />
+    <Module Name="X20BM11e" Type="X20BM11" X="354" Y="100" />
+    <Module Name="X20DOF322c" Type="X20DOF322" X="354" Y="100" />
+    <Module Name="X20TB1F5" Type="X20TB1F" X="354" Y="127" />
+    <Module Name="X20BM01b" Type="X20BM01" X="367" Y="100" />
+    <Module Name="X20PS2100b" Type="X20PS2100" X="367" Y="100" />
+    <Module Name="X20TB12b" Type="X20TB12" X="367" Y="127" />
+    <Module Name="X20BM33" Type="X20BM33" X="380" Y="100" />
+    <Module Name="X20SLX910" Type="X20SLX910" X="380" Y="100" />
+    <Module Name="X20TB52a" Type="X20TB52" X="393" Y="126" />
+    <Module Name="X20TB52" Type="X20TB52" X="380" Y="126" />
+    <Module Name="X20BM33a" Type="X20BM33" X="406" Y="100" />
+    <Module Name="X20SI9100" Type="X20SI9100" X="406" Y="100" />
+    <Module Name="X20TB52c" Type="X20TB52" X="419" Y="126" />
+    <Module Name="X20TB52b" Type="X20TB52" X="406" Y="126" />
+    <Module Name="X20BM33b" Type="X20BM33" X="432" Y="100" />
+    <Module Name="X20SO6300" Type="X20SO6300" X="432" Y="100" />
+    <Module Name="X20TB52d" Type="X20TB52" X="445" Y="126" />
+    <Module Name="X20BM33c" Type="X20BM33" X="458" Y="100" />
+    <Module Name="X20SO4110" Type="X20SO4110" X="458" Y="100" />
+    <Module Name="X20TB52e" Type="X20TB52" X="471" Y="126" />
+    <Module Name="X20BM33d" Type="X20BM33" X="484" Y="100" />
+    <Module Name="X20SO4110a" Type="X20SO4110" X="484" Y="100" />
+    <Module Name="X20TB52f" Type="X20TB52" X="497" Y="126" />
+    <Module Name="X20BM33e" Type="X20BM33" X="510" Y="100" />
+    <Module Name="X20SO4110b" Type="X20SO4110" X="510" Y="100" />
+    <Module Name="X20TB52g" Type="X20TB52" X="523" Y="126" />
+    <Module Name="X20BM33f" Type="X20BM33" X="536" Y="100" />
+    <Module Name="X20SO4110c" Type="X20SO4110" X="536" Y="100" />
+    <Module Name="X20TB52h" Type="X20TB52" X="549" Y="126" />
+    <Module Name="X20BM11f" Type="X20BM11" X="562" Y="100" />
+    <Module Name="X20BT9100" Type="X20BT9100" X="562" Y="100" />
+    <Module Name="X20TB12c" Type="X20TB12" X="562" Y="127" />
+    <Module Name="X20CP1583" Type="X20CP1583" X="100" Y="100" />
+    <Module Name="X20BM01c" Type="X20BM01" X="250" Y="250" />
+    <Module Name="X20BR9300" Type="X20BR9300" X="250" Y="250" />
+    <Module Name="X20TB12d" Type="X20TB12" X="250" Y="277" />
+    <Module Name="X20BM11h" Type="X20BM11" X="263" Y="250" />
+    <Module Name="X20DOF322d" Type="X20DOF322" X="263" Y="250" />
+    <Module Name="X20TB1F7" Type="X20TB1F" X="263" Y="277" />
+    <Module Name="X20BM11g" Type="X20BM11" X="276" Y="250" />
+    <Module Name="X20DIF371b" Type="X20DIF371" X="276" Y="250" />
+    <Module Name="X20TB1F6" Type="X20TB1F" X="276" Y="277" />
+    <Module Name="X20BM11i" Type="X20BM11" X="289" Y="250" />
+    <Module Name="X20BT9100a" Type="X20BT9100" X="289" Y="250" />
+    <Module Name="X20TB12f" Type="X20TB12" X="289" Y="277" />
+    <Module Name="X20BM01e" Type="X20BM01" X="365" Y="250" />
+    <Module Name="X20BR9300a" Type="X20BR9300" X="365" Y="250" />
+    <Module Name="X20TB12g" Type="X20TB12" X="365" Y="277" />
+    <Module Name="X20BM11j" Type="X20BM11" X="378" Y="250" />
+    <Module Name="X20DIF371c" Type="X20DIF371" X="378" Y="250" />
+    <Module Name="X20TB1F8" Type="X20TB1F" X="378" Y="277" />
+    <Module Name="X20BM11k" Type="X20BM11" X="391" Y="250" />
+    <Module Name="X20BT9100b" Type="X20BT9100" X="391" Y="250" />
+    <Module Name="X20TB12h" Type="X20TB12" X="391" Y="277" />
+    <Module Name="X20BM01f" Type="X20BM01" X="454" Y="250" />
+    <Module Name="X20BR9300b" Type="X20BR9300" X="454" Y="250" />
+    <Module Name="X20TB12i" Type="X20TB12" X="454" Y="277" />
+    <Module Name="X20BM11m" Type="X20BM11" X="467" Y="250" />
+    <Module Name="X20DOF322e" Type="X20DOF322" X="467" Y="250" />
+    <Module Name="X20TB1F10" Type="X20TB1F" X="467" Y="277" />
+    <Module Name="X20BM11l" Type="X20BM11" X="480" Y="250" />
+    <Module Name="X20DIF371d" Type="X20DIF371" X="480" Y="250" />
+    <Module Name="X20TB1F9" Type="X20TB1F" X="480" Y="277" />
+    <Module Name="X20BM11n" Type="X20BM11" X="493" Y="250" />
+    <Module Name="X20BT9100c" Type="X20BT9100" X="493" Y="250" />
+    <Module Name="X20TB12k" Type="X20TB12" X="493" Y="277" />
+    <Module Name="X20BM01h" Type="X20BM01" X="569" Y="250" />
+    <Module Name="X20BR9300c" Type="X20BR9300" X="569" Y="250" />
+    <Module Name="X20TB12l" Type="X20TB12" X="569" Y="277" />
+    <Module Name="X20BM11o" Type="X20BM11" X="582" Y="250" />
+    <Module Name="X20DIF371e" Type="X20DIF371" X="582" Y="250" />
+    <Module Name="X20TB1F11" Type="X20TB1F" X="582" Y="277" />
+    <Module Name="X20BM11p" Type="X20BM11" X="595" Y="250" />
+    <Module Name="X20BT9400" Type="X20BT9400" X="595" Y="250" />
+    <Module Name="X20TB12m" Type="X20TB12" X="595" Y="277" />
+    <Module Name="X67DM9321.L12" Type="X67DM9321.L12" X="658" Y="250" />
+    <Module Name="X67DO1332" Type="X67DO1332" X="761" Y="250" />
+  </Modules>
+  <Links>
+    <Link From="X20BR9300" To="X20BT9100" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="256" Y="294" />
+      <Point X="256" Y="294" />
+      <Point X="249" Y="294" />
+      <Point X="245" Y="294" />
+      <Point X="245" Y="245" />
+      <Point X="585" Y="245" />
+      <Point X="585" Y="144" />
+      <Point X="576" Y="144" />
+      <Point X="569" Y="144" />
+      <Point X="569" Y="144" />
+    </Link>
+    <Link From="X20BR9300a" To="X20BT9100a" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="371" Y="294" />
+      <Point X="371" Y="294" />
+      <Point X="364" Y="294" />
+      <Point X="303" Y="294" />
+      <Point X="296" Y="294" />
+      <Point X="296" Y="294" />
+    </Link>
+    <Link From="X20BR9300b" To="X20BT9100b" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="460" Y="294" />
+      <Point X="460" Y="294" />
+      <Point X="453" Y="294" />
+      <Point X="405" Y="294" />
+      <Point X="398" Y="294" />
+      <Point X="398" Y="294" />
+    </Link>
+    <Link From="X20BR9300c" To="X20BT9100c" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="575" Y="294" />
+      <Point X="575" Y="294" />
+      <Point X="568" Y="294" />
+      <Point X="507" Y="294" />
+      <Point X="500" Y="294" />
+      <Point X="500" Y="294" />
+    </Link>
+    <Link From="X67DM9321.L12" To="X67DO1332" FromPort="X2X2" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="700" Y="262" />
+      <Point X="700" Y="262" />
+      <Point X="712" Y="262" />
+      <Point X="760" Y="262" />
+      <Point X="771" Y="262" />
+      <Point X="771" Y="262" />
+    </Link>
+    <Link From="X20BT9400" To="X67DM9321.L12" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="602" Y="294" />
+      <Point X="602" Y="294" />
+      <Point X="609" Y="294" />
+      <Point X="615" Y="294" />
+      <Point X="615" Y="262" />
+      <Point X="657" Y="262" />
+      <Point X="668" Y="262" />
+      <Point X="668" Y="262" />
+    </Link>
+  </Links>
+  <InfoElements>
+    <InfoElementText Id="Textbox_1" X="91" Y="61" Width="523" Height="154">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Main switchboard</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Transparent" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_2" X="250" Y="359" Width="66" Height="29">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Dec 1</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Transparent" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_3" X="365" Y="359" Width="63" Height="37">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Dec 2</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Transparent" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_4" X="454" Y="360" Width="60" Height="45">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Dec 3</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Transparent" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_5" X="569" Y="360" Width="112" Height="32">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Dec 4</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Transparent" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_6" X="658" Y="426" Width="65" Height="32">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Dec 5</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Transparent" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_7" X="761" Y="350" Width="65" Height="32">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Dec 6</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Transparent" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+  </InfoElements>
+</BR.AS.HardwareTopology>
