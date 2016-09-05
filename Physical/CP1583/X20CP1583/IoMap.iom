@@ -1,4 +1,7 @@
-
 VAR_CONFIG
-
+	::palletMagazineViolation AT %IX."X20SLX910".BOOL001;
+	::airPresureOK AT %IX."I08".DigitalInput01;
+	::safety:activateSafetyCircuit AT %QX."X20SLX910".BOOL101;
+	::pallet_mag:closeArms AT %QX."Q71".DigitalOutput02;
+	::pallet_mag:openArms AT %QX."Q71".DigitalOutput01;
 END_VAR

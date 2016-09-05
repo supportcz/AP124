@@ -1,8 +1,4 @@
-
 VAR
-
-END_VAR
-
-VAR CONSTANT
-
+	switchAllToManualMode : BOOL; (*VISU: switch all to manual mode*)
+	airPresureOK : BOOL; (*VISU: 1...air pressure OK*)
 END_VAR
