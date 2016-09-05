@@ -5,6 +5,12 @@
     <Object Type="File" Description="Global data types">Global.typ</Object>
     <Object Type="File" Description="Global variables">Global.var</Object>
     <Object Type="Package" Description="Global libraries">Libraries</Object>
-    <Object Type="Package">palett_magazine</Object>
+    <Object Type="Package">pallett_magazine</Object>
+    <Object Type="Package">pallet_conveyors</Object>
+    <Object Type="Package">wrapper</Object>
+    <Object Type="Package">product_infeed</Object>
+    <Object Type="Package">robot_head</Object>
+    <Object Type="Package">robot_control</Object>
+    <Object Type="Package">pallet_outfeed</Object>
   </Objects>
 </Package>
