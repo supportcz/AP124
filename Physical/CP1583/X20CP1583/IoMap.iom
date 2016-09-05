@@ -1,7 +1,12 @@
 VAR_CONFIG
-	::palletMagazineViolation AT %IX."X20SLX910".BOOL001;
-	::airPresureOK AT %IX."I08".DigitalInput01;
-	::safety:activateSafetyCircuit AT %QX."X20SLX910".BOOL101;
-	::pallet_mag:closeArms AT %QX."Q71".DigitalOutput02;
-	::pallet_mag:openArms AT %QX."Q71".DigitalOutput01;
+	airPresureOK AT %IX."I08".DigitalInput01;
+	pallet_mag:leftArmOpened AT %IX."I70".DigitalInput04;
+	pallet_mag:leftArmClosed AT %IX."I70".DigitalInput05;
+	pallet_mag:rightArmOpened AT %IX."I70".DigitalInput06;
+	pallet_mag:rightArmClosed AT %IX."I70".DigitalInput07;
+	pallet_mag:palletDetected AT %IX."I70".DigitalInput08;
+	pallet_mag:openArms AT %QX."Q71".DigitalOutput01;
+	pallet_mag:closeArms AT %QX."Q71".DigitalOutput02;
+	pallet_mag:palletMagazineViolation AT %IX."X20SLX910".BOOL001;
+	safety:activateSafetyCircuit AT %QX."X20SLX910".BOOL101;
 END_VAR

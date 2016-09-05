@@ -1,5 +1,11 @@
 
 TYPE
+	ArmsState : 
+		(
+		undefinedState,
+		armsOpened,
+		armsClosed
+		);
 	ModeOfOperation : 
 		(
 		notReadyToStart,

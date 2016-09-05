@@ -15,6 +15,7 @@
   </TaskClass>
   <TaskClass Name="Cyclic#4">
     <Task Name="safety" Source="safety.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Program" Source="pallett_magazine.Program.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />

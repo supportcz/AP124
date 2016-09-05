@@ -88,7 +88,7 @@
     <Module Name="Q71" Type="X20DOF322" X="454" Y="250" />
     <Module Name="X20TB1F10" Type="X20TB1F" X="454" Y="277" />
     <Module Name="X20BM11l" Type="X20BM11" X="467" Y="250" />
-    <Module Name="Q70" Type="X20DIF371" X="467" Y="250" />
+    <Module Name="I70" Type="X20DIF371" X="467" Y="250" />
     <Module Name="X20TB1F9" Type="X20TB1F" X="467" Y="277" />
     <Module Name="X20BM11n" Type="X20BM11" X="480" Y="250" />
     <Module Name="X20BT9100c" Type="X20BT9100" X="480" Y="250" />
@@ -173,7 +173,7 @@
     </Link>
   </Links>
   <InfoElements>
-    <InfoElementText Id="Textbox_1" X="91" Y="61" Width="523" Height="154">
+    <InfoElementText Id="Textbox_1" X="100" Y="71" Width="158" Height="29">
       <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Main switchboard</Text>
       <Background Color="White" Transparent="False" />
       <Border Color="Transparent" Transparent="False" DashStyle="Solid" Width="1" />
@@ -193,18 +193,23 @@
       <Background Color="White" Transparent="False" />
       <Border Color="Transparent" Transparent="False" DashStyle="Solid" Width="1" />
     </InfoElementText>
-    <InfoElementText Id="Textbox_5" X="569" Y="360" Width="112" Height="32">
+    <InfoElementText Id="Textbox_5" X="543" Y="359" Width="112" Height="32">
       <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Dec 4</Text>
       <Background Color="White" Transparent="False" />
       <Border Color="Transparent" Transparent="False" DashStyle="Solid" Width="1" />
     </InfoElementText>
-    <InfoElementText Id="Textbox_6" X="658" Y="426" Width="65" Height="32">
+    <InfoElementText Id="Textbox_6" X="632" Y="416" Width="65" Height="32">
       <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Dec 5</Text>
       <Background Color="White" Transparent="False" />
       <Border Color="Transparent" Transparent="False" DashStyle="Solid" Width="1" />
     </InfoElementText>
-    <InfoElementText Id="Textbox_7" X="761" Y="350" Width="65" Height="32">
+    <InfoElementText Id="Textbox_7" X="735" Y="350" Width="65" Height="32">
       <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Dec 6</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Transparent" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+    <InfoElementText Id="Textbox_8" X="100" Y="-85" Width="158" Height="29">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Display</Text>
       <Background Color="White" Transparent="False" />
       <Border Color="Transparent" Transparent="False" DashStyle="Solid" Width="1" />
     </InfoElementText>

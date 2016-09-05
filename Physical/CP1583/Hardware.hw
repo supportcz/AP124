@@ -34,6 +34,10 @@
     <Connection Connector="SS1" TargetModule="X20TB1F8" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11j" TargetConnector="SL1" />
   </Module>
+  <Module Name="I70" Type="X20DIF371" Version="1.0.1.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F9" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11l" TargetConnector="SL1" />
+  </Module>
   <Module Name="Q10" Type="X20DOF322" Version="1.1.0.2">
     <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11b" TargetConnector="SL1" />
@@ -53,10 +57,6 @@
   <Module Name="Q52" Type="X20DOF322" Version="1.1.0.2">
     <Connection Connector="SS1" TargetModule="X20TB1F7" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11h" TargetConnector="SL1" />
-  </Module>
-  <Module Name="Q70" Type="X20DIF371" Version="1.0.1.0">
-    <Connection Connector="SS1" TargetModule="X20TB1F9" TargetConnector="SS" />
-    <Connection Connector="SL" TargetModule="X20BM11l" TargetConnector="SL1" />
   </Module>
   <Module Name="Q71" Type="X20DOF322" Version="1.1.0.2">
     <Connection Connector="SS1" TargetModule="X20TB1F10" TargetConnector="SS" />

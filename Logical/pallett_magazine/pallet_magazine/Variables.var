@@ -1,9 +1,19 @@
 VAR
 	cmdManualMode : BOOL; (*VISU:switches pallet magazine to manual mode*)
 	modeOfOperation : ModeOfOperation;
-	PalletMagazineViolation : BOOL;
+	palletMagazineViolation : BOOL; (*safety violation*)
 	closeArms : BOOL;
 	openArms : BOOL;
 	cmdCloseArms : BOOL; (*VISU:command to close the arms*)
 	cmdOpenArms : BOOL; (*VISU:commad to open the arms*)
+	armsState : ArmsState; (*VISU:arms state*)
+	leftArmOpened : BOOL;
+	leftArmClosed : BOOL;
+	rightArmOpened : BOOL;
+	rightArmClosed : BOOL;
+	palletDetected : BOOL; (*pallet detected on conveyor P12*)
+	TON_CloseLeftRequest : TON;
+	TON_CloseRightRequest : TON;
+	TON_OpenLeftRequest : TON;
+	TON_OpenRightRequest : TON;
 END_VAR
