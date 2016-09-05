@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio Version=4.2.5.388?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="6PPT30.0702-20B" Type="6PPT30.0702-20B" Version="1.1.0.0">
+    <Connection Connector="ETH1" TargetModule="X20CP1583" TargetConnector="IF2" NodeNumber="1" />
+    <Parameter ID="Terminal" Value="true" />
+    <Parameter ID="PasswordVNC" Value="" />
+    <Parameter ID="PasswordCIFS" Value="" />
+    <Parameter ID="PasswordService" Value="" />
+    <Parameter ID="VncKeyMappingFile" Value="VC\6PPT30.0702-20B.dis" />
+    <Parameter ID="VncPortNumber" Value="5901" />
+  </Module>
   <Module Name="X20AI2322" Type="X20AI2322" Version="1.0.0.2">
     <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM01" TargetConnector="SL1" />
