@@ -1,8 +1,9 @@
 VAR
-	switchToManualMode : BOOL; (*VISU:switches pallet magazine to manual mode*)
+	cmdManualMode : BOOL; (*VISU:switches pallet magazine to manual mode*)
 	modeOfOperation : ModeOfOperation;
 	PalletMagazineViolation : BOOL;
-	AirPresureOK : BOOL;
 	closeArms : BOOL;
 	openArms : BOOL;
+	cmdCloseArms : BOOL; (*VISU:command to close the arms*)
+	cmdOpenArms : BOOL; (*VISU:commad to open the arms*)
 END_VAR
