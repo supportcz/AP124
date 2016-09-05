@@ -12,7 +12,7 @@ PROGRAM _CYCLIC
 	CASE modeOfOperation OF
 		
 		notReadyToStart: //the automat is not ready to start
-			IF NOT palletMagazineViolation AND airPresureOK THEN
+			IF NOT magazineSafetyViolation AND airPresureOK THEN
 				modeOfOperation := readyToStart;
 			END_IF
 		
@@ -24,21 +24,27 @@ PROGRAM _CYCLIC
 
 		manualMode:
 		
+			MagazineControl;
+				
+		
 	END_CASE;
 	
 	//action to control the arms
 	ArmsControl;
 				
-
-				
-				
-	palletDetected;
-		
+	
 	(* error detection *)
-	IF palletMagazineViolation THEN
-		MpAlarmXSet(gAlarmXCore,'PalletMagazineViolation');
+	IF magazineSafetyViolation THEN
+		MpAlarmXSet(gAlarmXCore,'PalletMagazineSafetyViolation');
 	ELSE
-		MpAlarmXReset(gAlarmXCore,'PalletMagazineViolation');
+		MpAlarmXReset(gAlarmXCore,'PalletMagazineSafetyViolation');
 	END_IF
+	
+	IF NOT motorProtectionP11 THEN
+		MpAlarmXSet(gAlarmXCore,'MotorProtectionP11');
+	ELSE
+		MpAlarmXReset(gAlarmXCore,'MotorProtectionP11');
+	END_IF
+		
 	
 END_PROGRAM

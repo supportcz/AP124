@@ -17,6 +17,7 @@
     <AutomationRuntime Version="J4.25" />
     <Build GccVersion="4.1.2" />
     <DefaultTargetMemory Tasks="UserROM" />
+    <Transfer DownloadMode="Copy" />
     <Vc FirmwareVersion="V4.25.0" />
     <Safety SafetyRelease="1.10" />
   </Configuration>

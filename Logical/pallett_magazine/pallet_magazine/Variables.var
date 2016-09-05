@@ -1,19 +1,36 @@
 VAR
-	cmdManualMode : BOOL; (*VISU:switches pallet magazine to manual mode*)
-	modeOfOperation : ModeOfOperation;
-	palletMagazineViolation : BOOL; (*safety violation*)
-	closeArms : BOOL;
-	openArms : BOOL;
-	cmdCloseArms : BOOL; (*VISU:command to close the arms*)
-	cmdOpenArms : BOOL; (*VISU:commad to open the arms*)
 	armsState : ArmsState; (*VISU:arms state*)
-	leftArmOpened : BOOL;
-	leftArmClosed : BOOL;
-	rightArmOpened : BOOL;
-	rightArmClosed : BOOL;
-	palletDetected : BOOL; (*pallet detected on conveyor P12*)
+	closeArms : BOOL; (*valve to close the arms*)
+	cmdAutomatMode : BOOL; (*3 funkce v 1 (reset safety+ovladaci obvody + start automatu)*)
+	cmdCloseArms : BOOL; (*VISU:command to close the arms*)
+	cmdManualMode : BOOL; (*VISU:switches pallet magazine to manual mode*)
+	cmdDown : BOOL; (*VISU:go with magazine up*)
+	cmdUp : BOOL; (*VISU:go with magazine down*)
+	moveToLowerPosition : BOOL; (*go with magazine to lower position*)
+	moveToMiddlePosition : BOOL; (*go with magazine to middle position*)
+	moveToUpperPosition : BOOL; (*go with magazine to upper position*)
+	cmdOpenArms : BOOL; (*VISU:commad to open the arms*)
+	leftArmClosed : BOOL; (*left arm is closed*)
+	leftArmOpened : BOOL; (*left arm is opened*)
+	magazineBrake : BOOL; (*1=brake released*)
+	magazineDown : BOOL; (*contactor to go down*)
+	magazineLooseChain : BOOL; (*lower HW end switch*)
+	magazineLowerPosition : BOOL; (*magazine in lower position*)
+	magazineMiddlePositon : BOOL; (*magazine in middle position*)
+	magazineSafetyViolation : BOOL; (*safety violation*)
+	magazineState : MagazineState;
+	magazineUp : BOOL; (*contactor to go up*)
+	magazineUpperHwEnd : BOOL; (*upper HW end switch*)
+	magazineUpperPosition : BOOL; (*magazine in upper position*)
+	modeOfOperation : ModeOfOperation;
+	motorProtectionP11 : BOOL;
+	openArms : BOOL; (*valve to open the arms*)
+	palletOnConveyorP12 : BOOL; (*pallet detected on conveyor P12*)
+	rightArmClosed : BOOL; (*right arm is closed*)
+	rightArmOpened : BOOL; (*right arm is opened*)
 	TON_CloseLeftRequest : TON;
 	TON_CloseRightRequest : TON;
+	TON_MoveToTheUpperPositon : TON;
 	TON_OpenLeftRequest : TON;
 	TON_OpenRightRequest : TON;
 END_VAR

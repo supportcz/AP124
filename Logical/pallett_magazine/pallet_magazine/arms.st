@@ -40,8 +40,7 @@ ACTION ArmsControl:
 	
 	IF TON_CloseLeftRequest.Q THEN
 		MpAlarmXSet(gAlarmXCore,'LeftArmNotClosed');
-	ELSE
-		MpAlarmXReset(gAlarmXCore,'LeftArmNotClosed');
+		closeArms := FALSE;
 	END_IF
 
 	//close right check
@@ -55,8 +54,7 @@ ACTION ArmsControl:
 	
 	IF TON_CloseRightRequest.Q THEN
 		MpAlarmXSet(gAlarmXCore,'RightArmNotClosed');
-	ELSE
-		MpAlarmXReset(gAlarmXCore,'RightArmNotClosed');		
+		closeArms := FALSE;
 	END_IF
 
 	//open left check
@@ -70,10 +68,8 @@ ACTION ArmsControl:
 	
 	IF TON_OpenLeftRequest.Q THEN
 		MpAlarmXSet(gAlarmXCore,'LeftArmNotOpened');
-	ELSE
-		MpAlarmXReset(gAlarmXCore,'LeftArmNotOpened');
+		openArms := FALSE;
 	END_IF
-
 
 	//open right check
 	TON_OpenRightRequest.IN := openArms;
@@ -86,8 +82,7 @@ ACTION ArmsControl:
 	
 	IF TON_OpenRightRequest.Q THEN
 		MpAlarmXSet(gAlarmXCore,'RightArmNotOpened');
-	ELSE
-		MpAlarmXReset(gAlarmXCore,'RightArmNotOpened');
+		openArms := FALSE;
 	END_IF
 
 END_ACTION

@@ -3,8 +3,8 @@
   <Element ID="gAlarmXCore" Type="mpalarmxcore">
     <Group ID="mapp.AlarmX.Core.Configuration">
       <Group ID="[0]">
-        <Property ID="Name" Value="PalletMagazineViolation" />
-        <Property ID="Message" Value="Pallet magazine violaton" />
+        <Property ID="Name" Value="PalletMagazineSafetyViolation" />
+        <Property ID="Message" Value="Pallet magazine safety violaton" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
       <Group ID="[1]">
@@ -15,22 +15,27 @@
       <Group ID="[2]">
         <Property ID="Name" Value="LeftArmNotClosed" />
         <Property ID="Message" Value="Left arm not closed" />
-        <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
       <Group ID="[3]">
         <Property ID="Name" Value="RightArmNotClosed" />
         <Property ID="Message" Value="Right arm not closed" />
-        <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
       <Group ID="[4]">
         <Property ID="Name" Value="LeftArmNotOpened" />
         <Property ID="Message" Value="Left arm not opened" />
-        <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
       <Group ID="[5]">
         <Property ID="Name" Value="RightArmNotOpened" />
         <Property ID="Message" Value="Right arm not opened" />
+      </Group>
+      <Group ID="[6]">
+        <Property ID="Name" Value="MotorProtectionP11" />
+        <Property ID="Message" Value="Motor protection P11" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[7]">
+        <Property ID="Name" Value="UpperPositionNotReached" />
+        <Property ID="Message" Value="Upper position not reached" />
       </Group>
     </Group>
   </Element>

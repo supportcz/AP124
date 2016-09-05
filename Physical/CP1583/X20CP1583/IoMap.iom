@@ -4,9 +4,19 @@ VAR_CONFIG
 	pallet_mag:leftArmClosed AT %IX."I70".DigitalInput05;
 	pallet_mag:rightArmOpened AT %IX."I70".DigitalInput06;
 	pallet_mag:rightArmClosed AT %IX."I70".DigitalInput07;
-	pallet_mag:palletDetected AT %IX."I70".DigitalInput08;
+	::pallet_mag:palletOnConveyorP12 AT %IX."I70".DigitalInput08;
 	pallet_mag:openArms AT %QX."Q71".DigitalOutput01;
 	pallet_mag:closeArms AT %QX."Q71".DigitalOutput02;
-	pallet_mag:palletMagazineViolation AT %IX."X20SLX910".BOOL001;
+	::pallet_mag:magazineSafetyViolation AT %IX."X20SLX910".BOOL001;
 	safety:activateSafetyCircuit AT %QX."X20SLX910".BOOL101;
+	::pallet_mag:magazineUpperPosition AT %IX."I70".DigitalInput01;
+	::pallet_mag:magazineMiddlePositon AT %IX."I70".DigitalInput02;
+	::pallet_mag:magazineLowerPosition AT %IX."I70".DigitalInput03;
+	::pallet_mag:magazineUp AT %QX."Q14".DigitalOutput01;
+	::pallet_mag:magazineDown AT %QX."Q14".DigitalOutput02;
+	::pallet_mag:magazineBrake AT %QX."Q14".DigitalOutput03;
+	::pallet_mag:motorProtectionP11 AT %IX."I06".DigitalInput05;
+	::pallet_mag:magazineUpperHwEnd AT %IX."I01".DigitalInput10;
+	::pallet_mag:magazineLooseChain AT %IX."I01".DigitalInput11;
+	::pallet_mag:cmdAutomatMode AT %IX."I01".DigitalInput12;
 END_VAR

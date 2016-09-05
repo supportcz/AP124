@@ -1,5 +1,12 @@
 
 TYPE
+	MagazineState : 
+		(
+		undefinedState1,
+		upperPosition,
+		middlePosition,
+		lowerPosition
+		);
 	ArmsState : 
 		(
 		undefinedState,
