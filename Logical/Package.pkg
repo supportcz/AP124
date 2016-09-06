@@ -13,6 +13,7 @@
     <Object Type="Package">robot_head</Object>
     <Object Type="Package">robot_control</Object>
     <Object Type="Package">pallet_outfeed</Object>
+    <Object Type="Package">visu_manager</Object>
     <Object Type="Program" Language="IEC" Description="alarm management">alarm_management</Object>
     <Object Type="Program" Language="IEC">safety</Object>
   </Objects>

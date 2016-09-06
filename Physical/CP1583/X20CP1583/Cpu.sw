@@ -15,11 +15,15 @@
   </TaskClass>
   <TaskClass Name="Cyclic#4">
     <Task Name="safety" Source="safety.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="visu_manag" Source="visu_manager.visu_manager.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
   <TaskClass Name="Cyclic#7" />
   <TaskClass Name="Cyclic#8" />
+  <VcDataObjects>
+    <VcDataObject Name="Visu" Source="visu_manager.Visu.dob" Memory="UserROM" Language="Vc" WarningLevel="2" Compress="false" />
+  </VcDataObjects>
   <Binaries>
     <BinaryObject Name="TCData" Source="" Memory="SystemROM" Language="Binary" />
     <BinaryObject Name="sysconf" Source="" Memory="SystemROM" Language="Binary" />

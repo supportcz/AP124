@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<Project xmlns="http://br-automation.co.at/AS/VC/Project">
+  <Property Name="EnableEvents" Value="True"/>
+  <Property Name="SharedTargetResourceRoot" Value=""/>
+  <SourceFiles>
+    <Source File="Languages.vcr"/>
+    <Source File="TextGroups\Mp_httpURL_SDM.txtgrp"/>
+    <Source File="TextGroups\MpDateTimeFormats.txtgrp"/>
+    <Source File="TextGroups\MpLanguages.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXListUIText.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXListCode.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXHistoryUIText.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXHistoryCode.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXHistoryState.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXListStatus.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXHistoryStatus.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXListPosition.txtgrp"/>
+    <Source File="UnitGroups\Length.vcug"/>
+    <Source File="UnitGroups\Mass.vcug"/>
+    <Source File="UnitGroups\Volume.vcug"/>
+    <Source File="UnitGroups\Power.vcug"/>
+    <Source File="UnitGroups\Memory.vcug"/>
+    <Source File="UnitGroups\Pressure.vcug"/>
+    <Source File="UnitGroups\Temperatures.vcug"/>
+    <Source File="UnitGroups\Energy.vcug"/>
+    <Source File="AlarmGroups\AlarmSystem.alcfg"/>
+    <Source File="AlarmGroups\SystemAlarms.algrp"/>
+    <Source File="DataSources\Internal.dso"/>
+    <Source File="DataSources\DataSource.dso"/>
+    <Source File="ControlVersion.cvinfo"/>
+  </SourceFiles>
+</Project>

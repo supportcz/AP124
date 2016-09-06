@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpBackground">
+  <Property Name="BackColor" Value="9"/>
+  <Property Name="Description" Value="Background for all pages"/>
+  <Property Name="Height" Value="480"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="StatusDatapoint" Value="None"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="800"/>
+  <TextGroup>
+    <TextLayer LanguageId="en"/>
+    <TextLayer LanguageId="cs"/>
+    <TextLayer LanguageId="fr"/>
+    <IndexMap/>
+  </TextGroup>
+  <Controls>
+    <Control ClassId="0x00001001" Name="Shape_2">
+      <Property Name="BackColor" Value="15"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="ForeColor" Value="15"/>
+      <Property Name="Height" Value="427"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="Width" Value="800"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtTime">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[MpPads]"/>
+      <Property Name="Height" Value="15"/>
+      <Property Name="Left" Value="16"/>
+      <Property Name="SimulationValue" Value="10:26"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpDateTimeFormats]"/>
+      <Property Name="TextIndex" Value="3"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="5"/>
+      <Property Name="ValueDatapoint" Value="None"/>
+      <Property Name="Width" Value="81"/>
+    </Control>
+    <Control ClassId="0x0000100A" Name="dtDate">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="15"/>
+      <Property Name="Left" Value="83"/>
+      <Property Name="SimulationValue" Value="01/12/2014"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[MpDateTimeFormats]"/>
+      <Property Name="TextIndex" Value="1"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="4"/>
+      <Property Name="ValueDatapoint" Value="None"/>
+      <Property Name="Width" Value="81"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_1">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="1"/>
+      <Property Name="EndY" Value="429"/>
+      <Property Name="ForeColor" Value="7"/>
+      <Property Name="LineWidth" Value="2"/>
+      <Property Name="StartX" Value="799"/>
+      <Property Name="StartY" Value="429"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+    </Control>
+    <Control ClassId="0x00001001" Name="Shape_1">
+      <Property Name="BackColor" Value="250"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="ForeColor" Value="250"/>
+      <Property Name="Height" Value="50"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+      <Property Name="Top" Value="430"/>
+      <Property Name="Width" Value="800"/>
+    </Control>
+  </Controls>
+  <KeyMapping/>
+</Layer>
