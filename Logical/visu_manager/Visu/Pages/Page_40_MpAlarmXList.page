@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?AutomationStudio Version="4.2.5.388"?>
-<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpAlarmXList">
+<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="Page_40_MpAlarmXList">
   <Property Name="Description" Value="mapp VC4 template MpAlarmXList"/>
   <Property Name="Height" Value="480"/>
-  <Property Name="Index" Value="0"/>
+  <Property Name="Index" Value="40"/>
   <Property Name="LockedForeColor" Value="253"/>
   <Property Name="MoveFocus" Value="Circular"/>
   <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -49,7 +49,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
-          <Property Name="Height" Value="401"/>
+          <Property Name="Height" Value="388"/>
           <Property Name="Left" Value="0"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="SimulationIndex" Value="0"/>
@@ -199,9 +199,9 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_207]"/>
-          <Property Name="Height" Value="65"/>
+          <Property Name="Height" Value="60"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="6"/>
+          <Property Name="Left" Value="26"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
@@ -213,9 +213,9 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="360"/>
+          <Property Name="Top" Value="350"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_207]"/>
-          <Property Name="Width" Value="130"/>
+          <Property Name="Width" Value="127"/>
         </Control>
         <Control ClassId="0x00001002" Name="cmdAcknowledge">
           <Property Name="Bitmap" Value="Source[local].Bitmap[MpAlarm_Quit]"/>
@@ -226,9 +226,9 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_208]"/>
-          <Property Name="Height" Value="65"/>
+          <Property Name="Height" Value="59"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="142"/>
+          <Property Name="Left" Value="165"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
@@ -240,9 +240,9 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="360"/>
+          <Property Name="Top" Value="351"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_208]"/>
-          <Property Name="Width" Value="130"/>
+          <Property Name="Width" Value="115"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_1">
           <Property Name="BackColor" Value="48"/>
@@ -267,7 +267,6 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
-          <Property Name="GroupID" Value="1"/>
           <Property Name="Height" Value="18"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.StateActive[1]]"/>
           <Property Name="Left" Value="649"/>
@@ -285,7 +284,6 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
-          <Property Name="GroupID" Value="1"/>
           <Property Name="Height" Value="18"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.StateAcknowledged[1]]"/>
           <Property Name="Left" Value="681"/>
@@ -601,9 +599,9 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_209]"/>
-          <Property Name="Height" Value="65"/>
+          <Property Name="Height" Value="54"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="663"/>
+          <Property Name="Left" Value="660"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
@@ -615,12 +613,13 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="360"/>
+          <Property Name="Top" Value="351"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_209]"/>
-          <Property Name="Width" Value="130"/>
+          <Property Name="Width" Value="121"/>
         </Control>
         <Control ClassId="0x00001004" Name="txtLabelTimestamp">
           <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="BackColor" Value="250"/>
           <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -644,9 +643,9 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_210]"/>
-          <Property Name="Height" Value="65"/>
+          <Property Name="Height" Value="56"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="527"/>
+          <Property Name="Left" Value="525"/>
           <Property Name="Multiline" Value="Manual"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
@@ -658,9 +657,9 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="360"/>
+          <Property Name="Top" Value="351"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_210]"/>
-          <Property Name="Width" Value="130"/>
+          <Property Name="Width" Value="124"/>
         </Control>
         <Control ClassId="0x00001005" Name="bmpGroupAlarmList">
           <Property Name="Bitmap" Value="Source[local].Bitmap[MpAlarmX_List]"/>
@@ -1446,7 +1445,6 @@
           <Property Name="EndX" Value="674"/>
           <Property Name="EndY" Value="140"/>
           <Property Name="ForeColor" Value="250"/>
-          <Property Name="GroupID" Value="1"/>
           <Property Name="StartX" Value="674"/>
           <Property Name="StartY" Value="152"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -1532,23 +1530,80 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_1]"/>
           <Property Name="Width" Value="38"/>
         </Control>
+        <Control ClassId="0x00001003" Name="HotSpot_2">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_12]"/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="30"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="127"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_12]"/>
+          <Property Name="Width" Value="673"/>
+        </Control>
+        <Control ClassId="0x00001003" Name="HotSpot_3">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_13]"/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="30"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="163"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_13]"/>
+          <Property Name="Width" Value="673"/>
+        </Control>
+        <Control ClassId="0x00001003" Name="HotSpot_4">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_14]"/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="30"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="199"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_14]"/>
+          <Property Name="Width" Value="673"/>
+        </Control>
+        <Control ClassId="0x00001003" Name="HotSpot_5">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_15]"/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="30"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="235"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_15]"/>
+          <Property Name="Width" Value="673"/>
+        </Control>
+        <Control ClassId="0x00001003" Name="HotSpot_6">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_16]"/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="30"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="271"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_16]"/>
+          <Property Name="Width" Value="673"/>
+        </Control>
+        <Control ClassId="0x00001003" Name="HotSpot_7">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_17]"/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="30"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="307"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_17]"/>
+          <Property Name="Width" Value="673"/>
+        </Control>
       </Controls>
       <KeyMapping>
-        <VirtualKey Name="%embVirtualKey_1">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x00000161">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="SetValue" Value="0"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.PositionFilter_layer]"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
         <VirtualKey Name="%embVirtualKey_192">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
@@ -1624,7 +1679,7 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXListUIConnect.AcknowledgeAll]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.alarm_management.MpAlarmXListUIConnect.AcknowledgeAll]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1639,7 +1694,7 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXListUIConnect.Acknowledge]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.alarm_management.MpAlarmXListUIConnect.Acknowledge]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1651,7 +1706,7 @@
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Page" Value="Source[local].Page[MpAlarmXList]"/>
+              <Property Name="Page" Value="Source[local].Page[Page_40_MpAlarmXList]"/>
               <Property Name="Target" Value="Page"/>
             </KeyAction>
           </KeyActions>
@@ -1664,8 +1719,124 @@
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Page" Value="Source[local].Page[MpAlarmXHistory]"/>
+              <Property Name="Page" Value="Source[local].Page[Page_41_MpAlarmXHistory]"/>
               <Property Name="Target" Value="Page"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_1">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000161">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="SetValue" Value="0"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.PositionFilter_layer]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_12">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000161">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Datapoint = 0"/>
+              <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.AlarmCount]"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_13">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000161">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Datapoint &lt; Level"/>
+              <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.AlarmCount]"/>
+              <Property Name="LockingLevel" Value="2"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="SetValue" Value="2"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_14">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000161">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Datapoint &lt; Level"/>
+              <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.AlarmCount]"/>
+              <Property Name="LockingLevel" Value="3"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="SetValue" Value="3"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_15">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000161">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Datapoint &lt; Level"/>
+              <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.AlarmCount]"/>
+              <Property Name="LockingLevel" Value="4"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="SetValue" Value="4"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_16">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000161">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Datapoint &lt; Level"/>
+              <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.AlarmCount]"/>
+              <Property Name="LockingLevel" Value="5"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="SetValue" Value="5"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_17">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000161">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Datapoint &lt; Level"/>
+              <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.AlarmCount]"/>
+              <Property Name="LockingLevel" Value="6"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="SetValue" Value="6"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.ListboxSelected]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

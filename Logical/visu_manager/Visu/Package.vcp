@@ -12,7 +12,7 @@
   <Property Name="DefaultKeyLevelNumeric" Value="0"/>
   <Property Name="DefaultKeyLevelString" Value="0"/>
   <Property Name="DefaultLanguage" Value="en"/>
-  <Property Name="DefaultPage" Value="Source[local].Page[MpSetup]"/>
+  <Property Name="DefaultPage" Value="Source[local].Page[Page_10_AutomaticMode]"/>
   <Property Name="DefaultStyleSheet" Value="Source[local].StyleSheet[mapp]"/>
   <Property Name="FocusControlDatapoint" Value="None"/>
   <Property Name="FontAntialiasing" Value="Off"/>
@@ -28,8 +28,8 @@
   <Property Name="LanguageCurrentDatapoint" Value="None"/>
   <Property Name="LifeSignDatapoint" Value="None"/>
   <Property Name="ManualStart" Value="False"/>
-  <Property Name="PageChangeDatapoint" Value="None"/>
-  <Property Name="PageCurrentDatapoint" Value="None"/>
+  <Property Name="PageChangeDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.ChangePage]"/>
+  <Property Name="PageCurrentDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.CurrentPage]"/>
   <Property Name="ScreenSaver_Activate" Value="False"/>
   <Property Name="TargetResourceRoot" Value=""/>
   <Property Name="TextLengthOverrunBackColor" Value="None"/>
@@ -344,6 +344,8 @@
     <Source File="Bitmaps\MpIcon_MpUserClick2.bminfo"/>
     <Source File="Bitmaps\MpIcon_MpUserXClick.bminfo"/>
     <Source File="Bitmaps\documentinfo.bminfo"/>
+    <Source File="Bitmaps\A.bminfo"/>
+    <Source File="Bitmaps\M.bminfo"/>
     <Source File="BitmapGroups\MpAlarmAcknowledgeState.bmgrp"/>
     <Source File="BitmapGroups\MpPads.bmgrp"/>
     <Source File="BitmapGroups\MpUserIcons.bmgrp"/>
@@ -352,9 +354,12 @@
     <Source File="BitmapGroups\MpAlarmXHistoryStates.bmgrp"/>
     <Source File="BitmapGroups\MpAlarmXStates.bmgrp"/>
     <Source File="BitmapGroups\MpBorders.bmgrp"/>
-    <Source File="Pages\MpSetup.page"/>
-    <Source File="Pages\MpAlarmXHistory.page"/>
-    <Source File="Pages\MpAlarmXList.page"/>
+    <Source File="Pages\Page_30_Settings.page"/>
+    <Source File="Pages\Page_41_MpAlarmXHistory.page"/>
+    <Source File="Pages\Page_40_MpAlarmXList.page"/>
+    <Source File="Pages\Page_10_AutomaticMode.page"/>
+    <Source File="Pages\Page_50_SDM.page"/>
+    <Source File="Pages\Page_20_ManualMode.page"/>
     <Source File="Layers\MpPageControl.layer"/>
     <Source File="Layers\MpBackground.layer"/>
     <Source File="Layers\Layer_PositionFilter.layer"/>
@@ -425,6 +430,7 @@
     <Source File="Trends\TrendData.tdc"/>
     <Source File="ColorMaps\ColorMap_ContainerListboxNum.clm"/>
     <Source File="ColorMaps\ColorMap_IndexMngmt.clm"/>
+    <Source File="ColorMaps\ColorMap_PageControl.clm"/>
     <Source File="VirtualKeys.vcvk"/>
     <Source File="Palette.vcr"/>
   </SourceFiles>

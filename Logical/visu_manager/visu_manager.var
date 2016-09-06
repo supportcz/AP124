@@ -1,3 +1,5 @@
 VAR
+	PageControl : PageControl_enum;
 	gVisu : gVisu_type;
+	ButtonColor : UINT;
 END_VAR

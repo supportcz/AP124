@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="PageControlNames">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="2"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="174062" Value="Automatic\nMode"/>
+    <Text ID="174063" Value="Manual\nMode"/>
+    <Text ID="174065" Value="Settings"/>
+    <Text ID="174066" Value="Alarm\nPage"/>
+    <Text ID="174067" Value="SDM"/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="174062" Value="Automatický\Mód"/>
+    <Text ID="174063" Value="Manuálny\nMód"/>
+    <Text ID="174065" Value="Nastavení"/>
+    <Text ID="174066" Value="Alarmy"/>
+    <Text ID="174067" Value="SDM"/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="174062" Value=""/>
+    <Text ID="174063" Value=""/>
+    <Text ID="174065" Value=""/>
+    <Text ID="174066" Value=""/>
+    <Text ID="174067" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="174062" Value="0"/>
+    <Index ID="174063" Value="1"/>
+    <Index ID="174065" Value="2"/>
+    <Index ID="174066" Value="3"/>
+    <Index ID="174067" Value="4"/>
+  </IndexMap>
+</TextGroup>

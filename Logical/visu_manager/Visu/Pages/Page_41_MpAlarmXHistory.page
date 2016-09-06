@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?AutomationStudio Version="4.2.5.388"?>
-<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpAlarmXHistory">
+<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="Page_41_MpAlarmXHistory">
   <Property Name="Description" Value="mapp VC4 template MpAlarmXHistory"/>
   <Property Name="Height" Value="480"/>
-  <Property Name="Index" Value="10022"/>
+  <Property Name="Index" Value="41"/>
   <Property Name="LockedForeColor" Value="253"/>
   <Property Name="MoveFocus" Value="Circular"/>
   <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -19,7 +19,7 @@
       <Property Name="OutlineDisplayName" Value="True"/>
       <Property Name="OutlineHatched" Value="False"/>
       <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Normal"/>
+      <Property Name="VisibilityMode" Value="Outline"/>
       <Property Name="Z-Order" Value="0"/>
     </LayerRef>
     <Layer Name="Default">
@@ -34,7 +34,7 @@
       <Property Name="OutlineHatched" Value="False"/>
       <Property Name="StatusDatapoint" Value="None"/>
       <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Normal"/>
+      <Property Name="VisibilityMode" Value="Outline"/>
       <Property Name="Width" Value="800"/>
       <Property Name="Z-Order" Value="1"/>
       <TextGroup>
@@ -49,7 +49,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
-          <Property Name="Height" Value="384"/>
+          <Property Name="Height" Value="361"/>
           <Property Name="Left" Value="0"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="SimulationIndex" Value="0"/>
@@ -773,9 +773,9 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_167]"/>
-          <Property Name="Height" Value="65"/>
+          <Property Name="Height" Value="58"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="663"/>
+          <Property Name="Left" Value="662"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
@@ -787,9 +787,9 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="360"/>
+          <Property Name="Top" Value="339"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_167]"/>
-          <Property Name="Width" Value="130"/>
+          <Property Name="Width" Value="119"/>
         </Control>
         <Control ClassId="0x00001004" Name="txtLabelTimestamp">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -948,9 +948,9 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_211]"/>
-          <Property Name="Height" Value="65"/>
+          <Property Name="Height" Value="54"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="527"/>
+          <Property Name="Left" Value="521"/>
           <Property Name="Multiline" Value="Manual"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
@@ -962,9 +962,9 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="360"/>
+          <Property Name="Top" Value="341"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_211]"/>
-          <Property Name="Width" Value="130"/>
+          <Property Name="Width" Value="127"/>
         </Control>
         <Control ClassId="0x00001005" Name="bmpGroupAlarmHistory">
           <Property Name="Bitmap" Value="Source[local].Bitmap[MpAlarmX_History]"/>
@@ -1050,7 +1050,7 @@
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Page" Value="Source[local].Page[MpAlarmXList]"/>
+              <Property Name="Page" Value="Source[local].Page[Page_40_MpAlarmXList]"/>
               <Property Name="Target" Value="Page"/>
             </KeyAction>
           </KeyActions>
@@ -1063,7 +1063,7 @@
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Page" Value="Source[local].Page[MpAlarmXList]"/>
+              <Property Name="Page" Value="Source[local].Page[Page_40_MpAlarmXList]"/>
               <Property Name="Target" Value="Page"/>
             </KeyAction>
           </KeyActions>

@@ -2,6 +2,19 @@
 TYPE
 	gVisu_type : 	STRUCT 
 		page_MpAlarmXList : page_MpAlarmXList_type;
+		ChangePage : UINT;
+		CurrentPage : UINT;
+	END_STRUCT;
+	PageControl_enum : 
+		(
+		Idle := 0,
+		ButtonAutomaticMode := 1,
+		ButtonManualMode := 2,
+		ButtonSettings := 3,
+		ButtonAlarmPage := 4,
+		ButtonSDM := 5
+		);
+	page_Control : 	STRUCT 
 	END_STRUCT;
 	page_MpAlarmXList_type : 	STRUCT 
 		Severity : ARRAY[0..6]OF UDINT; (*Alarm severity*)
