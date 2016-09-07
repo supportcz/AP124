@@ -16,18 +16,30 @@
       <Group ID="[2]">
         <Property ID="Name" Value="LeftArmNotClosed" />
         <Property ID="Message" Value="Left arm not closed" />
+        <Selector ID="Behavior">
+          <Property ID="MultipleInstances" Value="FALSE" />
+        </Selector>
       </Group>
       <Group ID="[3]">
         <Property ID="Name" Value="RightArmNotClosed" />
         <Property ID="Message" Value="Right arm not closed" />
+        <Selector ID="Behavior">
+          <Property ID="MultipleInstances" Value="FALSE" />
+        </Selector>
       </Group>
       <Group ID="[4]">
         <Property ID="Name" Value="LeftArmNotOpened" />
         <Property ID="Message" Value="Left arm not opened" />
+        <Selector ID="Behavior">
+          <Property ID="MultipleInstances" Value="FALSE" />
+        </Selector>
       </Group>
       <Group ID="[5]">
         <Property ID="Name" Value="RightArmNotOpened" />
         <Property ID="Message" Value="Right arm not opened" />
+        <Selector ID="Behavior">
+          <Property ID="MultipleInstances" Value="FALSE" />
+        </Selector>
       </Group>
       <Group ID="[6]">
         <Property ID="Name" Value="MotorProtectionP11" />

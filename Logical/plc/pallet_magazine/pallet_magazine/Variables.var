@@ -25,9 +25,7 @@ VAR
 	magazineSafetyViolation : BOOL; (*safety violation*)
 	magazineState : MagazineState; (*VISU: current state of magazine*)
 	modeOfOperation : ModeOfOperation;
-	TON_CloseLeftRequest : TON;
-	TON_CloseRightRequest : TON;
+	TON_LeftRequest : TON;
+	TON_RightRequest : TON;
 	TON_VerticalMovement : TON;
-	TON_OpenLeftRequest : TON;
-	TON_OpenRightRequest : TON;
 END_VAR

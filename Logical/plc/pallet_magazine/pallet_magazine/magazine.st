@@ -24,12 +24,12 @@ ACTION MagazineControl:
 			TON_VerticalMovement(IN := TRUE, PT := T#6s);
 			//position reached?
 			IF diMagazineUpperPosition THEN
-				FinishMovement;
+				MagazineFinishMovement;
 				magazineState := stateUpperPosition;
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
-				FinishMovement;
+				MagazineFinishMovement;
 				MpAlarmXSet(gAlarmXCore,'UpperPositionNotReached');
 				magazineState := stateMiddlePosition;
 			END_IF	
@@ -48,12 +48,12 @@ ACTION MagazineControl:
 			TON_VerticalMovement(IN := TRUE, PT := T#6s);
 			//position reached?
 			IF diMagazineMiddlePositon THEN
-				FinishMovement;
+				MagazineFinishMovement;
 				magazineState := stateMiddlePosition;
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
-				FinishMovement;
+				MagazineFinishMovement;
 				MpAlarmXSet(gAlarmXCore,'MiddlePositionNotReached');
 				magazineState := stateUpperPosition;
 			END_IF
@@ -65,12 +65,12 @@ ACTION MagazineControl:
 			TON_VerticalMovement(IN := TRUE, PT := T#6s);
 			//position reached?
 			IF diMagazineMiddlePositon THEN
-				FinishMovement;
+				MagazineFinishMovement;
 				magazineState := stateMiddlePosition;
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
-				FinishMovement;
+				MagazineFinishMovement;
 				MpAlarmXSet(gAlarmXCore,'MiddlePositionNotReached');
 				magazineState := stateLowerPosition;
 			END_IF
@@ -92,12 +92,12 @@ ACTION MagazineControl:
 			TON_VerticalMovement(IN := TRUE, PT := T#6s);
 			//position reached?
 			IF diMagazineLowerPosition THEN
-				FinishMovement;
+				MagazineFinishMovement;
 				magazineState := stateLowerPosition;
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
-				FinishMovement;
+				MagazineFinishMovement;
 				MpAlarmXSet(gAlarmXCore,'LowerPositionNotReached');
 				magazineState := stateMiddlePosition;
 			END_IF
@@ -118,7 +118,7 @@ ACTION MagazineControl:
 	
 END_ACTION
 
-ACTION FinishMovement:
+ACTION MagazineFinishMovement:
 	cmdUp := FALSE;
 	cmdDown := FALSE;
 	TON_VerticalMovement(IN := FALSE);
