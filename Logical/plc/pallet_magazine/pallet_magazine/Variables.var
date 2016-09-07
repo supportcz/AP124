@@ -18,7 +18,7 @@ VAR
 	magazineLowerPosition : BOOL; (*magazine in lower position*)
 	magazineMiddlePositon : BOOL; (*magazine in middle position*)
 	magazineSafetyViolation : BOOL; (*safety violation*)
-	magazineState : MagazineState;
+	magazineState : MagazineState; (*VISU: state of magazine*)
 	magazineUp : BOOL; (*contactor to go up*)
 	magazineUpperHwEnd : BOOL; (*upper HW end switch*)
 	magazineUpperPosition : BOOL; (*magazine in upper position*)

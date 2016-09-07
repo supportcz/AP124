@@ -5,7 +5,7 @@
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3">
     <Task Name="product_in" Source="plc.product_infeed.product_infeed.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="pallet_mag" Source="plc.pallett_magazine.pallet_magazine.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="pallet_mag" Source="plc.pallet_magazine.pallet_magazine.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="pallet_con" Source="plc.pallet_conveyors.pallet_conveyors.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="robot_head" Source="plc.robot_head.robot_head.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="robot_cont" Source="plc.robot_control.robot_control.prg" Memory="UserROM" Language="IEC" Debugging="true" />

@@ -6,6 +6,7 @@
         <Property ID="Name" Value="PalletMagazineSafetyViolation" />
         <Property ID="Message" Value="Pallet magazine safety violaton" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
+        <Property ID="AdditionalInformation1" Value="{$alarms/machinepart.pallet_magazine}" />
       </Group>
       <Group ID="[1]">
         <Property ID="Name" Value="AirPressureNotOK" />
