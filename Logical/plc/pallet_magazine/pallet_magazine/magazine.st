@@ -3,7 +3,7 @@
 ACTION MagazineControl: 
 	
 	CASE magazineState OF
-		stateInit:
+		stateUndefined:
 			
 			IF diMagazineUpperPosition AND NOT diMagazineMiddlePositon AND NOT diMagazineLowerPosition THEN
 				magazineState := stateUpperPosition;
@@ -18,98 +18,97 @@ ACTION MagazineControl:
 			END_IF
 		
 		stateMoveToUpperPosition:
-			
-			TON_VerticalMovement.IN := TRUE;
-			TON_VerticalMovement.PT := T#6s;
+			//set output			
+			doMagazineUp := TRUE;
+			//start timer
+			TON_VerticalMovement(IN := TRUE, PT := T#6s);
 			//position reached?
 			IF diMagazineUpperPosition THEN
-				TON_VerticalMovement.IN := FALSE;
-				doMagazineDown := doMagazineUp :=  FALSE;
+				FinishMovement;
 				magazineState := stateUpperPosition;
 			END_IF	
-
-			//timeout
+			//timeout?
 			IF TON_VerticalMovement.Q THEN
+				FinishMovement;
 				MpAlarmXSet(gAlarmXCore,'UpperPositionNotReached');
-				TON_VerticalMovement.IN := FALSE;
-				doMagazineDown := doMagazineUp :=  FALSE;
-				magazineState := oldMagazineState;
+				magazineState := stateMiddlePosition;
 			END_IF	
 		
 		stateUpperPosition:
 	
 			IF cmdDown THEN
-				cmdDown := FALSE;
-				doMagazineDown := TRUE;
-				oldMagazineState := magazineState;
-				magazineState := stateMoveToMiddlePosition;
+				magazineState := stateMoveUpperToMiddlePosition;
 			END_IF	
 	
-		stateMoveToMiddlePosition:
-			
-			TON_VerticalMovement.IN := TRUE;
-			TON_VerticalMovement.PT := T#6s;
+		stateMoveUpperToMiddlePosition:
+
+			//set output
+			doMagazineDown := TRUE;
+			//start timer
+			TON_VerticalMovement(IN := TRUE, PT := T#6s);
 			//position reached?
 			IF diMagazineMiddlePositon THEN
-				TON_VerticalMovement.IN := FALSE;
-				doMagazineDown := doMagazineUp :=  FALSE;
+				FinishMovement;
 				magazineState := stateMiddlePosition;
 			END_IF	
-
-			//timeout
+			//timeout?
 			IF TON_VerticalMovement.Q THEN
+				FinishMovement;
 				MpAlarmXSet(gAlarmXCore,'MiddlePositionNotReached');
-				TON_VerticalMovement.IN := FALSE;
-				doMagazineDown := doMagazineUp :=  FALSE;
-				magazineState := oldMagazineState;
+				magazineState := stateUpperPosition;
 			END_IF
 				
+		stateMoveLowerToMiddlePosition:
+			//set output			
+			doMagazineUp := TRUE;
+			//start timer
+			TON_VerticalMovement(IN := TRUE, PT := T#6s);
+			//position reached?
+			IF diMagazineMiddlePositon THEN
+				FinishMovement;
+				magazineState := stateMiddlePosition;
+			END_IF	
+			//timeout?
+			IF TON_VerticalMovement.Q THEN
+				FinishMovement;
+				MpAlarmXSet(gAlarmXCore,'MiddlePositionNotReached');
+				magazineState := stateLowerPosition;
+			END_IF
+		
 		stateMiddlePosition:
+			
 			IF cmdDown THEN
-				cmdDown := FALSE;
-				doMagazineDown := TRUE;
-				oldMagazineState := magazineState;
 				magazineState := stateMoveToLowerPosition;
 			END_IF	
 			
 			IF cmdUp THEN
-				cmdUp := FALSE;
-				doMagazineUp := TRUE;
-				oldMagazineState := magazineState;
 				magazineState := stateMoveToUpperPosition;
 			END_IF	
 		
 		stateMoveToLowerPosition:
-		
-			TON_VerticalMovement.IN := TRUE;
-			TON_VerticalMovement.PT := T#6s;
+			//set output		
+			doMagazineDown := TRUE;
+			//start timer
+			TON_VerticalMovement(IN := TRUE, PT := T#6s);
 			//position reached?
 			IF diMagazineLowerPosition THEN
-				TON_VerticalMovement.IN := FALSE;
-				doMagazineDown := doMagazineUp :=  FALSE;
+				FinishMovement;
 				magazineState := stateLowerPosition;
 			END_IF	
-
-			//timeout
+			//timeout?
 			IF TON_VerticalMovement.Q THEN
+				FinishMovement;
 				MpAlarmXSet(gAlarmXCore,'LowerPositionNotReached');
-				TON_VerticalMovement.IN := FALSE;
-				doMagazineDown := doMagazineUp :=  FALSE;
-				magazineState := oldMagazineState;
+				magazineState := stateMiddlePosition;
 			END_IF
 		
 		stateLowerPosition:
 			IF cmdUp THEN
-				cmdUp := FALSE;
-				doMagazineUp := TRUE;
-				oldMagazineState := magazineState;
-				magazineState := stateMoveToMiddlePosition;
+				magazineState := stateMoveLowerToMiddlePosition;
 			END_IF	
 
 	END_CASE
 				
-	TON_VerticalMovement();
-
 	//brake control
 	IF doMagazineUp OR doMagazineDown THEN
 		doMagazineBrake := TRUE;
@@ -117,4 +116,11 @@ ACTION MagazineControl:
 		doMagazineBrake := FALSE;
 	END_IF
 	
+END_ACTION
+
+ACTION FinishMovement:
+	cmdUp := FALSE;
+	cmdDown := FALSE;
+	TON_VerticalMovement(IN := FALSE);
+	doMagazineDown := doMagazineUp :=  FALSE;
 END_ACTION

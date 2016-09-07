@@ -3,7 +3,7 @@
 ACTION ArmsControl: 
 	
 	CASE armsState OF
-		stateInit1:
+		stateArmsUndefined:
 			
 			IF diLeftArmClosed AND diRightArmClosed AND NOT diLeftArmOpened AND NOT diRightArmOpened THEN
 				armsState := stateArmsClosed;

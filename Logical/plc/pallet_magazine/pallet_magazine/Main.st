@@ -24,14 +24,15 @@ PROGRAM _CYCLIC
 
 		manualMode:
 		
-			MagazineControl;
 				
 		
 	END_CASE;
 	
 	//action to control the arms
 	ArmsControl;
-				
+
+	//action to control the magazine
+	MagazineControl;
 	
 	(* error detection *)
 	IF magazineSafetyViolation THEN
