@@ -8,11 +8,14 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 
+	IF magazineSafetyViolation OR NOT diAirPresureOK OR NOT diMotorProtectionP11 THEN
+		modeOfOperation := notReadyToStart;
+	END_IF
 
 	CASE modeOfOperation OF
 		
 		notReadyToStart: //the automat is not ready to start
-			IF NOT magazineSafetyViolation AND diAirPresureOK THEN
+			IF NOT magazineSafetyViolation AND diAirPresureOK AND diMotorProtectionP11 THEN
 				modeOfOperation := readyToStart;
 			END_IF
 		
@@ -28,11 +31,15 @@ PROGRAM _CYCLIC
 		
 	END_CASE;
 	
-	//action to control the arms
-	ArmsControl;
+	//horizontal arms movement
+	HorizontalArmsControl;
 
-	//action to control the magazine
-	MagazineControl;
+	//vertical arms movement
+	VerticalArmsControl;
+	
+	IF diPalletOnConveyorP12 THEN
+		palletOnConveyor := TRUE;
+	END_IF
 	
 	(* error detection *)
 	IF magazineSafetyViolation THEN
@@ -41,11 +48,7 @@ PROGRAM _CYCLIC
 		MpAlarmXReset(gAlarmXCore,'PalletMagazineSafetyViolation');
 	END_IF
 	
-	IF NOT diMotorProtectionP11 THEN
-		MpAlarmXSet(gAlarmXCore,'MotorProtectionP11');
-	ELSE
-		MpAlarmXReset(gAlarmXCore,'MotorProtectionP11');
-	END_IF
+
 		
 	
 END_PROGRAM

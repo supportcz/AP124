@@ -2,7 +2,7 @@
 TYPE
 	MagazineState : 
 		(
-		stateUndefined,
+		stateMagazineUndefined,
 		stateMoveToUpperPosition,
 		stateUpperPosition,
 		stateMoveUpperToMiddlePosition,

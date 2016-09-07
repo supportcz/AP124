@@ -1,6 +1,10 @@
 (* control of arms *)
 
-ACTION ArmsControl: 
+ACTION HorizontalArmsControl: 
+	
+	IF modeOfOperation = notReadyToStart THEN
+		armsState := stateArmsUndefined;
+	END_IF
 	
 	CASE armsState OF
 		stateArmsUndefined:

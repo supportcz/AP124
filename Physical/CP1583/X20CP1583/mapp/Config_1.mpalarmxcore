@@ -67,6 +67,25 @@
           <Property ID="MultipleInstances" Value="FALSE" />
         </Selector>
       </Group>
+      <Group ID="[10]">
+        <Property ID="Name" Value="MagazineUpperHwEndReached" />
+        <Property ID="Message" Value="Magazine upper HW end reached" />
+        <Selector ID="Behavior">
+          <Property ID="MultipleInstances" Value="FALSE" />
+        </Selector>
+      </Group>
+      <Group ID="[11]">
+        <Property ID="Name" Value="MagazineLooseChain" />
+        <Property ID="Message" Value="Magazine loose chain" />
+        <Selector ID="Behavior">
+          <Property ID="MultipleInstances" Value="FALSE" />
+        </Selector>
+      </Group>
+      <Group ID="[12]">
+        <Property ID="Name" Value="MotorProtectionP11" />
+        <Property ID="Message" Value="Motor protection P11 failure" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
     </Group>
   </Element>
 </Configuration>

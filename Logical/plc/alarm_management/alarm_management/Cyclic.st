@@ -17,5 +17,8 @@ PROGRAM _CYCLIC
 		MpAlarmXSet(gAlarmXCore,'AirPressureNotOK');
 	END_IF
 
+	IF diReset THEN
+		MpAlarmXListUIConnect.AcknowledgeAll := TRUE;
+	END_IF
 	
 END_PROGRAM

@@ -19,4 +19,5 @@ VAR_CONFIG
 	::pallet_mag:diMagazineUpperHwEnd AT %IX."I01".DigitalInput10;
 	::pallet_mag:diMagazineLooseChain AT %IX."I01".DigitalInput11;
 	::pallet_mag:diAutomatMode AT %IX."I01".DigitalInput12;
+	::diReset AT %IX."I08".DigitalInput03;
 END_VAR

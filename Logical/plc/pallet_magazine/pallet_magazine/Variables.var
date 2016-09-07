@@ -1,10 +1,11 @@
 VAR
+	palletOnConveyor : BOOL; (*VISU:pallet lies on conveyor*)
 	armsState : ArmsState; (*VISU:arms state*)
 	cmdCloseArms : BOOL; (*VISU:command to close the arms*)
-	cmdDown : BOOL; (*VISU: button to go with magazine up, edge sensitive*)
+	cmdDown : BOOL; (*VISU: button to go with magazine up*)
 	cmdManualMode : BOOL; (*VISU:switches pallet magazine to manual mode*)
 	cmdOpenArms : BOOL; (*VISU:commad to open the arms*)
-	cmdUp : BOOL; (*VISU: go with magazine down, edge sensitive*)
+	cmdUp : BOOL; (*VISU: go with magazine down*)
 	diAutomatMode : BOOL; (*3 funkce v 1 (reset safety+ovladaci obvody + start automatu)*)
 	diLeftArmClosed : BOOL; (*left arm is closed*)
 	diLeftArmOpened : BOOL; (*left arm is opened*)
@@ -13,7 +14,7 @@ VAR
 	diMagazineMiddlePositon : BOOL; (*magazine in middle position*)
 	diMagazineUpperHwEnd : BOOL; (*upper HW end switch*)
 	diMagazineUpperPosition : BOOL; (*magazine in upper position*)
-	diMotorProtectionP11 : BOOL;
+	diMotorProtectionP11 : BOOL; (*contactor for vertical movement, 1=OK*)
 	diPalletOnConveyorP12 : BOOL; (*pallet detected on conveyor P12*)
 	diRightArmClosed : BOOL; (*right arm is closed*)
 	diRightArmOpened : BOOL; (*right arm is opened*)

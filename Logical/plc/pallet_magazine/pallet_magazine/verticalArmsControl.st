@@ -1,9 +1,13 @@
 (* control of magazine *)
 
-ACTION MagazineControl: 
+ACTION VerticalArmsControl: 
+	
+	IF modeOfOperation = notReadyToStart THEN
+		magazineState := stateMagazineUndefined;
+	END_IF
 	
 	CASE magazineState OF
-		stateUndefined:
+		stateMagazineUndefined:
 			
 			IF diMagazineUpperPosition AND NOT diMagazineMiddlePositon AND NOT diMagazineLowerPosition THEN
 				magazineState := stateUpperPosition;
@@ -24,12 +28,12 @@ ACTION MagazineControl:
 			TON_VerticalMovement(IN := TRUE, PT := T#6s);
 			//position reached?
 			IF diMagazineUpperPosition THEN
-				MagazineFinishMovement;
+				VerticalFinishMovement;
 				magazineState := stateUpperPosition;
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
-				MagazineFinishMovement;
+				VerticalFinishMovement;
 				MpAlarmXSet(gAlarmXCore,'UpperPositionNotReached');
 				magazineState := stateMiddlePosition;
 			END_IF	
@@ -48,12 +52,12 @@ ACTION MagazineControl:
 			TON_VerticalMovement(IN := TRUE, PT := T#6s);
 			//position reached?
 			IF diMagazineMiddlePositon THEN
-				MagazineFinishMovement;
+				VerticalFinishMovement;
 				magazineState := stateMiddlePosition;
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
-				MagazineFinishMovement;
+				VerticalFinishMovement;
 				MpAlarmXSet(gAlarmXCore,'MiddlePositionNotReached');
 				magazineState := stateUpperPosition;
 			END_IF
@@ -65,12 +69,12 @@ ACTION MagazineControl:
 			TON_VerticalMovement(IN := TRUE, PT := T#6s);
 			//position reached?
 			IF diMagazineMiddlePositon THEN
-				MagazineFinishMovement;
+				VerticalFinishMovement;
 				magazineState := stateMiddlePosition;
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
-				MagazineFinishMovement;
+				VerticalFinishMovement;
 				MpAlarmXSet(gAlarmXCore,'MiddlePositionNotReached');
 				magazineState := stateLowerPosition;
 			END_IF
@@ -92,12 +96,12 @@ ACTION MagazineControl:
 			TON_VerticalMovement(IN := TRUE, PT := T#6s);
 			//position reached?
 			IF diMagazineLowerPosition THEN
-				MagazineFinishMovement;
+				VerticalFinishMovement;
 				magazineState := stateLowerPosition;
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
-				MagazineFinishMovement;
+				VerticalFinishMovement;
 				MpAlarmXSet(gAlarmXCore,'LowerPositionNotReached');
 				magazineState := stateMiddlePosition;
 			END_IF
@@ -116,11 +120,23 @@ ACTION MagazineControl:
 		doMagazineBrake := FALSE;
 	END_IF
 	
+	IF diMagazineUpperHwEnd AND cmdUp THEN
+		MpAlarmXSet(gAlarmXCore,'MagazineUpperHwEndReached');
+	END_IF
+
+	IF diMagazineLooseChain AND cmdDown THEN
+		MpAlarmXSet(gAlarmXCore,'MagazineLooseChain');
+	END_IF
+	
+	IF diMotorProtectionP11 THEN
+		MpAlarmXReset(gAlarmXCore,'MotorProtectionP11');
+	ELSE
+		MpAlarmXSet(gAlarmXCore,'MotorProtectionP11');
+	END_IF
+	
 END_ACTION
 
-ACTION MagazineFinishMovement:
-	cmdUp := FALSE;
-	cmdDown := FALSE;
+ACTION VerticalFinishMovement:
 	TON_VerticalMovement(IN := FALSE);
 	doMagazineDown := doMagazineUp :=  FALSE;
 END_ACTION

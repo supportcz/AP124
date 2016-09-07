@@ -5,7 +5,7 @@
     <File>Main.st</File>
     <File Description="Local data types" Private="true">Types.typ</File>
     <File Description="Local variables" Private="true">Variables.var</File>
-    <File>arms.st</File>
-    <File>magazine.st</File>
+    <File>horizontalArmsControl.st</File>
+    <File>verticalArmsControl.st</File>
   </Files>
 </Program>
