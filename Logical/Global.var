@@ -1,5 +1,4 @@
 VAR
 	airPresureOK : BOOL; (*VISU: 1...air pressure OK*)
-	cmdAllToManualMode : BOOL;
-	MpAlarmXListUI_0 : MpAlarmXListUI; (*VISU: premiestnil som kvoli visu_manager.st*)
+	cmdAllToManualMode : BOOL; (*VISU:complete machine to manual mode*)
 END_VAR

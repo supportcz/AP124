@@ -2,7 +2,7 @@
 <?AutomationStudio Version=4.2.5.388?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File" Private="true">robot_control.var</Object>
-    <Object Type="Program" Language="IEC" Description="robot control">robot_control</Object>
+    <Object Type="File">alarm_management.var</Object>
+    <Object Type="Program" Language="IEC" Description="alarm management">alarm_management</Object>
   </Objects>
 </Package>

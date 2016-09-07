@@ -28,8 +28,8 @@
   <Property Name="LanguageCurrentDatapoint" Value="None"/>
   <Property Name="LifeSignDatapoint" Value="None"/>
   <Property Name="ManualStart" Value="False"/>
-  <Property Name="PageChangeDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.ChangePage]"/>
-  <Property Name="PageCurrentDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.CurrentPage]"/>
+  <Property Name="PageChangeDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.ChangePage]"/>
+  <Property Name="PageCurrentDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.CurrentPage]"/>
   <Property Name="ScreenSaver_Activate" Value="False"/>
   <Property Name="TargetResourceRoot" Value=""/>
   <Property Name="TextLengthOverrunBackColor" Value="None"/>

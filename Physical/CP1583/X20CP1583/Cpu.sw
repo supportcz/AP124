@@ -4,25 +4,25 @@
   <TaskClass Name="Cyclic#1" />
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3">
-    <Task Name="product_in" Source="product_infeed.product_infeed.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="pallet_mag" Source="pallett_magazine.pallet_magazine.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="pallet_con" Source="pallet_conveyors.pallet_conveyors.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="robot_head" Source="robot_head.robot_head.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="robot_cont" Source="robot_control.robot_control.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="wrapper" Source="wrapper.wrapper.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="pallet_out" Source="pallet_outfeed.pallet_outfeed.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="alarm_mana" Source="alarm_management.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="product_in" Source="plc.product_infeed.product_infeed.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="pallet_mag" Source="plc.pallett_magazine.pallet_magazine.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="pallet_con" Source="plc.pallet_conveyors.pallet_conveyors.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="robot_head" Source="plc.robot_head.robot_head.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="robot_cont" Source="plc.robot_control.robot_control.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="wrapper" Source="plc.wrapper.wrapper.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="pallet_out" Source="plc.pallet_outfeed.pallet_outfeed.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="alarm_mana" Source="plc.alarm_management.alarm_management.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#4">
-    <Task Name="safety" Source="safety.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="visu_manag" Source="visu_manager.visu_manager.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="safety" Source="safety.safety.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="visu_manag" Source="visualization.visu_manager.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
   <TaskClass Name="Cyclic#7" />
   <TaskClass Name="Cyclic#8" />
   <VcDataObjects>
-    <VcDataObject Name="Visu" Source="visu_manager.Visu.dob" Memory="UserROM" Language="Vc" WarningLevel="2" Compress="false" />
+    <VcDataObject Name="Visu" Source="visualization.Visu.dob" Memory="UserROM" Language="Vc" WarningLevel="2" Compress="false" />
   </VcDataObjects>
   <Binaries>
     <BinaryObject Name="TCData" Source="" Memory="SystemROM" Language="Binary" />

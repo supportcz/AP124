@@ -17,7 +17,7 @@
   <Controls>
     <Control ClassId="0x00001001" Name="Shape_7">
       <Property Name="BackColor" Value="250"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visu_manager.ButtonColor]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.ButtonColor]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PageControl]"/>
       <Property Name="ColorMapIndexOffset" Value="5"/>
       <Property Name="ControlID" Value="0"/>
@@ -50,7 +50,7 @@
     </Control>
     <Control ClassId="0x00001001" Name="Shape_8">
       <Property Name="BackColor" Value="250"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visu_manager.ButtonColor]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.ButtonColor]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PageControl]"/>
       <Property Name="ColorMapIndexOffset" Value="2"/>
       <Property Name="ControlID" Value="0"/>
@@ -113,7 +113,7 @@
     </Control>
     <Control ClassId="0x00001001" Name="Shape_9">
       <Property Name="BackColor" Value="250"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visu_manager.ButtonColor]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.ButtonColor]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PageControl]"/>
       <Property Name="ColorMapIndexOffset" Value="4"/>
       <Property Name="ControlID" Value="0"/>
@@ -161,7 +161,7 @@
     </Control>
     <Control ClassId="0x00001001" Name="Shape_10">
       <Property Name="BackColor" Value="250"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visu_manager.ButtonColor]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.ButtonColor]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PageControl]"/>
       <Property Name="ColorMapIndexOffset" Value="3"/>
       <Property Name="ControlID" Value="0"/>
@@ -209,7 +209,7 @@
     </Control>
     <Control ClassId="0x00001001" Name="Shape_11">
       <Property Name="BackColor" Value="250"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visu_manager.ButtonColor]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.ButtonColor]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PageControl]"/>
       <Property Name="ColorMapIndexOffset" Value="1"/>
       <Property Name="ControlID" Value="0"/>
@@ -333,7 +333,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visu_manager.PageControl]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.PageControl]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -348,7 +348,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="2"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visu_manager.PageControl]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.PageControl]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -363,7 +363,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="3"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visu_manager.PageControl]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.PageControl]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -378,7 +378,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="4"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visu_manager.PageControl]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.PageControl]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -393,7 +393,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="5"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visu_manager.PageControl]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.PageControl]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>

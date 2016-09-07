@@ -2,7 +2,7 @@
 <?AutomationStudio Version=4.2.5.388?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File" Private="true">product_infeed.var</Object>
-    <Object Type="Program" Language="IEC" Description="product infeed control">product_infeed</Object>
+    <Object Type="File">robot_head.var</Object>
+    <Object Type="Program" Language="IEC" Description="robot head control">robot_head</Object>
   </Objects>
 </Package>

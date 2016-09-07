@@ -5,7 +5,7 @@
   <Property Name="Description" Value=""/>
   <Property Name="Height" Value="480"/>
   <Property Name="Left" Value="0"/>
-  <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.PositionFilter_layer]"/>
+  <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.PositionFilter_layer]"/>
   <Property Name="Top" Value="0"/>
   <Property Name="Width" Value="800"/>
   <TextGroup>
@@ -243,7 +243,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.PositionFilter_layer]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.PositionFilter_layer]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
@@ -258,7 +258,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visu_manager.gVisu.page_MpAlarmXList.PositionFilter_layer]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.PositionFilter_layer]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>
