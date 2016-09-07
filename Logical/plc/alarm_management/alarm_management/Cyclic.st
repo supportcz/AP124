@@ -11,7 +11,7 @@ PROGRAM _CYCLIC
 	MpAlarmXListUI_0.UIConnect := ADR(MpAlarmXListUIConnect);
 	MpAlarmXListUI_0();
 	
-	IF airPresureOK THEN
+	IF diAirPresureOK THEN
 		MpAlarmXReset(gAlarmXCore,'AirPressureNotOK');
 	ELSE
 		MpAlarmXSet(gAlarmXCore,'AirPressureNotOK');

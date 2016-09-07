@@ -5,34 +5,34 @@ ACTION ArmsControl:
 	// get arms state 
 	armsState := undefinedState;
 		
-	IF leftArmClosed AND rightArmClosed AND NOT leftArmOpened AND NOT rightArmOpened THEN
+	IF diLeftArmClosed AND diRightArmClosed AND NOT diLeftArmOpened AND NOT diRightArmOpened THEN
 		armsState := armsClosed;
 	END_IF
 
-	IF leftArmOpened AND rightArmOpened AND NOT leftArmClosed AND NOT rightArmClosed THEN
+	IF diLeftArmOpened AND diRightArmOpened AND NOT diLeftArmClosed AND NOT diRightArmClosed THEN
 		armsState := armsOpened;
 	END_IF
 	
 	// command to close 
 	IF cmdCloseArms THEN
 		//set output
-		closeArms := TRUE;
+		doCloseArms := TRUE;
 		(* invert second output *)
-		openArms := NOT closeArms;
+		doOpenArms := NOT doCloseArms;
 	END_IF
 						
 	// command to open 
 	IF cmdOpenArms THEN
 		//set output
-		closeArms := FALSE;
+		doCloseArms := FALSE;
 		(* invert second output *)
-		openArms := NOT closeArms;
+		doOpenArms := NOT doCloseArms;
 	END_IF	
 	
 	//close left check
-	TON_CloseLeftRequest.IN := closeArms;
+	TON_CloseLeftRequest.IN := doCloseArms;
 	TON_CloseLeftRequest.PT := T#6s;
-	IF leftArmClosed THEN
+	IF diLeftArmClosed THEN
 		TON_CloseLeftRequest.IN := FALSE;
 	END_IF	
 	
@@ -40,13 +40,13 @@ ACTION ArmsControl:
 	
 	IF TON_CloseLeftRequest.Q THEN
 		MpAlarmXSet(gAlarmXCore,'LeftArmNotClosed');
-		closeArms := FALSE;
+		doCloseArms := FALSE;
 	END_IF
 
 	//close right check
-	TON_CloseRightRequest.IN := closeArms;
+	TON_CloseRightRequest.IN := doCloseArms;
 	TON_CloseRightRequest.PT := T#6s;
-	IF rightArmClosed THEN
+	IF diRightArmClosed THEN
 		TON_CloseRightRequest.IN := FALSE;
 	END_IF	
 	
@@ -54,13 +54,13 @@ ACTION ArmsControl:
 	
 	IF TON_CloseRightRequest.Q THEN
 		MpAlarmXSet(gAlarmXCore,'RightArmNotClosed');
-		closeArms := FALSE;
+		doCloseArms := FALSE;
 	END_IF
 
 	//open left check
-	TON_OpenLeftRequest.IN := openArms;
+	TON_OpenLeftRequest.IN := doOpenArms;
 	TON_OpenLeftRequest.PT := T#6s;
-	IF leftArmOpened THEN
+	IF diLeftArmOpened THEN
 		TON_OpenLeftRequest.IN := FALSE;
 	END_IF	
 	
@@ -68,13 +68,13 @@ ACTION ArmsControl:
 	
 	IF TON_OpenLeftRequest.Q THEN
 		MpAlarmXSet(gAlarmXCore,'LeftArmNotOpened');
-		openArms := FALSE;
+		doOpenArms := FALSE;
 	END_IF
 
 	//open right check
-	TON_OpenRightRequest.IN := openArms;
+	TON_OpenRightRequest.IN := doOpenArms;
 	TON_OpenRightRequest.PT := T#6s;
-	IF rightArmOpened THEN
+	IF diRightArmOpened THEN
 		TON_OpenRightRequest.IN := FALSE;
 	END_IF	
 	
@@ -82,7 +82,7 @@ ACTION ArmsControl:
 	
 	IF TON_OpenRightRequest.Q THEN
 		MpAlarmXSet(gAlarmXCore,'RightArmNotOpened');
-		openArms := FALSE;
+		doOpenArms := FALSE;
 	END_IF
 
 END_ACTION

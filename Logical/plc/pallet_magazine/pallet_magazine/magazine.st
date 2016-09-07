@@ -4,15 +4,15 @@ ACTION MagazineControl:
 	
 	magazineState := undefinedState1;
 	
-	IF magazineUpperPosition AND NOT magazineMiddlePositon AND NOT magazineLowerPosition THEN
+	IF diMagazineUpperPosition AND NOT diMagazineMiddlePositon AND NOT diMagazineLowerPosition THEN
 		magazineState := upperPosition;
 	END_IF
 
-	IF NOT magazineUpperPosition AND magazineMiddlePositon AND NOT magazineLowerPosition THEN
+	IF NOT diMagazineUpperPosition AND diMagazineMiddlePositon AND NOT diMagazineLowerPosition THEN
 		magazineState := middlePosition;
 	END_IF
 
-	IF NOT magazineUpperPosition AND NOT magazineMiddlePositon AND magazineLowerPosition THEN
+	IF NOT diMagazineUpperPosition AND NOT diMagazineMiddlePositon AND diMagazineLowerPosition THEN
 		magazineState := lowerPosition;
 	END_IF
 
@@ -46,7 +46,7 @@ ACTION MagazineControl:
 	//move to upper position check
 	TON_MoveToTheUpperPositon.IN := moveToUpperPosition;
 	TON_MoveToTheUpperPositon.PT := T#6s;
-	IF magazineUpperPosition THEN
+	IF diMagazineUpperPosition THEN
 		TON_MoveToTheUpperPositon.IN := FALSE;
 	END_IF	
 
@@ -59,10 +59,10 @@ ACTION MagazineControl:
 				
 				
 	//brake control
-	IF magazineUp OR magazineDown THEN
-		magazineBrake := TRUE;
+	IF doMagazineUp OR doMagazineDown THEN
+		doMagazineBrake := TRUE;
 	ELSE
-		magazineBrake := FALSE;
+		doMagazineBrake := FALSE;
 	END_IF
 	
 END_ACTION

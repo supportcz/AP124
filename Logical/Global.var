@@ -1,4 +1,4 @@
 VAR
-	airPresureOK : BOOL; (*VISU: 1...air pressure OK*)
+	diAirPresureOK : BOOL; (*VISU: 1...air pressure OK*)
 	cmdAllToManualMode : BOOL; (*VISU:complete machine to manual mode*)
 END_VAR
