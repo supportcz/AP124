@@ -37,6 +37,23 @@
       <Group ID="[7]">
         <Property ID="Name" Value="UpperPositionNotReached" />
         <Property ID="Message" Value="Upper position not reached" />
+        <Selector ID="Behavior">
+          <Property ID="MultipleInstances" Value="FALSE" />
+        </Selector>
+      </Group>
+      <Group ID="[8]">
+        <Property ID="Name" Value="MiddlePositionNotReached" />
+        <Property ID="Message" Value="Middle position not reached" />
+        <Selector ID="Behavior">
+          <Property ID="MultipleInstances" Value="FALSE" />
+        </Selector>
+      </Group>
+      <Group ID="[9]">
+        <Property ID="Name" Value="LowerPositionNotReached" />
+        <Property ID="Message" Value="Lower position not reached" />
+        <Selector ID="Behavior">
+          <Property ID="MultipleInstances" Value="FALSE" />
+        </Selector>
       </Group>
     </Group>
   </Element>

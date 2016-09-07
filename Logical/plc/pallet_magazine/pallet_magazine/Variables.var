@@ -1,36 +1,34 @@
 VAR
 	armsState : ArmsState; (*VISU:arms state*)
-	doCloseArms : BOOL; (*valve to close the arms*)
-	diAutomatMode : BOOL; (*3 funkce v 1 (reset safety+ovladaci obvody + start automatu)*)
 	cmdCloseArms : BOOL; (*VISU:command to close the arms*)
+	cmdDown : BOOL; (*VISU: button to go with magazine up, edge sensitive*)
 	cmdManualMode : BOOL; (*VISU:switches pallet magazine to manual mode*)
-	cmdDown : BOOL; (*VISU:go with magazine up*)
-	cmdUp : BOOL; (*VISU:go with magazine down*)
-	moveToLowerPosition : BOOL; (*go with magazine to lower position*)
-	moveToMiddlePosition : BOOL; (*go with magazine to middle position*)
-	moveToUpperPosition : BOOL; (*go with magazine to upper position*)
 	cmdOpenArms : BOOL; (*VISU:commad to open the arms*)
+	cmdUp : BOOL; (*VISU: go with magazine down, edge sensitive*)
+	diAutomatMode : BOOL; (*3 funkce v 1 (reset safety+ovladaci obvody + start automatu)*)
 	diLeftArmClosed : BOOL; (*left arm is closed*)
 	diLeftArmOpened : BOOL; (*left arm is opened*)
-	doMagazineBrake : BOOL; (*1=brake released*)
-	doMagazineDown : BOOL; (*contactor to go down*)
 	diMagazineLooseChain : BOOL; (*lower HW end switch*)
 	diMagazineLowerPosition : BOOL; (*magazine in lower position*)
 	diMagazineMiddlePositon : BOOL; (*magazine in middle position*)
-	magazineSafetyViolation : BOOL; (*safety violation*)
-	magazineState : MagazineState; (*VISU: state of magazine*)
-	doMagazineUp : BOOL; (*contactor to go up*)
 	diMagazineUpperHwEnd : BOOL; (*upper HW end switch*)
 	diMagazineUpperPosition : BOOL; (*magazine in upper position*)
-	modeOfOperation : ModeOfOperation;
 	diMotorProtectionP11 : BOOL;
-	doOpenArms : BOOL; (*valve to open the arms*)
 	diPalletOnConveyorP12 : BOOL; (*pallet detected on conveyor P12*)
 	diRightArmClosed : BOOL; (*right arm is closed*)
 	diRightArmOpened : BOOL; (*right arm is opened*)
+	doCloseArms : BOOL; (*valve to close the arms*)
+	doMagazineBrake : BOOL; (*1=brake released*)
+	doMagazineDown : BOOL; (*contactor to go down*)
+	doMagazineUp : BOOL; (*contactor to go up*)
+	doOpenArms : BOOL; (*valve to open the arms*)
+	magazineSafetyViolation : BOOL; (*safety violation*)
+	magazineState : MagazineState; (*VISU: current state of magazine*)
+	modeOfOperation : ModeOfOperation;
+	oldMagazineState : MagazineState;
 	TON_CloseLeftRequest : TON;
 	TON_CloseRightRequest : TON;
-	TON_MoveToTheUpperPositon : TON;
+	TON_VerticalMovement : TON;
 	TON_OpenLeftRequest : TON;
 	TON_OpenRightRequest : TON;
 END_VAR

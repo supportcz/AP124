@@ -2,16 +2,21 @@
 TYPE
 	MagazineState : 
 		(
-		undefinedState1,
-		upperPosition,
-		middlePosition,
-		lowerPosition
+		stateInit,
+		stateMoveToUpperPosition,
+		stateUpperPosition,
+		stateMoveToMiddlePosition,
+		stateMiddlePosition,
+		stateMoveToLowerPosition,
+		stateLowerPosition
 		);
 	ArmsState : 
 		(
-		undefinedState,
-		armsOpened,
-		armsClosed
+		stateInit1,
+		stateArmsOpening,
+		stateArmsOpened,
+		stateArmsClosing,
+		stateArmsClosed
 		);
 	ModeOfOperation : 
 		(
