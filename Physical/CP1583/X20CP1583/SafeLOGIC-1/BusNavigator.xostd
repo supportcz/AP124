@@ -34,7 +34,7 @@
         <Info Name="Description-de" Value="X20 SafeLOGIC Compact, 20xE, 24V, 2xKAT4" />
         <Info Name="Description-en" Value="X20 SafeLOGIC Compact, 20xI, 24V, 2xCAT4" />
         <Info Name="AsVariable" Value="BOOL001,pallet_mag:magazineSafetyViolation" />
-        <Info Name="AsVariable" Value="BOOL101,safety:activateSafetyCircuit" />
+        <Info Name="AsVariable" Value="BOOL101,pallet_mag:activateSafetyCircuit" />
       </NodeDescription>
       <ChannelConfiguration>
         <DataTransport>
