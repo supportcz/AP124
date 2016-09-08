@@ -1,1 +1,2 @@
-SF_EDM_V1_00_1,POE\Main\Code.GB,0,,12,85,,,,,,VAR,FB,,
+eStopNotPressed,POE\Main\Code.GB,1,OUT,16,4,Write,,SAFEBOOL,,,VAR,LOCAL,,
+SF_EDM_V1_00_1,POE\Main\pallet_magazine.GB,0,,32,2,,,,,,VAR,FB,,

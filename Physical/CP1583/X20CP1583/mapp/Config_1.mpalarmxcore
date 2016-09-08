@@ -86,6 +86,39 @@
         <Property ID="Message" Value="Motor protection P11 failure" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
+      <Group ID="[13]">
+        <Property ID="Name" Value="EStop1" />
+        <Property ID="Message" Value="E-Stop 1" />
+      </Group>
+      <Group ID="[14]">
+        <Property ID="Name" Value="EStop1" />
+        <Property ID="Message" Value="E-Stop 1" />
+      </Group>
+      <Group ID="[15]">
+        <Property ID="Name" Value="EStop3" />
+        <Property ID="Message" Value="E-Stop 3" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[16]">
+        <Property ID="Name" Value="EStop4" />
+        <Property ID="Message" Value="E-Stop 4" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[17]">
+        <Property ID="Name" Value="EStop5" />
+        <Property ID="Message" Value="E-Stop 5" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[18]">
+        <Property ID="Name" Value="EStopRobot" />
+        <Property ID="Message" Value="E-Stop Robot" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[19]">
+        <Property ID="Name" Value="EStopWrapper" />
+        <Property ID="Message" Value="E-Stop Wrapper" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
     </Group>
   </Element>
 </Configuration>

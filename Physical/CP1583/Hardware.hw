@@ -26,6 +26,13 @@
     <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11a" TargetConnector="SL1" />
   </Module>
+  <Module Name="I18" Type="X20SLX910" Version="1.10.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB52" TargetConnector="SS" />
+    <Connection Connector="SS2" TargetModule="X20TB52a" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM33" TargetConnector="SL1" />
+    <Parameter ID="SafeProject" Value="SafeLOGIC-1" />
+    <Parameter ID="SafeDesigner" Value="4.2.0.17" />
+  </Module>
   <Module Name="I24" Type="X20SI9100" Version="1.10.0.1">
     <Connection Connector="SS1" TargetModule="X20TB52b" TargetConnector="SS" />
     <Connection Connector="SS2" TargetModule="X20TB52c" TargetConnector="SS" />
@@ -251,13 +258,6 @@
   <Module Name="X20PS2100b" Type="X20PS2100" Version="1.1.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12b" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM01b" TargetConnector="SL1" />
-  </Module>
-  <Module Name="X20SLX910" Type="X20SLX910" Version="1.10.0.0">
-    <Connection Connector="SS1" TargetModule="X20TB52" TargetConnector="SS" />
-    <Connection Connector="SS2" TargetModule="X20TB52a" TargetConnector="SS" />
-    <Connection Connector="SL" TargetModule="X20BM33" TargetConnector="SL1" />
-    <Parameter ID="SafeProject" Value="SafeLOGIC-1" />
-    <Parameter ID="SafeDesigner" Value="4.2.0.17" />
   </Module>
   <Module Name="X20SO4110" Type="X20SO4110" Version="1.10.0.1">
     <Connection Connector="SS1" TargetModule="X20TB52e" TargetConnector="SS" />
