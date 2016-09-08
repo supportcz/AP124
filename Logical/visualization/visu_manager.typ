@@ -3,6 +3,7 @@ TYPE
 	gVisu_type : 	STRUCT 
 		page_MpAlarmXList : page_MpAlarmXList_type;
 		ChangePage : UINT;
+		TON_0 : TON_10ms;
 		CurrentPage : UINT;
 	END_STRUCT;
 	PageControl_enum : 
@@ -10,9 +11,10 @@ TYPE
 		Idle := 0,
 		ButtonAutomaticMode := 1,
 		ButtonManualMode := 2,
-		ButtonSettings := 3,
+		ButtonInfo := 3,
 		ButtonAlarmPage := 4,
-		ButtonSDM := 5
+		ButtonSDM := 5,
+		ButtonSettings := 6
 		);
 	page_Control : 	STRUCT 
 	END_STRUCT;
@@ -25,14 +27,14 @@ TYPE
 		StateAcknowledged : ARRAY[0..6]OF BOOL; (*Alarm is in Acknowledged state (according OPC UA Part 9: Alarms and Conditions)*)
 		Timestamp : ARRAY[0..6]OF STRING[50]; (*Timestamp of when the alarm was set*)
 		PositionFilter_layer : INT;
-		SelectedIndex_old : USINT;
 		ButtonMultiDown : BOOL;
 		ButtonMultiUp : BOOL;
 		ButtonDown : BOOL;
 		ButtonUp : BOOL;
-		SelectedIndex : USINT;
-		ListboxSelected_old : USINT;
-		AlarmCount : USINT;
-		ListboxSelected : USINT;
+		SelectedIndex : UINT;
+		SelectedIndex_old : UINT;
+		ListboxSelected : UINT;
+		ListboxSelected_old : UINT;
+		AlarmCount : UINT;
 	END_STRUCT;
 END_TYPE

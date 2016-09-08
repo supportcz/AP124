@@ -1,4 +1,15 @@
 ACTION CheckAlarmXListboxIndex:
+	
+	IF gVisu.page_MpAlarmXList.AlarmCount <> (MpAlarmXListUIConnect.AlarmList.MaxSelection+1) THEN
+		gVisu.page_MpAlarmXList.AlarmCount := (MpAlarmXListUIConnect.AlarmList.MaxSelection+1);
+		memcpy(ADR(gVisu.page_MpAlarmXList.Timestamp[1]),ADR(MpAlarmXListUIConnect.AlarmList.Timestamp[(gVisu.page_MpAlarmXList.SelectedIndex - gVisu.page_MpAlarmXList.ListboxSelected)]),SIZEOF(gVisu.page_MpAlarmXList.Timestamp[1])*6);
+		memcpy(ADR(gVisu.page_MpAlarmXList.Name[1]),ADR(MpAlarmXListUIConnect.AlarmList.Name[(gVisu.page_MpAlarmXList.SelectedIndex-gVisu.page_MpAlarmXList.ListboxSelected)]),SIZEOF(gVisu.page_MpAlarmXList.Name[1])*6);
+		memcpy(ADR(gVisu.page_MpAlarmXList.Message[1]),ADR(MpAlarmXListUIConnect.AlarmList.Message[(gVisu.page_MpAlarmXList.SelectedIndex-gVisu.page_MpAlarmXList.ListboxSelected)]),SIZEOF(gVisu.page_MpAlarmXList.Message[1])*6);
+		memcpy(ADR(gVisu.page_MpAlarmXList.Code[1]),ADR(MpAlarmXListUIConnect.AlarmList.Code[(gVisu.page_MpAlarmXList.SelectedIndex-gVisu.page_MpAlarmXList.ListboxSelected)]),SIZEOF(gVisu.page_MpAlarmXList.Code[1]));
+		memcpy(ADR(gVisu.page_MpAlarmXList.StateAcknowledged[1]),ADR(MpAlarmXListUIConnect.AlarmList.StateAcknowledged[(gVisu.page_MpAlarmXList.SelectedIndex-gVisu.page_MpAlarmXList.ListboxSelected)]),SIZEOF(gVisu.page_MpAlarmXList.StateAcknowledged[1])*6);
+		memcpy(ADR(gVisu.page_MpAlarmXList.StateActive[1]),ADR(MpAlarmXListUIConnect.AlarmList.StateActive[(gVisu.page_MpAlarmXList.SelectedIndex-gVisu.page_MpAlarmXList.ListboxSelected)]),SIZEOF(gVisu.page_MpAlarmXList.StateActive[1])*6);
+	END_IF;
+	
 	IF gVisu.page_MpAlarmXList.ListboxSelected <> gVisu.page_MpAlarmXList.ListboxSelected_old THEN
 		IF gVisu.page_MpAlarmXList.ListboxSelected > gVisu.page_MpAlarmXList.ListboxSelected_old THEN
 			gVisu.page_MpAlarmXList.SelectedIndex := gVisu.page_MpAlarmXList.SelectedIndex + (gVisu.page_MpAlarmXList.ListboxSelected-gVisu.page_MpAlarmXList.ListboxSelected_old);
@@ -37,4 +48,7 @@ ACTION CheckAlarmXListboxIndex:
 		gVisu.page_MpAlarmXList.ListboxSelected_old := gVisu.page_MpAlarmXList.ListboxSelected;
 		gVisu.page_MpAlarmXList.SelectedIndex_old := gVisu.page_MpAlarmXList.SelectedIndex;
 	END_IF;
+	
+
+	
 END_ACTION

@@ -55,8 +55,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpAlarmXListUIText]"/>
-          <Property Name="TextIndexOffset" Value="0"/>
+          <Property Name="TextGroup" Value="Source[local].TextGroup[MpButtons_PageTexts]"/>
+          <Property Name="TextIndexOffset" Value="4"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="27"/>
           <Property Name="Width" Value="800"/>
@@ -180,7 +180,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="260"/>
+          <Property Name="Left" Value="278"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
@@ -548,7 +548,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="375"/>
+          <Property Name="Left" Value="392"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
@@ -556,7 +556,7 @@
           <Property Name="TextIndexOffset" Value="7"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="93"/>
-          <Property Name="Width" Value="208"/>
+          <Property Name="Width" Value="191"/>
         </Control>
         <Control ClassId="0x00001004" Name="txtLabelCode">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -632,7 +632,7 @@
           <Property Name="TextIndexOffset" Value="5"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="93"/>
-          <Property Name="Width" Value="114"/>
+          <Property Name="Width" Value="132"/>
         </Control>
         <Control ClassId="0x00001002" Name="cmdAlarmDetail1">
           <Property Name="Bitmap" Value="Source[local].Bitmap[MpAlarmX_History]"/>
@@ -676,7 +676,6 @@
           <Property Name="Width" Value="32"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_1">
-          <Property Name="AddFractionDigits" Value="2"/>
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
           <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
@@ -706,7 +705,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="144"/>
+          <Property Name="Left" Value="162"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
@@ -732,7 +731,7 @@
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[1]]"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="128"/>
-          <Property Name="Width" Value="110"/>
+          <Property Name="Width" Value="118"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_12">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -750,7 +749,7 @@
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[2]]"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="164"/>
-          <Property Name="Width" Value="110"/>
+          <Property Name="Width" Value="118"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_13">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -768,7 +767,7 @@
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[3]]"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="200"/>
-          <Property Name="Width" Value="110"/>
+          <Property Name="Width" Value="118"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_14">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -786,7 +785,7 @@
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[4]]"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="236"/>
-          <Property Name="Width" Value="110"/>
+          <Property Name="Width" Value="117"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_15">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -804,7 +803,7 @@
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[5]]"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="272"/>
-          <Property Name="Width" Value="110"/>
+          <Property Name="Width" Value="117"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_16">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -822,7 +821,7 @@
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[6]]"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="308"/>
-          <Property Name="Width" Value="110"/>
+          <Property Name="Width" Value="116"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_17">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -834,7 +833,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[1]]"/>
-          <Property Name="Left" Value="148"/>
+          <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -854,7 +853,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[2]]"/>
-          <Property Name="Left" Value="148"/>
+          <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -874,7 +873,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[3]]"/>
-          <Property Name="Left" Value="148"/>
+          <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -894,7 +893,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[4]]"/>
-          <Property Name="Left" Value="148"/>
+          <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -914,7 +913,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[5]]"/>
-          <Property Name="Left" Value="148"/>
+          <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -934,7 +933,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[6]]"/>
-          <Property Name="Left" Value="148"/>
+          <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -953,7 +952,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="263"/>
+          <Property Name="Left" Value="281"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Alarm Name"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -971,7 +970,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="263"/>
+          <Property Name="Left" Value="281"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Alarm Name"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -989,7 +988,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="263"/>
+          <Property Name="Left" Value="281"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Alarm Name"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -1007,7 +1006,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="263"/>
+          <Property Name="Left" Value="281"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Alarm Name"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -1025,7 +1024,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="263"/>
+          <Property Name="Left" Value="281"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Alarm Name"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -1043,7 +1042,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="263"/>
+          <Property Name="Left" Value="281"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Alarm Name"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
@@ -1061,14 +1060,14 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="379"/>
+          <Property Name="Left" Value="394"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[1]]"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="128"/>
-          <Property Name="Width" Value="200"/>
+          <Property Name="Width" Value="185"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_30">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -1079,14 +1078,14 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="379"/>
+          <Property Name="Left" Value="394"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[2]]"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="164"/>
-          <Property Name="Width" Value="200"/>
+          <Property Name="Width" Value="185"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_31">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -1097,14 +1096,14 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="379"/>
+          <Property Name="Left" Value="395"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[3]]"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="200"/>
-          <Property Name="Width" Value="200"/>
+          <Property Name="Width" Value="185"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_32">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -1115,14 +1114,14 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="379"/>
+          <Property Name="Left" Value="394"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[4]]"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="236"/>
-          <Property Name="Width" Value="200"/>
+          <Property Name="Width" Value="185"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_33">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -1133,14 +1132,14 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="379"/>
+          <Property Name="Left" Value="394"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[5]]"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="272"/>
-          <Property Name="Width" Value="200"/>
+          <Property Name="Width" Value="185"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_34">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -1151,17 +1150,16 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="379"/>
+          <Property Name="Left" Value="394"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[6]]"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="308"/>
-          <Property Name="Width" Value="200"/>
+          <Property Name="Width" Value="185"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_2">
-          <Property Name="AddFractionDigits" Value="2"/>
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
           <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
@@ -1186,7 +1184,6 @@
           <Property Name="Width" Value="61"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_3">
-          <Property Name="AddFractionDigits" Value="2"/>
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
           <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
@@ -1211,7 +1208,6 @@
           <Property Name="Width" Value="61"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_4">
-          <Property Name="AddFractionDigits" Value="2"/>
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
           <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
@@ -1236,7 +1232,6 @@
           <Property Name="Width" Value="61"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_5">
-          <Property Name="AddFractionDigits" Value="2"/>
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
           <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
@@ -1261,7 +1256,6 @@
           <Property Name="Width" Value="61"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_6">
-          <Property Name="AddFractionDigits" Value="2"/>
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
           <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
@@ -1376,33 +1370,33 @@
         <Control ClassId="0x0000100D" Name="Line_9">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="144"/>
-          <Property Name="EndY" Value="129"/>
+          <Property Name="EndX" Value="161"/>
+          <Property Name="EndY" Value="127"/>
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
-          <Property Name="StartX" Value="144"/>
-          <Property Name="StartY" Value="343"/>
+          <Property Name="StartX" Value="161"/>
+          <Property Name="StartY" Value="341"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_10">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="260"/>
+          <Property Name="EndX" Value="278"/>
           <Property Name="EndY" Value="129"/>
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
-          <Property Name="StartX" Value="260"/>
+          <Property Name="StartX" Value="278"/>
           <Property Name="StartY" Value="343"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_11">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="375"/>
+          <Property Name="EndX" Value="393"/>
           <Property Name="EndY" Value="128"/>
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
-          <Property Name="StartX" Value="375"/>
+          <Property Name="StartX" Value="393"/>
           <Property Name="StartY" Value="342"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>

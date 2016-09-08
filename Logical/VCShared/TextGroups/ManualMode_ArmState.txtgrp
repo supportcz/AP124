@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="ManualMode_ArmState">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="3"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="174337" Value="Init State"/>
+    <Text ID="174338" Value="Arms Openening"/>
+    <Text ID="174339" Value="Arms Opened"/>
+    <Text ID="174624" Value="Arms Closing"/>
+    <Text ID="174625" Value="Arms Closed"/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="174337" Value="Počatečný stav"/>
+    <Text ID="174338" Value="Ramena se otevírají"/>
+    <Text ID="174339" Value="Ramena jsou otevřené"/>
+    <Text ID="174624" Value="Ramena se zavírají"/>
+    <Text ID="174625" Value="Ramena jsou zavřené"/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="174337" Value=""/>
+    <Text ID="174338" Value=""/>
+    <Text ID="174339" Value=""/>
+    <Text ID="174624" Value=""/>
+    <Text ID="174625" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="174337" Value="0"/>
+    <Index ID="174338" Value="1"/>
+    <Index ID="174339" Value="2"/>
+    <Index ID="174624" Value="3"/>
+    <Index ID="174625" Value="4"/>
+  </IndexMap>
+</TextGroup>

@@ -16,22 +16,22 @@
     <Text ID="90122" Value="HH:MM:SS"/>
     <Text ID="90123" Value="yyyy/mm/dd"/>
     <Text ID="90125" Value="Time and Date"/>
-    <Text ID="91313" Value="FileManager"/>
-    <Text ID="91515" Value="Diagnostic"/>
+    <Text ID="91515" Value="System Diagnostic Manager"/>
     <Text ID="92553" Value=""/>
     <Text ID="92557" Value=""/>
     <Text ID="92558" Value=""/>
     <Text ID="92559" Value=""/>
     <Text ID="92560" Value=""/>
     <Text ID="95076" Value="Display Settings"/>
-    <Text ID="95694" Value="Recipe"/>
-    <Text ID="98406" Value="Login"/>
-    <Text ID="98411" Value="User Settings"/>
-    <Text ID="98413" Value="Group Settings"/>
-    <Text ID="89137" Value="Setup"/>
-    <Text ID="124257" Value="Role Settings"/>
+    <Text ID="95694" Value="Manual Mode"/>
+    <Text ID="89137" Value="Settings"/>
     <Text ID="124258" Value=""/>
     <Text ID="124259" Value=""/>
+    <Text ID="174648" Value="- History"/>
+    <Text ID="174649" Value="Automatic Mode"/>
+    <Text ID="174650" Value="Info"/>
+    <Text ID="174651" Value="Alarms Page"/>
+    <Text ID="174653" Value="- Arms Control"/>
   </TextLayer>
   <TextLayer LanguageId="cs">
     <Text ID="89135" Value=""/>
@@ -45,22 +45,22 @@
     <Text ID="90122" Value=""/>
     <Text ID="90123" Value=""/>
     <Text ID="90125" Value=""/>
-    <Text ID="91313" Value=""/>
-    <Text ID="91515" Value=""/>
+    <Text ID="91515" Value="Systémový Diagnostický Manažer"/>
     <Text ID="92553" Value=""/>
     <Text ID="92557" Value=""/>
     <Text ID="92558" Value=""/>
     <Text ID="92559" Value=""/>
     <Text ID="92560" Value=""/>
     <Text ID="95076" Value=""/>
-    <Text ID="95694" Value=""/>
-    <Text ID="98406" Value=""/>
-    <Text ID="98411" Value=""/>
-    <Text ID="98413" Value=""/>
-    <Text ID="89137" Value=""/>
-    <Text ID="124257" Value=""/>
+    <Text ID="95694" Value="Manuálny Mód"/>
+    <Text ID="89137" Value="Nastavení"/>
     <Text ID="124258" Value=""/>
     <Text ID="124259" Value=""/>
+    <Text ID="174648" Value="- Historie"/>
+    <Text ID="174649" Value="Automatický Mód"/>
+    <Text ID="174650" Value="Info"/>
+    <Text ID="174651" Value="Alarmy"/>
+    <Text ID="174653" Value="- Ovládání ramen"/>
   </TextLayer>
   <TextLayer LanguageId="fr">
     <Text ID="89135" Value=""/>
@@ -74,7 +74,6 @@
     <Text ID="90122" Value=""/>
     <Text ID="90123" Value=""/>
     <Text ID="90125" Value=""/>
-    <Text ID="91313" Value=""/>
     <Text ID="91515" Value=""/>
     <Text ID="92553" Value=""/>
     <Text ID="92557" Value=""/>
@@ -83,13 +82,14 @@
     <Text ID="92560" Value=""/>
     <Text ID="95076" Value=""/>
     <Text ID="95694" Value=""/>
-    <Text ID="98406" Value=""/>
-    <Text ID="98411" Value=""/>
-    <Text ID="98413" Value=""/>
     <Text ID="89137" Value=""/>
-    <Text ID="124257" Value=""/>
     <Text ID="124258" Value=""/>
     <Text ID="124259" Value=""/>
+    <Text ID="174648" Value=""/>
+    <Text ID="174649" Value=""/>
+    <Text ID="174650" Value=""/>
+    <Text ID="174651" Value=""/>
+    <Text ID="174653" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="89135" Value="6010"/>
@@ -103,21 +103,21 @@
     <Index ID="90122" Value="6005"/>
     <Index ID="90123" Value="6006"/>
     <Index ID="90125" Value="6007"/>
-    <Index ID="91313" Value="3"/>
-    <Index ID="91515" Value="7"/>
+    <Index ID="91515" Value="5"/>
     <Index ID="92553" Value="1208"/>
     <Index ID="92557" Value="1209"/>
     <Index ID="92558" Value="1210"/>
     <Index ID="92559" Value="1211"/>
     <Index ID="92560" Value="1212"/>
     <Index ID="95076" Value="6008"/>
-    <Index ID="95694" Value="4"/>
-    <Index ID="98406" Value="10"/>
-    <Index ID="98411" Value="11"/>
-    <Index ID="98413" Value="12"/>
-    <Index ID="89137" Value="2"/>
-    <Index ID="124257" Value="13"/>
+    <Index ID="95694" Value="2"/>
+    <Index ID="89137" Value="6"/>
     <Index ID="124258" Value="14"/>
     <Index ID="124259" Value="15"/>
+    <Index ID="174648" Value="8"/>
+    <Index ID="174649" Value="1"/>
+    <Index ID="174650" Value="3"/>
+    <Index ID="174651" Value="4"/>
+    <Index ID="174653" Value="7"/>
   </IndexMap>
 </TextGroup>

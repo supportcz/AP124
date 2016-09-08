@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="ManualMode_ArmTexts">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="4"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="174344" Value="Open"/>
+    <Text ID="174345" Value="Close"/>
+    <Text ID="174346" Value="Up"/>
+    <Text ID="174347" Value="Down"/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="174344" Value="Otevři"/>
+    <Text ID="174345" Value="Zavři"/>
+    <Text ID="174346" Value="Nahoru"/>
+    <Text ID="174347" Value="Dolu"/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="174344" Value=""/>
+    <Text ID="174345" Value=""/>
+    <Text ID="174346" Value=""/>
+    <Text ID="174347" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="174344" Value="0"/>
+    <Index ID="174345" Value="1"/>
+    <Index ID="174346" Value="2"/>
+    <Index ID="174347" Value="3"/>
+  </IndexMap>
+</TextGroup>
