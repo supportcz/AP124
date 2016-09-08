@@ -19,7 +19,7 @@
       <Property Name="OutlineDisplayName" Value="True"/>
       <Property Name="OutlineHatched" Value="False"/>
       <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Outline"/>
+      <Property Name="VisibilityMode" Value="Normal"/>
       <Property Name="Z-Order" Value="0"/>
     </LayerRef>
     <Layer Name="Default">
@@ -34,7 +34,7 @@
       <Property Name="OutlineHatched" Value="False"/>
       <Property Name="StatusDatapoint" Value="None"/>
       <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Outline"/>
+      <Property Name="VisibilityMode" Value="Normal"/>
       <Property Name="Width" Value="800"/>
       <Property Name="Z-Order" Value="1"/>
       <TextGroup>
@@ -55,8 +55,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpAlarmXHistoryUIText]"/>
-          <Property Name="TextIndexOffset" Value="0"/>
+          <Property Name="TextGroup" Value="Source[local].TextGroup[MpButtons_PageTexts]"/>
+          <Property Name="TextIndexOffset" Value="4"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="45"/>
           <Property Name="Width" Value="800"/>
@@ -173,39 +173,6 @@
           <Property Name="Top" Value="232"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_151]"/>
           <Property Name="Width" Value="40"/>
-        </Control>
-        <Control ClassId="0x00001004" Name="txtStatusLabel">
-          <Property Name="Border" Value="Source[local].Border[Mp_LabelBorder]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="26"/>
-          <Property Name="Left" Value="570"/>
-          <Property Name="Multiline" Value="Automatic"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value=""/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpAlarmXHistoryUIText]"/>
-          <Property Name="TextIndexOffset" Value="1"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="49"/>
-          <Property Name="Width" Value="70"/>
-        </Control>
-        <Control ClassId="0x00001004" Name="txtStatusInfo">
-          <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="ForeColor" Value="254"/>
-          <Property Name="Height" Value="26"/>
-          <Property Name="IndexDatapoint" Value="None"/>
-          <Property Name="Left" Value="643"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value=""/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpAlarmXHistoryStatus]"/>
-          <Property Name="TextIndexOffset" Value="0"/>
-          <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="49"/>
-          <Property Name="Width" Value="150"/>
         </Control>
         <Control ClassId="0x00001004" Name="txtLabelName">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -979,6 +946,22 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="45"/>
           <Property Name="Width" Value="32"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_1">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
+          <Property Name="ForeColor" Value="254"/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="Left" Value="131"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+          <Property Name="TextGroup" Value="Source[local].TextGroup[MpButtons_PageTexts]"/>
+          <Property Name="TextIndexOffset" Value="8"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="45"/>
+          <Property Name="Width" Value="77"/>
         </Control>
       </Controls>
       <KeyMapping>

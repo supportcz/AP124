@@ -344,8 +344,15 @@
     <Source File="Bitmaps\MpIcon_MpUserClick2.bminfo"/>
     <Source File="Bitmaps\MpIcon_MpUserXClick.bminfo"/>
     <Source File="Bitmaps\documentinfo.bminfo"/>
-    <Source File="Bitmaps\A.bminfo"/>
-    <Source File="Bitmaps\M.bminfo"/>
+    <Source File="Bitmaps\information.bminfo"/>
+    <Source File="Bitmaps\info.bminfo"/>
+    <Source File="Bitmaps\ButtonArrowUp.bminfo"/>
+    <Source File="Bitmaps\ButtonArrowDown.bminfo"/>
+    <Source File="Bitmaps\ButtonArrowDownPressed.bminfo"/>
+    <Source File="Bitmaps\ButtonArrowUpPressed.bminfo"/>
+    <Source File="Bitmaps\ButtonArrowLeftPressed.bminfo"/>
+    <Source File="Bitmaps\ButtonArrowLeft.bminfo"/>
+    <Source File="Bitmaps\ManualModeLogo.bminfo"/>
     <Source File="BitmapGroups\MpAlarmAcknowledgeState.bmgrp"/>
     <Source File="BitmapGroups\MpPads.bmgrp"/>
     <Source File="BitmapGroups\MpUserIcons.bmgrp"/>
@@ -354,12 +361,14 @@
     <Source File="BitmapGroups\MpAlarmXHistoryStates.bmgrp"/>
     <Source File="BitmapGroups\MpAlarmXStates.bmgrp"/>
     <Source File="BitmapGroups\MpBorders.bmgrp"/>
-    <Source File="Pages\Page_30_Settings.page"/>
+    <Source File="Pages\Page_60_Settings.page"/>
     <Source File="Pages\Page_41_MpAlarmXHistory.page"/>
     <Source File="Pages\Page_40_MpAlarmXList.page"/>
     <Source File="Pages\Page_10_AutomaticMode.page"/>
     <Source File="Pages\Page_50_SDM.page"/>
     <Source File="Pages\Page_20_ManualMode.page"/>
+    <Source File="Pages\Page_30_Info.page"/>
+    <Source File="Pages\Page_21_ManualArmsControl.page"/>
     <Source File="Layers\MpPageControl.layer"/>
     <Source File="Layers\MpBackground.layer"/>
     <Source File="Layers\Layer_PositionFilter.layer"/>
@@ -431,6 +440,7 @@
     <Source File="ColorMaps\ColorMap_ContainerListboxNum.clm"/>
     <Source File="ColorMaps\ColorMap_IndexMngmt.clm"/>
     <Source File="ColorMaps\ColorMap_PageControl.clm"/>
+    <Source File="ColorMaps\ColorMap_PageControlAlarm.clm"/>
     <Source File="VirtualKeys.vcvk"/>
     <Source File="Palette.vcr"/>
   </SourceFiles>

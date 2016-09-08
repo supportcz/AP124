@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?AutomationStudio Version="4.2.5.388"?>
-<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="Page_30_Settings">
+<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="Page_60_Settings">
   <Property Name="Description" Value="Template setup page - system configuration"/>
   <Property Name="Height" Value="480"/>
-  <Property Name="Index" Value="30"/>
+  <Property Name="Index" Value="60"/>
   <Property Name="MoveFocus" Value="Circular"/>
   <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
   <Property Name="Width" Value="800"/>
@@ -48,16 +48,16 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
-          <Property Name="Height" Value="370"/>
+          <Property Name="Height" Value="388"/>
           <Property Name="Left" Value="0"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
           <Property Name="TextGroup" Value="Source[local].TextGroup[MpButtons_PageTexts]"/>
-          <Property Name="TextIndexOffset" Value="2"/>
+          <Property Name="TextIndexOffset" Value="6"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="45"/>
+          <Property Name="Top" Value="27"/>
           <Property Name="Width" Value="800"/>
         </Control>
         <Control ClassId="0x00001002" Name="cmdTouchCalib">

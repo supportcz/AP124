@@ -10,6 +10,7 @@
     <Text ID="174065" Value="Settings"/>
     <Text ID="174066" Value="Alarm\nPage"/>
     <Text ID="174067" Value="SDM"/>
+    <Text ID="174333" Value="Info"/>
   </TextLayer>
   <TextLayer LanguageId="cs">
     <Text ID="174062" Value="Automatický\Mód"/>
@@ -17,6 +18,7 @@
     <Text ID="174065" Value="Nastavení"/>
     <Text ID="174066" Value="Alarmy"/>
     <Text ID="174067" Value="SDM"/>
+    <Text ID="174333" Value="Info"/>
   </TextLayer>
   <TextLayer LanguageId="fr">
     <Text ID="174062" Value=""/>
@@ -24,12 +26,14 @@
     <Text ID="174065" Value=""/>
     <Text ID="174066" Value=""/>
     <Text ID="174067" Value=""/>
+    <Text ID="174333" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="174062" Value="0"/>
     <Index ID="174063" Value="1"/>
-    <Index ID="174065" Value="2"/>
+    <Index ID="174065" Value="5"/>
     <Index ID="174066" Value="3"/>
     <Index ID="174067" Value="4"/>
+    <Index ID="174333" Value="2"/>
   </IndexMap>
 </TextGroup>
