@@ -7,8 +7,8 @@ VAR_CONFIG
 	::pallet_mag:diPalletOnConveyorP12 AT %IX."I70".DigitalInput08;
 	::pallet_mag:doOpenArms AT %QX."Q71".DigitalOutput01;
 	::pallet_mag:doCloseArms AT %QX."Q71".DigitalOutput02;
-	::pallet_mag:magazineSafetyViolation AT %IX."X20SLX910".BOOL001;
-	::pallet_mag:activateSafetyCircuit AT %QX."X20SLX910".BOOL101;
+	::pallet_mag:magazineSafetyViolation AT %IX."I18".BOOL001;
+	::pallet_mag:activateSafetyCircuit AT %QX."I18".BOOL101;
 	::pallet_mag:diMagazineUpperPosition AT %IX."I70".DigitalInput01;
 	::pallet_mag:diMagazineMiddlePositon AT %IX."I70".DigitalInput02;
 	::pallet_mag:diMagazineLowerPosition AT %IX."I70".DigitalInput03;
@@ -22,4 +22,11 @@ VAR_CONFIG
 	::diReset AT %IX."I08".DigitalInput03;
 	::pallet_mag:diMagazineContactorState AT %IX."I24".SafeDigitalInput17;
 	::diAuto AT %IX."I08".DigitalInput02;
+	::safety:diEStop1 AT %IX."I18".SafeTwoChannelInput0102;
+	::safety:diEStop2 AT %IX."I18".SafeTwoChannelInput0304;
+	::safety:diEStop3 AT %IX."I18".SafeTwoChannelInput0506;
+	::safety:diEStop4 AT %IX."I18".SafeTwoChannelInput0708;
+	::safety:diEStop5 AT %IX."I18".SafeTwoChannelInput0910;
+	::safety:diEStopRobot AT %IX."I18".SafeTwoChannelInput1112;
+	::safety:diEStopWrapper AT %IX."I18".SafeTwoChannelInput1314;
 END_VAR

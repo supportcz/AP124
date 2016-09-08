@@ -28,13 +28,20 @@
         <Info Name="Interface" Value="IF6.ST11" />
         <Info Name="HWC_Revision" Value="1.10.0.0" />
         <Info Name="HWC_LastEdit" Value="12.5.2016 8:28:32" />
-        <Info Name="AS_Name" Value="X20SLX910" />
+        <Info Name="AS_Name" Value="I18" />
         <Info Name="FirstPublishedSafetyRelease" Value="1.7" />
         <Info Name="ProjectSL" Value="1" />
         <Info Name="Description-de" Value="X20 SafeLOGIC Compact, 20xE, 24V, 2xKAT4" />
         <Info Name="Description-en" Value="X20 SafeLOGIC Compact, 20xI, 24V, 2xCAT4" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput0304,safety:diEStop2" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput0910,safety:diEStop4" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput1314,safety:diEStopWrapper" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput0506,safety:diEStop3" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput0102,safety:diEStop1" />
         <Info Name="AsVariable" Value="BOOL001,pallet_mag:magazineSafetyViolation" />
         <Info Name="AsVariable" Value="BOOL101,pallet_mag:activateSafetyCircuit" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput0708,safety:diEStop4" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput1112,safety:diEStopRobot" />
       </NodeDescription>
       <ChannelConfiguration>
         <DataTransport>

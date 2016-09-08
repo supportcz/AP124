@@ -2,14 +2,20 @@
 T: PROGRAM Main
 FW: NO
 CI#: 80
-QSL: 1
-QVE: 1
-QVPC: 1
+QSL: 2
+QVE: 2
+QVPC: 2
 QPar: 0
 QFBI: 1
 *)
 @V 1 2 0
 SF_EDM_V1_00_1	1	VAR	@FB:81
+		     
+
+;
+
+@V 1 3 0
+eStopNotPressed	2	VAR	@TYP:43
 		     
 
 ;
