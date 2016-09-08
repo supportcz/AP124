@@ -96,6 +96,7 @@
         <Info Name="Description-de" Value="X20 Safe Digital In, 20xE, 24V" />
         <Info Name="Description-en" Value="X20 Safe Digital In, 20xI, 24V" />
         <Info Name="AsVariable" Value="SafeDigitalInput17,pallet_mag:diMagazineContactorState" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput0102,pallet_mag:diLightCurtainP11" />
       </NodeDescription>
       <ChannelConfiguration />
     </SafetyNode>

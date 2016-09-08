@@ -56,6 +56,9 @@ PROGRAM _CYCLIC
 	IF diLightCurtainP11 THEN
 		MpAlarmXSet(gAlarmXCore,'LightCurtainP11');
 	END_IF
+	
+	alarmImage[0] := magazineSafetyViolation;
+	acknowledgeImage[0];
 		
 	
 END_PROGRAM

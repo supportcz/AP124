@@ -25,6 +25,7 @@ TYPE
 		Name : ARRAY[0..6]OF STRING[255]; (*Unique alarm name within the current scope*)
 		StateActive : ARRAY[0..6]OF BOOL; (*Alarm is in Active state (according OPC UA Part 9: Alarms and Conditions)*)
 		StateAcknowledged : ARRAY[0..6]OF BOOL; (*Alarm is in Acknowledged state (according OPC UA Part 9: Alarms and Conditions)*)
+		ListboxLineDisable : ARRAY[0..6]OF INT;
 		Timestamp : ARRAY[0..6]OF STRING[50]; (*Timestamp of when the alarm was set*)
 		PositionFilter_layer : INT;
 		ButtonMultiDown : BOOL;
@@ -36,5 +37,7 @@ TYPE
 		ListboxSelected : UINT;
 		ListboxSelected_old : UINT;
 		AlarmCount : UINT;
+		Ackownledge : BOOL;
+		AckownledgeAll : BOOL;
 	END_STRUCT;
 END_TYPE
