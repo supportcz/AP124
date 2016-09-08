@@ -119,6 +119,13 @@
         <Property ID="Message" Value="E-Stop Wrapper" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
+      <Group ID="[20]">
+        <Property ID="Name" Value="LightCurtainP11" />
+        <Property ID="Message" Value="Light Curtain P11" />
+        <Selector ID="Behavior">
+          <Property ID="MultipleInstances" Value="FALSE" />
+        </Selector>
+      </Group>
     </Group>
   </Element>
 </Configuration>

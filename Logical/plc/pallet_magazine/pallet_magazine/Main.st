@@ -53,7 +53,9 @@ PROGRAM _CYCLIC
 		MpAlarmXReset(gAlarmXCore,'PalletMagazineSafetyViolation');
 	END_IF
 	
-
+	IF diLightCurtainP11 THEN
+		MpAlarmXSet(gAlarmXCore,'LightCurtainP11');
+	END_IF
 		
 	
 END_PROGRAM

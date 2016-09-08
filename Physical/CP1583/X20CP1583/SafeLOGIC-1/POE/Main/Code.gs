@@ -8,9 +8,9 @@
 8	51	26	63	28	4	5	diEStop3
 9	51	30	63	32	4	5	diEStop4
 13	51	34	63	36	4	5	diEStop5
-14	46	38	63	40	4	5	diEStopRobot
-15	44	42	63	44	4	5	diEStopWrapper
-16	76	18	96	20	4	3	eStopNotPressed
+14	76	18	96	20	4	3	eStopNotPressed
+15	50	38	63	40	4	5	SAFETRUE
+16	50	42	63	44	4	5	SAFETRUE
 
 [FBS]
 1

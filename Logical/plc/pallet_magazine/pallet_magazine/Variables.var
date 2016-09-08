@@ -1,16 +1,16 @@
 VAR
 	activateSafetyCircuit : BOOL;
-	palletOnConveyor : BOOL; (*VISU:pallet lies on conveyor*)
 	armsState : ArmsState; (*VISU:arms state*)
+	cmdAutoMode : BOOL; (*VISU:switches pallet magazine to automatic mode*)
 	cmdCloseArms : BOOL; (*VISU:command to close the arms*)
 	cmdDown : BOOL; (*VISU: button to go with magazine up*)
-	cmdAutoMode : BOOL; (*VISU:switches pallet magazine to automatic mode*)
 	cmdOpenArms : BOOL; (*VISU:commad to open the arms*)
 	cmdUp : BOOL; (*VISU: go with magazine down*)
-	diMagazineContactorState : BOOL; (*state of magazine contactor*)
 	diAutoMode : BOOL; (*3 funkce v 1 (reset safety+ovladaci obvody + start automatu)*)
 	diLeftArmClosed : BOOL; (*left arm is closed*)
 	diLeftArmOpened : BOOL; (*left arm is opened*)
+	diLightCurtainP11 : BOOL; (*status of light curtain P11*)
+	diMagazineContactorState : BOOL; (*state of magazine contactor (up and down movement)*)
 	diMagazineLooseChain : BOOL; (*lower HW end switch*)
 	diMagazineLowerPosition : BOOL; (*magazine in lower position*)
 	diMagazineMiddlePositon : BOOL; (*magazine in middle position*)
@@ -28,8 +28,9 @@ VAR
 	magazineSafetyViolation : BOOL; (*safety violation*)
 	magazineState : MagazineState; (*VISU: current state of magazine*)
 	modeOfOperation : ModeOfOperation;
+	palletOnConveyor : BOOL; (*VISU:pallet lies on conveyor*)
+	readyToStart : BOOL;
 	TON_LeftRequest : TON;
 	TON_RightRequest : TON;
 	TON_VerticalMovement : TON;
-	readyToStart : BOOL;
 END_VAR

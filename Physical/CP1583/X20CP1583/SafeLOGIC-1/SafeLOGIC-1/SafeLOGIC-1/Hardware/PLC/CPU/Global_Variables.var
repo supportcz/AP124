@@ -10,21 +10,21 @@ VAR_GLOBAL {Group(0)}
     {LINE(4)}
     pallet_mag_activateSafety AT %IX0.0 : BOOL {Custom('SL1.SM1.BOOL101')};
     {LINE(5)}
-    SM6_ReleaseOutput01 AT %QX23.0 : BOOL {Custom('SL1.SM6.ReleaseOutput01')};
-    {LINE(6)}
-    SM6_ReleaseOutput02 AT %QX23.1 : BOOL {Custom('SL1.SM6.ReleaseOutput02')};
-    {LINE(7)}
     diEStop1 AT %IX18.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0102')};
-    {LINE(8)}
+    {LINE(6)}
     diEStop2 AT %IX18.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0304')};
-    {LINE(9)}
+    {LINE(7)}
     diEStop3 AT %IX22.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelOk0102')};
-    {LINE(10)}
+    {LINE(8)}
     diEStop4 AT %IX22.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelOk0304')};
-    {LINE(11)}
+    {LINE(9)}
     diEStop5 AT %IX18.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0506')};
-    {LINE(12)}
+    {LINE(10)}
     diEStopRobot AT %IX18.7 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0708')};
-    {LINE(13)}
+    {LINE(11)}
     diEStopWrapper AT %IX22.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelOk0506')};
+    {LINE(12)}
+    SM6_ReleaseOutput01 AT %QX23.0 : BOOL {Custom('SL1.SM6.ReleaseOutput01')};
+    {LINE(13)}
+    SM6_ReleaseOutput02 AT %QX23.1 : BOOL {Custom('SL1.SM6.ReleaseOutput02')};
 END_VAR
