@@ -56,11 +56,27 @@ PROGRAM _CYCLIC
 		gVisu.TON_0.IN := FALSE;
 	END_IF;
 	
+	(***************************************************************************)		
+	(* 								AlarmX Ackownledge 				  	       *)
+	(***************************************************************************)
+	
+	IF(EDGEPOS(gVisu.page_MpAlarmXList.AckownledgeAll)) THEN
+		MpAlarmXListUIConnect.AcknowledgeAll := TRUE;
+		RefreshListbox;
+	END_IF;
+	
+	IF (EDGEPOS(gVisu.page_MpAlarmXList.Ackownledge) AND gVisu.page_MpAlarmXList.AlarmCount > 0) THEN
+		MpAlarmXListUIConnect.AlarmList.SelectedIndex := (gVisu.page_MpAlarmXList.SelectedIndex-1);
+		MpAlarmXListUIConnect.Acknowledge := TRUE;
+		RefreshListbox;
+	END_IF; 
+
 	
 	(***************************************************************************)		
 	(* 								AlarmX listbox arrows				  	   *)	
 	(***************************************************************************)
 	CheckAlarmXListboxIndex;
+	
 	IF (EDGEPOS(gVisu.page_MpAlarmXList.ButtonDown)) AND (gVisu.page_MpAlarmXList.SelectedIndex < gVisu.page_MpAlarmXList.AlarmCount) THEN
 		gVisu.page_MpAlarmXList.SelectedIndex := gVisu.page_MpAlarmXList.SelectedIndex +1;
 	END_IF;

@@ -1,4 +1,5 @@
 VAR
+	alarmImage : ARRAY[0..99] OF BOOL;
 	activateSafetyCircuit : BOOL;
 	palletOnConveyor : BOOL; (*VISU:pallet lies on conveyor*)
 	armsState : ArmsState; (*VISU:arms state*)
@@ -32,4 +33,5 @@ VAR
 	TON_RightRequest : TON;
 	TON_VerticalMovement : TON;
 	readyToStart : BOOL;
+	acknowledgeImage : ARRAY[0..99] OF BOOL;
 END_VAR

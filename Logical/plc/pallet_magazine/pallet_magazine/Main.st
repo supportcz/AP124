@@ -53,6 +53,8 @@ PROGRAM _CYCLIC
 		MpAlarmXReset(gAlarmXCore,'PalletMagazineSafetyViolation');
 	END_IF
 	
+	alarmImage[0];
+	acknowledgeImage[0];
 
 		
 	

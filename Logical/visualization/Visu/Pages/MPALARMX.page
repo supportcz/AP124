@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?AutomationStudio Version="4.2.5.388"?>
-<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="Page_40_MpAlarmXList">
+<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="MPALARMX">
   <Property Name="Description" Value="mapp VC4 template MpAlarmXList"/>
   <Property Name="Height" Value="480"/>
-  <Property Name="Index" Value="999"/>
+  <Property Name="Index" Value="40"/>
   <Property Name="LockedForeColor" Value="253"/>
   <Property Name="MoveFocus" Value="Circular"/>
   <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -67,10 +67,10 @@
           <Property Name="Border" Value="Source[local].Border[Mp_Button_Multi_Scroll_Up]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_192]"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_1]"/>
           <Property Name="Height" Value="40"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="693"/>
+          <Property Name="Left" Value="736"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Multi_Scroll_Up_press]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -78,8 +78,8 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="121"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_192]"/>
+          <Property Name="Top" Value="126"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_1]"/>
           <Property Name="Width" Value="40"/>
         </Control>
         <Control ClassId="0x00001002" Name="btnPageDown">
@@ -88,10 +88,10 @@
           <Property Name="Border" Value="Source[local].Border[Mp_Button_Multi_Scroll_Down]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_193]"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_25]"/>
           <Property Name="Height" Value="40"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="692"/>
+          <Property Name="Left" Value="735"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Multi_Scroll_Dwn_press]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -99,8 +99,8 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="299"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_193]"/>
+          <Property Name="Top" Value="304"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_25]"/>
           <Property Name="Width" Value="40"/>
         </Control>
         <Control ClassId="0x00001012" Name="sclScrollBar">
@@ -109,8 +109,8 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="0"/>
-          <Property Name="Height" Value="217"/>
-          <Property Name="Left" Value="667"/>
+          <Property Name="Height" Value="219"/>
+          <Property Name="Left" Value="710"/>
           <Property Name="Marker" Value="None"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="50"/>
@@ -127,7 +127,7 @@
           <Property Name="RangeWidth" Value="32"/>
           <Property Name="Spacing" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="123"/>
+          <Property Name="Top" Value="126"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.SelectedIndex]"/>
           <Property Name="ValueSimulation" Value="0"/>
           <Property Name="Width" Value="20"/>
@@ -138,10 +138,10 @@
           <Property Name="Border" Value="Source[local].Border[Mp_Button_Scoll_Up]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_194]"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_26]"/>
           <Property Name="Height" Value="40"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="693"/>
+          <Property Name="Left" Value="736"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Scoll_Up_pressed]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -149,8 +149,8 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="179"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_194]"/>
+          <Property Name="Top" Value="184"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_26]"/>
           <Property Name="Width" Value="40"/>
         </Control>
         <Control ClassId="0x00001002" Name="btnScrollDown">
@@ -159,10 +159,10 @@
           <Property Name="Border" Value="Source[local].Border[Mp_Button_Scroll_Down]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_195]"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_27]"/>
           <Property Name="Height" Value="40"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="693"/>
+          <Property Name="Left" Value="736"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Scroll_Down_pressed]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -170,9 +170,25 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="236"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_195]"/>
+          <Property Name="Top" Value="241"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_27]"/>
           <Property Name="Width" Value="40"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtLabelName">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="278"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[MpAlarmXListUIText]"/>
+          <Property Name="TextIndexOffset" Value="6"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="93"/>
+          <Property Name="Width" Value="115"/>
         </Control>
         <Control ClassId="0x00001002" Name="cmdAcknowledgeAll">
           <Property Name="Bitmap" Value="Source[local].Bitmap[MpAlarm_QuitAll]"/>
@@ -182,7 +198,7 @@
           <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_207]"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_28]"/>
           <Property Name="Height" Value="60"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="26"/>
@@ -198,7 +214,7 @@
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="350"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_207]"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_28]"/>
           <Property Name="Width" Value="127"/>
         </Control>
         <Control ClassId="0x00001002" Name="cmdAcknowledge">
@@ -209,7 +225,7 @@
           <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_208]"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_29]"/>
           <Property Name="Height" Value="59"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="165"/>
@@ -225,7 +241,7 @@
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="351"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_208]"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_29]"/>
           <Property Name="Width" Value="115"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_1">
@@ -237,10 +253,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="36"/>
-          <Property Name="Left" Value="207"/>
+          <Property Name="Left" Value="30"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="124"/>
-          <Property Name="Width" Value="451"/>
+          <Property Name="Top" Value="127"/>
+          <Property Name="Width" Value="674"/>
         </Control>
         <Control ClassId="0x00001005" Name="bmpStateActiveIdx_1">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -253,29 +269,29 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="18"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateActive[1]]"/>
-          <Property Name="Left" Value="604"/>
+          <Property Name="Left" Value="649"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[1]]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="134"/>
+          <Property Name="Top" Value="137"/>
           <Property Name="Width" Value="18"/>
         </Control>
         <Control ClassId="0x00001005" Name="bmpStateAckIdx_1">
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmAcknowledgeState]"/>
-          <Property Name="BitmapIndex" Value="1"/>
+          <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="16"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateAcknowledged[1]]"/>
-          <Property Name="Left" Value="636"/>
+          <Property Name="Left" Value="681"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[1]]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="134"/>
+          <Property Name="Top" Value="137"/>
           <Property Name="Width" Value="17"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_2">
@@ -287,10 +303,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="207"/>
+          <Property Name="Left" Value="31"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="161"/>
-          <Property Name="Width" Value="451"/>
+          <Property Name="Top" Value="164"/>
+          <Property Name="Width" Value="672"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_3">
           <Property Name="BackColor" Value="48"/>
@@ -301,10 +317,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="207"/>
+          <Property Name="Left" Value="31"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="197"/>
-          <Property Name="Width" Value="451"/>
+          <Property Name="Top" Value="200"/>
+          <Property Name="Width" Value="672"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_4">
           <Property Name="BackColor" Value="48"/>
@@ -315,10 +331,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="207"/>
+          <Property Name="Left" Value="31"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="233"/>
-          <Property Name="Width" Value="451"/>
+          <Property Name="Top" Value="236"/>
+          <Property Name="Width" Value="672"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_5">
           <Property Name="BackColor" Value="48"/>
@@ -329,10 +345,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="207"/>
+          <Property Name="Left" Value="31"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="269"/>
-          <Property Name="Width" Value="451"/>
+          <Property Name="Top" Value="272"/>
+          <Property Name="Width" Value="672"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_6">
           <Property Name="BackColor" Value="48"/>
@@ -343,10 +359,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="207"/>
+          <Property Name="Left" Value="31"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="Top" Value="305"/>
-          <Property Name="Width" Value="451"/>
+          <Property Name="Top" Value="308"/>
+          <Property Name="Width" Value="672"/>
         </Control>
         <Control ClassId="0x00001005" Name="bmpStateActiveIdx_2">
           <Property Name="AlignmentHorizontal" Value="Center"/>
@@ -359,11 +375,11 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="18"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateActive[2]]"/>
-          <Property Name="Left" Value="604"/>
+          <Property Name="Left" Value="649"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[2]]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="171"/>
+          <Property Name="Top" Value="174"/>
           <Property Name="Width" Value="18"/>
         </Control>
         <Control ClassId="0x00001005" Name="bmpStateAckIdx_2">
@@ -377,11 +393,11 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="16"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateAcknowledged[2]]"/>
-          <Property Name="Left" Value="636"/>
+          <Property Name="Left" Value="681"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[2]]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="171"/>
+          <Property Name="Top" Value="174"/>
           <Property Name="Width" Value="17"/>
         </Control>
         <Control ClassId="0x00001005" Name="bmpStateActiveIdx_4">
@@ -395,11 +411,11 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="18"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateActive[3]]"/>
-          <Property Name="Left" Value="604"/>
+          <Property Name="Left" Value="649"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[3]]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="207"/>
+          <Property Name="Top" Value="210"/>
           <Property Name="Width" Value="18"/>
         </Control>
         <Control ClassId="0x00001005" Name="bmpStateAckIdx_4">
@@ -413,11 +429,11 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="16"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateAcknowledged[3]]"/>
-          <Property Name="Left" Value="636"/>
+          <Property Name="Left" Value="681"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[3]]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="207"/>
+          <Property Name="Top" Value="210"/>
           <Property Name="Width" Value="17"/>
         </Control>
         <Control ClassId="0x00001005" Name="bmpStateActiveIdx_6">
@@ -431,11 +447,11 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="18"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateActive[4]]"/>
-          <Property Name="Left" Value="604"/>
+          <Property Name="Left" Value="649"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[4]]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="243"/>
+          <Property Name="Top" Value="246"/>
           <Property Name="Width" Value="18"/>
         </Control>
         <Control ClassId="0x00001005" Name="bmpStateAckIdx_6">
@@ -449,11 +465,11 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="16"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateAcknowledged[4]]"/>
-          <Property Name="Left" Value="636"/>
+          <Property Name="Left" Value="681"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[4]]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="243"/>
+          <Property Name="Top" Value="246"/>
           <Property Name="Width" Value="17"/>
         </Control>
         <Control ClassId="0x00001005" Name="bmpStateActiveIdx_7">
@@ -467,11 +483,11 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="18"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateActive[5]]"/>
-          <Property Name="Left" Value="604"/>
+          <Property Name="Left" Value="649"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[5]]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="279"/>
+          <Property Name="Top" Value="282"/>
           <Property Name="Width" Value="18"/>
         </Control>
         <Control ClassId="0x00001005" Name="bmpStateAckIdx_7">
@@ -485,11 +501,11 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="16"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateAcknowledged[5]]"/>
-          <Property Name="Left" Value="636"/>
+          <Property Name="Left" Value="681"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[5]]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="279"/>
+          <Property Name="Top" Value="282"/>
           <Property Name="Width" Value="17"/>
         </Control>
         <Control ClassId="0x00001005" Name="bmpStateActiveIdx_8">
@@ -503,11 +519,11 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="18"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateActive[6]]"/>
-          <Property Name="Left" Value="603"/>
+          <Property Name="Left" Value="648"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[6]]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="312"/>
+          <Property Name="Top" Value="315"/>
           <Property Name="Width" Value="18"/>
         </Control>
         <Control ClassId="0x00001005" Name="bmpStateAckIdx_8">
@@ -521,11 +537,11 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="16"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateActive[6]]"/>
-          <Property Name="Left" Value="635"/>
+          <Property Name="Left" Value="680"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[6]]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="312"/>
+          <Property Name="Top" Value="315"/>
           <Property Name="Width" Value="17"/>
         </Control>
         <Control ClassId="0x00001004" Name="txtLabelMessage">
@@ -534,15 +550,15 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="394"/>
+          <Property Name="Left" Value="392"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[MpAlarmXListUIText]"/>
           <Property Name="TextIndexOffset" Value="7"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="90"/>
-          <Property Name="Width" Value="203"/>
+          <Property Name="Top" Value="93"/>
+          <Property Name="Width" Value="191"/>
         </Control>
         <Control ClassId="0x00001004" Name="txtLabelCode">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -550,15 +566,15 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="333"/>
+          <Property Name="Left" Value="583"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[MpAlarmXListUIText]"/>
           <Property Name="TextIndexOffset" Value="8"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="90"/>
-          <Property Name="Width" Value="61"/>
+          <Property Name="Top" Value="93"/>
+          <Property Name="Width" Value="60"/>
         </Control>
         <Control ClassId="0x00001004" Name="txtLabelState">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -566,14 +582,14 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="597"/>
+          <Property Name="Left" Value="642"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[MpAlarmXListUIText]"/>
           <Property Name="TextIndexOffset" Value="9"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="90"/>
+          <Property Name="Top" Value="93"/>
           <Property Name="Width" Value="62"/>
         </Control>
         <Control ClassId="0x00001002" Name="cmdAlarmDetail">
@@ -584,7 +600,7 @@
           <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_209]"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_30]"/>
           <Property Name="Height" Value="54"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="660"/>
@@ -600,8 +616,25 @@
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="351"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_209]"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_30]"/>
           <Property Name="Width" Value="121"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="txtLabelTimestamp">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="BackColor" Value="250"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="35"/>
+          <Property Name="Left" Value="30"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[MpAlarmXListUIText]"/>
+          <Property Name="TextIndexOffset" Value="5"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="93"/>
+          <Property Name="Width" Value="132"/>
         </Control>
         <Control ClassId="0x00001002" Name="cmdAlarmDetail1">
           <Property Name="Bitmap" Value="Source[local].Bitmap[MpAlarmX_History]"/>
@@ -611,7 +644,7 @@
           <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_210]"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_31]"/>
           <Property Name="Height" Value="56"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="525"/>
@@ -627,7 +660,7 @@
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="351"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_210]"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_31]"/>
           <Property Name="Width" Value="124"/>
         </Control>
         <Control ClassId="0x00001005" Name="bmpGroupAlarmList">
@@ -654,7 +687,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="0"/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="332"/>
+          <Property Name="Left" Value="583"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -663,7 +696,7 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="124"/>
+          <Property Name="Top" Value="128"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Code[1]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="61"/>
@@ -674,15 +707,123 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="206"/>
+          <Property Name="Left" Value="162"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[MpAlarmXListUIText]"/>
           <Property Name="TextIndexOffset" Value="13"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="90"/>
-          <Property Name="Width" Value="127"/>
+          <Property Name="Top" Value="93"/>
+          <Property Name="Width" Value="116"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_11">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
+          <Property Name="ColorMapIndexOffset" Value="6"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="Left" Value="35"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="Timestamp"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[1]]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="128"/>
+          <Property Name="Width" Value="55"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_12">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
+          <Property Name="ColorMapIndexOffset" Value="5"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="Left" Value="35"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="Timestamp"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[2]]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="164"/>
+          <Property Name="Width" Value="118"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_13">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
+          <Property Name="ColorMapIndexOffset" Value="4"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="Left" Value="35"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="Timestamp"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[3]]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="200"/>
+          <Property Name="Width" Value="118"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_14">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
+          <Property Name="ColorMapIndexOffset" Value="3"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="Left" Value="35"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="Timestamp"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[4]]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="236"/>
+          <Property Name="Width" Value="117"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_15">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
+          <Property Name="ColorMapIndexOffset" Value="2"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="Left" Value="35"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="Timestamp"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[5]]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="272"/>
+          <Property Name="Width" Value="117"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_16">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
+          <Property Name="ColorMapIndexOffset" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="Left" Value="35"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="Timestamp"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[6]]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="308"/>
+          <Property Name="Width" Value="116"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_17">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -694,14 +835,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[1]]"/>
-          <Property Name="Left" Value="222"/>
+          <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[MpAlarmXListPosition]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="124"/>
+          <Property Name="Top" Value="128"/>
           <Property Name="Width" Value="110"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_18">
@@ -714,14 +855,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[2]]"/>
-          <Property Name="Left" Value="222"/>
+          <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[MpAlarmXListPosition]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="160"/>
+          <Property Name="Top" Value="164"/>
           <Property Name="Width" Value="110"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_19">
@@ -734,14 +875,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[3]]"/>
-          <Property Name="Left" Value="222"/>
+          <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[MpAlarmXListPosition]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="196"/>
+          <Property Name="Top" Value="200"/>
           <Property Name="Width" Value="110"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_20">
@@ -754,14 +895,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[4]]"/>
-          <Property Name="Left" Value="222"/>
+          <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[MpAlarmXListPosition]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="232"/>
+          <Property Name="Top" Value="236"/>
           <Property Name="Width" Value="110"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_21">
@@ -774,14 +915,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[5]]"/>
-          <Property Name="Left" Value="222"/>
+          <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[MpAlarmXListPosition]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="268"/>
+          <Property Name="Top" Value="272"/>
           <Property Name="Width" Value="110"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_22">
@@ -794,14 +935,122 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[6]]"/>
-          <Property Name="Left" Value="222"/>
+          <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[MpAlarmXListPosition]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="304"/>
+          <Property Name="Top" Value="308"/>
+          <Property Name="Width" Value="110"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_23">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
+          <Property Name="ColorMapIndexOffset" Value="6"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="Left" Value="281"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="Alarm Name"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Name[1]]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="128"/>
+          <Property Name="Width" Value="110"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_24">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
+          <Property Name="ColorMapIndexOffset" Value="5"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="Left" Value="281"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="Alarm Name"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Name[2]]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="164"/>
+          <Property Name="Width" Value="110"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_25">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
+          <Property Name="ColorMapIndexOffset" Value="4"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="Left" Value="281"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="Alarm Name"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Name[3]]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="200"/>
+          <Property Name="Width" Value="110"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_26">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
+          <Property Name="ColorMapIndexOffset" Value="3"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="Left" Value="281"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="Alarm Name"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Name[4]]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="236"/>
+          <Property Name="Width" Value="110"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_27">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
+          <Property Name="ColorMapIndexOffset" Value="2"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="Left" Value="281"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="Alarm Name"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Name[5]]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="272"/>
+          <Property Name="Width" Value="110"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_28">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
+          <Property Name="ColorMapIndexOffset" Value="1"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="Left" Value="281"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="Alarm Name"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Name[6]]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="308"/>
           <Property Name="Width" Value="110"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_29">
@@ -813,13 +1062,13 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="395"/>
+          <Property Name="Left" Value="394"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[1]]"/>
           <Property Name="TextSource" Value="SingleString"/>
-          <Property Name="Top" Value="125"/>
+          <Property Name="Top" Value="128"/>
           <Property Name="Width" Value="185"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_30">
@@ -831,13 +1080,13 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="395"/>
+          <Property Name="Left" Value="394"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[2]]"/>
           <Property Name="TextSource" Value="SingleString"/>
-          <Property Name="Top" Value="161"/>
+          <Property Name="Top" Value="164"/>
           <Property Name="Width" Value="185"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_31">
@@ -849,13 +1098,13 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="396"/>
+          <Property Name="Left" Value="395"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[3]]"/>
           <Property Name="TextSource" Value="SingleString"/>
-          <Property Name="Top" Value="197"/>
+          <Property Name="Top" Value="200"/>
           <Property Name="Width" Value="185"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_32">
@@ -867,13 +1116,13 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="395"/>
+          <Property Name="Left" Value="394"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[4]]"/>
           <Property Name="TextSource" Value="SingleString"/>
-          <Property Name="Top" Value="233"/>
+          <Property Name="Top" Value="236"/>
           <Property Name="Width" Value="185"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_33">
@@ -885,13 +1134,13 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="395"/>
+          <Property Name="Left" Value="394"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[5]]"/>
           <Property Name="TextSource" Value="SingleString"/>
-          <Property Name="Top" Value="269"/>
+          <Property Name="Top" Value="272"/>
           <Property Name="Width" Value="185"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_34">
@@ -903,13 +1152,13 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="395"/>
+          <Property Name="Left" Value="394"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[6]]"/>
           <Property Name="TextSource" Value="SingleString"/>
-          <Property Name="Top" Value="305"/>
+          <Property Name="Top" Value="308"/>
           <Property Name="Width" Value="185"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_2">
@@ -922,7 +1171,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="0"/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="332"/>
+          <Property Name="Left" Value="583"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -931,7 +1180,7 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="160"/>
+          <Property Name="Top" Value="164"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Code[2]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="61"/>
@@ -946,7 +1195,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="0"/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="332"/>
+          <Property Name="Left" Value="583"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -955,7 +1204,7 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="196"/>
+          <Property Name="Top" Value="200"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Code[3]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="61"/>
@@ -970,7 +1219,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="0"/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="332"/>
+          <Property Name="Left" Value="583"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -979,7 +1228,7 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="232"/>
+          <Property Name="Top" Value="236"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Code[4]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="61"/>
@@ -994,7 +1243,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="0"/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="332"/>
+          <Property Name="Left" Value="583"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -1003,7 +1252,7 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="268"/>
+          <Property Name="Top" Value="272"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Code[5]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="61"/>
@@ -1018,7 +1267,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="0"/>
           <Property Name="Height" Value="37"/>
-          <Property Name="Left" Value="332"/>
+          <Property Name="Left" Value="583"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -1027,7 +1276,7 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="304"/>
+          <Property Name="Top" Value="308"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Code[6]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="61"/>
@@ -1035,270 +1284,330 @@
         <Control ClassId="0x0000100D" Name="Line_1">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="208"/>
-          <Property Name="EndY" Value="125"/>
+          <Property Name="EndX" Value="31"/>
+          <Property Name="EndY" Value="128"/>
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
-          <Property Name="StartX" Value="657"/>
-          <Property Name="StartY" Value="125"/>
+          <Property Name="StartX" Value="702"/>
+          <Property Name="StartY" Value="128"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_2">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="208"/>
-          <Property Name="EndY" Value="340"/>
+          <Property Name="EndX" Value="31"/>
+          <Property Name="EndY" Value="344"/>
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
-          <Property Name="StartX" Value="645"/>
-          <Property Name="StartY" Value="340"/>
+          <Property Name="StartX" Value="702"/>
+          <Property Name="StartY" Value="344"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_3">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="208"/>
-          <Property Name="EndY" Value="305"/>
+          <Property Name="EndX" Value="31"/>
+          <Property Name="EndY" Value="308"/>
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
-          <Property Name="StartX" Value="657"/>
-          <Property Name="StartY" Value="305"/>
+          <Property Name="StartX" Value="702"/>
+          <Property Name="StartY" Value="308"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_4">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="208"/>
-          <Property Name="EndY" Value="269"/>
+          <Property Name="EndX" Value="31"/>
+          <Property Name="EndY" Value="272"/>
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
-          <Property Name="StartX" Value="657"/>
-          <Property Name="StartY" Value="269"/>
+          <Property Name="StartX" Value="702"/>
+          <Property Name="StartY" Value="272"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_5">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="208"/>
-          <Property Name="EndY" Value="233"/>
+          <Property Name="EndX" Value="31"/>
+          <Property Name="EndY" Value="236"/>
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
-          <Property Name="StartX" Value="657"/>
-          <Property Name="StartY" Value="233"/>
+          <Property Name="StartX" Value="702"/>
+          <Property Name="StartY" Value="236"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_6">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="208"/>
-          <Property Name="EndY" Value="197"/>
+          <Property Name="EndX" Value="31"/>
+          <Property Name="EndY" Value="200"/>
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
-          <Property Name="StartX" Value="657"/>
-          <Property Name="StartY" Value="197"/>
+          <Property Name="StartX" Value="702"/>
+          <Property Name="StartY" Value="200"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_7">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="208"/>
-          <Property Name="EndY" Value="161"/>
+          <Property Name="EndX" Value="32"/>
+          <Property Name="EndY" Value="164"/>
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
-          <Property Name="StartX" Value="657"/>
-          <Property Name="StartY" Value="161"/>
+          <Property Name="StartX" Value="702"/>
+          <Property Name="StartY" Value="164"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_8">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="31"/>
+          <Property Name="EndY" Value="128"/>
+          <Property Name="ForeColor" Value="250"/>
+          <Property Name="LineWidth" Value="2"/>
+          <Property Name="StartX" Value="31"/>
+          <Property Name="StartY" Value="342"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_9">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="207"/>
-          <Property Name="EndY" Value="125"/>
+          <Property Name="EndX" Value="161"/>
+          <Property Name="EndY" Value="127"/>
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
-          <Property Name="StartX" Value="207"/>
-          <Property Name="StartY" Value="339"/>
+          <Property Name="StartX" Value="161"/>
+          <Property Name="StartY" Value="341"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_10">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="333"/>
-          <Property Name="EndY" Value="125"/>
+          <Property Name="EndX" Value="278"/>
+          <Property Name="EndY" Value="129"/>
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
-          <Property Name="StartX" Value="333"/>
-          <Property Name="StartY" Value="339"/>
+          <Property Name="StartX" Value="278"/>
+          <Property Name="StartY" Value="343"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_11">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="394"/>
-          <Property Name="EndY" Value="125"/>
+          <Property Name="EndX" Value="393"/>
+          <Property Name="EndY" Value="128"/>
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
-          <Property Name="StartX" Value="394"/>
-          <Property Name="StartY" Value="339"/>
+          <Property Name="StartX" Value="393"/>
+          <Property Name="StartY" Value="342"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_12">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="597"/>
-          <Property Name="EndY" Value="125"/>
+          <Property Name="EndX" Value="583"/>
+          <Property Name="EndY" Value="128"/>
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
-          <Property Name="StartX" Value="597"/>
-          <Property Name="StartY" Value="339"/>
+          <Property Name="StartX" Value="583"/>
+          <Property Name="StartY" Value="342"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_13">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="643"/>
+          <Property Name="EndY" Value="127"/>
+          <Property Name="ForeColor" Value="250"/>
+          <Property Name="LineWidth" Value="2"/>
+          <Property Name="StartX" Value="643"/>
+          <Property Name="StartY" Value="341"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_14">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="658"/>
-          <Property Name="EndY" Value="126"/>
+          <Property Name="EndX" Value="703"/>
+          <Property Name="EndY" Value="129"/>
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
-          <Property Name="StartX" Value="658"/>
-          <Property Name="StartY" Value="340"/>
+          <Property Name="StartX" Value="703"/>
+          <Property Name="StartY" Value="343"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_15">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="629"/>
-          <Property Name="EndY" Value="137"/>
+          <Property Name="EndX" Value="674"/>
+          <Property Name="EndY" Value="140"/>
           <Property Name="ForeColor" Value="250"/>
-          <Property Name="StartX" Value="629"/>
-          <Property Name="StartY" Value="149"/>
+          <Property Name="StartX" Value="674"/>
+          <Property Name="StartY" Value="152"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_16">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="629"/>
-          <Property Name="EndY" Value="174"/>
+          <Property Name="EndX" Value="674"/>
+          <Property Name="EndY" Value="177"/>
           <Property Name="ForeColor" Value="250"/>
-          <Property Name="StartX" Value="629"/>
-          <Property Name="StartY" Value="186"/>
+          <Property Name="StartX" Value="674"/>
+          <Property Name="StartY" Value="189"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_17">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="629"/>
-          <Property Name="EndY" Value="208"/>
+          <Property Name="EndX" Value="674"/>
+          <Property Name="EndY" Value="211"/>
           <Property Name="ForeColor" Value="250"/>
-          <Property Name="StartX" Value="629"/>
-          <Property Name="StartY" Value="220"/>
+          <Property Name="StartX" Value="674"/>
+          <Property Name="StartY" Value="223"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_18">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="628"/>
-          <Property Name="EndY" Value="244"/>
+          <Property Name="EndX" Value="673"/>
+          <Property Name="EndY" Value="247"/>
           <Property Name="ForeColor" Value="250"/>
-          <Property Name="StartX" Value="628"/>
-          <Property Name="StartY" Value="256"/>
+          <Property Name="StartX" Value="673"/>
+          <Property Name="StartY" Value="259"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_19">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="629"/>
-          <Property Name="EndY" Value="281"/>
+          <Property Name="EndX" Value="674"/>
+          <Property Name="EndY" Value="284"/>
           <Property Name="ForeColor" Value="250"/>
-          <Property Name="StartX" Value="629"/>
-          <Property Name="StartY" Value="293"/>
+          <Property Name="StartX" Value="674"/>
+          <Property Name="StartY" Value="296"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_20">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="629"/>
-          <Property Name="EndY" Value="316"/>
+          <Property Name="EndX" Value="674"/>
+          <Property Name="EndY" Value="319"/>
           <Property Name="ForeColor" Value="250"/>
-          <Property Name="StartX" Value="629"/>
-          <Property Name="StartY" Value="328"/>
+          <Property Name="StartX" Value="674"/>
+          <Property Name="StartY" Value="331"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x00001003" Name="HotSpot_2">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_12]"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_32]"/>
           <Property Name="Height" Value="37"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="206"/>
+          <Property Name="Left" Value="31"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="124"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_12]"/>
-          <Property Name="Width" Value="454"/>
+          <Property Name="Top" Value="127"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_32]"/>
+          <Property Name="Width" Value="671"/>
         </Control>
         <Control ClassId="0x00001003" Name="HotSpot_3">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_13]"/>
-          <Property Name="Height" Value="35"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_33]"/>
+          <Property Name="Height" Value="37"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="206"/>
+          <Property Name="Left" Value="31"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="161"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_13]"/>
-          <Property Name="Width" Value="454"/>
+          <Property Name="Top" Value="163"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_33]"/>
+          <Property Name="Width" Value="672"/>
         </Control>
         <Control ClassId="0x00001003" Name="HotSpot_4">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_14]"/>
-          <Property Name="Height" Value="35"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_34]"/>
+          <Property Name="Height" Value="33"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="206"/>
+          <Property Name="Left" Value="30"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="197"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_14]"/>
-          <Property Name="Width" Value="454"/>
+          <Property Name="Top" Value="200"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_34]"/>
+          <Property Name="Width" Value="672"/>
         </Control>
         <Control ClassId="0x00001003" Name="HotSpot_5">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_15]"/>
-          <Property Name="Height" Value="35"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_35]"/>
+          <Property Name="Height" Value="37"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="206"/>
+          <Property Name="Left" Value="31"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="233"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_15]"/>
-          <Property Name="Width" Value="454"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_35]"/>
+          <Property Name="Width" Value="672"/>
         </Control>
         <Control ClassId="0x00001003" Name="HotSpot_6">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_16]"/>
-          <Property Name="Height" Value="35"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_36]"/>
+          <Property Name="Height" Value="37"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="206"/>
+          <Property Name="Left" Value="31"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="269"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_16]"/>
-          <Property Name="Width" Value="454"/>
+          <Property Name="Top" Value="272"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_36]"/>
+          <Property Name="Width" Value="673"/>
         </Control>
         <Control ClassId="0x00001003" Name="HotSpot_7">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_17]"/>
-          <Property Name="Height" Value="35"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_37]"/>
+          <Property Name="Height" Value="37"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="206"/>
+          <Property Name="Left" Value="31"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="305"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_17]"/>
-          <Property Name="Width" Value="454"/>
+          <Property Name="Top" Value="308"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_37]"/>
+          <Property Name="Width" Value="673"/>
+        </Control>
+        <Control ClassId="0x00001009" Name="Alarm_1">
+          <Property Name="AcknowledgeState_Position" Value="None"/>
+          <Property Name="AlarmNumber_Alignment" Value="Left"/>
+          <Property Name="AlarmNumber_MinDigits" Value="3"/>
+          <Property Name="AlarmNumber_Position" Value="Column 2"/>
+          <Property Name="AlarmNumber_SeparatorTextGroup" Value="None"/>
+          <Property Name="AlarmNumber_Width" Value="35"/>
+          <Property Name="AlarmState_Position" Value="None"/>
+          <Property Name="AlarmText_Alignment" Value="Left"/>
+          <Property Name="AlarmText_Position" Value="Column 3"/>
+          <Property Name="AlarmText_SeparatorTextGroup" Value="None"/>
+          <Property Name="AlarmText_Width" Value="170"/>
+          <Property Name="BypassState_Position" Value="None"/>
+          <Property Name="ColumnCount" Value="3"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Cursor_LeftBitmap" Value="None"/>
+          <Property Name="Cursor_LeftTextGroup" Value="None"/>
+          <Property Name="Cursor_RightBitmap" Value="None"/>
+          <Property Name="Cursor_RightTextGroup" Value="None"/>
+          <Property Name="DateTime_Position" Value="None"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Event_Position" Value="None"/>
+          <Property Name="GroupNumber_Alignment" Value="Left"/>
+          <Property Name="GroupNumber_MinDigits" Value="3"/>
+          <Property Name="GroupNumber_Position" Value="Column 1"/>
+          <Property Name="GroupNumber_SeparatorTextGroup" Value="None"/>
+          <Property Name="GroupNumber_Width" Value="35"/>
+          <Property Name="Height" Value="174"/>
+          <Property Name="Left" Value="0"/>
+          <Property Name="Node1" Value="User order"/>
+          <Property Name="Priority_Position" Value="None"/>
+          <Property Name="SortColumn" Value="Time"/>
+          <Property Name="SortOrder" Value="Descending"/>
+          <Property Name="Source" Value="Current"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="115"/>
+          <Property Name="Width" Value="411"/>
         </Control>
       </Controls>
       <KeyMapping>
-        <VirtualKey Name="%embVirtualKey_192">
+        <VirtualKey Name="%embVirtualKey_1">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -1314,7 +1623,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_193">
+        <VirtualKey Name="%embVirtualKey_25">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -1330,7 +1639,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_194">
+        <VirtualKey Name="%embVirtualKey_26">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -1346,7 +1655,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_195">
+        <VirtualKey Name="%embVirtualKey_27">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -1362,7 +1671,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_207">
+        <VirtualKey Name="%embVirtualKey_28">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -1378,7 +1687,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_208">
+        <VirtualKey Name="%embVirtualKey_29">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -1394,7 +1703,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_209">
+        <VirtualKey Name="%embVirtualKey_30">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -1407,7 +1716,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_210">
+        <VirtualKey Name="%embVirtualKey_31">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -1420,7 +1729,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_12">
+        <VirtualKey Name="%embVirtualKey_32">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -1436,7 +1745,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_13">
+        <VirtualKey Name="%embVirtualKey_33">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -1453,7 +1762,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_14">
+        <VirtualKey Name="%embVirtualKey_34">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -1470,7 +1779,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_15">
+        <VirtualKey Name="%embVirtualKey_35">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -1487,7 +1796,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_16">
+        <VirtualKey Name="%embVirtualKey_36">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -1504,7 +1813,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_17">
+        <VirtualKey Name="%embVirtualKey_37">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -1550,7 +1859,14 @@
       <Property Name="Z-Order" Value="3"/>
     </LayerRef>
   </Layers>
-  <MovementOrder/>
+  <MovementOrder>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[Alarm_1]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Alarm_1]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Alarm_1]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Alarm_1]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Alarm_1]"/>
+    </MovementEntry>
+  </MovementOrder>
   <TabSequence>
     <TabSeqItem Index="0" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
     <TabSeqItem Index="1" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
@@ -1558,5 +1874,6 @@
     <TabSeqItem Index="3" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
     <TabSeqItem Index="4" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
     <TabSeqItem Index="5" Value="Source[embedded].Layer[Default].Control[Numeric_6]"/>
+    <TabSeqItem Index="6" Value="Source[embedded].Layer[Default].Control[Alarm_1]"/>
   </TabSequence>
 </Page>

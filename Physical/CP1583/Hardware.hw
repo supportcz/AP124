@@ -237,8 +237,6 @@
     <Parameter ID="Cyclic7Tolerance" Value="1000000" />
     <Parameter ID="Cyclic8Duration" Value="10000" />
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
-    <Parameter ID="Temp.ProjectDirectory" Value="C:\Work\Atrima\projekt\AP124\" />
-    <Parameter ID="Temp.ConfigurationName" Value="CP1583" />
   </Module>
   <Module Name="X20DIF371e" Type="X20DIF371" Version="1.0.1.0">
     <Connection Connector="SS1" TargetModule="X20TB1F11" TargetConnector="SS" />
