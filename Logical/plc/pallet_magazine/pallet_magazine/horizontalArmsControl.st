@@ -2,7 +2,7 @@
 
 ACTION HorizontalArmsControl: 
 	
-	IF modeOfOperation = notReadyToStart THEN
+	IF modeOfOperation = modeNotReadyToStart THEN
 		armsState := stateArmsUndefined;
 	END_IF
 	

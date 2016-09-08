@@ -1,5 +1,6 @@
 VAR
+	diAuto : BOOL; (*button to start automatic mode*)
 	diAirPresureOK : BOOL; (*VISU: 1...air pressure OK*)
-	cmdAllToManualMode : BOOL; (*VISU:complete machine to manual mode*)
+	cmdAllToAutoMode : BOOL; (*VISU:complete machine to automatic mode*)
 	diReset : BOOL; (*acknowledges all errors*)
 END_VAR

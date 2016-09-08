@@ -8,24 +8,29 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 
-	IF magazineSafetyViolation OR NOT diAirPresureOK OR NOT diMotorProtectionP11 THEN
-		modeOfOperation := notReadyToStart;
+	readyToStart := NOT magazineSafetyViolation AND diAirPresureOK AND diMotorProtectionP11;
+	
+	IF NOT readyToStart THEN
+		modeOfOperation := modeNotReadyToStart;
 	END_IF
 
 	CASE modeOfOperation OF
 		
-		notReadyToStart: //the automat is not ready to start
-			IF NOT magazineSafetyViolation AND diAirPresureOK AND diMotorProtectionP11 THEN
-				modeOfOperation := readyToStart;
+		modeNotReadyToStart: //the automat is not ready to start
+			
+			IF readyToStart THEN
+				modeOfOperation := modeManual;
 			END_IF
 		
-		readyToStart:
+		modeManual:
 			
-			IF cmdManualMode OR cmdAllToManualMode THEN
-				modeOfOperation := manualMode;
+			IF cmdAutoMode OR cmdAllToAutoMode OR diAutoMode THEN
+				modeOfOperation := modeAuto;
 			END_IF
 
-		manualMode:
+		modeAuto:
+		
+			activateSafetyCircuit := TRUE;
 		
 				
 		

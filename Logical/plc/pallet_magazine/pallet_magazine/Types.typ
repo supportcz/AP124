@@ -21,10 +21,8 @@ TYPE
 		);
 	ModeOfOperation : 
 		(
-		notReadyToStart,
-		readyToStart,
-		automatMode,
-		manualMode,
-		errorState
+		modeNotReadyToStart,
+		modeManual,
+		modeAuto
 		);
 END_TYPE

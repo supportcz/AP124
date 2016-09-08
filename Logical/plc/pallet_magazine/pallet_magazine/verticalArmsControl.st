@@ -2,7 +2,7 @@
 
 ACTION VerticalArmsControl: 
 	
-	IF modeOfOperation = notReadyToStart THEN
+	IF modeOfOperation = modeNotReadyToStart THEN
 		magazineState := stateMagazineUndefined;
 	END_IF
 	
@@ -20,6 +20,8 @@ ACTION VerticalArmsControl:
 			IF NOT diMagazineUpperPosition AND NOT diMagazineMiddlePositon AND diMagazineLowerPosition THEN
 				magazineState := stateLowerPosition;
 			END_IF
+		
+			VerticalFinishMovement;
 		
 		stateMoveToUpperPosition:
 			//set output			

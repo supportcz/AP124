@@ -1,0 +1,96 @@
+<!--xml version="1.0" encoding="utf-8"-->
+<!--AutomationStudio Version="3.0"-->
+<BusConfiguration Version="3.0" Communication="/IF=tcpip /LOPO=11159 /SA=1  /DAIP=192.168.1.23 /CKDA=0 /REPO=11159 /ANSL=1">
+	<Module ID="IF3.ST2" Hardware="X20SL8000" SafeLogicID="2" SafeModuleID="1" ProjectSL="1" PasswordSupport="True" CFunctionSupport="False" TypicalSafeInputSize="1" TypicalSafeOutputSize="1" TypicalInputSize="132" TypicalOutputSize="132" CRC-de="4275851900" CRC-en="2040220486" CRC-fr="435877799" CRC-data="1420222479" CRC-default="698879259">
+		<Template ID="Optional" Type="BOOL">
+			<Parameter ID="0" Name-de="Nein" Name-en="No" Name-fr="DE"/>
+			<Parameter ID="1" Name-de="Ja" Name-en="Yes" Name-fr="SUR"/>
+			<Parameter ID="2" Name-de="Hochlauf" Name-en="Startup" Name-fr="avant de lancer"/>
+		</Template>
+		<Template ID="OnOff" Type="BOOL">
+			<Parameter ID="0" Name-de="AUS" Name-en="OFF" Name-fr="DE"/>
+			<Parameter ID="1" Name-de="EIN" Name-en="ON" Name-fr="SUR"/>
+		</Template>
+		<Template ID="YesNo" Type="BOOL">
+			<Parameter ID="0" Name-de="Nein" Name-en="No" Name-fr="DE"/>
+			<Parameter ID="1" Name-de="Ja" Name-en="Yes" Name-fr="SUR"/>
+		</Template>
+		<Template ID="MinFwRev" Type="UDINT">
+			<Parameter ID="1" Name="Test Version"/>
+			<Parameter ID="256" Name="Basic Release"/>
+		</Template>
+		<Template ID="SSDOAdjust" Type="UDINT">
+			<Parameter ID="0" Name-de="Zeitabhängig" Name-en="Time dependent"/>
+			<Parameter ID="1" Name-de="1 je 5 Zyklen" Name-en="1 per 5 cyles"/>
+			<Parameter ID="2" Name-de="1 je Zyklus" Name-en="1 per cyle"/>
+			<Parameter ID="3" Name-de="5 je Zyklus" Name-en="5 per cyle"/>
+		</Template>
+		<Group ID="Basic">
+			<BitStream ID="VendorID" Type="UDINT" Value="0x00006065"/>
+			<BitStream ID="HWC_CRC" Type="UDINT" Value="963612483"/>
+			<BitStream ID="CRC_Number_of_RxSpdos" Type="UDINT" Value="100"/>
+			<BitStream ID="CRC_Number_of_TxSpdos" Type="UDINT" Value="100"/>
+			<BitStream ID="CRC_Number_of_Maps_per_Spdo" Type="UDINT" Value="16"/>
+			<BitStream ID="CRC_Number_of_Machine_Options" Type="UDINT" Value="32"/>
+			<BitStream ID="ProductCode" Type="UDINT" Value="7616"/>
+			<BitStream ID="RevisionNumber" Type="UDINT" Value="0x00000001"/>
+			<BitStream ID="SDPayLoad" Type="UDINT" Value="8"/>
+			<BitStream ID="ConsecutiveTimeBase_us" Type="UDINT" Value="100"/>
+			<BitStream ID="SSDO_Timeout_CT" Type="UDINT" Value="20000"/>
+			<BitStream ID="SSDO_Retries" Type="UDINT" Value="3"/>
+			<BitStream ID="SNMT_Timeout_CT" Type="UDINT" Value="20000"/>
+			<BitStream ID="SNMT_Retries" Type="UDINT" Value="3"/>
+			<BitStream ID="External_UDID" Type="UDINT" Value="0"/>
+			<BitStream ID="Node_Guarding_Lifetime" Type="UDINT" Value="5"/>
+			<BitStream ID="Max_Program_Size" Type="UDINT" Value="1572864"/>
+			<Parameter ID="Optional" UniqueID="0_4" Value="2" Template="Optional"/>
+			<Parameter ID="Min_required_FW_Rev" UniqueID="0_0" Value="256" Template="MinFwRev"/>
+			<Parameter ID="Cycle_Time_us" UniqueID="0_1" Type="UDINT" Value="2000" Range="800-20000"/>
+			<Parameter ID="SSDO_Creation" UniqueID="0_2" Value="0" Template="SSDOAdjust"/>
+			<Parameter ID="Node_Guarding_Timeout_s" UniqueID="0_3" Type="UDINT" Value="60" Range="30-3000"/>
+		</Group>
+		<Group ID="Safety_Response_Time_Defaults">
+			<Parameter ID="Default_Syncronous_Network_Only" UniqueID="1_0" Name-de="Default_Synchronous_Network_Only" Name-en="Default_Synchronous_Network_Only" Value="1" Template="YesNo"/>
+			<Parameter ID="Default_Max_X2X_CyleTime_us" UniqueID="1_1" Type="UDINT" Value="5000" Range="200-30000"/>
+			<Parameter ID="Default_Max_Powerlink_CyleTime_us" UniqueID="1_2" Type="UDINT" Value="5000" Range="200-30000"/>
+			<Parameter ID="Default_Max_CPU_CrossLinkTask_CyleTime_us" UniqueID="1_3" Type="UDINT" Value="5000" Range="0-30000"/>
+			<Parameter ID="Default_Min_X2X_CyleTime_us" UniqueID="1_4" Type="UDINT" Value="200" Range="200-30000"/>
+			<Parameter ID="Default_Min_Powerlink_CyleTime_us" UniqueID="1_5" Type="UDINT" Value="200" Range="200-30000"/>
+			<Parameter ID="Default_Min_CPU_CrossLinkTask_CyleTime_us" UniqueID="1_6" Type="UDINT" Value="0" Range="0-30000"/>
+			<Parameter ID="Default_Worst_Case_Response_Time_us" UniqueID="1_7" Type="UDINT" Value="50000" Range="3000-500000"/>
+			<BitStream ID="HWC_Version" Type="UDINT" Value="1"/>
+			<BitStream ID="BUR_SAFEPAR_BOOL_LOW" Type="BOOL" Value="0"/>
+			<BitStream ID="BUR_SAFEPAR_BOOL_HIGH" Type="BOOL" Value="1"/>
+			<BitStream ID="BUR_SAFEPAR_USINT_LOW" Type="USINT" Value="0x01"/>
+			<BitStream ID="BUR_SAFEPAR_USINT_HIGH" Type="USINT" Value="250"/>
+			<BitStream ID="BUR_SAFEPAR_UINT_LOW" Type="UINT" Value="0x000A"/>
+			<BitStream ID="BUR_SAFEPAR_UINT_HIGH" Type="UINT" Value="65000"/>
+			<BitStream ID="BUR_SAFEPAR_UDINT_LOW" Type="UDINT" Value="100"/>
+			<BitStream ID="BUR_SAFEPAR_UDINT_HIGH" Type="UDINT" Value="4000000000"/>
+			<BitStream ID="BUR_SAFEPAR_SINT_LOW" Type="SINT" Value="-250"/>
+			<BitStream ID="BUR_SAFEPAR_SINT_HIGH" Type="SINT" Value="0xFA"/>
+			<BitStream ID="BUR_SAFEPAR_INT_LOW" Type="INT" Value="0x8300"/>
+			<BitStream ID="BUR_SAFEPAR_INT_HIGH" Type="INT" Value="32000"/>
+			<BitStream ID="BUR_SAFEPAR_DINT_LOW" Type="DINT" Value="-2000000000"/>
+			<BitStream ID="BUR_SAFEPAR_DINT_HIGH" Type="DINT" Value="0x77359400"/>
+		</Group>
+		<Channel ID="BOOL1" Type="BOOL" Direction="IN" Repeat="99" Active="8" Digits="2"/>
+		<Channel ID="BOOLext1" Type="BOOL" Direction="IN" Repeat="256" Active="0" Digits="3"/>
+		<Channel ID="INT1" Type="INT" Direction="IN" Repeat="99" Active="0" Digits="2"/>
+		<Channel ID="UINT1" Type="UINT" Direction="IN" Repeat="99" Active="0" Digits="2"/>
+		<Channel ID="UDINT1" Type="UDINT" Direction="IN" Repeat="99" Active="0" Digits="2"/>
+		<Channel ID="BOOL0" Type="BOOL" Direction="OUT" Repeat="99" Active="8" Digits="2"/>
+		<Channel ID="BOOLext0" Type="BOOL" Direction="OUT" Repeat="256" Active="0" Digits="3"/>
+		<Channel ID="INT0" Type="INT" Direction="OUT" Repeat="99" Active="0" Digits="2"/>
+		<Channel ID="UINT0" Type="UINT" Direction="OUT" Repeat="99" Active="0" Digits="2"/>
+		<Channel ID="UDINT0" Type="UDINT" Direction="OUT" Repeat="99" Active="0" Digits="2"/>
+		<Channel ID="SafeBOOL1" Type="BOOL" Direction="OUT" SL2SLCRC="True" Safe="true"/>
+		<Channel ID="SafeBOOL2" Type="BOOL" Direction="OUT" SL2SLCRC="True" Safe="true"/>
+		<Channel ID="SafeBOOL3" Type="BOOL" Direction="OUT" SL2SLCRC="True" Safe="true"/>
+		<Channel ID="SafeBOOL4" Type="BOOL" Direction="OUT" SL2SLCRC="True" Safe="true"/>
+		<Channel ID="SafeBOOL5" Type="BOOL" Direction="OUT" SL2SLCRC="True" Safe="true"/>
+		<Channel ID="SafeBOOL6" Type="BOOL" Direction="OUT" SL2SLCRC="True" Safe="true"/>
+		<Channel ID="SafeBOOL7" Type="BOOL" Direction="OUT" SL2SLCRC="True" Safe="true"/>
+		<Channel ID="SafeBOOL8" Type="BOOL" Direction="OUT" SL2SLCRC="True" Safe="true"/>
+	</Module>
+</BusConfiguration>
