@@ -2,9 +2,27 @@
 T: RESOURCE CPU
 FW: NO
 CI#: 0
-QSL: 0
-QVE: 0
-QVPC: 0
+QSL: 3
+QVE: 3
+QVPC: 3
 QPar: 0
 QFBI: 0
 *)
+@V 1 2 0
+diMagazineContactorState	1	VAR_GLOBAL	@TYP:43
+%SIX 62.0		     
+
+;
+
+@V 1 3 0
+doMagazineContactor1	2	VAR_GLOBAL	@TYP:43
+%SQX 17.0		     
+
+;
+
+@V 1 4 0
+doMagazineContactor2	3	VAR_GLOBAL	@TYP:43
+%SQX 17.1		     
+
+;
+

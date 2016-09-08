@@ -11,8 +11,6 @@ END_VAR
 VAR {Group(0)}
     {LINE(1)}
     SF_EDM_V1_00_1 : SF_EDM_V1_00;
-    {LINE(2)}
-    doMagazineContactor1 : SAFEBOOL;
 END_VAR
 
 { CodeWorksheet := 'Code', Type := '.fbd' }

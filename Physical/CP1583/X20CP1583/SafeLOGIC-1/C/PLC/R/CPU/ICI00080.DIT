@@ -2,9 +2,15 @@
 T: PROGRAM Main
 FW: NO
 CI#: 80
-QSL: 0
-QVE: 0
-QVPC: 0
+QSL: 1
+QVE: 1
+QVPC: 1
 QPar: 0
-QFBI: 0
+QFBI: 1
 *)
+@V 1 2 0
+SF_EDM_V1_00_1	1	VAR	@FB:81
+		     
+
+;
+
