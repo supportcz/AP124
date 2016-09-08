@@ -33,12 +33,12 @@ ACTION HorizontalArmsControl:
 			END_IF	
 			//timeout left side?
 			IF TON_LeftRequest.Q THEN
-				MpAlarmXSet(gAlarmXCore,'LeftArmNotOpened');
+				alarmImage[4] := TRUE;
 				armsState := stateArmsClosed;
 			END_IF
 			//timeout right side?
 			IF TON_RightRequest.Q THEN
-				MpAlarmXSet(gAlarmXCore,'RightArmNotOpened');
+				alarmImage[5] := TRUE;
 				armsState := stateArmsClosed;
 			END_IF
 		
@@ -67,12 +67,12 @@ ACTION HorizontalArmsControl:
 			END_IF	
 			//timeout left side?
 			IF TON_LeftRequest.Q THEN
-				MpAlarmXSet(gAlarmXCore,'LeftArmNotClosed');
+				alarmImage[2] := TRUE;
 				armsState := stateArmsOpened;
 			END_IF
 			//timeout right side?
 			IF TON_RightRequest.Q THEN
-				MpAlarmXSet(gAlarmXCore,'RightArmNotClosed');
+				alarmImage[3] := TRUE;
 				armsState := stateArmsOpened;
 			END_IF
 
