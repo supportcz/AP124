@@ -128,7 +128,7 @@
           <Property Name="Spacing" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="Top" Value="126"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.SelectedIndex]"/>
+          <Property Name="ValueDatapoint" Value="None"/>
           <Property Name="ValueSimulation" Value="0"/>
           <Property Name="Width" Value="20"/>
         </Control>
@@ -246,7 +246,7 @@
         </Control>
         <Control ClassId="0x00001001" Name="Shape_1">
           <Property Name="BackColor" Value="48"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_IndexMngmt]"/>
           <Property Name="ColorMapIndexOffset" Value="5"/>
           <Property Name="ControlID" Value="0"/>
@@ -268,10 +268,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateActive[1]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="649"/>
           <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[1]]"/>
+          <Property Name="StatusDatapoint" Value="None"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="137"/>
           <Property Name="Width" Value="18"/>
@@ -286,17 +286,17 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="16"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateAcknowledged[1]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="681"/>
-          <Property Name="SimulationValue" Value="1"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[1]]"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StatusDatapoint" Value="None"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="137"/>
           <Property Name="Width" Value="17"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_2">
           <Property Name="BackColor" Value="48"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_IndexMngmt]"/>
           <Property Name="ColorMapIndexOffset" Value="4"/>
           <Property Name="ControlID" Value="0"/>
@@ -310,7 +310,7 @@
         </Control>
         <Control ClassId="0x00001001" Name="Shape_3">
           <Property Name="BackColor" Value="48"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_IndexMngmt]"/>
           <Property Name="ColorMapIndexOffset" Value="3"/>
           <Property Name="ControlID" Value="0"/>
@@ -324,7 +324,7 @@
         </Control>
         <Control ClassId="0x00001001" Name="Shape_4">
           <Property Name="BackColor" Value="48"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_IndexMngmt]"/>
           <Property Name="ColorMapIndexOffset" Value="2"/>
           <Property Name="ControlID" Value="0"/>
@@ -338,7 +338,7 @@
         </Control>
         <Control ClassId="0x00001001" Name="Shape_5">
           <Property Name="BackColor" Value="48"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_IndexMngmt]"/>
           <Property Name="ColorMapIndexOffset" Value="1"/>
           <Property Name="ControlID" Value="0"/>
@@ -352,7 +352,7 @@
         </Control>
         <Control ClassId="0x00001001" Name="Shape_6">
           <Property Name="BackColor" Value="48"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_IndexMngmt]"/>
           <Property Name="ColorMapIndexOffset" Value="0"/>
           <Property Name="ControlID" Value="0"/>
@@ -374,10 +374,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateActive[2]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="649"/>
-          <Property Name="SimulationValue" Value="1"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[2]]"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StatusDatapoint" Value="None"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="174"/>
           <Property Name="Width" Value="18"/>
@@ -392,10 +392,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="16"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateAcknowledged[2]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="681"/>
           <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[2]]"/>
+          <Property Name="StatusDatapoint" Value="None"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="174"/>
           <Property Name="Width" Value="17"/>
@@ -410,10 +410,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateActive[3]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="649"/>
-          <Property Name="SimulationValue" Value="1"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[3]]"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StatusDatapoint" Value="None"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="210"/>
           <Property Name="Width" Value="18"/>
@@ -428,10 +428,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="16"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateAcknowledged[3]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="681"/>
-          <Property Name="SimulationValue" Value="1"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[3]]"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StatusDatapoint" Value="None"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="210"/>
           <Property Name="Width" Value="17"/>
@@ -446,10 +446,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateActive[4]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="649"/>
-          <Property Name="SimulationValue" Value="1"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[4]]"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StatusDatapoint" Value="None"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="246"/>
           <Property Name="Width" Value="18"/>
@@ -464,10 +464,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="16"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateAcknowledged[4]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="681"/>
-          <Property Name="SimulationValue" Value="1"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[4]]"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StatusDatapoint" Value="None"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="246"/>
           <Property Name="Width" Value="17"/>
@@ -482,10 +482,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateActive[5]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="649"/>
-          <Property Name="SimulationValue" Value="1"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[5]]"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StatusDatapoint" Value="None"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="282"/>
           <Property Name="Width" Value="18"/>
@@ -500,10 +500,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="16"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateAcknowledged[5]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="681"/>
-          <Property Name="SimulationValue" Value="1"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[5]]"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StatusDatapoint" Value="None"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="282"/>
           <Property Name="Width" Value="17"/>
@@ -518,10 +518,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateActive[6]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="648"/>
-          <Property Name="SimulationValue" Value="1"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[6]]"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StatusDatapoint" Value="None"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="315"/>
           <Property Name="Width" Value="18"/>
@@ -536,10 +536,10 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="16"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.StateActive[6]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="680"/>
           <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxLineDisable[6]]"/>
+          <Property Name="StatusDatapoint" Value="None"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="315"/>
           <Property Name="Width" Value="17"/>
@@ -680,7 +680,7 @@
         <Control ClassId="0x00001007" Name="Numeric_1">
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="6"/>
           <Property Name="ControlID" Value="0"/>
@@ -697,7 +697,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="128"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Code[1]]"/>
+          <Property Name="ValueDatapoint" Value="None"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="61"/>
         </Control>
@@ -720,7 +720,7 @@
         <Control ClassId="0x00001004" Name="Text_11">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="6"/>
           <Property Name="ControlID" Value="0"/>
@@ -730,7 +730,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Timestamp"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[1]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="128"/>
           <Property Name="Width" Value="55"/>
@@ -738,7 +738,7 @@
         <Control ClassId="0x00001004" Name="Text_12">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="5"/>
           <Property Name="ControlID" Value="0"/>
@@ -748,7 +748,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Timestamp"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[2]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="164"/>
           <Property Name="Width" Value="118"/>
@@ -756,7 +756,7 @@
         <Control ClassId="0x00001004" Name="Text_13">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="4"/>
           <Property Name="ControlID" Value="0"/>
@@ -766,7 +766,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Timestamp"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[3]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="200"/>
           <Property Name="Width" Value="118"/>
@@ -774,7 +774,7 @@
         <Control ClassId="0x00001004" Name="Text_14">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="3"/>
           <Property Name="ControlID" Value="0"/>
@@ -784,7 +784,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Timestamp"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[4]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="236"/>
           <Property Name="Width" Value="117"/>
@@ -792,7 +792,7 @@
         <Control ClassId="0x00001004" Name="Text_15">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="2"/>
           <Property Name="ControlID" Value="0"/>
@@ -802,7 +802,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Timestamp"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[5]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="272"/>
           <Property Name="Width" Value="117"/>
@@ -810,7 +810,7 @@
         <Control ClassId="0x00001004" Name="Text_16">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="1"/>
           <Property Name="ControlID" Value="0"/>
@@ -820,7 +820,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Timestamp"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Timestamp[6]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="308"/>
           <Property Name="Width" Value="116"/>
@@ -828,13 +828,13 @@
         <Control ClassId="0x00001004" Name="Text_17">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="6"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[1]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
@@ -848,13 +848,13 @@
         <Control ClassId="0x00001004" Name="Text_18">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="5"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[2]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
@@ -868,13 +868,13 @@
         <Control ClassId="0x00001004" Name="Text_19">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="4"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[3]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
@@ -888,13 +888,13 @@
         <Control ClassId="0x00001004" Name="Text_20">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="3"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[4]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
@@ -908,13 +908,13 @@
         <Control ClassId="0x00001004" Name="Text_21">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="2"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[5]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
@@ -928,13 +928,13 @@
         <Control ClassId="0x00001004" Name="Text_22">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="1"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="37"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Severity[6]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="166"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="ABC"/>
@@ -948,7 +948,7 @@
         <Control ClassId="0x00001004" Name="Text_23">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="6"/>
           <Property Name="ControlID" Value="0"/>
@@ -958,7 +958,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Alarm Name"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Name[1]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="128"/>
           <Property Name="Width" Value="110"/>
@@ -966,7 +966,7 @@
         <Control ClassId="0x00001004" Name="Text_24">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="5"/>
           <Property Name="ControlID" Value="0"/>
@@ -976,7 +976,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Alarm Name"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Name[2]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="164"/>
           <Property Name="Width" Value="110"/>
@@ -984,7 +984,7 @@
         <Control ClassId="0x00001004" Name="Text_25">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="4"/>
           <Property Name="ControlID" Value="0"/>
@@ -994,7 +994,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Alarm Name"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Name[3]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="200"/>
           <Property Name="Width" Value="110"/>
@@ -1002,7 +1002,7 @@
         <Control ClassId="0x00001004" Name="Text_26">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="3"/>
           <Property Name="ControlID" Value="0"/>
@@ -1012,7 +1012,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Alarm Name"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Name[4]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="236"/>
           <Property Name="Width" Value="110"/>
@@ -1020,7 +1020,7 @@
         <Control ClassId="0x00001004" Name="Text_27">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="2"/>
           <Property Name="ControlID" Value="0"/>
@@ -1030,7 +1030,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Alarm Name"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Name[5]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="272"/>
           <Property Name="Width" Value="110"/>
@@ -1038,7 +1038,7 @@
         <Control ClassId="0x00001004" Name="Text_28">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="1"/>
           <Property Name="ControlID" Value="0"/>
@@ -1048,7 +1048,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Alarm Name"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Name[6]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="308"/>
           <Property Name="Width" Value="110"/>
@@ -1056,7 +1056,7 @@
         <Control ClassId="0x00001004" Name="Text_29">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="6"/>
           <Property Name="ControlID" Value="0"/>
@@ -1066,7 +1066,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[1]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="128"/>
           <Property Name="Width" Value="185"/>
@@ -1074,7 +1074,7 @@
         <Control ClassId="0x00001004" Name="Text_30">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="5"/>
           <Property Name="ControlID" Value="0"/>
@@ -1084,7 +1084,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[2]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="164"/>
           <Property Name="Width" Value="185"/>
@@ -1092,7 +1092,7 @@
         <Control ClassId="0x00001004" Name="Text_31">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="4"/>
           <Property Name="ControlID" Value="0"/>
@@ -1102,7 +1102,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[3]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="200"/>
           <Property Name="Width" Value="185"/>
@@ -1110,7 +1110,7 @@
         <Control ClassId="0x00001004" Name="Text_32">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="3"/>
           <Property Name="ControlID" Value="0"/>
@@ -1120,7 +1120,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[4]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="236"/>
           <Property Name="Width" Value="185"/>
@@ -1128,7 +1128,7 @@
         <Control ClassId="0x00001004" Name="Text_33">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="2"/>
           <Property Name="ControlID" Value="0"/>
@@ -1138,7 +1138,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[5]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="272"/>
           <Property Name="Width" Value="185"/>
@@ -1146,7 +1146,7 @@
         <Control ClassId="0x00001004" Name="Text_34">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="1"/>
           <Property Name="ControlID" Value="0"/>
@@ -1156,7 +1156,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Message"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Message[6]]"/>
+          <Property Name="TextDatapoint" Value="None"/>
           <Property Name="TextSource" Value="SingleString"/>
           <Property Name="Top" Value="308"/>
           <Property Name="Width" Value="185"/>
@@ -1164,7 +1164,7 @@
         <Control ClassId="0x00001007" Name="Numeric_2">
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="5"/>
           <Property Name="ControlID" Value="0"/>
@@ -1181,14 +1181,14 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="164"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Code[2]]"/>
+          <Property Name="ValueDatapoint" Value="None"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="61"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_3">
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="4"/>
           <Property Name="ControlID" Value="0"/>
@@ -1205,14 +1205,14 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="200"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Code[3]]"/>
+          <Property Name="ValueDatapoint" Value="None"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="61"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_4">
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="3"/>
           <Property Name="ControlID" Value="0"/>
@@ -1229,14 +1229,14 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="236"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Code[4]]"/>
+          <Property Name="ValueDatapoint" Value="None"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="61"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_5">
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="2"/>
           <Property Name="ControlID" Value="0"/>
@@ -1253,14 +1253,14 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="272"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Code[5]]"/>
+          <Property Name="ValueDatapoint" Value="None"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="61"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_6">
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+          <Property Name="ColorDatapoint" Value="None"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_ContainerListboxNum]"/>
           <Property Name="ColorMapIndexOffset" Value="1"/>
           <Property Name="ControlID" Value="0"/>
@@ -1277,7 +1277,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="308"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Code[6]]"/>
+          <Property Name="ValueDatapoint" Value="None"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="61"/>
         </Control>
@@ -1581,7 +1581,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ButtonMultiUp]"/>
+              <Property Name="ValueDatapoint" Value="None"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1597,7 +1597,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ButtonMultiDown]"/>
+              <Property Name="ValueDatapoint" Value="None"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1613,7 +1613,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ButtonUp]"/>
+              <Property Name="ValueDatapoint" Value="None"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1629,7 +1629,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ButtonDown]"/>
+              <Property Name="ValueDatapoint" Value="None"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1645,7 +1645,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AckownledgeAll]"/>
+              <Property Name="ValueDatapoint" Value="None"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1661,7 +1661,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.Ackownledge]"/>
+              <Property Name="ValueDatapoint" Value="None"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1700,10 +1700,10 @@
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Datapoint = 0"/>
-              <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+              <Property Name="LockingDatapoint" Value="None"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+              <Property Name="ValueDatapoint" Value="None"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1716,11 +1716,11 @@
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Datapoint &lt; Level"/>
-              <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+              <Property Name="LockingDatapoint" Value="None"/>
               <Property Name="LockingLevel" Value="2"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="2"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+              <Property Name="ValueDatapoint" Value="None"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1733,11 +1733,11 @@
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Datapoint &lt; Level"/>
-              <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+              <Property Name="LockingDatapoint" Value="None"/>
               <Property Name="LockingLevel" Value="3"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="3"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+              <Property Name="ValueDatapoint" Value="None"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1750,11 +1750,11 @@
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Datapoint &lt; Level"/>
-              <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+              <Property Name="LockingDatapoint" Value="None"/>
               <Property Name="LockingLevel" Value="4"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="4"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+              <Property Name="ValueDatapoint" Value="None"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1767,11 +1767,11 @@
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Datapoint &lt; Level"/>
-              <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+              <Property Name="LockingDatapoint" Value="None"/>
               <Property Name="LockingLevel" Value="5"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="5"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+              <Property Name="ValueDatapoint" Value="None"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1784,11 +1784,11 @@
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Datapoint &lt; Level"/>
-              <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.AlarmCount]"/>
+              <Property Name="LockingDatapoint" Value="None"/>
               <Property Name="LockingLevel" Value="6"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="6"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.page_MpAlarmXList.ListboxSelected]"/>
+              <Property Name="ValueDatapoint" Value="None"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
