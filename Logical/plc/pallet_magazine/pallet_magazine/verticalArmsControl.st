@@ -123,14 +123,15 @@ ACTION VerticalArmsControl:
 	END_IF
 	
 	IF diMagazineUpperHwEnd AND cmdUp THEN
-		MpAlarmXSet(gAlarmXCore,'MagazineUpperHwEndReached');
+		alarmImage[10] := TRUE;
 	END_IF
 
 	IF diMagazineLooseChain AND cmdDown THEN
-		MpAlarmXSet(gAlarmXCore,'MagazineLooseChain');
+		alarmImage[11] := TRUE;
 	END_IF
 	
 	alarmImage[6] := diMotorProtectionP11;
+	alarmImage[13] := diEStop5;
 	
 END_ACTION
 

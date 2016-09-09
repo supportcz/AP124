@@ -656,7 +656,7 @@
           <DataPoint Name="alarmImage">
             <Property Name="ConnectedBySharedResource" Value="True"/>
             <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL[0..99]"/>
+            <Property Name="PLCType" Value="BOOL[0..39]"/>
             <Property Name="UpdateTime" Value="Default"/>
             <Property Name="UserID" Value="None"/>
             <Property Name="VCType" Value="BOOL[]"/>
@@ -664,7 +664,31 @@
           <DataPoint Name="acknowledgeImage">
             <Property Name="ConnectedBySharedResource" Value="True"/>
             <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL[0..99]"/>
+            <Property Name="PLCType" Value="BOOL[0..39]"/>
+            <Property Name="UpdateTime" Value="Default"/>
+            <Property Name="UserID" Value="None"/>
+            <Property Name="VCType" Value="BOOL[]"/>
+          </DataPoint>
+        </Folder>
+      </Folder>
+      <Folder Name="alarm_management">
+        <Property Name="Description" Value=""/>
+        <Property Name="FolderType" Value="Package"/>
+        <Folder Name="alarm_management">
+          <Property Name="Description" Value=""/>
+          <Property Name="FolderType" Value="Program"/>
+          <DataPoint Name="acknowledgeImage">
+            <Property Name="ConnectedBySharedResource" Value="True"/>
+            <Property Name="Description" Value=""/>
+            <Property Name="PLCType" Value="BOOL[0..39]"/>
+            <Property Name="UpdateTime" Value="Default"/>
+            <Property Name="UserID" Value="None"/>
+            <Property Name="VCType" Value="BOOL[]"/>
+          </DataPoint>
+          <DataPoint Name="alarmImage">
+            <Property Name="ConnectedBySharedResource" Value="True"/>
+            <Property Name="Description" Value=""/>
+            <Property Name="PLCType" Value="BOOL[0..39]"/>
             <Property Name="UpdateTime" Value="Default"/>
             <Property Name="UserID" Value="None"/>
             <Property Name="VCType" Value="BOOL[]"/>
