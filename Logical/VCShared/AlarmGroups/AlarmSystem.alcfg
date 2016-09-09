@@ -5,16 +5,16 @@
   <Property Name="SnippetBufferSize" Value="150"/>
   <Property Name="Store in Datamodule" Value="True"/>
   <GroupAlarms>
-    <Property Name="ActiveBackColor" Value="4"/>
-    <Property Name="ActiveForeColor" Value="16"/>
-    <Property Name="BypassBackColor" Value="14"/>
+    <Property Name="ActiveBackColor" Value="15"/>
+    <Property Name="ActiveForeColor" Value="0"/>
+    <Property Name="BypassBackColor" Value="15"/>
     <Property Name="BypassForeColor" Value="0"/>
     <Property Name="DefaultBackColor" Value="15"/>
     <Property Name="DefaultForeColor" Value="0"/>
     <Property Name="Description" Value="Alarm Groups for Group Alarms"/>
-    <Property Name="LatchedBackColor" Value="52"/>
+    <Property Name="LatchedBackColor" Value="15"/>
     <Property Name="LatchedForeColor" Value="0"/>
-    <Property Name="QuitBackColor" Value="1"/>
-    <Property Name="QuitForeColor" Value="16"/>
+    <Property Name="QuitBackColor" Value="15"/>
+    <Property Name="QuitForeColor" Value="0"/>
   </GroupAlarms>
 </AlarmSystem>

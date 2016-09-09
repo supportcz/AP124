@@ -353,6 +353,8 @@
     <Source File="Bitmaps\ButtonArrowLeftPressed.bminfo"/>
     <Source File="Bitmaps\ButtonArrowLeft.bminfo"/>
     <Source File="Bitmaps\ManualModeLogo.bminfo"/>
+    <Source File="Bitmaps\border.bminfo"/>
+    <Source File="Bitmaps\activeAlarm.bminfo"/>
     <Source File="BitmapGroups\MpAlarmAcknowledgeState.bmgrp"/>
     <Source File="BitmapGroups\MpPads.bmgrp"/>
     <Source File="BitmapGroups\MpUserIcons.bmgrp"/>
@@ -434,6 +436,7 @@
     <Source File="Borders\Mp_DataMinBorder.bdr"/>
     <Source File="Borders\Mp_DataRangeBorder.bdr"/>
     <Source File="Borders\Mp_DataNameFrame.bdr"/>
+    <Source File="Borders\Border_1.bdr"/>
     <Source File="TouchPads\MpNavigationPad_ver.tpr"/>
     <Source File="TouchPads\MpNumPad.tpr"/>
     <Source File="TouchPads\MpAlphaPad.tpr"/>

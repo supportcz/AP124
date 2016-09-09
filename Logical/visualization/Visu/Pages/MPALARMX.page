@@ -3,7 +3,7 @@
 <Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="MPALARMX">
   <Property Name="Description" Value="mapp VC4 template MpAlarmXList"/>
   <Property Name="Height" Value="480"/>
-  <Property Name="Index" Value="40"/>
+  <Property Name="Index" Value="999"/>
   <Property Name="LockedForeColor" Value="253"/>
   <Property Name="MoveFocus" Value="Circular"/>
   <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -262,7 +262,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmXStates]"/>
-          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapIndex" Value="1"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -368,7 +368,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmXStates]"/>
-          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapIndex" Value="1"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -404,7 +404,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmXStates]"/>
-          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapIndex" Value="1"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -440,7 +440,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmXStates]"/>
-          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapIndex" Value="1"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -476,7 +476,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmXStates]"/>
-          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapIndex" Value="1"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -512,7 +512,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmXStates]"/>
-          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapIndex" Value="1"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -1567,44 +1567,6 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_37]"/>
           <Property Name="Width" Value="673"/>
         </Control>
-        <Control ClassId="0x00001009" Name="Alarm_1">
-          <Property Name="AcknowledgeState_Position" Value="None"/>
-          <Property Name="AlarmNumber_Alignment" Value="Left"/>
-          <Property Name="AlarmNumber_MinDigits" Value="3"/>
-          <Property Name="AlarmNumber_Position" Value="Column 2"/>
-          <Property Name="AlarmNumber_SeparatorTextGroup" Value="None"/>
-          <Property Name="AlarmNumber_Width" Value="35"/>
-          <Property Name="AlarmState_Position" Value="None"/>
-          <Property Name="AlarmText_Alignment" Value="Left"/>
-          <Property Name="AlarmText_Position" Value="Column 3"/>
-          <Property Name="AlarmText_SeparatorTextGroup" Value="None"/>
-          <Property Name="AlarmText_Width" Value="170"/>
-          <Property Name="BypassState_Position" Value="None"/>
-          <Property Name="ColumnCount" Value="3"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Cursor_LeftBitmap" Value="None"/>
-          <Property Name="Cursor_LeftTextGroup" Value="None"/>
-          <Property Name="Cursor_RightBitmap" Value="None"/>
-          <Property Name="Cursor_RightTextGroup" Value="None"/>
-          <Property Name="DateTime_Position" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Event_Position" Value="None"/>
-          <Property Name="GroupNumber_Alignment" Value="Left"/>
-          <Property Name="GroupNumber_MinDigits" Value="3"/>
-          <Property Name="GroupNumber_Position" Value="Column 1"/>
-          <Property Name="GroupNumber_SeparatorTextGroup" Value="None"/>
-          <Property Name="GroupNumber_Width" Value="35"/>
-          <Property Name="Height" Value="174"/>
-          <Property Name="Left" Value="0"/>
-          <Property Name="Node1" Value="User order"/>
-          <Property Name="Priority_Position" Value="None"/>
-          <Property Name="SortColumn" Value="Time"/>
-          <Property Name="SortOrder" Value="Descending"/>
-          <Property Name="Source" Value="Current"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="115"/>
-          <Property Name="Width" Value="411"/>
-        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_1">
@@ -1859,14 +1821,7 @@
       <Property Name="Z-Order" Value="3"/>
     </LayerRef>
   </Layers>
-  <MovementOrder>
-    <MovementEntry Control="Source[embedded].Layer[Default].Control[Alarm_1]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Alarm_1]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Alarm_1]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Alarm_1]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Alarm_1]"/>
-    </MovementEntry>
-  </MovementOrder>
+  <MovementOrder/>
   <TabSequence>
     <TabSeqItem Index="0" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
     <TabSeqItem Index="1" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
@@ -1874,6 +1829,5 @@
     <TabSeqItem Index="3" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
     <TabSeqItem Index="4" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
     <TabSeqItem Index="5" Value="Source[embedded].Layer[Default].Control[Numeric_6]"/>
-    <TabSeqItem Index="6" Value="Source[embedded].Layer[Default].Control[Alarm_1]"/>
   </TabSequence>
 </Page>
