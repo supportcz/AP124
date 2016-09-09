@@ -122,6 +122,17 @@ ACTION VerticalArmsControl:
 		doMagazineBrake := FALSE;
 	END_IF
 	
+	//edge alarms
+	IF acknowledgeImage[7] THEN
+		alarmImage[7] := FALSE;
+	END_IF
+	IF acknowledgeImage[8] THEN
+		alarmImage[8] := FALSE;
+	END_IF
+	IF acknowledgeImage[9] THEN
+		alarmImage[9] := FALSE;
+	END_IF
+	
 END_ACTION
 
 ACTION VerticalFinishMovement:

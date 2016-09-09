@@ -87,6 +87,20 @@ ACTION HorizontalArmsControl:
 			
 	END_CASE
 	
+	//edge alarms
+	IF acknowledgeImage[2] THEN
+		alarmImage[2] := FALSE;
+	END_IF
+	IF acknowledgeImage[3] THEN
+		alarmImage[3] := FALSE;
+	END_IF
+	IF acknowledgeImage[4] THEN
+		alarmImage[4] := FALSE;
+	END_IF
+	IF acknowledgeImage[5] THEN
+		alarmImage[5] := FALSE;
+	END_IF
+
 END_ACTION
 
 
