@@ -1,30 +1,40 @@
-﻿{GroupDefinition(0,'NewGroup')}
+﻿{GroupDefinition(0,'pallet_magazine')}
+{GroupDefinition(11,'common')}
 
 VAR_GLOBAL {Group(0)}
     {LINE(1)}
-    diMagazineContactorState AT %IX62.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput17')};
+    pallet_mag_edmContactorError AT %QX0.2 : BOOL {Custom('SL1.SM1.BOOL003')};
     {LINE(2)}
-    doMagazineContactor1 AT %QX17.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput01')};
+    pallet_mag_safetyCircuitsReaNS AT %QX0.1 : BOOL {Custom('SL1.SM1.BOOL002')};
     {LINE(3)}
-    doMagazineContactor2 AT %QX17.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput02')};
-    {LINE(4)}
-    pallet_mag_activateSafety AT %IX0.0 : BOOL {Custom('SL1.SM1.BOOL101')};
-    {LINE(5)}
-    diEStop1 AT %IX18.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0102')};
-    {LINE(6)}
-    diEStop2 AT %IX18.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0304')};
-    {LINE(7)}
-    diEStop3 AT %IX22.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelOk0102')};
-    {LINE(8)}
-    diEStop4 AT %IX22.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelOk0304')};
-    {LINE(9)}
-    diEStop5 AT %IX18.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0506')};
-    {LINE(10)}
-    diEStopRobot AT %IX18.7 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0708')};
-    {LINE(11)}
-    diEStopWrapper AT %IX22.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelOk0506')};
-    {LINE(12)}
-    SM6_ReleaseOutput01 AT %QX23.0 : BOOL {Custom('SL1.SM6.ReleaseOutput01')};
-    {LINE(13)}
     SM6_ReleaseOutput02 AT %QX23.1 : BOOL {Custom('SL1.SM6.ReleaseOutput02')};
+    {LINE(4)}
+    SM6_ReleaseOutput01 AT %QX23.0 : BOOL {Custom('SL1.SM6.ReleaseOutput01')};
+    {LINE(5)}
+    diEStop5 AT %IX18.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0506')};
+    {LINE(6)}
+    pallet_mag_activateSafety AT %IX0.0 : BOOL {Custom('SL1.SM1.BOOL101')};
+    {LINE(7)}
+    doMagazineContactor2 AT %QX17.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput02')};
+    {LINE(8)}
+    doMagazineContactor1 AT %QX17.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput01')};
+    {LINE(9)}
+    diMagazineContactorState AT %IX62.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput17')};
+    {LINE(10)}
+    allSafetyCircuitsReadyNS AT %QX0.0 : BOOL {Custom('SL1.SM1.BOOL001')};
+END_VAR
+
+VAR_GLOBAL {Group(11)}
+    {LINE(12)}
+    diEStop1 AT %IX18.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0102')};
+    {LINE(13)}
+    diEStop2 AT %IX18.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0304')};
+    {LINE(14)}
+    diEStop3 AT %IX22.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelOk0102')};
+    {LINE(15)}
+    diEStop4 AT %IX22.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelOk0304')};
+    {LINE(16)}
+    diEStopRobot AT %IX18.7 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0708')};
+    {LINE(17)}
+    diEStopWrapper AT %IX22.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelOk0506')};
 END_VAR

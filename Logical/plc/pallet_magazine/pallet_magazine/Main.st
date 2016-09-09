@@ -8,7 +8,7 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 
-	readyToStart := NOT magazineSafetyViolation AND diAirPresureOK AND diMotorProtectionP11;
+	readyToStart := safetyCircuitsReady AND diAirPresureOK AND diMotorProtectionP11;
 	
 	IF NOT readyToStart THEN
 		modeOfOperation := modeNotReadyToStart;
@@ -23,14 +23,13 @@ PROGRAM _CYCLIC
 			END_IF
 		
 		modeManual:
-			
-			IF cmdAutoMode OR cmdAllToAutoMode OR diAutoMode THEN
+
+			IF cmdAuto OR cmdAllToAuto OR diAuto THEN
 				modeOfOperation := modeAuto;
 			END_IF
 
 		modeAuto:
 		
-			activateSafetyCircuit := TRUE;
 		
 				
 		
@@ -42,13 +41,22 @@ PROGRAM _CYCLIC
 	//vertical arms movement
 	VerticalArmsControl;
 	
+	//detect pallet on conveyor
 	IF diPalletOnConveyorP12 THEN
 		palletOnConveyor := TRUE;
 	END_IF
-	
-	(* error detection *)
-	
-	alarmImage[0] := magazineSafetyViolation;
+
+	//request to activate safety
+	activateSafetyCircuit := diAuto OR diActivateAllSafetyCircuits;
+
+	(* error management *)
+	IF diReset THEN
+		FOR i:= 0 TO 39 DO
+			acknowledgeImage[i] := 0;
+		END_FOR
+	END_IF
+
+	alarmImage[0] := NOT safetyCircuitsReady;
 	alarmImage[1] := diLightCurtainP11;
 	
 	IF diMagazineUpperHwEnd AND cmdUp THEN
@@ -59,12 +67,10 @@ PROGRAM _CYCLIC
 		alarmImage[11] := TRUE;
 	END_IF
 	
-	alarmImage[6] := diMotorProtectionP11;
-	alarmImage[13] := NOT diEStop5;
+	alarmImage[6] := NOT diMotorProtectionP11;
+	alarmImage[12] := NOT diEStop5;
 	
 
-	
-	acknowledgeImage[0];
-		
+	alarmImage[13] := edmContactorError;
 	
 END_PROGRAM

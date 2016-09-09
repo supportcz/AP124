@@ -32,6 +32,8 @@
     <Connection Connector="SL" TargetModule="X20BM33" TargetConnector="SL1" />
     <Parameter ID="SafeProject" Value="SafeLOGIC-1" />
     <Parameter ID="SafeDesigner" Value="4.2.0.17" />
+    <Parameter ID="UnsafeOutputBOOLs" Value="24" />
+    <Parameter ID="UnsafeInputBOOLs" Value="24" />
   </Module>
   <Module Name="I22" Type="X20SI9100" Version="1.10.0.1">
     <Connection Connector="SS1" TargetModule="X20TB52b" TargetConnector="SS" />
@@ -244,6 +246,8 @@
     <Parameter ID="Cyclic7Tolerance" Value="1000000" />
     <Parameter ID="Cyclic8Duration" Value="10000" />
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
+    <Parameter ID="Temp.ProjectDirectory" Value="C:\Work\Atrima\projekt\AP124\" />
+    <Parameter ID="Temp.ConfigurationName" Value="CP1583" />
   </Module>
   <Module Name="X20DIF371e" Type="X20DIF371" Version="1.0.1.0">
     <Connection Connector="SS1" TargetModule="X20TB1F11" TargetConnector="SS" />

@@ -1,0 +1,4 @@
+VAR
+	diReset : BOOL; (*acknowledges all errors*)
+	diAirPresureOK : BOOL; (*VISU: 1...air pressure OK*)
+END_VAR
