@@ -140,6 +140,42 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="10">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="11">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="13">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -165,6 +201,9 @@
       <Text ID="80" Value="Upper position not reached"/>
       <Text ID="85" Value="Middle position not reached"/>
       <Text ID="90" Value="Lower position not reached"/>
+      <Text ID="94" Value="Magazine upper HW end reached"/>
+      <Text ID="95" Value="Magazine loose chain"/>
+      <Text ID="134" Value="E-Stop 5"/>
       <Text ID="46" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -178,6 +217,9 @@
       <Text ID="80" Value=""/>
       <Text ID="85" Value=""/>
       <Text ID="90" Value=""/>
+      <Text ID="94" Value=""/>
+      <Text ID="95" Value=""/>
+      <Text ID="134" Value=""/>
       <Text ID="46" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -191,6 +233,9 @@
       <Text ID="80" Value=""/>
       <Text ID="85" Value=""/>
       <Text ID="90" Value=""/>
+      <Text ID="94" Value=""/>
+      <Text ID="95" Value=""/>
+      <Text ID="134" Value=""/>
       <Text ID="46" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -204,6 +249,9 @@
       <Index ID="80" Value="7"/>
       <Index ID="85" Value="8"/>
       <Index ID="90" Value="9"/>
+      <Index ID="94" Value="10"/>
+      <Index ID="95" Value="11"/>
+      <Index ID="134" Value="13"/>
       <Index ID="46" Value="Group"/>
     </IndexMap>
   </TextGroup>

@@ -1,4 +1,10 @@
 VAR
-	MpAlarmXCore_0 : MpAlarmXCore;
-	MpAlarmXListUI_0 : MpAlarmXListUI; (*VISU: premiestnil som kvoli visu_manager.st*)
+	alarmImage : ARRAY[0..39] OF BOOL;
+	acknowledgeImage : ARRAY[0..39] OF BOOL;
+	diEStop1 : BOOL; (*emergency stop 1*)
+	diEStop2 : BOOL; (*emergency stop 2*)
+	diEStop3 : BOOL; (*emergency stop 3*)
+	diEStop4 : BOOL; (*emergency stop 4*)
+	diEStopRobot : BOOL; (*emergency stop - robot*)
+	diEStopWrapper : BOOL; (*emergency stop wrapper*)
 END_VAR

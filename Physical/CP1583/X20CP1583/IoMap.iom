@@ -22,12 +22,12 @@ VAR_CONFIG
 	::diReset AT %IX."I08".DigitalInput03;
 	::pallet_mag:diMagazineContactorState AT %IX."I22".SafeDigitalInput17;
 	::diAuto AT %IX."I08".DigitalInput02;
-	::safety:diEStop1 AT %IX."I18".SafeTwoChannelInput0102;
-	::safety:diEStop2 AT %IX."I18".SafeTwoChannelInput0304;
-	::safety:diEStop3 AT %IX."I18".SafeTwoChannelInput0506;
-	::safety:diEStop4 AT %IX."I18".SafeTwoChannelInput0708;
-	::safety:diEStop5 AT %IX."I18".SafeTwoChannelInput0910;
-	::safety:diEStopRobot AT %IX."I18".SafeTwoChannelInput1112;
-	::safety:diEStopWrapper AT %IX."I18".SafeTwoChannelInput1314;
+	::alarm_mana:diEStop1 AT %IX."I18".SafeTwoChannelInput0102;
+	::alarm_mana:diEStop2 AT %IX."I18".SafeTwoChannelInput0304;
+	::alarm_mana:diEStop3 AT %IX."I18".SafeTwoChannelInput0506;
+	::alarm_mana:diEStop4 AT %IX."I18".SafeTwoChannelInput0708;
+	::pallet_mag:diEStop5 AT %IX."I18".SafeTwoChannelInput0910;
+	::alarm_mana:diEStopRobot AT %IX."I18".SafeTwoChannelInput1112;
+	::alarm_mana:diEStopWrapper AT %IX."I18".SafeTwoChannelInput1314;
 	::pallet_mag:diLightCurtainP11 AT %IX."I22".SafeTwoChannelInput0102;
 END_VAR
