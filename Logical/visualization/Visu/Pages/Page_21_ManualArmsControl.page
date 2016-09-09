@@ -136,7 +136,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
-          <Property Name="Height" Value="278"/>
+          <Property Name="Height" Value="307"/>
           <Property Name="Left" Value="240"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="102"/>
@@ -268,6 +268,22 @@
           <Property Name="Top" Value="86"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_24]"/>
           <Property Name="Width" Value="100"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_4">
+          <Property Name="Border" Value="Source[local].Border[Mp_Flat_grey]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.pallet_magazine.palletOnConveyor]"/>
+          <Property Name="Left" Value="256"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[PalletStatus]"/>
+          <Property Name="TextIndexOffset" Value="0"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="374"/>
+          <Property Name="Width" Value="146"/>
         </Control>
       </Controls>
       <KeyMapping>

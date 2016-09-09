@@ -164,18 +164,6 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
-    <Alarm Index="12">
-      <Property Name="Acknowledge" Value="Possible"/>
-      <Property Name="AcknowledgeActive" Value="Enabled"/>
-      <Property Name="Bypass" Value="Enabled"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="Latched" Value="False"/>
-      <Property Name="RecordAcknowledge" Value="True"/>
-      <Property Name="RecordBypass" Value="All"/>
-      <Property Name="RecordReset" Value="All"/>
-      <Property Name="RecordTrigger" Value="True"/>
-      <Property Name="TriggerGroupAlarm" Value="False"/>
-    </Alarm>
     <Alarm Index="13">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -203,7 +191,7 @@
   <TextGroup>
     <TextSnippets/>
     <TextLayer LanguageId="en">
-      <Text ID="51" Value="Pallet magazine safety violation"/>
+      <Text ID="51" Value="Pallet magazine safety violaton"/>
       <Text ID="59" Value="Light Curtain P11"/>
       <Text ID="63" Value="Left arm not closed"/>
       <Text ID="64" Value="Right arm not closed"/>
@@ -216,7 +204,6 @@
       <Text ID="94" Value="Magazine upper HW end reached"/>
       <Text ID="95" Value="Magazine loose chain"/>
       <Text ID="134" Value="E-Stop 5"/>
-      <Text ID="150" Value="EDM pallet magazine contactor error"/>
       <Text ID="46" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -233,7 +220,6 @@
       <Text ID="94" Value=""/>
       <Text ID="95" Value=""/>
       <Text ID="134" Value=""/>
-      <Text ID="150" Value=""/>
       <Text ID="46" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -250,7 +236,6 @@
       <Text ID="94" Value=""/>
       <Text ID="95" Value=""/>
       <Text ID="134" Value=""/>
-      <Text ID="150" Value=""/>
       <Text ID="46" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -266,8 +251,7 @@
       <Index ID="90" Value="9"/>
       <Index ID="94" Value="10"/>
       <Index ID="95" Value="11"/>
-      <Index ID="134" Value="12"/>
-      <Index ID="150" Value="13"/>
+      <Index ID="134" Value="13"/>
       <Index ID="46" Value="Group"/>
     </IndexMap>
   </TextGroup>

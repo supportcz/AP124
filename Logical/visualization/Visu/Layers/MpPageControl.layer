@@ -17,7 +17,7 @@
   <Controls>
     <Control ClassId="0x00001001" Name="Shape_7">
       <Property Name="BackColor" Value="248"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.ButtonColor]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.ButtonColor]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PageControl]"/>
       <Property Name="ColorMapIndexOffset" Value="5"/>
       <Property Name="ControlID" Value="0"/>
@@ -48,9 +48,9 @@
     </Control>
     <Control ClassId="0x00001001" Name="Shape_8">
       <Property Name="BackColor" Value="248"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.ButtonAlarmColor]"/>
-      <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PageControlAlarm]"/>
-      <Property Name="ColorMapIndexOffset" Value="0"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.ButtonColor]"/>
+      <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PageControl]"/>
+      <Property Name="ColorMapIndexOffset" Value="2"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="GroupID" Value="11"/>
@@ -109,7 +109,7 @@
     </Control>
     <Control ClassId="0x00001001" Name="Shape_9">
       <Property Name="BackColor" Value="248"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.ButtonColor]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.ButtonColor]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PageControl]"/>
       <Property Name="ColorMapIndexOffset" Value="4"/>
       <Property Name="ControlID" Value="0"/>
@@ -155,7 +155,7 @@
     </Control>
     <Control ClassId="0x00001001" Name="Shape_10">
       <Property Name="BackColor" Value="248"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.ButtonColor]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.ButtonColor]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PageControl]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
@@ -201,7 +201,7 @@
     </Control>
     <Control ClassId="0x00001001" Name="Shape_11">
       <Property Name="BackColor" Value="248"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.ButtonColor]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.ButtonColor]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PageControl]"/>
       <Property Name="ColorMapIndexOffset" Value="1"/>
       <Property Name="ControlID" Value="0"/>
@@ -312,7 +312,7 @@
     </Control>
     <Control ClassId="0x00001001" Name="Shape_12">
       <Property Name="BackColor" Value="248"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.ButtonColor]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.ButtonColor]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PageControl]"/>
       <Property Name="ColorMapIndexOffset" Value="3"/>
       <Property Name="ControlID" Value="0"/>
