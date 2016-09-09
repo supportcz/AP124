@@ -47,15 +47,11 @@ PROGRAM _CYCLIC
 	END_IF
 	
 	(* error detection *)
-	IF magazineSafetyViolation THEN
-		MpAlarmXSet(gAlarmXCore,'PalletMagazineSafetyViolation');
-	ELSE
-		MpAlarmXReset(gAlarmXCore,'PalletMagazineSafetyViolation');
-	END_IF
 	
-	alarmImage[0];
+	alarmImage[0] := magazineSafetyViolation;
+	alarmImage[1] := diLightCurtainP11;
+	
 	acknowledgeImage[0];
-
 		
 	
 END_PROGRAM

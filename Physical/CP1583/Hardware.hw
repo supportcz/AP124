@@ -33,7 +33,7 @@
     <Parameter ID="SafeProject" Value="SafeLOGIC-1" />
     <Parameter ID="SafeDesigner" Value="4.2.0.17" />
   </Module>
-  <Module Name="I24" Type="X20SI9100" Version="1.10.0.1">
+  <Module Name="I22" Type="X20SI9100" Version="1.10.0.1">
     <Connection Connector="SS1" TargetModule="X20TB52b" TargetConnector="SS" />
     <Connection Connector="SS2" TargetModule="X20TB52c" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM33a" TargetConnector="SL1" />

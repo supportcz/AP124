@@ -20,7 +20,7 @@ VAR_CONFIG
 	::pallet_mag:diMagazineLooseChain AT %IX."I01".DigitalInput11;
 	pallet_mag:diAutoMode AT %IX."I01".DigitalInput12;
 	::diReset AT %IX."I08".DigitalInput03;
-	::pallet_mag:diMagazineContactorState AT %IX."I24".SafeDigitalInput17;
+	::pallet_mag:diMagazineContactorState AT %IX."I22".SafeDigitalInput17;
 	::diAuto AT %IX."I08".DigitalInput02;
 	::safety:diEStop1 AT %IX."I18".SafeTwoChannelInput0102;
 	::safety:diEStop2 AT %IX."I18".SafeTwoChannelInput0304;
@@ -29,4 +29,5 @@ VAR_CONFIG
 	::safety:diEStop5 AT %IX."I18".SafeTwoChannelInput0910;
 	::safety:diEStopRobot AT %IX."I18".SafeTwoChannelInput1112;
 	::safety:diEStopWrapper AT %IX."I18".SafeTwoChannelInput1314;
+	::pallet_mag:diLightCurtainP11 AT %IX."I22".SafeTwoChannelInput0102;
 END_VAR

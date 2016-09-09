@@ -36,7 +36,7 @@ ACTION VerticalArmsControl:
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
 				VerticalFinishMovement;
-				MpAlarmXSet(gAlarmXCore,'UpperPositionNotReached');
+				alarmImage[7] := TRUE;
 				magazineState := stateMiddlePosition;
 			END_IF	
 		
@@ -60,7 +60,7 @@ ACTION VerticalArmsControl:
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
 				VerticalFinishMovement;
-				MpAlarmXSet(gAlarmXCore,'MiddlePositionNotReached');
+				alarmImage[8] := TRUE;
 				magazineState := stateUpperPosition;
 			END_IF
 				
@@ -77,7 +77,7 @@ ACTION VerticalArmsControl:
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
 				VerticalFinishMovement;
-				MpAlarmXSet(gAlarmXCore,'MiddlePositionNotReached');
+				alarmImage[8] := TRUE;
 				magazineState := stateLowerPosition;
 			END_IF
 		
@@ -104,7 +104,7 @@ ACTION VerticalArmsControl:
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
 				VerticalFinishMovement;
-				MpAlarmXSet(gAlarmXCore,'LowerPositionNotReached');
+				alarmImage[9] := TRUE;
 				magazineState := stateMiddlePosition;
 			END_IF
 		
@@ -130,11 +130,7 @@ ACTION VerticalArmsControl:
 		MpAlarmXSet(gAlarmXCore,'MagazineLooseChain');
 	END_IF
 	
-	IF diMotorProtectionP11 THEN
-		MpAlarmXReset(gAlarmXCore,'MotorProtectionP11');
-	ELSE
-		MpAlarmXSet(gAlarmXCore,'MotorProtectionP11');
-	END_IF
+	alarmImage[6] := diMotorProtectionP11;
 	
 END_ACTION
 

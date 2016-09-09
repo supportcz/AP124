@@ -3,118 +3,58 @@
   <Element ID="gAlarmXCore" Type="mpalarmxcore">
     <Group ID="mapp.AlarmX.Core.Configuration">
       <Group ID="[0]">
-        <Property ID="Name" Value="PalletMagazineSafetyViolation" />
-        <Property ID="Message" Value="Pallet magazine safety violaton" />
-        <Selector ID="Behavior" Value="PersistentAlarm" />
-        <Property ID="AdditionalInformation1" Value="{$alarms/machinepart.pallet_magazine}" />
-      </Group>
-      <Group ID="[1]">
         <Property ID="Name" Value="AirPressureNotOK" />
         <Property ID="Message" Value="Air pressure not OK" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
-      <Group ID="[2]">
-        <Property ID="Name" Value="LeftArmNotClosed" />
-        <Property ID="Message" Value="Left arm not closed" />
-        <Selector ID="Behavior">
-          <Property ID="MultipleInstances" Value="FALSE" />
-        </Selector>
-      </Group>
-      <Group ID="[3]">
-        <Property ID="Name" Value="RightArmNotClosed" />
-        <Property ID="Message" Value="Right arm not closed" />
-        <Selector ID="Behavior">
-          <Property ID="MultipleInstances" Value="FALSE" />
-        </Selector>
-      </Group>
-      <Group ID="[4]">
-        <Property ID="Name" Value="LeftArmNotOpened" />
-        <Property ID="Message" Value="Left arm not opened" />
-        <Selector ID="Behavior">
-          <Property ID="MultipleInstances" Value="FALSE" />
-        </Selector>
-      </Group>
-      <Group ID="[5]">
-        <Property ID="Name" Value="RightArmNotOpened" />
-        <Property ID="Message" Value="Right arm not opened" />
-        <Selector ID="Behavior">
-          <Property ID="MultipleInstances" Value="FALSE" />
-        </Selector>
-      </Group>
-      <Group ID="[6]">
-        <Property ID="Name" Value="MotorProtectionP11" />
-        <Property ID="Message" Value="Motor protection P11" />
-        <Selector ID="Behavior" Value="PersistentAlarm" />
-      </Group>
-      <Group ID="[7]">
-        <Property ID="Name" Value="UpperPositionNotReached" />
-        <Property ID="Message" Value="Upper position not reached" />
-        <Selector ID="Behavior">
-          <Property ID="MultipleInstances" Value="FALSE" />
-        </Selector>
-      </Group>
-      <Group ID="[8]">
-        <Property ID="Name" Value="MiddlePositionNotReached" />
-        <Property ID="Message" Value="Middle position not reached" />
-        <Selector ID="Behavior">
-          <Property ID="MultipleInstances" Value="FALSE" />
-        </Selector>
-      </Group>
-      <Group ID="[9]">
-        <Property ID="Name" Value="LowerPositionNotReached" />
-        <Property ID="Message" Value="Lower position not reached" />
-        <Selector ID="Behavior">
-          <Property ID="MultipleInstances" Value="FALSE" />
-        </Selector>
-      </Group>
-      <Group ID="[10]">
+      <Group ID="[1]">
         <Property ID="Name" Value="MagazineUpperHwEndReached" />
         <Property ID="Message" Value="Magazine upper HW end reached" />
         <Selector ID="Behavior">
           <Property ID="MultipleInstances" Value="FALSE" />
         </Selector>
       </Group>
-      <Group ID="[11]">
+      <Group ID="[2]">
         <Property ID="Name" Value="MagazineLooseChain" />
         <Property ID="Message" Value="Magazine loose chain" />
         <Selector ID="Behavior">
           <Property ID="MultipleInstances" Value="FALSE" />
         </Selector>
       </Group>
-      <Group ID="[12]">
+      <Group ID="[3]">
         <Property ID="Name" Value="MotorProtectionP11" />
         <Property ID="Message" Value="Motor protection P11 failure" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
-      <Group ID="[13]">
+      <Group ID="[4]">
         <Property ID="Name" Value="EStop1" />
         <Property ID="Message" Value="E-Stop 1" />
       </Group>
-      <Group ID="[14]">
+      <Group ID="[5]">
         <Property ID="Name" Value="EStop1" />
         <Property ID="Message" Value="E-Stop 1" />
       </Group>
-      <Group ID="[15]">
+      <Group ID="[6]">
         <Property ID="Name" Value="EStop3" />
         <Property ID="Message" Value="E-Stop 3" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
-      <Group ID="[16]">
+      <Group ID="[7]">
         <Property ID="Name" Value="EStop4" />
         <Property ID="Message" Value="E-Stop 4" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
-      <Group ID="[17]">
+      <Group ID="[8]">
         <Property ID="Name" Value="EStop5" />
         <Property ID="Message" Value="E-Stop 5" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
-      <Group ID="[18]">
+      <Group ID="[9]">
         <Property ID="Name" Value="EStopRobot" />
         <Property ID="Message" Value="E-Stop Robot" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
-      <Group ID="[19]">
+      <Group ID="[10]">
         <Property ID="Name" Value="EStopWrapper" />
         <Property ID="Message" Value="E-Stop Wrapper" />
         <Selector ID="Behavior" Value="PersistentAlarm" />

@@ -34,7 +34,7 @@
         <Info Name="Description-de" Value="X20 SafeLOGIC Compact, 20xE, 24V, 2xKAT4" />
         <Info Name="Description-en" Value="X20 SafeLOGIC Compact, 20xI, 24V, 2xCAT4" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0304,safety:diEStop2" />
-        <Info Name="AsVariable" Value="SafeTwoChannelInput0910,safety:diEStop4" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput0910,safety:diEStop5" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput1314,safety:diEStopWrapper" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0506,safety:diEStop3" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0102,safety:diEStop1" />
@@ -91,7 +91,7 @@
         <Info Name="Interface" Value="IF6.ST12" />
         <Info Name="HWC_Revision" Value="1.10.0.1" />
         <Info Name="HWC_LastEdit" Value="4.5.2016 9:35:30" />
-        <Info Name="AS_Name" Value="I24" />
+        <Info Name="AS_Name" Value="I22" />
         <Info Name="FirstPublishedSafetyRelease" Value="1.5" />
         <Info Name="Description-de" Value="X20 Safe Digital In, 20xE, 24V" />
         <Info Name="Description-en" Value="X20 Safe Digital In, 20xI, 24V" />
