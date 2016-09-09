@@ -7,7 +7,7 @@ ACTION ConveyorP12Control:
 	END_IF
 
 	CASE stateConveyor OF
-		stateConveyorUndefined:
+		stateConveyorEmpty:
 		
 	END_CASE
 	
