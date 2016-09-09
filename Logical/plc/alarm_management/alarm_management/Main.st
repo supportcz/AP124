@@ -15,8 +15,10 @@ PROGRAM _CYCLIC
 	
 	acknowledgeImage[0];
 	
-	IF EDGEPOS(diReset) THEN
-		//MpAlarmXListUIConnect.AcknowledgeAll := TRUE;
+	IF diReset THEN
+		FOR i:= 0 TO 39 DO
+			acknowledgeImage[i] := 0;
+		END_FOR
 	END_IF
 	
 END_PROGRAM

@@ -33,15 +33,17 @@
         <Info Name="ProjectSL" Value="1" />
         <Info Name="Description-de" Value="X20 SafeLOGIC Compact, 20xE, 24V, 2xKAT4" />
         <Info Name="Description-en" Value="X20 SafeLOGIC Compact, 20xI, 24V, 2xCAT4" />
-        <Info Name="AsVariable" Value="SafeTwoChannelInput0304,safety:diEStop2" />
-        <Info Name="AsVariable" Value="SafeTwoChannelInput0910,safety:diEStop5" />
-        <Info Name="AsVariable" Value="SafeTwoChannelInput1314,safety:diEStopWrapper" />
-        <Info Name="AsVariable" Value="SafeTwoChannelInput0506,safety:diEStop3" />
-        <Info Name="AsVariable" Value="SafeTwoChannelInput0102,safety:diEStop1" />
-        <Info Name="AsVariable" Value="BOOL001,pallet_mag:magazineSafetyViolation" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput0304,alarm_mana:diEStop2" />
+        <Info Name="AsVariable" Value="BOOL003,pallet_mag:edmContactorError" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput0910,pallet_mag:diEStop5" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput1314,alarm_mana:diEStopWrapper" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput0506,alarm_mana:diEStop3" />
+        <Info Name="AsVariable" Value="BOOL002,pallet_mag:safetyCircuitsReady" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput0102,alarm_mana:diEStop1" />
         <Info Name="AsVariable" Value="BOOL101,pallet_mag:activateSafetyCircuit" />
-        <Info Name="AsVariable" Value="SafeTwoChannelInput0708,safety:diEStop4" />
-        <Info Name="AsVariable" Value="SafeTwoChannelInput1112,safety:diEStopRobot" />
+        <Info Name="AsVariable" Value="BOOL001,safety:allSafetyCircuitsReady" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput0708,alarm_mana:diEStop4" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput1112,alarm_mana:diEStopRobot" />
       </NodeDescription>
       <ChannelConfiguration>
         <DataTransport>
@@ -54,7 +56,7 @@
               <Transport Name="DataExToCpu" Index="0x00" />
               <SODPosition Index="0x0" SubIndex="0x00" />
             </DataValue>
-            <Repetition RangeMax="8" NrOfDigits="2" />
+            <Repetition RangeMax="24" NrOfDigits="2" />
           </Channel>
         </ChannelGroup>
         <ChannelGroup id="FromCPU_OCTET">
@@ -76,7 +78,7 @@
               <Transport Name="DataExFromCpu" Index="0x00" />
               <SODPosition Index="0x0" SubIndex="0x00" />
             </DataValue>
-            <Repetition RangeMax="8" NrOfDigits="2" />
+            <Repetition RangeMax="24" NrOfDigits="2" />
           </Channel>
         </ChannelGroup>
       </ChannelConfiguration>
@@ -96,6 +98,7 @@
         <Info Name="Description-de" Value="X20 Safe Digital In, 20xE, 24V" />
         <Info Name="Description-en" Value="X20 Safe Digital In, 20xI, 24V" />
         <Info Name="AsVariable" Value="SafeDigitalInput17,pallet_mag:diMagazineContactorState" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput0102,pallet_mag:diLightCurtainP11" />
       </NodeDescription>
       <ChannelConfiguration />
     </SafetyNode>

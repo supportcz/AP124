@@ -7,4 +7,5 @@ VAR
 	diEStop4 : BOOL; (*emergency stop 4*)
 	diEStopRobot : BOOL; (*emergency stop - robot*)
 	diEStopWrapper : BOOL; (*emergency stop wrapper*)
+	i : INT;
 END_VAR

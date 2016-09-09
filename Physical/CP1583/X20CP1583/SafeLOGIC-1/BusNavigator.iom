@@ -2,13 +2,16 @@
 <!--IOMapping Version="4.0"-->
 <IOOffsets SIBytes="2048" SOBytes="2048" NSIBytes="1024" NSOBytes="1024" ConnectionsValidOffset="24" >
 		<Module Name="SL1.SM1" Hardware="X20SLX910" SafeLogicID="1" SafeModuleID="1" SISize="8" SOSize="2" NSISize="20" NSOSize="20" SIOffset="16" SOOffset="12" NSIOffset="0" NSOOffset="0" HWTypeCode="31" >
-			<Channel Name="SafeTwoChannelInput0102" Mapping="SIX18.4" Variable="diEStop1" Address="safety:diEStop1" SODIndex="0x9999" SODSubIndex="0x3" />
-			<Channel Name="SafeTwoChannelInput0304" Mapping="SIX18.5" Variable="diEStop2" Address="safety:diEStop2" SODIndex="0x9999" SODSubIndex="0x3" />
+			<Channel Name="SafeTwoChannelInput0102" Mapping="SIX18.4" Variable="diEStop1" Address="alarm_mana:diEStop1" SODIndex="0x9999" SODSubIndex="0x3" />
+			<Channel Name="SafeTwoChannelInput0304" Mapping="SIX18.5" Variable="diEStop2" Address="alarm_mana:diEStop2" SODIndex="0x9999" SODSubIndex="0x3" />
 			<Channel Name="SafeTwoChannelOk0102" Mapping="SIX22.4" Variable="diEStop3" SODIndex="0x9999" SODSubIndex="0x7" />
 			<Channel Name="SafeTwoChannelOk0304" Mapping="SIX22.5" Variable="diEStop4" SODIndex="0x9999" SODSubIndex="0x7" />
-			<Channel Name="SafeTwoChannelInput0506" Mapping="SIX18.6" Variable="diEStop5" Address="safety:diEStop3" SODIndex="0x9999" SODSubIndex="0x3" />
-			<Channel Name="SafeTwoChannelInput0708" Mapping="SIX18.7" Variable="diEStopRobot" Address="safety:diEStop4" SODIndex="0x9999" SODSubIndex="0x3" />
+			<Channel Name="SafeTwoChannelInput0506" Mapping="SIX18.6" Variable="diEStop5" Address="alarm_mana:diEStop3" SODIndex="0x9999" SODSubIndex="0x3" />
+			<Channel Name="SafeTwoChannelInput0708" Mapping="SIX18.7" Variable="diEStopRobot" Address="alarm_mana:diEStop4" SODIndex="0x9999" SODSubIndex="0x3" />
 			<Channel Name="SafeTwoChannelOk0506" Mapping="SIX22.6" Variable="diEStopWrapper" SODIndex="0x9999" SODSubIndex="0x7" />
+			<Channel Name="BOOL001" Mapping="NSQX0.0" Variable="allSafetyCircuitsReadyNS" Address="safety:allSafetyCircuitsReady" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL002" Mapping="NSQX0.1" Variable="pallet_mag_safetyCircuitsReaNS" Address="pallet_mag:safetyCircuitsReady" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL003" Mapping="NSQX0.2" Variable="pallet_mag_edmContactorError" Address="pallet_mag:edmContactorError" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL101" Mapping="NSIX0.0" Variable="pallet_mag_activateSafety" Address="pallet_mag:activateSafetyCircuit" SODIndex="0x2500" SODSubIndex="0x2" />
 		</Module>
 		<Module Name="SL1.SM2" Hardware="X20SI9100" SafeLogicID="1" SafeModuleID="2" SISize="8" SOSize="0" NSISize="0" NSOSize="0" SIOffset="60" ConnectionValidBitNumber="0" HWTypeCode="27" >
