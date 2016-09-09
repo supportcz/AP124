@@ -1,6 +1,12 @@
 
 TYPE
-	MagazineState : 
+	StateConveyor : 
+		(
+		stateConveyorEmpty,
+		stateConveyorReady,
+		stateConveyorMoving
+		);
+	StateMagazine : 
 		(
 		stateMagazineUndefined,
 		stateMoveToUpperPosition,
@@ -11,7 +17,7 @@ TYPE
 		stateMoveToLowerPosition,
 		stateLowerPosition
 		);
-	ArmsState : 
+	StateArms : 
 		(
 		stateArmsUndefined,
 		stateArmsOpening,

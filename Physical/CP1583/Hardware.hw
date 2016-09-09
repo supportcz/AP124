@@ -26,6 +26,9 @@
     <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11a" TargetConnector="SL1" />
   </Module>
+  <Module Name="I110" Type="X67DM9321.L12" Version="1.1.1.1">
+    <Connection Connector="X2X1" TargetModule="X20BT9400" TargetConnector="X2X1" NodeNumber="34" />
+  </Module>
   <Module Name="I18" Type="X20SLX910" Version="1.10.0.0">
     <Connection Connector="SS1" TargetModule="X20TB52" TargetConnector="SS" />
     <Connection Connector="SS2" TargetModule="X20TB52a" TargetConnector="SS" />
@@ -52,9 +55,16 @@
     <Connection Connector="SS1" TargetModule="X20TB1F9" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11l" TargetConnector="SL1" />
   </Module>
+  <Module Name="I80" Type="X20DIF371" Version="1.0.1.0">
+    <Connection Connector="SS1" TargetModule="X20TB1F11" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11o" TargetConnector="SL1" />
+  </Module>
   <Module Name="Q10" Type="X20DOF322" Version="1.1.0.2">
     <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11b" TargetConnector="SL1" />
+  </Module>
+  <Module Name="Q112" Type="X67DO1332" Version="1.0.0.2">
+    <Connection Connector="X2X1" TargetModule="I110" TargetConnector="X2X2" />
   </Module>
   <Module Name="Q12" Type="X20DOF322" Version="1.1.0.2">
     <Connection Connector="SS1" TargetModule="X20TB1F3" TargetConnector="SS" />
@@ -68,6 +78,21 @@
     <Connection Connector="SS1" TargetModule="X20TB1F5" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11e" TargetConnector="SL1" />
   </Module>
+  <Module Name="Q26" Type="X20SO6300" Version="1.10.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB52d" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM33b" TargetConnector="SL1" />
+    <Parameter ID="SafeModuleID" Value="3" />
+  </Module>
+  <Module Name="Q27" Type="X20SO4110" Version="1.10.0.1">
+    <Connection Connector="SS1" TargetModule="X20TB52e" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM33c" TargetConnector="SL1" />
+    <Parameter ID="SafeModuleID" Value="4" />
+  </Module>
+  <Module Name="Q28" Type="X20SO4110" Version="1.10.0.1">
+    <Connection Connector="SS1" TargetModule="X20TB52f" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM33d" TargetConnector="SL1" />
+    <Parameter ID="SafeModuleID" Value="5" />
+  </Module>
   <Module Name="Q29" Type="X20SO4110" Version="1.10.0.1">
     <Connection Connector="SS1" TargetModule="X20TB52g" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM33e" TargetConnector="SL1" />
@@ -76,6 +101,11 @@
     <Parameter ID="DigitalOutput02" Value="viaSafeLOGIC" />
     <Parameter ID="DigitalOutput03" Value="viaSafeLOGIC" />
     <Parameter ID="DigitalOutput04" Value="viaSafeLOGIC" />
+  </Module>
+  <Module Name="Q30" Type="X20SO4110" Version="1.10.0.1">
+    <Connection Connector="SS1" TargetModule="X20TB52h" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM33f" TargetConnector="SL1" />
+    <Parameter ID="SafeModuleID" Value="7" />
   </Module>
   <Module Name="Q52" Type="X20DOF322" Version="1.1.0.2">
     <Connection Connector="SS1" TargetModule="X20TB1F7" TargetConnector="SS" />
@@ -246,12 +276,6 @@
     <Parameter ID="Cyclic7Tolerance" Value="1000000" />
     <Parameter ID="Cyclic8Duration" Value="10000" />
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
-    <Parameter ID="Temp.ProjectDirectory" Value="C:\Work\Atrima\projekt\AP124\" />
-    <Parameter ID="Temp.ConfigurationName" Value="CP1583" />
-  </Module>
-  <Module Name="X20DIF371e" Type="X20DIF371" Version="1.0.1.0">
-    <Connection Connector="SS1" TargetModule="X20TB1F11" TargetConnector="SS" />
-    <Connection Connector="SL" TargetModule="X20BM11o" TargetConnector="SL1" />
   </Module>
   <Module Name="X20PS2100a" Type="X20PS2100" Version="1.1.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />
@@ -260,26 +284,6 @@
   <Module Name="X20PS2100b" Type="X20PS2100" Version="1.1.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12b" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM01b" TargetConnector="SL1" />
-  </Module>
-  <Module Name="X20SO4110" Type="X20SO4110" Version="1.10.0.1">
-    <Connection Connector="SS1" TargetModule="X20TB52e" TargetConnector="SS" />
-    <Connection Connector="SL" TargetModule="X20BM33c" TargetConnector="SL1" />
-    <Parameter ID="SafeModuleID" Value="4" />
-  </Module>
-  <Module Name="X20SO4110a" Type="X20SO4110" Version="1.10.0.1">
-    <Connection Connector="SS1" TargetModule="X20TB52f" TargetConnector="SS" />
-    <Connection Connector="SL" TargetModule="X20BM33d" TargetConnector="SL1" />
-    <Parameter ID="SafeModuleID" Value="5" />
-  </Module>
-  <Module Name="X20SO4110c" Type="X20SO4110" Version="1.10.0.1">
-    <Connection Connector="SS1" TargetModule="X20TB52h" TargetConnector="SS" />
-    <Connection Connector="SL" TargetModule="X20BM33f" TargetConnector="SL1" />
-    <Parameter ID="SafeModuleID" Value="7" />
-  </Module>
-  <Module Name="X20SO6300" Type="X20SO6300" Version="1.10.0.0">
-    <Connection Connector="SS1" TargetModule="X20TB52d" TargetConnector="SS" />
-    <Connection Connector="SL" TargetModule="X20BM33b" TargetConnector="SL1" />
-    <Parameter ID="SafeModuleID" Value="3" />
   </Module>
   <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
   <Module Name="X20TB12a" Type="X20TB12" Version="1.0.0.0" />
@@ -315,10 +319,4 @@
   <Module Name="X20TB52f" Type="X20TB52" Version="1.0.0.1" />
   <Module Name="X20TB52g" Type="X20TB52" Version="1.0.0.1" />
   <Module Name="X20TB52h" Type="X20TB52" Version="1.0.0.1" />
-  <Module Name="X67DM9321.L12" Type="X67DM9321.L12" Version="1.1.1.1">
-    <Connection Connector="X2X1" TargetModule="X20BT9400" TargetConnector="X2X1" NodeNumber="34" />
-  </Module>
-  <Module Name="X67DO1332" Type="X67DO1332" Version="1.0.0.2">
-    <Connection Connector="X2X1" TargetModule="X67DM9321.L12" TargetConnector="X2X2" />
-  </Module>
 </Hardware>

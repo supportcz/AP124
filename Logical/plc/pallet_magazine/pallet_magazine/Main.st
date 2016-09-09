@@ -41,10 +41,8 @@ PROGRAM _CYCLIC
 	//vertical arms movement
 	VerticalArmsControl;
 	
-	//detect pallet on conveyor
-	IF diPalletOnConveyorP12 THEN
-		palletOnConveyor := TRUE;
-	END_IF
+	//conveyor P12
+	ConveyorP12Control;
 
 	//request to activate safety
 	activateSafetyCircuit := diAuto OR diActivateAllSafetyCircuits;

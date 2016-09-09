@@ -2,7 +2,7 @@ VAR
 	acknowledgeImage : ARRAY[0..39] OF BOOL;
 	activateSafetyCircuit : BOOL; (*activates safety circuit of magazine*)
 	alarmImage : ARRAY[0..39] OF BOOL;
-	armsState : ArmsState; (*VISU:arms state*)
+	stateArms : StateArms; (*VISU:arms state*)
 	cmdAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
 	cmdCloseArms : BOOL; (*VISU:command to close the arms*)
 	cmdDown : BOOL; (*VISU: button to go with magazine up*)
@@ -23,18 +23,20 @@ VAR
 	diRightArmClosed : BOOL; (*right arm is closed*)
 	diRightArmOpened : BOOL; (*right arm is opened*)
 	doCloseArms : BOOL; (*valve to close the arms*)
+	doConveyorP12 : BOOL; (*starts conveyor P12*)
 	doMagazineBrake : BOOL; (*1=brake released*)
 	doMagazineDown : BOOL; (*contactor to go down*)
 	doMagazineUp : BOOL; (*contactor to go up*)
 	doOpenArms : BOOL; (*valve to open the arms*)
-	i : INT;
-	magazineState : MagazineState; (*VISU: current state of magazine*)
-	modeOfOperation : ModeOfOperation;
-	palletOnConveyor : BOOL; (*VISU:pallet lies on conveyor*)
-	readyToStart : BOOL;
 	edmContactorError : BOOL; (*1=power on*)
+	i : INT;
+	stateMagazine : StateMagazine; (*VISU: current state of magazine*)
+	modeOfOperation : ModeOfOperation;
+	palletOnConveyorP12 : BOOL; (*VISU:pallet lies on conveyor*)
+	readyToStart : BOOL;
 	safetyCircuitsReady : BOOL; (*1=safety circuits are ready to be switched on*)
 	TON_LeftRequest : TON;
 	TON_RightRequest : TON;
 	TON_VerticalMovement : TON;
+	stateConveyor : StateConveyor;
 END_VAR

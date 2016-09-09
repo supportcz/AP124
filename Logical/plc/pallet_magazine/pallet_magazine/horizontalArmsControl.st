@@ -3,18 +3,18 @@
 ACTION HorizontalArmsControl: 
 	
 	IF modeOfOperation = modeNotReadyToStart THEN
-		armsState := stateArmsUndefined;
+		stateArms := stateArmsUndefined;
 	END_IF
 	
-	CASE armsState OF
+	CASE stateArms OF
 		stateArmsUndefined:
 			
 			IF diLeftArmClosed AND diRightArmClosed AND NOT diLeftArmOpened AND NOT diRightArmOpened THEN
-				armsState := stateArmsClosed;
+				stateArms := stateArmsClosed;
 			END_IF
 
 			IF diLeftArmOpened AND diRightArmOpened AND NOT diLeftArmClosed AND NOT diRightArmClosed THEN
-				armsState := stateArmsOpened;
+				stateArms := stateArmsOpened;
 			END_IF
 			
 		stateArmsOpening:
@@ -29,17 +29,17 @@ ACTION HorizontalArmsControl:
 			TON_RightRequest(IN := NOT diRightArmOpened, PT := T#6s);
 			//open check
 			IF diLeftArmOpened AND diRightArmOpened THEN
-				armsState := stateArmsOpened;
+				stateArms := stateArmsOpened;
 			END_IF	
 			//timeout left side?
 			IF TON_LeftRequest.Q THEN
 				alarmImage[4] := TRUE;
-				armsState := stateArmsClosed;
+				stateArms := stateArmsClosed;
 			END_IF
 			//timeout right side?
 			IF TON_RightRequest.Q THEN
 				alarmImage[5] := TRUE;
-				armsState := stateArmsClosed;
+				stateArms := stateArmsClosed;
 			END_IF
 		
 		stateArmsOpened:
@@ -48,7 +48,7 @@ ACTION HorizontalArmsControl:
 			IF cmdCloseArms THEN
 				TON_LeftRequest(IN := FALSE);
 				TON_RightRequest(IN := FALSE);
-				armsState := stateArmsClosing;		
+				stateArms := stateArmsClosing;		
 			END_IF
 
 		stateArmsClosing:
@@ -63,17 +63,17 @@ ACTION HorizontalArmsControl:
 			TON_RightRequest(IN := NOT diRightArmClosed, PT := T#6s);
 			//close check
 			IF diLeftArmClosed AND diRightArmClosed THEN
-				armsState := stateArmsClosed;
+				stateArms := stateArmsClosed;
 			END_IF	
 			//timeout left side?
 			IF TON_LeftRequest.Q THEN
 				alarmImage[2] := TRUE;
-				armsState := stateArmsOpened;
+				stateArms := stateArmsOpened;
 			END_IF
 			//timeout right side?
 			IF TON_RightRequest.Q THEN
 				alarmImage[3] := TRUE;
-				armsState := stateArmsOpened;
+				stateArms := stateArmsOpened;
 			END_IF
 
 		stateArmsClosed:
@@ -82,7 +82,7 @@ ACTION HorizontalArmsControl:
 			IF cmdOpenArms THEN
 				TON_LeftRequest(IN := FALSE);
 				TON_RightRequest(IN := FALSE);
-				armsState := stateArmsOpening;	
+				stateArms := stateArmsOpening;	
 			END_IF	
 			
 	END_CASE

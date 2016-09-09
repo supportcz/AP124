@@ -3,22 +3,22 @@
 ACTION VerticalArmsControl: 
 	
 	IF modeOfOperation = modeNotReadyToStart THEN
-		magazineState := stateMagazineUndefined;
+		stateMagazine := stateMagazineUndefined;
 	END_IF
 	
-	CASE magazineState OF
+	CASE stateMagazine OF
 		stateMagazineUndefined:
 			
 			IF diMagazineUpperPosition AND NOT diMagazineMiddlePositon AND NOT diMagazineLowerPosition THEN
-				magazineState := stateUpperPosition;
+				stateMagazine := stateUpperPosition;
 			END_IF
 
 			IF NOT diMagazineUpperPosition AND diMagazineMiddlePositon AND NOT diMagazineLowerPosition THEN
-				magazineState := stateMiddlePosition;
+				stateMagazine := stateMiddlePosition;
 			END_IF
 
 			IF NOT diMagazineUpperPosition AND NOT diMagazineMiddlePositon AND diMagazineLowerPosition THEN
-				magazineState := stateLowerPosition;
+				stateMagazine := stateLowerPosition;
 			END_IF
 		
 			VerticalFinishMovement;
@@ -31,19 +31,19 @@ ACTION VerticalArmsControl:
 			//position reached?
 			IF diMagazineUpperPosition THEN
 				VerticalFinishMovement;
-				magazineState := stateUpperPosition;
+				stateMagazine := stateUpperPosition;
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
 				VerticalFinishMovement;
 				alarmImage[7] := TRUE;
-				magazineState := stateMiddlePosition;
+				stateMagazine := stateMiddlePosition;
 			END_IF	
 		
 		stateUpperPosition:
 	
 			IF cmdDown THEN
-				magazineState := stateMoveUpperToMiddlePosition;
+				stateMagazine := stateMoveUpperToMiddlePosition;
 			END_IF	
 	
 		stateMoveUpperToMiddlePosition:
@@ -55,13 +55,13 @@ ACTION VerticalArmsControl:
 			//position reached?
 			IF diMagazineMiddlePositon THEN
 				VerticalFinishMovement;
-				magazineState := stateMiddlePosition;
+				stateMagazine := stateMiddlePosition;
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
 				VerticalFinishMovement;
 				alarmImage[8] := TRUE;
-				magazineState := stateUpperPosition;
+				stateMagazine := stateUpperPosition;
 			END_IF
 				
 		stateMoveLowerToMiddlePosition:
@@ -72,23 +72,23 @@ ACTION VerticalArmsControl:
 			//position reached?
 			IF diMagazineMiddlePositon THEN
 				VerticalFinishMovement;
-				magazineState := stateMiddlePosition;
+				stateMagazine := stateMiddlePosition;
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
 				VerticalFinishMovement;
 				alarmImage[8] := TRUE;
-				magazineState := stateLowerPosition;
+				stateMagazine := stateLowerPosition;
 			END_IF
 		
 		stateMiddlePosition:
 			
 			IF cmdDown THEN
-				magazineState := stateMoveToLowerPosition;
+				stateMagazine := stateMoveToLowerPosition;
 			END_IF	
 			
 			IF cmdUp THEN
-				magazineState := stateMoveToUpperPosition;
+				stateMagazine := stateMoveToUpperPosition;
 			END_IF	
 		
 		stateMoveToLowerPosition:
@@ -99,18 +99,18 @@ ACTION VerticalArmsControl:
 			//position reached?
 			IF diMagazineLowerPosition THEN
 				VerticalFinishMovement;
-				magazineState := stateLowerPosition;
+				stateMagazine := stateLowerPosition;
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
 				VerticalFinishMovement;
 				alarmImage[9] := TRUE;
-				magazineState := stateMiddlePosition;
+				stateMagazine := stateMiddlePosition;
 			END_IF
 		
 		stateLowerPosition:
 			IF cmdUp THEN
-				magazineState := stateMoveLowerToMiddlePosition;
+				stateMagazine := stateMoveLowerToMiddlePosition;
 			END_IF	
 
 	END_CASE
