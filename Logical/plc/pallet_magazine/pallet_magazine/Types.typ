@@ -2,9 +2,11 @@
 TYPE
 	StateConveyor : 
 		(
+		stateConveyorUndefined,
 		stateConveyorEmpty,
-		stateConveyorReady,
-		stateConveyorMoving
+		stateConveyorOccupied,
+		stateConveyorMoving,
+		stateConveyorStop
 		);
 	StateMagazine : 
 		(

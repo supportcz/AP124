@@ -2,10 +2,10 @@ VAR
 	acknowledgeImage : ARRAY[0..39] OF BOOL;
 	activateSafetyCircuit : BOOL; (*activates safety circuit of magazine*)
 	alarmImage : ARRAY[0..39] OF BOOL;
-	stateArms : StateArms; (*VISU:arms state*)
 	cmdAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
 	cmdCloseArms : BOOL; (*VISU:command to close the arms*)
 	cmdDown : BOOL; (*VISU: button to go with magazine up*)
+	cmdMovePallet : BOOL;
 	cmdOpenArms : BOOL; (*VISU:commad to open the arms*)
 	cmdUp : BOOL; (*VISU: go with magazine down*)
 	diAuto : BOOL; (*magazine:3 funkce v 1 (reset safety+ovladaci obvody + start automatu)*)
@@ -30,13 +30,15 @@ VAR
 	doOpenArms : BOOL; (*valve to open the arms*)
 	edmContactorError : BOOL; (*1=power on*)
 	i : INT;
-	stateMagazine : StateMagazine; (*VISU: current state of magazine*)
 	modeOfOperation : ModeOfOperation;
 	palletOnConveyorP12 : BOOL; (*VISU:pallet lies on conveyor*)
 	readyToStart : BOOL;
 	safetyCircuitsReady : BOOL; (*1=safety circuits are ready to be switched on*)
+	stateArms : StateArms; (*VISU:arms state*)
+	stateConveyor : StateConveyor;
+	stateMagazine : StateMagazine; (*VISU: current state of magazine*)
+	TON_ConveyorP12 : TON;
 	TON_LeftRequest : TON;
 	TON_RightRequest : TON;
 	TON_VerticalMovement : TON;
-	stateConveyor : StateConveyor;
 END_VAR
