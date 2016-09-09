@@ -122,17 +122,6 @@ ACTION VerticalArmsControl:
 		doMagazineBrake := FALSE;
 	END_IF
 	
-	IF diMagazineUpperHwEnd AND cmdUp THEN
-		alarmImage[10] := TRUE;
-	END_IF
-
-	IF diMagazineLooseChain AND cmdDown THEN
-		alarmImage[11] := TRUE;
-	END_IF
-	
-	alarmImage[6] := diMotorProtectionP11;
-	alarmImage[13] := diEStop5;
-	
 END_ACTION
 
 ACTION VerticalFinishMovement:

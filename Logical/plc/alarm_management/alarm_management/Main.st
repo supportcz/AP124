@@ -5,7 +5,7 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
-	alarmImage[0] := diAirPresureOK;
+	alarmImage[0] := NOT diAirPresureOK;
 	alarmImage[1] := diEStop1;
 	alarmImage[2] := diEStop2;
 	alarmImage[3] := diEStop3;

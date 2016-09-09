@@ -4,7 +4,7 @@
     <GeneratorDescription Name="AutomationStudio" Version="4.2.5.388" LanguageID="1">
       <Info Name="ARVersion" Value="42510" />
       <Info Name="SafetyRelease" Value="1.10" />
-      <Info Name="Communication" Value="/IF=tcpip /LOPO=11159 /SA=1 /RT=1000 /AM=* /SDT=5 /DAIP=192.168.0.100 /REPO=11159 /ANSL=1 /PT=11169 /PORT=50000" />
+      <Info Name="Communication" Value="/IF=tcpip /LOPO=11159 /SA=1 /RT=1000 /AM=* /DAIP=127.0.0.1 /REPO=11160 /ANSL=1 /PORT=50000" />
     </GeneratorDescription>
     <SafetyConfigurationManager TransportSAddr="1">
       <DeviceDescription Module="X20SLXxxx_110.SCM" minOpenSafetyRelease="1.5"><![CDATA[C:\BrAutomation\AS42\AS\Hardware\Modules\OSDD\X20SLXxxx_SCM_R110.xosdd]]></DeviceDescription>
@@ -27,7 +27,7 @@
         <Classification Type="VendorSpecific">IO</Classification>
         <Info Name="Interface" Value="IF6.ST11" />
         <Info Name="HWC_Revision" Value="1.10.0.0" />
-        <Info Name="HWC_LastEdit" Value="12.05.2016 8:28:32" />
+        <Info Name="HWC_LastEdit" Value="12.5.2016 8:28:32" />
         <Info Name="AS_Name" Value="I18" />
         <Info Name="FirstPublishedSafetyRelease" Value="1.7" />
         <Info Name="ProjectSL" Value="1" />
@@ -90,7 +90,7 @@
         <Classification Type="VendorSpecific">IO</Classification>
         <Info Name="Interface" Value="IF6.ST12" />
         <Info Name="HWC_Revision" Value="1.10.0.1" />
-        <Info Name="HWC_LastEdit" Value="04.05.2016 9:35:30" />
+        <Info Name="HWC_LastEdit" Value="4.5.2016 9:35:30" />
         <Info Name="AS_Name" Value="I22" />
         <Info Name="FirstPublishedSafetyRelease" Value="1.5" />
         <Info Name="Description-de" Value="X20 Safe Digital In, 20xE, 24V" />
@@ -109,7 +109,7 @@
         <Classification Type="VendorSpecific">IO</Classification>
         <Info Name="Interface" Value="IF6.ST13" />
         <Info Name="HWC_Revision" Value="1.10.0.0" />
-        <Info Name="HWC_LastEdit" Value="11.04.2016 15:29:10" />
+        <Info Name="HWC_LastEdit" Value="11.4.2016 15:29:10" />
         <Info Name="AS_Name" Value="X20SO6300" />
         <Info Name="FirstPublishedSafetyRelease" Value="1.5" />
         <Info Name="Description-de" Value="X20 Safe Digital Out, 6xA, 24 V, 0.2 A" />
@@ -163,7 +163,7 @@
         <Classification Type="VendorSpecific">IO</Classification>
         <Info Name="Interface" Value="IF6.ST14" />
         <Info Name="HWC_Revision" Value="1.10.0.1" />
-        <Info Name="HWC_LastEdit" Value="11.04.2016 9:56:26" />
+        <Info Name="HWC_LastEdit" Value="11.4.2016 9:56:26" />
         <Info Name="AS_Name" Value="X20SO4110" />
         <Info Name="FirstPublishedSafetyRelease" Value="1.5" />
         <Info Name="Description-de" Value="X20 Safe Digital Out, 4xA, 24 V, 0.5 A" />
@@ -227,7 +227,7 @@
         <Classification Type="VendorSpecific">IO</Classification>
         <Info Name="Interface" Value="IF6.ST15" />
         <Info Name="HWC_Revision" Value="1.10.0.1" />
-        <Info Name="HWC_LastEdit" Value="11.04.2016 9:56:26" />
+        <Info Name="HWC_LastEdit" Value="11.4.2016 9:56:26" />
         <Info Name="AS_Name" Value="X20SO4110a" />
         <Info Name="FirstPublishedSafetyRelease" Value="1.5" />
         <Info Name="Description-de" Value="X20 Safe Digital Out, 4xA, 24 V, 0.5 A" />
@@ -291,7 +291,7 @@
         <Classification Type="VendorSpecific">IO</Classification>
         <Info Name="Interface" Value="IF6.ST16" />
         <Info Name="HWC_Revision" Value="1.10.0.1" />
-        <Info Name="HWC_LastEdit" Value="11.04.2016 9:56:26" />
+        <Info Name="HWC_LastEdit" Value="11.4.2016 9:56:26" />
         <Info Name="AS_Name" Value="Q29" />
         <Info Name="FirstPublishedSafetyRelease" Value="1.5" />
         <Info Name="Description-de" Value="X20 Safe Digital Out, 4xA, 24 V, 0.5 A" />
@@ -355,7 +355,7 @@
         <Classification Type="VendorSpecific">IO</Classification>
         <Info Name="Interface" Value="IF6.ST17" />
         <Info Name="HWC_Revision" Value="1.10.0.1" />
-        <Info Name="HWC_LastEdit" Value="11.04.2016 9:56:26" />
+        <Info Name="HWC_LastEdit" Value="11.4.2016 9:56:26" />
         <Info Name="AS_Name" Value="X20SO4110c" />
         <Info Name="FirstPublishedSafetyRelease" Value="1.5" />
         <Info Name="Description-de" Value="X20 Safe Digital Out, 4xA, 24 V, 0.5 A" />

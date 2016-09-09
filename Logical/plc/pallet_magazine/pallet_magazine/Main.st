@@ -51,6 +51,19 @@ PROGRAM _CYCLIC
 	alarmImage[0] := magazineSafetyViolation;
 	alarmImage[1] := diLightCurtainP11;
 	
+	IF diMagazineUpperHwEnd AND cmdUp THEN
+		alarmImage[10] := TRUE;
+	END_IF
+
+	IF diMagazineLooseChain AND cmdDown THEN
+		alarmImage[11] := TRUE;
+	END_IF
+	
+	alarmImage[6] := diMotorProtectionP11;
+	alarmImage[13] := NOT diEStop5;
+	
+
+	
 	acknowledgeImage[0];
 		
 	
