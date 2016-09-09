@@ -262,7 +262,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmXStates]"/>
-          <Property Name="BitmapIndex" Value="1"/>
+          <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -280,7 +280,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmAcknowledgeState]"/>
-          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapIndex" Value="1"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -368,7 +368,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmXStates]"/>
-          <Property Name="BitmapIndex" Value="1"/>
+          <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -386,7 +386,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmAcknowledgeState]"/>
-          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapIndex" Value="1"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -404,7 +404,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmXStates]"/>
-          <Property Name="BitmapIndex" Value="1"/>
+          <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -422,7 +422,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmAcknowledgeState]"/>
-          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapIndex" Value="1"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -440,7 +440,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmXStates]"/>
-          <Property Name="BitmapIndex" Value="1"/>
+          <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -458,7 +458,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmAcknowledgeState]"/>
-          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapIndex" Value="1"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -476,7 +476,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmXStates]"/>
-          <Property Name="BitmapIndex" Value="1"/>
+          <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -494,7 +494,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmAcknowledgeState]"/>
-          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapIndex" Value="1"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -512,7 +512,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmXStates]"/>
-          <Property Name="BitmapIndex" Value="1"/>
+          <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -530,7 +530,7 @@
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpAlarmAcknowledgeState]"/>
-          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapIndex" Value="1"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -1806,19 +1806,6 @@
       <Property Name="Top" Value="0"/>
       <Property Name="VisibilityMode" Value="Normal"/>
       <Property Name="Z-Order" Value="2"/>
-    </LayerRef>
-    <LayerRef Source="Source[local].Layer[Layer_PositionFilter]">
-      <Property Name="Description" Value=""/>
-      <Property Name="EditingMode" Value="Frozen"/>
-      <Property Name="Left" Value="0"/>
-      <Property Name="Name" Value="Layer_PositionFilter"/>
-      <Property Name="OutlineColor" Value="0"/>
-      <Property Name="OutlineDisplayControl" Value="False"/>
-      <Property Name="OutlineDisplayName" Value="True"/>
-      <Property Name="OutlineHatched" Value="False"/>
-      <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Hidden"/>
-      <Property Name="Z-Order" Value="3"/>
     </LayerRef>
   </Layers>
   <MovementOrder/>

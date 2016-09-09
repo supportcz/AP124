@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="PalletStatus">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="6"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="174940" Value="Pallet not on Conveyor"/>
+    <Text ID="174941" Value="Pallet on Conveyor"/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="174940" Value=""/>
+    <Text ID="174941" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="174940" Value=""/>
+    <Text ID="174941" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="174940" Value="0"/>
+    <Index ID="174941" Value="1"/>
+  </IndexMap>
+</TextGroup>

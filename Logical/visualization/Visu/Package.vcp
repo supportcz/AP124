@@ -355,6 +355,7 @@
     <Source File="Bitmaps\ManualModeLogo.bminfo"/>
     <Source File="Bitmaps\border.bminfo"/>
     <Source File="Bitmaps\activeAlarm.bminfo"/>
+    <Source File="Bitmaps\inactiveAlarm.bminfo"/>
     <Source File="BitmapGroups\MpAlarmAcknowledgeState.bmgrp"/>
     <Source File="BitmapGroups\MpPads.bmgrp"/>
     <Source File="BitmapGroups\MpUserIcons.bmgrp"/>
@@ -374,7 +375,6 @@
     <Source File="Pages\MPALARMX.page"/>
     <Source File="Layers\MpPageControl.layer"/>
     <Source File="Layers\MpBackground.layer"/>
-    <Source File="Layers\Layer_PositionFilter.layer"/>
     <Source File="StyleSheets\Color.vcs"/>
     <Source File="StyleSheets\mapp.vcs"/>
     <Source File="Borders\Mp_AttentionOff.bdr"/>

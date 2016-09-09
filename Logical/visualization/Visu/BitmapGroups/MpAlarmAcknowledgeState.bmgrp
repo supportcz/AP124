@@ -6,12 +6,10 @@
   <Property Name="Translate" Value="False"/>
   <BitmapLayer LanguageId="neutral">
     <BitmapRef ID="22" Value="Source[local].Bitmap[MpAlarm_Quit]"/>
-    <BitmapRef ID="3208" Value="None"/>
-    <BitmapRef ID="3209" Value="Source[local].Bitmap[MpAlarm_NotQuit]"/>
+    <BitmapRef ID="3345" Value="None"/>
   </BitmapLayer>
   <IndexMap>
     <Index ID="22" Value="1"/>
-    <Index ID="3208" Value="2"/>
-    <Index ID="3209" Value="0"/>
+    <Index ID="3345" Value="0"/>
   </IndexMap>
 </BitmapGroup>

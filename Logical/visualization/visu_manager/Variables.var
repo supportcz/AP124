@@ -1,3 +1,4 @@
 VAR
-	i : USINT;
+	ButtonColor : UINT;
+	ButtonAlarmColor : BOOL;
 END_VAR
