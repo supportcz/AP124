@@ -41,10 +41,8 @@ PROGRAM _CYCLIC
 	//vertical arms movement
 	VerticalArmsControl;
 	
-	//detect pallet on conveyor
-	IF diPalletOnConveyorP12 THEN
-		palletOnConveyor := TRUE;
-	END_IF
+	//conveyor P12
+	ConveyorP12Control;
 
 	//request to activate safety
 	activateSafetyCircuit := diAuto OR diActivateAllSafetyCircuits;
@@ -69,8 +67,15 @@ PROGRAM _CYCLIC
 	
 	alarmImage[6] := NOT diMotorProtectionP11;
 	alarmImage[12] := NOT diEStop5;
-	
-
 	alarmImage[13] := edmContactorError;
+	
+	//edge alarms
+	IF acknowledgeImage[10] THEN
+		alarmImage[10] := FALSE;
+	END_IF
+	IF acknowledgeImage[11] THEN
+		alarmImage[11] := FALSE;
+	END_IF
+
 	
 END_PROGRAM

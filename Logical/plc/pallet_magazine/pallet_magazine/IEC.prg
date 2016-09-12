@@ -7,5 +7,6 @@
     <File Description="Local variables" Private="true">Variables.var</File>
     <File>horizontalArmsControl.st</File>
     <File>verticalArmsControl.st</File>
+    <File>conveyorP12Control.st</File>
   </Files>
 </Program>

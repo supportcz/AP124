@@ -333,9 +333,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="81"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[0]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="643"/>
-          <Property Name="SimulationValue" Value="3"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="126"/>
           <Property Name="Width" Value="18"/>
@@ -351,9 +351,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="81"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[0]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="611"/>
-          <Property Name="SimulationValue" Value="4"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="126"/>
           <Property Name="Width" Value="18"/>
@@ -369,9 +369,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="80"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[1]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="611"/>
-          <Property Name="SimulationValue" Value="2"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="146"/>
           <Property Name="Width" Value="18"/>
@@ -387,9 +387,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="80"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[1]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="643"/>
-          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="146"/>
           <Property Name="Width" Value="18"/>
@@ -405,9 +405,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="79"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[2]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="611"/>
-          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="166"/>
           <Property Name="Width" Value="18"/>
@@ -423,9 +423,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="79"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[2]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="643"/>
-          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="166"/>
           <Property Name="Width" Value="18"/>
@@ -441,9 +441,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="78"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[3]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="611"/>
-          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="186"/>
           <Property Name="Width" Value="18"/>
@@ -459,9 +459,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="78"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[3]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="643"/>
-          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="186"/>
           <Property Name="Width" Value="18"/>
@@ -477,9 +477,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="77"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[4]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="611"/>
-          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="206"/>
           <Property Name="Width" Value="18"/>
@@ -495,9 +495,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="77"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[4]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="643"/>
-          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="206"/>
           <Property Name="Width" Value="18"/>
@@ -513,9 +513,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="76"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[5]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="611"/>
-          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="226"/>
           <Property Name="Width" Value="18"/>
@@ -531,9 +531,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="76"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[5]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="643"/>
-          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="226"/>
           <Property Name="Width" Value="18"/>
@@ -549,9 +549,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="75"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[6]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="611"/>
-          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="247"/>
           <Property Name="Width" Value="18"/>
@@ -567,9 +567,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="75"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[6]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="643"/>
-          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="247"/>
           <Property Name="Width" Value="18"/>
@@ -585,9 +585,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="74"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[7]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="611"/>
-          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="267"/>
           <Property Name="Width" Value="18"/>
@@ -603,9 +603,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="74"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[7]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="643"/>
-          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="267"/>
           <Property Name="Width" Value="18"/>
@@ -621,9 +621,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="73"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[8]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="611"/>
-          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="287"/>
           <Property Name="Width" Value="18"/>
@@ -639,9 +639,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="73"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[8]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="643"/>
-          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="287"/>
           <Property Name="Width" Value="18"/>
@@ -657,9 +657,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="72"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[9]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="611"/>
-          <Property Name="SimulationValue" Value="2"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="307"/>
           <Property Name="Width" Value="18"/>
@@ -675,9 +675,9 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="72"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[9]]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="643"/>
-          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="307"/>
           <Property Name="Width" Value="18"/>

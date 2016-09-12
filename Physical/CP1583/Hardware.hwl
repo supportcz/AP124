@@ -32,11 +32,11 @@
     <Module Name="X20PS2100b" Type="X20PS2100" X="367" Y="100" />
     <Module Name="X20TB12b" Type="X20TB12" X="367" Y="127" />
     <Module Name="X20BM33" Type="X20BM33" X="380" Y="100" />
-    <Module Name="X20SLX910" Type="X20SLX910" X="380" Y="100" />
+    <Module Name="I18" Type="X20SLX910" X="380" Y="100" />
     <Module Name="X20TB52a" Type="X20TB52" X="393" Y="126" />
     <Module Name="X20TB52" Type="X20TB52" X="380" Y="126" />
     <Module Name="X20BM33a" Type="X20BM33" X="406" Y="100" />
-    <Module Name="X20SI9100" Type="X20SI9100" X="406" Y="100" />
+    <Module Name="I22" Type="X20SI9100" X="406" Y="100" />
     <Module Name="X20TB52c" Type="X20TB52" X="419" Y="126" />
     <Module Name="X20TB52b" Type="X20TB52" X="406" Y="126" />
     <Module Name="X20BM33b" Type="X20BM33" X="432" Y="100" />
@@ -49,7 +49,7 @@
     <Module Name="X20SO4110a" Type="X20SO4110" X="484" Y="100" />
     <Module Name="X20TB52f" Type="X20TB52" X="497" Y="126" />
     <Module Name="X20BM33e" Type="X20BM33" X="510" Y="100" />
-    <Module Name="X20SO4110b" Type="X20SO4110" X="510" Y="100" />
+    <Module Name="Q29" Type="X20SO4110" X="510" Y="100" />
     <Module Name="X20TB52g" Type="X20TB52" X="523" Y="126" />
     <Module Name="X20BM33f" Type="X20BM33" X="536" Y="100" />
     <Module Name="X20SO4110c" Type="X20SO4110" X="536" Y="100" />
@@ -58,8 +58,8 @@
     <Module Name="X20BT9100" Type="X20BT9100" X="562" Y="100" />
     <Module Name="X20TB12c" Type="X20TB12" X="562" Y="127" />
     <Module Name="X20CP1583" Type="X20CP1583" X="100" Y="100" />
-    <Module Name="X67DM9321.L12" Type="X67DM9321.L12" X="632" Y="250" />
-    <Module Name="X67DO1332" Type="X67DO1332" X="735" Y="250" />
+    <Module Name="I110" Type="X67DM9321.L12" X="632" Y="250" />
+    <Module Name="Q112" Type="X67DO1332" X="735" Y="250" />
     <Module Name="X20BM05" Type="X20BM05" X="250" Y="250" />
     <Module Name="X20BR9300" Type="X20BR9300" X="250" Y="250" />
     <Module Name="X20TB12d" Type="X20TB12" X="250" Y="277" />
@@ -97,7 +97,7 @@
     <Module Name="X20BR9300c" Type="X20BR9300" X="543" Y="250" />
     <Module Name="X20TB12l" Type="X20TB12" X="543" Y="277" />
     <Module Name="X20BM11o" Type="X20BM11" X="556" Y="250" />
-    <Module Name="X20DIF371e" Type="X20DIF371" X="556" Y="250" />
+    <Module Name="I80" Type="X20DIF371" X="556" Y="250" />
     <Module Name="X20TB1F11" Type="X20TB1F" X="556" Y="277" />
     <Module Name="X20BM11p" Type="X20BM11" X="569" Y="250" />
     <Module Name="X20BT9400" Type="X20BT9400" X="569" Y="250" />
@@ -153,7 +153,7 @@
       <Point X="487" Y="294" />
       <Point X="487" Y="294" />
     </Link>
-    <Link From="X20BT9400" To="X67DM9321.L12" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
+    <Link From="X20BT9400" To="I110" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
       <Point X="576" Y="294" />
       <Point X="576" Y="294" />
       <Point X="583" Y="294" />
@@ -163,7 +163,7 @@
       <Point X="642" Y="262" />
       <Point X="642" Y="262" />
     </Link>
-    <Link From="X67DM9321.L12" To="X67DO1332" FromPort="X2X2" ToPort="X2X1" IsRoutedByUser="False">
+    <Link From="I110" To="Q112" FromPort="X2X2" ToPort="X2X1" IsRoutedByUser="False">
       <Point X="674" Y="262" />
       <Point X="674" Y="262" />
       <Point X="686" Y="262" />
@@ -183,12 +183,12 @@
       <Background Color="White" Transparent="False" />
       <Border Color="Transparent" Transparent="False" DashStyle="Solid" Width="1" />
     </InfoElementText>
-    <InfoElementText Id="Textbox_3" X="365" Y="359" Width="63" Height="37">
+    <InfoElementText Id="Textbox_3" X="352" Y="359" Width="63" Height="37">
       <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Dec 2</Text>
       <Background Color="White" Transparent="False" />
       <Border Color="Transparent" Transparent="False" DashStyle="Solid" Width="1" />
     </InfoElementText>
-    <InfoElementText Id="Textbox_4" X="454" Y="360" Width="60" Height="45">
+    <InfoElementText Id="Textbox_4" X="441" Y="360" Width="60" Height="45">
       <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Dec 3</Text>
       <Background Color="White" Transparent="False" />
       <Border Color="Transparent" Transparent="False" DashStyle="Solid" Width="1" />
