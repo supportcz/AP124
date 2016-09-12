@@ -1,6 +1,7 @@
 
 PROGRAM _INIT
 	PageControl := ButtonAutomaticMode;
+	
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -8,7 +9,6 @@ PROGRAM _CYCLIC
 	(***************************************************************************)		
 	(* 								Page Control						  	   *)	
 	(***************************************************************************)
-	
 	CASE PageControl OF
 		ButtonAutomaticMode:
 			gVisu.ChangePage := 10;
@@ -52,7 +52,7 @@ PROGRAM _CYCLIC
 //		ButtonAlarmColor := 1;
 //		gVisu.TON_0.IN := FALSE;
 //	END_IF;
- 
+ 	
 END_PROGRAM
 
 PROGRAM _EXIT

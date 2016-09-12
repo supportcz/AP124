@@ -612,30 +612,6 @@
           <Property Name="StartY" Value="331"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
-        <Control ClassId="0x00001003" Name="HotSpot_1">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_2]"/>
-          <Property Name="Height" Value="38"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="148"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="109"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_2]"/>
-          <Property Name="Width" Value="525"/>
-        </Control>
-        <Control ClassId="0x00001003" Name="HotSpot_2">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_3]"/>
-          <Property Name="Height" Value="40"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="148"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="147"/>
-          <Property Name="VirtualKey" Value="None"/>
-          <Property Name="Width" Value="527"/>
-        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_207">
@@ -725,17 +701,6 @@
           <KeyActions>
             <KeyAction ClassId="0x0000016E">
               <Property Name="Action" Value="Line Down"/>
-              <Property Name="Control" Value="Source[local].Page[Page_40_MpAlarmXList].Layer[Default].Control[Alarm_1]"/>
-              <Property Name="Description" Value=""/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_2">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x0000016E">
-              <Property Name="Action" Value="Page Up"/>
               <Property Name="Control" Value="Source[local].Page[Page_40_MpAlarmXList].Layer[Default].Control[Alarm_1]"/>
               <Property Name="Description" Value=""/>
             </KeyAction>
