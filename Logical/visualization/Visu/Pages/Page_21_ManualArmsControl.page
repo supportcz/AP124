@@ -106,7 +106,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="30"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.pallet_magazine.armsState]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="272"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
@@ -259,7 +259,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="30"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.pallet_magazine.palletOnConveyor]"/>
+          <Property Name="IndexDatapoint" Value="None"/>
           <Property Name="Left" Value="261"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>

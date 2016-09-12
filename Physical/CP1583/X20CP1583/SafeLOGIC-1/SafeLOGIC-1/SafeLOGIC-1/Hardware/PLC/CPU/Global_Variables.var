@@ -11,7 +11,7 @@ VAR_GLOBAL {Group(0)}
     {LINE(4)}
     SM6_ReleaseOutput01 AT %QX23.0 : BOOL {Custom('SL1.SM6.ReleaseOutput01')};
     {LINE(5)}
-    diEStop5 AT %IX18.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0506')};
+    diEStop5 AT %IX19.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0910')};
     {LINE(6)}
     pallet_mag_activateSafety AT %IX0.0 : BOOL {Custom('SL1.SM1.BOOL101')};
     {LINE(7)}
@@ -30,11 +30,11 @@ VAR_GLOBAL {Group(11)}
     {LINE(13)}
     diEStop2 AT %IX18.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0304')};
     {LINE(14)}
-    diEStop3 AT %IX22.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelOk0102')};
+    diEStop3 AT %IX18.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0506')};
     {LINE(15)}
-    diEStop4 AT %IX22.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelOk0304')};
+    diEStop4 AT %IX18.7 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0708')};
     {LINE(16)}
-    diEStopRobot AT %IX18.7 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0708')};
+    diEStopRobot AT %IX19.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1112')};
     {LINE(17)}
-    diEStopWrapper AT %IX22.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelOk0506')};
+    diEStopWrapper AT %IX19.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1314')};
 END_VAR

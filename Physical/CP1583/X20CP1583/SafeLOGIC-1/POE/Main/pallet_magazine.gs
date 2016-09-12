@@ -18,7 +18,7 @@
 5	5	39	35	41	4	5	diMagazineContactorState
 7	138	35	164	37	4	3	doMagazineContactor1
 8	138	41	164	43	4	3	doMagazineContactor2
-9	19	47	38	49	4	5	TIME#10250ms
+9	21	47	38	49	4	5	TIME#2000ms
 10	30	31	38	33	4	5	TRUE
 11	14	10	44	12	4	5	pallet_mag_activateSafety
 24	24	51	38	53	4	5	SAFEFALSE

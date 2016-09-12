@@ -54,7 +54,7 @@ PROGRAM _CYCLIC
 		END_FOR
 	END_IF
 
-	alarmImage[0] := NOT safetyCircuitsReady;
+	//alarmImage[0] := NOT safetyCircuitsReady;
 	alarmImage[1] := diLightCurtainP11;
 	
 	IF diMagazineUpperHwEnd AND cmdUp THEN

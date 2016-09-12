@@ -1,3 +1,5 @@
 VAR
 	allSafetyCircuitsReady : BOOL;
+	doLedOn : BOOL;
+	doLedOff : BOOL;
 END_VAR

@@ -206,7 +206,6 @@
   <Module Name="X20BR9300" Type="X20BR9300" Version="1.0.3.0">
     <Connection Connector="SS1" TargetModule="X20TB12d" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM05" TargetConnector="SL1" />
-    <Connection Connector="X2X1" TargetModule="X20BT9100" TargetConnector="X2X1" NodeNumber="19" />
   </Module>
   <Module Name="X20BR9300a" Type="X20BR9300" Version="1.0.3.0">
     <Connection Connector="SS1" TargetModule="X20TB12g" TargetConnector="SS" />
@@ -216,12 +215,11 @@
   <Module Name="X20BR9300b" Type="X20BR9300" Version="1.0.3.0">
     <Connection Connector="SS1" TargetModule="X20TB12i" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM05b" TargetConnector="SL1" />
-    <Connection Connector="X2X1" TargetModule="X20BT9100b" TargetConnector="X2X1" NodeNumber="26" />
+    <Connection Connector="X2X1" TargetModule="X20BT9100" TargetConnector="X2X1" NodeNumber="19" />
   </Module>
   <Module Name="X20BR9300c" Type="X20BR9300" Version="1.0.3.0">
     <Connection Connector="SS1" TargetModule="X20TB12l" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM05c" TargetConnector="SL1" />
-    <Connection Connector="X2X1" TargetModule="X20BT9100c" TargetConnector="X2X1" NodeNumber="30" />
   </Module>
   <Module Name="X20BT9100" Type="X20BT9100" Version="1.0.2.4">
     <Connection Connector="SS1" TargetModule="X20TB12c" TargetConnector="SS" />
@@ -257,7 +255,7 @@
       <Parameter ID="EplEthInterfaceRedundant" Value="0" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="AP124_CP1583" />
-    <Parameter ID="Simulation" Value="1" />
+    <Parameter ID="UserPartitionSize" Value="200" />
     <Parameter ID="VolatileGlobalPvSize" Value="262144" />
     <Parameter ID="TimerDeviceType" Value="SWIOTIMER" />
     <Parameter ID="Cyclic1Duration" Value="10000" />
@@ -276,6 +274,8 @@
     <Parameter ID="Cyclic7Tolerance" Value="1000000" />
     <Parameter ID="Cyclic8Duration" Value="10000" />
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
+    <Parameter ID="Temp.ProjectDirectory" Value="C:\Work\Atrima\projekt\AP124\" />
+    <Parameter ID="Temp.ConfigurationName" Value="CP1583" />
   </Module>
   <Module Name="X20PS2100a" Type="X20PS2100" Version="1.1.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />

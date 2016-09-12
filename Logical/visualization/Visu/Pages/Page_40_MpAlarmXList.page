@@ -72,7 +72,7 @@
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_207]"/>
           <Property Name="Height" Value="60"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="26"/>
+          <Property Name="Left" Value="12"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
@@ -84,7 +84,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="350"/>
+          <Property Name="Top" Value="183"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_207]"/>
           <Property Name="Width" Value="127"/>
         </Control>
@@ -99,7 +99,7 @@
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_208]"/>
           <Property Name="Height" Value="59"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="165"/>
+          <Property Name="Left" Value="16"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
@@ -111,7 +111,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="351"/>
+          <Property Name="Top" Value="100"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_208]"/>
           <Property Name="Width" Value="115"/>
         </Control>
@@ -126,7 +126,7 @@
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_209]"/>
           <Property Name="Height" Value="54"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="660"/>
+          <Property Name="Left" Value="18"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
@@ -138,7 +138,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="351"/>
+          <Property Name="Top" Value="323"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_209]"/>
           <Property Name="Width" Value="121"/>
         </Control>
@@ -153,7 +153,7 @@
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_210]"/>
           <Property Name="Height" Value="56"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="525"/>
+          <Property Name="Left" Value="14"/>
           <Property Name="Multiline" Value="Manual"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
@@ -165,7 +165,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="351"/>
+          <Property Name="Top" Value="255"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_210]"/>
           <Property Name="Width" Value="124"/>
         </Control>
@@ -231,7 +231,7 @@
           <Property Name="GroupNumber_Position" Value="Column 2"/>
           <Property Name="GroupNumber_SeparatorTextGroup" Value="None"/>
           <Property Name="GroupNumber_Width" Value="105"/>
-          <Property Name="Height" Value="224"/>
+          <Property Name="Height" Value="304"/>
           <Property Name="InputNext" Value="Enter"/>
           <Property Name="Left" Value="149"/>
           <Property Name="Node1" Value="User order"/>
@@ -428,7 +428,7 @@
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
           <Property Name="StartX" Value="225"/>
-          <Property Name="StartY" Value="331"/>
+          <Property Name="StartY" Value="411"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_10">
@@ -439,7 +439,7 @@
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
           <Property Name="StartX" Value="341"/>
-          <Property Name="StartY" Value="331"/>
+          <Property Name="StartY" Value="411"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_11">
@@ -450,7 +450,7 @@
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
           <Property Name="StartX" Value="401"/>
-          <Property Name="StartY" Value="331"/>
+          <Property Name="StartY" Value="411"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_12">
@@ -461,7 +461,7 @@
           <Property Name="ForeColor" Value="250"/>
           <Property Name="LineWidth" Value="2"/>
           <Property Name="StartX" Value="601"/>
-          <Property Name="StartY" Value="331"/>
+          <Property Name="StartY" Value="411"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_15">
@@ -587,18 +587,18 @@
           <Property Name="ForeColor" Value="247"/>
           <Property Name="LineWidth" Value="2"/>
           <Property Name="StartX" Value="149"/>
-          <Property Name="StartY" Value="331"/>
+          <Property Name="StartY" Value="410"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_23">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EndX" Value="149"/>
-          <Property Name="EndY" Value="332"/>
+          <Property Name="EndY" Value="413"/>
           <Property Name="ForeColor" Value="247"/>
           <Property Name="LineWidth" Value="2"/>
           <Property Name="StartX" Value="674"/>
-          <Property Name="StartY" Value="332"/>
+          <Property Name="StartY" Value="413"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_24">
@@ -609,7 +609,49 @@
           <Property Name="ForeColor" Value="247"/>
           <Property Name="LineWidth" Value="2"/>
           <Property Name="StartX" Value="674"/>
-          <Property Name="StartY" Value="331"/>
+          <Property Name="StartY" Value="413"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_25">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="150"/>
+          <Property Name="EndY" Value="333"/>
+          <Property Name="ForeColor" Value="250"/>
+          <Property Name="LineWidth" Value="2"/>
+          <Property Name="StartX" Value="672"/>
+          <Property Name="StartY" Value="333"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_26">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="636"/>
+          <Property Name="EndY" Value="342"/>
+          <Property Name="ForeColor" Value="250"/>
+          <Property Name="StartX" Value="636"/>
+          <Property Name="StartY" Value="354"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_27">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="150"/>
+          <Property Name="EndY" Value="368"/>
+          <Property Name="ForeColor" Value="250"/>
+          <Property Name="LineWidth" Value="2"/>
+          <Property Name="StartX" Value="672"/>
+          <Property Name="StartY" Value="368"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_28">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="636"/>
+          <Property Name="EndY" Value="377"/>
+          <Property Name="ForeColor" Value="250"/>
+          <Property Name="StartX" Value="636"/>
+          <Property Name="StartY" Value="389"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
       </Controls>
