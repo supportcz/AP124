@@ -12,7 +12,7 @@
 			<Channel Name="BOOL001" Mapping="NSQX0.0" Variable="allSafetyCircuitsReadyNS" Address="safety:allSafetyCircuitsReady" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL002" Mapping="NSQX0.1" Variable="pallet_mag_safetyCircuitsReaNS" Address="pallet_mag:safetyCircuitsReady" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL003" Mapping="NSQX0.2" Variable="pallet_mag_edmContactorError" Address="pallet_mag:edmContactorError" SODIndex="0x2580" SODSubIndex="0x1" />
-			<Channel Name="BOOL101" Mapping="NSIX0.0" Variable="pallet_mag_activateSafety" Address="pallet_mag:activateSafetyCircuit" SODIndex="0x2500" SODSubIndex="0x2" />
+			<Channel Name="BOOL101" Mapping="NSIX0.0" Variable="diActivateAllSafetyCircuits" Address="diActivateAllSafetyCircuits" SODIndex="0x2500" SODSubIndex="0x2" />
 		</Module>
 		<Module Name="SL1.SM2" Hardware="X20SI9100" SafeLogicID="1" SafeModuleID="2" SISize="8" SOSize="0" NSISize="0" NSOSize="0" SIOffset="60" ConnectionValidBitNumber="0" HWTypeCode="27" >
 			<Channel Name="SafeDigitalInput17" Mapping="SIX62.0" Variable="diMagazineContactorState" SODIndex="0x6000" SODSubIndex="0x3" />

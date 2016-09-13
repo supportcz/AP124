@@ -40,7 +40,7 @@
         <Info Name="AsVariable" Value="SafeTwoChannelInput0506,alarm_mana:diEStop3" />
         <Info Name="AsVariable" Value="BOOL002,pallet_mag:safetyCircuitsReady" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0102,alarm_mana:diEStop1" />
-        <Info Name="AsVariable" Value="BOOL101,pallet_mag:activateSafetyCircuit" />
+        <Info Name="AsVariable" Value="BOOL101,diActivateAllSafetyCircuits" />
         <Info Name="AsVariable" Value="BOOL001,safety:allSafetyCircuitsReady" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0708,alarm_mana:diEStop4" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput1112,alarm_mana:diEStopRobot" />

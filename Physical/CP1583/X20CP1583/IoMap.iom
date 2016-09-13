@@ -7,7 +7,7 @@ VAR_CONFIG
 	pallet_mag:diPalletOnConveyorP12 AT %IX."I70".DigitalInput08;
 	pallet_mag:doOpenArms AT %QX."Q71".DigitalOutput01;
 	pallet_mag:doCloseArms AT %QX."Q71".DigitalOutput02;
-	pallet_mag:activateSafetyCircuit AT %QX."I18".BOOL101;
+	::diActivateAllSafetyCircuits AT %QX."I18".BOOL101;
 	pallet_mag:diMagazineUpperPosition AT %IX."I70".DigitalInput01;
 	pallet_mag:diMagazineMiddlePositon AT %IX."I70".DigitalInput02;
 	pallet_mag:diMagazineLowerPosition AT %IX."I70".DigitalInput03;

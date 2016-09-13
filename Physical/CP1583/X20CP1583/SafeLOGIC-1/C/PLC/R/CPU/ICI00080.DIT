@@ -2,11 +2,11 @@
 T: PROGRAM Main
 FW: NO
 CI#: 80
-QSL: 6
-QVE: 6
-QVPC: 6
+QSL: 10
+QVE: 10
+QVPC: 10
 QPar: 0
-QFBI: 3
+QFBI: 5
 *)
 @V 1 2 0
 SF_EDM_V1_00_1	1	VAR	@FB:81
@@ -40,6 +40,30 @@ TP_1	5	VAR	@FB:22
 
 @V 1 7 0
 activateSafety	6	VAR	@TYP:1
+		     
+
+;
+
+@V 1 8 0
+SF_EmergencyStop_V1_00_1	7	VAR	@FB:82
+		     
+
+;
+
+@V 1 9 0
+TON_2	8	VAR	@FB:21
+		     
+
+;
+
+@V 1 10 0
+activateSafetyDelayed	9	VAR	@TYP:1
+		     
+
+;
+
+@V 1 11 0
+activateSafetyDelayed2	10	VAR	@TYP:1
 		     
 
 ;

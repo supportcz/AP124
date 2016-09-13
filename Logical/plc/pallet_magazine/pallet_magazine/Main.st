@@ -45,7 +45,7 @@ PROGRAM _CYCLIC
 	ConveyorP12Control;
 
 	//request to activate safety
-	activateSafetyCircuit := diAuto OR diActivateAllSafetyCircuits;
+	//activateSafetyCircuit := diAuto OR diActivateAllSafetyCircuits;
 
 	(* error management *)
 	IF diReset THEN

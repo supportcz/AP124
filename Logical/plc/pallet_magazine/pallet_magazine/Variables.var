@@ -1,6 +1,5 @@
 VAR
 	acknowledgeImage : ARRAY[0..39] OF BOOL;
-	activateSafetyCircuit : BOOL; (*activates safety circuit of magazine*)
 	alarmImage : ARRAY[0..39] OF BOOL;
 	cmdAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
 	cmdCloseArms : BOOL; (*VISU:command to close the arms*)

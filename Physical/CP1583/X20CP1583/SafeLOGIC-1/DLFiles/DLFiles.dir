@@ -1,8 +1,8 @@
 [Project]
 NumOfDownloadFiles=10
-Crc=4D8E6B15
-LastChangeDate=1473689341
-LastChangeDateHumanReadable=12.09.2016    16:09:01
+Crc=00000000
+LastChangeDate=1473754578
+LastChangeDateHumanReadable=13.09.2016    10:16:18
 LastChangeUser=vancurar
 [Download]
 1=DLFiles\dlfile01.sos
@@ -19,10 +19,10 @@ LastChangeUser=vancurar
 1=CFooLibs.dll
 2=impldiag.zip
 3=sdevpara.saf
-4=Bootfile.pr1
+4=Bootfile.pro
 5=ProjCRC.img
 6=SwapList.pr2
 7=Bootfile.pr2
 8=BusNvCRC.img
-9=@@TEMP.SZP
-10=SysFlags.dat
+9=SysFlags.dat
+10=siminfo.xml

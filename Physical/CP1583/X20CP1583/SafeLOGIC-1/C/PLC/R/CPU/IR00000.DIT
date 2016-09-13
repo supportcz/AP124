@@ -33,74 +33,74 @@ SM6_ReleaseOutput01	4	VAR_GLOBAL	@TYP:1
 ;
 
 @V 1 6 0
-diEStop5	5	VAR_GLOBAL	@TYP:43
-%SIX 19.0		     
-
-;
-
-@V 1 7 0
-pallet_mag_activateSafety	6	VAR_GLOBAL	@TYP:1
-%NSIX 0.0		     
-
-;
-
-@V 1 8 0
-doMagazineContactor2	7	VAR_GLOBAL	@TYP:43
+doMagazineContactor2	5	VAR_GLOBAL	@TYP:43
 %SQX 17.1		     
 
 ;
 
-@V 1 9 0
-doMagazineContactor1	8	VAR_GLOBAL	@TYP:43
+@V 1 7 0
+doMagazineContactor1	6	VAR_GLOBAL	@TYP:43
 %SQX 17.0		     
 
 ;
 
-@V 1 10 0
-diMagazineContactorState	9	VAR_GLOBAL	@TYP:43
+@V 1 8 0
+diMagazineContactorState	7	VAR_GLOBAL	@TYP:43
 %SIX 62.0		     
 
 ;
 
-@V 1 11 0
-allSafetyCircuitsReadyNS	10	VAR_GLOBAL	@TYP:1
+@V 1 9 0
+allSafetyCircuitsReadyNS	8	VAR_GLOBAL	@TYP:1
 %NSQX 0.0		     
 
 ;
 
-@V 1 13 0
-diEStop1	11	VAR_GLOBAL	@TYP:43
+@V 1 11 0
+diEStop5	9	VAR_GLOBAL	@TYP:43
+%SIX 19.0		     
+
+;
+
+@V 1 12 0
+diEStop1	10	VAR_GLOBAL	@TYP:43
 %SIX 18.4		     
 
 ;
 
-@V 1 14 0
-diEStop2	12	VAR_GLOBAL	@TYP:43
+@V 1 13 0
+diEStop2	11	VAR_GLOBAL	@TYP:43
 %SIX 18.5		     
 
 ;
 
-@V 1 15 0
-diEStop3	13	VAR_GLOBAL	@TYP:43
+@V 1 14 0
+diEStop3	12	VAR_GLOBAL	@TYP:43
 %SIX 18.6		     
 
 ;
 
-@V 1 16 0
-diEStop4	14	VAR_GLOBAL	@TYP:43
+@V 1 15 0
+diEStop4	13	VAR_GLOBAL	@TYP:43
 %SIX 18.7		     
 
 ;
 
-@V 1 17 0
-diEStopRobot	15	VAR_GLOBAL	@TYP:43
+@V 1 16 0
+diEStopRobot	14	VAR_GLOBAL	@TYP:43
 %SIX 19.1		     
 
 ;
 
-@V 1 18 0
-diEStopWrapper	16	VAR_GLOBAL	@TYP:43
+@V 1 17 0
+diEStopWrapper	15	VAR_GLOBAL	@TYP:43
 %SIX 19.2		     
+
+;
+
+@V 1 18 0
+diActivateAllSafetyCircuits	16	VAR_GLOBAL	@TYP:1
+%NSIX 0.0		     
 
 ;
 
