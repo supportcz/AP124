@@ -25,7 +25,7 @@
       <Property Name="AcknowledgeActive" Value="Enabled"/>
       <Property Name="Bypass" Value="Enabled"/>
       <Property Name="Description" Value=""/>
-      <Property Name="Latched" Value="True"/>
+      <Property Name="Latched" Value="False"/>
       <Property Name="RecordAcknowledge" Value="True"/>
       <Property Name="RecordBypass" Value="All"/>
       <Property Name="RecordReset" Value="All"/>
@@ -80,7 +80,7 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
-    <Alarm Index="5">
+    <Alarm Index="6">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
       <Property Name="Bypass" Value="Enabled"/>
@@ -92,7 +92,55 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
-    <Alarm Index="6">
+    <Alarm Index="7">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="8">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="9">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="10">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="11">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
       <Property Name="Bypass" Value="Enabled"/>
@@ -126,6 +174,10 @@
       <Text ID="123" Value="E-Stop 4"/>
       <Text ID="125" Value="E-Stop Robot"/>
       <Text ID="126" Value="E-Stop Wrapper"/>
+      <Text ID="180" Value="Pallet magazine zone OFF"/>
+      <Text ID="187" Value="Palletization zone OFF"/>
+      <Text ID="188" Value="Outfeed zone OFF"/>
+      <Text ID="208" Value="EDM contactor error"/>
       <Text ID="100" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -136,6 +188,10 @@
       <Text ID="123" Value=""/>
       <Text ID="125" Value=""/>
       <Text ID="126" Value=""/>
+      <Text ID="180" Value=""/>
+      <Text ID="187" Value=""/>
+      <Text ID="188" Value=""/>
+      <Text ID="208" Value=""/>
       <Text ID="100" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -146,6 +202,10 @@
       <Text ID="123" Value=""/>
       <Text ID="125" Value=""/>
       <Text ID="126" Value=""/>
+      <Text ID="180" Value=""/>
+      <Text ID="187" Value=""/>
+      <Text ID="188" Value=""/>
+      <Text ID="208" Value=""/>
       <Text ID="100" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -154,8 +214,12 @@
       <Index ID="121" Value="2"/>
       <Index ID="122" Value="3"/>
       <Index ID="123" Value="4"/>
-      <Index ID="125" Value="5"/>
-      <Index ID="126" Value="6"/>
+      <Index ID="125" Value="6"/>
+      <Index ID="126" Value="7"/>
+      <Index ID="180" Value="8"/>
+      <Index ID="187" Value="9"/>
+      <Index ID="188" Value="10"/>
+      <Index ID="208" Value="11"/>
       <Index ID="100" Value="Group"/>
     </IndexMap>
   </TextGroup>

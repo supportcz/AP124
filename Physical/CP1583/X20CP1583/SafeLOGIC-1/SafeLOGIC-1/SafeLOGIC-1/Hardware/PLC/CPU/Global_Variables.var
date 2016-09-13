@@ -1,40 +1,38 @@
 ﻿{GroupDefinition(0,'pallet_magazine')}
-{GroupDefinition(9,'common')}
+{GroupDefinition(7,'common')}
 
 VAR_GLOBAL {Group(0)}
     {LINE(1)}
     pallet_mag_edmContactorError AT %QX0.2 : BOOL {Custom('SL1.SM1.BOOL003')};
     {LINE(2)}
-    pallet_mag_safetyCircuitsReaNS AT %QX0.1 : BOOL {Custom('SL1.SM1.BOOL002')};
-    {LINE(3)}
     SM6_ReleaseOutput02 AT %QX23.1 : BOOL {Custom('SL1.SM6.ReleaseOutput02')};
-    {LINE(4)}
+    {LINE(3)}
     SM6_ReleaseOutput01 AT %QX23.0 : BOOL {Custom('SL1.SM6.ReleaseOutput01')};
-    {LINE(5)}
+    {LINE(4)}
     doMagazineContactor2 AT %QX17.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput02')};
-    {LINE(6)}
+    {LINE(5)}
     doMagazineContactor1 AT %QX17.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput01')};
-    {LINE(7)}
-    diMagazineContactorState AT %IX62.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput17')};
-    {LINE(8)}
+    {LINE(6)}
     allSafetyCircuitsReadyNS AT %QX0.0 : BOOL {Custom('SL1.SM1.BOOL001')};
 END_VAR
 
-VAR_GLOBAL {Group(9)}
-    {LINE(10)}
+VAR_GLOBAL {Group(7)}
+    {LINE(8)}
     diEStop5 AT %IX19.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0910')};
-    {LINE(11)}
+    {LINE(9)}
     diEStop1 AT %IX18.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0102')};
-    {LINE(12)}
+    {LINE(10)}
     diEStop2 AT %IX18.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0304')};
-    {LINE(13)}
+    {LINE(11)}
     diEStop3 AT %IX18.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0506')};
-    {LINE(14)}
+    {LINE(12)}
     diEStop4 AT %IX18.7 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0708')};
-    {LINE(15)}
+    {LINE(13)}
     diEStopRobot AT %IX19.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1112')};
-    {LINE(16)}
+    {LINE(14)}
     diEStopWrapper AT %IX19.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1314')};
-    {LINE(17)}
+    {LINE(15)}
     diActivateAllSafetyCircuits AT %IX0.0 : BOOL {Custom('SL1.SM1.BOOL101')};
+    {LINE(16)}
+    diMagazineEDM AT %IX62.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput17')};
 END_VAR

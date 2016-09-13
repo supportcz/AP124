@@ -29,9 +29,11 @@ VAR_CONFIG
 	alarm_mana:diEStopWrapper AT %IX."I18".SafeTwoChannelInput1314;
 	pallet_mag:diLightCurtainP11 AT %IX."I22".SafeTwoChannelInput0102;
 	safety:allSafetyCircuitsReady AT %IX."I18".BOOL001;
-	pallet_mag:edmContactorError AT %IX."I18".BOOL003;
-	pallet_mag:safetyCircuitsReady AT %IX."I18".BOOL002;
+	::alarm_mana:edmContactorError AT %IX."I18".BOOL003;
 	::pallet_con:diPalletOnConveyorP13 AT %IX."I80".DigitalInput01;
 	::safety:doLedOn AT %QX."Q10".DigitalOutput10;
 	::safety:doLedOff AT %QX."Q10".DigitalOutput11;
+	Cyclic#3.diMagazineEDM AT %IX."I22".SafeDigitalInput17;
+	Cyclic#3.diPalletizationEDM AT %IX."I22".SafeDigitalInput18;
+	Cyclic#3.diOutfeedEDM AT %IX."I22".SafeDigitalInput19;
 END_VAR

@@ -8,7 +8,7 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 
-	readyToStart := safetyCircuitsReady AND diAirPresureOK AND diMotorProtectionP11;
+	readyToStart := NOT diMagazineEDM AND diAirPresureOK AND diMotorProtectionP11;
 	
 	IF NOT readyToStart THEN
 		modeOfOperation := modeNotReadyToStart;
@@ -66,8 +66,6 @@ PROGRAM _CYCLIC
 	END_IF
 	
 	alarmImage[6] := NOT diMotorProtectionP11;
-	alarmImage[12] := NOT diEStop5;
-	alarmImage[13] := edmContactorError;
 	
 	//edge alarms
 	IF acknowledgeImage[10] THEN
@@ -76,6 +74,8 @@ PROGRAM _CYCLIC
 	IF acknowledgeImage[11] THEN
 		alarmImage[11] := FALSE;
 	END_IF
+
+	alarmImage[12] := NOT diEStop5;
 
 	
 END_PROGRAM

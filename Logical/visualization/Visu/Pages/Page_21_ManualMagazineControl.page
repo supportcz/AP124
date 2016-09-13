@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?AutomationStudio Version="4.2.5.388"?>
-<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="Page_21_ManualArmsControl">
+<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="Page_21_ManualMagazineControl">
   <Property Name="Description" Value=""/>
   <Property Name="Height" Value="480"/>
   <Property Name="Index" Value="0"/>
@@ -53,18 +53,22 @@
         <TextLayer LanguageId="en">
           <Text ID="174644" Value="Back"/>
           <Text ID="175238" Value="conveyor:"/>
+          <Text ID="175316" Value="Move"/>
         </TextLayer>
         <TextLayer LanguageId="cs">
           <Text ID="174644" Value=""/>
           <Text ID="175238" Value="Text_5"/>
+          <Text ID="175316" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="fr">
           <Text ID="174644" Value=""/>
           <Text ID="175238" Value="Text_5"/>
+          <Text ID="175316" Value=""/>
         </TextLayer>
         <IndexMap>
           <Index ID="174644" Value="12"/>
           <Index ID="175238" Value="15"/>
+          <Index ID="175316" Value="16"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -106,16 +110,16 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="30"/>
-          <Property Name="IndexDatapoint" Value="None"/>
-          <Property Name="Left" Value="272"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.pallet_magazine.stateArms]"/>
+          <Property Name="Left" Value="250"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[ManualMode_ArmState]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[ManualMode_StateArms]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
           <Property Name="Top" Value="321"/>
-          <Property Name="Width" Value="99"/>
+          <Property Name="Width" Value="135"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_1">
           <Property Name="ControlID" Value="0"/>
@@ -259,12 +263,12 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="30"/>
-          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.pallet_magazine.stateConveyor]"/>
           <Property Name="Left" Value="261"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[PalletStatus]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[ManualMode_StateConveyor]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
           <Property Name="Top" Value="374"/>
@@ -290,16 +294,43 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="30"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.pallet_magazine.magazineState]"/>
-          <Property Name="Left" Value="356"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.pallet_magazine.stateMagazine]"/>
+          <Property Name="Left" Value="382"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpText]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[ManualMode_ArmState]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[ManualMode_StateMagazine]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="164"/>
-          <Property Name="Width" Value="99"/>
+          <Property Name="Top" Value="166"/>
+          <Property Name="Width" Value="127"/>
+        </Control>
+        <Control ClassId="0x00001002" Name="Button_6">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_41]"/>
+          <Property Name="ForeColor" Value="16"/>
+          <Property Name="Height" Value="70"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="470"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
+          <Property Name="PressedForeColor" Value="253"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="16"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="340"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_41]"/>
+          <Property Name="Width" Value="70"/>
         </Control>
       </Controls>
       <KeyMapping>
@@ -377,6 +408,22 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="Page" Value="Source[local].Page[Page_20_ManualMode]"/>
               <Property Name="Target" Value="Page"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_41">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x0000016B">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.pallet_magazine.cmdMovePallet]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

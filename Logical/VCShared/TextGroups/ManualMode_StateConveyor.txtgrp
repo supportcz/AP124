@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="ManualMode_StateConveyor">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="8"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="175308" Value="Undefined"/>
+    <Text ID="175309" Value="Conveyor empty"/>
+    <Text ID="175310" Value="Conveyor occupied"/>
+    <Text ID="175311" Value="Conveyor moving"/>
+    <Text ID="175312" Value="Conveyor stop"/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="175308" Value="Počatečný stav"/>
+    <Text ID="175309" Value="Ramena se otevírají"/>
+    <Text ID="175310" Value="Ramena jsou otevřené"/>
+    <Text ID="175311" Value="Ramena se zavírají"/>
+    <Text ID="175312" Value="Ramena jsou zavřené"/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="175308" Value=""/>
+    <Text ID="175309" Value=""/>
+    <Text ID="175310" Value=""/>
+    <Text ID="175311" Value=""/>
+    <Text ID="175312" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="175308" Value="0"/>
+    <Index ID="175309" Value="1"/>
+    <Index ID="175310" Value="2"/>
+    <Index ID="175311" Value="3"/>
+    <Index ID="175312" Value="4"/>
+  </IndexMap>
+</TextGroup>

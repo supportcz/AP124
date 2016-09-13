@@ -77,7 +77,7 @@
             <Property Name="UserID" Value="None"/>
             <Property Name="VCType" Value="INTEGER"/>
           </DataPoint>
-          <DataPoint Name="palletOnConveyorP12">
+          <DataPoint Name="cmdMovePallet">
             <Property Name="ConnectedBySharedResource" Value="False"/>
             <Property Name="ConnectingVisus" Value="visualization\Visu"/>
             <Property Name="Description" Value=""/>
@@ -86,11 +86,20 @@
             <Property Name="UserID" Value="None"/>
             <Property Name="VCType" Value="BOOL"/>
           </DataPoint>
-          <DataPoint Name="magazineState">
+          <DataPoint Name="stateMagazine">
             <Property Name="ConnectedBySharedResource" Value="False"/>
             <Property Name="ConnectingVisus" Value="visualization\Visu"/>
             <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="MagazineState"/>
+            <Property Name="PLCType" Value="StateMagazine"/>
+            <Property Name="UpdateTime" Value="Default"/>
+            <Property Name="UserID" Value="None"/>
+            <Property Name="VCType" Value="INTEGER"/>
+          </DataPoint>
+          <DataPoint Name="stateConveyor">
+            <Property Name="ConnectedBySharedResource" Value="False"/>
+            <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+            <Property Name="Description" Value=""/>
+            <Property Name="PLCType" Value="StateConveyor"/>
             <Property Name="UpdateTime" Value="Default"/>
             <Property Name="UserID" Value="None"/>
             <Property Name="VCType" Value="INTEGER"/>

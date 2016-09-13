@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="ManualMode_StateMagazine">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="7"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="175300" Value="Undefined"/>
+    <Text ID="175301" Value="Move to upper"/>
+    <Text ID="175302" Value="Upper position"/>
+    <Text ID="175303" Value="Move to middle"/>
+    <Text ID="175304" Value="Move to middle"/>
+    <Text ID="175305" Value="Middle position"/>
+    <Text ID="175306" Value="Move to lower"/>
+    <Text ID="175307" Value="Lower position"/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="175300" Value="Počatečný stav"/>
+    <Text ID="175301" Value="Ramena se otevírají"/>
+    <Text ID="175302" Value="Ramena jsou otevřené"/>
+    <Text ID="175303" Value="Ramena se zavírají"/>
+    <Text ID="175304" Value="Ramena jsou zavřené"/>
+    <Text ID="175305" Value=""/>
+    <Text ID="175306" Value=""/>
+    <Text ID="175307" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="175300" Value=""/>
+    <Text ID="175301" Value=""/>
+    <Text ID="175302" Value=""/>
+    <Text ID="175303" Value=""/>
+    <Text ID="175304" Value=""/>
+    <Text ID="175305" Value=""/>
+    <Text ID="175306" Value=""/>
+    <Text ID="175307" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="175300" Value="0"/>
+    <Index ID="175301" Value="1"/>
+    <Index ID="175302" Value="2"/>
+    <Index ID="175303" Value="3"/>
+    <Index ID="175304" Value="4"/>
+    <Index ID="175305" Value="5"/>
+    <Index ID="175306" Value="6"/>
+    <Index ID="175307" Value="7"/>
+  </IndexMap>
+</TextGroup>

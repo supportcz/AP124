@@ -27,12 +27,10 @@ VAR
 	doMagazineDown : BOOL; (*contactor to go down*)
 	doMagazineUp : BOOL; (*contactor to go up*)
 	doOpenArms : BOOL; (*valve to open the arms*)
-	edmContactorError : BOOL; (*1=power on*)
 	i : INT;
 	modeOfOperation : ModeOfOperation;
 	palletOnConveyorP12 : BOOL; (*VISU:pallet lies on conveyor*)
 	readyToStart : BOOL;
-	safetyCircuitsReady : BOOL; (*1=safety circuits are ready to be switched on*)
 	stateArms : StateArms; (*VISU:arms state*)
 	stateConveyor : StateConveyor;
 	stateMagazine : StateMagazine; (*VISU: current state of magazine*)
