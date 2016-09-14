@@ -22,7 +22,7 @@
       <Property Name="ColorMapIndexOffset" Value="5"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="GroupID" Value="7"/>
+      <Property Name="GroupID" Value="2"/>
       <Property Name="Height" Value="51"/>
       <Property Name="Left" Value="19"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -33,9 +33,9 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="Font" Value="Source[local].Font[MpInput]"/>
-      <Property Name="GroupID" Value="7"/>
+      <Property Name="GroupID" Value="2"/>
       <Property Name="Height" Value="40"/>
-      <Property Name="Left" Value="59"/>
+      <Property Name="Left" Value="57"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
@@ -44,7 +44,7 @@
       <Property Name="TextIndexOffset" Value="0"/>
       <Property Name="TextSource" Value="SingleText"/>
       <Property Name="Top" Value="428"/>
-      <Property Name="Width" Value="76"/>
+      <Property Name="Width" Value="78"/>
     </Control>
     <Control ClassId="0x00001001" Name="Shape_8">
       <Property Name="BackColor" Value="248"/>
@@ -57,7 +57,7 @@
       <Property Name="Height" Value="51"/>
       <Property Name="Left" Value="411"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="420"/>
+      <Property Name="Top" Value="421"/>
       <Property Name="Width" Value="115"/>
     </Control>
     <Control ClassId="0x00001004" Name="Text_3">
@@ -74,7 +74,7 @@
       <Property Name="TextGroup" Value="Source[global].TextGroup[PageControlNames]"/>
       <Property Name="TextIndexOffset" Value="3"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="425"/>
+      <Property Name="Top" Value="426"/>
       <Property Name="Width" Value="63"/>
     </Control>
     <Control ClassId="0x00001005" Name="AutomaticMode">
@@ -83,7 +83,7 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="GroupID" Value="7"/>
+      <Property Name="GroupID" Value="2"/>
       <Property Name="Height" Value="32"/>
       <Property Name="IndexDatapoint" Value="None"/>
       <Property Name="Left" Value="24"/>
@@ -104,7 +104,7 @@
       <Property Name="Left" Value="421"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="429"/>
+      <Property Name="Top" Value="430"/>
       <Property Name="Width" Value="32"/>
     </Control>
     <Control ClassId="0x00001001" Name="Shape_9">
@@ -164,7 +164,7 @@
       <Property Name="Height" Value="51"/>
       <Property Name="Left" Value="668"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="419"/>
+      <Property Name="Top" Value="421"/>
       <Property Name="Width" Value="115"/>
     </Control>
     <Control ClassId="0x00001004" Name="Text_5">
@@ -181,7 +181,7 @@
       <Property Name="TextGroup" Value="Source[global].TextGroup[PageControlNames]"/>
       <Property Name="TextIndexOffset" Value="5"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="423"/>
+      <Property Name="Top" Value="425"/>
       <Property Name="Width" Value="62"/>
     </Control>
     <Control ClassId="0x00001005" Name="Bitmap_2">
@@ -196,7 +196,7 @@
       <Property Name="Left" Value="678"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="428"/>
+      <Property Name="Top" Value="430"/>
       <Property Name="Width" Value="32"/>
     </Control>
     <Control ClassId="0x00001001" Name="Shape_11">
@@ -210,7 +210,7 @@
       <Property Name="Height" Value="51"/>
       <Property Name="Left" Value="540"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="420"/>
+      <Property Name="Top" Value="421"/>
       <Property Name="Width" Value="115"/>
     </Control>
     <Control ClassId="0x00001004" Name="Text_6">
@@ -227,7 +227,7 @@
       <Property Name="TextGroup" Value="Source[global].TextGroup[PageControlNames]"/>
       <Property Name="TextIndexOffset" Value="4"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="422"/>
+      <Property Name="Top" Value="423"/>
       <Property Name="Width" Value="55"/>
     </Control>
     <Control ClassId="0x00001005" Name="Bitmap_3">
@@ -242,14 +242,14 @@
       <Property Name="Left" Value="550"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="430"/>
+      <Property Name="Top" Value="431"/>
       <Property Name="Width" Value="32"/>
     </Control>
     <Control ClassId="0x00001003" Name="HotSpot_1">
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_7]"/>
-      <Property Name="GroupID" Value="7"/>
+      <Property Name="GroupID" Value="2"/>
       <Property Name="Height" Value="51"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="19"/>
@@ -280,7 +280,7 @@
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="668"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="419"/>
+      <Property Name="Top" Value="421"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_9]"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -293,7 +293,7 @@
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="411"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="420"/>
+      <Property Name="Top" Value="421"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_10]"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -306,7 +306,7 @@
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="540"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="420"/>
+      <Property Name="Top" Value="421"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_11]"/>
       <Property Name="Width" Value="115"/>
     </Control>
@@ -321,7 +321,7 @@
       <Property Name="Height" Value="51"/>
       <Property Name="Left" Value="278"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="420"/>
+      <Property Name="Top" Value="421"/>
       <Property Name="Width" Value="115"/>
     </Control>
     <Control ClassId="0x00001004" Name="Text_7">
@@ -338,7 +338,7 @@
       <Property Name="TextGroup" Value="Source[global].TextGroup[PageControlNames]"/>
       <Property Name="TextIndexOffset" Value="2"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="427"/>
+      <Property Name="Top" Value="428"/>
       <Property Name="Width" Value="50"/>
     </Control>
     <Control ClassId="0x00001005" Name="Bitmap_4">
@@ -353,7 +353,7 @@
       <Property Name="Left" Value="290"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="430"/>
+      <Property Name="Top" Value="431"/>
       <Property Name="Width" Value="32"/>
     </Control>
     <Control ClassId="0x00001003" Name="HotSpot_6">
@@ -365,7 +365,7 @@
       <Property Name="KeyMatrixOffset" Value="None"/>
       <Property Name="Left" Value="278"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="420"/>
+      <Property Name="Top" Value="421"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_18]"/>
       <Property Name="Width" Value="115"/>
     </Control>

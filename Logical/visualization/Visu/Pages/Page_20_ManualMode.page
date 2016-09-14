@@ -99,6 +99,231 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_23]"/>
           <Property Name="Width" Value="135"/>
         </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_1">
+          <Property Name="Bitmap" Value="Source[local].Bitmap[AlarmMapVGA]"/>
+          <Property Name="BitmapSource" Value="SingleBitmap"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="353"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="242"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="60"/>
+          <Property Name="Width" Value="497"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_1">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="739"/>
+          <Property Name="EndY" Value="330"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="727"/>
+          <Property Name="StartY" Value="330"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_2">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="716"/>
+          <Property Name="EndY" Value="330"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="704"/>
+          <Property Name="StartY" Value="330"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_3">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="693"/>
+          <Property Name="EndY" Value="330"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="681"/>
+          <Property Name="StartY" Value="330"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_4">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="670"/>
+          <Property Name="EndY" Value="330"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="658"/>
+          <Property Name="StartY" Value="330"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_5">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="740"/>
+          <Property Name="EndY" Value="221"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="728"/>
+          <Property Name="StartY" Value="221"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_6">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="717"/>
+          <Property Name="EndY" Value="221"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="705"/>
+          <Property Name="StartY" Value="221"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_7">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="694"/>
+          <Property Name="EndY" Value="221"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="682"/>
+          <Property Name="StartY" Value="221"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_8">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="671"/>
+          <Property Name="EndY" Value="221"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="659"/>
+          <Property Name="StartY" Value="221"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_9">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="745"/>
+          <Property Name="EndY" Value="326"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="745"/>
+          <Property Name="StartY" Value="314"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_10">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="745"/>
+          <Property Name="EndY" Value="304"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="745"/>
+          <Property Name="StartY" Value="292"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_11">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="745"/>
+          <Property Name="EndY" Value="284"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="745"/>
+          <Property Name="StartY" Value="272"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_12">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="745"/>
+          <Property Name="EndY" Value="262"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="745"/>
+          <Property Name="StartY" Value="250"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_13">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="745"/>
+          <Property Name="EndY" Value="242"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="745"/>
+          <Property Name="StartY" Value="230"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_14">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="631"/>
+          <Property Name="EndY" Value="323"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="631"/>
+          <Property Name="StartY" Value="311"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_15">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="631"/>
+          <Property Name="EndY" Value="301"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="631"/>
+          <Property Name="StartY" Value="289"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_16">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="631"/>
+          <Property Name="EndY" Value="281"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="631"/>
+          <Property Name="StartY" Value="269"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_17">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="631"/>
+          <Property Name="EndY" Value="259"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="631"/>
+          <Property Name="StartY" Value="247"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_18">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="631"/>
+          <Property Name="EndY" Value="239"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="631"/>
+          <Property Name="StartY" Value="227"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_19">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="647"/>
+          <Property Name="EndY" Value="330"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="635"/>
+          <Property Name="StartY" Value="330"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_20">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="647"/>
+          <Property Name="EndY" Value="222"/>
+          <Property Name="ForeColor" Value="253"/>
+          <Property Name="StartX" Value="635"/>
+          <Property Name="StartY" Value="222"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x00001003" Name="HotSpot_1">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_1]"/>
+          <Property Name="Height" Value="108"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="632"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="223"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_1]"/>
+          <Property Name="Width" Value="114"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_23">
@@ -110,6 +335,19 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="Page" Value="Source[local].Page[Page_21_ManualMagazineControl]"/>
+              <Property Name="Target" Value="Page"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_1">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000160">
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="Page" Value="Source[local].Page[Page_21_ManualArmsControl]"/>
               <Property Name="Target" Value="Page"/>
             </KeyAction>
           </KeyActions>

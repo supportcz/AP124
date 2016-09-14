@@ -5,17 +5,10 @@
   <Property Name="SharedTargetResourceRoot" Value=""/>
   <SourceFiles>
     <Source File="Languages.vcr"/>
-    <Source File="TextGroups\Mp_httpURL_SDM.txtgrp"/>
     <Source File="TextGroups\MpDateTimeFormats.txtgrp"/>
-    <Source File="TextGroups\MpLanguages.txtgrp"/>
-    <Source File="TextGroups\MpAlarmXListUIText.txtgrp"/>
-    <Source File="TextGroups\MpAlarmXListCode.txtgrp"/>
-    <Source File="TextGroups\MpAlarmXHistoryUIText.txtgrp"/>
-    <Source File="TextGroups\MpAlarmXHistoryCode.txtgrp"/>
-    <Source File="TextGroups\MpAlarmXHistoryState.txtgrp"/>
-    <Source File="TextGroups\MpAlarmXListStatus.txtgrp"/>
-    <Source File="TextGroups\MpAlarmXHistoryStatus.txtgrp"/>
-    <Source File="TextGroups\MpAlarmXListPosition.txtgrp"/>
+    <Source File="TextGroups\Languages.txtgrp"/>
+    <Source File="TextGroups\AlarmList.txtgrp"/>
+    <Source File="TextGroups\HistoryAlarmList.txtgrp"/>
     <Source File="TextGroups\httpURL_SDM.txtgrp"/>
     <Source File="TextGroups\PageControlNames.txtgrp"/>
     <Source File="TextGroups\ManualMode_StateArms.txtgrp"/>
