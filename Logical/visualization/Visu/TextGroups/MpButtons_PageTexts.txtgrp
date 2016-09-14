@@ -27,11 +27,12 @@
     <Text ID="89137" Value="Settings"/>
     <Text ID="124258" Value=""/>
     <Text ID="124259" Value=""/>
-    <Text ID="174648" Value="- History"/>
     <Text ID="174649" Value="Automatic Mode"/>
     <Text ID="174650" Value="Info"/>
-    <Text ID="174651" Value="Alarms Page"/>
+    <Text ID="174651" Value="Alarm List"/>
     <Text ID="174653" Value="- Arms Control"/>
+    <Text ID="175345" Value="Alarm History"/>
+    <Text ID="175346" Value="Alarm Map"/>
   </TextLayer>
   <TextLayer LanguageId="cs">
     <Text ID="89135" Value=""/>
@@ -56,11 +57,12 @@
     <Text ID="89137" Value="Nastavení"/>
     <Text ID="124258" Value=""/>
     <Text ID="124259" Value=""/>
-    <Text ID="174648" Value="- Historie"/>
     <Text ID="174649" Value="Automatický Mód"/>
     <Text ID="174650" Value="Info"/>
     <Text ID="174651" Value="Alarmy"/>
     <Text ID="174653" Value="- Ovládání ramen"/>
+    <Text ID="175345" Value="Historie Alarmu"/>
+    <Text ID="175346" Value="Mapa Alarmu"/>
   </TextLayer>
   <TextLayer LanguageId="fr">
     <Text ID="89135" Value=""/>
@@ -85,11 +87,12 @@
     <Text ID="89137" Value=""/>
     <Text ID="124258" Value=""/>
     <Text ID="124259" Value=""/>
-    <Text ID="174648" Value=""/>
     <Text ID="174649" Value=""/>
     <Text ID="174650" Value=""/>
     <Text ID="174651" Value=""/>
     <Text ID="174653" Value=""/>
+    <Text ID="175345" Value=""/>
+    <Text ID="175346" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="89135" Value="6010"/>
@@ -114,10 +117,11 @@
     <Index ID="89137" Value="6"/>
     <Index ID="124258" Value="14"/>
     <Index ID="124259" Value="15"/>
-    <Index ID="174648" Value="8"/>
     <Index ID="174649" Value="1"/>
     <Index ID="174650" Value="3"/>
     <Index ID="174651" Value="4"/>
     <Index ID="174653" Value="7"/>
+    <Index ID="175345" Value="9"/>
+    <Index ID="175346" Value="10"/>
   </IndexMap>
 </TextGroup>

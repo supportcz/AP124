@@ -11,16 +11,16 @@
     <Text ID="122825" Value="%m/%d/%Y %H:%M:%S"/>
   </TextLayer>
   <TextLayer LanguageId="cs">
-    <Text ID="93939" Value=""/>
-    <Text ID="93940" Value=""/>
+    <Text ID="93939" Value="%m/%d/%Y"/>
+    <Text ID="93940" Value="%H:%M:%S"/>
     <Text ID="93941" Value="%H:%M"/>
-    <Text ID="122825" Value=""/>
+    <Text ID="122825" Value="%m/%d/%Y %H:%M:%S"/>
   </TextLayer>
   <TextLayer LanguageId="fr">
-    <Text ID="93939" Value=""/>
-    <Text ID="93940" Value=""/>
-    <Text ID="93941" Value=""/>
-    <Text ID="122825" Value=""/>
+    <Text ID="93939" Value="%m/%d/%Y"/>
+    <Text ID="93940" Value="%H:%M:%S"/>
+    <Text ID="93941" Value="%H:%M"/>
+    <Text ID="122825" Value="%m/%d/%Y %H:%M:%S"/>
   </TextLayer>
   <IndexMap>
     <Index ID="93939" Value="1"/>

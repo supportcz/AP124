@@ -69,7 +69,7 @@
           <Property Name="EmbVirtualKey" Value="None"/>
           <Property Name="Height" Value="45"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="528"/>
+          <Property Name="Left" Value="391"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_pressed]"/>
@@ -80,7 +80,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="169"/>
+          <Property Name="Top" Value="164"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[TouchCalibration]"/>
           <Property Name="Width" Value="92"/>
         </Control>
@@ -92,7 +92,7 @@
           <Property Name="Left" Value="390"/>
           <Property Name="SimulationValue" Value="255.255.255.255"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="253"/>
+          <Property Name="Top" Value="232"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[Internal.Connection.IPAddress]"/>
           <Property Name="Width" Value="171"/>
         </Control>
@@ -108,7 +108,7 @@
           <Property Name="TextGroup" Value="Source[local].TextGroup[MpButtons_PageTexts]"/>
           <Property Name="TextIndexOffset" Value="6003"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="253"/>
+          <Property Name="Top" Value="232"/>
           <Property Name="Width" Value="128"/>
         </Control>
         <Control ClassId="0x00001004" Name="txtNodeNumber">
@@ -123,7 +123,7 @@
           <Property Name="TextGroup" Value="Source[local].TextGroup[MpButtons_PageTexts]"/>
           <Property Name="TextIndexOffset" Value="6004"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="287"/>
+          <Property Name="Top" Value="266"/>
           <Property Name="Width" Value="128"/>
         </Control>
         <Control ClassId="0x00001007" Name="varNodeNumber">
@@ -140,40 +140,10 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="287"/>
+          <Property Name="Top" Value="266"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[Internal.Connection.NodeNumber]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="55"/>
-        </Control>
-        <Control ClassId="0x00001004" Name="txtBrightness">
-          <Property Name="Border" Value="Source[local].Border[Mp_LabelBorder]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="28"/>
-          <Property Name="Left" Value="258"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value=""/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[MpButtons_PageTexts]"/>
-          <Property Name="TextIndexOffset" Value="6011"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="158"/>
-          <Property Name="Width" Value="128"/>
-        </Control>
-        <Control ClassId="0x00001004" Name="txtContrast">
-          <Property Name="Border" Value="Source[local].Border[Mp_LabelBorder]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="28"/>
-          <Property Name="Left" Value="258"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value=""/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[MpButtons_PageTexts]"/>
-          <Property Name="TextIndexOffset" Value="6010"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="196"/>
-          <Property Name="Width" Value="128"/>
         </Control>
         <Control ClassId="0x00001004" Name="txtNetworkSettings">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -189,7 +159,7 @@
           <Property Name="TextGroup" Value="Source[local].TextGroup[MpButtons_PageTexts]"/>
           <Property Name="TextIndexOffset" Value="6002"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="222"/>
+          <Property Name="Top" Value="201"/>
           <Property Name="Width" Value="188"/>
         </Control>
         <Control ClassId="0x00001007" Name="setSecond1">
@@ -209,7 +179,7 @@
           <Property Name="SimulationValue" Value="59"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="339"/>
+          <Property Name="Top" Value="318"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[Internal.DateTime.Second]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="70"/>
@@ -231,7 +201,7 @@
           <Property Name="SimulationValue" Value="59"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="339"/>
+          <Property Name="Top" Value="318"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[Internal.DateTime.Minute]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="70"/>
@@ -253,7 +223,7 @@
           <Property Name="SimulationValue" Value="23"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="339"/>
+          <Property Name="Top" Value="318"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[Internal.DateTime.Hour]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="70"/>
@@ -275,7 +245,7 @@
           <Property Name="SimulationValue" Value="2015"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="377"/>
+          <Property Name="Top" Value="356"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[Internal.DateTime.Year]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="70"/>
@@ -297,7 +267,7 @@
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="377"/>
+          <Property Name="Top" Value="356"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[Internal.DateTime.Month]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="70"/>
@@ -319,7 +289,7 @@
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="377"/>
+          <Property Name="Top" Value="356"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[Internal.DateTime.Day]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="70"/>
@@ -336,7 +306,7 @@
           <Property Name="TextGroup" Value="Source[local].TextGroup[MpButtons_PageTexts]"/>
           <Property Name="TextIndexOffset" Value="6005"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="343"/>
+          <Property Name="Top" Value="322"/>
           <Property Name="Width" Value="128"/>
         </Control>
         <Control ClassId="0x00001004" Name="txtDateFormat1">
@@ -351,7 +321,7 @@
           <Property Name="TextGroup" Value="Source[local].TextGroup[MpButtons_PageTexts]"/>
           <Property Name="TextIndexOffset" Value="6006"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="381"/>
+          <Property Name="Top" Value="360"/>
           <Property Name="Width" Value="128"/>
         </Control>
         <Control ClassId="0x00001004" Name="txtDateTime">
@@ -368,7 +338,7 @@
           <Property Name="TextGroup" Value="Source[local].TextGroup[MpButtons_PageTexts]"/>
           <Property Name="TextIndexOffset" Value="6007"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="307"/>
+          <Property Name="Top" Value="286"/>
           <Property Name="Width" Value="129"/>
         </Control>
         <Control ClassId="0x00001004" Name="txtNetworkSettings1">
@@ -392,20 +362,20 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EndX" Value="109"/>
-          <Property Name="EndY" Value="329"/>
+          <Property Name="EndY" Value="308"/>
           <Property Name="ForeColor" Value="249"/>
           <Property Name="StartX" Value="694"/>
-          <Property Name="StartY" Value="329"/>
+          <Property Name="StartY" Value="308"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_4">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EndX" Value="108"/>
-          <Property Name="EndY" Value="243"/>
+          <Property Name="EndY" Value="222"/>
           <Property Name="ForeColor" Value="249"/>
           <Property Name="StartX" Value="694"/>
-          <Property Name="StartY" Value="243"/>
+          <Property Name="StartY" Value="222"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_5">
@@ -417,42 +387,6 @@
           <Property Name="StartX" Value="694"/>
           <Property Name="StartY" Value="152"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-        </Control>
-        <Control ClassId="0x0000101F" Name="sldBrightness">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="CurrentDatapoint" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="392"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="100"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="0"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="SliderBorder" Value="Source[local].Border[Mp_SliderBorder09]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="ThumbBitmap" Value="Source[local].Bitmap[MpSlider_BallGray]"/>
-          <Property Name="Top" Value="157"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[Internal.Display.Brightness]"/>
-          <Property Name="Width" Value="125"/>
-        </Control>
-        <Control ClassId="0x0000101F" Name="sldContrast">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="CurrentDatapoint" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="392"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="100"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="0"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="SliderBorder" Value="Source[local].Border[Mp_SliderBorder09]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="ThumbBitmap" Value="Source[local].Bitmap[MpSlider_BallGray]"/>
-          <Property Name="Top" Value="196"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[Internal.Display.Contrast]"/>
-          <Property Name="Width" Value="125"/>
         </Control>
         <Control ClassId="0x00001004" Name="txtNetworkSettings2">
           <Property Name="AlignmentVertical" Value="Center"/>
@@ -495,8 +429,8 @@
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_pressed]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpLanguages]"/>
-          <Property Name="TextIndex" Value="0"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[Languages]"/>
+          <Property Name="TextIndex" Value="2"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
@@ -518,8 +452,8 @@
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_pressed]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpLanguages]"/>
-          <Property Name="TextIndex" Value="1"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[Languages]"/>
+          <Property Name="TextIndex" Value="0"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
@@ -546,7 +480,7 @@
           <KeyActions>
             <KeyAction ClassId="0x0000016C">
               <Property Name="Description" Value=""/>
-              <Property Name="Language" Value="en"/>
+              <Property Name="Language" Value="cs"/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Mode" Value="Set"/>
             </KeyAction>
@@ -585,28 +519,28 @@
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setDay1]"/>
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setMinute1]"/>
       <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setHour1]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[sldContrast]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setDay1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[setMinute1]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setMonth1]"/>
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setHour1]"/>
       <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setSecond1]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[sldContrast]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setMonth1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[setHour1]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setYear1]"/>
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setSecond1]"/>
       <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setMinute1]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[sldContrast]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setYear1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[setYear1]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[sldBrightness]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour1]"/>
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setDay1]"/>
       <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setMonth1]"/>
       <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setHour1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[setMonth1]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[sldBrightness]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setMinute1]"/>
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setYear1]"/>
       <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setDay1]"/>
       <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setMinute1]"/>
@@ -616,18 +550,6 @@
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setMonth1]"/>
       <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setYear1]"/>
       <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setSecond1]"/>
-    </MovementEntry>
-    <MovementEntry Control="Source[embedded].Layer[Default].Control[sldBrightness]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[sldContrast]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setSecond1]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setSecond1]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setYear1]"/>
-    </MovementEntry>
-    <MovementEntry Control="Source[embedded].Layer[Default].Control[sldContrast]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour1]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[sldBrightness]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setSecond1]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[sldBrightness]"/>
     </MovementEntry>
   </MovementOrder>
   <TabSequence>
@@ -639,7 +561,5 @@
     <TabSeqItem Index="5" Value="Source[embedded].Layer[Default].Control[setYear1]"/>
     <TabSeqItem Index="6" Value="Source[embedded].Layer[Default].Control[setMonth1]"/>
     <TabSeqItem Index="7" Value="Source[embedded].Layer[Default].Control[setDay1]"/>
-    <TabSeqItem Index="8" Value="Source[embedded].Layer[Default].Control[sldBrightness]"/>
-    <TabSeqItem Index="9" Value="Source[embedded].Layer[Default].Control[sldContrast]"/>
   </TabSequence>
 </Page>

@@ -41,7 +41,6 @@
   <Property Name="WheelEnterDatapoint" Value="None"/>
   <SourceFiles>
     <Source File="TextGroups\MpButtons_PageTexts.txtgrp"/>
-    <Source File="TextGroups\MpAuditEventTextSetup.txtgrp"/>
     <Source File="Fonts\MpButton.fninfo"/>
     <Source File="Fonts\MpDefault.fninfo"/>
     <Source File="Fonts\MpHeader2.fninfo"/>
@@ -356,6 +355,8 @@
     <Source File="Bitmaps\border.bminfo"/>
     <Source File="Bitmaps\activeAlarm.bminfo"/>
     <Source File="Bitmaps\inactiveAlarm.bminfo"/>
+    <Source File="Bitmaps\AlarmMapVGA.bminfo"/>
+    <Source File="Bitmaps\Alarm_Map.bminfo"/>
     <Source File="BitmapGroups\MpAlarmAcknowledgeState.bmgrp"/>
     <Source File="BitmapGroups\MpPads.bmgrp"/>
     <Source File="BitmapGroups\MpUserIcons.bmgrp"/>
@@ -365,14 +366,14 @@
     <Source File="BitmapGroups\MpAlarmXStates.bmgrp"/>
     <Source File="BitmapGroups\MpBorders.bmgrp"/>
     <Source File="Pages\Page_60_Settings.page"/>
-    <Source File="Pages\Page_41_MpAlarmXHistory.page"/>
-    <Source File="Pages\Page_40_MpAlarmXList.page"/>
+    <Source File="Pages\Page_40_AlarmList.page"/>
     <Source File="Pages\Page_10_AutomaticMode.page"/>
     <Source File="Pages\Page_50_SDM.page"/>
     <Source File="Pages\Page_20_ManualMode.page"/>
     <Source File="Pages\Page_30_Info.page"/>
     <Source File="Pages\Page_21_ManualArmsControl.page"/>
-    <Source File="Pages\MPALARMX.page"/>
+    <Source File="Pages\Page_41_AlarmMap.page"/>
+    <Source File="Pages\Page_42_AlarmHistory.page"/>
     <Source File="Layers\MpPageControl.layer"/>
     <Source File="Layers\MpBackground.layer"/>
     <Source File="StyleSheets\Color.vcs"/>
@@ -421,9 +422,6 @@
     <Source File="Borders\Mp_Button_Scroll_Right_Multi_pr.bdr"/>
     <Source File="Borders\Mp_TeachPointUnselectedEven.bdr"/>
     <Source File="Borders\Mp_TeachPointUnselectedOdd.bdr"/>
-    <Source File="Borders\Mp_ListBoxCenter.bdr"/>
-    <Source File="Borders\Mp_ListBoxLeft.bdr"/>
-    <Source File="Borders\Mp_ListBoxRight.bdr"/>
     <Source File="Borders\Mp_TeachPointSelected.bdr"/>
     <Source File="Borders\Mp_BitmapFrame.bdr"/>
     <Source File="Borders\Mp_LabelBorderSlim.bdr"/>

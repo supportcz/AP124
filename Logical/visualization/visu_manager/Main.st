@@ -25,7 +25,7 @@ PROGRAM _CYCLIC
 		ButtonAlarmPage:
 			gVisu.ChangePage := 40;
 			ButtonColor := 3;
-		//	ButtonAlarmColor := 1;
+			ButtonAlarmColor := 1;
 			PageControl := Idle;
 		ButtonSDM:
 			gVisu.ChangePage := 50;
@@ -38,7 +38,7 @@ PROGRAM _CYCLIC
 		Idle:
 	END_CASE;
 	
-//	IF (gVisu.CurrentPage <> 40) AND (gVisu.page_MpAlarmXList.AlarmCount > 0) THEN
+//	IF (ButtonColor = 3) AND (gVisu.page_MpAlarmXList.AlarmCount > 0) THEN
 //		gVisu.TON_0.IN := TRUE;
 //		gVisu.TON_0.PT := 200;
 //		IF gVisu.TON_0.Q THEN
