@@ -2,11 +2,11 @@
 T: PROGRAM Main
 FW: NO
 CI#: 80
-QSL: 10
-QVE: 10
-QVPC: 10
+QSL: 14
+QVE: 14
+QVPC: 14
 QPar: 0
-QFBI: 5
+QFBI: 7
 *)
 @V 1 2 0
 SF_EDM_V1_00_1	1	VAR	@FB:81
@@ -45,7 +45,7 @@ activateSafety	6	VAR	@TYP:1
 ;
 
 @V 1 8 0
-SF_EmergencyStop_V1_00_1	7	VAR	@FB:82
+SF_EmergencyStop_V1_00_1	7	VAR	@FB:83
 		     
 
 ;
@@ -64,6 +64,30 @@ activateSafetyDelayed	9	VAR	@TYP:1
 
 @V 1 11 0
 activateSafetyDelayed2	10	VAR	@TYP:1
+		     
+
+;
+
+@V 1 12 0
+SF_GuardLocking_V1_00_1	11	VAR	@FB:82
+		     
+
+;
+
+@V 1 13 0
+door1locked	12	VAR	@TYP:43
+		     
+
+;
+
+@V 1 14 0
+palletization_safetyReady	13	VAR	@TYP:43
+		     
+
+;
+
+@V 1 15 0
+SF_EDM_V1_00_2	14	VAR	@FB:81
 		     
 
 ;

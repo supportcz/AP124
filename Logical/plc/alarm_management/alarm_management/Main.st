@@ -16,7 +16,9 @@ PROGRAM _CYCLIC
 	alarmImage[8] := diMagazineEDM;
 	alarmImage[9] := diPalletizationEDM;
 	alarmImage[10] := diOutfeedEDM;
-	alarmImage[11] := edmContactorError;
+	alarmImage[11] := magazineEdmError;
+	alarmImage[12] := palletizationEdmError;
+	alarmImage[13] := outfeedEdmError;
 	
 	acknowledgeImage[0];
 

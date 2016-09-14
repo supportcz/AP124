@@ -4,6 +4,8 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	(* Insert code here *)
+	diDoor3opened;
+	diOpenDoors3;
+	diCloseDoors3; 
 	 
 END_PROGRAM

@@ -1,38 +1,60 @@
 ﻿{GroupDefinition(0,'pallet_magazine')}
-{GroupDefinition(7,'common')}
+{GroupDefinition(7,'palletization')}
+{GroupDefinition(17,'common')}
 
 VAR_GLOBAL {Group(0)}
     {LINE(1)}
-    pallet_mag_edmContactorError AT %QX0.2 : BOOL {Custom('SL1.SM1.BOOL003')};
+    magazineEdmError AT %QX0.1 : BOOL {Custom('SL1.SM1.BOOL002')};
     {LINE(2)}
-    SM6_ReleaseOutput02 AT %QX23.1 : BOOL {Custom('SL1.SM6.ReleaseOutput02')};
+    diMagazineEDM AT %IX62.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput17')};
     {LINE(3)}
-    SM6_ReleaseOutput01 AT %QX23.0 : BOOL {Custom('SL1.SM6.ReleaseOutput01')};
+    doMagazineContactor2 AT %QX17.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput04')};
     {LINE(4)}
-    doMagazineContactor2 AT %QX17.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput02')};
+    doMagazineContactor1 AT %QX17.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput03')};
     {LINE(5)}
-    doMagazineContactor1 AT %QX17.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput01')};
+    SM6_ReleaseOutput03 AT %QX23.2 : BOOL {Custom('SL1.SM6.ReleaseOutput03')};
     {LINE(6)}
-    allSafetyCircuitsReadyNS AT %QX0.0 : BOOL {Custom('SL1.SM1.BOOL001')};
+    SM6_ReleaseOutput04 AT %QX23.3 : BOOL {Custom('SL1.SM6.ReleaseOutput04')};
 END_VAR
 
 VAR_GLOBAL {Group(7)}
     {LINE(8)}
-    diEStop5 AT %IX19.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0910')};
+    SM6_ReleaseOutput02 AT %QX23.1 : BOOL {Custom('SL1.SM6.ReleaseOutput02')};
     {LINE(9)}
-    diEStop1 AT %IX18.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0102')};
+    SM6_ReleaseOutput01 AT %QX23.0 : BOOL {Custom('SL1.SM6.ReleaseOutput01')};
     {LINE(10)}
-    diEStop2 AT %IX18.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0304')};
+    palletizationEdmError AT %QX0.2 : BOOL {Custom('SL1.SM1.BOOL003')};
     {LINE(11)}
-    diEStop3 AT %IX18.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0506')};
+    diPalletizationEDM AT %IX62.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput18')};
     {LINE(12)}
-    diEStop4 AT %IX18.7 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0708')};
+    diDoor1opened AT %IX19.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1516')};
     {LINE(13)}
-    diEStopRobot AT %IX19.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1112')};
+    doPalletizationContactor2 AT %QX17.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput02')};
     {LINE(14)}
-    diEStopWrapper AT %IX19.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1314')};
+    doPalletizationContactor1 AT %QX17.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput01')};
     {LINE(15)}
-    diActivateAllSafetyCircuits AT %IX0.0 : BOOL {Custom('SL1.SM1.BOOL101')};
+    doUnlockDoor1 AT %QX15.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM4.SafeDigitalOutput03')};
     {LINE(16)}
-    diMagazineEDM AT %IX62.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput17')};
+    doUnlockDoor2 AT %QX15.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM4.SafeDigitalOutput04')};
+END_VAR
+
+VAR_GLOBAL {Group(17)}
+    {LINE(18)}
+    allSafetyCircuitsReadyNS AT %QX0.0 : BOOL {Custom('SL1.SM1.BOOL001')};
+    {LINE(19)}
+    diEStop5 AT %IX19.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0910')};
+    {LINE(20)}
+    diEStop1 AT %IX18.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0102')};
+    {LINE(21)}
+    diEStop2 AT %IX18.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0304')};
+    {LINE(22)}
+    diEStop3 AT %IX18.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0506')};
+    {LINE(23)}
+    diEStop4 AT %IX18.7 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0708')};
+    {LINE(24)}
+    diEStopRobot AT %IX19.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1112')};
+    {LINE(25)}
+    diEStopWrapper AT %IX19.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1314')};
+    {LINE(26)}
+    diActivateAllSafetyCircuits AT %IX0.0 : BOOL {Custom('SL1.SM1.BOOL101')};
 END_VAR

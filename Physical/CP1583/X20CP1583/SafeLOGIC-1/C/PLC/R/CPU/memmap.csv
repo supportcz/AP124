@@ -1,8 +1,10 @@
-Memory-Map dump file with 5 entries
+Memory-Map dump file with 7 entries
 
 Entry, Address, Bitposition, DataLength/Bits, InstancePath
 0000, 0x001000BC, 0x00, 0x01, Main.activateSafety
 0001, 0x00100100, 0x00, 0x01, Main.activateSafetyDelayed
 0002, 0x00100101, 0x00, 0x01, Main.activateSafetyDelayed2
 0003, 0x0010009D, 0x00, 0x01, Main.allSafetyCircuitsReady
-0004, 0x0010009C, 0x00, 0x01, Main.pallet_mag_safetyCircuitsReady
+0004, 0x00100134, 0x00, 0x01, Main.door1locked
+0005, 0x0010009C, 0x00, 0x01, Main.pallet_mag_safetyCircuitsReady
+0006, 0x00100135, 0x00, 0x01, Main.palletization_safetyReady

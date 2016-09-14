@@ -1,0 +1,5 @@
+VAR
+	diOpenDoors3 : BOOL; (*button to open doors*)
+	diCloseDoors3 : BOOL; (*button to close doors*)
+	diDoor3opened : BOOL;
+END_VAR

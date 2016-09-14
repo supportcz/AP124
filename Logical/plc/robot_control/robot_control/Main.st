@@ -4,6 +4,6 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	(* Insert code here *)
+
 	 
 END_PROGRAM

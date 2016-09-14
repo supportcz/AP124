@@ -152,6 +152,30 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="12">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="13">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -177,7 +201,9 @@
       <Text ID="180" Value="Pallet magazine zone OFF"/>
       <Text ID="187" Value="Palletization zone OFF"/>
       <Text ID="188" Value="Outfeed zone OFF"/>
-      <Text ID="208" Value="EDM contactor error"/>
+      <Text ID="208" Value="Pallet magazine EDM error"/>
+      <Text ID="213" Value="Palletization EDM error"/>
+      <Text ID="214" Value="Outfeed EDM error"/>
       <Text ID="100" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -192,6 +218,8 @@
       <Text ID="187" Value=""/>
       <Text ID="188" Value=""/>
       <Text ID="208" Value=""/>
+      <Text ID="213" Value=""/>
+      <Text ID="214" Value=""/>
       <Text ID="100" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -206,6 +234,8 @@
       <Text ID="187" Value=""/>
       <Text ID="188" Value=""/>
       <Text ID="208" Value=""/>
+      <Text ID="213" Value=""/>
+      <Text ID="214" Value=""/>
       <Text ID="100" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -220,6 +250,8 @@
       <Index ID="187" Value="9"/>
       <Index ID="188" Value="10"/>
       <Index ID="208" Value="11"/>
+      <Index ID="213" Value="12"/>
+      <Index ID="214" Value="13"/>
       <Index ID="100" Value="Group"/>
     </IndexMap>
   </TextGroup>

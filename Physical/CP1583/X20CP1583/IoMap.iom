@@ -29,11 +29,22 @@ VAR_CONFIG
 	alarm_mana:diEStopWrapper AT %IX."I18".SafeTwoChannelInput1314;
 	pallet_mag:diLightCurtainP11 AT %IX."I22".SafeTwoChannelInput0102;
 	safety:allSafetyCircuitsReady AT %IX."I18".BOOL001;
-	::alarm_mana:edmContactorError AT %IX."I18".BOOL003;
+	::alarm_mana:palletizationEdmError AT %IX."I18".BOOL003;
 	::pallet_con:diPalletOnConveyorP13 AT %IX."I80".DigitalInput01;
 	::safety:doLedOn AT %QX."Q10".DigitalOutput10;
 	::safety:doLedOff AT %QX."Q10".DigitalOutput11;
 	Cyclic#3.diMagazineEDM AT %IX."I22".SafeDigitalInput17;
 	Cyclic#3.diPalletizationEDM AT %IX."I22".SafeDigitalInput18;
 	Cyclic#3.diOutfeedEDM AT %IX."I22".SafeDigitalInput19;
+	::product_in:diDoor1opened AT %IX."I18".SafeTwoChannelInput1516;
+	::wrapper:diDoor2opened AT %IX."I18".SafeTwoChannelInput1718;
+	::robot_head:diDoor3opened AT %IX."I18".SafeTwoChannelInput1920;
+	::alarm_mana:magazineEdmError AT %IX."I18".BOOL002;
+	::alarm_mana:outfeedEdmError AT %IX."I18".BOOL004;
+	::product_in:diCloseDoors1 AT %IX."I01".DigitalInput01;
+	::product_in:diOpenDoors1 AT %IX."I01".DigitalInput02;
+	::wrapper:diCloseDoors2 AT %IX."I01".DigitalInput03;
+	::wrapper:diOpenDoors2 AT %IX."I01".DigitalInput04;
+	::robot_head:diCloseDoors3 AT %IX."I01".DigitalInput05;
+	::robot_head:diOpenDoors3 AT %IX."I01".DigitalInput06;
 END_VAR
