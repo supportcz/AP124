@@ -334,7 +334,7 @@
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Page" Value="Source[local].Page[Page_21_ManualMagazineControl]"/>
+              <Property Name="Page" Value="None"/>
               <Property Name="Target" Value="Page"/>
             </KeyAction>
           </KeyActions>
@@ -347,7 +347,7 @@
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Page" Value="Source[local].Page[Page_21_ManualArmsControl]"/>
+              <Property Name="Page" Value="None"/>
               <Property Name="Target" Value="Page"/>
             </KeyAction>
           </KeyActions>
