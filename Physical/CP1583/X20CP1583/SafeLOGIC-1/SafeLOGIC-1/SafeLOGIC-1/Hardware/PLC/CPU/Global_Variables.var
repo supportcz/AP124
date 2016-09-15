@@ -6,7 +6,7 @@ VAR_GLOBAL {Group(0)}
     {LINE(1)}
     magazineEdmError AT %QX0.1 : BOOL {Custom('SL1.SM1.BOOL002')};
     {LINE(2)}
-    diMagazineEDM AT %IX62.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput17')};
+    diMagazineEDM AT %IX62.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput18')};
     {LINE(3)}
     doMagazineContactor2 AT %QX17.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput04')};
     {LINE(4)}
@@ -25,7 +25,7 @@ VAR_GLOBAL {Group(7)}
     {LINE(10)}
     palletizationEdmError AT %QX0.2 : BOOL {Custom('SL1.SM1.BOOL003')};
     {LINE(11)}
-    diPalletizationEDM AT %IX62.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput18')};
+    diPalletizationEDM AT %IX62.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput17')};
     {LINE(12)}
     diDoor1opened AT %IX19.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1516')};
     {LINE(13)}

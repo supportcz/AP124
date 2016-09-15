@@ -26,7 +26,7 @@
 18	111	14	126	16	4	3	door1locked
 27	136	156	165	158	4	3	doPalletizationContactor1
 28	136	162	165	164	4	3	doPalletizationContactor2
-29	45	168	61	170	4	5	TIME#250ms
+29	45	168	61	170	4	5	TIME#500ms
 30	53	152	61	154	4	5	TRUE
 31	47	172	61	174	4	5	SAFEFALSE
 32	36	176	61	178	4	5	activateSafetyDelayed

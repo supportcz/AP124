@@ -54,27 +54,8 @@ PROGRAM _CYCLIC
 		END_FOR
 	END_IF
 
-	//alarmImage[0] := NOT safetyCircuitsReady;
 	alarmImage[1] := diLightCurtainP11;
-	
-	IF diMagazineUpperHwEnd AND cmdUp THEN
-		alarmImage[10] := TRUE;
-	END_IF
-
-	IF diMagazineLooseChain AND cmdDown THEN
-		alarmImage[11] := TRUE;
-	END_IF
-	
 	alarmImage[6] := NOT diMotorProtectionP11;
-	
-	//edge alarms
-	IF acknowledgeImage[10] THEN
-		alarmImage[10] := FALSE;
-	END_IF
-	IF acknowledgeImage[11] THEN
-		alarmImage[11] := FALSE;
-	END_IF
-
 	alarmImage[12] := NOT diEStop5;
 
 	

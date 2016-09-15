@@ -17,7 +17,7 @@
 16
 3	121	49	147	51	4	3	doMagazineContactor1
 4	121	55	147	57	4	3	doMagazineContactor2
-5	28	61	44	63	4	5	TIME#250ms
+5	28	61	44	63	4	5	TIME#500ms
 6	36	45	44	47	4	5	TRUE
 19	30	65	44	67	4	5	SAFEFALSE
 20	19	69	44	71	4	5	activateSafetyDelayed

@@ -21,6 +21,20 @@ ACTION VerticalArmsControl:
 				stateMagazine := stateLowerPosition;
 			END_IF
 		
+			IF stateMagazine = stateMagazineUndefined THEN
+				IF cmdDown THEN
+					cmdDown := FALSE;
+					TON_VerticalMovement(IN := FALSE);
+					stateMagazine := stateMoveToLowerPosition;
+				END_IF	
+			
+				IF cmdUp THEN
+					cmdUp := FALSE;
+					TON_VerticalMovement(IN := FALSE);
+					stateMagazine := stateMoveToUpperPosition;
+				END_IF	
+			END_IF
+			
 			doMagazineDown := doMagazineUp :=  FALSE;
 		
 		stateMoveToUpperPosition:
@@ -30,41 +44,26 @@ ACTION VerticalArmsControl:
 			TON_VerticalMovement(IN := TRUE, PT := T#6s);
 			//position reached?
 			IF diMagazineUpperPosition THEN
-				doMagazineDown := doMagazineUp :=  FALSE;
-				stateMagazine := stateUpperPosition;
+				stateMagazine := stateMagazineUndefined;
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
-				doMagazineDown := doMagazineUp :=  FALSE;
 				alarmImage[7] := TRUE;
-				stateMagazine := stateMiddlePosition;
+				stateMagazine := stateMagazineUndefined;
 			END_IF	
 		
 		stateUpperPosition:
 	
 			IF cmdDown THEN
-				TON_VerticalMovement(IN := FALSE);
-				stateMagazine := stateMoveUpperToMiddlePosition;
+				cmdDown := FALSE;
+				IF palletOnConveyorP12 AND stateArms = stateArmsClosed THEN
+					alarmImage[13] := TRUE;
+				ELSE
+					TON_VerticalMovement(IN := FALSE);
+					stateMagazine := stateMoveToLowerPosition;
+				END_IF
 			END_IF	
 	
-		stateMoveUpperToMiddlePosition:
-
-			//set output
-			doMagazineDown := TRUE;
-			//start timer
-			TON_VerticalMovement(IN := TRUE, PT := T#6s);
-			//position reached?
-			IF diMagazineMiddlePositon THEN
-				doMagazineDown := doMagazineUp :=  FALSE;
-				stateMagazine := stateMiddlePosition;
-			END_IF	
-			//timeout?
-			IF TON_VerticalMovement.Q THEN
-				doMagazineDown := doMagazineUp :=  FALSE;
-				alarmImage[8] := TRUE;
-				stateMagazine := stateUpperPosition;
-			END_IF
-				
 		stateMoveLowerToMiddlePosition:
 			//set output			
 			doMagazineUp := TRUE;
@@ -72,24 +71,28 @@ ACTION VerticalArmsControl:
 			TON_VerticalMovement(IN := TRUE, PT := T#6s);
 			//position reached?
 			IF diMagazineMiddlePositon THEN
-				doMagazineDown := doMagazineUp :=  FALSE;
-				stateMagazine := stateMiddlePosition;
+				stateMagazine := stateMagazineUndefined;
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
-				doMagazineDown := doMagazineUp :=  FALSE;
 				alarmImage[8] := TRUE;
-				stateMagazine := stateLowerPosition;
+				stateMagazine := stateMagazineUndefined;
 			END_IF
 		
 		stateMiddlePosition:
 			
 			IF cmdDown THEN
-				TON_VerticalMovement(IN := FALSE);
-				stateMagazine := stateMoveToLowerPosition;
+				cmdDown := FALSE;
+				IF palletOnConveyorP12 AND stateArms = stateArmsClosed THEN
+					alarmImage[13] := TRUE;
+				ELSE
+					TON_VerticalMovement(IN := FALSE);
+					stateMagazine := stateMoveToLowerPosition;
+				END_IF
 			END_IF	
 			
 			IF cmdUp THEN
+				cmdUp := FALSE;
 				TON_VerticalMovement(IN := FALSE);
 				stateMagazine := stateMoveToUpperPosition;
 			END_IF	
@@ -101,18 +104,17 @@ ACTION VerticalArmsControl:
 			TON_VerticalMovement(IN := TRUE, PT := T#6s);
 			//position reached?
 			IF diMagazineLowerPosition THEN
-				doMagazineDown := doMagazineUp :=  FALSE;
-				stateMagazine := stateLowerPosition;
+				stateMagazine := stateMagazineUndefined;
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
-				doMagazineDown := doMagazineUp :=  FALSE;
 				alarmImage[9] := TRUE;
-				stateMagazine := stateMiddlePosition;
+				stateMagazine := stateMagazineUndefined;
 			END_IF
 		
 		stateLowerPosition:
 			IF cmdUp THEN
+				cmdUp := FALSE;
 				TON_VerticalMovement(IN := FALSE);
 				stateMagazine := stateMoveLowerToMiddlePosition;
 			END_IF	
@@ -126,6 +128,16 @@ ACTION VerticalArmsControl:
 		doMagazineBrake := FALSE;
 	END_IF
 	
+	IF diMagazineUpperHwEnd AND cmdUp THEN
+		alarmImage[10] := TRUE;
+	END_IF
+
+	IF diMagazineLooseChain AND cmdDown THEN
+		alarmImage[11] := TRUE;
+	END_IF
+	
+
+	
 	//edge alarms
 	IF acknowledgeImage[7] THEN
 		alarmImage[7] := FALSE;
@@ -135,6 +147,15 @@ ACTION VerticalArmsControl:
 	END_IF
 	IF acknowledgeImage[9] THEN
 		alarmImage[9] := FALSE;
+	END_IF
+	IF acknowledgeImage[10] THEN
+		alarmImage[10] := FALSE;
+	END_IF
+	IF acknowledgeImage[11] THEN
+		alarmImage[11] := FALSE;
+	END_IF
+	IF acknowledgeImage[13] THEN
+		alarmImage[13] := FALSE;
 	END_IF
 	
 END_ACTION

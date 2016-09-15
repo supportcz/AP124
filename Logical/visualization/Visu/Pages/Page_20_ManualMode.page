@@ -18,7 +18,7 @@
       <Property Name="OutlineDisplayName" Value="True"/>
       <Property Name="OutlineHatched" Value="False"/>
       <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Normal"/>
+      <Property Name="VisibilityMode" Value="Outline"/>
       <Property Name="Z-Order" Value="0"/>
     </LayerRef>
     <LayerRef Source="Source[local].Layer[MpPageControl]">
@@ -31,7 +31,7 @@
       <Property Name="OutlineDisplayName" Value="True"/>
       <Property Name="OutlineHatched" Value="False"/>
       <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Normal"/>
+      <Property Name="VisibilityMode" Value="Outline"/>
       <Property Name="Z-Order" Value="1"/>
     </LayerRef>
     <Layer Name="Default">
@@ -50,10 +50,18 @@
       <Property Name="Width" Value="800"/>
       <Property Name="Z-Order" Value="2"/>
       <TextGroup>
-        <TextLayer LanguageId="en"/>
-        <TextLayer LanguageId="cs"/>
-        <TextLayer LanguageId="fr"/>
-        <IndexMap/>
+        <TextLayer LanguageId="en">
+          <Text ID="175657" Value="Pallet magazine"/>
+        </TextLayer>
+        <TextLayer LanguageId="cs">
+          <Text ID="175657" Value=""/>
+        </TextLayer>
+        <TextLayer LanguageId="fr">
+          <Text ID="175657" Value=""/>
+        </TextLayer>
+        <IndexMap>
+          <Index ID="175657" Value="1"/>
+        </IndexMap>
       </TextGroup>
       <Controls>
         <Control ClassId="0x00001004" Name="txtGroupControl">
@@ -90,12 +98,12 @@
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[Manual_Mode]"/>
-          <Property Name="TextIndex" Value="0"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="1"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="102"/>
+          <Property Name="Top" Value="101"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_23]"/>
           <Property Name="Width" Value="135"/>
         </Control>
@@ -334,7 +342,7 @@
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Page" Value="None"/>
+              <Property Name="Page" Value="Source[local].Page[Page_21_ManualMagazine]"/>
               <Property Name="Target" Value="Page"/>
             </KeyAction>
           </KeyActions>

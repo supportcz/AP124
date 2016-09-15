@@ -16,7 +16,25 @@ ACTION HorizontalArmsControl:
 			IF diLeftArmOpened AND diRightArmOpened AND NOT diLeftArmClosed AND NOT diRightArmClosed THEN
 				stateArms := stateArmsOpened;
 			END_IF
-			
+		
+			IF stateArms = stateArmsUndefined THEN
+				// command to close 
+				IF cmdCloseArms THEN
+					cmdCloseArms := FALSE;
+					TON_LeftRequest(IN := FALSE);
+					TON_RightRequest(IN := FALSE);
+					stateArms := stateArmsClosing;		
+				END_IF
+
+				// command to open 
+				IF cmdOpenArms THEN
+					cmdOpenArms := FALSE;
+					TON_LeftRequest(IN := FALSE);
+					TON_RightRequest(IN := FALSE);
+					stateArms := stateArmsOpening;	
+				END_IF	
+			END_IF
+						
 		stateArmsOpening:
 			
 			//set output
@@ -29,23 +47,24 @@ ACTION HorizontalArmsControl:
 			TON_RightRequest(IN := NOT diRightArmOpened, PT := T#6s);
 			//open check
 			IF diLeftArmOpened AND diRightArmOpened THEN
-				stateArms := stateArmsOpened;
+				stateArms := stateArmsUndefined;
 			END_IF	
 			//timeout left side?
 			IF TON_LeftRequest.Q THEN
 				alarmImage[4] := TRUE;
-				stateArms := stateArmsClosed;
+				stateArms := stateArmsUndefined;
 			END_IF
 			//timeout right side?
 			IF TON_RightRequest.Q THEN
 				alarmImage[5] := TRUE;
-				stateArms := stateArmsClosed;
+				stateArms := stateArmsUndefined;
 			END_IF
 		
 		stateArmsOpened:
 		
 			// command to close 
 			IF cmdCloseArms THEN
+				cmdCloseArms := FALSE;
 				TON_LeftRequest(IN := FALSE);
 				TON_RightRequest(IN := FALSE);
 				stateArms := stateArmsClosing;		
@@ -63,29 +82,41 @@ ACTION HorizontalArmsControl:
 			TON_RightRequest(IN := NOT diRightArmClosed, PT := T#6s);
 			//close check
 			IF diLeftArmClosed AND diRightArmClosed THEN
-				stateArms := stateArmsClosed;
+				stateArms := stateArmsUndefined;
 			END_IF	
 			//timeout left side?
 			IF TON_LeftRequest.Q THEN
 				alarmImage[2] := TRUE;
-				stateArms := stateArmsOpened;
+				stateArms := stateArmsUndefined;
 			END_IF
 			//timeout right side?
 			IF TON_RightRequest.Q THEN
 				alarmImage[3] := TRUE;
-				stateArms := stateArmsOpened;
+				stateArms := stateArmsUndefined;
 			END_IF
 
 		stateArmsClosed:
 
 			// command to open 
 			IF cmdOpenArms THEN
-				TON_LeftRequest(IN := FALSE);
-				TON_RightRequest(IN := FALSE);
-				stateArms := stateArmsOpening;	
+				cmdOpenArms := FALSE;
+				
+				IF stateMagazine = stateUpperPosition OR (stateMagazine = stateMiddlePosition AND palletOnConveyorP12) THEN
+					alarmImage[15] := TRUE;
+				ELSE	
+					TON_LeftRequest(IN := FALSE);
+					TON_RightRequest(IN := FALSE);
+					stateArms := stateArmsOpening;	
+				END_IF
 			END_IF	
 			
 	END_CASE
+	
+	IF stateArms = stateArmsUndefined THEN
+		alarmImage[0] := TRUE;
+	ELSE
+		alarmImage[0] := FALSE;
+	END_IF
 	
 	//edge alarms
 	IF acknowledgeImage[2] THEN
@@ -99,6 +130,9 @@ ACTION HorizontalArmsControl:
 	END_IF
 	IF acknowledgeImage[5] THEN
 		alarmImage[5] := FALSE;
+	END_IF
+	IF acknowledgeImage[15] THEN
+		alarmImage[15] := FALSE;
 	END_IF
 
 END_ACTION

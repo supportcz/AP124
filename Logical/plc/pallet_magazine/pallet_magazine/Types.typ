@@ -13,7 +13,6 @@ TYPE
 		stateMagazineUndefined,
 		stateMoveToUpperPosition,
 		stateUpperPosition,
-		stateMoveUpperToMiddlePosition,
 		stateMoveLowerToMiddlePosition,
 		stateMiddlePosition,
 		stateMoveToLowerPosition,

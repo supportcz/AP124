@@ -4,7 +4,7 @@
     <GeneratorDescription Name="AutomationStudio" Version="4.2.5.388" LanguageID="1">
       <Info Name="ARVersion" Value="42510" />
       <Info Name="SafetyRelease" Value="1.10" />
-      <Info Name="Communication" Value="/IF=tcpip /LOPO=11159 /SA=1 /RT=1000 /AM=* /DAIP=127.0.0.1 /REPO=11160 /ANSL=1 /PORT=50000" />
+      <Info Name="Communication" Value="/IF=tcpip /LOPO=11159 /SA=1 /RT=1000 /AM=* /SDT=5 /DAIP=192.168.88.118 /REPO=11159 /ANSL=1 /PT=11169 /PORT=50000" />
     </GeneratorDescription>
     <SafetyConfigurationManager TransportSAddr="1">
       <DeviceDescription Module="X20SLXxxx_110.SCM" minOpenSafetyRelease="1.5"><![CDATA[C:\BrAutomation\AS42\AS\Hardware\Modules\OSDD\X20SLXxxx_SCM_R110.xosdd]]></DeviceDescription>
@@ -44,7 +44,7 @@
         <Info Name="AsVariable" Value="SafeTwoChannelInput0910,pallet_mag:diEStop5" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput1112,alarm_mana:diEStopRobot" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0708,alarm_mana:diEStop4" />
-        <Info Name="AsVariable" Value="SafeTwoChannelInput1920,robot_cont:diDoor3opened" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput1920,robot_head:diDoor3opened" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput1314,alarm_mana:diEStopWrapper" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0506,alarm_mana:diEStop3" />
         <Info Name="AsVariable" Value="BOOL003,alarm_mana:palletizationEdmError" />
@@ -101,10 +101,10 @@
         <Info Name="FirstPublishedSafetyRelease" Value="1.5" />
         <Info Name="Description-de" Value="X20 Safe Digital In, 20xE, 24V" />
         <Info Name="Description-en" Value="X20 Safe Digital In, 20xI, 24V" />
-        <Info Name="AsVariable" Value="SafeDigitalInput18,Cyclic#3.diPalletizationEDM" />
+        <Info Name="AsVariable" Value="SafeDigitalInput18,Cyclic#3.diMagazineEDM" />
         <Info Name="AsVariable" Value="SafeDigitalInput19,Cyclic#3.diOutfeedEDM" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0102,pallet_mag:diLightCurtainP11" />
-        <Info Name="AsVariable" Value="SafeDigitalInput17,Cyclic#3.diMagazineEDM" />
+        <Info Name="AsVariable" Value="SafeDigitalInput17,Cyclic#3.diPalletizationEDM" />
       </NodeDescription>
       <ChannelConfiguration />
     </SafetyNode>
@@ -116,8 +116,8 @@
         <Classification Type="VendorSpecific">Safe</Classification>
         <Classification Type="VendorSpecific">IO</Classification>
         <Info Name="Interface" Value="IF6.ST13" />
-        <Info Name="HWC_Revision" Value="1.10.0.0" />
-        <Info Name="HWC_LastEdit" Value="11.4.2016 15:29:10" />
+        <Info Name="HWC_Revision" Value="1.10.0.1" />
+        <Info Name="HWC_LastEdit" Value="18.7.2016 15:32:34" />
         <Info Name="AS_Name" Value="Q26" />
         <Info Name="FirstPublishedSafetyRelease" Value="1.5" />
         <Info Name="Description-de" Value="X20 Safe Digital Out, 6xA, 24 V, 0.2 A" />

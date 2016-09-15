@@ -713,7 +713,7 @@ END_VAR
   </outVariable>
   <inVariable localId="5" height="4" width="32">
     <position x="56" y="122" />
-    <expression>TIME#250ms</expression>
+    <expression>TIME#500ms</expression>
     <connectionPointOut>
       <relPosition x="32" y="2" />
     </connectionPointOut>
@@ -1269,7 +1269,7 @@ END_VAR
   </outVariable>
   <inVariable localId="29" height="4" width="32">
     <position x="90" y="336" />
-    <expression>TIME#250ms</expression>
+    <expression>TIME#500ms</expression>
     <connectionPointOut>
       <relPosition x="32" y="2" />
     </connectionPointOut>
