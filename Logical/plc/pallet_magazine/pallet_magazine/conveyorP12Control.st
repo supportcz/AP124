@@ -2,7 +2,7 @@
 ACTION ConveyorP12Control: 
 	
 	//detect pallet on conveyor
-	IF diPalletOnConveyorP12 THEN
+	IF diPalletOnConveyorP12 AND (stateMagazine = stateUpperPosition OR stateArms = stateArmsOpened) THEN
 		palletOnConveyorP12 := TRUE;
 	END_IF
 

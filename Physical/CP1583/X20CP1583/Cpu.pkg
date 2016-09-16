@@ -21,6 +21,6 @@
     <Transfer DownloadMode="Copy" />
     <Vc FirmwareVersion="V4.26.0" />
     <Safety SafetyRelease="1.10" />
-    <OnlineConfiguration Name="X20CP1583" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=1" ConnectionParameters="/RT=1000 /AM=* /SDT=5 /DAIP=192.168.88.118 /REPO=11159 /ANSL=1 /PT=11169" Description="" />
+    <OnlineConfiguration Name="X20CP1583" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=1" ConnectionParameters="/RT=1000 /AM=* /SDT=5 /DAIP=192.168.88.10 /REPO=11159 /ANSL=1 /PT=11169" Description="" />
   </Configuration>
 </Cpu>

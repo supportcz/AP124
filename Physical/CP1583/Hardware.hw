@@ -4,11 +4,15 @@
   <Module Name="6PPT30.0702-20B" Type="6PPT30.0702-20B" Version="1.1.0.0">
     <Connection Connector="ETH1" TargetModule="X20CP1583" TargetConnector="IF2" NodeNumber="1" />
     <Parameter ID="Terminal" Value="true" />
+    <Parameter ID="Startmode" Value="1" />
+    <Parameter ID="Mode" Value="Manual" />
+    <Parameter ID="SelectedFavoriteVNC" Value="192.168.88.10" />
     <Parameter ID="PasswordVNC" Value="" />
     <Parameter ID="PasswordCIFS" Value="" />
     <Parameter ID="PasswordService" Value="" />
-    <Parameter ID="VncKeyMappingFile" Value="VC\6PPT30.0702-20B.dis" />
-    <Parameter ID="VncPortNumber" Value="5901" />
+    <Parameter ID="InternetAddress" Value="192.168.88.11" />
+    <Parameter ID="DefaultGateway" Value="192.168.88.1" />
+    <Parameter ID="Subnetmask" Value="255.255.255.0" />
   </Module>
   <Module Name="I00" Type="X20AI2322" Version="1.0.0.2">
     <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
@@ -78,7 +82,7 @@
     <Connection Connector="SS1" TargetModule="X20TB1F5" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11e" TargetConnector="SL1" />
   </Module>
-  <Module Name="Q26" Type="X20SO6300" Version="1.10.0.0">
+  <Module Name="Q26" Type="X20SO6300" Version="1.10.0.1">
     <Connection Connector="SS1" TargetModule="X20TB52d" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM33b" TargetConnector="SL1" />
     <Parameter ID="SafeModuleID" Value="3" />
@@ -245,6 +249,9 @@
     <Connector Name="IF2">
       <Parameter ID="ActivateDevice" Value="1" />
       <Parameter ID="EthInterfaceRedundant" Value="0" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.88.10" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
       <Group ID="Vnc1" />
       <Parameter ID="VncVcObjectName1" Value="Visu" />
       <Parameter ID="VncKeyMappingFile1" Value="VC\PS2-Keyboard1.dis" />

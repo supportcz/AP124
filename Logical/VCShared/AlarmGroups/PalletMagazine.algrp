@@ -212,6 +212,18 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="16">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="True"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -242,7 +254,8 @@
       <Text ID="195" Value="E-Stop 5"/>
       <Text ID="219" Value="Arms in undefined position"/>
       <Text ID="238" Value="It is not alowed to go down (pallet on conveyor)"/>
-      <Text ID="257" Value="It is not allowed to open the arms"/>
+      <Text ID="257" Value="It is not allowed to open arms in this position"/>
+      <Text ID="276" Value="It is not allowed to close arms in this position"/>
       <Text ID="46" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -262,6 +275,7 @@
       <Text ID="219" Value=""/>
       <Text ID="238" Value=""/>
       <Text ID="257" Value=""/>
+      <Text ID="276" Value=""/>
       <Text ID="46" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -281,6 +295,7 @@
       <Text ID="219" Value=""/>
       <Text ID="238" Value=""/>
       <Text ID="257" Value=""/>
+      <Text ID="276" Value=""/>
       <Text ID="46" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -300,6 +315,7 @@
       <Index ID="219" Value="0"/>
       <Index ID="238" Value="13"/>
       <Index ID="257" Value="15"/>
+      <Index ID="276" Value="16"/>
       <Index ID="46" Value="Group"/>
     </IndexMap>
   </TextGroup>

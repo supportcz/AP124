@@ -64,10 +64,15 @@ ACTION HorizontalArmsControl:
 		
 			// command to close 
 			IF cmdCloseArms THEN
-				cmdCloseArms := FALSE;
-				TON_LeftRequest(IN := FALSE);
-				TON_RightRequest(IN := FALSE);
-				stateArms := stateArmsClosing;		
+				IF stateMagazine = stateUpperPosition THEN
+					alarmImage[16] := TRUE;
+					stateArms := stateArmsUndefined;
+				ELSE	
+					cmdCloseArms := FALSE;
+					TON_LeftRequest(IN := FALSE);
+					TON_RightRequest(IN := FALSE);
+					stateArms := stateArmsClosing;		
+				END_IF
 			END_IF
 
 		stateArmsClosing:
@@ -101,12 +106,12 @@ ACTION HorizontalArmsControl:
 			IF cmdOpenArms THEN
 				cmdOpenArms := FALSE;
 				
-				IF stateMagazine = stateUpperPosition OR (stateMagazine = stateMiddlePosition AND palletOnConveyorP12) THEN
-					alarmImage[15] := TRUE;
-				ELSE	
+				IF stateMagazine = stateLowerPosition OR (diReset AND stateMagazine <> stateUpperPosition) THEN
 					TON_LeftRequest(IN := FALSE);
 					TON_RightRequest(IN := FALSE);
 					stateArms := stateArmsOpening;	
+				ELSE	
+					alarmImage[15] := TRUE;
 				END_IF
 			END_IF	
 			
@@ -133,6 +138,9 @@ ACTION HorizontalArmsControl:
 	END_IF
 	IF acknowledgeImage[15] THEN
 		alarmImage[15] := FALSE;
+	END_IF
+	IF acknowledgeImage[16] THEN
+		alarmImage[16] := FALSE;
 	END_IF
 
 END_ACTION
