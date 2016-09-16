@@ -1,5 +1,19 @@
 
 TYPE
+	StateAuto : 
+		(
+		stateAutoUndefined,
+		stateAutoWaitForNoPallet,
+		stateAutoMoveToLowerPosition,
+		stateAutoWaitForLowerPosition,
+		stateAutoOpenArms,
+		stateAutoWaitForOpenedArms,
+		stateAutoMoveToMiddlePosition,
+		stateAutoWaitForMiddlePosition,
+		stateAutoCloseArms,
+		stateAutoWaitForClosedArms,
+		stateAutoMoveToUpperPosition
+		);
 	StateConveyor : 
 		(
 		stateConveyorUndefined,

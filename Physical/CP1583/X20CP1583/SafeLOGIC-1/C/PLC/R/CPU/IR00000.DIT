@@ -99,56 +99,56 @@ doUnlockDoor2	15	VAR_GLOBAL	@TYP:43
 ;
 
 @V 1 19 0
-allSafetyCircuitsReadyNS	16	VAR_GLOBAL	@TYP:1
-%NSQX 0.0		     
-
-;
-
-@V 1 20 0
-diEStop5	17	VAR_GLOBAL	@TYP:43
+diEStop5	16	VAR_GLOBAL	@TYP:43
 %SIX 19.0		     
 
 ;
 
-@V 1 21 0
-diEStop1	18	VAR_GLOBAL	@TYP:43
+@V 1 20 0
+diEStop1	17	VAR_GLOBAL	@TYP:43
 %SIX 18.4		     
 
 ;
 
-@V 1 22 0
-diEStop2	19	VAR_GLOBAL	@TYP:43
+@V 1 21 0
+diEStop2	18	VAR_GLOBAL	@TYP:43
 %SIX 18.5		     
 
 ;
 
-@V 1 23 0
-diEStop3	20	VAR_GLOBAL	@TYP:43
+@V 1 22 0
+diEStop3	19	VAR_GLOBAL	@TYP:43
 %SIX 18.6		     
 
 ;
 
-@V 1 24 0
-diEStop4	21	VAR_GLOBAL	@TYP:43
+@V 1 23 0
+diEStop4	20	VAR_GLOBAL	@TYP:43
 %SIX 18.7		     
 
 ;
 
-@V 1 25 0
-diEStopRobot	22	VAR_GLOBAL	@TYP:43
+@V 1 24 0
+diEStopRobot	21	VAR_GLOBAL	@TYP:43
 %SIX 19.1		     
 
 ;
 
-@V 1 26 0
-diEStopWrapper	23	VAR_GLOBAL	@TYP:43
+@V 1 25 0
+diEStopWrapper	22	VAR_GLOBAL	@TYP:43
 %SIX 19.2		     
 
 ;
 
-@V 1 27 0
-diActivateAllSafetyCircuits	24	VAR_GLOBAL	@TYP:1
+@V 1 26 0
+diActivateAllSafetyCircuits	23	VAR_GLOBAL	@TYP:1
 %NSIX 0.0		     
+
+;
+
+@V 1 27 0
+safetyAlive	24	VAR_GLOBAL	@TYP:1
+%NSQX 0.0		     
 
 ;
 

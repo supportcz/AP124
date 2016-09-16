@@ -11,4 +11,5 @@ VAR
 	outfeedEdmError : BOOL; (*1=power on*)
 	magazineEdmError : BOOL; (*1=power on*)
 	i : INT;
+	safetyAlive : BOOL;
 END_VAR

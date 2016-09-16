@@ -4,7 +4,7 @@
     <GeneratorDescription Name="AutomationStudio" Version="4.2.5.388" LanguageID="1">
       <Info Name="ARVersion" Value="42510" />
       <Info Name="SafetyRelease" Value="1.10" />
-      <Info Name="Communication" Value="/IF=tcpip /LOPO=11159 /SA=1 /RT=1000 /AM=* /SDT=5 /DAIP=192.168.88.118 /REPO=11159 /ANSL=1 /PT=11169 /PORT=50000" />
+      <Info Name="Communication" Value="/IF=tcpip /LOPO=11159 /SA=1 /RT=1000 /AM=* /SDT=5 /DAIP=192.168.88.10 /REPO=11159 /ANSL=1 /PT=11169 /PORT=50000" />
     </GeneratorDescription>
     <SafetyConfigurationManager TransportSAddr="1">
       <DeviceDescription Module="X20SLXxxx_110.SCM" minOpenSafetyRelease="1.5"><![CDATA[C:\BrAutomation\AS42\AS\Hardware\Modules\OSDD\X20SLXxxx_SCM_R110.xosdd]]></DeviceDescription>
@@ -38,7 +38,7 @@
         <Info Name="AsVariable" Value="SafeTwoChannelInput1516,product_in:diDoor1opened" />
         <Info Name="AsVariable" Value="BOOL004,alarm_mana:outfeedEdmError" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0304,alarm_mana:diEStop2" />
-        <Info Name="AsVariable" Value="BOOL001,safety:allSafetyCircuitsReady" />
+        <Info Name="AsVariable" Value="BOOL001,alarm_mana:safetyAlive" />
         <Info Name="AsVariable" Value="BOOL101,diActivateAllSafetyCircuits" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0102,alarm_mana:diEStop1" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0910,pallet_mag:diEStop5" />

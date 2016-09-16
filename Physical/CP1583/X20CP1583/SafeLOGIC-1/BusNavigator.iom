@@ -10,7 +10,7 @@
 			<Channel Name="SafeTwoChannelInput1112" Mapping="SIX19.1" Variable="diEStopRobot" Address="alarm_mana:diEStopRobot" SODIndex="0x9999" SODSubIndex="0x4" />
 			<Channel Name="SafeTwoChannelInput1314" Mapping="SIX19.2" Variable="diEStopWrapper" Address="alarm_mana:diEStopWrapper" SODIndex="0x9999" SODSubIndex="0x4" />
 			<Channel Name="SafeTwoChannelInput1516" Mapping="SIX19.3" Variable="diDoor1opened" Address="product_in:diDoor1opened" SODIndex="0x9999" SODSubIndex="0x4" />
-			<Channel Name="BOOL001" Mapping="NSQX0.0" Variable="allSafetyCircuitsReadyNS" Address="safety:allSafetyCircuitsReady" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL001" Mapping="NSQX0.0" Variable="safetyAlive" Address="alarm_mana:safetyAlive" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL002" Mapping="NSQX0.1" Variable="magazineEdmError" Address="alarm_mana:magazineEdmError" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL003" Mapping="NSQX0.2" Variable="palletizationEdmError" Address="alarm_mana:palletizationEdmError" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL101" Mapping="NSIX0.0" Variable="diActivateAllSafetyCircuits" Address="diActivateAllSafetyCircuits" SODIndex="0x2500" SODSubIndex="0x2" />

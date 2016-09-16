@@ -40,21 +40,21 @@ END_VAR
 
 VAR_GLOBAL {Group(17)}
     {LINE(18)}
-    allSafetyCircuitsReadyNS AT %QX0.0 : BOOL {Custom('SL1.SM1.BOOL001')};
-    {LINE(19)}
     diEStop5 AT %IX19.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0910')};
-    {LINE(20)}
+    {LINE(19)}
     diEStop1 AT %IX18.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0102')};
-    {LINE(21)}
+    {LINE(20)}
     diEStop2 AT %IX18.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0304')};
-    {LINE(22)}
+    {LINE(21)}
     diEStop3 AT %IX18.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0506')};
-    {LINE(23)}
+    {LINE(22)}
     diEStop4 AT %IX18.7 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0708')};
-    {LINE(24)}
+    {LINE(23)}
     diEStopRobot AT %IX19.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1112')};
-    {LINE(25)}
+    {LINE(24)}
     diEStopWrapper AT %IX19.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1314')};
-    {LINE(26)}
+    {LINE(25)}
     diActivateAllSafetyCircuits AT %IX0.0 : BOOL {Custom('SL1.SM1.BOOL101')};
+    {LINE(26)}
+    safetyAlive AT %QX0.0 : BOOL {Custom('SL1.SM1.BOOL001')};
 END_VAR

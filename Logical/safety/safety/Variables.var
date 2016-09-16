@@ -1,5 +1,4 @@
 VAR
-	allSafetyCircuitsReady : BOOL;
 	doLedOn : BOOL; (*LED indicator on main cabinet*)
 	doLedOff : BOOL; (*LED indicator on main cabinet*)
 	MTBasicsPWM_0 : MTBasicsPWM;

@@ -59,6 +59,7 @@ ACTION VerticalArmsControl:
 					stateMagazine := stateMoveToLowerPosition;
 				END_IF
 			END_IF	
+			cmdUp := FALSE;
 	
 		stateMoveLowerToMiddlePosition:
 			//set output			
@@ -108,10 +109,12 @@ ACTION VerticalArmsControl:
 			END_IF
 		
 		stateLowerPosition:
+			
 			IF cmdUp THEN
 				TON_VerticalMovement(IN := FALSE);
 				stateMagazine := stateMoveLowerToMiddlePosition;
 			END_IF	
+			cmdDown := FALSE;
 
 	END_CASE
 				

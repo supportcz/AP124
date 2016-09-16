@@ -33,6 +33,9 @@ ACTION HorizontalArmsControl:
 					TON_RightRequest(IN := FALSE);
 					stateArms := stateArmsOpening;	
 				END_IF	
+				alarmImage[0] := TRUE;
+			ELSE
+				alarmImage[0] := FALSE;
 			END_IF
 						
 		stateArmsOpening:
@@ -74,6 +77,7 @@ ACTION HorizontalArmsControl:
 					stateArms := stateArmsClosing;		
 				END_IF
 			END_IF
+			cmdOpenArms := FALSE;
 
 		stateArmsClosing:
 
@@ -114,14 +118,14 @@ ACTION HorizontalArmsControl:
 					alarmImage[15] := TRUE;
 				END_IF
 			END_IF	
-			
+			cmdCloseArms := FALSE;
 	END_CASE
 	
-	IF stateArms = stateArmsUndefined THEN
-		alarmImage[0] := TRUE;
-	ELSE
-		alarmImage[0] := FALSE;
-	END_IF
+//	IF stateArms = stateArmsUndefined THEN
+//		alarmImage[0] := TRUE;
+//	ELSE
+//		alarmImage[0] := FALSE;
+//	END_IF
 	
 	//edge alarms
 	IF acknowledgeImage[2] THEN
