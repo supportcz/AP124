@@ -7,11 +7,11 @@ VAR
 	cmdMovePallet : BOOL;
 	cmdOpenArms : BOOL; (*VISU:commad to open the arms*)
 	cmdUp : BOOL; (*VISU: go with magazine down*)
-	diAuto : BOOL; (*magazine:3 funkce v 1 (reset safety+ovladaci obvody + start automatu)*)
+	diActivateMagazineSafetyCircuits : BOOL; (*magazine:3 funkce v 1 (reset safety+ovladaci obvody + start automatu pokud jede paletizace)*)
 	diEStop5 : BOOL; (*emergency stop 5*)
 	diLeftArmClosed : BOOL; (*left arm is closed*)
 	diLeftArmOpened : BOOL; (*left arm is opened*)
-	diLightCurtainP11 : BOOL; (*status of light curtain P11*)
+	lightCurtainP11 : BOOL; (*status of light curtain P11*)
 	diMagazineLooseChain : BOOL; (*lower HW end switch*)
 	diMagazineLowerPosition : BOOL; (*magazine in lower position*)
 	diMagazineMiddlePositon : BOOL; (*magazine in middle position*)
@@ -28,7 +28,6 @@ VAR
 	doMagazineUp : BOOL; (*contactor to go up*)
 	doOpenArms : BOOL; (*valve to open the arms*)
 	i : INT;
-	modeOfOperation : ModeOfOperation;
 	palletOnConveyorP12 : BOOL; (*VISU:pallet lies on conveyor*)
 	readyToStart : BOOL;
 	stateArms : StateArms; (*VISU:arms state*)
@@ -40,4 +39,7 @@ VAR
 	TON_VerticalMovement : TON;
 	stateAuto : StateAuto;
 	cmdManual : BOOL;
+	doSafetyCurtainSupplyP11 : BOOL;
+	doLedP11 : BOOL;
+	MTBasicsPWM_0 : MTBasicsPWM;
 END_VAR

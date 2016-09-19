@@ -6,13 +6,14 @@
     <Parameter ID="Terminal" Value="true" />
     <Parameter ID="Startmode" Value="1" />
     <Parameter ID="Mode" Value="Manual" />
+    <Parameter ID="InternetAddress" Value="192.168.88.11" />
+    <Parameter ID="DefaultGateway" Value="192.168.88.1" />
+    <Parameter ID="Subnetmask" Value="255.255.255.0" />
+    <Parameter ID="ActivateOpenService" Value="0" />
     <Parameter ID="SelectedFavoriteVNC" Value="192.168.88.10" />
     <Parameter ID="PasswordVNC" Value="" />
     <Parameter ID="PasswordCIFS" Value="" />
     <Parameter ID="PasswordService" Value="" />
-    <Parameter ID="InternetAddress" Value="192.168.88.11" />
-    <Parameter ID="DefaultGateway" Value="192.168.88.1" />
-    <Parameter ID="Subnetmask" Value="255.255.255.0" />
   </Module>
   <Module Name="I00" Type="X20AI2322" Version="1.0.0.2">
     <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
@@ -282,6 +283,8 @@
     <Parameter ID="Cyclic7Tolerance" Value="1000000" />
     <Parameter ID="Cyclic8Duration" Value="10000" />
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
+    <Parameter ID="Temp.ProjectDirectory" Value="C:\Work\Atrima\projekt\AP124\" />
+    <Parameter ID="Temp.ConfigurationName" Value="CP1583" />
   </Module>
   <Module Name="X20PS2100a" Type="X20PS2100" Version="1.1.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />

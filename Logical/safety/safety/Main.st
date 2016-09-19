@@ -28,4 +28,8 @@ PROGRAM _CYCLIC
 	diActivateAllSafetyCircuits;
 	
 	
+	doSafetyCurtainSupplyP15 := TRUE;
+	doSafetyCurtainSupplyP17 := TRUE;
+	
+	
 END_PROGRAM

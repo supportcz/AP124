@@ -40,10 +40,4 @@ TYPE
 		stateArmsClosing,
 		stateArmsClosed
 		);
-	ModeOfOperation : 
-		(
-		modeNotReadyToStart,
-		modeManual,
-		modeAuto
-		);
 END_TYPE

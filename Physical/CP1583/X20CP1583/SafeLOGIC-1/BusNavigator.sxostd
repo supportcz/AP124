@@ -38,10 +38,12 @@
         <Info Name="AsVariable" Value="SafeTwoChannelInput1516,product_in:diDoor1opened" />
         <Info Name="AsVariable" Value="BOOL004,alarm_mana:outfeedEdmError" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0304,alarm_mana:diEStop2" />
+        <Info Name="AsVariable" Value="BOOL102,pallet_mag:diActivateMagazineSafetyCircuits" />
         <Info Name="AsVariable" Value="BOOL001,alarm_mana:safetyAlive" />
         <Info Name="AsVariable" Value="BOOL101,diActivateAllSafetyCircuits" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0102,alarm_mana:diEStop1" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0910,pallet_mag:diEStop5" />
+        <Info Name="AsVariable" Value="BOOL005,pallet_mag:lightCurtainP11" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput1112,alarm_mana:diEStopRobot" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0708,alarm_mana:diEStop4" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput1920,robot_head:diDoor3opened" />
@@ -103,7 +105,6 @@
         <Info Name="Description-en" Value="X20 Safe Digital In, 20xI, 24V" />
         <Info Name="AsVariable" Value="SafeDigitalInput18,Cyclic#3.diMagazineEDM" />
         <Info Name="AsVariable" Value="SafeDigitalInput19,Cyclic#3.diOutfeedEDM" />
-        <Info Name="AsVariable" Value="SafeTwoChannelInput0102,pallet_mag:diLightCurtainP11" />
         <Info Name="AsVariable" Value="SafeDigitalInput17,Cyclic#3.diPalletizationEDM" />
       </NodeDescription>
       <ChannelConfiguration />

@@ -6,7 +6,7 @@ ACTION ConveyorP12Control:
 		palletOnConveyorP12 := TRUE;
 	END_IF
 
-	IF modeOfOperation = modeNotReadyToStart THEN
+	IF modeMagazine = modeMagazineNotReadyToStart THEN
 		stateConveyor := stateConveyorUndefined;
 	END_IF
 	

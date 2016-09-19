@@ -2,26 +2,26 @@
 T: PROGRAM Main
 FW: NO
 CI#: 80
-QSL: 14
-QVE: 14
-QVPC: 14
+QSL: 17
+QVE: 17
+QVPC: 17
 QPar: 0
-QFBI: 7
+QFBI: 12
 *)
-@V 1 2 0
-SF_EDM_V1_00_1	1	VAR	@FB:81
+@V 1 1 0
+lightCurtainP11	1	VAR	@TYP:43
 		     
 
 ;
 
 @V 1 3 0
-TON_1	2	VAR	@FB:21
+SF_EDM_V1_00_1	2	VAR	@FB:81
 		     
 
 ;
 
 @V 1 4 0
-pallet_mag_safetyCircuitsReady	3	VAR	@TYP:43
+TON_1	3	VAR	@FB:21
 		     
 
 ;
@@ -39,7 +39,7 @@ TP_1	5	VAR	@FB:22
 ;
 
 @V 1 7 0
-activateSafety	6	VAR	@TYP:1
+activateSafetyMagazine	6	VAR	@TYP:1
 		     
 
 ;
@@ -57,37 +57,55 @@ TON_2	8	VAR	@FB:21
 ;
 
 @V 1 10 0
-activateSafetyDelayed	9	VAR	@TYP:1
+door1locked	9	VAR	@TYP:43
 		     
 
 ;
 
 @V 1 11 0
-activateSafetyDelayed2	10	VAR	@TYP:1
+SF_EDM_V1_00_2	10	VAR	@FB:81
 		     
 
 ;
 
 @V 1 12 0
-SF_GuardLocking_V1_00_1	11	VAR	@FB:82
+SF_ESPE_V1_00_1	11	VAR	@FB:82
 		     
 
 ;
 
 @V 1 13 0
-door1locked	12	VAR	@TYP:43
+TON_3	12	VAR	@FB:21
 		     
 
 ;
 
 @V 1 14 0
-palletization_safetyReady	13	VAR	@TYP:43
+activateSafetyPalletization	13	VAR	@TYP:1
 		     
 
 ;
 
 @V 1 15 0
-SF_EDM_V1_00_2	14	VAR	@FB:81
+TP_2	14	VAR	@FB:22
+		     
+
+;
+
+@V 1 16 0
+TP_3	15	VAR	@FB:22
+		     
+
+;
+
+@V 1 17 0
+TON_4	16	VAR	@FB:21
+		     
+
+;
+
+@V 1 18 0
+TON_5	17	VAR	@FB:21
 		     
 
 ;

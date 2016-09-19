@@ -11,37 +11,38 @@ PROGRAM _CYCLIC
 	readyToStart := NOT diMagazineEDM AND diAirPresureOK AND diMotorProtectionP11;
 	
 	IF NOT readyToStart THEN
-		modeOfOperation := modeNotReadyToStart;
+		modeMagazine := modeMagazineNotReadyToStart;
 	END_IF
 
-	CASE modeOfOperation OF
+	CASE modeMagazine OF
 		
-		modeNotReadyToStart: //the automat is not ready to start
+		modeMagazineNotReadyToStart: //the automat is not ready to start
 			
 			IF readyToStart THEN
-				modeOfOperation := modeManual;
+				modeMagazine := modeMagazineManual;
 			END_IF
 		
-		modeManual:
+		modeMagazineManual:
 
-			IF cmdAuto OR cmdAllToAuto OR diAuto THEN
+			IF NOT alarmInZoneMagazine AND (cmdAuto OR cmdAllToAuto) THEN //OR diActivateMagazineSafetyCircuits THEN
 				cmdAuto := FALSE;
 				cmdAllToAuto := FALSE;
-				modeOfOperation := modeAuto;
+				modeMagazine := modeMagazineAuto;
 				stateAuto := stateAutoUndefined;
 			END_IF
 			cmdManual := FALSE;
 
-		modeAuto:
+		modeMagazineAuto:
 		
 			IF alarmInZoneMagazine OR cmdManual THEN
-				modeOfOperation := modeManual;
+				modeMagazine := modeMagazineManual;
 			END_IF
 				
 			CASE stateAuto OF
 				
 				stateAutoUndefined:
 					
+					cmdUp := FALSE;
 					IF stateMagazine = stateUpperPosition THEN
 						stateAuto := stateAutoWaitForNoPallet;
 					ELSIF stateMagazine = stateMiddlePosition THEN
@@ -123,9 +124,20 @@ PROGRAM _CYCLIC
 	//conveyor P12
 	ConveyorP12Control;
 
-	//request to activate safety
-	//activateSafetyCircuit := diAuto OR diActivateAllSafetyCircuits;
+	doSafetyCurtainSupplyP11 := TRUE;
+	diActivateMagazineSafetyCircuits;
+	
+	//LED P11
+	IF diMagazineEDM THEN
+		MTBasicsPWM_0.DutyCycle := 50;
+	ELSE
+		MTBasicsPWM_0.DutyCycle := 0;
+	END_IF
+	
+	MTBasicsPWM_0(Enable := 1, Period := 1);
+	doLedP11 := MTBasicsPWM_0.Out;
 
+	//detect if there is any alarm 
 	alarmInZoneMagazine := FALSE;
 	FOR i:=0 TO 39 DO
 		IF alarmImage[i] OR acknowledgeImage[i] THEN
@@ -140,7 +152,7 @@ PROGRAM _CYCLIC
 		END_FOR
 	END_IF
 
-	alarmImage[1] := diLightCurtainP11;
+	alarmImage[1] := NOT lightCurtainP11;
 	alarmImage[6] := NOT diMotorProtectionP11;
 	alarmImage[12] := NOT diEStop5;
 

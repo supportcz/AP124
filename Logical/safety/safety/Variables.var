@@ -3,4 +3,6 @@ VAR
 	doLedOff : BOOL; (*LED indicator on main cabinet*)
 	MTBasicsPWM_0 : MTBasicsPWM;
 	sum : INT;
+	doSafetyCurtainSupplyP15 : BOOL;
+	doSafetyCurtainSupplyP17 : BOOL;
 END_VAR

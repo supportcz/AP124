@@ -17,7 +17,7 @@ VAR_CONFIG
 	pallet_mag:diMotorProtectionP11 AT %IX."I06".DigitalInput05;
 	pallet_mag:diMagazineUpperHwEnd AT %IX."I01".DigitalInput10;
 	pallet_mag:diMagazineLooseChain AT %IX."I01".DigitalInput11;
-	pallet_mag:diAuto AT %IX."I01".DigitalInput12;
+	::pallet_mag:diActivateMagazineSafetyCircuits AT %IX."I01".DigitalInput12;
 	diReset AT %IX."I08".DigitalInput03;
 	diActivateAllSafetyCircuits AT %IX."I08".DigitalInput02;
 	alarm_mana:diEStop1 AT %IX."I18".SafeTwoChannelInput0102;
@@ -27,7 +27,6 @@ VAR_CONFIG
 	pallet_mag:diEStop5 AT %IX."I18".SafeTwoChannelInput0910;
 	alarm_mana:diEStopRobot AT %IX."I18".SafeTwoChannelInput1112;
 	alarm_mana:diEStopWrapper AT %IX."I18".SafeTwoChannelInput1314;
-	pallet_mag:diLightCurtainP11 AT %IX."I22".SafeTwoChannelInput0102;
 	::alarm_mana:safetyAlive AT %IX."I18".BOOL001;
 	::alarm_mana:palletizationEdmError AT %IX."I18".BOOL003;
 	::pallet_con:diPalletOnConveyorP13 AT %IX."I80".DigitalInput01;
@@ -47,4 +46,10 @@ VAR_CONFIG
 	::wrapper:diOpenDoors2 AT %IX."I01".DigitalInput04;
 	::robot_head:diCloseDoors3 AT %IX."I01".DigitalInput05;
 	::robot_head:diOpenDoors3 AT %IX."I01".DigitalInput06;
+	::pallet_mag:doSafetyCurtainSupplyP11 AT %QX."Q10".DigitalOutput07;
+	::pallet_mag:doLedP11 AT %QX."Q10".DigitalOutput12;
+	::pallet_mag:diActivateMagazineSafetyCircuits AT %QX."I18".BOOL102;
+	::safety:doSafetyCurtainSupplyP15 AT %QX."Q10".DigitalOutput08;
+	::safety:doSafetyCurtainSupplyP17 AT %QX."Q10".DigitalOutput09;
+	::pallet_mag:lightCurtainP11 AT %IX."I18".BOOL005;
 END_VAR
