@@ -4,14 +4,13 @@ VAR
 	cmdAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
 	cmdCloseArms : BOOL; (*VISU:command to close the arms*)
 	cmdDown : BOOL; (*VISU: button to go with magazine down*)
-	cmdMovePallet : BOOL;
+	cmdManual : BOOL;
 	cmdOpenArms : BOOL; (*VISU:commad to open the arms*)
 	cmdUp : BOOL; (*VISU: go with magazine down*)
 	diActivateMagazineSafetyCircuits : BOOL; (*magazine:3 funkce v 1 (reset safety+ovladaci obvody + start automatu pokud jede paletizace)*)
 	diEStop5 : BOOL; (*emergency stop 5*)
 	diLeftArmClosed : BOOL; (*left arm is closed*)
 	diLeftArmOpened : BOOL; (*left arm is opened*)
-	lightCurtainP11 : BOOL; (*status of light curtain P11*)
 	diMagazineLooseChain : BOOL; (*lower HW end switch*)
 	diMagazineLowerPosition : BOOL; (*magazine in lower position*)
 	diMagazineMiddlePositon : BOOL; (*magazine in middle position*)
@@ -22,24 +21,20 @@ VAR
 	diRightArmClosed : BOOL; (*right arm is closed*)
 	diRightArmOpened : BOOL; (*right arm is opened*)
 	doCloseArms : BOOL; (*valve to close the arms*)
-	doConveyorP12 : BOOL; (*starts conveyor P12*)
+	doLedP11 : BOOL;
 	doMagazineBrake : BOOL; (*1=brake released*)
 	doMagazineDown : BOOL; (*contactor to go down*)
 	doMagazineUp : BOOL; (*contactor to go up*)
 	doOpenArms : BOOL; (*valve to open the arms*)
+	doSafetyCurtainSupplyP11 : BOOL;
 	i : INT;
-	palletOnConveyorP12 : BOOL; (*VISU:pallet lies on conveyor*)
+	lightCurtainP11 : BOOL; (*status of light curtain P11*)
+	MTBasicsPWM_0 : MTBasicsPWM;
 	readyToStart : BOOL;
 	stateArms : StateArms; (*VISU:arms state*)
-	stateConveyor : StateConveyor;
+	stateAuto : StateAuto;
 	stateMagazine : StateMagazine; (*VISU: current state of magazine*)
-	TON_ConveyorP12 : TON;
 	TON_LeftRequest : TON;
 	TON_RightRequest : TON;
 	TON_VerticalMovement : TON;
-	stateAuto : StateAuto;
-	cmdManual : BOOL;
-	doSafetyCurtainSupplyP11 : BOOL;
-	doLedP11 : BOOL;
-	MTBasicsPWM_0 : MTBasicsPWM;
 END_VAR

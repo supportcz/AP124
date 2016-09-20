@@ -52,4 +52,6 @@ VAR_CONFIG
 	::safety:doSafetyCurtainSupplyP15 AT %QX."Q10".DigitalOutput08;
 	::safety:doSafetyCurtainSupplyP17 AT %QX."Q10".DigitalOutput09;
 	::pallet_mag:lightCurtainP11 AT %IX."I18".BOOL005;
+	::pallet_con:doConveyorP12 AT %QX."Q14".DigitalOutput04;
+	::pallet_con:doConveyorP13 AT %QX."Q12".DigitalOutput13;
 END_VAR

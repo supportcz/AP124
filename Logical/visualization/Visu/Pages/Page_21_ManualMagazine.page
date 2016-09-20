@@ -43,6 +43,7 @@
           <Text ID="175692" Value="Remove pallet"/>
           <Text ID="175694" Value="Open"/>
           <Text ID="175696" Value="Close"/>
+          <Text ID="175747" Value="Move pallet P12+P13"/>
         </TextLayer>
         <TextLayer LanguageId="cs">
           <Text ID="175686" Value="Up"/>
@@ -50,6 +51,7 @@
           <Text ID="175692" Value=""/>
           <Text ID="175694" Value=""/>
           <Text ID="175696" Value=""/>
+          <Text ID="175747" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="fr">
           <Text ID="175686" Value=""/>
@@ -57,6 +59,7 @@
           <Text ID="175692" Value=""/>
           <Text ID="175694" Value=""/>
           <Text ID="175696" Value=""/>
+          <Text ID="175747" Value=""/>
         </TextLayer>
         <IndexMap>
           <Index ID="175686" Value="2"/>
@@ -64,6 +67,7 @@
           <Index ID="175692" Value="8"/>
           <Index ID="175694" Value="10"/>
           <Index ID="175696" Value="12"/>
+          <Index ID="175747" Value="7"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -201,6 +205,32 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_30]"/>
           <Property Name="Width" Value="135"/>
         </Control>
+        <Control ClassId="0x00001002" Name="Button_4">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_33]"/>
+          <Property Name="ForeColor" Value="16"/>
+          <Property Name="Height" Value="57"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="505"/>
+          <Property Name="PressedBackColor" Value="253"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="7"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="330"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_33]"/>
+          <Property Name="Width" Value="135"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_26">
@@ -279,6 +309,22 @@
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
               <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.pallet_magazine.cmdCloseArms]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_33">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x0000016B">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.pallet_magazine.cmdMovePallet]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

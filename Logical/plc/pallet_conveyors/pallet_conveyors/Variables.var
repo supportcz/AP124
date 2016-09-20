@@ -1,3 +1,10 @@
 VAR
+	acknowledgeImage : ARRAY[0..39] OF BOOL;
+	alarmImage : ARRAY[0..39] OF BOOL;
+	cmdMovePalletP12P13 : BOOL;
 	diPalletOnConveyorP13 : BOOL;
+	doConveyorP12 : BOOL; (*starts conveyor P12*)
+	doConveyorP13 : BOOL;
+	stateConveyorP12P13 : StateConveyor;
+	TON_ConveyorP12P13 : TON;
 END_VAR

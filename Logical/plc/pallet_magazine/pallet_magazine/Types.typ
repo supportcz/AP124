@@ -14,14 +14,6 @@ TYPE
 		stateAutoWaitForClosedArms,
 		stateAutoMoveToUpperPosition
 		);
-	StateConveyor : 
-		(
-		stateConveyorUndefined,
-		stateConveyorEmpty,
-		stateConveyorOccupied,
-		stateConveyorMoving,
-		stateConveyorStop
-		);
 	StateMagazine : 
 		(
 		stateMagazineUndefined,

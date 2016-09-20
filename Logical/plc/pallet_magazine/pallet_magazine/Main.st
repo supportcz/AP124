@@ -47,6 +47,8 @@ PROGRAM _CYCLIC
 						stateAuto := stateAutoWaitForNoPallet;
 					ELSIF stateMagazine = stateMiddlePosition THEN
 						stateAuto := stateAutoCloseArms;
+					ELSIF stateMagazine = stateLowerPosition THEN
+						stateAuto := stateAutoOpenArms;
 					ELSE
 						cmdUp := TRUE;
 					END_IF
@@ -122,10 +124,15 @@ PROGRAM _CYCLIC
 	VerticalArmsControl;
 	
 	//conveyor P12
-	ConveyorP12Control;
+	//ConveyorP12Control;
 
 	doSafetyCurtainSupplyP11 := TRUE;
 	diActivateMagazineSafetyCircuits;
+	
+	//detect pallet on conveyor
+	IF diPalletOnConveyorP12 AND (stateMagazine = stateUpperPosition OR stateArms = stateArmsOpened) THEN
+		palletOnConveyorP12 := TRUE;
+	END_IF
 	
 	//LED P11
 	IF diMagazineEDM THEN
