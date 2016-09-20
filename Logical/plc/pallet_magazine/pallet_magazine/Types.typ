@@ -12,7 +12,8 @@ TYPE
 		stateAutoWaitForMiddlePosition,
 		stateAutoCloseArms,
 		stateAutoWaitForClosedArms,
-		stateAutoMoveToUpperPosition
+		stateAutoMoveToUpperPosition,
+		stateAutoDetectPalletOnConveyor
 		);
 	StateMagazine : 
 		(

@@ -1,5 +1,12 @@
 
 TYPE
+	StateAuto : 
+		(
+		stateAutoUndefined,
+		stateAutoWaitForPallet,
+		stateAutoMovePallet,
+		stateAutoWaitForSensor
+		);
 	StateConveyor : 
 		(
 		stateConveyorStop,

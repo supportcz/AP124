@@ -7,11 +7,41 @@ END_PROGRAM
 PROGRAM _CYCLIC
 	
 	IF modeMagazine = modeMagazineManual THEN
-		magazineStatusDatapoint := 0;
+		magazineStatusDatapointManual := 0;
 	ELSE
-		magazineStatusDatapoint := 1;
+		magazineStatusDatapointManual := 1;
 	END_IF
-	 
+
+	IF modeMagazine = modeMagazineAuto THEN
+		magazineStatusDatapointAuto := 0;
+	ELSE
+		magazineStatusDatapointAuto := 1;
+	END_IF
+
+	IF modeConveyors = modeConveyorsManual THEN
+		conveyorsStatusDatapointManual := 0;
+	ELSE
+		conveyorsStatusDatapointManual := 1;
+	END_IF
+
+	IF modeConveyors = modeConveyorsAuto THEN
+		conveyorsStatusDatapointAuto := 0;
+	ELSE
+		conveyorsStatusDatapointAuto := 1;
+	END_IF
+
+	IF palletOnConveyorP12 THEN
+		hideP12 := 0;
+	ELSE
+		hideP12 := 1;
+	END_IF	
+
+	IF palletOnConveyorP13 THEN
+		hideP13 := 0;
+	ELSE
+		hideP13 := 1;
+	END_IF	
+
 END_PROGRAM
 
 

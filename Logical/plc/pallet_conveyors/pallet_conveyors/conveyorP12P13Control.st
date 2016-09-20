@@ -18,8 +18,13 @@ ACTION ConveyorP12P13Control:
 		stateConveyorWait:
 		
 			IF cmdMovePalletP12P13 THEN
-				TON_ConveyorP12P13(IN := FALSE);
-				stateConveyorP12P13 := stateConveyorMoving;
+				IF palletOnConveyorP13 THEN
+					alarmImage[1] := TRUE;
+					stateConveyorP12P13 := stateConveyorStop;
+				ELSE
+					TON_ConveyorP12P13(IN := FALSE);
+					stateConveyorP12P13 := stateConveyorMoving;
+				END_IF
 			END_IF
 		
 		stateConveyorMoving:
@@ -28,7 +33,7 @@ ACTION ConveyorP12P13Control:
 			doConveyorP13 := TRUE;
 
 			//start timer		
-			TON_ConveyorP12P13(IN := TRUE, PT := T#6s);
+			TON_ConveyorP12P13(IN := TRUE, PT := T#12s);
 			
 			IF NOT cmdMovePalletP12P13 THEN
 				stateConveyorP12P13 := stateConveyorStop;
@@ -39,6 +44,7 @@ ACTION ConveyorP12P13Control:
 				palletOnConveyorP12 := FALSE;
 				stateConveyorP12P13 := stateConveyorStop;
 			END_IF	
+			
 			//timeout?
 			IF TON_ConveyorP12P13.Q THEN
 				alarmImage[0] := TRUE;
@@ -52,5 +58,7 @@ ACTION ConveyorP12P13Control:
 	IF acknowledgeImage[0] THEN
 		alarmImage[0] := FALSE;
 	END_IF
-	
+	IF acknowledgeImage[1] THEN
+		alarmImage[1] := FALSE;
+	END_IF	
 END_ACTION

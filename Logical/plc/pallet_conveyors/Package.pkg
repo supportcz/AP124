@@ -2,6 +2,7 @@
 <?AutomationStudio Version=4.2.5.388?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
+    <Object Type="File">pallet_conveyors.typ</Object>
     <Object Type="File">pallet_conveyors.var</Object>
     <Object Type="Program" Language="IEC" Description="pallet conveyors control">pallet_conveyors</Object>
   </Objects>

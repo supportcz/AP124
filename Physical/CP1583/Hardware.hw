@@ -31,8 +31,8 @@
     <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11a" TargetConnector="SL1" />
   </Module>
-  <Module Name="I110" Type="X67DM9321.L12" Version="1.1.1.1">
-    <Connection Connector="X2X1" TargetModule="X20BT9400" TargetConnector="X2X1" NodeNumber="34" />
+  <Module Name="I110" Type="X67DM9321.L12" Version="1.1.1.1" Disabled="true">
+    <Connection Connector="X2X1" TargetModule="X20BT9100a" TargetConnector="X2X1" NodeNumber="34" />
   </Module>
   <Module Name="I18" Type="X20SLX910" Version="1.10.0.0">
     <Connection Connector="SS1" TargetModule="X20TB52" TargetConnector="SS" />
@@ -68,7 +68,7 @@
     <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11b" TargetConnector="SL1" />
   </Module>
-  <Module Name="Q112" Type="X67DO1332" Version="1.0.0.2">
+  <Module Name="Q112" Type="X67DO1332" Version="1.0.0.2" Disabled="true">
     <Connection Connector="X2X1" TargetModule="I110" TargetConnector="X2X2" />
   </Module>
   <Module Name="Q12" Type="X20DOF322" Version="1.1.0.2">
@@ -211,11 +211,12 @@
   <Module Name="X20BR9300" Type="X20BR9300" Version="1.0.3.0">
     <Connection Connector="SS1" TargetModule="X20TB12d" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM05" TargetConnector="SL1" />
+    <Connection Connector="X2X1" TargetModule="X20BT9100b" TargetConnector="X2X1" NodeNumber="29" />
   </Module>
   <Module Name="X20BR9300a" Type="X20BR9300" Version="1.0.3.0">
     <Connection Connector="SS1" TargetModule="X20TB12g" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM05a" TargetConnector="SL1" />
-    <Connection Connector="X2X1" TargetModule="X20BT9100a" TargetConnector="X2X1" NodeNumber="23" />
+    <Connection Connector="X2X1" TargetModule="X20BT9400" TargetConnector="X2X1" NodeNumber="26" />
   </Module>
   <Module Name="X20BR9300b" Type="X20BR9300" Version="1.0.3.0">
     <Connection Connector="SS1" TargetModule="X20TB12i" TargetConnector="SS" />
@@ -225,6 +226,7 @@
   <Module Name="X20BR9300c" Type="X20BR9300" Version="1.0.3.0">
     <Connection Connector="SS1" TargetModule="X20TB12l" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM05c" TargetConnector="SL1" />
+    <Connection Connector="X2X1" TargetModule="X20BT9100c" TargetConnector="X2X1" NodeNumber="23" />
   </Module>
   <Module Name="X20BT9100" Type="X20BT9100" Version="1.0.2.4">
     <Connection Connector="SS1" TargetModule="X20TB12c" TargetConnector="SS" />

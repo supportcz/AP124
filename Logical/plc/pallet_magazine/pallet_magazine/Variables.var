@@ -29,6 +29,7 @@ VAR
 	doSafetyCurtainSupplyP11 : BOOL;
 	i : INT;
 	lightCurtainP11 : BOOL; (*status of light curtain P11*)
+	magazineEmpty : BOOL;
 	MTBasicsPWM_0 : MTBasicsPWM;
 	readyToStart : BOOL;
 	stateArms : StateArms; (*VISU:arms state*)
@@ -37,4 +38,5 @@ VAR
 	TON_LeftRequest : TON;
 	TON_RightRequest : TON;
 	TON_VerticalMovement : TON;
+	TP_0 : TP;
 END_VAR

@@ -24,11 +24,11 @@ PROGRAM _CYCLIC
 		
 		modeMagazineManual:
 
-			IF NOT alarmInZoneMagazine AND (cmdAuto OR cmdAllToAuto) THEN //OR diActivateMagazineSafetyCircuits THEN
+			IF NOT alarmInZoneMagazine AND (cmdAuto OR TP_0.Q) THEN 
 				cmdAuto := FALSE;
-				cmdAllToAuto := FALSE;
 				modeMagazine := modeMagazineAuto;
 				stateAuto := stateAutoUndefined;
+				magazineEmpty := FALSE;
 			END_IF
 			cmdManual := FALSE;
 
@@ -55,7 +55,7 @@ PROGRAM _CYCLIC
 							
 				stateAutoWaitForNoPallet:
 					
-					IF NOT palletOnConveyorP12 THEN
+					IF NOT palletOnConveyorP12 AND NOT magazineEmpty THEN
 						stateAuto := stateAutoMoveToLowerPosition;
 					END_IF
 				
@@ -107,9 +107,16 @@ PROGRAM _CYCLIC
 				stateAutoMoveToUpperPosition:
 				
 					IF stateMagazine = stateUpperPosition THEN
-						stateAuto := stateAutoWaitForNoPallet;
+						stateAuto := stateAutoDetectPalletOnConveyor;
 					END_IF
 
+				stateAutoDetectPalletOnConveyor:
+					
+					IF NOT palletOnConveyorP12 THEN
+						magazineEmpty := TRUE;
+					END_IF
+					stateAuto := stateAutoWaitForNoPallet;
+				
 						
 			END_CASE
 		
@@ -127,10 +134,9 @@ PROGRAM _CYCLIC
 	//ConveyorP12Control;
 
 	doSafetyCurtainSupplyP11 := TRUE;
-	diActivateMagazineSafetyCircuits;
 	
 	//detect pallet on conveyor
-	IF diPalletOnConveyorP12 AND (stateMagazine = stateUpperPosition OR stateArms = stateArmsOpened) THEN
+	IF diPalletOnConveyorP12 AND stateMagazine = stateUpperPosition THEN
 		palletOnConveyorP12 := TRUE;
 	END_IF
 	
@@ -144,6 +150,9 @@ PROGRAM _CYCLIC
 	MTBasicsPWM_0(Enable := 1, Period := 1);
 	doLedP11 := MTBasicsPWM_0.Out;
 
+	TP_0(IN := diActivateMagazineSafetyCircuits, PT := T#1s);
+	
+	
 	//detect if there is any alarm 
 	alarmInZoneMagazine := FALSE;
 	FOR i:=0 TO 39 DO
