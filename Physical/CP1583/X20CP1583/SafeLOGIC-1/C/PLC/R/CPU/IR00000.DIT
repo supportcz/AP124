@@ -2,9 +2,9 @@
 T: RESOURCE CPU
 FW: NO
 CI#: 0
-QSL: 29
-QVE: 29
-QVPC: 29
+QSL: 35
+QVE: 35
+QVPC: 35
 QPar: 0
 QFBI: 0
 *)
@@ -179,6 +179,42 @@ diLightCurtainP15	28	VAR_GLOBAL	@TYP:43
 @V 1 32 0
 diLightCurtainP17	29	VAR_GLOBAL	@TYP:43
 %SIX 62.7		     
+
+;
+
+@V 1 33 0
+doFI14	30	VAR_GLOBAL	@TYP:43
+%SQX 14.0		     
+
+;
+
+@V 1 34 0
+doFI15	31	VAR_GLOBAL	@TYP:43
+%SQX 14.1		     
+
+;
+
+@V 1 35 0
+doFI16	32	VAR_GLOBAL	@TYP:43
+%SQX 14.2		     
+
+;
+
+@V 1 36 0
+SM3_ReleaseOutput01	33	VAR_GLOBAL	@TYP:1
+%NSQX 20.0		     
+
+;
+
+@V 1 37 0
+SM3_ReleaseOutput02	34	VAR_GLOBAL	@TYP:1
+%NSQX 20.1		     
+
+;
+
+@V 1 38 0
+SM3_ReleaseOutput03	35	VAR_GLOBAL	@TYP:1
+%NSQX 20.2		     
 
 ;
 

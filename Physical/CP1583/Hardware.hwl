@@ -103,6 +103,7 @@
     <Module Name="X20BT9400" Type="X20BT9400" X="400" Y="264" />
     <Module Name="X20TB12m" Type="X20TB12" X="400" Y="291" />
     <Module Name="6PPT30.0702-20B" Type="6PPT30.0702-20B" X="110" Y="-44" />
+    <Module Name="8I74xxxxxxx.01P-1" Type="8I74xxxxxxx.01P-1" X="286" Y="484" />
   </Modules>
   <Links>
     <Link From="6PPT30.0702-20B" To="X20CP1583" FromPort="ETH1" ToPort="IF2" IsRoutedByUser="False">
@@ -117,6 +118,40 @@
       <Point X="142" Y="197" />
       <Point X="142" Y="197" />
     </Link>
+    <Link From="I110" To="X20BT9100a" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="714" Y="276" />
+      <Point X="714" Y="276" />
+      <Point X="703" Y="276" />
+      <Point X="695" Y="276" />
+      <Point X="695" Y="308" />
+      <Point X="647" Y="308" />
+      <Point X="640" Y="308" />
+      <Point X="640" Y="308" />
+    </Link>
+    <Link From="I110" To="Q112" FromPort="X2X2" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="746" Y="276" />
+      <Point X="746" Y="276" />
+      <Point X="758" Y="276" />
+      <Point X="813" Y="276" />
+      <Point X="824" Y="276" />
+      <Point X="824" Y="276" />
+    </Link>
+    <Link From="X20BR9300" To="X20BT9100b" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="600" Y="308" />
+      <Point X="600" Y="308" />
+      <Point X="593" Y="308" />
+      <Point X="524" Y="308" />
+      <Point X="517" Y="308" />
+      <Point X="517" Y="308" />
+    </Link>
+    <Link From="X20BR9300a" To="X20BT9400" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="490" Y="308" />
+      <Point X="490" Y="308" />
+      <Point X="483" Y="308" />
+      <Point X="414" Y="308" />
+      <Point X="407" Y="308" />
+      <Point X="407" Y="308" />
+    </Link>
     <Link From="X20BR9300b" To="X20BT9100" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
       <Point X="270" Y="308" />
       <Point X="270" Y="308" />
@@ -129,47 +164,23 @@
       <Point X="579" Y="154" />
       <Point X="579" Y="154" />
     </Link>
-    <Link From="X20BT9100c" To="X20BR9300c" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
-      <Point X="310" Y="308" />
-      <Point X="310" Y="308" />
-      <Point X="317" Y="308" />
+    <Link From="X20BR9300c" To="X20BT9100c" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
+      <Point X="380" Y="308" />
+      <Point X="380" Y="308" />
       <Point X="373" Y="308" />
-      <Point X="380" Y="308" />
-      <Point X="380" Y="308" />
+      <Point X="317" Y="308" />
+      <Point X="310" Y="308" />
+      <Point X="310" Y="308" />
     </Link>
-    <Link From="X20BT9400" To="X20BR9300a" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
-      <Point X="407" Y="308" />
-      <Point X="407" Y="308" />
-      <Point X="414" Y="308" />
-      <Point X="483" Y="308" />
-      <Point X="490" Y="308" />
-      <Point X="490" Y="308" />
-    </Link>
-    <Link From="X20BT9100b" To="X20BR9300" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
-      <Point X="517" Y="308" />
-      <Point X="517" Y="308" />
-      <Point X="524" Y="308" />
-      <Point X="593" Y="308" />
-      <Point X="600" Y="308" />
-      <Point X="600" Y="308" />
-    </Link>
-    <Link From="X20BT9100a" To="I110" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
-      <Point X="640" Y="308" />
-      <Point X="640" Y="308" />
-      <Point X="647" Y="308" />
-      <Point X="655" Y="308" />
-      <Point X="655" Y="276" />
-      <Point X="703" Y="276" />
-      <Point X="714" Y="276" />
-      <Point X="714" Y="276" />
-    </Link>
-    <Link From="I110" To="Q112" FromPort="X2X2" ToPort="X2X1" IsRoutedByUser="False">
-      <Point X="746" Y="276" />
-      <Point X="746" Y="276" />
-      <Point X="758" Y="276" />
-      <Point X="813" Y="276" />
-      <Point X="824" Y="276" />
-      <Point X="824" Y="276" />
+    <Link From="X20CP1583" To="8I74xxxxxxx.01P-1" FromPort="IF3" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="166" Y="197" />
+      <Point X="166" Y="197" />
+      <Point X="166" Y="211" />
+      <Point X="166" Y="695" />
+      <Point X="300" Y="695" />
+      <Point X="300" Y="685" />
+      <Point X="300" Y="638" />
+      <Point X="300" Y="638" />
     </Link>
   </Links>
   <InfoElements>

@@ -1,7 +1,6 @@
 
 ACTION ConveyorP12P13Control: 
 
-
 	IF modeMagazine = modeMagazineNotReadyToStart THEN
 		stateConveyorP12P13 := stateConveyorStop;
 	END_IF
@@ -52,8 +51,12 @@ ACTION ConveyorP12P13Control:
 			END_IF
 		
 	END_CASE
-	
 		
+	//detect pallet on conveyor
+	IF diPalletStopP13 THEN
+		palletOnConveyorP13 := TRUE;
+	END_IF
+	
 	//edge alarms
 	IF acknowledgeImage[0] THEN
 		alarmImage[0] := FALSE;

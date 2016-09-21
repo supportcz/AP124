@@ -67,4 +67,16 @@ VAR_GLOBAL {Group(18)}
     diLightCurtainP15 AT %IX62.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeTwoChannelInput0304')};
     {LINE(31)}
     diLightCurtainP17 AT %IX62.7 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeTwoChannelInput0708')};
+    {LINE(32)}
+    doFI14 AT %QX14.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalOutput01')};
+    {LINE(33)}
+    doFI15 AT %QX14.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalOutput02')};
+    {LINE(34)}
+    doFI16 AT %QX14.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalOutput03')};
+    {LINE(35)}
+    SM3_ReleaseOutput01 AT %QX20.0 : BOOL {Custom('SL1.SM3.ReleaseOutput01')};
+    {LINE(36)}
+    SM3_ReleaseOutput02 AT %QX20.1 : BOOL {Custom('SL1.SM3.ReleaseOutput02')};
+    {LINE(37)}
+    SM3_ReleaseOutput03 AT %QX20.2 : BOOL {Custom('SL1.SM3.ReleaseOutput03')};
 END_VAR

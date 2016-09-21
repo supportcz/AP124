@@ -1,4 +1,5 @@
 VAR
-	palletOnConveyorP13 : BOOL; (*VISU:pallet lies on conveyor*)
 	modeConveyors : ModeConveyors;
+	palletOnConveyorP13 : BOOL; (*VISU:pallet lies on conveyor*)
+	palletOnConveyorP14 : BOOL;
 END_VAR

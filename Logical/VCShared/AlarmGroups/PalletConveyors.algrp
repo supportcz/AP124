@@ -44,6 +44,42 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="3">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="True"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="2">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="True"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="4">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="True"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -61,21 +97,33 @@
     <TextLayer LanguageId="en">
       <Text ID="313" Value="Stop sensor on conveyor P13 not reached"/>
       <Text ID="319" Value="Conveyor P13 is already full"/>
+      <Text ID="325" Value="Conveyor P14 is already full"/>
+      <Text ID="331" Value="Stop sensor on conveyor P14 not reached"/>
+      <Text ID="337" Value="Slow-down sensor on conveyor P14 not reached"/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
       <Text ID="313" Value=""/>
       <Text ID="319" Value=""/>
+      <Text ID="325" Value=""/>
+      <Text ID="331" Value=""/>
+      <Text ID="337" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
       <Text ID="313" Value=""/>
       <Text ID="319" Value=""/>
+      <Text ID="325" Value=""/>
+      <Text ID="331" Value=""/>
+      <Text ID="337" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <IndexMap>
       <Index ID="313" Value="0"/>
       <Index ID="319" Value="1"/>
+      <Index ID="325" Value="3"/>
+      <Index ID="331" Value="2"/>
+      <Index ID="337" Value="4"/>
       <Index ID="312" Value="Group"/>
     </IndexMap>
   </TextGroup>

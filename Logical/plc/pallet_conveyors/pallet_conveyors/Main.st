@@ -24,7 +24,6 @@ PROGRAM _CYCLIC
 			IF NOT alarmInZoneConveyors AND cmdAuto THEN
 				cmdAuto := FALSE;
 				modeConveyors := modeConveyorsAuto;
-				stateAuto := stateAutoUndefined;
 			END_IF
 			cmdManual := FALSE;
 
@@ -34,40 +33,21 @@ PROGRAM _CYCLIC
 				modeConveyors := modeConveyorsManual;
 			END_IF
 		
-			CASE stateAuto OF
+			IF palletOnConveyorP12 AND NOT palletOnConveyorP13 THEN
+				cmdMovePalletP12P13 := TRUE;
+			END_IF
 				
-				stateAutoUndefined:
-					
-					stateAuto := stateAutoWaitForPallet;
-				
-				stateAutoWaitForPallet:
-					
-					IF palletOnConveyorP12 AND NOT palletOnConveyorP13 THEN
-						stateAuto := stateAutoMovePallet;
-					END_IF
-				
-				stateAutoMovePallet:
-					
-					cmdMovePalletP12P13 := TRUE;
-					stateAuto := stateAutoWaitForSensor;
-				
-				stateAutoWaitForSensor:
-					
-					IF palletOnConveyorP13 THEN
-						stateAuto := stateAutoWaitForPallet;
-					END_IF
-				
-			END_CASE
 
+			IF palletOnConveyorP13 AND NOT palletOnConveyorP14 THEN
+				cmdMovePalletP13P14 := TRUE;
+			END_IF
+				
 	END_CASE
-	
-	//detect pallet on conveyor
-	IF diPalletOnConveyorP13 THEN
-		palletOnConveyorP13 := TRUE;
-	END_IF
+
 	
 	//conveyor P12 + P13
 	ConveyorP12P13Control; 
+	ConveyorP13P14Control; 
 
 	//detect if there is any alarm 
 	alarmInZoneConveyors := FALSE;

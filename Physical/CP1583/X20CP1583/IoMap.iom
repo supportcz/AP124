@@ -29,7 +29,7 @@ VAR_CONFIG
 	alarm_mana:diEStopWrapper AT %IX."I18".SafeTwoChannelInput1314;
 	::alarm_mana:safetyAlive AT %IX."I18".BOOL001;
 	::alarm_mana:palletizationEdmError AT %IX."I18".BOOL003;
-	::pallet_con:diPalletOnConveyorP13 AT %IX."I80".DigitalInput01;
+	::pallet_con:diPalletStopP13 AT %IX."I80".DigitalInput01;
 	::safety:doLedOn AT %QX."Q10".DigitalOutput10;
 	::safety:doLedOff AT %QX."Q10".DigitalOutput11;
 	Cyclic#3.diPalletizationEDM AT %IX."I22".SafeDigitalInput17;
@@ -54,4 +54,9 @@ VAR_CONFIG
 	::pallet_mag:lightCurtainP11 AT %IX."I18".BOOL005;
 	::pallet_con:doConveyorP12 AT %QX."Q14".DigitalOutput04;
 	::pallet_con:doConveyorP13 AT %QX."Q12".DigitalOutput13;
+	::pallet_con:acpI_P14.ETAD_Input AT %IW."8I74xxxxxxx.01P-1".ETAD_Input;
+	::pallet_con:acpI_P14.CMDD_Output AT %QW."8I74xxxxxxx.01P-1".CMDD_Output;
+	::pallet_con:diPalletStopP14 AT %IX."I80".DigitalInput03;
+	::pallet_con:diPalletSlowDownP14 AT %IX."I80".DigitalInput02;
+	::pallet_con:acpI_P14.LFRD_Output AT %QW."8I74xxxxxxx.01P-1".LFR_Output;
 END_VAR

@@ -42,6 +42,12 @@ PROGRAM _CYCLIC
 		hideP13 := 1;
 	END_IF	
 
+	IF palletOnConveyorP14 THEN
+		hideP14 := 0;
+	ELSE
+		hideP14 := 1;
+	END_IF	
+
 END_PROGRAM
 
 
