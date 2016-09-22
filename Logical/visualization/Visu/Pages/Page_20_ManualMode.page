@@ -54,6 +54,10 @@
           <Text ID="175657" Value="Pallet magazine"/>
           <Text ID="175756" Value="Pallet Conveyors"/>
         </TextLayer>
+        <TextLayer LanguageId="de">
+          <Text ID="175657" Value=""/>
+          <Text ID="175756" Value=""/>
+        </TextLayer>
         <TextLayer LanguageId="cs">
           <Text ID="175657" Value=""/>
           <Text ID="175756" Value=""/>
@@ -347,7 +351,7 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="57"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="32"/>
+          <Property Name="Left" Value="26"/>
           <Property Name="PressedBackColor" Value="253"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
@@ -358,7 +362,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="177"/>
+          <Property Name="Top" Value="174"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_34]"/>
           <Property Name="Width" Value="135"/>
         </Control>

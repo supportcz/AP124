@@ -20,5 +20,6 @@
     <Object Type="Library" Language="Binary" Description="This library provides read and write access to non-cyclic I/O data points.">AsIOAcc</Object>
     <Object Type="Library" Language="Binary" Description="This library integrates mathematical functions such as angle functions, rounding off, etc. into the program.">AsBrMath</Object>
     <Object Type="Library" Language="Binary" Description="The AsEPL library is used to access service data objects of Ethernet-Powerlink stations">AsEPL</Object>
+    <Object Type="Library" Language="Binary" Description="The Visapi library provides support to access and control visualizations at runtime.">visapi</Object>
   </Objects>
 </Package>

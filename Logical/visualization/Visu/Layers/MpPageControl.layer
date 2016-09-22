@@ -10,6 +10,7 @@
   <Property Name="Width" Value="800"/>
   <TextGroup>
     <TextLayer LanguageId="en"/>
+    <TextLayer LanguageId="de"/>
     <TextLayer LanguageId="cs"/>
     <TextLayer LanguageId="fr"/>
     <IndexMap/>
@@ -48,9 +49,9 @@
     </Control>
     <Control ClassId="0x00001001" Name="Shape_8">
       <Property Name="BackColor" Value="248"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.ButtonColor]"/>
-      <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PageControl]"/>
-      <Property Name="ColorMapIndexOffset" Value="2"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.ButtonAlarmColor]"/>
+      <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PageControlAlarm]"/>
+      <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="GroupID" Value="11"/>
