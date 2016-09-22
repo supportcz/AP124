@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="SRC_RE_Led">
+  <Property Name="Description" Value="Texts for RE LED"/>
+  <Property Name="Index" Value="1"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="176332" Value="Offline"/>
+    <Text ID="176333" Value="No Application"/>
+    <Text ID="176334" Value="Loading"/>
+    <Text ID="176335" Value="Stop [Safe]"/>
+    <Text ID="176336" Value="Run [Safe]"/>
+    <Text ID="176337" Value="Halt [Debug]"/>
+    <Text ID="176338" Value="Stop [Debug]"/>
+    <Text ID="176339" Value="Run [Debug]"/>
+    <Text ID="176340" Value="No Execution"/>
+    <Text ID="176341" Value="Invalid"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="176332" Value=""/>
+    <Text ID="176333" Value=""/>
+    <Text ID="176334" Value=""/>
+    <Text ID="176335" Value=""/>
+    <Text ID="176336" Value=""/>
+    <Text ID="176337" Value=""/>
+    <Text ID="176338" Value=""/>
+    <Text ID="176339" Value=""/>
+    <Text ID="176340" Value=""/>
+    <Text ID="176341" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="176332" Value=""/>
+    <Text ID="176333" Value=""/>
+    <Text ID="176334" Value=""/>
+    <Text ID="176335" Value=""/>
+    <Text ID="176336" Value=""/>
+    <Text ID="176337" Value=""/>
+    <Text ID="176338" Value=""/>
+    <Text ID="176339" Value=""/>
+    <Text ID="176340" Value=""/>
+    <Text ID="176341" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="176332" Value=""/>
+    <Text ID="176333" Value=""/>
+    <Text ID="176334" Value=""/>
+    <Text ID="176335" Value=""/>
+    <Text ID="176336" Value=""/>
+    <Text ID="176337" Value=""/>
+    <Text ID="176338" Value=""/>
+    <Text ID="176339" Value=""/>
+    <Text ID="176340" Value=""/>
+    <Text ID="176341" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="176332" Value="255"/>
+    <Index ID="176333" Value="25"/>
+    <Index ID="176334" Value="51"/>
+    <Index ID="176335" Value="85"/>
+    <Index ID="176336" Value="102"/>
+    <Index ID="176337" Value="153"/>
+    <Index ID="176338" Value="170"/>
+    <Index ID="176339" Value="204"/>
+    <Index ID="176340" Value="240"/>
+    <Index ID="176341" Value="0"/>
+  </IndexMap>
+</TextGroup>

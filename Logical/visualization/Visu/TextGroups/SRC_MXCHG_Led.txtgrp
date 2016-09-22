@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="SRC_MXCHG_Led">
+  <Property Name="Description" Value="Texts for MXCHG LED"/>
+  <Property Name="Index" Value="0"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="176322" Value="Module missing"/>
+    <Text ID="176323" Value="Modules OK"/>
+    <Text ID="176324" Value="1 module exchang."/>
+    <Text ID="176325" Value="2 modules exchang."/>
+    <Text ID="176326" Value="3 modules exchang."/>
+    <Text ID="176327" Value="4 modules exchang."/>
+    <Text ID="176328" Value="n modules exchang."/>
+    <Text ID="176329" Value=""/>
+    <Text ID="176330" Value="LED test activ"/>
+    <Text ID="176331" Value="Scanning"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="176322" Value=""/>
+    <Text ID="176323" Value=""/>
+    <Text ID="176324" Value=""/>
+    <Text ID="176325" Value=""/>
+    <Text ID="176326" Value=""/>
+    <Text ID="176327" Value=""/>
+    <Text ID="176328" Value=""/>
+    <Text ID="176329" Value=""/>
+    <Text ID="176330" Value=""/>
+    <Text ID="176331" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="176322" Value=""/>
+    <Text ID="176323" Value=""/>
+    <Text ID="176324" Value=""/>
+    <Text ID="176325" Value=""/>
+    <Text ID="176326" Value=""/>
+    <Text ID="176327" Value=""/>
+    <Text ID="176328" Value=""/>
+    <Text ID="176329" Value=""/>
+    <Text ID="176330" Value=""/>
+    <Text ID="176331" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="176322" Value=""/>
+    <Text ID="176323" Value=""/>
+    <Text ID="176324" Value=""/>
+    <Text ID="176325" Value=""/>
+    <Text ID="176326" Value=""/>
+    <Text ID="176327" Value=""/>
+    <Text ID="176328" Value=""/>
+    <Text ID="176329" Value=""/>
+    <Text ID="176330" Value=""/>
+    <Text ID="176331" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="176322" Value="20"/>
+    <Index ID="176323" Value="10"/>
+    <Index ID="176324" Value="1"/>
+    <Index ID="176325" Value="2"/>
+    <Index ID="176326" Value="3"/>
+    <Index ID="176327" Value="4"/>
+    <Index ID="176328" Value="5"/>
+    <Index ID="176329" Value="0"/>
+    <Index ID="176330" Value="40"/>
+    <Index ID="176331" Value="30"/>
+  </IndexMap>
+</TextGroup>

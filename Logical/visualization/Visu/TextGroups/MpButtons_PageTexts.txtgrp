@@ -33,6 +33,38 @@
     <Text ID="174653" Value="- Arms Control"/>
     <Text ID="175345" Value="Alarm History"/>
     <Text ID="175346" Value="Alarm Map"/>
+    <Text ID="175990" Value="SafeLOGIC"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="89135" Value=""/>
+    <Text ID="89136" Value=""/>
+    <Text ID="89142" Value=""/>
+    <Text ID="89302" Value=""/>
+    <Text ID="89304" Value=""/>
+    <Text ID="89523" Value=""/>
+    <Text ID="89526" Value=""/>
+    <Text ID="89527" Value=""/>
+    <Text ID="90122" Value=""/>
+    <Text ID="90123" Value=""/>
+    <Text ID="90125" Value=""/>
+    <Text ID="91515" Value=""/>
+    <Text ID="92553" Value=""/>
+    <Text ID="92557" Value=""/>
+    <Text ID="92558" Value=""/>
+    <Text ID="92559" Value=""/>
+    <Text ID="92560" Value=""/>
+    <Text ID="95076" Value=""/>
+    <Text ID="95694" Value=""/>
+    <Text ID="89137" Value=""/>
+    <Text ID="124258" Value=""/>
+    <Text ID="124259" Value=""/>
+    <Text ID="174649" Value=""/>
+    <Text ID="174650" Value=""/>
+    <Text ID="174651" Value=""/>
+    <Text ID="174653" Value=""/>
+    <Text ID="175345" Value=""/>
+    <Text ID="175346" Value=""/>
+    <Text ID="175990" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="cs">
     <Text ID="89135" Value=""/>
@@ -63,6 +95,7 @@
     <Text ID="174653" Value="- Ovládání ramen"/>
     <Text ID="175345" Value="Historie Alarmu"/>
     <Text ID="175346" Value="Mapa Alarmu"/>
+    <Text ID="175990" Value="SafeLOGIC"/>
   </TextLayer>
   <TextLayer LanguageId="fr">
     <Text ID="89135" Value=""/>
@@ -93,6 +126,7 @@
     <Text ID="174653" Value=""/>
     <Text ID="175345" Value=""/>
     <Text ID="175346" Value=""/>
+    <Text ID="175990" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="89135" Value="6010"/>
@@ -123,5 +157,6 @@
     <Index ID="174653" Value="7"/>
     <Index ID="175345" Value="9"/>
     <Index ID="175346" Value="10"/>
+    <Index ID="175990" Value="11"/>
   </IndexMap>
 </TextGroup>

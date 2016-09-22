@@ -1,10 +1,19 @@
 
 PROGRAM _INIT
 	PageControl := ButtonAutomaticMode;
-	
+	uiHandle := 0;
 END_PROGRAM
 
 PROGRAM _CYCLIC
+	
+	IF uiHandle = 0 THEN
+		uiHandle := VA_Setup(1,'Visu');
+	END_IF	
+	uiStatus := VA_Saccess(1,uiHandle);
+	IF (  uiStatus = 0 ) THEN
+		VA_Srelease(1,uiHandle);
+		VA_GetAlarmCount(1,uiHandle,vaALS_CURRENT,ADR(uiAlarmCount));
+	END_IF;
 	
 	(***************************************************************************)		
 	(* 								Page Control						  	   *)	
@@ -13,45 +22,51 @@ PROGRAM _CYCLIC
 		ButtonAutomaticMode:
 			gVisu.ChangePage := 10;
 			ButtonColor := 0;
+			ButtonColor_tmp := ButtonColor;
 			PageControl := Idle;
 		ButtonManualMode:
 			gVisu.ChangePage := 20;
 			ButtonColor := 1;
+			ButtonColor_tmp := ButtonColor;
 			PageControl := Idle;
 		ButtonInfo:
 			gVisu.ChangePage := 30;
 			ButtonColor := 2;
+			ButtonColor_tmp := ButtonColor;
 			PageControl := Idle;
 		ButtonAlarmPage:
 			gVisu.ChangePage := 40;
 			ButtonColor := 3;
+			ButtonColor_tmp := ButtonColor;
 			ButtonAlarmColor := 1;
 			PageControl := Idle;
 		ButtonSDM:
 			gVisu.ChangePage := 50;
 			ButtonColor := 4;
+			ButtonColor_tmp := ButtonColor;
 			PageControl := Idle;
 		ButtonSettings:
 			gVisu.ChangePage := 60;
 			ButtonColor := 5;
+			ButtonColor_tmp := ButtonColor;
 			PageControl := Idle;
 		Idle:
+		
 	END_CASE;
 	
-//	IF (ButtonColor = 3) AND (gVisu.page_MpAlarmXList.AlarmCount > 0) THEN
-//		gVisu.TON_0.IN := TRUE;
-//		gVisu.TON_0.PT := 200;
-//		IF gVisu.TON_0.Q THEN
-//			ButtonAlarmColor := NOT(ButtonAlarmColor);
-//			gVisu.TON_0.IN := FALSE;
-//		END_IF;
-	(*ELS*)//IF (gVisu.CurrentPage <> 40) THEN
-	//	ButtonAlarmColor := 0;
-//	//	gVisu.TON_0.IN := FALSE;
-//	ELSE 
-//		ButtonAlarmColor := 1;
-//		gVisu.TON_0.IN := FALSE;
-//	END_IF;
+	IF (ButtonColor <> 3) AND (uiAlarmCount > 0) THEN
+		gVisu.TON_0(IN := TRUE, PT := 100);
+		IF gVisu.TON_0.Q THEN
+			ButtonAlarmColor := NOT(ButtonAlarmColor);
+			gVisu.TON_0(IN := FALSE, PT := 100);
+		END_IF;
+	ELSIF (ButtonColor <> 3) AND (uiAlarmCount = 0) THEN
+		ButtonAlarmColor := 0;
+		gVisu.TON_0(IN := FALSE, PT := 100);
+	ELSE
+		ButtonAlarmColor := 1;
+		gVisu.TON_0(IN := FALSE, PT := 100);
+	END_IF;
  	
 END_PROGRAM
 

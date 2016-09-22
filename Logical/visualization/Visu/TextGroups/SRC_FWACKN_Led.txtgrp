@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="SRC_FWACKN_Led">
+  <Property Name="Description" Value="Texts for FWACKN LED"/>
+  <Property Name="Index" Value="2"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="176342" Value="FW / SafeKEY OK"/>
+    <Text ID="176343" Value="SafeKEY exchang."/>
+    <Text ID="176344" Value="FW updated"/>
+    <Text ID="176345" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="176342" Value=""/>
+    <Text ID="176343" Value=""/>
+    <Text ID="176344" Value=""/>
+    <Text ID="176345" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="176342" Value=""/>
+    <Text ID="176343" Value=""/>
+    <Text ID="176344" Value=""/>
+    <Text ID="176345" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="176342" Value=""/>
+    <Text ID="176343" Value=""/>
+    <Text ID="176344" Value=""/>
+    <Text ID="176345" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="176342" Value="10"/>
+    <Index ID="176343" Value="1"/>
+    <Index ID="176344" Value="2"/>
+    <Index ID="176345" Value="0"/>
+  </IndexMap>
+</TextGroup>

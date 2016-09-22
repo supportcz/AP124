@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="SRC_InstantMessages">
+  <Property Name="Description" Value="Texts for instant messages"/>
+  <Property Name="Index" Value="4"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="176354" Value="no message, ready"/>
+    <Text ID="176355" Value="error finding application module on PLC"/>
+    <Text ID="176356" Value="error wrong version for command structure"/>
+    <Text ID="176357" Value="error wrong password length"/>
+    <Text ID="176358" Value="error no UDID"/>
+    <Text ID="176359" Value="error allocating memory"/>
+    <Text ID="176360" Value="internal error"/>
+    <Text ID="176361" Value="error connection timeout, maybe SafePLC is restarting after command execution"/>
+    <Text ID="176362" Value="error wrong command"/>
+    <Text ID="176363" Value="error wrong data for ENTER command"/>
+    <Text ID="176364" Value="error no password for command"/>
+    <Text ID="176365" Value="error no new password for command"/>
+    <Text ID="176366" Value="error wrong data for STATUS command"/>
+    <Text ID="176367" Value="error worng length for status data"/>
+    <Text ID="176368" Value="error no password for download"/>
+    <Text ID="176369" Value="error protocol version for download"/>
+    <Text ID="176370" Value="error file open"/>
+    <Text ID="176371" Value="error file invalid"/>
+    <Text ID="176372" Value="error file too big"/>
+    <Text ID="176373" Value="error write"/>
+    <Text ID="176374" Value="error stream"/>
+    <Text ID="176375" Value="error checksum"/>
+    <Text ID="176376" Value="error UDID doesn't match"/>
+    <Text ID="176377" Value="error wrong file size"/>
+    <Text ID="176378" Value="error wrong password"/>
+    <Text ID="176379" Value="error file info"/>
+    <Text ID="176380" Value="error unlock read"/>
+    <Text ID="176381" Value="error unlock write"/>
+    <Text ID="176382" Value="error static unlock"/>
+    <Text ID="176383" Value="error data compare failed"/>
+    <Text ID="176384" Value="error data type for download"/>
+    <Text ID="176385" Value="error data for download"/>
+    <Text ID="176386" Value="error data for download"/>
+    <Text ID="176387" Value="error command server"/>
+    <Text ID="176388" Value="error server was not initializied during the startup"/>
+    <Text ID="176389" Value="error wrong parameters handed"/>
+    <Text ID="176390" Value="error too much unresponded requests in queue"/>
+    <Text ID="176391" Value="error handed buffer too small"/>
+    <Text ID="176392" Value="new connection accepted"/>
+    <Text ID="176393" Value="the connection has been ended by the client"/>
+    <Text ID="176394" Value="error resourses could not be allocated"/>
+    <Text ID="176395" Value="error client limit exeeded"/>
+    <Text ID="176396" Value="error request buffer size"/>
+    <Text ID="176397" Value="error the module is not supported or doesn't exist"/>
+    <Text ID="176398" Value="error the module is in use by another client"/>
+    <Text ID="176399" Value="error the connection has been ended by the target"/>
+    <Text ID="176400" Value="error the connection the the target fails"/>
+    <Text ID="176401" Value="error common device driver open"/>
+    <Text ID="176402" Value="error common device driver read"/>
+    <Text ID="176403" Value="error common device driver write"/>
+    <Text ID="176404" Value="busy"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="176354" Value=""/>
+    <Text ID="176355" Value=""/>
+    <Text ID="176356" Value=""/>
+    <Text ID="176357" Value=""/>
+    <Text ID="176358" Value=""/>
+    <Text ID="176359" Value=""/>
+    <Text ID="176360" Value=""/>
+    <Text ID="176361" Value=""/>
+    <Text ID="176362" Value=""/>
+    <Text ID="176363" Value=""/>
+    <Text ID="176364" Value=""/>
+    <Text ID="176365" Value=""/>
+    <Text ID="176366" Value=""/>
+    <Text ID="176367" Value=""/>
+    <Text ID="176368" Value=""/>
+    <Text ID="176369" Value=""/>
+    <Text ID="176370" Value=""/>
+    <Text ID="176371" Value=""/>
+    <Text ID="176372" Value=""/>
+    <Text ID="176373" Value=""/>
+    <Text ID="176374" Value=""/>
+    <Text ID="176375" Value=""/>
+    <Text ID="176376" Value=""/>
+    <Text ID="176377" Value=""/>
+    <Text ID="176378" Value=""/>
+    <Text ID="176379" Value=""/>
+    <Text ID="176380" Value=""/>
+    <Text ID="176381" Value=""/>
+    <Text ID="176382" Value=""/>
+    <Text ID="176383" Value=""/>
+    <Text ID="176384" Value=""/>
+    <Text ID="176385" Value=""/>
+    <Text ID="176386" Value=""/>
+    <Text ID="176387" Value=""/>
+    <Text ID="176388" Value=""/>
+    <Text ID="176389" Value=""/>
+    <Text ID="176390" Value=""/>
+    <Text ID="176391" Value=""/>
+    <Text ID="176392" Value=""/>
+    <Text ID="176393" Value=""/>
+    <Text ID="176394" Value=""/>
+    <Text ID="176395" Value=""/>
+    <Text ID="176396" Value=""/>
+    <Text ID="176397" Value=""/>
+    <Text ID="176398" Value=""/>
+    <Text ID="176399" Value=""/>
+    <Text ID="176400" Value=""/>
+    <Text ID="176401" Value=""/>
+    <Text ID="176402" Value=""/>
+    <Text ID="176403" Value=""/>
+    <Text ID="176404" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="176354" Value=""/>
+    <Text ID="176355" Value=""/>
+    <Text ID="176356" Value=""/>
+    <Text ID="176357" Value=""/>
+    <Text ID="176358" Value=""/>
+    <Text ID="176359" Value=""/>
+    <Text ID="176360" Value=""/>
+    <Text ID="176361" Value=""/>
+    <Text ID="176362" Value=""/>
+    <Text ID="176363" Value=""/>
+    <Text ID="176364" Value=""/>
+    <Text ID="176365" Value=""/>
+    <Text ID="176366" Value=""/>
+    <Text ID="176367" Value=""/>
+    <Text ID="176368" Value=""/>
+    <Text ID="176369" Value=""/>
+    <Text ID="176370" Value=""/>
+    <Text ID="176371" Value=""/>
+    <Text ID="176372" Value=""/>
+    <Text ID="176373" Value=""/>
+    <Text ID="176374" Value=""/>
+    <Text ID="176375" Value=""/>
+    <Text ID="176376" Value=""/>
+    <Text ID="176377" Value=""/>
+    <Text ID="176378" Value=""/>
+    <Text ID="176379" Value=""/>
+    <Text ID="176380" Value=""/>
+    <Text ID="176381" Value=""/>
+    <Text ID="176382" Value=""/>
+    <Text ID="176383" Value=""/>
+    <Text ID="176384" Value=""/>
+    <Text ID="176385" Value=""/>
+    <Text ID="176386" Value=""/>
+    <Text ID="176387" Value=""/>
+    <Text ID="176388" Value=""/>
+    <Text ID="176389" Value=""/>
+    <Text ID="176390" Value=""/>
+    <Text ID="176391" Value=""/>
+    <Text ID="176392" Value=""/>
+    <Text ID="176393" Value=""/>
+    <Text ID="176394" Value=""/>
+    <Text ID="176395" Value=""/>
+    <Text ID="176396" Value=""/>
+    <Text ID="176397" Value=""/>
+    <Text ID="176398" Value=""/>
+    <Text ID="176399" Value=""/>
+    <Text ID="176400" Value=""/>
+    <Text ID="176401" Value=""/>
+    <Text ID="176402" Value=""/>
+    <Text ID="176403" Value=""/>
+    <Text ID="176404" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="176354" Value=""/>
+    <Text ID="176355" Value=""/>
+    <Text ID="176356" Value=""/>
+    <Text ID="176357" Value=""/>
+    <Text ID="176358" Value=""/>
+    <Text ID="176359" Value=""/>
+    <Text ID="176360" Value=""/>
+    <Text ID="176361" Value=""/>
+    <Text ID="176362" Value=""/>
+    <Text ID="176363" Value=""/>
+    <Text ID="176364" Value=""/>
+    <Text ID="176365" Value=""/>
+    <Text ID="176366" Value=""/>
+    <Text ID="176367" Value=""/>
+    <Text ID="176368" Value=""/>
+    <Text ID="176369" Value=""/>
+    <Text ID="176370" Value=""/>
+    <Text ID="176371" Value=""/>
+    <Text ID="176372" Value=""/>
+    <Text ID="176373" Value=""/>
+    <Text ID="176374" Value=""/>
+    <Text ID="176375" Value=""/>
+    <Text ID="176376" Value=""/>
+    <Text ID="176377" Value=""/>
+    <Text ID="176378" Value=""/>
+    <Text ID="176379" Value=""/>
+    <Text ID="176380" Value=""/>
+    <Text ID="176381" Value=""/>
+    <Text ID="176382" Value=""/>
+    <Text ID="176383" Value=""/>
+    <Text ID="176384" Value=""/>
+    <Text ID="176385" Value=""/>
+    <Text ID="176386" Value=""/>
+    <Text ID="176387" Value=""/>
+    <Text ID="176388" Value=""/>
+    <Text ID="176389" Value=""/>
+    <Text ID="176390" Value=""/>
+    <Text ID="176391" Value=""/>
+    <Text ID="176392" Value=""/>
+    <Text ID="176393" Value=""/>
+    <Text ID="176394" Value=""/>
+    <Text ID="176395" Value=""/>
+    <Text ID="176396" Value=""/>
+    <Text ID="176397" Value=""/>
+    <Text ID="176398" Value=""/>
+    <Text ID="176399" Value=""/>
+    <Text ID="176400" Value=""/>
+    <Text ID="176401" Value=""/>
+    <Text ID="176402" Value=""/>
+    <Text ID="176403" Value=""/>
+    <Text ID="176404" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="176354" Value="0"/>
+    <Index ID="176355" Value="20609"/>
+    <Index ID="176356" Value="36100"/>
+    <Index ID="176357" Value="36101"/>
+    <Index ID="176358" Value="36102"/>
+    <Index ID="176359" Value="36103"/>
+    <Index ID="176360" Value="36104"/>
+    <Index ID="176361" Value="36105"/>
+    <Index ID="176362" Value="36106"/>
+    <Index ID="176363" Value="36107"/>
+    <Index ID="176364" Value="36108"/>
+    <Index ID="176365" Value="36109"/>
+    <Index ID="176366" Value="36110"/>
+    <Index ID="176367" Value="36111"/>
+    <Index ID="176368" Value="36112"/>
+    <Index ID="176369" Value="36113"/>
+    <Index ID="176370" Value="36114"/>
+    <Index ID="176371" Value="36115"/>
+    <Index ID="176372" Value="36116"/>
+    <Index ID="176373" Value="36117"/>
+    <Index ID="176374" Value="36118"/>
+    <Index ID="176375" Value="36119"/>
+    <Index ID="176376" Value="36120"/>
+    <Index ID="176377" Value="36121"/>
+    <Index ID="176378" Value="36122"/>
+    <Index ID="176379" Value="36123"/>
+    <Index ID="176380" Value="36124"/>
+    <Index ID="176381" Value="36125"/>
+    <Index ID="176382" Value="36126"/>
+    <Index ID="176383" Value="36127"/>
+    <Index ID="176384" Value="36128"/>
+    <Index ID="176385" Value="36129"/>
+    <Index ID="176386" Value="36130"/>
+    <Index ID="176387" Value="37500"/>
+    <Index ID="176388" Value="37501"/>
+    <Index ID="176389" Value="37502"/>
+    <Index ID="176390" Value="37503"/>
+    <Index ID="176391" Value="37504"/>
+    <Index ID="176392" Value="37505"/>
+    <Index ID="176393" Value="37506"/>
+    <Index ID="176394" Value="37507"/>
+    <Index ID="176395" Value="37508"/>
+    <Index ID="176396" Value="37509"/>
+    <Index ID="176397" Value="37510"/>
+    <Index ID="176398" Value="37511"/>
+    <Index ID="176399" Value="37512"/>
+    <Index ID="176400" Value="37513"/>
+    <Index ID="176401" Value="37514"/>
+    <Index ID="176402" Value="37515"/>
+    <Index ID="176403" Value="37516"/>
+    <Index ID="176404" Value="65535"/>
+  </IndexMap>
+</TextGroup>
