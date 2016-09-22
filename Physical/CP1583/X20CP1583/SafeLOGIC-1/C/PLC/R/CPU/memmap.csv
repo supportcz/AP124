@@ -1,4 +1,4 @@
-Memory-Map dump file with 16 entries
+Memory-Map dump file with 14 entries
 
 Entry, Address, Bitposition, DataLength/Bits, InstancePath
 0000, 0x001000C0, 0x00, 0x01, Main.activateSafetyMagazine
@@ -8,12 +8,10 @@ Entry, Address, Bitposition, DataLength/Bits, InstancePath
 0004, 0x001002E9, 0x00, 0x01, Main.DoorLock_1.ButtonClose
 0005, 0x001002E8, 0x00, 0x01, Main.DoorLock_1.ButtonOpen
 0006, 0x001002EC, 0x00, 0x01, Main.DoorLock_1.DoorCanBeOpened
-0007, 0x001002F0, 0x00, 0x01, Main.DoorLock_1.LightWhite
-0008, 0x001002F8, 0x00, 0x01, Main.DoorLock_1.requestToOpen
-0009, 0x001002EE, 0x00, 0x01, Main.DoorLock_1.S_DoorLocked
-0010, 0x001002EB, 0x00, 0x01, Main.DoorLock_1.S_DoorSensor
-0011, 0x001002EF, 0x00, 0x01, Main.DoorLock_1.S_DoorUnlocked
-0012, 0x001002EA, 0x00, 0x01, Main.DoorLock_1.S_EStop
-0013, 0x001002ED, 0x00, 0x01, Main.DoorLock_1.TestLamp
-0014, 0x00100000, 0x00, 0x01, Main.lightCurtainP11
-0015, 0x001002E4, 0x00, 0x01, Main.lightCurtainP15
+0007, 0x001002EB, 0x00, 0x01, Main.DoorLock_1.EStop
+0008, 0x001002EF, 0x00, 0x01, Main.DoorLock_1.LightWhite
+0009, 0x001002EA, 0x00, 0x01, Main.DoorLock_1.S_DoorLocked_In
+0010, 0x001002ED, 0x00, 0x01, Main.DoorLock_1.TestLamp
+0011, 0x001002EE, 0x00, 0x01, Main.DoorLock_1.UnlockDoor
+0012, 0x00100000, 0x00, 0x01, Main.lightCurtainP11
+0013, 0x001002E4, 0x00, 0x01, Main.lightCurtainP15

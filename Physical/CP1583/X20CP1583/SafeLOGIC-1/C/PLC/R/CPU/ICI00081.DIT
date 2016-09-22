@@ -2,10 +2,10 @@
 T: FUNCTION_BLOCK DoorLock
 FW: NO
 CI#: 81
-QSL: 13
-QVE: 13
-QVPC: 13
-QPar: 9
+QSL: 11
+QVE: 11
+QVPC: 11
+QPar: 8
 QFBI: 2
 *)
 @V 1 2 0
@@ -21,13 +21,13 @@ ButtonClose	2	VAR_INPUT	@TYP:1
 ;
 
 @V 1 4 0
-S_EStop	3	VAR_INPUT	@TYP:43
+S_DoorLocked_In	3	VAR_INPUT	@TYP:43
 		     
 
 ;
 
 @V 1 5 0
-S_DoorSensor	4	VAR_INPUT	@TYP:43
+EStop	4	VAR_INPUT	@TYP:1
 		     
 
 ;
@@ -45,43 +45,31 @@ TestLamp	6	VAR_INPUT	@TYP:1
 ;
 
 @V 1 8 0
-S_DoorLocked	7	VAR_OUTPUT	@TYP:43
+UnlockDoor	7	VAR_OUTPUT	@TYP:1
 		     
 
 ;
 
 @V 1 9 0
-S_DoorUnlocked	8	VAR_OUTPUT	@TYP:43
+LightWhite	8	VAR_OUTPUT	@TYP:1
 		     
 
 ;
 
 @V 1 10 0
-LightWhite	9	VAR_OUTPUT	@TYP:1
+SR_1	9	VAR	@FB:17
 		     
 
 ;
 
 @V 1 11 0
-SR_1	10	VAR	@FB:17
+PULSE_GEN_1	10	VAR	@FB:78
 		     
 
 ;
 
-@V 1 12 0
-requestToOpen	11	VAR	@TYP:1
-		     
-
-;
-
-@V 1 13 0
-PULSE_GEN_1	12	VAR	@FB:78
-		     
-
-;
-
-@V 2 14 0
-__DoorLock@0	13	VAR	@TYP:43
+@V 2 32 0
+__DoorLock@0	11	VAR	@TYP:1
 		     
 
 ;

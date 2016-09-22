@@ -2636,7 +2636,7 @@ END_VAR
       </variable>
     </outputVariables>
   </block>
-  <block localId="149" height="56" width="82" typeName="DoorLock" instanceName="DoorLock_1">
+  <block localId="148" height="56" width="72" typeName="DoorLock" instanceName="DoorLock_1">
     <position x="134" y="406" />
     <addData>
       <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
@@ -2664,23 +2664,23 @@ END_VAR
           </data>
         </addData>
       </variable>
-      <variable formalParameter="S_EStop" negated="false">
+      <variable formalParameter="S_DoorLocked_In" negated="false">
         <connectionPointIn>
           <relPosition x="0" y="24" />
         </connectionPointIn>
         <addData>
           <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
-            <fp localId="142" inState="129" outState="0" width="12" height="2" flagType="" dataType="SAFEBOOL" />
+            <fp localId="142" inState="129" outState="0" width="21" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
       </variable>
-      <variable formalParameter="S_DoorSensor" negated="false">
+      <variable formalParameter="EStop" negated="false">
         <connectionPointIn>
           <relPosition x="0" y="32" />
         </connectionPointIn>
         <addData>
           <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
-            <fp localId="143" inState="129" outState="0" width="18" height="2" flagType="" dataType="SAFEBOOL" />
+            <fp localId="143" inState="129" outState="0" width="9" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
       </variable>
@@ -2707,33 +2707,23 @@ END_VAR
     </inputVariables>
     <inOutVariables />
     <outputVariables>
-      <variable formalParameter="S_DoorLocked" negated="false">
+      <variable formalParameter="UnlockDoor" negated="false">
         <connectionPointOut>
-          <relPosition x="82" y="8" />
+          <relPosition x="72" y="8" />
         </connectionPointOut>
         <addData>
           <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
-            <fp localId="146" inState="0" outState="129" width="17" height="2" flagType="" dataType="SAFEBOOL" />
-          </data>
-        </addData>
-      </variable>
-      <variable formalParameter="S_DoorUnlocked" negated="false">
-        <connectionPointOut>
-          <relPosition x="82" y="16" />
-        </connectionPointOut>
-        <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
-            <fp localId="147" inState="0" outState="129" width="19" height="2" flagType="" dataType="SAFEBOOL" />
+            <fp localId="146" inState="0" outState="129" width="14" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
       </variable>
       <variable formalParameter="LightWhite" negated="false">
         <connectionPointOut>
-          <relPosition x="82" y="24" />
+          <relPosition x="72" y="16" />
         </connectionPointOut>
         <addData>
           <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
-            <fp localId="148" inState="0" outState="129" width="13" height="2" flagType="" dataType="BOOL" />
+            <fp localId="147" inState="0" outState="129" width="13" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
       </variable>
