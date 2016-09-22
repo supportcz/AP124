@@ -48,7 +48,9 @@ PROGRAM _CYCLIC
 	//conveyor P12 + P13
 	ConveyorP12P13Control; 
 	ConveyorP13P14Control; 
-
+	
+	alarmImage[5] := NOT lightCurtainP15;
+	
 	//detect if there is any alarm 
 	alarmInZoneConveyors := FALSE;
 	FOR i:=0 TO 39 DO

@@ -1,333 +1,87 @@
 (*
-T: FUNCTION_BLOCK SF_EDM_V1_00
-FW: YES	NO_VARIANT SF_EDM_V1_00 SKIP_NOTHING	
+T: FUNCTION_BLOCK DoorLock
+FW: NO
 CI#: 81
-QSL: 0
-QVE: 54
-QVPC: 54
-QPar: 11
-QFBI: 6
+QSL: 13
+QVE: 13
+QVPC: 13
+QPar: 9
+QFBI: 2
 *)
-
-Q_R_TRIG_Reset	1	VAR	@TYP:1
+@V 1 2 0
+ButtonOpen	1	VAR_INPUT	@TYP:1
 		     
 
 ;
 
-
-Q_R_TRIG_EDM1	2	VAR	@TYP:1
+@V 1 3 0
+ButtonClose	2	VAR_INPUT	@TYP:1
 		     
 
 ;
 
-
-Q_R_TRIG_EDM2	3	VAR	@TYP:1
+@V 1 4 0
+S_EStop	3	VAR_INPUT	@TYP:43
 		     
 
 ;
 
-
-Q_R_TRIG_OutControl	4	VAR	@TYP:1
+@V 1 5 0
+S_DoorSensor	4	VAR_INPUT	@TYP:43
 		     
 
 ;
 
-
-Q_TON_8000	5	VAR	@TYP:1
+@V 1 6 0
+DoorCanBeOpened	5	VAR_INPUT	@TYP:1
 		     
 
 ;
 
-
-Q_TON_8010	6	VAR	@TYP:1
+@V 1 7 0
+TestLamp	6	VAR_INPUT	@TYP:1
 		     
 
 ;
 
-
-InternalState	7	VAR	@TYP:18
+@V 1 8 0
+S_DoorLocked	7	VAR_OUTPUT	@TYP:43
 		     
 
 ;
 
-
-InternalState1	8	VAR	@TYP:18
+@V 1 9 0
+S_DoorUnlocked	8	VAR_OUTPUT	@TYP:43
 		     
 
 ;
 
-
-Internal_S_OutControl	9	VAR	@TYP:1
+@V 1 10 0
+LightWhite	9	VAR_OUTPUT	@TYP:1
 		     
 
 ;
 
-
-Internal_S_EDM1	10	VAR	@TYP:1
+@V 1 11 0
+SR_1	10	VAR	@FB:17
 		     
 
 ;
 
-
-Internal_S_EDM2	11	VAR	@TYP:1
+@V 1 12 0
+requestToOpen	11	VAR	@TYP:1
 		     
 
 ;
 
-
-Internal_S_StartReset	12	VAR	@TYP:1
+@V 1 13 0
+PULSE_GEN_1	12	VAR	@FB:78
 		     
 
 ;
 
-
-InternalState8000AcitveStore	13	VAR	@TYP:1
-		     
-
-;
-
-
-R_TRIG_Reset	14	VAR	@FB:16
-		     
-
-;
-
-
-R_TRIG_EDM1	15	VAR	@FB:16
-		     
-
-;
-
-
-R_TRIG_EDM2	16	VAR	@FB:16
-		     
-
-;
-
-
-R_TRIG_OutControl	17	VAR	@FB:16
-		     
-
-;
-
-
-TON_8000	18	VAR	@FB:21
-		     
-
-;
-
-
-TON_8010	19	VAR	@FB:21
-		     
-
-;
-
-
-Activate	20	VAR_INPUT	@TYP:1
-		     
-
-;
-
-
-S_OutControl	21	VAR_INPUT	@TYP:43
-		     
-
-;
-PFW: VAR
-
-S_EDM1	22	VAR_INPUT	@TYP:43
-		     
-
-;
-PFW: VAR
-
-S_EDM2	23	VAR_INPUT	@TYP:43
-		     
-
-;
-PFW: VAR
-
-MonitoringTime	24	VAR_INPUT	@TYP:12
-		     
-
-;
-PFW: CONST
-
-S_StartReset	25	VAR_INPUT	@TYP:43
-		     
-
-;
-
-
-Reset	26	VAR_INPUT	@TYP:1
-		     
-
-;
-PFW: VAR
-
-Ready	27	VAR_OUTPUT	@TYP:1
-		     
-
-;
-
-
-S_EDM_Out	28	VAR_OUTPUT	@TYP:43
-		     
-
-;
-
-
-Error	29	VAR_OUTPUT	@TYP:1
-		     
-
-;
-
-
-DiagCode	30	VAR_OUTPUT	@TYP:18
-		     
-
-;
-PFW: DIA
-
-__Code@0	31	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@1	32	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@2	33	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@3	34	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@4	35	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@5	36	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@6	37	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@7	38	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@8	39	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@9	40	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@10	41	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@11	42	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@12	43	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@13	44	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@14	45	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@15	46	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@16	47	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@17	48	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@18	49	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@19	50	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@20	51	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@21	52	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@22	53	VAR	@TYP:1
-		     
-
-;
-
-
-__Code@23	54	VAR	@TYP:1
+@V 2 14 0
+__DoorLock@0	13	VAR	@TYP:43
 		     
 
 ;

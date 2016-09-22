@@ -14,12 +14,15 @@
 			<Channel Name="BOOL002" Mapping="NSQX0.1" Variable="magazineEdmError" Address="alarm_mana:magazineEdmError" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL003" Mapping="NSQX0.2" Variable="palletizationEdmError" Address="alarm_mana:palletizationEdmError" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL005" Mapping="NSQX0.4" Variable="lightCurtainP11ns" Address="pallet_mag:lightCurtainP11" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL006" Mapping="NSQX0.5" Variable="lightCurtainP15grey" Address="pallet_con:lightCurtainP15" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL101" Mapping="NSIX0.0" Variable="diActivateAllSafetyCircuits" Address="diActivateAllSafetyCircuits" SODIndex="0x2500" SODSubIndex="0x2" />
 			<Channel Name="BOOL102" Mapping="NSIX0.1" Variable="diActivateMagazineSafety" Address="pallet_mag:diActivateMagazineSafetyCircuits" SODIndex="0x2500" SODSubIndex="0x2" />
 		</Module>
 		<Module Name="SL1.SM2" Hardware="X20SI9100" SafeLogicID="1" SafeModuleID="2" SISize="8" SOSize="0" NSISize="0" NSOSize="0" SIOffset="60" ConnectionValidBitNumber="0" HWTypeCode="27" >
 			<Channel Name="SafeTwoChannelInput0102" Mapping="SIX62.4" Variable="diLightCurtainP11" SODIndex="0x6000" SODSubIndex="0x3" />
 			<Channel Name="SafeTwoChannelInput0304" Mapping="SIX62.5" Variable="diLightCurtainP15" SODIndex="0x6000" SODSubIndex="0x3" />
+			<Channel Name="SafeDigitalInput05" Mapping="SIX60.4" Variable="diLightCurtainP15muting1" SODIndex="0x6000" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalInput06" Mapping="SIX60.5" Variable="diLightCurtainP15muting2" SODIndex="0x6000" SODSubIndex="0x1" />
 			<Channel Name="SafeTwoChannelInput0708" Mapping="SIX62.7" Variable="diLightCurtainP17" SODIndex="0x6000" SODSubIndex="0x3" />
 			<Channel Name="SafeDigitalInput17" Mapping="SIX62.0" Variable="diPalletizationEDM" Address="Cyclic#3.diPalletizationEDM" SODIndex="0x6000" SODSubIndex="0x3" />
 			<Channel Name="SafeDigitalInput18" Mapping="SIX62.1" Variable="diMagazineEDM" Address="Cyclic#3.diMagazineEDM" SODIndex="0x6000" SODSubIndex="0x3" />

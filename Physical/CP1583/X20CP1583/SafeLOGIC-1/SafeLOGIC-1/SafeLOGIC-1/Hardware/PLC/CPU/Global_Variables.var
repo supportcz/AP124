@@ -79,4 +79,10 @@ VAR_GLOBAL {Group(18)}
     SM3_ReleaseOutput02 AT %QX20.1 : BOOL {Custom('SL1.SM3.ReleaseOutput02')};
     {LINE(37)}
     SM3_ReleaseOutput03 AT %QX20.2 : BOOL {Custom('SL1.SM3.ReleaseOutput03')};
+    {LINE(38)}
+    diLightCurtainP15muting1 AT %IX60.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput05')};
+    {LINE(39)}
+    diLightCurtainP15muting2 AT %IX60.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput06')};
+    {LINE(40)}
+    lightCurtainP15grey AT %QX0.5 : BOOL {Custom('SL1.SM1.BOOL006')};
 END_VAR

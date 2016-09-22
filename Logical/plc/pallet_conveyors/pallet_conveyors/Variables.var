@@ -13,6 +13,7 @@ VAR
 	doConveyorP12 : BOOL; (*starts conveyor P12*)
 	doConveyorP13 : BOOL;
 	i : INT;
+	lightCurtainP15 : BOOL;
 	readyToStart : BOOL;
 	stateConveyorP12P13 : StateConveyor;
 	stateConveyorP13P14 : StateConveyor;

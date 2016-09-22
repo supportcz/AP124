@@ -1,159 +1,333 @@
 (*
-T: FUNCTION_BLOCK SF_ESPE_V1_00
-FW: YES	NO_VARIANT SF_ESPE_V1_00 SKIP_NOTHING	
+T: FUNCTION_BLOCK SF_EDM_V1_00
+FW: YES	NO_VARIANT SF_EDM_V1_00 SKIP_NOTHING	
 CI#: 82
 QSL: 0
-QVE: 25
-QVPC: 25
-QPar: 9
-QFBI: 1
+QVE: 54
+QVPC: 54
+QPar: 11
+QFBI: 6
 *)
 
-InternalS_ESPE_In	1	VAR	@TYP:1
+Q_R_TRIG_Reset	1	VAR	@TYP:1
 		     
 
 ;
 
 
-InternalS_StartReset	2	VAR	@TYP:1
+Q_R_TRIG_EDM1	2	VAR	@TYP:1
 		     
 
 ;
 
 
-InternalS_AutoReset	3	VAR	@TYP:1
+Q_R_TRIG_EDM2	3	VAR	@TYP:1
 		     
 
 ;
 
 
-InternalState	4	VAR	@TYP:18
+Q_R_TRIG_OutControl	4	VAR	@TYP:1
 		     
 
 ;
 
 
-InternalState1	5	VAR	@TYP:18
+Q_TON_8000	5	VAR	@TYP:1
 		     
 
 ;
 
 
-Q_R_TRIG_Reset	6	VAR	@TYP:1
+Q_TON_8010	6	VAR	@TYP:1
 		     
 
 ;
 
 
-R_TRIG_Reset	7	VAR	@FB:16
+InternalState	7	VAR	@TYP:18
 		     
 
 ;
 
 
-Activate	8	VAR_INPUT	@TYP:1
+InternalState1	8	VAR	@TYP:18
 		     
 
 ;
 
 
-S_ESPE_In	9	VAR_INPUT	@TYP:43
+Internal_S_OutControl	9	VAR	@TYP:1
+		     
+
+;
+
+
+Internal_S_EDM1	10	VAR	@TYP:1
+		     
+
+;
+
+
+Internal_S_EDM2	11	VAR	@TYP:1
+		     
+
+;
+
+
+Internal_S_StartReset	12	VAR	@TYP:1
+		     
+
+;
+
+
+InternalState8000AcitveStore	13	VAR	@TYP:1
+		     
+
+;
+
+
+R_TRIG_Reset	14	VAR	@FB:16
+		     
+
+;
+
+
+R_TRIG_EDM1	15	VAR	@FB:16
+		     
+
+;
+
+
+R_TRIG_EDM2	16	VAR	@FB:16
+		     
+
+;
+
+
+R_TRIG_OutControl	17	VAR	@FB:16
+		     
+
+;
+
+
+TON_8000	18	VAR	@FB:21
+		     
+
+;
+
+
+TON_8010	19	VAR	@FB:21
+		     
+
+;
+
+
+Activate	20	VAR_INPUT	@TYP:1
+		     
+
+;
+
+
+S_OutControl	21	VAR_INPUT	@TYP:43
 		     
 
 ;
 PFW: VAR
 
-S_StartReset	10	VAR_INPUT	@TYP:43
-		     
-
-;
-
-
-S_AutoReset	11	VAR_INPUT	@TYP:43
-		     
-
-;
-
-
-Reset	12	VAR_INPUT	@TYP:1
+S_EDM1	22	VAR_INPUT	@TYP:43
 		     
 
 ;
 PFW: VAR
 
-Ready	13	VAR_OUTPUT	@TYP:1
+S_EDM2	23	VAR_INPUT	@TYP:43
+		     
+
+;
+PFW: VAR
+
+MonitoringTime	24	VAR_INPUT	@TYP:12
+		     
+
+;
+PFW: CONST
+
+S_StartReset	25	VAR_INPUT	@TYP:43
 		     
 
 ;
 
 
-S_ESPE_Out	14	VAR_OUTPUT	@TYP:43
+Reset	26	VAR_INPUT	@TYP:1
+		     
+
+;
+PFW: VAR
+
+Ready	27	VAR_OUTPUT	@TYP:1
 		     
 
 ;
 
 
-Error	15	VAR_OUTPUT	@TYP:1
+S_EDM_Out	28	VAR_OUTPUT	@TYP:43
 		     
 
 ;
 
 
-DiagCode	16	VAR_OUTPUT	@TYP:18
+Error	29	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+
+DiagCode	30	VAR_OUTPUT	@TYP:18
 		     
 
 ;
 PFW: DIA
 
-__Code@0	17	VAR	@TYP:1
+__Code@0	31	VAR	@TYP:1
 		     
 
 ;
 
 
-__Code@1	18	VAR	@TYP:1
+__Code@1	32	VAR	@TYP:1
 		     
 
 ;
 
 
-__Code@2	19	VAR	@TYP:1
+__Code@2	33	VAR	@TYP:1
 		     
 
 ;
 
 
-__Code@3	20	VAR	@TYP:1
+__Code@3	34	VAR	@TYP:1
 		     
 
 ;
 
 
-__Code@4	21	VAR	@TYP:1
+__Code@4	35	VAR	@TYP:1
 		     
 
 ;
 
 
-__Code@5	22	VAR	@TYP:1
+__Code@5	36	VAR	@TYP:1
 		     
 
 ;
 
 
-__Code@6	23	VAR	@TYP:1
+__Code@6	37	VAR	@TYP:1
 		     
 
 ;
 
 
-__Code@7	24	VAR	@TYP:1
+__Code@7	38	VAR	@TYP:1
 		     
 
 ;
 
 
-__Code@8	25	VAR	@TYP:1
+__Code@8	39	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@9	40	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@10	41	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@11	42	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@12	43	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@13	44	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@14	45	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@15	46	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@16	47	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@17	48	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@18	49	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@19	50	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@20	51	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@21	52	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@22	53	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@23	54	VAR	@TYP:1
 		     
 
 ;

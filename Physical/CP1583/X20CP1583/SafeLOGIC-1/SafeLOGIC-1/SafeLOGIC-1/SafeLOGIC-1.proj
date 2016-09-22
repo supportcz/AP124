@@ -35,6 +35,7 @@
       <IoConfigurationWorksheet Include="Hardware\PLC\CPU\IO_Configuration.ioc" />
    </ItemGroup>
    <ItemGroup>
+      <ProgramOrganizationUnit Include="Logical Elements\DoorLock.pou" />
       <ProgramOrganizationUnit Include="Logical Elements\Main.pou" />
    </ItemGroup>
    <ItemGroup>

@@ -1,0 +1,13 @@
+ButtonClose,POE\DoorLock\DoorLock.GB,1,IN,6,16,Read,,BOOL,,,VAR_INPUT,LOCAL,,button to close doors
+ButtonOpen,POE\DoorLock\DoorLock.GB,1,IN,5,16,Read,,BOOL,,,VAR_INPUT,LOCAL,,button to open doors
+DoorCanBeOpened,POE\DoorLock\Variables.VBB,0,,6,0,,,BOOL,,,VAR_INPUT,NOT USED,,it is allowed to open the doors
+LightWhite,POE\DoorLock\DoorLock.GB,4,OUT,36,43,Write,,BOOL,,,VAR_OUTPUT,LOCAL,,control of white LED
+PULSE_GEN_1,POE\DoorLock\DoorLock.GB,0,,28,79,,,,,,VAR,FB,,
+requestToOpen,POE\DoorLock\Variables.VBB,0,,12,0,,,BOOL,,,VAR,NOT USED,,request to open the door
+S_DoorLocked,POE\DoorLock\DoorLock.GB,1,OUT,11,0,Write,,SAFEBOOL,,,VAR_OUTPUT,LOCAL,,door are lockled
+S_DoorSensor,POE\DoorLock\DoorLock.GB,1,IN,17,42,Read,,SAFEBOOL,,,VAR_INPUT,LOCAL,,state of door sensor
+S_DoorUnlocked,POE\DoorLock\DoorLock.GB,1,OUT,7,0,Write,,SAFEBOOL,,,VAR_OUTPUT,LOCAL,,1..unlocks door
+S_DoorUnlocked,POE\DoorLock\DoorLock.GB,3,IN,43,66,Read,,SAFEBOOL,,,VAR_OUTPUT,LOCAL,,1..unlocks door
+S_EStop,POE\DoorLock\DoorLock.GB,1,IN,16,48,Read,,SAFEBOOL,,,VAR_INPUT,LOCAL,,state of EStop
+SR_1,POE\DoorLock\DoorLock.GB,0,,3,33,,,,,,VAR,FB,,
+TestLamp,POE\DoorLock\Variables.VBB,0,,7,0,,,BOOL,,,VAR_INPUT,NOT USED,,tests LEDs
