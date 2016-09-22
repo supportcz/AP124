@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="SRC_InstantMessages">
+  <Property Name="Description" Value="Texts for instant messages"/>
+  <Property Name="Index" Value="10"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="87428" Value="no message, ready"/>
+    <Text ID="100297" Value="error finding application module on PLC"/>
+    <Text ID="100298" Value="error wrong version for command structure"/>
+    <Text ID="100299" Value="error wrong password length"/>
+    <Text ID="100300" Value="error no UDID"/>
+    <Text ID="100301" Value="error allocating memory"/>
+    <Text ID="100302" Value="internal error"/>
+    <Text ID="100303" Value="error connection timeout, maybe SafePLC is restarting after command execution"/>
+    <Text ID="100304" Value="error wrong command"/>
+    <Text ID="100305" Value="error wrong data for ENTER command"/>
+    <Text ID="100306" Value="error no password for command"/>
+    <Text ID="100307" Value="error no new password for command"/>
+    <Text ID="100308" Value="error wrong data for STATUS command"/>
+    <Text ID="100309" Value="error worng length for status data"/>
+    <Text ID="100310" Value="error no password for download"/>
+    <Text ID="100311" Value="error protocol version for download"/>
+    <Text ID="100312" Value="error file open"/>
+    <Text ID="100313" Value="error file invalid"/>
+    <Text ID="100314" Value="error file too big"/>
+    <Text ID="100315" Value="error write"/>
+    <Text ID="100316" Value="error stream"/>
+    <Text ID="100317" Value="error checksum"/>
+    <Text ID="100318" Value="error UDID doesn't match"/>
+    <Text ID="100319" Value="error wrong file size"/>
+    <Text ID="100320" Value="error wrong password"/>
+    <Text ID="100321" Value="error file info"/>
+    <Text ID="100322" Value="error unlock read"/>
+    <Text ID="100323" Value="error unlock write"/>
+    <Text ID="100324" Value="error static unlock"/>
+    <Text ID="100325" Value="error data compare failed"/>
+    <Text ID="100326" Value="error data type for download"/>
+    <Text ID="100327" Value="error data for download"/>
+    <Text ID="100328" Value="error data for download"/>
+    <Text ID="100329" Value="error command server"/>
+    <Text ID="100330" Value="error server was not initializied during the startup"/>
+    <Text ID="100331" Value="error wrong parameters handed"/>
+    <Text ID="100332" Value="error too much unresponded requests in queue"/>
+    <Text ID="100333" Value="error handed buffer too small"/>
+    <Text ID="100334" Value="new connection accepted"/>
+    <Text ID="100335" Value="the connection has been ended by the client"/>
+    <Text ID="100336" Value="error resourses could not be allocated"/>
+    <Text ID="100337" Value="error client limit exeeded"/>
+    <Text ID="100338" Value="error request buffer size"/>
+    <Text ID="100339" Value="error the module is not supported or doesn't exist"/>
+    <Text ID="100340" Value="error the module is in use by another client"/>
+    <Text ID="100341" Value="error the connection has been ended by the target"/>
+    <Text ID="100342" Value="error the connection the the target fails"/>
+    <Text ID="100343" Value="error common device driver open"/>
+    <Text ID="100344" Value="error common device driver read"/>
+    <Text ID="100345" Value="error common device driver write"/>
+    <Text ID="100346" Value="busy"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="87428" Value=""/>
+    <Text ID="100297" Value=""/>
+    <Text ID="100298" Value=""/>
+    <Text ID="100299" Value=""/>
+    <Text ID="100300" Value=""/>
+    <Text ID="100301" Value=""/>
+    <Text ID="100302" Value=""/>
+    <Text ID="100303" Value=""/>
+    <Text ID="100304" Value=""/>
+    <Text ID="100305" Value=""/>
+    <Text ID="100306" Value=""/>
+    <Text ID="100307" Value=""/>
+    <Text ID="100308" Value=""/>
+    <Text ID="100309" Value=""/>
+    <Text ID="100310" Value=""/>
+    <Text ID="100311" Value=""/>
+    <Text ID="100312" Value=""/>
+    <Text ID="100313" Value=""/>
+    <Text ID="100314" Value=""/>
+    <Text ID="100315" Value=""/>
+    <Text ID="100316" Value=""/>
+    <Text ID="100317" Value=""/>
+    <Text ID="100318" Value=""/>
+    <Text ID="100319" Value=""/>
+    <Text ID="100320" Value=""/>
+    <Text ID="100321" Value=""/>
+    <Text ID="100322" Value=""/>
+    <Text ID="100323" Value=""/>
+    <Text ID="100324" Value=""/>
+    <Text ID="100325" Value=""/>
+    <Text ID="100326" Value=""/>
+    <Text ID="100327" Value=""/>
+    <Text ID="100328" Value=""/>
+    <Text ID="100329" Value=""/>
+    <Text ID="100330" Value=""/>
+    <Text ID="100331" Value=""/>
+    <Text ID="100332" Value=""/>
+    <Text ID="100333" Value=""/>
+    <Text ID="100334" Value=""/>
+    <Text ID="100335" Value=""/>
+    <Text ID="100336" Value=""/>
+    <Text ID="100337" Value=""/>
+    <Text ID="100338" Value=""/>
+    <Text ID="100339" Value=""/>
+    <Text ID="100340" Value=""/>
+    <Text ID="100341" Value=""/>
+    <Text ID="100342" Value=""/>
+    <Text ID="100343" Value=""/>
+    <Text ID="100344" Value=""/>
+    <Text ID="100345" Value=""/>
+    <Text ID="100346" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="87428" Value=""/>
+    <Text ID="100297" Value=""/>
+    <Text ID="100298" Value=""/>
+    <Text ID="100299" Value=""/>
+    <Text ID="100300" Value=""/>
+    <Text ID="100301" Value=""/>
+    <Text ID="100302" Value=""/>
+    <Text ID="100303" Value=""/>
+    <Text ID="100304" Value=""/>
+    <Text ID="100305" Value=""/>
+    <Text ID="100306" Value=""/>
+    <Text ID="100307" Value=""/>
+    <Text ID="100308" Value=""/>
+    <Text ID="100309" Value=""/>
+    <Text ID="100310" Value=""/>
+    <Text ID="100311" Value=""/>
+    <Text ID="100312" Value=""/>
+    <Text ID="100313" Value=""/>
+    <Text ID="100314" Value=""/>
+    <Text ID="100315" Value=""/>
+    <Text ID="100316" Value=""/>
+    <Text ID="100317" Value=""/>
+    <Text ID="100318" Value=""/>
+    <Text ID="100319" Value=""/>
+    <Text ID="100320" Value=""/>
+    <Text ID="100321" Value=""/>
+    <Text ID="100322" Value=""/>
+    <Text ID="100323" Value=""/>
+    <Text ID="100324" Value=""/>
+    <Text ID="100325" Value=""/>
+    <Text ID="100326" Value=""/>
+    <Text ID="100327" Value=""/>
+    <Text ID="100328" Value=""/>
+    <Text ID="100329" Value=""/>
+    <Text ID="100330" Value=""/>
+    <Text ID="100331" Value=""/>
+    <Text ID="100332" Value=""/>
+    <Text ID="100333" Value=""/>
+    <Text ID="100334" Value=""/>
+    <Text ID="100335" Value=""/>
+    <Text ID="100336" Value=""/>
+    <Text ID="100337" Value=""/>
+    <Text ID="100338" Value=""/>
+    <Text ID="100339" Value=""/>
+    <Text ID="100340" Value=""/>
+    <Text ID="100341" Value=""/>
+    <Text ID="100342" Value=""/>
+    <Text ID="100343" Value=""/>
+    <Text ID="100344" Value=""/>
+    <Text ID="100345" Value=""/>
+    <Text ID="100346" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="87428" Value=""/>
+    <Text ID="100297" Value=""/>
+    <Text ID="100298" Value=""/>
+    <Text ID="100299" Value=""/>
+    <Text ID="100300" Value=""/>
+    <Text ID="100301" Value=""/>
+    <Text ID="100302" Value=""/>
+    <Text ID="100303" Value=""/>
+    <Text ID="100304" Value=""/>
+    <Text ID="100305" Value=""/>
+    <Text ID="100306" Value=""/>
+    <Text ID="100307" Value=""/>
+    <Text ID="100308" Value=""/>
+    <Text ID="100309" Value=""/>
+    <Text ID="100310" Value=""/>
+    <Text ID="100311" Value=""/>
+    <Text ID="100312" Value=""/>
+    <Text ID="100313" Value=""/>
+    <Text ID="100314" Value=""/>
+    <Text ID="100315" Value=""/>
+    <Text ID="100316" Value=""/>
+    <Text ID="100317" Value=""/>
+    <Text ID="100318" Value=""/>
+    <Text ID="100319" Value=""/>
+    <Text ID="100320" Value=""/>
+    <Text ID="100321" Value=""/>
+    <Text ID="100322" Value=""/>
+    <Text ID="100323" Value=""/>
+    <Text ID="100324" Value=""/>
+    <Text ID="100325" Value=""/>
+    <Text ID="100326" Value=""/>
+    <Text ID="100327" Value=""/>
+    <Text ID="100328" Value=""/>
+    <Text ID="100329" Value=""/>
+    <Text ID="100330" Value=""/>
+    <Text ID="100331" Value=""/>
+    <Text ID="100332" Value=""/>
+    <Text ID="100333" Value=""/>
+    <Text ID="100334" Value=""/>
+    <Text ID="100335" Value=""/>
+    <Text ID="100336" Value=""/>
+    <Text ID="100337" Value=""/>
+    <Text ID="100338" Value=""/>
+    <Text ID="100339" Value=""/>
+    <Text ID="100340" Value=""/>
+    <Text ID="100341" Value=""/>
+    <Text ID="100342" Value=""/>
+    <Text ID="100343" Value=""/>
+    <Text ID="100344" Value=""/>
+    <Text ID="100345" Value=""/>
+    <Text ID="100346" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="87428" Value="0"/>
+    <Index ID="100297" Value="20609"/>
+    <Index ID="100298" Value="36100"/>
+    <Index ID="100299" Value="36101"/>
+    <Index ID="100300" Value="36102"/>
+    <Index ID="100301" Value="36103"/>
+    <Index ID="100302" Value="36104"/>
+    <Index ID="100303" Value="36105"/>
+    <Index ID="100304" Value="36106"/>
+    <Index ID="100305" Value="36107"/>
+    <Index ID="100306" Value="36108"/>
+    <Index ID="100307" Value="36109"/>
+    <Index ID="100308" Value="36110"/>
+    <Index ID="100309" Value="36111"/>
+    <Index ID="100310" Value="36112"/>
+    <Index ID="100311" Value="36113"/>
+    <Index ID="100312" Value="36114"/>
+    <Index ID="100313" Value="36115"/>
+    <Index ID="100314" Value="36116"/>
+    <Index ID="100315" Value="36117"/>
+    <Index ID="100316" Value="36118"/>
+    <Index ID="100317" Value="36119"/>
+    <Index ID="100318" Value="36120"/>
+    <Index ID="100319" Value="36121"/>
+    <Index ID="100320" Value="36122"/>
+    <Index ID="100321" Value="36123"/>
+    <Index ID="100322" Value="36124"/>
+    <Index ID="100323" Value="36125"/>
+    <Index ID="100324" Value="36126"/>
+    <Index ID="100325" Value="36127"/>
+    <Index ID="100326" Value="36128"/>
+    <Index ID="100327" Value="36129"/>
+    <Index ID="100328" Value="36130"/>
+    <Index ID="100329" Value="37500"/>
+    <Index ID="100330" Value="37501"/>
+    <Index ID="100331" Value="37502"/>
+    <Index ID="100332" Value="37503"/>
+    <Index ID="100333" Value="37504"/>
+    <Index ID="100334" Value="37505"/>
+    <Index ID="100335" Value="37506"/>
+    <Index ID="100336" Value="37507"/>
+    <Index ID="100337" Value="37508"/>
+    <Index ID="100338" Value="37509"/>
+    <Index ID="100339" Value="37510"/>
+    <Index ID="100340" Value="37511"/>
+    <Index ID="100341" Value="37512"/>
+    <Index ID="100342" Value="37513"/>
+    <Index ID="100343" Value="37514"/>
+    <Index ID="100344" Value="37515"/>
+    <Index ID="100345" Value="37516"/>
+    <Index ID="100346" Value="65535"/>
+  </IndexMap>
+</TextGroup>

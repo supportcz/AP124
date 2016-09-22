@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="SRC_MessageBoxButton">
+  <Property Name="Description" Value="Texts for message box buttons"/>
+  <Property Name="Index" Value="9"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="97573" Value="Yes"/>
+    <Text ID="97574" Value="No"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="97573" Value=""/>
+    <Text ID="97574" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="97573" Value=""/>
+    <Text ID="97574" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="97573" Value=""/>
+    <Text ID="97574" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="97573" Value="0"/>
+    <Index ID="97574" Value="1"/>
+  </IndexMap>
+</TextGroup>

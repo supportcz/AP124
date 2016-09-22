@@ -5,11 +5,16 @@
   <Property Name="SharedTargetResourceRoot" Value=""/>
   <SourceFiles>
     <Source File="Languages.vcr"/>
+    <Source File="TextGroups\AlarmAcknowledgeState.txtgrp"/>
+    <Source File="TextGroups\AlarmBypassState.txtgrp"/>
+    <Source File="TextGroups\AlarmEvent.txtgrp"/>
+    <Source File="TextGroups\AlarmState.txtgrp"/>
+    <Source File="TextGroups\DateTimeFormats.txtgrp"/>
+    <Source File="TextGroups\httpURL_SDM.txtgrp"/>
     <Source File="TextGroups\MpDateTimeFormats.txtgrp"/>
     <Source File="TextGroups\Languages.txtgrp"/>
     <Source File="TextGroups\AlarmList.txtgrp"/>
     <Source File="TextGroups\HistoryAlarmList.txtgrp"/>
-    <Source File="TextGroups\httpURL_SDM.txtgrp"/>
     <Source File="TextGroups\PageControlNames.txtgrp"/>
     <Source File="TextGroups\ManualMode_StateArms.txtgrp"/>
     <Source File="TextGroups\ManualMode_ArmTexts.txtgrp"/>

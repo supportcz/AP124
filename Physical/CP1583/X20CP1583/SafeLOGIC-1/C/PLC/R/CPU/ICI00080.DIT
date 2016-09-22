@@ -2,11 +2,11 @@
 T: PROGRAM Main
 FW: NO
 CI#: 80
-QSL: 17
-QVE: 17
-QVPC: 17
+QSL: 18
+QVE: 18
+QVPC: 18
 QPar: 0
-QFBI: 12
+QFBI: 13
 *)
 @V 1 1 0
 lightCurtainP11	1	VAR	@TYP:43
@@ -106,6 +106,12 @@ TON_4	16	VAR	@FB:21
 
 @V 1 18 0
 TON_5	17	VAR	@FB:21
+		     
+
+;
+
+@V 1 19 0
+SF_MutingPar_2Sensor_V1_1	18	VAR	@FB:84
 		     
 
 ;

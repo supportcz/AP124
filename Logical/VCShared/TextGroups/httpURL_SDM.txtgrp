@@ -7,6 +7,9 @@
   <TextLayer LanguageId="en">
     <Text ID="173741" Value="http://localhost/sdm-vga/vga.cgi"/>
   </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="173741" Value="http://localhost/sdm-vga/vga.cgi"/>
+  </TextLayer>
   <TextLayer LanguageId="cs">
     <Text ID="173741" Value="http://localhost/sdm-vga/vga.cgi"/>
   </TextLayer>
@@ -14,6 +17,6 @@
     <Text ID="173741" Value=""/>
   </TextLayer>
   <IndexMap>
-    <Index ID="173741" Value="1"/>
+    <Index ID="173741" Value="0"/>
   </IndexMap>
 </TextGroup>

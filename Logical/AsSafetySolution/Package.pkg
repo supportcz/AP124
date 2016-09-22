@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.1.4.357?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC" Description="Handling">SafetySample</Object>
+    <Object Type="DataObject" Language="Vc" Description="Visualization 800x600 (SVGA)">Panel</Object>
+  </Objects>
+  <Dependencies>
+    <Dependency ObjectName="AsSafety" />
+    <Dependency ObjectName="asioacc" />
+    <Dependency ObjectName="asieccon" />
+    <Dependency ObjectName="asbrmath" />
+    <Dependency ObjectName="asepl" />
+    <Dependency ObjectName="AsBrStr" />
+  </Dependencies>
+</Package>
