@@ -152,6 +152,7 @@ PROGRAM _CYCLIC
 
 	TP_0(IN := diActivateMagazineSafetyCircuits, PT := T#1s);
 	
+	statusMessageMagazine;
 	
 	//detect if there is any alarm 
 	alarmInZoneMagazine := FALSE;

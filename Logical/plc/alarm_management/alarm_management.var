@@ -2,4 +2,5 @@ VAR
 	alarmInZoneMagazine : BOOL; (*VISU:there is at least one alarm in pallet magazine*)
 	diReset : BOOL; (*acknowledges all errors*)
 	diAirPresureOK : BOOL; (*VISU: 1...air pressure OK*)
+	alarmCommon : BOOL;
 END_VAR

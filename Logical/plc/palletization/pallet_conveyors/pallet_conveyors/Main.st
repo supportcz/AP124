@@ -53,6 +53,8 @@ PROGRAM _CYCLIC
 	ConveyorP12P13Control; 
 	ConveyorP13P14Control; 
 	ConveyorP14P15Control; 
+
+	statusMessagePalletization;
 	
 	alarmImage[5] := NOT lightCurtainP15;
 	alarmImage[8] := NOT lightCurtainP17;

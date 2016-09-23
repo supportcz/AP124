@@ -278,7 +278,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_conveyors.pallet_conveyors.cmdMovePalletP12P13]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.pallet_conveyors.pallet_conveyors.cmdMovePalletP12P13]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -293,7 +293,7 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="0"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_conveyors.palletOnConveyorP13]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.pallet_conveyors.palletOnConveyorP13]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -309,7 +309,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_conveyors.pallet_conveyors.cmdMovePalletP13P14]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.pallet_conveyors.pallet_conveyors.cmdMovePalletP13P14]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -324,7 +324,7 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="0"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_conveyors.palletOnConveyorP14]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.pallet_conveyors.palletOnConveyorP14]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -355,7 +355,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_conveyors.pallet_conveyors.cmdMovePalletP14P15]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.pallet_conveyors.pallet_conveyors.cmdMovePalletP14P15]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -370,7 +370,7 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="0"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_conveyors.palletOnConveyorP15]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.pallet_conveyors.palletOnConveyorP15]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

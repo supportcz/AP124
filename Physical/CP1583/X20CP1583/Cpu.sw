@@ -5,10 +5,10 @@
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3">
     <Task Name="pallet_mag" Source="plc.pallet_magazine.pallet_magazine.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="pallet_con" Source="plc.pallet_conveyors.pallet_conveyors.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="product_in" Source="plc.product_infeed.product_infeed.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="robot_head" Source="plc.robot_head.robot_head.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="robot_cont" Source="plc.robot_control.robot_control.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="pallet_con" Source="plc.palletization.pallet_conveyors.pallet_conveyors.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="product_in" Source="plc.palletization.product_infeed.product_infeed.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="robot_head" Source="plc.palletization.robot_head.robot_head.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="robot_cont" Source="plc.palletization.robot_control.robot_control.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="wrapper" Source="plc.wrapper.wrapper.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="pallet_out" Source="plc.pallet_outfeed.pallet_outfeed.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="alarm_mana" Source="plc.alarm_management.alarm_management.prg" Memory="UserROM" Language="IEC" Debugging="true" />
