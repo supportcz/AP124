@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="AutomaticMode">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="9"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="176795" Value="Palletization"/>
+    <Text ID="176796" Value="Magazine"/>
+    <Text ID="176797" Value="Output of pallets"/>
+    <Text ID="176806" Value="START"/>
+    <Text ID="176807" Value="STOP"/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="176795" Value="Paletizace"/>
+    <Text ID="176796" Value="Zásobnik"/>
+    <Text ID="176797" Value="Výstup palet"/>
+    <Text ID="176806" Value="ŠTART"/>
+    <Text ID="176807" Value="STOP"/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="176795" Value=""/>
+    <Text ID="176796" Value=""/>
+    <Text ID="176797" Value=""/>
+    <Text ID="176806" Value=""/>
+    <Text ID="176807" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="176795" Value="0"/>
+    <Index ID="176796" Value="1"/>
+    <Index ID="176797" Value="2"/>
+    <Index ID="176806" Value="3"/>
+    <Index ID="176807" Value="4"/>
+  </IndexMap>
+</TextGroup>

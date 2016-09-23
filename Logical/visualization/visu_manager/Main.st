@@ -2,10 +2,14 @@
 PROGRAM _INIT
 	PageControl := ButtonAutomaticMode;
 	uiHandle := 0;
+	gVisu.LanguageLayer := 1;
 END_PROGRAM
 
 PROGRAM _CYCLIC
 	
+	(***************************************************************************)
+	(* 							Active Alarm Count Check				 	   *)
+	(***************************************************************************)
 	IF uiHandle = 0 THEN
 		uiHandle := VA_Setup(1,'Visu');
 	END_IF	
@@ -16,8 +20,8 @@ PROGRAM _CYCLIC
 			
 	END_IF;
 	
-	(***************************************************************************)		
-	(* 								Page Control						  	   *)	
+	(***************************************************************************)
+	(* 								Page Control						  	   *)
 	(***************************************************************************)
 	CASE PageControl OF
 		ButtonAutomaticMode:
@@ -52,7 +56,6 @@ PROGRAM _CYCLIC
 			ButtonColor_tmp := ButtonColor;
 			PageControl := Idle;
 		Idle:
-		
 	END_CASE;
 	
 	IF (ButtonColor <> 3) AND (uiAlarmCount > 0) THEN
@@ -69,6 +72,9 @@ PROGRAM _CYCLIC
 		gVisu.TON_0(IN := FALSE, PT := ALARM_BLINK);
 	END_IF;
  	
+
+	
+	
 END_PROGRAM
 
 PROGRAM _EXIT

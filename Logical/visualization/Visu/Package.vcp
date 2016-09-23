@@ -12,7 +12,7 @@
   <Property Name="DefaultKeyLevelNumeric" Value="0"/>
   <Property Name="DefaultKeyLevelString" Value="0"/>
   <Property Name="DefaultLanguage" Value="en"/>
-  <Property Name="DefaultPage" Value="Source[local].Page[Page_10_AutomaticMode]"/>
+  <Property Name="DefaultPage" Value="Source[local].Page[Page_11_AutomaticModeStart]"/>
   <Property Name="DefaultStyleSheet" Value="Source[local].StyleSheet[mapp]"/>
   <Property Name="FocusControlDatapoint" Value="None"/>
   <Property Name="FontAntialiasing" Value="Off"/>
@@ -369,6 +369,8 @@
     <Source File="Bitmaps\button_global_area.bminfo"/>
     <Source File="Bitmaps\DropDown_Arrow.bminfo"/>
     <Source File="Bitmaps\uk.bminfo"/>
+    <Source File="Bitmaps\cz.bminfo"/>
+    <Source File="Bitmaps\fr.bminfo"/>
     <Source File="BitmapGroups\MpAlarmAcknowledgeState.bmgrp"/>
     <Source File="BitmapGroups\MpPads.bmgrp"/>
     <Source File="BitmapGroups\MpUserIcons.bmgrp"/>
@@ -378,9 +380,10 @@
     <Source File="BitmapGroups\MpAlarmXStates.bmgrp"/>
     <Source File="BitmapGroups\MpBorders.bmgrp"/>
     <Source File="BitmapGroups\Borders.bmgrp"/>
+    <Source File="BitmapGroups\Flags.bmgrp"/>
     <Source File="Pages\Page_60_Settings.page"/>
     <Source File="Pages\Page_40_AlarmList.page"/>
-    <Source File="Pages\Page_10_AutomaticMode.page"/>
+    <Source File="Pages\Page_11_AutomaticModeStart.page"/>
     <Source File="Pages\Page_50_SDM.page"/>
     <Source File="Pages\Page_20_ManualMode.page"/>
     <Source File="Pages\Page_30_Info.page"/>
@@ -389,8 +392,10 @@
     <Source File="Pages\Page_21_ManualMagazine.page"/>
     <Source File="Pages\Page_22_ManualConveyors.page"/>
     <Source File="Pages\Page_61_Safety.page"/>
+    <Source File="Pages\Page_10_AutomaticMode.page"/>
     <Source File="Layers\MpPageControl.layer"/>
     <Source File="Layers\MpBackground.layer"/>
+    <Source File="Layers\Language_DropDown.layer"/>
     <Source File="StyleSheets\Color.vcs"/>
     <Source File="StyleSheets\mapp.vcs"/>
     <Source File="Borders\Mp_AttentionOff.bdr"/>

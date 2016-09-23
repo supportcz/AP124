@@ -1705,6 +1705,15 @@
           <Property Name="UserID" Value="None"/>
           <Property Name="VCType" Value="INTEGER"/>
         </DataPoint>
+        <DataPoint Name="LanguageLayer">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="UINT"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="INTEGER"/>
+        </DataPoint>
       </Folder>
       <Folder Name="visu_manager">
         <Property Name="Description" Value=""/>

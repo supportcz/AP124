@@ -5,6 +5,7 @@ TYPE
 		TON_0 : TON_10ms;
 		CurrentPage : UINT;
 		ChangeLanguage : UINT;
+		LanguageLayer : UINT;
 		CurrentLanguage : UINT;
 	END_STRUCT;
 	PageControl_enum : 

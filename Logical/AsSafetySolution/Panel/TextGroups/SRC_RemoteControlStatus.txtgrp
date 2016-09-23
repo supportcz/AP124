@@ -1,172 +1,172 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?AutomationStudio Version="4.2.5.388"?>
 <TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="SRC_RemoteControlStatus">
-  <Property Name="Description" Value="Texts for remote control status"/>
-  <Property Name="Index" Value="6"/>
-  <TextSnippets/>
+  <Property Name="Description" Value="Texts for remote control status" />
+  <Property Name="Index" Value="6" />
+  <TextSnippets />
   <TextLayer LanguageId="en">
-    <Text ID="96604" Value="The last received command was valid and is being executed"/>
-    <Text ID="96606" Value="HMI command was executed with errors (Logger)"/>
-    <Text ID="96607" Value="Remote command was executed successfully (Logger)"/>
-    <Text ID="96608" Value="Remote command was executed with errors (Logger)"/>
-    <Text ID="96609" Value="The command is unknown"/>
-    <Text ID="96610" Value="The ENTER command in the Data field is unknown"/>
-    <Text ID="96611" Value="Remote control is not activated via the SafeDESIGNER or application is missing"/>
-    <Text ID="96612" Value="Incorrect password"/>
-    <Text ID="96613" Value="Remote Control State Machine is not in IDLE (last command still being processed)"/>
-    <Text ID="96614" Value="Locked by HMI (command activated via rotary switch and ENTER button)"/>
-    <Text ID="96615" Value="SK-XCNG command not authorized"/>
-    <Text ID="96616" Value="FW-ACKN command not authorized"/>
-    <Text ID="96617" Value="1 to N modules exchanged command not authorized"/>
-    <Text ID="96618" Value="SK-XCNG command cannot be executed, SafeKEY was not exchanged"/>
-    <Text ID="96619" Value="FW-ACKN command cannot be executed, different Firmware not found"/>
-    <Text ID="96620" Value="1 module exchanged command cannot be executed, no modules or multiple modules were exchanged"/>
-    <Text ID="96621" Value="2 modules exchanged command cannot be executed, fewer or more than two modules were exchanged"/>
-    <Text ID="96622" Value="3 modules exchanged command cannot be executed, fewer or more than three modules were"/>
-    <Text ID="96623" Value="4 modules exchanged command cannot be executed, fewer or more than four modules were exchanged"/>
-    <Text ID="96624" Value="N modules exchanged command cannot be executed, fewer or more than five modules were exchanged"/>
-    <Text ID="96625" Value="SK-CONTINUE command cannot be executed, SK-COPY not started or time for"/>
-    <Text ID="96626" Value="ENTER command not possible, SK-XCNG required"/>
-    <Text ID="96627" Value="SK-FORMAT command is being processed, no other commands can be sent at this time"/>
-    <Text ID="96628" Value="SK-COPY command is being processed, no other commands can be sent at this time"/>
-    <Text ID="96629" Value="SK-XCNG command is being processed, no other commands can be sent at this time"/>
-    <Text ID="96630" Value="1 to N modules exchanged command is being processed, no other commands can be sent at this time"/>
-    <Text ID="96631" Value="A SCAN is being executed, no other commands can be sent at this time"/>
-    <Text ID="96632" Value="Remote status send failed (Logger)"/>
-    <Text ID="96633" Value="HMI command was executed successfully (Logger)"/>
-    <Text ID="96634" Value="Incorrect length of the 0x5000 command (change password)"/>
-    <Text ID="96635" Value="Incorrect length of the command (for commands other than 0x5000)"/>
+    <Text ID="96604" Value="The last received command was valid and is being executed" />
+    <Text ID="96606" Value="HMI command was executed with errors (Logger)" />
+    <Text ID="96607" Value="Remote command was executed successfully (Logger)" />
+    <Text ID="96608" Value="Remote command was executed with errors (Logger)" />
+    <Text ID="96609" Value="The command is unknown" />
+    <Text ID="96610" Value="The ENTER command in the Data field is unknown" />
+    <Text ID="96611" Value="Remote control is not activated via the SafeDESIGNER or application is missing" />
+    <Text ID="96612" Value="Incorrect password" />
+    <Text ID="96613" Value="Remote Control State Machine is not in IDLE (last command still being processed)" />
+    <Text ID="96614" Value="Locked by HMI (command activated via rotary switch and ENTER button)" />
+    <Text ID="96615" Value="SK-XCNG command not authorized" />
+    <Text ID="96616" Value="FW-ACKN command not authorized" />
+    <Text ID="96617" Value="1 to N modules exchanged command not authorized" />
+    <Text ID="96618" Value="SK-XCNG command cannot be executed, SafeKEY was not exchanged" />
+    <Text ID="96619" Value="FW-ACKN command cannot be executed, different Firmware not found" />
+    <Text ID="96620" Value="1 module exchanged command cannot be executed, no modules or multiple modules were exchanged" />
+    <Text ID="96621" Value="2 modules exchanged command cannot be executed, fewer or more than two modules were exchanged" />
+    <Text ID="96622" Value="3 modules exchanged command cannot be executed, fewer or more than three modules were" />
+    <Text ID="96623" Value="4 modules exchanged command cannot be executed, fewer or more than four modules were exchanged" />
+    <Text ID="96624" Value="N modules exchanged command cannot be executed, fewer or more than five modules were exchanged" />
+    <Text ID="96625" Value="SK-CONTINUE command cannot be executed, SK-COPY not started or time for" />
+    <Text ID="96626" Value="ENTER command not possible, SK-XCNG required" />
+    <Text ID="96627" Value="SK-FORMAT command is being processed, no other commands can be sent at this time" />
+    <Text ID="96628" Value="SK-COPY command is being processed, no other commands can be sent at this time" />
+    <Text ID="96629" Value="SK-XCNG command is being processed, no other commands can be sent at this time" />
+    <Text ID="96630" Value="1 to N modules exchanged command is being processed, no other commands can be sent at this time" />
+    <Text ID="96631" Value="A SCAN is being executed, no other commands can be sent at this time" />
+    <Text ID="96632" Value="Remote status send failed (Logger)" />
+    <Text ID="96633" Value="HMI command was executed successfully (Logger)" />
+    <Text ID="96634" Value="Incorrect length of the 0x5000 command (change password)" />
+    <Text ID="96635" Value="Incorrect length of the command (for commands other than 0x5000)" />
   </TextLayer>
   <TextLayer LanguageId="de">
-    <Text ID="96604" Value=""/>
-    <Text ID="96606" Value=""/>
-    <Text ID="96607" Value=""/>
-    <Text ID="96608" Value=""/>
-    <Text ID="96609" Value=""/>
-    <Text ID="96610" Value=""/>
-    <Text ID="96611" Value=""/>
-    <Text ID="96612" Value=""/>
-    <Text ID="96613" Value=""/>
-    <Text ID="96614" Value=""/>
-    <Text ID="96615" Value=""/>
-    <Text ID="96616" Value=""/>
-    <Text ID="96617" Value=""/>
-    <Text ID="96618" Value=""/>
-    <Text ID="96619" Value=""/>
-    <Text ID="96620" Value=""/>
-    <Text ID="96621" Value=""/>
-    <Text ID="96622" Value=""/>
-    <Text ID="96623" Value=""/>
-    <Text ID="96624" Value=""/>
-    <Text ID="96625" Value=""/>
-    <Text ID="96626" Value=""/>
-    <Text ID="96627" Value=""/>
-    <Text ID="96628" Value=""/>
-    <Text ID="96629" Value=""/>
-    <Text ID="96630" Value=""/>
-    <Text ID="96631" Value=""/>
-    <Text ID="96632" Value=""/>
-    <Text ID="96633" Value=""/>
-    <Text ID="96634" Value=""/>
-    <Text ID="96635" Value=""/>
+    <Text ID="96604" Value="" />
+    <Text ID="96606" Value="" />
+    <Text ID="96607" Value="" />
+    <Text ID="96608" Value="" />
+    <Text ID="96609" Value="" />
+    <Text ID="96610" Value="" />
+    <Text ID="96611" Value="" />
+    <Text ID="96612" Value="" />
+    <Text ID="96613" Value="" />
+    <Text ID="96614" Value="" />
+    <Text ID="96615" Value="" />
+    <Text ID="96616" Value="" />
+    <Text ID="96617" Value="" />
+    <Text ID="96618" Value="" />
+    <Text ID="96619" Value="" />
+    <Text ID="96620" Value="" />
+    <Text ID="96621" Value="" />
+    <Text ID="96622" Value="" />
+    <Text ID="96623" Value="" />
+    <Text ID="96624" Value="" />
+    <Text ID="96625" Value="" />
+    <Text ID="96626" Value="" />
+    <Text ID="96627" Value="" />
+    <Text ID="96628" Value="" />
+    <Text ID="96629" Value="" />
+    <Text ID="96630" Value="" />
+    <Text ID="96631" Value="" />
+    <Text ID="96632" Value="" />
+    <Text ID="96633" Value="" />
+    <Text ID="96634" Value="" />
+    <Text ID="96635" Value="" />
   </TextLayer>
   <TextLayer LanguageId="cs">
-    <Text ID="96604" Value=""/>
-    <Text ID="96606" Value=""/>
-    <Text ID="96607" Value=""/>
-    <Text ID="96608" Value=""/>
-    <Text ID="96609" Value=""/>
-    <Text ID="96610" Value=""/>
-    <Text ID="96611" Value=""/>
-    <Text ID="96612" Value=""/>
-    <Text ID="96613" Value=""/>
-    <Text ID="96614" Value=""/>
-    <Text ID="96615" Value=""/>
-    <Text ID="96616" Value=""/>
-    <Text ID="96617" Value=""/>
-    <Text ID="96618" Value=""/>
-    <Text ID="96619" Value=""/>
-    <Text ID="96620" Value=""/>
-    <Text ID="96621" Value=""/>
-    <Text ID="96622" Value=""/>
-    <Text ID="96623" Value=""/>
-    <Text ID="96624" Value=""/>
-    <Text ID="96625" Value=""/>
-    <Text ID="96626" Value=""/>
-    <Text ID="96627" Value=""/>
-    <Text ID="96628" Value=""/>
-    <Text ID="96629" Value=""/>
-    <Text ID="96630" Value=""/>
-    <Text ID="96631" Value=""/>
-    <Text ID="96632" Value=""/>
-    <Text ID="96633" Value=""/>
-    <Text ID="96634" Value=""/>
-    <Text ID="96635" Value=""/>
+    <Text ID="96604" Value="" />
+    <Text ID="96606" Value="" />
+    <Text ID="96607" Value="" />
+    <Text ID="96608" Value="" />
+    <Text ID="96609" Value="" />
+    <Text ID="96610" Value="" />
+    <Text ID="96611" Value="" />
+    <Text ID="96612" Value="" />
+    <Text ID="96613" Value="" />
+    <Text ID="96614" Value="" />
+    <Text ID="96615" Value="" />
+    <Text ID="96616" Value="" />
+    <Text ID="96617" Value="" />
+    <Text ID="96618" Value="" />
+    <Text ID="96619" Value="" />
+    <Text ID="96620" Value="" />
+    <Text ID="96621" Value="" />
+    <Text ID="96622" Value="" />
+    <Text ID="96623" Value="" />
+    <Text ID="96624" Value="" />
+    <Text ID="96625" Value="" />
+    <Text ID="96626" Value="" />
+    <Text ID="96627" Value="" />
+    <Text ID="96628" Value="" />
+    <Text ID="96629" Value="" />
+    <Text ID="96630" Value="" />
+    <Text ID="96631" Value="" />
+    <Text ID="96632" Value="" />
+    <Text ID="96633" Value="" />
+    <Text ID="96634" Value="" />
+    <Text ID="96635" Value="" />
   </TextLayer>
   <TextLayer LanguageId="fr">
-    <Text ID="96604" Value=""/>
-    <Text ID="96606" Value=""/>
-    <Text ID="96607" Value=""/>
-    <Text ID="96608" Value=""/>
-    <Text ID="96609" Value=""/>
-    <Text ID="96610" Value=""/>
-    <Text ID="96611" Value=""/>
-    <Text ID="96612" Value=""/>
-    <Text ID="96613" Value=""/>
-    <Text ID="96614" Value=""/>
-    <Text ID="96615" Value=""/>
-    <Text ID="96616" Value=""/>
-    <Text ID="96617" Value=""/>
-    <Text ID="96618" Value=""/>
-    <Text ID="96619" Value=""/>
-    <Text ID="96620" Value=""/>
-    <Text ID="96621" Value=""/>
-    <Text ID="96622" Value=""/>
-    <Text ID="96623" Value=""/>
-    <Text ID="96624" Value=""/>
-    <Text ID="96625" Value=""/>
-    <Text ID="96626" Value=""/>
-    <Text ID="96627" Value=""/>
-    <Text ID="96628" Value=""/>
-    <Text ID="96629" Value=""/>
-    <Text ID="96630" Value=""/>
-    <Text ID="96631" Value=""/>
-    <Text ID="96632" Value=""/>
-    <Text ID="96633" Value=""/>
-    <Text ID="96634" Value=""/>
-    <Text ID="96635" Value=""/>
+    <Text ID="96604" Value="" />
+    <Text ID="96606" Value="" />
+    <Text ID="96607" Value="" />
+    <Text ID="96608" Value="" />
+    <Text ID="96609" Value="" />
+    <Text ID="96610" Value="" />
+    <Text ID="96611" Value="" />
+    <Text ID="96612" Value="" />
+    <Text ID="96613" Value="" />
+    <Text ID="96614" Value="" />
+    <Text ID="96615" Value="" />
+    <Text ID="96616" Value="" />
+    <Text ID="96617" Value="" />
+    <Text ID="96618" Value="" />
+    <Text ID="96619" Value="" />
+    <Text ID="96620" Value="" />
+    <Text ID="96621" Value="" />
+    <Text ID="96622" Value="" />
+    <Text ID="96623" Value="" />
+    <Text ID="96624" Value="" />
+    <Text ID="96625" Value="" />
+    <Text ID="96626" Value="" />
+    <Text ID="96627" Value="" />
+    <Text ID="96628" Value="" />
+    <Text ID="96629" Value="" />
+    <Text ID="96630" Value="" />
+    <Text ID="96631" Value="" />
+    <Text ID="96632" Value="" />
+    <Text ID="96633" Value="" />
+    <Text ID="96634" Value="" />
+    <Text ID="96635" Value="" />
   </TextLayer>
   <IndexMap>
-    <Index ID="96604" Value="0"/>
-    <Index ID="96606" Value="2"/>
-    <Index ID="96607" Value="3"/>
-    <Index ID="96608" Value="4"/>
-    <Index ID="96609" Value="5"/>
-    <Index ID="96610" Value="6"/>
-    <Index ID="96611" Value="7"/>
-    <Index ID="96612" Value="8"/>
-    <Index ID="96613" Value="9"/>
-    <Index ID="96614" Value="10"/>
-    <Index ID="96615" Value="11"/>
-    <Index ID="96616" Value="12"/>
-    <Index ID="96617" Value="13"/>
-    <Index ID="96618" Value="14"/>
-    <Index ID="96619" Value="15"/>
-    <Index ID="96620" Value="16"/>
-    <Index ID="96621" Value="17"/>
-    <Index ID="96622" Value="18"/>
-    <Index ID="96623" Value="19"/>
-    <Index ID="96624" Value="20"/>
-    <Index ID="96625" Value="21"/>
-    <Index ID="96626" Value="22"/>
-    <Index ID="96627" Value="23"/>
-    <Index ID="96628" Value="24"/>
-    <Index ID="96629" Value="25"/>
-    <Index ID="96630" Value="26"/>
-    <Index ID="96631" Value="27"/>
-    <Index ID="96632" Value="28"/>
-    <Index ID="96633" Value="1"/>
-    <Index ID="96634" Value="29"/>
-    <Index ID="96635" Value="30"/>
+    <Index ID="96604" Value="0" />
+    <Index ID="96606" Value="2" />
+    <Index ID="96607" Value="3" />
+    <Index ID="96608" Value="4" />
+    <Index ID="96609" Value="5" />
+    <Index ID="96610" Value="6" />
+    <Index ID="96611" Value="7" />
+    <Index ID="96612" Value="8" />
+    <Index ID="96613" Value="9" />
+    <Index ID="96614" Value="10" />
+    <Index ID="96615" Value="11" />
+    <Index ID="96616" Value="12" />
+    <Index ID="96617" Value="13" />
+    <Index ID="96618" Value="14" />
+    <Index ID="96619" Value="15" />
+    <Index ID="96620" Value="16" />
+    <Index ID="96621" Value="17" />
+    <Index ID="96622" Value="18" />
+    <Index ID="96623" Value="19" />
+    <Index ID="96624" Value="20" />
+    <Index ID="96625" Value="21" />
+    <Index ID="96626" Value="22" />
+    <Index ID="96627" Value="23" />
+    <Index ID="96628" Value="24" />
+    <Index ID="96629" Value="25" />
+    <Index ID="96630" Value="26" />
+    <Index ID="96631" Value="27" />
+    <Index ID="96632" Value="28" />
+    <Index ID="96633" Value="1" />
+    <Index ID="96634" Value="29" />
+    <Index ID="96635" Value="30" />
   </IndexMap>
 </TextGroup>

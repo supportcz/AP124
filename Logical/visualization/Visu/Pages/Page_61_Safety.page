@@ -38,7 +38,6 @@
       <Property Name="Z-Order" Value="1"/>
       <TextGroup>
         <TextLayer LanguageId="en"/>
-        <TextLayer LanguageId="de"/>
         <TextLayer LanguageId="cs"/>
         <TextLayer LanguageId="fr"/>
         <IndexMap/>
@@ -94,39 +93,6 @@
           <Text ID="176312" Value="TEST"/>
           <Text ID="176314" Value="CLEAR DATA"/>
           <Text ID="176316" Value="RESET SafeLOGIC"/>
-        </TextLayer>
-        <TextLayer LanguageId="de">
-          <Text ID="175928" Value=""/>
-          <Text ID="175929" Value=""/>
-          <Text ID="175934" Value=""/>
-          <Text ID="175935" Value=""/>
-          <Text ID="175936" Value=""/>
-          <Text ID="175938" Value=""/>
-          <Text ID="175984" Value=""/>
-          <Text ID="175988" Value=""/>
-          <Text ID="176003" Value=""/>
-          <Text ID="176005" Value=""/>
-          <Text ID="176007" Value=""/>
-          <Text ID="176009" Value=""/>
-          <Text ID="176280" Value=""/>
-          <Text ID="176282" Value=""/>
-          <Text ID="176284" Value=""/>
-          <Text ID="176286" Value=""/>
-          <Text ID="176288" Value=""/>
-          <Text ID="176290" Value=""/>
-          <Text ID="176292" Value=""/>
-          <Text ID="176294" Value=""/>
-          <Text ID="176296" Value=""/>
-          <Text ID="176298" Value=""/>
-          <Text ID="176300" Value=""/>
-          <Text ID="176302" Value=""/>
-          <Text ID="176304" Value=""/>
-          <Text ID="176306" Value=""/>
-          <Text ID="176308" Value=""/>
-          <Text ID="176310" Value=""/>
-          <Text ID="176312" Value=""/>
-          <Text ID="176314" Value=""/>
-          <Text ID="176316" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="cs">
           <Text ID="175928" Value=""/>
