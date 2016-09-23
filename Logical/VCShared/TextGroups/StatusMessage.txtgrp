@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="StatusMessage">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="10"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="176810" Value=""/>
+    <Text ID="176811" Value=""/>
+    <Text ID="176812" Value=""/>
+    <Text ID="176813" Value=""/>
+    <Text ID="176815" Value=""/>
+    <Text ID="176816" Value=""/>
+    <Text ID="176817" Value=""/>
+    <Text ID="176818" Value=""/>
+    <Text ID="176819" Value=""/>
+    <Text ID="176820" Value=""/>
+    <Text ID="176821" Value=""/>
+    <Text ID="176822" Value=""/>
+    <Text ID="176823" Value=""/>
+    <Text ID="176824" Value=""/>
+    <Text ID="176825" Value=""/>
+    <Text ID="176826" Value=""/>
+    <Text ID="176827" Value=""/>
+    <Text ID="176828" Value=""/>
+    <Text ID="176829" Value=""/>
+    <Text ID="176830" Value=""/>
+    <Text ID="176831" Value=""/>
+    <Text ID="176832" Value=""/>
+    <Text ID="176833" Value=""/>
+    <Text ID="176834" Value=""/>
+    <Text ID="176835" Value=""/>
+    <Text ID="176836" Value=""/>
+    <Text ID="176837" Value=""/>
+    <Text ID="176838" Value=""/>
+    <Text ID="176839" Value=""/>
+    <Text ID="176840" Value=""/>
+    <Text ID="176841" Value=""/>
+    <Text ID="176842" Value=""/>
+    <Text ID="176843" Value=""/>
+    <Text ID="176844" Value=""/>
+    <Text ID="176846" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="176810" Value="Stisknuto nouzové zastavení 1"/>
+    <Text ID="176811" Value="Stisknuto nouzové zastavení 2"/>
+    <Text ID="176812" Value="Stisknuto nouzové zastavení 3"/>
+    <Text ID="176813" Value="Stisknuto nouzové zastavení 4"/>
+    <Text ID="176815" Value=""/>
+    <Text ID="176816" Value="Stisknuto nouzové zastavení 5"/>
+    <Text ID="176817" Value="Stisknuto nouzové zastavení robota"/>
+    <Text ID="176818" Value="Stisknuto nouzové zastavení ovinovačky"/>
+    <Text ID="176819" Value="Otevřeny dveře 1"/>
+    <Text ID="176820" Value="Otevřeny dveře 2"/>
+    <Text ID="176821" Value="Otevřeny dveře 3"/>
+    <Text ID="176822" Value="Vypnula optická závora P11"/>
+    <Text ID="176823" Value="Vypnula optická závora P15"/>
+    <Text ID="176824" Value="Vypnula optická závora P17"/>
+    <Text ID="176825" Value="Vypnuta paletizace"/>
+    <Text ID="176826" Value="Vypnut zásobník palet"/>
+    <Text ID="176827" Value="Vypnut výstup palet"/>
+    <Text ID="176828" Value="Zapínání paletizace"/>
+    <Text ID="176829" Value="Zapínání výstupu palet"/>
+    <Text ID="176830" Value="Paletizace připravena"/>
+    <Text ID="176831" Value="Zásobník palet připraven"/>
+    <Text ID="176832" Value="Výstup palet připraven"/>
+    <Text ID="176833" Value="Porucha paletizace"/>
+    <Text ID="176834" Value="Porucha zásobníku palet"/>
+    <Text ID="176835" Value="Porucha výstupu palet"/>
+    <Text ID="176836" Value="Automatický chod paletizace"/>
+    <Text ID="176837" Value="Automatický chod zásobníku palet"/>
+    <Text ID="176838" Value="Automatický chod výstupu palet"/>
+    <Text ID="176839" Value="Robot není připraven"/>
+    <Text ID="176840" Value="Robot není v home pozici"/>
+    <Text ID="176841" Value="Prázdný zásobník proložek"/>
+    <Text ID="176842" Value="Prázdný zásobník palet"/>
+    <Text ID="176843" Value="Ovinovací stroj není připraven"/>
+    <Text ID="176844" Value="Plný výstup palet"/>
+    <Text ID="176846" Value="Zapínání zásubníku palet"/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="176810" Value=""/>
+    <Text ID="176811" Value=""/>
+    <Text ID="176812" Value=""/>
+    <Text ID="176813" Value=""/>
+    <Text ID="176815" Value=""/>
+    <Text ID="176816" Value=""/>
+    <Text ID="176817" Value=""/>
+    <Text ID="176818" Value=""/>
+    <Text ID="176819" Value=""/>
+    <Text ID="176820" Value=""/>
+    <Text ID="176821" Value=""/>
+    <Text ID="176822" Value=""/>
+    <Text ID="176823" Value=""/>
+    <Text ID="176824" Value=""/>
+    <Text ID="176825" Value=""/>
+    <Text ID="176826" Value=""/>
+    <Text ID="176827" Value=""/>
+    <Text ID="176828" Value=""/>
+    <Text ID="176829" Value=""/>
+    <Text ID="176830" Value=""/>
+    <Text ID="176831" Value=""/>
+    <Text ID="176832" Value=""/>
+    <Text ID="176833" Value=""/>
+    <Text ID="176834" Value=""/>
+    <Text ID="176835" Value=""/>
+    <Text ID="176836" Value=""/>
+    <Text ID="176837" Value=""/>
+    <Text ID="176838" Value=""/>
+    <Text ID="176839" Value=""/>
+    <Text ID="176840" Value=""/>
+    <Text ID="176841" Value=""/>
+    <Text ID="176842" Value=""/>
+    <Text ID="176843" Value=""/>
+    <Text ID="176844" Value=""/>
+    <Text ID="176846" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="176810" Value="1"/>
+    <Index ID="176811" Value="2"/>
+    <Index ID="176812" Value="3"/>
+    <Index ID="176813" Value="4"/>
+    <Index ID="176815" Value="0"/>
+    <Index ID="176816" Value="5"/>
+    <Index ID="176817" Value="6"/>
+    <Index ID="176818" Value="7"/>
+    <Index ID="176819" Value="8"/>
+    <Index ID="176820" Value="9"/>
+    <Index ID="176821" Value="10"/>
+    <Index ID="176822" Value="11"/>
+    <Index ID="176823" Value="12"/>
+    <Index ID="176824" Value="13"/>
+    <Index ID="176825" Value="14"/>
+    <Index ID="176826" Value="15"/>
+    <Index ID="176827" Value="16"/>
+    <Index ID="176828" Value="17"/>
+    <Index ID="176829" Value="19"/>
+    <Index ID="176830" Value="20"/>
+    <Index ID="176831" Value="21"/>
+    <Index ID="176832" Value="22"/>
+    <Index ID="176833" Value="23"/>
+    <Index ID="176834" Value="24"/>
+    <Index ID="176835" Value="25"/>
+    <Index ID="176836" Value="26"/>
+    <Index ID="176837" Value="27"/>
+    <Index ID="176838" Value="28"/>
+    <Index ID="176839" Value="29"/>
+    <Index ID="176840" Value="30"/>
+    <Index ID="176841" Value="31"/>
+    <Index ID="176842" Value="32"/>
+    <Index ID="176843" Value="33"/>
+    <Index ID="176844" Value="34"/>
+    <Index ID="176846" Value="18"/>
+  </IndexMap>
+</TextGroup>
