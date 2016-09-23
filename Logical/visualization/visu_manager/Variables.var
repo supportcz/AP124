@@ -6,3 +6,9 @@ VAR
 	uiStatus : UINT;
 	ButtonColor_tmp : UINT;
 END_VAR
+VAR CONSTANT
+	ALARM_BLINK : UINT := 50;
+END_VAR
+VAR
+	puiIsInstalled : INT;
+END_VAR

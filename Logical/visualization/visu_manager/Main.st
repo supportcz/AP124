@@ -13,6 +13,7 @@ PROGRAM _CYCLIC
 	IF (  uiStatus = 0 ) THEN
 		VA_Srelease(1,uiHandle);
 		VA_GetAlarmCount(1,uiHandle,vaALS_CURRENT,ADR(uiAlarmCount));
+			
 	END_IF;
 	
 	(***************************************************************************)		
@@ -55,17 +56,17 @@ PROGRAM _CYCLIC
 	END_CASE;
 	
 	IF (ButtonColor <> 3) AND (uiAlarmCount > 0) THEN
-		gVisu.TON_0(IN := TRUE, PT := 100);
+		gVisu.TON_0(IN := TRUE, PT := ALARM_BLINK);
 		IF gVisu.TON_0.Q THEN
 			ButtonAlarmColor := NOT(ButtonAlarmColor);
-			gVisu.TON_0(IN := FALSE, PT := 100);
+			gVisu.TON_0(IN := FALSE, PT := ALARM_BLINK);
 		END_IF;
 	ELSIF (ButtonColor <> 3) AND (uiAlarmCount = 0) THEN
 		ButtonAlarmColor := 0;
-		gVisu.TON_0(IN := FALSE, PT := 100);
+		gVisu.TON_0(IN := FALSE, PT := ALARM_BLINK);
 	ELSE
 		ButtonAlarmColor := 1;
-		gVisu.TON_0(IN := FALSE, PT := 100);
+		gVisu.TON_0(IN := FALSE, PT := ALARM_BLINK);
 	END_IF;
  	
 END_PROGRAM
