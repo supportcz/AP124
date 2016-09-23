@@ -9,6 +9,4 @@ END_VAR
 VAR CONSTANT
 	ALARM_BLINK : UINT := 50;
 END_VAR
-VAR
-	LanguageLayout : INT;
-END_VAR
+
