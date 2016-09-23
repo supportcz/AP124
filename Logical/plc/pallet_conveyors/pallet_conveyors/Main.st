@@ -41,7 +41,11 @@ PROGRAM _CYCLIC
 			IF palletOnConveyorP13 AND NOT palletOnConveyorP14 THEN
 				cmdMovePalletP13P14 := TRUE;
 			END_IF
-				
+
+			IF palletOnConveyorP14 AND NOT palletOnConveyorP15 THEN
+				cmdMovePalletP14P15 := TRUE;
+			END_IF
+
 	END_CASE
 
 	
@@ -51,6 +55,7 @@ PROGRAM _CYCLIC
 	ConveyorP14P15Control; 
 	
 	alarmImage[5] := NOT lightCurtainP15;
+	alarmImage[8] := NOT lightCurtainP17;
 	
 	//detect if there is any alarm 
 	alarmInZoneConveyors := FALSE;

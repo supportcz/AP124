@@ -1,7 +1,7 @@
 
 ACTION ConveyorP13P14Control: 
 	
-	IF modeMagazine = modeMagazineNotReadyToStart THEN
+	IF modeConveyors = modeConveyorsNotReadyToStart THEN
 		stateConveyorP13P14 := stateConveyorStop;
 	END_IF
 	

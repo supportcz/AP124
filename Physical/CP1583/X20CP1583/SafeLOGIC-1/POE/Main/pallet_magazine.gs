@@ -47,7 +47,7 @@
 47	140	41	159	43	4	3	lightCurtainP11
 48	30	83	49	85	4	5	lightCurtainP11
 49	51	144	70	146	4	5	lightCurtainP11
-50	97	144	118	146	4	3	lightCurtainP11ns
+50	97	144	120	146	4	3	lightCurtainP11grey
 
 [FBS]
 9

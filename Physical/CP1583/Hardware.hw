@@ -156,6 +156,10 @@
     <Connection Connector="SS1" TargetModule="X20TB52h" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM33f" TargetConnector="SL1" />
     <Parameter ID="SafeModuleID" Value="7" />
+    <Parameter ID="DigitalOutput01" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput02" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput03" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput04" Value="viaSafeLOGIC" />
   </Module>
   <Module Name="Q52" Type="X20DOF322" Version="1.1.0.2">
     <Connection Connector="SS1" TargetModule="X20TB1F7" TargetConnector="SS" />

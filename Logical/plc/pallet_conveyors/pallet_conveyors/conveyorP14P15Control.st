@@ -1,7 +1,7 @@
 
 ACTION ConveyorP14P15Control: 
 	
-	IF modeMagazine = modeMagazineNotReadyToStart THEN
+	IF modeConveyors = modeConveyorsNotReadyToStart THEN
 		stateConveyorP14P15 := stateConveyorStop;
 	END_IF
 	
@@ -58,8 +58,8 @@ ACTION ConveyorP14P15Control:
 	acpI_P15();
 	
 	//detect pallet	
-	IF diPalletStopP14 THEN
-		palletOnConveyorP14 := TRUE;
+	IF diPalletStopP15 THEN
+		palletOnConveyorP15 := TRUE;
 	END_IF
 		
 	//edge alarms

@@ -1,6 +1,6 @@
 (*
-T: FUNCTION_BLOCK SF_ESPE_V1_00
-FW: YES	NO_VARIANT SF_ESPE_V1_00 SKIP_NOTHING	
+T: FUNCTION_BLOCK SF_EmergencyStop_V1_00
+FW: YES	NO_VARIANT SF_EmergencyStop_V1_00 SKIP_NOTHING	
 CI#: 83
 QSL: 0
 QVE: 25
@@ -9,7 +9,7 @@ QPar: 9
 QFBI: 1
 *)
 
-InternalS_ESPE_In	1	VAR	@TYP:1
+InternalS_EStopIn	1	VAR	@TYP:1
 		     
 
 ;
@@ -57,7 +57,7 @@ Activate	8	VAR_INPUT	@TYP:1
 ;
 
 
-S_ESPE_In	9	VAR_INPUT	@TYP:43
+S_EStopIn	9	VAR_INPUT	@TYP:43
 		     
 
 ;
@@ -87,7 +87,7 @@ Ready	13	VAR_OUTPUT	@TYP:1
 ;
 
 
-S_ESPE_Out	14	VAR_OUTPUT	@TYP:43
+S_EStopOut	14	VAR_OUTPUT	@TYP:43
 		     
 
 ;
