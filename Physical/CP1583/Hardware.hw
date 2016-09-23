@@ -17,6 +17,7 @@
   </Module>
   <Module Name="8I74xxxxxxx.01P-1" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
     <Connection Connector="PLK1" TargetModule="X20CP1583" TargetConnector="IF3" NodeNumber="14" />
+    <Connection Connector="PLK2" TargetModule="8I74xxxxxxx.01P-1a" TargetConnector="PLK1" NodeNumber="14" />
     <Parameter ID="Supervision" Value="off" />
     <Parameter ID="packedETAD" Value="packed" />
     <Parameter ID="packedETI" Value="packed" />
@@ -34,6 +35,24 @@
     <Parameter ID="NSP" Value="1360" />
     <Parameter ID="BLC" Value="2" />
     <Parameter ID="BST" Value="0" />
+  </Module>
+  <Module Name="8I74xxxxxxx.01P-1a" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
+    <Connection Connector="PLK1" TargetModule="8I74xxxxxxx.01P-1" TargetConnector="PLK2" NodeNumber="15" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="packedETAD" Value="packed" />
+    <Parameter ID="packedETI" Value="packed" />
+    <Parameter ID="packedCMDD" Value="packed" />
+    <Parameter ID="packedCMI" Value="packed" />
+    <Parameter ID="LFRD_LFR_Filter" Value="LFR_RFR" />
+    <Parameter ID="ACC" Value="10" />
+    <Parameter ID="DEC" Value="10" />
+    <Parameter ID="HSP" Value="600" />
+    <Parameter ID="CTT" Value="0" />
+    <Parameter ID="NPR" Value="55" />
+    <Parameter ID="COS" Value="72" />
+    <Parameter ID="UNS" Value="400" />
+    <Parameter ID="NCR" Value="16" />
+    <Parameter ID="NSP" Value="1360" />
   </Module>
   <Module Name="I00" Type="X20AI2322" Version="1.0.0.2">
     <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
@@ -293,7 +312,6 @@
     </Connector>
     <Parameter ID="ConfigurationID" Value="AP124_CP1583" />
     <Parameter ID="UserPartitionSize" Value="200" />
-    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="VolatileGlobalPvSize" Value="262144" />
     <Parameter ID="TimerDeviceType" Value="EPLX2X" />
     <Parameter ID="TimerDevice" Value="X20CP1583.IF3" />
@@ -315,6 +333,8 @@
     <Parameter ID="Cyclic7Tolerance" Value="1000000" />
     <Parameter ID="Cyclic8Duration" Value="10000" />
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
+    <Parameter ID="Temp.ProjectDirectory" Value="C:\Work\Atrima\projekt\AP124\" />
+    <Parameter ID="Temp.ConfigurationName" Value="CP1583" />
   </Module>
   <Module Name="X20PS2100a" Type="X20PS2100" Version="1.1.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />

@@ -1,15 +1,18 @@
 VAR
 	acknowledgeImage : ARRAY[0..39] OF BOOL;
 	acpI_P14 : AcpInoSdc;
+	acpI_P15 : AcpInoSdc;
 	alarmImage : ARRAY[0..39] OF BOOL;
 	alarmInZoneConveyors : BOOL;
 	cmdAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
 	cmdManual : BOOL;
 	cmdMovePalletP12P13 : BOOL;
 	cmdMovePalletP13P14 : BOOL;
+	cmdMovePalletP14P15 : BOOL;
 	diPalletSlowDownP14 : BOOL;
 	diPalletStopP13 : BOOL;
 	diPalletStopP14 : BOOL;
+	diPalletStopP15 : BOOL;
 	doConveyorP12 : BOOL; (*starts conveyor P12*)
 	doConveyorP13 : BOOL;
 	i : INT;
@@ -17,6 +20,8 @@ VAR
 	readyToStart : BOOL;
 	stateConveyorP12P13 : StateConveyor;
 	stateConveyorP13P14 : StateConveyor;
+	stateConveyorP14P15 : StateConveyor;
 	TON_ConveyorP12P13 : TON;
 	TON_ConveyorP13P14 : TON;
+	TON_ConveyorP14P15 : TON;
 END_VAR

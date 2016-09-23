@@ -60,4 +60,7 @@ VAR_CONFIG
 	::pallet_con:diPalletSlowDownP14 AT %IX."I80".DigitalInput02;
 	::pallet_con:acpI_P14.LFRD_Output AT %QW."8I74xxxxxxx.01P-1".LFR_Output;
 	::pallet_con:lightCurtainP15 AT %IX."I18".BOOL006;
+	::pallet_con:acpI_P15.ETAD_Input AT %IW."8I74xxxxxxx.01P-1a".ETAD_Input;
+	::pallet_con:acpI_P15.CMDD_Output AT %QW."8I74xxxxxxx.01P-1a".CMDD_Output;
+	::pallet_con:acpI_P15.LFRD_Output AT %QW."8I74xxxxxxx.01P-1a".LFR_Output;
 END_VAR
