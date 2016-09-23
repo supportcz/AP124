@@ -24,8 +24,8 @@
   <Property Name="KeyRepeatDelay" Value="300"/>
   <Property Name="KeyRepeatRate" Value="50"/>
   <Property Name="LEDMatrix" Value="None"/>
-  <Property Name="LanguageChangeDatapoint" Value="None"/>
-  <Property Name="LanguageCurrentDatapoint" Value="None"/>
+  <Property Name="LanguageChangeDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.ChangeLanguage]"/>
+  <Property Name="LanguageCurrentDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.CurrentLanguage]"/>
   <Property Name="LifeSignDatapoint" Value="None"/>
   <Property Name="ManualStart" Value="False"/>
   <Property Name="PageChangeDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.ChangePage]"/>
@@ -367,6 +367,8 @@
     <Source File="Bitmaps\button_global_area_pressed.bminfo"/>
     <Source File="Bitmaps\button_default_pressed.bminfo"/>
     <Source File="Bitmaps\button_global_area.bminfo"/>
+    <Source File="Bitmaps\DropDown_Arrow.bminfo"/>
+    <Source File="Bitmaps\uk.bminfo"/>
     <Source File="BitmapGroups\MpAlarmAcknowledgeState.bmgrp"/>
     <Source File="BitmapGroups\MpPads.bmgrp"/>
     <Source File="BitmapGroups\MpUserIcons.bmgrp"/>

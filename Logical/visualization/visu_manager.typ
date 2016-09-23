@@ -4,6 +4,8 @@ TYPE
 		ChangePage : UINT;
 		TON_0 : TON_10ms;
 		CurrentPage : UINT;
+		ChangeLanguage : UINT;
+		CurrentLanguage : UINT;
 	END_STRUCT;
 	PageControl_enum : 
 		(

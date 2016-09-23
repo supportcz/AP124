@@ -13,6 +13,7 @@ PROGRAM _CYCLIC
 	IF (  uiStatus = 0 ) THEN
 		VA_Srelease(1,uiHandle);
 		VA_GetAlarmCount(1,uiHandle,vaALS_CURRENT,ADR(uiAlarmCount));
+			
 	END_IF;
 	
 	(***************************************************************************)		

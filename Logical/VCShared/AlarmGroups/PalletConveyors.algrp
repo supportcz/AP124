@@ -92,6 +92,30 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="6">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="True"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="7">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="True"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -113,6 +137,8 @@
       <Text ID="331" Value="Stop sensor on conveyor P14 not reached"/>
       <Text ID="337" Value="Slow-down sensor on conveyor P14 not reached"/>
       <Text ID="400" Value="Light Curtain P15"/>
+      <Text ID="414" Value="Conveyor P15 is already full"/>
+      <Text ID="431" Value="Stop sensor on conveyor P15 not reached"/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="de">
@@ -122,6 +148,8 @@
       <Text ID="331" Value=""/>
       <Text ID="337" Value=""/>
       <Text ID="400" Value=""/>
+      <Text ID="414" Value=""/>
+      <Text ID="431" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -131,6 +159,8 @@
       <Text ID="331" Value=""/>
       <Text ID="337" Value=""/>
       <Text ID="400" Value=""/>
+      <Text ID="414" Value=""/>
+      <Text ID="431" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -140,6 +170,8 @@
       <Text ID="331" Value=""/>
       <Text ID="337" Value=""/>
       <Text ID="400" Value=""/>
+      <Text ID="414" Value=""/>
+      <Text ID="431" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -149,6 +181,8 @@
       <Index ID="331" Value="2"/>
       <Index ID="337" Value="4"/>
       <Index ID="400" Value="5"/>
+      <Index ID="414" Value="6"/>
+      <Index ID="431" Value="7"/>
       <Index ID="312" Value="Group"/>
     </IndexMap>
   </TextGroup>
