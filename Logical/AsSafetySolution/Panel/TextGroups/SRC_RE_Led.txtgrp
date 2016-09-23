@@ -1,67 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?AutomationStudio Version="4.2.5.388"?>
 <TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="SRC_RE_Led">
-  <Property Name="Description" Value="Texts for RE LED"/>
-  <Property Name="Index" Value="3"/>
-  <TextSnippets/>
+  <Property Name="Description" Value="Texts for RE LED" />
+  <Property Name="Index" Value="3" />
+  <TextSnippets />
   <TextLayer LanguageId="en">
-    <Text ID="95577" Value="Offline"/>
-    <Text ID="95578" Value="No Application"/>
-    <Text ID="95579" Value="Loading"/>
-    <Text ID="95580" Value="Stop [Safe]"/>
-    <Text ID="95581" Value="Run [Safe]"/>
-    <Text ID="95582" Value="Halt [Debug]"/>
-    <Text ID="95583" Value="Stop [Debug]"/>
-    <Text ID="95584" Value="Run [Debug]"/>
-    <Text ID="95585" Value="No Execution"/>
-    <Text ID="95596" Value="Invalid"/>
+    <Text ID="95577" Value="Offline" />
+    <Text ID="95578" Value="No Application" />
+    <Text ID="95579" Value="Loading" />
+    <Text ID="95580" Value="Stop [Safe]" />
+    <Text ID="95581" Value="Run [Safe]" />
+    <Text ID="95582" Value="Halt [Debug]" />
+    <Text ID="95583" Value="Stop [Debug]" />
+    <Text ID="95584" Value="Run [Debug]" />
+    <Text ID="95585" Value="No Execution" />
+    <Text ID="95596" Value="Invalid" />
   </TextLayer>
   <TextLayer LanguageId="de">
-    <Text ID="95577" Value=""/>
-    <Text ID="95578" Value=""/>
-    <Text ID="95579" Value=""/>
-    <Text ID="95580" Value=""/>
-    <Text ID="95581" Value=""/>
-    <Text ID="95582" Value=""/>
-    <Text ID="95583" Value=""/>
-    <Text ID="95584" Value=""/>
-    <Text ID="95585" Value=""/>
-    <Text ID="95596" Value=""/>
+    <Text ID="95577" Value="" />
+    <Text ID="95578" Value="" />
+    <Text ID="95579" Value="" />
+    <Text ID="95580" Value="" />
+    <Text ID="95581" Value="" />
+    <Text ID="95582" Value="" />
+    <Text ID="95583" Value="" />
+    <Text ID="95584" Value="" />
+    <Text ID="95585" Value="" />
+    <Text ID="95596" Value="" />
   </TextLayer>
   <TextLayer LanguageId="cs">
-    <Text ID="95577" Value=""/>
-    <Text ID="95578" Value=""/>
-    <Text ID="95579" Value=""/>
-    <Text ID="95580" Value=""/>
-    <Text ID="95581" Value=""/>
-    <Text ID="95582" Value=""/>
-    <Text ID="95583" Value=""/>
-    <Text ID="95584" Value=""/>
-    <Text ID="95585" Value=""/>
-    <Text ID="95596" Value=""/>
+    <Text ID="95577" Value="" />
+    <Text ID="95578" Value="" />
+    <Text ID="95579" Value="" />
+    <Text ID="95580" Value="" />
+    <Text ID="95581" Value="" />
+    <Text ID="95582" Value="" />
+    <Text ID="95583" Value="" />
+    <Text ID="95584" Value="" />
+    <Text ID="95585" Value="" />
+    <Text ID="95596" Value="" />
   </TextLayer>
   <TextLayer LanguageId="fr">
-    <Text ID="95577" Value=""/>
-    <Text ID="95578" Value=""/>
-    <Text ID="95579" Value=""/>
-    <Text ID="95580" Value=""/>
-    <Text ID="95581" Value=""/>
-    <Text ID="95582" Value=""/>
-    <Text ID="95583" Value=""/>
-    <Text ID="95584" Value=""/>
-    <Text ID="95585" Value=""/>
-    <Text ID="95596" Value=""/>
+    <Text ID="95577" Value="" />
+    <Text ID="95578" Value="" />
+    <Text ID="95579" Value="" />
+    <Text ID="95580" Value="" />
+    <Text ID="95581" Value="" />
+    <Text ID="95582" Value="" />
+    <Text ID="95583" Value="" />
+    <Text ID="95584" Value="" />
+    <Text ID="95585" Value="" />
+    <Text ID="95596" Value="" />
   </TextLayer>
   <IndexMap>
-    <Index ID="95577" Value="255"/>
-    <Index ID="95578" Value="25"/>
-    <Index ID="95579" Value="51"/>
-    <Index ID="95580" Value="85"/>
-    <Index ID="95581" Value="102"/>
-    <Index ID="95582" Value="153"/>
-    <Index ID="95583" Value="170"/>
-    <Index ID="95584" Value="204"/>
-    <Index ID="95585" Value="240"/>
-    <Index ID="95596" Value="0"/>
+    <Index ID="95577" Value="255" />
+    <Index ID="95578" Value="25" />
+    <Index ID="95579" Value="51" />
+    <Index ID="95580" Value="85" />
+    <Index ID="95581" Value="102" />
+    <Index ID="95582" Value="153" />
+    <Index ID="95583" Value="170" />
+    <Index ID="95584" Value="204" />
+    <Index ID="95585" Value="240" />
+    <Index ID="95596" Value="0" />
   </IndexMap>
 </TextGroup>

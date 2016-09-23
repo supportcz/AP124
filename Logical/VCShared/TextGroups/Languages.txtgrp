@@ -9,11 +9,6 @@
     <Text ID="109760" Value="English"/>
     <Text ID="175392" Value="Czech"/>
   </TextLayer>
-  <TextLayer LanguageId="de">
-    <Text ID="109759" Value=""/>
-    <Text ID="109760" Value=""/>
-    <Text ID="175392" Value=""/>
-  </TextLayer>
   <TextLayer LanguageId="cs">
     <Text ID="109759" Value="French"/>
     <Text ID="109760" Value="English"/>
@@ -25,8 +20,8 @@
     <Text ID="175392" Value=""/>
   </TextLayer>
   <IndexMap>
-    <Index ID="109759" Value="1"/>
+    <Index ID="109759" Value="2"/>
     <Index ID="109760" Value="0"/>
-    <Index ID="175392" Value="2"/>
+    <Index ID="175392" Value="1"/>
   </IndexMap>
 </TextGroup>

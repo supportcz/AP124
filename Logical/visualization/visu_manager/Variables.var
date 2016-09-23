@@ -10,5 +10,5 @@ VAR CONSTANT
 	ALARM_BLINK : UINT := 50;
 END_VAR
 VAR
-	puiIsInstalled : INT;
+	LanguageLayout : INT;
 END_VAR

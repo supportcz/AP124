@@ -1,32 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?AutomationStudio Version="4.2.5.388"?>
 <TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="SRC_DataCompareStatus">
-  <Property Name="Description" Value="Texts for data compare information"/>
-  <Property Name="Index" Value="11"/>
-  <TextSnippets/>
+  <Property Name="Description" Value="Texts for data compare information" />
+  <Property Name="Index" Value="11" />
+  <TextSnippets />
   <TextLayer LanguageId="en">
-    <Text ID="97887" Value="no message"/>
-    <Text ID="97888" Value="Data can be unlocked, SafeLOGIC will reboot afterwards."/>
-    <Text ID="97889" Value="Data compare or acknowledge compare failed, SafeLOGIC will automatically reboot."/>
+    <Text ID="97887" Value="no message" />
+    <Text ID="97888" Value="Data can be unlocked, SafeLOGIC will reboot afterwards." />
+    <Text ID="97889" Value="Data compare or acknowledge compare failed, SafeLOGIC will automatically reboot." />
   </TextLayer>
   <TextLayer LanguageId="de">
-    <Text ID="97887" Value=""/>
-    <Text ID="97888" Value=""/>
-    <Text ID="97889" Value=""/>
+    <Text ID="97887" Value="" />
+    <Text ID="97888" Value="" />
+    <Text ID="97889" Value="" />
   </TextLayer>
   <TextLayer LanguageId="cs">
-    <Text ID="97887" Value=""/>
-    <Text ID="97888" Value=""/>
-    <Text ID="97889" Value=""/>
+    <Text ID="97887" Value="" />
+    <Text ID="97888" Value="" />
+    <Text ID="97889" Value="" />
   </TextLayer>
   <TextLayer LanguageId="fr">
-    <Text ID="97887" Value=""/>
-    <Text ID="97888" Value=""/>
-    <Text ID="97889" Value=""/>
+    <Text ID="97887" Value="" />
+    <Text ID="97888" Value="" />
+    <Text ID="97889" Value="" />
   </TextLayer>
   <IndexMap>
-    <Index ID="97887" Value="0"/>
-    <Index ID="97888" Value="1"/>
-    <Index ID="97889" Value="2"/>
+    <Index ID="97887" Value="0" />
+    <Index ID="97888" Value="1" />
+    <Index ID="97889" Value="2" />
   </IndexMap>
 </TextGroup>
