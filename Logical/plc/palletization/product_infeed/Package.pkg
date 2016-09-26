@@ -2,7 +2,6 @@
 <?AutomationStudio Version=4.2.5.388?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File">product_infeed.var</Object>
     <Object Type="Program" Language="IEC" Description="product infeed control">product_infeed</Object>
   </Objects>
 </Package>

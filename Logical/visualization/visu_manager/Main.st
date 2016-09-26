@@ -17,9 +17,16 @@ PROGRAM _CYCLIC
 	IF (  uiStatus = 0 ) THEN
 		VA_Srelease(1,uiHandle);
 		//VA_GetAlarmCount(1,uiHandle,vaALS_CURRENT,ADR(uiAlarmCount));
-		VA_GetActiveAlarmCount(1,uiHandle,ADR(uiAlarmCount));
-			
+		//VA_GetActiveAlarmCount(1,uiHandle,ADR(uiAlarmCount));
+		
+
 	END_IF;
+	
+	IF alarmCommon OR alarmInZoneMagazine OR alarmInZonePalletization THEN
+		alarmPresent := TRUE;
+	ELSE
+		alarmPresent := FALSE;
+	END_IF
 	
 	(***************************************************************************)
 	(* 								Page Control						  	   *)
@@ -59,13 +66,13 @@ PROGRAM _CYCLIC
 		Idle:
 	END_CASE;
 	
-	IF (ButtonColor <> 3) AND (uiAlarmCount > 0) THEN
+	IF (ButtonColor <> 3) AND alarmPresent THEN
 		gVisu.TON_0(IN := TRUE, PT := ALARM_BLINK);
 		IF gVisu.TON_0.Q THEN
 			ButtonAlarmColor := NOT(ButtonAlarmColor);
 			gVisu.TON_0(IN := FALSE, PT := ALARM_BLINK);
 		END_IF;
-	ELSIF (ButtonColor <> 3) AND (uiAlarmCount = 0) THEN
+	ELSIF (ButtonColor <> 3) AND NOT alarmPresent THEN
 		ButtonAlarmColor := 0;
 		gVisu.TON_0(IN := FALSE, PT := ALARM_BLINK);
 	ELSE

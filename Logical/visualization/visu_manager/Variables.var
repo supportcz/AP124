@@ -2,11 +2,10 @@ VAR
 	ButtonColor : UINT;
 	ButtonAlarmColor : BOOL;
 	uiHandle : UDINT;
-	uiAlarmCount : INT;
+	alarmPresent : BOOL;
 	uiStatus : UINT;
 	ButtonColor_tmp : UINT;
 END_VAR
 VAR CONSTANT
 	ALARM_BLINK : UINT := 50;
 END_VAR
-

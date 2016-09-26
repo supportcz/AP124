@@ -1,10 +1,15 @@
 
 ACTION ConveyorP14P15Control: 
 	
-	IF modeConveyors = modeConveyorsNotReadyToStart THEN
+	IF modePalletization = modePalletizationNotReadyToStart THEN
 		stateConveyorP14P15 := stateConveyorStop;
 	END_IF
 	
+	//detect pallet	
+	IF diPalletStopP15 THEN
+		palletOnConveyorP15 := TRUE;
+	END_IF
+
 	CASE stateConveyorP14P15 OF
 		
 		stateConveyorStop:
@@ -21,8 +26,8 @@ ACTION ConveyorP14P15Control:
 		stateConveyorWait:
 		
 			IF cmdMovePalletP14P15 THEN
-				IF palletOnConveyorP15 THEN
-					alarmImage[6] := TRUE;
+				IF palletOnConveyorP15 AND NOT diReset THEN
+					alarmImagePalletization[6] := TRUE;
 					stateConveyorP14P15 := stateConveyorStop;
 				ELSE
 					TON_ConveyorP14P15(IN := FALSE);
@@ -40,15 +45,15 @@ ACTION ConveyorP14P15Control:
 			END_IF	
 				
 			//sensor reached?
-			IF diPalletStopP15 THEN
+			IF palletOnConveyorP15 AND NOT diReset THEN
 				palletOnConveyorP14 := FALSE;
 				stateConveyorP14P15 := stateConveyorStop;
 			END_IF	
 			
 			//timeout?
 			TON_ConveyorP14P15(IN := TRUE, PT := T#12s);
-			IF TON_ConveyorP14P15.Q THEN
-				alarmImage[7] := TRUE;
+			IF TON_ConveyorP14P15.Q AND NOT diReset THEN
+				alarmImagePalletization[7] := TRUE;
 				stateConveyorP14P15 := stateConveyorStop;
 			END_IF
 		
@@ -57,17 +62,12 @@ ACTION ConveyorP14P15Control:
 	//control of ACOPOSinverter P15
 	acpI_P15();
 	
-	//detect pallet	
-	IF diPalletStopP15 THEN
-		palletOnConveyorP15 := TRUE;
+
+	IF acknowledgeImagePalletization[6] THEN
+		alarmImagePalletization[6] := FALSE;
 	END_IF
-		
-	//edge alarms
-	IF acknowledgeImage[6] THEN
-		alarmImage[6] := FALSE;
-	END_IF
-	IF acknowledgeImage[7] THEN
-		alarmImage[7] := FALSE;
+	IF acknowledgeImagePalletization[7] THEN
+		alarmImagePalletization[7] := FALSE;
 	END_IF
 
 END_ACTION

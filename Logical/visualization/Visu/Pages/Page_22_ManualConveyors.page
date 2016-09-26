@@ -271,7 +271,7 @@
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
             <KeyAction ClassId="0x0000016B">
-              <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.conveyorsStatusDatapoint]"/>
+              <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
@@ -293,7 +293,7 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="0"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.pallet_conveyors.palletOnConveyorP13]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.palletOnConveyorP13]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -302,7 +302,7 @@
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
             <KeyAction ClassId="0x0000016B">
-              <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.conveyorsStatusDatapoint]"/>
+              <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
@@ -324,7 +324,7 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="0"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.pallet_conveyors.palletOnConveyorP14]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.palletOnConveyorP14]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -348,7 +348,7 @@
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
             <KeyAction ClassId="0x0000016B">
-              <Property Name="CompletionDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.conveyorsStatusDatapoint]"/>
+              <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
@@ -370,7 +370,7 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="0"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.pallet_conveyors.palletOnConveyorP15]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.palletOnConveyorP15]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

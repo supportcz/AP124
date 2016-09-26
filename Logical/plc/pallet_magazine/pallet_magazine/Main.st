@@ -21,11 +21,12 @@ PROGRAM _CYCLIC
 			IF readyToStart THEN
 				modeMagazine := modeMagazineManual;
 			END_IF
+			cmdManual := FALSE;
+			cmdAuto := FALSE;
 		
 		modeMagazineManual:
 
-			IF NOT alarmInZoneMagazine AND (cmdAuto OR TP_0.Q) THEN 
-				cmdAuto := FALSE;
+			IF NOT alarmInZoneMagazine AND (cmdAuto OR TP_Start.Q) THEN 
 				modeMagazine := modeMagazineAuto;
 				stateAuto := stateAutoUndefined;
 				magazineEmpty := FALSE;
@@ -33,10 +34,11 @@ PROGRAM _CYCLIC
 			cmdManual := FALSE;
 
 		modeMagazineAuto:
-		
+			
 			IF alarmInZoneMagazine OR cmdManual THEN
 				modeMagazine := modeMagazineManual;
 			END_IF
+			cmdAuto := FALSE;
 				
 			CASE stateAuto OF
 				
@@ -150,28 +152,15 @@ PROGRAM _CYCLIC
 	MTBasicsPWM_0(Enable := 1, Period := 1);
 	doLedP11 := MTBasicsPWM_0.Out;
 
-	TP_0(IN := diActivateMagazineSafetyCircuits, PT := T#1s);
+//	IF diActivateMagazineSafetyCircuits  AND modePalletization = modePalletizationAuto THEN
+//		cmdAuto := TRUE;
+//	END_IF
 	
-	statusMessageMagazine;
-	
-	//detect if there is any alarm 
-	alarmInZoneMagazine := FALSE;
-	FOR i:=0 TO 39 DO
-		IF alarmImage[i] OR acknowledgeImage[i] THEN
-			alarmInZoneMagazine := TRUE;
-		END_IF
-	END_FOR
-	
-	(* error management *)
-	IF diReset THEN
-		FOR i:= 0 TO 39 DO
-			acknowledgeImage[i] := 0;
-		END_FOR
-	END_IF
+	TP_Start(IN := diActivateMagazineSafetyCircuits AND modePalletization = modePalletizationAuto, PT := T#1s);
 
-	alarmImage[1] := NOT lightCurtainP11;
-	alarmImage[6] := NOT diMotorProtectionP11;
-	alarmImage[12] := NOT diEStop5;
+	alarmImageMagazine[1] := NOT lightCurtainP11;
+	alarmImageMagazine[6] := NOT diMotorProtectionP11;
+	alarmImageMagazine[12] := NOT diEStop5;
 
 
 	

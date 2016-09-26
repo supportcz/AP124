@@ -8,29 +8,32 @@ PROGRAM _CYCLIC
 	readyToStart := NOT diPalletizationEDM;
 	
 	IF NOT readyToStart THEN
-		modeConveyors := modeConveyorsNotReadyToStart; 
+		modePalletization := modePalletizationNotReadyToStart; 
 	END_IF
 
-	CASE modeConveyors OF
+	CASE modePalletization OF
 		
-		modeConveyorsNotReadyToStart: //the automat is not ready to start
+		modePalletizationNotReadyToStart: //the automat is not ready to start
 			
 			IF readyToStart THEN
-				modeConveyors := modeConveyorsManual;
+				modePalletization := modePalletizationManual;
 			END_IF
 		
-		modeConveyorsManual:
+			cmdManual := FALSE;
+			cmdAuto := FALSE;
 
-			IF NOT alarmInZoneConveyors AND cmdAuto THEN
-				cmdAuto := FALSE;
-				modeConveyors := modeConveyorsAuto;
+		modePalletizationManual:
+
+			IF NOT alarmInZonePalletization AND cmdAuto THEN
+				modePalletization := modePalletizationAuto;
 			END_IF
 			cmdManual := FALSE;
 
-		modeConveyorsAuto:
+		modePalletizationAuto:
 		
-			IF alarmInZoneConveyors OR cmdManual THEN 
-				modeConveyors := modeConveyorsManual;
+			cmdAuto := FALSE;
+			IF alarmInZonePalletization OR cmdManual THEN 
+				modePalletization := modePalletizationManual;
 			END_IF
 		
 			IF palletOnConveyorP12 AND NOT palletOnConveyorP13 THEN
@@ -54,17 +57,8 @@ PROGRAM _CYCLIC
 	ConveyorP13P14Control; 
 	ConveyorP14P15Control; 
 
-	statusMessagePalletization;
+	alarmImagePalletization[5] := NOT lightCurtainP15;
+	alarmImagePalletization[8] := NOT lightCurtainP17;
 	
-	alarmImage[5] := NOT lightCurtainP15;
-	alarmImage[8] := NOT lightCurtainP17;
-	
-	//detect if there is any alarm 
-	alarmInZoneConveyors := FALSE;
-	FOR i:=0 TO 39 DO
-		IF alarmImage[i] OR acknowledgeImage[i] THEN
-			alarmInZoneConveyors := TRUE;
-		END_IF
-	END_FOR
 	 
 END_PROGRAM

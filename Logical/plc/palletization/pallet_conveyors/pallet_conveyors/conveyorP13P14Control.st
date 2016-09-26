@@ -1,8 +1,13 @@
 
 ACTION ConveyorP13P14Control: 
 	
-	IF modeConveyors = modeConveyorsNotReadyToStart THEN
+	IF modePalletization = modePalletizationNotReadyToStart THEN
 		stateConveyorP13P14 := stateConveyorStop;
+	END_IF
+	
+	//detect pallet	
+	IF diPalletStopP14 THEN
+		palletOnConveyorP14 := TRUE;
 	END_IF
 	
 	CASE stateConveyorP13P14 OF
@@ -19,8 +24,8 @@ ACTION ConveyorP13P14Control:
 		stateConveyorWait:
 		
 			IF cmdMovePalletP13P14 THEN
-				IF palletOnConveyorP14 THEN
-					alarmImage[3] := TRUE;
+				IF palletOnConveyorP14 AND NOT diReset THEN
+					alarmImagePalletization[3] := TRUE;
 					stateConveyorP12P13 := stateConveyorStop;
 				ELSE
 					TON_ConveyorP13P14(IN := FALSE);
@@ -46,8 +51,8 @@ ACTION ConveyorP13P14Control:
 			
 			//timeout?
 			TON_ConveyorP13P14(IN := TRUE, PT := T#12s);
-			IF TON_ConveyorP13P14.Q THEN
-				alarmImage[4] := TRUE;
+			IF TON_ConveyorP13P14.Q AND NOT diReset THEN
+				alarmImagePalletization[4] := TRUE;
 				stateConveyorP13P14 := stateConveyorStop;
 			END_IF
 		
@@ -59,35 +64,31 @@ ACTION ConveyorP13P14Control:
 				stateConveyorP13P14 := stateConveyorStop;
 			END_IF	
 			
-			IF diPalletStopP14 THEN
+			IF palletOnConveyorP14 AND NOT diReset THEN
 				stateConveyorP13P14 := stateConveyorStop;
 			END_IF
 		
 			//timeout?
 			TON_ConveyorP13P14(IN := TRUE, PT := T#6s);
-			IF TON_ConveyorP13P14.Q THEN
-				alarmImage[2] := TRUE;
+			IF TON_ConveyorP13P14.Q AND NOT diReset THEN
+				alarmImagePalletization[2] := TRUE;
 				stateConveyorP13P14 := stateConveyorStop;
 			END_IF
 	END_CASE
 	
 	//control of ACOPOSinverter P14
 	acpI_P14();
+
 	
-	//detect pallet	
-	IF diPalletStopP14 THEN
-		palletOnConveyorP14 := TRUE;
+	IF acknowledgeImagePalletization[2] THEN
+		alarmImagePalletization[2] := FALSE;
+	END_IF
+	IF acknowledgeImagePalletization[3] THEN
+		alarmImagePalletization[3] := FALSE;
 	END_IF
 		
-	//edge alarms
-	IF acknowledgeImage[2] THEN
-		alarmImage[2] := FALSE;
-	END_IF
-	IF acknowledgeImage[3] THEN
-		alarmImage[3] := FALSE;
-	END_IF
-	IF acknowledgeImage[4] THEN
-		alarmImage[4] := FALSE;
+	IF acknowledgeImagePalletization[4] THEN
+		alarmImagePalletization[4] := FALSE;
 	END_IF
 
 END_ACTION

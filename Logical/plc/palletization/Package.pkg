@@ -2,6 +2,7 @@
 <?AutomationStudio Version=4.2.5.388?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
+    <Object Type="File">palletization.typ</Object>
     <Object Type="File">palletization.var</Object>
     <Object Type="Package">product_infeed</Object>
     <Object Type="Package">robot_head</Object>

@@ -2,9 +2,9 @@
 T: RESOURCE CPU
 FW: NO
 CI#: 0
-QSL: 51
-QVE: 51
-QVPC: 51
+QSL: 52
+QVE: 52
+QVPC: 52
 QPar: 0
 QFBI: 0
 *)
@@ -311,6 +311,12 @@ doOutfeedContactor2	50	VAR_GLOBAL	@TYP:43
 @V 1 55 0
 doOutfeedContactor1	51	VAR_GLOBAL	@TYP:43
 %SQX 18.0		     
+
+;
+
+@V 1 56 0
+diOverrideP15	52	VAR_GLOBAL	@TYP:43
+%SIX 61.2		     
 
 ;
 

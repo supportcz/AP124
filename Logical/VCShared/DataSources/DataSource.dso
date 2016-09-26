@@ -34,14 +34,6 @@
             <Property Name="UserID" Value="None"/>
             <Property Name="VCType" Value="BOOL"/>
           </DataPoint>
-          <DataPoint Name="acknowledgeImage">
-            <Property Name="ConnectedBySharedResource" Value="True"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL[0..39]"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="BOOL[]"/>
-          </DataPoint>
           <DataPoint Name="cmdOpenArms">
             <Property Name="ConnectedBySharedResource" Value="False"/>
             <Property Name="ConnectingVisus" Value="visualization\Visu"/>
@@ -69,14 +61,6 @@
             <Property Name="UserID" Value="None"/>
             <Property Name="VCType" Value="BOOL"/>
           </DataPoint>
-          <DataPoint Name="alarmImage">
-            <Property Name="ConnectedBySharedResource" Value="True"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL[0..39]"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="BOOL[]"/>
-          </DataPoint>
           <DataPoint Name="cmdUp">
             <Property Name="ConnectedBySharedResource" Value="False"/>
             <Property Name="ConnectingVisus" Value="visualization\Visu"/>
@@ -96,6 +80,22 @@
           <Property Name="UserID" Value="None"/>
           <Property Name="VCType" Value="BOOL"/>
         </DataPoint>
+        <DataPoint Name="alarmImageMagazine">
+          <Property Name="ConnectedBySharedResource" Value="True"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="BOOL[0..39]"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="BOOL[]"/>
+        </DataPoint>
+        <DataPoint Name="acknowledgeImageMagazine">
+          <Property Name="ConnectedBySharedResource" Value="True"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="BOOL[0..39]"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="BOOL[]"/>
+        </DataPoint>
       </Folder>
       <Folder Name="alarm_management">
         <Property Name="Description" Value=""/>
@@ -111,15 +111,15 @@
             <Property Name="UserID" Value="None"/>
             <Property Name="VCType" Value="BOOL[]"/>
           </DataPoint>
-          <DataPoint Name="alarmImage">
-            <Property Name="ConnectedBySharedResource" Value="True"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL[0..39]"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="BOOL[]"/>
-          </DataPoint>
         </Folder>
+        <DataPoint Name="alarmImageCommon">
+          <Property Name="ConnectedBySharedResource" Value="True"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="BOOL[0..39]"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="BOOL[]"/>
+        </DataPoint>
       </Folder>
       <Folder Name="palletization">
         <Property Name="Description" Value=""/>
@@ -130,22 +130,6 @@
           <Folder Name="pallet_conveyors">
             <Property Name="Description" Value=""/>
             <Property Name="FolderType" Value="Program"/>
-            <DataPoint Name="alarmImage">
-              <Property Name="ConnectedBySharedResource" Value="True"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="BOOL[0..39]"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="BOOL[]"/>
-            </DataPoint>
-            <DataPoint Name="acknowledgeImage">
-              <Property Name="ConnectedBySharedResource" Value="True"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="BOOL[0..39]"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="BOOL[]"/>
-            </DataPoint>
             <DataPoint Name="cmdMovePalletP12P13">
               <Property Name="ConnectedBySharedResource" Value="False"/>
               <Property Name="ConnectingVisus" Value="visualization\Visu"/>
@@ -192,34 +176,63 @@
               <Property Name="VCType" Value="BOOL"/>
             </DataPoint>
           </Folder>
-          <DataPoint Name="palletOnConveyorP13">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="BOOL"/>
-          </DataPoint>
-          <DataPoint Name="palletOnConveyorP15">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="BOOL"/>
-          </DataPoint>
-          <DataPoint Name="palletOnConveyorP14">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="BOOL"/>
-          </DataPoint>
         </Folder>
+        <DataPoint Name="palletOnConveyorP13">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="BOOL"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="BOOL"/>
+        </DataPoint>
+        <DataPoint Name="palletOnConveyorP14">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="BOOL"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="BOOL"/>
+        </DataPoint>
+        <DataPoint Name="palletOnConveyorP15">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="BOOL"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="BOOL"/>
+        </DataPoint>
+        <DataPoint Name="acknowledgeImagePalletization">
+          <Property Name="ConnectedBySharedResource" Value="True"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="BOOL[0..39]"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="BOOL[]"/>
+        </DataPoint>
+        <DataPoint Name="alarmImagePalletization">
+          <Property Name="ConnectedBySharedResource" Value="True"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="BOOL[0..39]"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="BOOL[]"/>
+        </DataPoint>
+      </Folder>
+      <Folder Name="pallet_outfeed">
+        <Property Name="Description" Value=""/>
+        <Property Name="FolderType" Value="Package"/>
+        <DataPoint Name="statusMessageOutfeed">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="INT"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="INTEGER"/>
+        </DataPoint>
       </Folder>
     </Folder>
     <Folder Name="visualization">
@@ -300,7 +313,7 @@
           <Property Name="UserID" Value="None"/>
           <Property Name="VCType" Value="INTEGER"/>
         </DataPoint>
-        <DataPoint Name="conveyorsStatusDatapoint">
+        <DataPoint Name="hideP13">
           <Property Name="ConnectedBySharedResource" Value="False"/>
           <Property Name="ConnectingVisus" Value="visualization\Visu"/>
           <Property Name="Description" Value=""/>
@@ -309,11 +322,20 @@
           <Property Name="UserID" Value="None"/>
           <Property Name="VCType" Value="INTEGER"/>
         </DataPoint>
-        <DataPoint Name="hideP13">
+        <DataPoint Name="statusMessagePalletization">
           <Property Name="ConnectedBySharedResource" Value="False"/>
           <Property Name="ConnectingVisus" Value="visualization\Visu"/>
           <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="UINT"/>
+          <Property Name="PLCType" Value="INT"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="INTEGER"/>
+        </DataPoint>
+        <DataPoint Name="statusMessageMagazine">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="INT"/>
           <Property Name="UpdateTime" Value="Default"/>
           <Property Name="UserID" Value="None"/>
           <Property Name="VCType" Value="INTEGER"/>

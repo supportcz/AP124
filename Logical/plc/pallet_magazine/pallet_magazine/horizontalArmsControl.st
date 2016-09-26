@@ -33,9 +33,9 @@ ACTION HorizontalArmsControl:
 					TON_RightRequest(IN := FALSE);
 					stateArms := stateArmsOpening;	
 				END_IF	
-				alarmImage[0] := TRUE;
+				alarmImageMagazine[0] := TRUE;
 			ELSE
-				alarmImage[0] := FALSE;
+				alarmImageMagazine[0] := FALSE;
 			END_IF
 						
 		stateArmsOpening:
@@ -54,12 +54,12 @@ ACTION HorizontalArmsControl:
 			END_IF	
 			//timeout left side?
 			IF TON_LeftRequest.Q THEN
-				alarmImage[4] := TRUE;
+				alarmImageMagazine[4] := TRUE;
 				stateArms := stateArmsUndefined;
 			END_IF
 			//timeout right side?
 			IF TON_RightRequest.Q THEN
-				alarmImage[5] := TRUE;
+				alarmImageMagazine[5] := TRUE;
 				stateArms := stateArmsUndefined;
 			END_IF
 		
@@ -68,7 +68,7 @@ ACTION HorizontalArmsControl:
 			// command to close 
 			IF cmdCloseArms THEN
 				IF stateMagazine = stateUpperPosition THEN
-					alarmImage[16] := TRUE;
+					alarmImageMagazine[16] := TRUE;
 					stateArms := stateArmsUndefined;
 				ELSE	
 					cmdCloseArms := FALSE;
@@ -95,12 +95,12 @@ ACTION HorizontalArmsControl:
 			END_IF	
 			//timeout left side?
 			IF TON_LeftRequest.Q THEN
-				alarmImage[2] := TRUE;
+				alarmImageMagazine[2] := TRUE;
 				stateArms := stateArmsUndefined;
 			END_IF
 			//timeout right side?
 			IF TON_RightRequest.Q THEN
-				alarmImage[3] := TRUE;
+				alarmImageMagazine[3] := TRUE;
 				stateArms := stateArmsUndefined;
 			END_IF
 
@@ -115,36 +115,36 @@ ACTION HorizontalArmsControl:
 					TON_RightRequest(IN := FALSE);
 					stateArms := stateArmsOpening;	
 				ELSE	
-					alarmImage[15] := TRUE;
+					alarmImageMagazine[15] := TRUE;
 				END_IF
 			END_IF	
 			cmdCloseArms := FALSE;
 	END_CASE
 	
 //	IF stateArms = stateArmsUndefined THEN
-//		alarmImage[0] := TRUE;
+//		alarmImageMagazine[0] := TRUE;
 //	ELSE
-//		alarmImage[0] := FALSE;
+//		alarmImageMagazine[0] := FALSE;
 //	END_IF
 	
 	//edge alarms
-	IF acknowledgeImage[2] THEN
-		alarmImage[2] := FALSE;
+	IF acknowledgeImageMagazine[2] THEN
+		alarmImageMagazine[2] := FALSE;
 	END_IF
-	IF acknowledgeImage[3] THEN
-		alarmImage[3] := FALSE;
+	IF acknowledgeImageMagazine[3] THEN
+		alarmImageMagazine[3] := FALSE;
 	END_IF
-	IF acknowledgeImage[4] THEN
-		alarmImage[4] := FALSE;
+	IF acknowledgeImageMagazine[4] THEN
+		alarmImageMagazine[4] := FALSE;
 	END_IF
-	IF acknowledgeImage[5] THEN
-		alarmImage[5] := FALSE;
+	IF acknowledgeImageMagazine[5] THEN
+		alarmImageMagazine[5] := FALSE;
 	END_IF
-	IF acknowledgeImage[15] THEN
-		alarmImage[15] := FALSE;
+	IF acknowledgeImageMagazine[15] THEN
+		alarmImageMagazine[15] := FALSE;
 	END_IF
-	IF acknowledgeImage[16] THEN
-		alarmImage[16] := FALSE;
+	IF acknowledgeImageMagazine[16] THEN
+		alarmImageMagazine[16] := FALSE;
 	END_IF
 
 END_ACTION

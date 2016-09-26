@@ -9,8 +9,8 @@
     <Task Name="product_in" Source="plc.palletization.product_infeed.product_infeed.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="robot_head" Source="plc.palletization.robot_head.robot_head.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="robot_cont" Source="plc.palletization.robot_control.robot_control.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="wrapper" Source="plc.wrapper.wrapper.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="pallet_out" Source="plc.pallet_outfeed.pallet_outfeed.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="wrapper" Source="plc.pallet_outfeed.wrapper.wrapper.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="pallet_out" Source="plc.pallet_outfeed.pallet_outfeed.pallet_outfeed.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="alarm_mana" Source="plc.alarm_management.alarm_management.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="safety" Source="safety.safety.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
@@ -25,9 +25,6 @@
   <DataObjects>
     <DataObject Name="assl1" Source="" Memory="UserROM" Language="Binary" />
   </DataObjects>
-  <NcDataObjects>
-    <NcDataObject Name="acp10etxen" Source="acp10etxen.dob" Memory="UserROM" Language="Ett" />
-  </NcDataObjects>
   <VcDataObjects>
     <VcDataObject Name="Visu" Source="visualization.Visu.dob" Memory="UserROM" Language="Vc" WarningLevel="2" Compress="false" />
   </VcDataObjects>
@@ -105,9 +102,5 @@
     <LibraryObject Name="AsBrMath" Source="Libraries.AsBrMath.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="AsEPL" Source="Libraries.AsEPL.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="visapi" Source="Libraries.visapi.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="Acp10sdc" Source="Libraries.Acp10sdc.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="Acp10man" Source="Libraries.Acp10man.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="Acp10par" Source="Libraries.Acp10par.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="NcGlobal" Source="Libraries.NcGlobal.lby" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>

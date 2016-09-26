@@ -1,6 +1,4 @@
 VAR
-	acknowledgeImage : ARRAY[0..39] OF BOOL;
-	alarmImage : ARRAY[0..39] OF BOOL;
 	cmdAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
 	cmdCloseArms : BOOL; (*VISU:command to close the arms*)
 	cmdDown : BOOL; (*VISU: button to go with magazine down*)
@@ -27,9 +25,7 @@ VAR
 	doMagazineUp : BOOL; (*contactor to go up*)
 	doOpenArms : BOOL; (*valve to open the arms*)
 	doSafetyCurtainSupplyP11 : BOOL;
-	i : INT;
 	lightCurtainP11 : BOOL; (*status of light curtain P11*)
-	magazineEmpty : BOOL;
 	MTBasicsPWM_0 : MTBasicsPWM;
 	readyToStart : BOOL;
 	stateArms : StateArms; (*VISU:arms state*)
@@ -38,5 +34,5 @@ VAR
 	TON_LeftRequest : TON;
 	TON_RightRequest : TON;
 	TON_VerticalMovement : TON;
-	TP_0 : TP;
+	TP_Start : TP;
 END_VAR
