@@ -29,7 +29,12 @@ ACTION ConveyorP12P13Control:
 					TON_ConveyorP12P13(IN := FALSE);
 					stateConveyorP12P13 := stateConveyorMoving;
 				END_IF
-			END_IF
+			END_IF	
+			
+			IF palletOnConveyorP13 > palletOnConveyorP13old THEN
+				alarmImagePalletization[9] := TRUE;
+				stateConveyorP12P13 := stateConveyorStop;
+			END_IF				
 		
 		stateConveyorMoving:
 			
@@ -56,6 +61,8 @@ ACTION ConveyorP12P13Control:
 	END_CASE
 
 	
+	palletOnConveyorP13old := palletOnConveyorP13;
+	
 	//edge alarms
 	IF acknowledgeImagePalletization[0] THEN
 		alarmImagePalletization[0] := FALSE;
@@ -63,6 +70,8 @@ ACTION ConveyorP12P13Control:
 	IF acknowledgeImagePalletization[1] THEN
 		alarmImagePalletization[1] := FALSE;
 	END_IF	
-
+	IF acknowledgeImagePalletization[9] THEN
+		alarmImagePalletization[9] := FALSE;
+	END_IF	
 	
 END_ACTION

@@ -39,7 +39,6 @@ PROGRAM _CYCLIC
 			IF palletOnConveyorP12 AND NOT palletOnConveyorP13 THEN
 				cmdMovePalletP12P13 := TRUE;
 			END_IF
-				
 
 			IF palletOnConveyorP13 AND NOT palletOnConveyorP14 THEN
 				cmdMovePalletP13P14 := TRUE;
@@ -59,6 +58,6 @@ PROGRAM _CYCLIC
 
 	alarmImagePalletization[5] := NOT lightCurtainP15;
 	alarmImagePalletization[8] := NOT lightCurtainP17;
+
 	
-	 
 END_PROGRAM

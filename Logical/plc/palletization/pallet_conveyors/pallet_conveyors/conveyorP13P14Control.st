@@ -32,6 +32,11 @@ ACTION ConveyorP13P14Control:
 					stateConveyorP13P14 := stateConveyorMoving;
 				END_IF
 			END_IF
+						
+			IF palletOnConveyorP14 > palletOnConveyorP14old THEN
+				alarmImagePalletization[10] := TRUE;
+				stateConveyorP13P14 := stateConveyorStop;
+			END_IF	
 		
 		stateConveyorMoving:
 			
@@ -79,6 +84,7 @@ ACTION ConveyorP13P14Control:
 	//control of ACOPOSinverter P14
 	acpI_P14();
 
+	palletOnConveyorP14old := palletOnConveyorP14;
 	
 	IF acknowledgeImagePalletization[2] THEN
 		alarmImagePalletization[2] := FALSE;
@@ -90,5 +96,10 @@ ACTION ConveyorP13P14Control:
 	IF acknowledgeImagePalletization[4] THEN
 		alarmImagePalletization[4] := FALSE;
 	END_IF
+	
+	IF acknowledgeImagePalletization[10] THEN
+		alarmImagePalletization[10] := FALSE;
+	END_IF	
+	
 
 END_ACTION

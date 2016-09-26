@@ -21,4 +21,7 @@ VAR
 	TON_ConveyorP13P14 : TON;
 	TON_ConveyorP14P15 : TON;
 	lightCurtainP17 : BOOL;
+	palletOnConveyorP13old : BOOL;
+	palletOnConveyorP14old : BOOL;
+	palletOnConveyorP15old : BOOL;
 END_VAR

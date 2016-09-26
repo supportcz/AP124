@@ -128,6 +128,42 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="9">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="True"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="10">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="True"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="11">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="True"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -152,6 +188,9 @@
       <Text ID="414" Value="Conveyor P15 is already full"/>
       <Text ID="431" Value="Stop sensor on conveyor P15 not reached"/>
       <Text ID="613" Value="Light Curtain P17"/>
+      <Text ID="619" Value="Unexpected pallet on conveyor P13"/>
+      <Text ID="636" Value="Unexpected pallet on conveyor P14"/>
+      <Text ID="645" Value="Unexpected pallet on conveyor P15"/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -164,6 +203,9 @@
       <Text ID="414" Value=""/>
       <Text ID="431" Value=""/>
       <Text ID="613" Value=""/>
+      <Text ID="619" Value=""/>
+      <Text ID="636" Value=""/>
+      <Text ID="645" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -176,6 +218,9 @@
       <Text ID="414" Value=""/>
       <Text ID="431" Value=""/>
       <Text ID="613" Value=""/>
+      <Text ID="619" Value=""/>
+      <Text ID="636" Value=""/>
+      <Text ID="645" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -188,6 +233,9 @@
       <Index ID="414" Value="6"/>
       <Index ID="431" Value="7"/>
       <Index ID="613" Value="8"/>
+      <Index ID="619" Value="9"/>
+      <Index ID="636" Value="10"/>
+      <Index ID="645" Value="11"/>
       <Index ID="312" Value="Group"/>
     </IndexMap>
   </TextGroup>
