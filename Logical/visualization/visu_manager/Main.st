@@ -14,12 +14,15 @@ PROGRAM _CYCLIC
 		uiHandle := VA_Setup(1,'Visu');
 	END_IF	
 	uiStatus := VA_Saccess(1,uiHandle);
-	IF (  uiStatus = 0 ) THEN
-		VA_Srelease(1,uiHandle);
-		//VA_GetAlarmCount(1,uiHandle,vaALS_CURRENT,ADR(uiAlarmCount));
+	IF uiStatus = 0 THEN
+		uiStatus := VA_GetAlarmCount(1,uiHandle,vaALS_CURRENT,ADR(uiAlarmCount));
 		//VA_GetActiveAlarmCount(1,uiHandle,ADR(uiAlarmCount));
-		
-
+//		IF diReset THEN
+//			uiStatus := VA_QuitAlarms(1,uiHandle, 1);
+//			VA_QuitAlarms(1,uiHandle, 2);
+//			VA_QuitAlarms(1,uiHandle, 3);
+//		END_IF
+		VA_Srelease(1,uiHandle);
 	END_IF;
 	
 	IF alarmCommon OR alarmInZoneMagazine OR alarmInZonePalletization THEN

@@ -16,7 +16,7 @@
     <Parameter ID="PasswordService" Value="" />
   </Module>
   <Module Name="8I74xxxxxxx.01P-1" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
-    <Connection Connector="PLK1" TargetModule="X20CP1583" TargetConnector="IF3" NodeNumber="14" />
+    <Connection Connector="PLK1" TargetModule="8I74xxxxxxx.01P-1b" TargetConnector="PLK2" NodeNumber="14" />
     <Connection Connector="PLK2" TargetModule="8I74xxxxxxx.01P-1a" TargetConnector="PLK1" NodeNumber="14" />
     <Parameter ID="Supervision" Value="off" />
     <Parameter ID="packedETAD" Value="packed" />
@@ -54,9 +54,27 @@
     <Parameter ID="NCR" Value="16" />
     <Parameter ID="NSP" Value="1360" />
   </Module>
+  <Module Name="8I74xxxxxxx.01P-1b" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
+    <Connection Connector="PLK1" TargetModule="X20CP1583" TargetConnector="IF3" NodeNumber="12" />
+    <Connection Connector="PLK2" TargetModule="8I74xxxxxxx.01P-1" TargetConnector="PLK1" NodeNumber="12" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="packedETAD" Value="packed" />
+    <Parameter ID="packedETI" Value="packed" />
+    <Parameter ID="packedCMDD" Value="packed" />
+    <Parameter ID="packedCMI" Value="packed" />
+    <Parameter ID="ACC" Value="0" />
+    <Parameter ID="DEC" Value="0" />
+    <Parameter ID="NPR" Value="110" />
+    <Parameter ID="COS" Value="73" />
+    <Parameter ID="UNS" Value="400" />
+    <Parameter ID="NCR" Value="26" />
+    <Parameter ID="NSP" Value="1455" />
+    <Parameter ID="ADC" Value="0" />
+  </Module>
   <Module Name="I00" Type="X20AI2322" Version="1.0.0.2">
     <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM01" TargetConnector="SL1" />
+    <Parameter ID="ChannelType01" Value="4 to 20mA" />
   </Module>
   <Module Name="I01" Type="X20DIF371" Version="1.0.1.0">
     <Connection Connector="SS1" TargetModule="X20TB1F12" TargetConnector="SS" />

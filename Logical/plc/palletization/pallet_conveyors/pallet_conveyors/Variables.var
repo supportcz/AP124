@@ -24,4 +24,7 @@ VAR
 	palletOnConveyorP13old : BOOL;
 	palletOnConveyorP14old : BOOL;
 	palletOnConveyorP15old : BOOL;
+	diMotorProtectionP11 : BOOL;
+	diMotorProtectionP12 : BOOL;
+	diMotorProtectionP13 : BOOL;
 END_VAR

@@ -164,6 +164,30 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="12">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="13">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -191,6 +215,8 @@
       <Text ID="619" Value="Unexpected pallet on conveyor P13"/>
       <Text ID="636" Value="Unexpected pallet on conveyor P14"/>
       <Text ID="645" Value="Unexpected pallet on conveyor P15"/>
+      <Text ID="651" Value="Motor protection P12"/>
+      <Text ID="652" Value="Motor protection P13"/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -206,6 +232,8 @@
       <Text ID="619" Value=""/>
       <Text ID="636" Value=""/>
       <Text ID="645" Value=""/>
+      <Text ID="651" Value=""/>
+      <Text ID="652" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -221,6 +249,8 @@
       <Text ID="619" Value=""/>
       <Text ID="636" Value=""/>
       <Text ID="645" Value=""/>
+      <Text ID="651" Value=""/>
+      <Text ID="652" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -236,6 +266,8 @@
       <Index ID="619" Value="9"/>
       <Index ID="636" Value="10"/>
       <Index ID="645" Value="11"/>
+      <Index ID="651" Value="12"/>
+      <Index ID="652" Value="13"/>
       <Index ID="312" Value="Group"/>
     </IndexMap>
   </TextGroup>

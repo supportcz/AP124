@@ -19,7 +19,9 @@ ACTION ConveyorP13P14Control:
 			acpI_P14.switchOn := TRUE;
 			acpI_P14.speed := 0;
 			acpI_P14.reset := TRUE;
-			stateConveyorP13P14 := stateConveyorWait;
+			IF modePalletization <> modePalletizationNotReadyToStart THEN
+				stateConveyorP13P14 := stateConveyorWait;
+			END_IF
 		
 		stateConveyorWait:
 		
@@ -85,6 +87,8 @@ ACTION ConveyorP13P14Control:
 	acpI_P14();
 
 	palletOnConveyorP14old := palletOnConveyorP14;
+	
+	alarmImagePalletization[13] := NOT diMotorProtectionP13;
 	
 	IF acknowledgeImagePalletization[2] THEN
 		alarmImagePalletization[2] := FALSE;

@@ -48,11 +48,11 @@ PROGRAM _CYCLIC
 	
 		
 	//reset all errors
-	IF diReset THEN
-		FOR i:= 0 TO 39 DO
-			acknowledgeImageMagazine[i] := 0;
-			acknowledgeImage[i] := 0;
-		END_FOR
-	END_IF
+//	IF diReset THEN
+//		FOR i:= 0 TO 39 DO
+//			acknowledgeImageMagazine[i] := 0;
+//			acknowledgeImage[i] := 0;
+//		END_FOR
+//	END_IF
 	
 END_PROGRAM

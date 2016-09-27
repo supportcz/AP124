@@ -17,7 +17,9 @@ ACTION ConveyorP12P13Control:
 			cmdMovePalletP12P13 := FALSE;
 			doConveyorP12 := FALSE;
 			doConveyorP13 := FALSE;
-			stateConveyorP12P13 := stateConveyorWait;
+			IF modePalletization <> modePalletizationNotReadyToStart THEN
+				stateConveyorP12P13 := stateConveyorWait;
+			END_IF
 		
 		stateConveyorWait:
 		
@@ -60,8 +62,10 @@ ACTION ConveyorP12P13Control:
 		
 	END_CASE
 
-	
+
 	palletOnConveyorP13old := palletOnConveyorP13;
+	
+	alarmImagePalletization[12] := NOT diMotorProtectionP12;
 	
 	//edge alarms
 	IF acknowledgeImagePalletization[0] THEN

@@ -21,7 +21,9 @@ ACTION ConveyorP14P15Control:
 			acpI_P15.switchOn := TRUE;
 			acpI_P15.speed := 0;
 			acpI_P15.reset := TRUE;
-			stateConveyorP14P15 := stateConveyorWait;
+			IF modePalletization <> modePalletizationNotReadyToStart THEN
+				stateConveyorP14P15 := stateConveyorWait;
+			END_IF
 		
 		stateConveyorWait:
 		
