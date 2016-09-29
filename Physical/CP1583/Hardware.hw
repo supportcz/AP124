@@ -64,11 +64,17 @@
     <Parameter ID="packedCMI" Value="packed" />
     <Parameter ID="ACC" Value="0" />
     <Parameter ID="DEC" Value="0" />
+    <Parameter ID="FLU" Value="0" />
+    <Parameter ID="CTT" Value="0" />
     <Parameter ID="NPR" Value="110" />
     <Parameter ID="COS" Value="73" />
     <Parameter ID="UNS" Value="400" />
     <Parameter ID="NCR" Value="26" />
     <Parameter ID="NSP" Value="1455" />
+    <Parameter ID="RSA" Value="4824" />
+    <Parameter ID="LFA" Value="4327" />
+    <Parameter ID="IDA" Value="19" />
+    <Parameter ID="TRA" Value="153" />
     <Parameter ID="ADC" Value="0" />
   </Module>
   <Module Name="I00" Type="X20AI2322" Version="1.0.0.2">
@@ -355,6 +361,8 @@
     <Parameter ID="Cyclic7Tolerance" Value="1000000" />
     <Parameter ID="Cyclic8Duration" Value="10000" />
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
+    <Parameter ID="Temp.ProjectDirectory" Value="C:\Work\Atrima\projekt\AP124\" />
+    <Parameter ID="Temp.ConfigurationName" Value="CP1583" />
   </Module>
   <Module Name="X20PS2100a" Type="X20PS2100" Version="1.1.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />

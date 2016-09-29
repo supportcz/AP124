@@ -1,0 +1,7 @@
+VAR
+	acpI_P12 : AcpInoSdc;
+	FI_12 : FI;
+	statePusherDriveP12 : StatePusherDrive;
+	driveReady : BOOL;
+	aoPusherDriveP12 : INT;
+END_VAR

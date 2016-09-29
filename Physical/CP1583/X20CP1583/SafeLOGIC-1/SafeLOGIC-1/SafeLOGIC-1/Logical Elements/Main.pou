@@ -2812,7 +2812,7 @@ END_VAR
       </variable>
     </outputVariables>
   </block>
-  <block localId="159" height="24" width="16" typeName="OR_S">
+  <block localId="159" height="32" width="16" typeName="OR_S">
     <position x="60" y="204" />
     <addData>
       <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
@@ -2842,6 +2842,17 @@ END_VAR
           </data>
         </addData>
       </variable>
+      <variable formalParameter="IN3" negated="false" hidden="true">
+        <connectionPointIn>
+          <relPosition x="0" y="24" />
+          <connection refLocalId="166" />
+        </connectionPointIn>
+        <addData>
+          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+            <fp localId="165" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
+          </data>
+        </addData>
+      </variable>
     </inputVariables>
     <inOutVariables />
     <outputVariables>
@@ -2851,7 +2862,7 @@ END_VAR
         </connectionPointOut>
         <addData>
           <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
-            <fp localId="158" inState="0" outState="641" width="1" height="2" flagType="" dataType="ANY_SAFEBIT" />
+            <fp localId="158" inState="0" outState="643" width="1" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
       </variable>
@@ -2869,6 +2880,13 @@ END_VAR
     <expression>diOverrideP15</expression>
     <connectionPointOut>
       <relPosition x="34" y="2" />
+    </connectionPointOut>
+  </inVariable>
+  <inVariable localId="166" height="4" width="26">
+    <position x="30" y="226" />
+    <expression>SAFETRUE</expression>
+    <connectionPointOut>
+      <relPosition x="26" y="2" />
     </connectionPointOut>
   </inVariable>
 </FBD>

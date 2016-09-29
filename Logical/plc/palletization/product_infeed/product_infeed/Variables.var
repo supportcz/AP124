@@ -2,7 +2,4 @@ VAR
 	diDoor1opened : BOOL;
 	diOpenDoors1 : BOOL; (*button to open doors*)
 	diCloseDoors1 : BOOL; (*button to close doors*)
-	acpI_P12 : AcpInoSdc;
-	FI_12 : FI;
-	statePusherDriveP12 : StatePusherDrive;
 END_VAR

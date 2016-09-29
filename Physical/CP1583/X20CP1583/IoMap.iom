@@ -18,7 +18,7 @@ VAR_CONFIG
 	pallet_mag:diMagazineUpperHwEnd AT %IX."I01".DigitalInput10;
 	pallet_mag:diMagazineLooseChain AT %IX."I01".DigitalInput11;
 	::pallet_mag:diActivateMagazineSafetyCircuits AT %IX."I01".DigitalInput12;
-	diReset AT %IX."I08".DigitalInput03;
+	Cyclic#1.diReset AT %IX."I08".DigitalInput03;
 	diActivateAllSafetyCircuits AT %IX."I08".DigitalInput02;
 	alarm_mana:diEStop1 AT %IX."I18".SafeTwoChannelInput0102;
 	alarm_mana:diEStop2 AT %IX."I18".SafeTwoChannelInput0304;
@@ -65,13 +65,13 @@ VAR_CONFIG
 	::pallet_con:acpI_P15.LFRD_Output AT %QW."8I74xxxxxxx.01P-1a".LFR_Output;
 	::pallet_con:diPalletStopP15 AT %IX."I80".DigitalInput04;
 	::pallet_con:lightCurtainP17 AT %IX."I18".BOOL007;
-	::product_in:FI_12.IOMapping.Encoder AT %IW."I00".AnalogInput01;
-	::product_in:FI_12.IOMapping.AnalogOutput AT %QW."8I74xxxxxxx.01P-1b".LFRD_Output;
-	::product_in:acpI_P12.ETAD_Input AT %IW."8I74xxxxxxx.01P-1b".ETAD_Input;
-	::product_in:acpI_P12.CMDD_Output AT %QW."8I74xxxxxxx.01P-1b".CMDD_Output;
-	::product_in:FI_12.IOMapping.DriveReady AT %IX."8I74xxxxxxx.01P-1b".ModuleOk;
+	::pusher_dri:FI_12.IOMapping.Encoder AT %IW."I00".AnalogInput01;
+	::pusher_dri:aoPusherDriveP12 AT %QW."8I74xxxxxxx.01P-1b".LFRD_Output;
+	::pusher_dri:acpI_P12.ETAD_Input AT %IW."8I74xxxxxxx.01P-1b".ETAD_Input;
+	::pusher_dri:acpI_P12.CMDD_Output AT %QW."8I74xxxxxxx.01P-1b".CMDD_Output;
+	::pusher_dri:FI_12.IOMapping.DriveReady AT %IX."8I74xxxxxxx.01P-1b".ModuleOk;
 	::pallet_con:diMotorProtectionP12 AT %IX."I06".DigitalInput06;
 	::pallet_con:diMotorProtectionP13 AT %IX."I06".DigitalInput07;
-	::product_in:FI_12.IOMapping.referenceSwitch AT %IX."I60".DigitalInput01;
-	::product_in:FI_12.info.powerOn AT %QX."8I74xxxxxxx.01P-1b".OL1R_Output_Bool_02;
+	::pusher_dri:FI_12.IOMapping.referenceSwitch AT %IX."I60".DigitalInput01;
+	::pusher_dri:acpI_P12.switchedOn AT %QX."8I74xxxxxxx.01P-1b".OL1R_Output_Bool_02;
 END_VAR
