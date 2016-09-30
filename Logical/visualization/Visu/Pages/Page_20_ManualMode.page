@@ -53,18 +53,22 @@
         <TextLayer LanguageId="en">
           <Text ID="175657" Value="Pallet magazine"/>
           <Text ID="175756" Value="Pallet Conveyors"/>
+          <Text ID="177287" Value="Product Infeed"/>
         </TextLayer>
         <TextLayer LanguageId="cs">
           <Text ID="175657" Value=""/>
           <Text ID="175756" Value=""/>
+          <Text ID="177287" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="fr">
           <Text ID="175657" Value=""/>
           <Text ID="175756" Value=""/>
+          <Text ID="177287" Value=""/>
         </TextLayer>
         <IndexMap>
           <Index ID="175657" Value="1"/>
           <Index ID="175756" Value="3"/>
+          <Index ID="177287" Value="5"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -362,6 +366,32 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_34]"/>
           <Property Name="Width" Value="135"/>
         </Control>
+        <Control ClassId="0x00001002" Name="Button_3">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_55]"/>
+          <Property Name="ForeColor" Value="16"/>
+          <Property Name="Height" Value="57"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="28"/>
+          <Property Name="PressedBackColor" Value="253"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="5"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="243"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_55]"/>
+          <Property Name="Width" Value="135"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_23">
@@ -399,6 +429,19 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="Page" Value="Source[local].Page[Page_22_ManualConveyors]"/>
+              <Property Name="Target" Value="Page"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_55">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000160">
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="Page" Value="Source[local].Page[Page_23_ManualProductInfeed]"/>
               <Property Name="Target" Value="Page"/>
             </KeyAction>
           </KeyActions>

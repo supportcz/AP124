@@ -4,10 +4,13 @@ TYPE
 		(
 		statePusherDriveStop,
 		statePusherDriveHoming,
+		statePusherDriveHoming2,
 		statePusherDriveWait,
-		statePusherDriveMoveToPos,
-		statePusherDriveMovingToPos,
+		statePusherDriveAbsolute,
+		statePusherDriveAbsolute2,
 		statePusherDriveJogPlus,
-		statePusherDriveJogMinus
+		statePusherDriveJogPlus2,
+		statePusherDriveJogMinus,
+		statePusherDriveJogMinus2
 		);
 END_TYPE

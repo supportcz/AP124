@@ -5,7 +5,7 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
-	readyToStart := NOT diPalletizationEDM;
+	readyToStart := NOT diPalletizationEDM AND NOT pusherDrive.driveError AND NOT pusherDrive.encoderError;
 	
 	IF NOT readyToStart THEN
 		modePalletization := modePalletizationNotReadyToStart; 

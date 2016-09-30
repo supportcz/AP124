@@ -8,6 +8,36 @@ PROGRAM _CYCLIC
 	diOpenDoors1;
 	diCloseDoors1;
 	
+	CASE modePalletization OF
+		
+		modePalletizationNotReadyToStart: //the automat is not ready to start
+			
+			IF readyToStart THEN
+				modePalletization := modePalletizationManual;
+			END_IF
+		
 
+
+		modePalletizationManual:
+			
+			pusherDrive.speed := 200;
+
+
+
+		modePalletizationAuto:
+
+	END_CASE
+	
+	IF pusherDrive.driveError THEN
+		alarmImagePalletization[14] := TRUE;
+	ELSE
+		alarmImagePalletization[14] := FALSE;
+	END_IF
+
+	IF pusherDrive.encoderError THEN
+		alarmImagePalletization[15] := TRUE;
+	ELSE
+		alarmImagePalletization[15] := FALSE;
+	END_IF
 
 END_PROGRAM
