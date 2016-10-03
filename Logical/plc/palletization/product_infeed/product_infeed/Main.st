@@ -12,9 +12,7 @@ PROGRAM _CYCLIC
 		
 		modePalletizationNotReadyToStart: //the automat is not ready to start
 			
-			IF readyToStart THEN
-				modePalletization := modePalletizationManual;
-			END_IF
+
 		
 
 
@@ -27,6 +25,8 @@ PROGRAM _CYCLIC
 		modePalletizationAuto:
 
 	END_CASE
+	
+	ConveyorP1;
 	
 	IF pusherDrive.driveError THEN
 		alarmImagePalletization[14] := TRUE;

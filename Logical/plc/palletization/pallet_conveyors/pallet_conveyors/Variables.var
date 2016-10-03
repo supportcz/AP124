@@ -1,8 +1,6 @@
 VAR
 	acpI_P14 : AcpInoSdc;
 	acpI_P15 : AcpInoSdc;
-	cmdAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
-	cmdManual : BOOL;
 	cmdMovePalletP12P13 : BOOL;
 	cmdMovePalletP13P14 : BOOL;
 	cmdMovePalletP14P15 : BOOL;
@@ -13,7 +11,6 @@ VAR
 	doConveyorP12 : BOOL; (*starts conveyor P12*)
 	doConveyorP13 : BOOL;
 	lightCurtainP15 : BOOL;
-	readyToStart : BOOL;
 	stateConveyorP12P13 : StateConveyor;
 	stateConveyorP13P14 : StateConveyor;
 	stateConveyorP14P15 : StateConveyor;

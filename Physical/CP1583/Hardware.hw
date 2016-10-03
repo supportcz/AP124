@@ -15,68 +15,6 @@
     <Parameter ID="PasswordCIFS" Value="" />
     <Parameter ID="PasswordService" Value="" />
   </Module>
-  <Module Name="8I74xxxxxxx.01P-1" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
-    <Connection Connector="PLK1" TargetModule="8I74xxxxxxx.01P-1b" TargetConnector="PLK2" NodeNumber="14" />
-    <Connection Connector="PLK2" TargetModule="8I74xxxxxxx.01P-1a" TargetConnector="PLK1" NodeNumber="14" />
-    <Parameter ID="Supervision" Value="off" />
-    <Parameter ID="packedETAD" Value="packed" />
-    <Parameter ID="packedETI" Value="packed" />
-    <Parameter ID="packedCMDD" Value="packed" />
-    <Parameter ID="packedCMI" Value="packed" />
-    <Parameter ID="LFRD_LFR_Filter" Value="LFR_RFR" />
-    <Parameter ID="ACC" Value="10" />
-    <Parameter ID="DEC" Value="10" />
-    <Parameter ID="HSP" Value="600" />
-    <Parameter ID="CTT" Value="0" />
-    <Parameter ID="NPR" Value="55" />
-    <Parameter ID="COS" Value="72" />
-    <Parameter ID="UNS" Value="400" />
-    <Parameter ID="NCR" Value="16" />
-    <Parameter ID="NSP" Value="1360" />
-    <Parameter ID="BLC" Value="2" />
-    <Parameter ID="BST" Value="0" />
-  </Module>
-  <Module Name="8I74xxxxxxx.01P-1a" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
-    <Connection Connector="PLK1" TargetModule="8I74xxxxxxx.01P-1" TargetConnector="PLK2" NodeNumber="15" />
-    <Parameter ID="Supervision" Value="off" />
-    <Parameter ID="packedETAD" Value="packed" />
-    <Parameter ID="packedETI" Value="packed" />
-    <Parameter ID="packedCMDD" Value="packed" />
-    <Parameter ID="packedCMI" Value="packed" />
-    <Parameter ID="LFRD_LFR_Filter" Value="LFR_RFR" />
-    <Parameter ID="ACC" Value="10" />
-    <Parameter ID="DEC" Value="10" />
-    <Parameter ID="HSP" Value="600" />
-    <Parameter ID="CTT" Value="0" />
-    <Parameter ID="NPR" Value="55" />
-    <Parameter ID="COS" Value="72" />
-    <Parameter ID="UNS" Value="400" />
-    <Parameter ID="NCR" Value="16" />
-    <Parameter ID="NSP" Value="1360" />
-  </Module>
-  <Module Name="8I74xxxxxxx.01P-1b" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
-    <Connection Connector="PLK1" TargetModule="X20CP1583" TargetConnector="IF3" NodeNumber="12" />
-    <Connection Connector="PLK2" TargetModule="8I74xxxxxxx.01P-1" TargetConnector="PLK1" NodeNumber="12" />
-    <Parameter ID="Supervision" Value="off" />
-    <Parameter ID="packedETAD" Value="packed" />
-    <Parameter ID="packedETI" Value="packed" />
-    <Parameter ID="packedCMDD" Value="packed" />
-    <Parameter ID="packedCMI" Value="packed" />
-    <Parameter ID="ACC" Value="0" />
-    <Parameter ID="DEC" Value="0" />
-    <Parameter ID="FLU" Value="0" />
-    <Parameter ID="CTT" Value="0" />
-    <Parameter ID="NPR" Value="110" />
-    <Parameter ID="COS" Value="73" />
-    <Parameter ID="UNS" Value="400" />
-    <Parameter ID="NCR" Value="26" />
-    <Parameter ID="NSP" Value="1455" />
-    <Parameter ID="RSA" Value="4824" />
-    <Parameter ID="LFA" Value="4327" />
-    <Parameter ID="IDA" Value="19" />
-    <Parameter ID="TRA" Value="153" />
-    <Parameter ID="ADC" Value="0" />
-  </Module>
   <Module Name="I00" Type="X20AI2322" Version="1.0.0.2">
     <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM01" TargetConnector="SL1" />
@@ -111,7 +49,7 @@
     <Connection Connector="SS2" TargetModule="X20TB52c" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM33a" TargetConnector="SL1" />
   </Module>
-  <Module Name="I50" Type="X20DIF371" Version="1.0.1.0" Disabled="true">
+  <Module Name="I50" Type="X20DIF371" Version="1.0.1.0">
     <Connection Connector="SS1" TargetModule="X20TB1F6" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM15f" TargetConnector="SL1" />
   </Module>
@@ -119,11 +57,11 @@
     <Connection Connector="SS1" TargetModule="X20TB1F8" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11j" TargetConnector="SL1" />
   </Module>
-  <Module Name="I70" Type="X20DIF371" Version="1.0.1.0" Disabled="true">
+  <Module Name="I70" Type="X20DIF371" Version="1.0.1.0">
     <Connection Connector="SS1" TargetModule="X20TB1F9" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM15c" TargetConnector="SL1" />
   </Module>
-  <Module Name="I80" Type="X20DIF371" Version="1.0.1.0" Disabled="true">
+  <Module Name="I80" Type="X20DIF371" Version="1.0.1.0">
     <Connection Connector="SS1" TargetModule="X20TB1F11" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM15a" TargetConnector="SL1" />
   </Module>
@@ -185,13 +123,94 @@
     <Parameter ID="DigitalOutput03" Value="viaSafeLOGIC" />
     <Parameter ID="DigitalOutput04" Value="viaSafeLOGIC" />
   </Module>
-  <Module Name="Q52" Type="X20DOF322" Version="1.1.0.2" Disabled="true">
+  <Module Name="Q52" Type="X20DOF322" Version="1.1.0.2">
     <Connection Connector="SS1" TargetModule="X20TB1F7" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11h" TargetConnector="SL1" />
   </Module>
-  <Module Name="Q71" Type="X20DOF322" Version="1.1.0.2" Disabled="true">
+  <Module Name="Q71" Type="X20DOF322" Version="1.1.0.2">
     <Connection Connector="SS1" TargetModule="X20TB1F10" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM15d" TargetConnector="SL1" />
+  </Module>
+  <Module Name="U10" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
+    <Connection Connector="PLK1" TargetModule="X20CP1583" TargetConnector="IF3" NodeNumber="10" />
+    <Connection Connector="PLK2" TargetModule="U12" TargetConnector="PLK1" NodeNumber="10" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="packedETAD" Value="packed" />
+    <Parameter ID="packedETI" Value="packed" />
+    <Parameter ID="packedCMDD" Value="packed" />
+    <Parameter ID="packedCMI" Value="packed" />
+    <Parameter ID="LFRD_LFR_Filter" Value="LFR_RFR" />
+    <Parameter ID="ACC" Value="10" />
+    <Parameter ID="DEC" Value="10" />
+    <Parameter ID="HSP" Value="600" />
+    <Parameter ID="CTT" Value="0" />
+    <Parameter ID="NPR" Value="55" />
+    <Parameter ID="COS" Value="72" />
+    <Parameter ID="UNS" Value="400" />
+    <Parameter ID="NCR" Value="16" />
+    <Parameter ID="NSP" Value="1360" />
+  </Module>
+  <Module Name="U12" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
+    <Connection Connector="PLK1" TargetModule="U10" TargetConnector="PLK2" NodeNumber="12" />
+    <Connection Connector="PLK2" TargetModule="U14" TargetConnector="PLK1" NodeNumber="12" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="packedETAD" Value="packed" />
+    <Parameter ID="packedETI" Value="packed" />
+    <Parameter ID="packedCMDD" Value="packed" />
+    <Parameter ID="packedCMI" Value="packed" />
+    <Parameter ID="ACC" Value="0" />
+    <Parameter ID="DEC" Value="0" />
+    <Parameter ID="FLU" Value="0" />
+    <Parameter ID="CTT" Value="0" />
+    <Parameter ID="NPR" Value="110" />
+    <Parameter ID="COS" Value="73" />
+    <Parameter ID="UNS" Value="400" />
+    <Parameter ID="NCR" Value="26" />
+    <Parameter ID="NSP" Value="1455" />
+    <Parameter ID="RSA" Value="4824" />
+    <Parameter ID="LFA" Value="4327" />
+    <Parameter ID="IDA" Value="19" />
+    <Parameter ID="TRA" Value="153" />
+    <Parameter ID="ADC" Value="0" />
+  </Module>
+  <Module Name="U14" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
+    <Connection Connector="PLK1" TargetModule="U12" TargetConnector="PLK2" NodeNumber="14" />
+    <Connection Connector="PLK2" TargetModule="U15" TargetConnector="PLK1" NodeNumber="14" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="packedETAD" Value="packed" />
+    <Parameter ID="packedETI" Value="packed" />
+    <Parameter ID="packedCMDD" Value="packed" />
+    <Parameter ID="packedCMI" Value="packed" />
+    <Parameter ID="LFRD_LFR_Filter" Value="LFR_RFR" />
+    <Parameter ID="ACC" Value="10" />
+    <Parameter ID="DEC" Value="10" />
+    <Parameter ID="HSP" Value="600" />
+    <Parameter ID="CTT" Value="0" />
+    <Parameter ID="NPR" Value="55" />
+    <Parameter ID="COS" Value="72" />
+    <Parameter ID="UNS" Value="400" />
+    <Parameter ID="NCR" Value="16" />
+    <Parameter ID="NSP" Value="1360" />
+    <Parameter ID="BLC" Value="2" />
+    <Parameter ID="BST" Value="0" />
+  </Module>
+  <Module Name="U15" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
+    <Connection Connector="PLK1" TargetModule="U14" TargetConnector="PLK2" NodeNumber="15" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="packedETAD" Value="packed" />
+    <Parameter ID="packedETI" Value="packed" />
+    <Parameter ID="packedCMDD" Value="packed" />
+    <Parameter ID="packedCMI" Value="packed" />
+    <Parameter ID="LFRD_LFR_Filter" Value="LFR_RFR" />
+    <Parameter ID="ACC" Value="10" />
+    <Parameter ID="DEC" Value="10" />
+    <Parameter ID="HSP" Value="600" />
+    <Parameter ID="CTT" Value="0" />
+    <Parameter ID="NPR" Value="55" />
+    <Parameter ID="COS" Value="72" />
+    <Parameter ID="UNS" Value="400" />
+    <Parameter ID="NCR" Value="16" />
+    <Parameter ID="NSP" Value="1360" />
   </Module>
   <Module Name="X20BM01" Type="X20BM01" Version="1.0.1.1">
     <Connection Connector="X2X1" TargetModule="X20CP1583" TargetConnector="IF6" />
@@ -202,10 +221,10 @@
   <Module Name="X20BM01b" Type="X20BM01" Version="1.0.1.1">
     <Connection Connector="X2X1" TargetModule="X20BM11e" TargetConnector="X2X2" />
   </Module>
-  <Module Name="X20BM05" Type="X20BM05" Version="1.0.0.3" Disabled="true" />
+  <Module Name="X20BM05" Type="X20BM05" Version="1.0.0.3" />
   <Module Name="X20BM05a" Type="X20BM05" Version="1.0.0.3" />
-  <Module Name="X20BM05b" Type="X20BM05" Version="1.0.0.3" Disabled="true" />
-  <Module Name="X20BM05c" Type="X20BM05" Version="1.0.0.3" Disabled="true" />
+  <Module Name="X20BM05b" Type="X20BM05" Version="1.0.0.3" />
+  <Module Name="X20BM05c" Type="X20BM05" Version="1.0.0.3" />
   <Module Name="X20BM11" Type="X20BM11" Version="1.0.0.1">
     <Connection Connector="X2X1" TargetModule="X20BM11q" TargetConnector="X2X2" />
   </Module>
@@ -227,7 +246,7 @@
   <Module Name="X20BM11f" Type="X20BM11" Version="1.0.0.1">
     <Connection Connector="X2X1" TargetModule="X20BM33f" TargetConnector="X2X2" />
   </Module>
-  <Module Name="X20BM11h" Type="X20BM11" Version="1.0.0.1" Disabled="true">
+  <Module Name="X20BM11h" Type="X20BM11" Version="1.0.0.1">
     <Connection Connector="X2X1" TargetModule="X20BM05" TargetConnector="X2X2" />
   </Module>
   <Module Name="X20BM11j" Type="X20BM11" Version="1.0.0.1">
@@ -255,10 +274,10 @@
     <Connection Connector="X2X1" TargetModule="X20BM05b" TargetConnector="X2X2" NodeNumber="27" />
   </Module>
   <Module Name="X20BM15e" Type="X20BM15" Version="1.0.1.0">
-    <Connection Connector="X2X1" TargetModule="X20BM15f" TargetConnector="X2X2" NodeNumber="25" />
+    <Connection Connector="X2X1" TargetModule="X20BM15f" TargetConnector="X2X2" NodeNumber="22" />
   </Module>
   <Module Name="X20BM15f" Type="X20BM15" Version="1.0.1.0">
-    <Connection Connector="X2X1" TargetModule="X20BM11h" TargetConnector="X2X2" NodeNumber="24" />
+    <Connection Connector="X2X1" TargetModule="X20BM11h" TargetConnector="X2X2" NodeNumber="21" />
   </Module>
   <Module Name="X20BM33" Type="X20BM33" Version="1.0.0.4">
     <Connection Connector="X2X1" TargetModule="X20BM01b" TargetConnector="X2X2" />
@@ -281,22 +300,22 @@
   <Module Name="X20BM33f" Type="X20BM33" Version="1.0.0.4">
     <Connection Connector="X2X1" TargetModule="X20BM33e" TargetConnector="X2X2" />
   </Module>
-  <Module Name="X20BR9300" Type="X20BR9300" Version="1.0.3.0" Disabled="true">
+  <Module Name="X20BR9300" Type="X20BR9300" Version="1.0.3.0">
     <Connection Connector="SS1" TargetModule="X20TB12d" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM05" TargetConnector="SL1" />
-    <Connection Connector="X2X1" TargetModule="X20BT9100b" TargetConnector="X2X1" NodeNumber="22" />
+    <Connection Connector="X2X1" TargetModule="X20BT9100" TargetConnector="X2X1" NodeNumber="19" />
   </Module>
   <Module Name="X20BR9300a" Type="X20BR9300" Version="1.0.3.0">
     <Connection Connector="SS1" TargetModule="X20TB12g" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM05a" TargetConnector="SL1" />
-    <Connection Connector="X2X1" TargetModule="X20BT9100" TargetConnector="X2X1" NodeNumber="19" />
+    <Connection Connector="X2X1" TargetModule="X20BT9100a" TargetConnector="X2X1" NodeNumber="23" />
   </Module>
-  <Module Name="X20BR9300b" Type="X20BR9300" Version="1.0.3.0" Disabled="true">
+  <Module Name="X20BR9300b" Type="X20BR9300" Version="1.0.3.0">
     <Connection Connector="SS1" TargetModule="X20TB12i" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM05b" TargetConnector="SL1" />
-    <Connection Connector="X2X1" TargetModule="X20BT9100a" TargetConnector="X2X1" NodeNumber="26" />
+    <Connection Connector="X2X1" TargetModule="X20BT9100b" TargetConnector="X2X1" NodeNumber="26" />
   </Module>
-  <Module Name="X20BR9300c" Type="X20BR9300" Version="1.0.3.0" Disabled="true">
+  <Module Name="X20BR9300c" Type="X20BR9300" Version="1.0.3.0">
     <Connection Connector="SS1" TargetModule="X20TB12l" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM05c" TargetConnector="SL1" />
     <Connection Connector="X2X1" TargetModule="X20BT9100c" TargetConnector="X2X1" NodeNumber="30" />
@@ -305,7 +324,7 @@
     <Connection Connector="SS1" TargetModule="X20TB12c" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11f" TargetConnector="SL1" />
   </Module>
-  <Module Name="X20BT9100a" Type="X20BT9100" Version="1.0.2.4" Disabled="true">
+  <Module Name="X20BT9100a" Type="X20BT9100" Version="1.0.2.4">
     <Connection Connector="SS1" TargetModule="X20TB12f" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM15e" TargetConnector="SL1" />
   </Module>
@@ -313,11 +332,11 @@
     <Connection Connector="SS1" TargetModule="X20TB12h" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11k" TargetConnector="SL1" />
   </Module>
-  <Module Name="X20BT9100c" Type="X20BT9100" Version="1.0.2.4" Disabled="true">
+  <Module Name="X20BT9100c" Type="X20BT9100" Version="1.0.2.4">
     <Connection Connector="SS1" TargetModule="X20TB12k" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM15b" TargetConnector="SL1" />
   </Module>
-  <Module Name="X20BT9400" Type="X20BT9400" Version="1.0.1.4" Disabled="true">
+  <Module Name="X20BT9400" Type="X20BT9400" Version="1.0.1.4">
     <Connection Connector="SS1" TargetModule="X20TB12m" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM15" TargetConnector="SL1" />
   </Module>
@@ -361,8 +380,6 @@
     <Parameter ID="Cyclic7Tolerance" Value="1000000" />
     <Parameter ID="Cyclic8Duration" Value="10000" />
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
-    <Parameter ID="Temp.ProjectDirectory" Value="C:\Work\Atrima\projekt\AP124\" />
-    <Parameter ID="Temp.ConfigurationName" Value="CP1583" />
   </Module>
   <Module Name="X20PS2100a" Type="X20PS2100" Version="1.1.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />
@@ -376,27 +393,27 @@
   <Module Name="X20TB12a" Type="X20TB12" Version="1.0.0.0" />
   <Module Name="X20TB12b" Type="X20TB12" Version="1.0.0.0" />
   <Module Name="X20TB12c" Type="X20TB12" Version="1.0.0.0" />
-  <Module Name="X20TB12d" Type="X20TB12" Version="1.0.0.0" Disabled="true" />
-  <Module Name="X20TB12f" Type="X20TB12" Version="1.0.0.0" Disabled="true" />
+  <Module Name="X20TB12d" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12f" Type="X20TB12" Version="1.0.0.0" />
   <Module Name="X20TB12g" Type="X20TB12" Version="1.0.0.0" />
   <Module Name="X20TB12h" Type="X20TB12" Version="1.0.0.0" />
-  <Module Name="X20TB12i" Type="X20TB12" Version="1.0.0.0" Disabled="true" />
-  <Module Name="X20TB12k" Type="X20TB12" Version="1.0.0.0" Disabled="true" />
-  <Module Name="X20TB12l" Type="X20TB12" Version="1.0.0.0" Disabled="true" />
-  <Module Name="X20TB12m" Type="X20TB12" Version="1.0.0.0" Disabled="true" />
+  <Module Name="X20TB12i" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12k" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12l" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12m" Type="X20TB12" Version="1.0.0.0" />
   <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
   <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
-  <Module Name="X20TB1F10" Type="X20TB1F" Version="1.0.0.0" Disabled="true" />
-  <Module Name="X20TB1F11" Type="X20TB1F" Version="1.0.0.0" Disabled="true" />
+  <Module Name="X20TB1F10" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F11" Type="X20TB1F" Version="1.0.0.0" />
   <Module Name="X20TB1F12" Type="X20TB1F" Version="1.0.0.0" />
   <Module Name="X20TB1F2" Type="X20TB1F" Version="1.0.0.0" />
   <Module Name="X20TB1F3" Type="X20TB1F" Version="1.0.0.0" />
   <Module Name="X20TB1F4" Type="X20TB1F" Version="1.0.0.0" />
   <Module Name="X20TB1F5" Type="X20TB1F" Version="1.0.0.0" />
-  <Module Name="X20TB1F6" Type="X20TB1F" Version="1.0.0.0" Disabled="true" />
-  <Module Name="X20TB1F7" Type="X20TB1F" Version="1.0.0.0" Disabled="true" />
+  <Module Name="X20TB1F6" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F7" Type="X20TB1F" Version="1.0.0.0" />
   <Module Name="X20TB1F8" Type="X20TB1F" Version="1.0.0.0" />
-  <Module Name="X20TB1F9" Type="X20TB1F" Version="1.0.0.0" Disabled="true" />
+  <Module Name="X20TB1F9" Type="X20TB1F" Version="1.0.0.0" />
   <Module Name="X20TB52" Type="X20TB52" Version="1.0.0.1" />
   <Module Name="X20TB52a" Type="X20TB52" Version="1.0.0.1" />
   <Module Name="X20TB52b" Type="X20TB52" Version="1.0.0.1" />

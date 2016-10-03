@@ -5,37 +5,17 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
-	readyToStart := NOT diPalletizationEDM AND NOT pusherDrive.driveError AND NOT pusherDrive.encoderError;
-	
-	IF NOT readyToStart THEN
-		modePalletization := modePalletizationNotReadyToStart; 
-	END_IF
-
 	CASE modePalletization OF
 		
 		modePalletizationNotReadyToStart: //the automat is not ready to start
-			
-			IF readyToStart THEN
-				modePalletization := modePalletizationManual;
-			END_IF
 		
-			cmdManual := FALSE;
-			cmdAuto := FALSE;
+
 
 		modePalletizationManual:
 
-			IF NOT alarmInZonePalletization AND cmdAuto THEN
-				modePalletization := modePalletizationAuto;
-			END_IF
-			cmdManual := FALSE;
 
 		modePalletizationAuto:
-		
-			cmdAuto := FALSE;
-			IF alarmInZonePalletization OR cmdManual THEN 
-				modePalletization := modePalletizationManual;
-			END_IF
-		
+	
 			IF palletOnConveyorP12 AND NOT palletOnConveyorP13 THEN
 				cmdMovePalletP12P13 := TRUE;
 			END_IF

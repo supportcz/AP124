@@ -2,5 +2,6 @@ VAR
 	diDoor1opened : BOOL;
 	diOpenDoors1 : BOOL; (*button to open doors*)
 	diCloseDoors1 : BOOL; (*button to close doors*)
-	readyToStart : BOOL;
+	acpI_P10 : AcpInoSdc;
+	stateConveyorP1 : StateConveyor;
 END_VAR

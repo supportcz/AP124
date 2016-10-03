@@ -1,0 +1,5 @@
+VAR
+	readyToStart : BOOL;
+	cmdAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
+	cmdManual : BOOL;
+END_VAR

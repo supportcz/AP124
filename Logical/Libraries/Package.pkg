@@ -22,5 +22,9 @@
     <Object Type="Library" Language="Binary" Description="The AsEPL library is used to access service data objects of Ethernet-Powerlink stations">AsEPL</Object>
     <Object Type="Library" Language="Binary" Description="The Visapi library provides support to access and control visualizations at runtime.">visapi</Object>
     <Object Type="Library" Language="ANSIC">Motorky</Object>
+    <Object Type="Library" Language="Binary" Description="Smart Device Controller">Acp10sdc</Object>
+    <Object Type="Library" Language="Binary" Description="Motion Control Manager">Acp10man</Object>
+    <Object Type="Library" Language="Binary" Description="ACOPOS Parameters">Acp10par</Object>
+    <Object Type="Library" Language="Binary" Description="Global NC functions">NcGlobal</Object>
   </Objects>
 </Package>
