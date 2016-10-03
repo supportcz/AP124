@@ -61,60 +61,6 @@
           <Property Name="Top" Value="29"/>
           <Property Name="Width" Value="800"/>
         </Control>
-        <Control ClassId="0x00001002" Name="cmdAcknowledgeAll">
-          <Property Name="Bitmap" Value="Source[local].Bitmap[MpAlarm_QuitAll]"/>
-          <Property Name="BitmapAlignmentHorizontal" Value="Right of Text"/>
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="SingleBitmap"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_207]"/>
-          <Property Name="Height" Value="60"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="645"/>
-          <Property Name="Multiline" Value="Automatic"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
-          <Property Name="PressedForeColor" Value="253"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpControlButton]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[AlarmList]"/>
-          <Property Name="TextIndex" Value="3"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="182"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_207]"/>
-          <Property Name="Width" Value="130"/>
-        </Control>
-        <Control ClassId="0x00001002" Name="cmdAcknowledge">
-          <Property Name="Bitmap" Value="Source[local].Bitmap[MpAlarm_Quit]"/>
-          <Property Name="BitmapAlignmentHorizontal" Value="Right of Text"/>
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="SingleBitmap"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_208]"/>
-          <Property Name="Height" Value="60"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="645"/>
-          <Property Name="Multiline" Value="Automatic"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
-          <Property Name="PressedForeColor" Value="253"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpControlButton]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[AlarmList]"/>
-          <Property Name="TextIndex" Value="4"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="102"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_208]"/>
-          <Property Name="Width" Value="130"/>
-        </Control>
         <Control ClassId="0x00001002" Name="cmdAlarmDetail">
           <Property Name="Bitmap" Value="Source[local].Bitmap[Alarm_Map]"/>
           <Property Name="BitmapAlignmentHorizontal" Value="Right of Text"/>
@@ -138,7 +84,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="342"/>
+          <Property Name="Top" Value="292"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_209]"/>
           <Property Name="Width" Value="130"/>
         </Control>
@@ -165,7 +111,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="261"/>
+          <Property Name="Top" Value="178"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_210]"/>
           <Property Name="Width" Value="130"/>
         </Control>
@@ -680,28 +626,6 @@
         </Control>
       </Controls>
       <KeyMapping>
-        <VirtualKey Name="%embVirtualKey_207">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x0000016D">
-              <Property Name="Action" Value="Acknowledge"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_208">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x0000016E">
-              <Property Name="Action" Value="Acknowledge"/>
-              <Property Name="Control" Value="Source[local].Page[Page_40_AlarmList].Layer[Default].Control[Alarm_1]"/>
-              <Property Name="Description" Value=""/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
         <VirtualKey Name="%embVirtualKey_209">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
