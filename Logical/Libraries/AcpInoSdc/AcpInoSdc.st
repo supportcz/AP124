@@ -38,9 +38,9 @@ FUNCTION_BLOCK AcpInoSdc
 	END_CASE;
 
 	(* Fault *)
-	error := ETAD_Input.3;
+	error := ETAD_Input.3 OR ETAD_Input = 0;
 	
-	IF reset AND error THEN
+	IF reset AND ETAD_Input.3 THEN
 		CMDD_Output := 16#0080;						
 	END_IF	
 	reset := FALSE;

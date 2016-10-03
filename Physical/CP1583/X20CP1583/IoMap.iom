@@ -83,4 +83,8 @@ VAR_CONFIG
 	::product_in:doPusherLiftingDown AT %QX."Q12".DigitalOutput02;
 	::product_in:doPusherLiftingBrake AT %QX."Q12".DigitalOutput03;
 	::product_in:diMotorProtectionP3 AT %IX."I06".DigitalInput01;
+	::product_in:diTrayStopP1 AT %IX."I50".DigitalInput03;
+	::product_in:acpI_P11.ETAD_Input AT %IW."U11".ETAD_Input;
+	::product_in:acpI_P11.CMDD_Output AT %QW."U11".CMDD_Output;
+	::product_in:acpI_P11.LFRD_Output AT %QW."U11".LFRD_Output;
 END_VAR

@@ -26,8 +26,9 @@ PROGRAM _CYCLIC
 
 	END_CASE
 	
-	PusherLifting;
 	ConveyorP1;
+	ConveyorP2;
+	PusherLifting;
 	
 	IF pusherDrive.driveError THEN
 		alarmImagePalletization[14] := TRUE;

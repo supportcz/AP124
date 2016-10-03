@@ -6,6 +6,7 @@
     <File Description="Local data types" Private="true">Types.typ</File>
     <File Description="Local variables" Private="true">Variables.var</File>
     <File>conveyorP1.st</File>
+    <File>conveyorP2.st</File>
     <File>PusherLifting.st</File>
   </Files>
 </Program>
