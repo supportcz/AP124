@@ -7,7 +7,6 @@ diActivateMagazineSafety,POE\Main\pallet_magazine.GB,1,IN,40,50,Read,,BOOL,NSIX0
 diActivateMagazineSafety,POE\Main\palletization.GB,1,IN,20,32,Read,,BOOL,NSIX0.1,,VAR_GLOBAL,GLOBAL,,
 diDoor1opened,C\PLC\R\CPU\global_variables.vbb,0,,23,0,,,SAFEBOOL,SIX19.3,,VAR_GLOBAL,NOT USED,,
 diEStop1,POE\Main\Code.GB,1,IN,9,14,Read,,SAFEBOOL,SIX18.4,,VAR_GLOBAL,GLOBAL,,
-diEStop1,POE\Main\Code.GB,1,IN,59,66,Read,,SAFEBOOL,SIX18.4,,VAR_GLOBAL,GLOBAL,,
 diEStop2,POE\Main\Code.GB,1,IN,10,14,Read,,SAFEBOOL,SIX18.5,,VAR_GLOBAL,GLOBAL,,
 diEStop3,POE\Main\Code.GB,1,IN,11,14,Read,,SAFEBOOL,SIX18.6,,VAR_GLOBAL,GLOBAL,,
 diEStop4,POE\Main\Code.GB,1,IN,12,14,Read,,SAFEBOOL,SIX18.7,,VAR_GLOBAL,GLOBAL,,

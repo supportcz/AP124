@@ -74,4 +74,13 @@ VAR_CONFIG
 	::pusher_dri:acpI_P12.switchedOn AT %QX."U12".OL1R_Output_Bool_02;
 	::pusher_dri:aiDistanceSensor AT %IW."I00".AnalogInput01;
 	::pusher_dri:diReferenceSwitch AT %IX."I60".DigitalInput01;
+	::product_in:acpI_P10.ETAD_Input AT %IW."U10".ETAD_Input;
+	::product_in:acpI_P10.CMDD_Output AT %QW."U10".CMDD_Output;
+	::product_in:acpI_P10.LFRD_Output AT %QW."U10".LFRD_Output;
+	::product_in:diPusherLiftingUpperPosition AT %IX."I60".DigitalInput02;
+	::product_in:diPusherLiftingLowerPosition AT %IX."I60".DigitalInput03;
+	::product_in:doPusherLiftingUp AT %QX."Q12".DigitalOutput01;
+	::product_in:doPusherLiftingDown AT %QX."Q12".DigitalOutput02;
+	::product_in:doPusherLiftingBrake AT %QX."Q12".DigitalOutput03;
+	::product_in:diMotorProtectionP3 AT %IX."I06".DigitalInput01;
 END_VAR

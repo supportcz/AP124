@@ -26,6 +26,7 @@ PROGRAM _CYCLIC
 
 	END_CASE
 	
+	PusherLifting;
 	ConveyorP1;
 	
 	IF pusherDrive.driveError THEN

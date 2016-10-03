@@ -15,10 +15,10 @@ PROGRAM _INIT
 	tolerance := 30;
 
 	pusherDrive.positions[0] := FI_12.init.negativeSwLimit+tolerance;
-	pusherDrive.positions[1] := 500;
-	pusherDrive.positions[2] := 1000;
-	pusherDrive.positions[3] := 1500;
-	pusherDrive.positions[4] := FI_12.init.positiveSwLimit-tolerance;
+	pusherDrive.positions[1] := 925;
+	pusherDrive.positions[2] := 1360;
+	pusherDrive.positions[3] := 1870;
+	pusherDrive.positions[4] := 2000;//FI_12.init.positiveSwLimit-tolerance;
 	pusherDrive.selectedPosition := 1;
 	pusherDrive.speed := 500;
 	 

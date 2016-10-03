@@ -139,7 +139,6 @@
     <Parameter ID="packedETI" Value="packed" />
     <Parameter ID="packedCMDD" Value="packed" />
     <Parameter ID="packedCMI" Value="packed" />
-    <Parameter ID="LFRD_LFR_Filter" Value="LFR_RFR" />
     <Parameter ID="ACC" Value="10" />
     <Parameter ID="DEC" Value="10" />
     <Parameter ID="HSP" Value="600" />
@@ -149,6 +148,8 @@
     <Parameter ID="UNS" Value="400" />
     <Parameter ID="NCR" Value="16" />
     <Parameter ID="NSP" Value="1360" />
+    <Parameter ID="BLC" Value="2" />
+    <Parameter ID="BST" Value="0" />
   </Module>
   <Module Name="U12" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
     <Connection Connector="PLK1" TargetModule="U10" TargetConnector="PLK2" NodeNumber="12" />
@@ -359,7 +360,6 @@
     </Connector>
     <Parameter ID="ConfigurationID" Value="AP124_CP1583" />
     <Parameter ID="UserPartitionSize" Value="200" />
-    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="VolatileGlobalPvSize" Value="262144" />
     <Parameter ID="TimerDeviceType" Value="EPLX2X" />
     <Parameter ID="TimerDevice" Value="X20CP1583.IF3" />

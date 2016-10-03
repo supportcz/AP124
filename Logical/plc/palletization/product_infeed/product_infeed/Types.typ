@@ -7,4 +7,12 @@ TYPE
 		stateConveyorMoving,
 		stateConveyorMovingSlow
 		);
+	StatePusherLifting : 
+		(
+		statePusherLiftingUndefined,
+		stateMoveToUpperPosition,
+		stateUpperPosition,
+		stateMoveToLowerPosition,
+		stateLowerPosition
+		);
 END_TYPE

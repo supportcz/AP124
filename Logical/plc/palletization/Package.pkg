@@ -4,7 +4,7 @@
   <Objects>
     <Object Type="File">palletization.typ</Object>
     <Object Type="File">palletization.var</Object>
-    <Object Type="Program" Language="IEC">palletization_main</Object>
+    <Object Type="Program" Language="IEC" Description="palletization state machine">palletization_main</Object>
     <Object Type="Package">product_infeed</Object>
     <Object Type="Package">robot_head</Object>
     <Object Type="Package">robot_control</Object>

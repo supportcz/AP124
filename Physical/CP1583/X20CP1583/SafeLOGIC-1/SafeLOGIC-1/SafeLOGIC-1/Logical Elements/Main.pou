@@ -88,12 +88,7 @@ END_VAR
       <line localId="46" beginX="147" beginY="22" endX="150" endY="22" />
       <line localId="47" beginX="91" beginY="30" endX="116" endY="30" />
       <line localId="48" beginX="129" beginY="30" endX="150" endY="30" />
-      <line localId="53" beginX="90" beginY="9" endX="141" endY="9" />
-      <line localId="54" beginX="141" beginY="9" endX="141" endY="18" />
-      <line localId="55" beginX="141" beginY="18" endX="150" endY="18" />
-      <line localId="56" beginX="39" beginY="18" endX="76" endY="18" />
-      <line localId="57" beginX="76" beginY="18" endX="76" endY="13" />
-      <line localId="58" beginX="76" beginY="13" endX="78" endY="13" />
+      <line localId="49" beginX="39" beginY="18" endX="150" endY="18" />
     </data>
   </addData>
   <block localId="3" height="64" width="18" typeName="AND_S">
@@ -267,16 +262,14 @@ END_VAR
       <variable formalParameter="S_EStopIn">
         <connectionPointIn>
           <relPosition x="0" y="16" />
-          <connection refLocalId="52" formalParameter="OR_S">
+          <connection refLocalId="3" formalParameter="AND_S">
             <addData>
               <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
-                <connectedFormalparameter refLocalId="51" />
+                <connectedFormalparameter refLocalId="2" />
               </data>
             </addData>
             <position x="300" y="36" />
-            <position x="282" y="36" />
-            <position x="282" y="18" />
-            <position x="180" y="18" />
+            <position x="78" y="36" />
           </connection>
         </connectionPointIn>
         <addData>
@@ -555,68 +548,6 @@ END_VAR
       </variable>
     </outputVariables>
   </block>
-  <block localId="52" height="24" width="16" typeName="OR_S">
-    <position x="160" y="10" />
-    <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
-        <fbData fbFuType="1" />
-      </data>
-    </addData>
-    <inputVariables>
-      <variable formalParameter="IN1" negated="false" hidden="true">
-        <connectionPointIn>
-          <relPosition x="0" y="8" />
-          <connection refLocalId="59" />
-        </connectionPointIn>
-        <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
-            <fp localId="49" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
-          </data>
-        </addData>
-      </variable>
-      <variable formalParameter="IN2" negated="false" hidden="true">
-        <connectionPointIn>
-          <relPosition x="0" y="16" />
-          <connection refLocalId="3" formalParameter="AND_S">
-            <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
-                <connectedFormalparameter refLocalId="2" />
-              </data>
-            </addData>
-            <position x="156" y="26" />
-            <position x="152" y="26" />
-            <position x="152" y="36" />
-            <position x="78" y="36" />
-          </connection>
-        </connectionPointIn>
-        <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
-            <fp localId="50" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
-          </data>
-        </addData>
-      </variable>
-    </inputVariables>
-    <inOutVariables />
-    <outputVariables>
-      <variable formalParameter="OR_S" negated="false" hidden="true">
-        <connectionPointOut>
-          <relPosition x="16" y="8" />
-        </connectionPointOut>
-        <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
-            <fp localId="51" inState="0" outState="641" width="1" height="2" flagType="" dataType="ANY_SAFEBIT" />
-          </data>
-        </addData>
-      </variable>
-    </outputVariables>
-  </block>
-  <inVariable localId="59" height="4" width="24">
-    <position x="132" y="16" />
-    <expression>diEStop1</expression>
-    <connectionPointOut>
-      <relPosition x="24" y="2" />
-    </connectionPointOut>
-  </inVariable>
 </FBD>
 { CodeWorksheet := 'pallet_magazine', Type := '.fbd' }
 ﻿<?xml version="1.0" encoding="utf-16" standalone="yes"?><FBD>

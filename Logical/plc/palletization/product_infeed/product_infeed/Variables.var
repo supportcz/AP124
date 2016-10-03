@@ -4,4 +4,14 @@ VAR
 	diCloseDoors1 : BOOL; (*button to close doors*)
 	acpI_P10 : AcpInoSdc;
 	stateConveyorP1 : StateConveyor;
+	doPusherLiftingDown : BOOL;
+	doPusherLiftingUp : BOOL;
+	statePusherLifting : StatePusherLifting;
+	doPusherLiftingBrake : BOOL;
+	diPusherLiftingUpperPosition : BOOL;
+	cmdUp : BOOL;
+	diPusherLiftingLowerPosition : BOOL;
+	cmdDown : BOOL;
+	TON_VerticalMovement : TON;
+	diMotorProtectionP3 : BOOL;
 END_VAR
