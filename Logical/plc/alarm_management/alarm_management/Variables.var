@@ -1,6 +1,5 @@
 VAR
 	acknowledgeImage : ARRAY[0..39] OF BOOL;
-	alarmImage : ARRAY[0..39] OF BOOL;
 	diEStop1 : BOOL; (*emergency stop 1*)
 	diEStop2 : BOOL; (*emergency stop 2*)
 	diEStop3 : BOOL; (*emergency stop 3*)

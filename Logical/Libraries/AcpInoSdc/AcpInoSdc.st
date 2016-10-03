@@ -17,13 +17,19 @@ FUNCTION_BLOCK AcpInoSdc
 		CMDD_Output := 16#000F;
 		
 		16#37, 16#27: (*Operation enabled *)
+		IF stop THEN
+			CMDD_Output := 16#010F;
+		ELSE
+			CMDD_Output := 16#000F;			
+		END_IF
+
 		IF NOT switchOn THEN
 			CMDD_Output := 16#0006;
 		END_IF
-		
+			
 		IF quickStop THEN
 			CMDD_Output := 16#0002;						
-		END_IF	
+		END_IF		
 		
 		16#17, 16#07: (*Quick stop active *)
 		quickStop := FALSE;
@@ -31,10 +37,13 @@ FUNCTION_BLOCK AcpInoSdc
 		CMDD_Output := 16#0000;	
 	END_CASE;
 
-	IF (ETAD_Input AND 16#F) = 8 THEN (* Fault *)
-		IF reset THEN
-			reset := FALSE;
-			CMDD_Output := 16#0080;						
-		END_IF	
-	END_IF			
+	(* Fault *)
+	error := ETAD_Input.3;
+	
+	IF reset AND error THEN
+		CMDD_Output := 16#0080;						
+	END_IF	
+	reset := FALSE;
+	
+	switchedOn := ETAD_Input.1;
 END_FUNCTION_BLOCK

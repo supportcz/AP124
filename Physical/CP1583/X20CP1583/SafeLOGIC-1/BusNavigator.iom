@@ -16,7 +16,7 @@
 			<Channel Name="BOOL004" Mapping="NSQX0.3" Variable="outfeedEdmError" Address="alarm_mana:outfeedEdmError" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL005" Mapping="NSQX0.4" Variable="lightCurtainP11grey" Address="pallet_mag:lightCurtainP11" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL006" Mapping="NSQX0.5" Variable="lightCurtainP15grey" Address="pallet_con:lightCurtainP15" SODIndex="0x2580" SODSubIndex="0x1" />
-			<Channel Name="BOOL007" Mapping="NSQX0.6" Variable="lightCurtainP17grey" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL007" Mapping="NSQX0.6" Variable="lightCurtainP17grey" Address="pallet_con:lightCurtainP17" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL101" Mapping="NSIX0.0" Variable="diActivateAllSafetyCircuits" Address="diActivateAllSafetyCircuits" SODIndex="0x2500" SODSubIndex="0x2" />
 			<Channel Name="BOOL102" Mapping="NSIX0.1" Variable="diActivateMagazineSafety" Address="pallet_mag:diActivateMagazineSafetyCircuits" SODIndex="0x2500" SODSubIndex="0x2" />
 		</Module>
@@ -28,6 +28,7 @@
 			<Channel Name="SafeTwoChannelInput0708" Mapping="SIX62.7" Variable="diLightCurtainP17" SODIndex="0x6000" SODSubIndex="0x3" />
 			<Channel Name="SafeDigitalInput09" Mapping="SIX61.0" Variable="diLightCurtainP17muting1" SODIndex="0x6000" SODSubIndex="0x2" />
 			<Channel Name="SafeDigitalInput10" Mapping="SIX61.1" Variable="diLightCurtainP17muting2" SODIndex="0x6000" SODSubIndex="0x2" />
+			<Channel Name="SafeDigitalInput11" Mapping="SIX61.2" Variable="diOverrideP15" SODIndex="0x6000" SODSubIndex="0x2" />
 			<Channel Name="SafeDigitalInput17" Mapping="SIX62.0" Variable="diPalletizationEDM" Address="Cyclic#3.diPalletizationEDM" SODIndex="0x6000" SODSubIndex="0x3" />
 			<Channel Name="SafeDigitalInput18" Mapping="SIX62.1" Variable="diMagazineEDM" Address="Cyclic#3.diMagazineEDM" SODIndex="0x6000" SODSubIndex="0x3" />
 			<Channel Name="SafeDigitalInput19" Mapping="SIX62.2" Variable="diOutfeedEDM" Address="Cyclic#3.diOutfeedEDM" SODIndex="0x6000" SODSubIndex="0x3" />

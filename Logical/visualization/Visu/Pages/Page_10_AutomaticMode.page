@@ -109,13 +109,15 @@
           <Property Name="Border" Value="Source[local].Border[Mp_BitmapFrame]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[MpPads]"/>
           <Property Name="Height" Value="30"/>
-          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.statusMessagePalletization]"/>
           <Property Name="Left" Value="260"/>
           <Property Name="SimulationIndex" Value="1"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="None"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[StatusMessage]"/>
+          <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
           <Property Name="Top" Value="108"/>
           <Property Name="Width" Value="431"/>
@@ -124,13 +126,15 @@
           <Property Name="Border" Value="Source[local].Border[Mp_BitmapFrame]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[MpPads]"/>
           <Property Name="Height" Value="30"/>
-          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.statusMessageMagazine]"/>
           <Property Name="Left" Value="260"/>
-          <Property Name="SimulationIndex" Value="2"/>
+          <Property Name="SimulationIndex" Value="1"/>
           <Property Name="SimulationValue" Value=""/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="None"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[StatusMessage]"/>
+          <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
           <Property Name="Top" Value="161"/>
           <Property Name="Width" Value="431"/>
@@ -139,13 +143,15 @@
           <Property Name="Border" Value="Source[local].Border[Mp_BitmapFrame]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[MpPads]"/>
           <Property Name="Height" Value="30"/>
-          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_outfeed.statusMessageOutfeed]"/>
           <Property Name="Left" Value="259"/>
           <Property Name="SimulationIndex" Value="3"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="None"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[StatusMessage]"/>
+          <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
           <Property Name="Top" Value="217"/>
           <Property Name="Width" Value="431"/>
@@ -287,6 +293,21 @@
           <Property Name="StartX" Value="583"/>
           <Property Name="StartY" Value="314"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_8">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="36"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="54"/>
+          <Property Name="SimulationIndex" Value="10"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[StatusMessage]"/>
+          <Property Name="TextIndexOffset" Value="21"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="275"/>
+          <Property Name="Width" Value="183"/>
         </Control>
       </Controls>
       <KeyMapping>

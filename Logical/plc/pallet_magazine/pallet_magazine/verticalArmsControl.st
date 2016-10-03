@@ -44,7 +44,7 @@ ACTION VerticalArmsControl:
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
-				alarmImage[7] := TRUE;
+				alarmImageMagazine[7] := TRUE;
 				StopMovement;
 			END_IF	
 		
@@ -52,7 +52,7 @@ ACTION VerticalArmsControl:
 	
 			IF cmdDown THEN
 				IF palletOnConveyorP12 AND stateArms = stateArmsClosed THEN
-					alarmImage[13] := TRUE;
+					alarmImageMagazine[13] := TRUE;
 					StopMovement;
 				ELSE
 					TON_VerticalMovement(IN := FALSE);
@@ -72,7 +72,7 @@ ACTION VerticalArmsControl:
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
-				alarmImage[8] := TRUE;
+				alarmImageMagazine[8] := TRUE;
 				StopMovement;
 			END_IF
 		
@@ -80,7 +80,7 @@ ACTION VerticalArmsControl:
 			
 			IF cmdDown THEN
 				IF palletOnConveyorP12 AND stateArms = stateArmsClosed THEN
-					alarmImage[13] := TRUE;
+					alarmImageMagazine[13] := TRUE;
 					StopMovement;
 				ELSE
 					TON_VerticalMovement(IN := FALSE);
@@ -104,7 +104,7 @@ ACTION VerticalArmsControl:
 			END_IF	
 			//timeout?
 			IF TON_VerticalMovement.Q THEN
-				alarmImage[9] := TRUE;
+				alarmImageMagazine[9] := TRUE;
 				StopMovement;
 			END_IF
 		
@@ -126,33 +126,33 @@ ACTION VerticalArmsControl:
 	END_IF
 	
 	IF diMagazineUpperHwEnd AND cmdUp THEN
-		alarmImage[10] := TRUE;
+		alarmImageMagazine[10] := TRUE;
 	END_IF
 
 	IF diMagazineLooseChain AND cmdDown THEN
-		alarmImage[11] := TRUE;
+		alarmImageMagazine[11] := TRUE;
 	END_IF
 	
 
 	
 	//edge alarms
-	IF acknowledgeImage[7] THEN
-		alarmImage[7] := FALSE;
+	IF acknowledgeImageMagazine[7] THEN
+		alarmImageMagazine[7] := FALSE;
 	END_IF
-	IF acknowledgeImage[8] THEN
-		alarmImage[8] := FALSE;
+	IF acknowledgeImageMagazine[8] THEN
+		alarmImageMagazine[8] := FALSE;
 	END_IF
-	IF acknowledgeImage[9] THEN
-		alarmImage[9] := FALSE;
+	IF acknowledgeImageMagazine[9] THEN
+		alarmImageMagazine[9] := FALSE;
 	END_IF
-	IF acknowledgeImage[10] THEN
-		alarmImage[10] := FALSE;
+	IF acknowledgeImageMagazine[10] THEN
+		alarmImageMagazine[10] := FALSE;
 	END_IF
-	IF acknowledgeImage[11] THEN
-		alarmImage[11] := FALSE;
+	IF acknowledgeImageMagazine[11] THEN
+		alarmImageMagazine[11] := FALSE;
 	END_IF
-	IF acknowledgeImage[13] THEN
-		alarmImage[13] := FALSE;
+	IF acknowledgeImageMagazine[13] THEN
+		alarmImageMagazine[13] := FALSE;
 	END_IF
 	
 END_ACTION

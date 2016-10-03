@@ -5,28 +5,54 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
-	alarmImage[0] := NOT diAirPresureOK;
-	alarmImage[1] := NOT diEStop1;
-	alarmImage[2] := NOT diEStop2;
-	alarmImage[3] := NOT diEStop3;
-	alarmImage[4] := NOT diEStop4;
-	alarmImage[5] := NOT diEStopRobot;
-	alarmImage[6] := NOT diEStopWrapper;
+	alarmImageCommon[0] := NOT diAirPresureOK;
+	alarmImageCommon[1] := NOT diEStop1;
+	alarmImageCommon[2] := NOT diEStop2;
+	alarmImageCommon[3] := NOT diEStop3;
+	alarmImageCommon[4] := NOT diEStop4;
+	alarmImageCommon[5] := NOT diEStopRobot;
+	alarmImageCommon[6] := NOT diEStopWrapper;
 
-	alarmImage[7] := NOT safetyAlive;
+	alarmImageCommon[7] := NOT safetyAlive;
 
-	alarmImage[8] := diMagazineEDM;
-	alarmImage[9] := diPalletizationEDM;
-	alarmImage[10] := diOutfeedEDM;
-	alarmImage[11] := magazineEdmError;
-	alarmImage[12] := palletizationEdmError;
-	alarmImage[13] := outfeedEdmError;
+	alarmImageCommon[8] := diMagazineEDM;
+	alarmImageCommon[9] := diPalletizationEDM;
+	alarmImageCommon[10] := diOutfeedEDM;
+	alarmImageCommon[11] := magazineEdmError;
+	alarmImageCommon[12] := palletizationEdmError;
+	alarmImageCommon[13] := outfeedEdmError;
 	
+	//detect if there is any alarm 
+	alarmCommon := FALSE;
+	FOR i:=0 TO 39 DO
+		IF alarmImageCommon[i] OR acknowledgeImage[i] THEN
+			alarmCommon := TRUE;
+		END_IF
+	END_FOR
 	
-	IF diReset THEN
-		FOR i:= 0 TO 39 DO
-			acknowledgeImage[i] := 0;
-		END_FOR
-	END_IF
+	//detect if there is any alarm 
+	alarmInZoneMagazine := FALSE;
+	FOR i:=0 TO 39 DO
+		IF alarmImageMagazine[i] OR acknowledgeImageMagazine[i] THEN
+			alarmInZoneMagazine := TRUE;
+		END_IF
+	END_FOR
+	
+	//detect if there is any alarm 
+	alarmInZonePalletization := FALSE;
+	FOR i:=0 TO 39 DO
+		IF alarmImagePalletization[i] OR acknowledgeImagePalletization[i] THEN
+			alarmInZonePalletization := TRUE;
+		END_IF
+	END_FOR
+	
+		
+	//reset all errors
+//	IF diReset THEN
+//		FOR i:= 0 TO 39 DO
+//			acknowledgeImageMagazine[i] := 0;
+//			acknowledgeImage[i] := 0;
+//		END_FOR
+//	END_IF
 	
 END_PROGRAM

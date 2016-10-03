@@ -115,4 +115,6 @@ VAR_GLOBAL {Group(47)}
     doOutfeedContactor2 AT %QX18.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM7.SafeDigitalOutput02')};
     {LINE(54)}
     doOutfeedContactor1 AT %QX18.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM7.SafeDigitalOutput01')};
+    {LINE(55)}
+    diOverrideP15 AT %IX61.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput11')};
 END_VAR

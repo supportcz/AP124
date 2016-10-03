@@ -1,0 +1,12 @@
+VAR
+	acpI_P12 : AcpInoSdc;
+	FI_12 : FI;
+	statePusherDriveP12 : StatePusherDrive;
+	aoPusherDriveP12 : INT;
+	i : INT;
+	tolerance : DINT;
+	oldMoveActive : BOOL;
+	aiDistanceSensor : INT; (*SICK DL50*)
+	diReferenceSwitch : BOOL;
+	actualPosition : DINT;
+END_VAR

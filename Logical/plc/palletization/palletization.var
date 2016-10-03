@@ -1,0 +1,10 @@
+VAR
+	acknowledgeImagePalletization : ARRAY[0..39] OF BOOL;
+	alarmImagePalletization : ARRAY[0..39] OF BOOL;
+	alarmInZonePalletization : BOOL;
+	pusherDrive : PusherDrive;
+	modePalletization : ModePalletization;
+	palletOnConveyorP13 : BOOL; (*VISU:pallet lies on conveyor*)
+	palletOnConveyorP14 : BOOL;
+	palletOnConveyorP15 : BOOL;
+END_VAR

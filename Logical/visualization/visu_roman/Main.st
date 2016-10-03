@@ -18,13 +18,13 @@ PROGRAM _CYCLIC
 		magazineStatusDatapointAuto := 1;
 	END_IF
 
-	IF modeConveyors = modeConveyorsManual THEN
+	IF modePalletization = modePalletizationManual THEN
 		conveyorsStatusDatapointManual := 0;
 	ELSE
 		conveyorsStatusDatapointManual := 1;
 	END_IF
 
-	IF modeConveyors = modeConveyorsAuto THEN
+	IF modePalletization = modePalletizationAuto THEN
 		conveyorsStatusDatapointAuto := 0;
 	ELSE
 		conveyorsStatusDatapointAuto := 1;
@@ -53,6 +53,10 @@ PROGRAM _CYCLIC
 	ELSE
 		hideP15 := 1;
 	END_IF	
+	
+		
+	StatusMessageMagazine;
+	StatusMessagePalletization;
 
 END_PROGRAM
 

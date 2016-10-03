@@ -4,7 +4,7 @@
   <Property Name="AcknowledgeImage" Value="Source[global].Variable[DataSource.plc.alarm_management.alarm_management.acknowledgeImage]"/>
   <Property Name="ActiveBackColor" Value="15"/>
   <Property Name="ActiveForeColor" Value="0"/>
-  <Property Name="AlarmImage" Value="Source[global].Variable[DataSource.plc.alarm_management.alarm_management.alarmImage]"/>
+  <Property Name="AlarmImage" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon]"/>
   <Property Name="BypassBackColor" Value="15"/>
   <Property Name="BypassForeColor" Value="0"/>
   <Property Name="BypassImage" Value="None"/>
