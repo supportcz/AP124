@@ -16,11 +16,8 @@ PROGRAM _CYCLIC
 	uiStatus := VA_Saccess(1,uiHandle);
 	IF uiStatus = 0 THEN
 		uiStatus := VA_GetAlarmCount(1,uiHandle,vaALS_CURRENT,ADR(uiAlarmCount));
-		//VA_GetActiveAlarmCount(1,uiHandle,ADR(uiAlarmCount));
 		IF diReset THEN
 			uiStatus := VA_QuitAlarms(1,uiHandle, 65535);
-	//		VA_QuitAlarms(1,uiHandle, 2);
-//			VA_QuitAlarms(1,uiHandle, 3);
 		END_IF
 		VA_Srelease(1,uiHandle);
 	END_IF;

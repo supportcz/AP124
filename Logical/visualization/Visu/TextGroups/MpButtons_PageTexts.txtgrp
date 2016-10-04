@@ -17,23 +17,26 @@
     <Text ID="90123" Value="yyyy/mm/dd"/>
     <Text ID="90125" Value="Time and Date"/>
     <Text ID="91515" Value="System Diagnostic Manager"/>
-    <Text ID="92553" Value=""/>
-    <Text ID="92557" Value=""/>
-    <Text ID="92558" Value=""/>
-    <Text ID="92559" Value=""/>
-    <Text ID="92560" Value=""/>
     <Text ID="95076" Value="Display Settings"/>
     <Text ID="95694" Value="Manual Mode"/>
     <Text ID="89137" Value="Settings"/>
     <Text ID="124258" Value="Automatic Mode - START"/>
-    <Text ID="124259" Value=""/>
     <Text ID="174649" Value="Automatic Mode"/>
     <Text ID="174650" Value="Info"/>
     <Text ID="174651" Value="Alarm List"/>
-    <Text ID="174653" Value="- Arms Control"/>
     <Text ID="175345" Value="Alarm History"/>
     <Text ID="175346" Value="Alarm Map"/>
     <Text ID="175990" Value="SafeLOGIC"/>
+    <Text ID="177443" Value="Manual Mode - Magazine Control"/>
+    <Text ID="177444" Value="Manual Mode - Conveyors Control"/>
+    <Text ID="177445" Value="Manual Mode - Product Infeed"/>
+    <Text ID="177446" Value=""/>
+    <Text ID="177447" Value=""/>
+    <Text ID="177448" Value=""/>
+    <Text ID="177449" Value=""/>
+    <Text ID="177450" Value=""/>
+    <Text ID="177451" Value=""/>
+    <Text ID="177452" Value="Page"/>
   </TextLayer>
   <TextLayer LanguageId="cs">
     <Text ID="89135" Value=""/>
@@ -44,27 +47,30 @@
     <Text ID="89523" Value=""/>
     <Text ID="89526" Value=""/>
     <Text ID="89527" Value=""/>
-    <Text ID="90122" Value=""/>
-    <Text ID="90123" Value=""/>
-    <Text ID="90125" Value=""/>
+    <Text ID="90122" Value="HH:MM:SS"/>
+    <Text ID="90123" Value="rrrr/mm/dd"/>
+    <Text ID="90125" Value="Čas a Dátum"/>
     <Text ID="91515" Value="Systémový Diagnostický Manažer"/>
-    <Text ID="92553" Value=""/>
-    <Text ID="92557" Value=""/>
-    <Text ID="92558" Value=""/>
-    <Text ID="92559" Value=""/>
-    <Text ID="92560" Value=""/>
     <Text ID="95076" Value=""/>
     <Text ID="95694" Value="Manuálny Mód"/>
     <Text ID="89137" Value="Nastavení"/>
     <Text ID="124258" Value="Automatický Mód - ŠTART"/>
-    <Text ID="124259" Value=""/>
     <Text ID="174649" Value="Automatický Mód"/>
-    <Text ID="174650" Value="Info"/>
+    <Text ID="174650" Value="Informace"/>
     <Text ID="174651" Value="Alarmy"/>
-    <Text ID="174653" Value="- Ovládání ramen"/>
     <Text ID="175345" Value="Historie Alarmu"/>
     <Text ID="175346" Value="Mapa Alarmu"/>
     <Text ID="175990" Value="SafeLOGIC"/>
+    <Text ID="177443" Value="Manuálny Mód - Ovládáni Zásobniku"/>
+    <Text ID="177444" Value="Manuálny Mód - Ovládáni Dopravníků"/>
+    <Text ID="177445" Value="Manuálny Mód - Ovládání Prisunovače Produktů"/>
+    <Text ID="177446" Value=""/>
+    <Text ID="177447" Value=""/>
+    <Text ID="177448" Value=""/>
+    <Text ID="177449" Value=""/>
+    <Text ID="177450" Value=""/>
+    <Text ID="177451" Value=""/>
+    <Text ID="177452" Value="Stránka"/>
   </TextLayer>
   <TextLayer LanguageId="fr">
     <Text ID="89135" Value=""/>
@@ -79,23 +85,26 @@
     <Text ID="90123" Value=""/>
     <Text ID="90125" Value=""/>
     <Text ID="91515" Value=""/>
-    <Text ID="92553" Value=""/>
-    <Text ID="92557" Value=""/>
-    <Text ID="92558" Value=""/>
-    <Text ID="92559" Value=""/>
-    <Text ID="92560" Value=""/>
     <Text ID="95076" Value=""/>
     <Text ID="95694" Value=""/>
     <Text ID="89137" Value=""/>
     <Text ID="124258" Value=""/>
-    <Text ID="124259" Value=""/>
     <Text ID="174649" Value=""/>
     <Text ID="174650" Value=""/>
     <Text ID="174651" Value=""/>
-    <Text ID="174653" Value=""/>
     <Text ID="175345" Value=""/>
     <Text ID="175346" Value=""/>
     <Text ID="175990" Value=""/>
+    <Text ID="177443" Value=""/>
+    <Text ID="177444" Value=""/>
+    <Text ID="177445" Value=""/>
+    <Text ID="177446" Value=""/>
+    <Text ID="177447" Value=""/>
+    <Text ID="177448" Value=""/>
+    <Text ID="177449" Value=""/>
+    <Text ID="177450" Value=""/>
+    <Text ID="177451" Value=""/>
+    <Text ID="177452" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="89135" Value="6010"/>
@@ -109,23 +118,26 @@
     <Index ID="90122" Value="6005"/>
     <Index ID="90123" Value="6006"/>
     <Index ID="90125" Value="6007"/>
-    <Index ID="91515" Value="5"/>
-    <Index ID="92553" Value="1208"/>
-    <Index ID="92557" Value="1209"/>
-    <Index ID="92558" Value="1210"/>
-    <Index ID="92559" Value="1211"/>
-    <Index ID="92560" Value="1212"/>
+    <Index ID="91515" Value="50"/>
     <Index ID="95076" Value="6008"/>
-    <Index ID="95694" Value="2"/>
-    <Index ID="89137" Value="6"/>
-    <Index ID="124258" Value="14"/>
-    <Index ID="124259" Value="15"/>
-    <Index ID="174649" Value="1"/>
-    <Index ID="174650" Value="3"/>
-    <Index ID="174651" Value="4"/>
-    <Index ID="174653" Value="7"/>
-    <Index ID="175345" Value="9"/>
-    <Index ID="175346" Value="10"/>
-    <Index ID="175990" Value="11"/>
+    <Index ID="95694" Value="20"/>
+    <Index ID="89137" Value="60"/>
+    <Index ID="124258" Value="11"/>
+    <Index ID="174649" Value="10"/>
+    <Index ID="174650" Value="30"/>
+    <Index ID="174651" Value="40"/>
+    <Index ID="175345" Value="42"/>
+    <Index ID="175346" Value="41"/>
+    <Index ID="175990" Value="61"/>
+    <Index ID="177443" Value="21"/>
+    <Index ID="177444" Value="22"/>
+    <Index ID="177445" Value="23"/>
+    <Index ID="177446" Value="12"/>
+    <Index ID="177447" Value="24"/>
+    <Index ID="177448" Value="31"/>
+    <Index ID="177449" Value="43"/>
+    <Index ID="177450" Value="51"/>
+    <Index ID="177451" Value="62"/>
+    <Index ID="177452" Value="0"/>
   </IndexMap>
 </TextGroup>

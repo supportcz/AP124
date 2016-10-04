@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="ManualMode_Conveyor">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="8"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="175308" Value="Undefined"/>
+    <Text ID="175309" Value="Conveyor empty"/>
+    <Text ID="175310" Value="Conveyor occupied"/>
+    <Text ID="175311" Value="Conveyor moving"/>
+    <Text ID="175312" Value="Conveyor stop"/>
+    <Text ID="177453" Value="Remove pallet P12"/>
+    <Text ID="177463" Value="Remove pallet P13"/>
+    <Text ID="177464" Value="Remove pallet P14"/>
+    <Text ID="177465" Value="Remove pallet P15"/>
+    <Text ID="177466" Value="Move pallet P12+P13"/>
+    <Text ID="177467" Value="Move pallet P13+P14"/>
+    <Text ID="177468" Value="Move pallet P14+P15"/>
+    <Text ID="177469" Value=""/>
+    <Text ID="177470" Value=""/>
+    <Text ID="177471" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="175308" Value="Počatečný stav"/>
+    <Text ID="175309" Value="Ramena se otevírají"/>
+    <Text ID="175310" Value="Ramena jsou otevřené"/>
+    <Text ID="175311" Value="Ramena se zavírají"/>
+    <Text ID="175312" Value="Ramena jsou zavřené"/>
+    <Text ID="177453" Value="Odstranit paletu P12"/>
+    <Text ID="177463" Value="Odstranit paletu P13"/>
+    <Text ID="177464" Value="Odstranit paletu P14"/>
+    <Text ID="177465" Value="Odstranit paletu P15"/>
+    <Text ID="177466" Value="Pohni paletu P12+P13"/>
+    <Text ID="177467" Value="Pohni paletu P13+P14"/>
+    <Text ID="177468" Value="Pohni paletu P14+P15"/>
+    <Text ID="177469" Value=""/>
+    <Text ID="177470" Value=""/>
+    <Text ID="177471" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="175308" Value=""/>
+    <Text ID="175309" Value=""/>
+    <Text ID="175310" Value=""/>
+    <Text ID="175311" Value=""/>
+    <Text ID="175312" Value=""/>
+    <Text ID="177453" Value=""/>
+    <Text ID="177463" Value=""/>
+    <Text ID="177464" Value=""/>
+    <Text ID="177465" Value=""/>
+    <Text ID="177466" Value=""/>
+    <Text ID="177467" Value=""/>
+    <Text ID="177468" Value=""/>
+    <Text ID="177469" Value=""/>
+    <Text ID="177470" Value=""/>
+    <Text ID="177471" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="175308" Value="0"/>
+    <Index ID="175309" Value="1"/>
+    <Index ID="175310" Value="2"/>
+    <Index ID="175311" Value="3"/>
+    <Index ID="175312" Value="4"/>
+    <Index ID="177453" Value="5"/>
+    <Index ID="177463" Value="6"/>
+    <Index ID="177464" Value="7"/>
+    <Index ID="177465" Value="8"/>
+    <Index ID="177466" Value="9"/>
+    <Index ID="177467" Value="10"/>
+    <Index ID="177468" Value="11"/>
+    <Index ID="177469" Value="12"/>
+    <Index ID="177470" Value="13"/>
+    <Index ID="177471" Value="14"/>
+  </IndexMap>
+</TextGroup>

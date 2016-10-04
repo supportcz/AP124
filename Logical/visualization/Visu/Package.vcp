@@ -24,7 +24,7 @@
   <Property Name="KeyRepeatDelay" Value="300"/>
   <Property Name="KeyRepeatRate" Value="50"/>
   <Property Name="LEDMatrix" Value="None"/>
-  <Property Name="LanguageChangeDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.ChangeLanguage]"/>
+  <Property Name="LanguageChangeDatapoint" Value="None"/>
   <Property Name="LanguageCurrentDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.CurrentLanguage]"/>
   <Property Name="LifeSignDatapoint" Value="None"/>
   <Property Name="ManualStart" Value="False"/>
@@ -468,6 +468,7 @@
     <Source File="ColorMaps\ColorMap_IndexMngmt.clm"/>
     <Source File="ColorMaps\ColorMap_PageControl.clm"/>
     <Source File="ColorMaps\ColorMap_PageControlAlarm.clm"/>
+    <Source File="ColorMaps\ColorMap_SelectedLanguage.clm"/>
     <Source File="VirtualKeys.vcvk"/>
     <Source File="Palette.vcr"/>
   </SourceFiles>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?AutomationStudio Version="4.2.5.388"?>
-<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="ManualMode_StateMagazine">
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="ManualMode_Magazine">
   <Property Name="Description" Value=""/>
   <Property Name="Index" Value="7"/>
   <TextSnippets/>
@@ -13,6 +13,14 @@
     <Text ID="175305" Value="Middle position"/>
     <Text ID="175306" Value="Move to lower"/>
     <Text ID="175307" Value="Lower position"/>
+    <Text ID="177472" Value="Open"/>
+    <Text ID="177473" Value="Close"/>
+    <Text ID="177474" Value="Up"/>
+    <Text ID="177475" Value="Down"/>
+    <Text ID="177476" Value="Remove pallet P12"/>
+    <Text ID="177477" Value=""/>
+    <Text ID="177478" Value=""/>
+    <Text ID="177479" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="cs">
     <Text ID="175300" Value="Počatečný stav"/>
@@ -23,6 +31,14 @@
     <Text ID="175305" Value=""/>
     <Text ID="175306" Value=""/>
     <Text ID="175307" Value=""/>
+    <Text ID="177472" Value="Otevřít"/>
+    <Text ID="177473" Value="Zavřít"/>
+    <Text ID="177474" Value="Nahoru"/>
+    <Text ID="177475" Value="Dolů"/>
+    <Text ID="177476" Value="Odstránit paletu P12"/>
+    <Text ID="177477" Value=""/>
+    <Text ID="177478" Value=""/>
+    <Text ID="177479" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="fr">
     <Text ID="175300" Value=""/>
@@ -33,6 +49,14 @@
     <Text ID="175305" Value=""/>
     <Text ID="175306" Value=""/>
     <Text ID="175307" Value=""/>
+    <Text ID="177472" Value=""/>
+    <Text ID="177473" Value=""/>
+    <Text ID="177474" Value=""/>
+    <Text ID="177475" Value=""/>
+    <Text ID="177476" Value=""/>
+    <Text ID="177477" Value=""/>
+    <Text ID="177478" Value=""/>
+    <Text ID="177479" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="175300" Value="0"/>
@@ -43,5 +67,13 @@
     <Index ID="175305" Value="5"/>
     <Index ID="175306" Value="6"/>
     <Index ID="175307" Value="7"/>
+    <Index ID="177472" Value="8"/>
+    <Index ID="177473" Value="9"/>
+    <Index ID="177474" Value="10"/>
+    <Index ID="177475" Value="11"/>
+    <Index ID="177476" Value="12"/>
+    <Index ID="177477" Value="13"/>
+    <Index ID="177478" Value="14"/>
+    <Index ID="177479" Value="15"/>
   </IndexMap>
 </TextGroup>

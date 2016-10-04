@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="ManualMode_ProductInfeed">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="11"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="177433" Value="Up"/>
+    <Text ID="177434" Value="Down"/>
+    <Text ID="177435" Value="Pusher Drive -"/>
+    <Text ID="177436" Value="Pusher Drive +"/>
+    <Text ID="177437" Value="Back"/>
+    <Text ID="177438" Value=""/>
+    <Text ID="177439" Value=""/>
+    <Text ID="177440" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="177433" Value="Nahoru"/>
+    <Text ID="177434" Value="Dolů"/>
+    <Text ID="177435" Value="Pohon Posunovače -"/>
+    <Text ID="177436" Value="Pohon Posunovače +"/>
+    <Text ID="177437" Value="Zpět"/>
+    <Text ID="177438" Value=""/>
+    <Text ID="177439" Value=""/>
+    <Text ID="177440" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="177433" Value=""/>
+    <Text ID="177434" Value=""/>
+    <Text ID="177435" Value=""/>
+    <Text ID="177436" Value=""/>
+    <Text ID="177437" Value=""/>
+    <Text ID="177438" Value=""/>
+    <Text ID="177439" Value=""/>
+    <Text ID="177440" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="177433" Value="0"/>
+    <Index ID="177434" Value="1"/>
+    <Index ID="177435" Value="2"/>
+    <Index ID="177436" Value="3"/>
+    <Index ID="177437" Value="4"/>
+    <Index ID="177438" Value="5"/>
+    <Index ID="177439" Value="6"/>
+    <Index ID="177440" Value="7"/>
+  </IndexMap>
+</TextGroup>

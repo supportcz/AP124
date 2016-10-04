@@ -79,6 +79,24 @@
       <Property Name="Top" Value="415"/>
       <Property Name="Width" Value="800"/>
     </Control>
+    <Control ClassId="0x00001004" Name="txtGroupControl">
+      <Property Name="Border" Value="Source[local].Border[Mp_GroupControl]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
+      <Property Name="Height" Value="388"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.CurrentPage]"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[MpButtons_PageTexts]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="29"/>
+      <Property Name="Width" Value="800"/>
+    </Control>
   </Controls>
   <KeyMapping/>
 </Layer>

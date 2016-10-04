@@ -5,18 +5,30 @@
   <Property Name="Index" Value="9"/>
   <TextSnippets/>
   <TextLayer LanguageId="en">
-    <Text ID="176795" Value="Palletization"/>
+    <Text ID="176795" Value="Stop Pallet Magazine"/>
     <Text ID="176796" Value="Magazine"/>
     <Text ID="176797" Value="Output of pallets"/>
     <Text ID="176806" Value="START"/>
     <Text ID="176807" Value="STOP"/>
+    <Text ID="177492" Value="Start Palletization"/>
+    <Text ID="177493" Value="Stop Palletization"/>
+    <Text ID="177494" Value=""/>
+    <Text ID="177495" Value=""/>
+    <Text ID="177496" Value=""/>
+    <Text ID="177497" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="cs">
-    <Text ID="176795" Value="Paletizace"/>
+    <Text ID="176795" Value="Stop Zásobník"/>
     <Text ID="176796" Value="Zásobnik"/>
     <Text ID="176797" Value="Výstup palet"/>
     <Text ID="176806" Value="ŠTART"/>
     <Text ID="176807" Value="STOP"/>
+    <Text ID="177492" Value="Štart Paletizace"/>
+    <Text ID="177493" Value="Stop Paletizace"/>
+    <Text ID="177494" Value=""/>
+    <Text ID="177495" Value=""/>
+    <Text ID="177496" Value=""/>
+    <Text ID="177497" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="fr">
     <Text ID="176795" Value=""/>
@@ -24,6 +36,12 @@
     <Text ID="176797" Value=""/>
     <Text ID="176806" Value=""/>
     <Text ID="176807" Value=""/>
+    <Text ID="177492" Value=""/>
+    <Text ID="177493" Value=""/>
+    <Text ID="177494" Value=""/>
+    <Text ID="177495" Value=""/>
+    <Text ID="177496" Value=""/>
+    <Text ID="177497" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="176795" Value="0"/>
@@ -31,5 +49,11 @@
     <Index ID="176797" Value="2"/>
     <Index ID="176806" Value="3"/>
     <Index ID="176807" Value="4"/>
+    <Index ID="177492" Value="5"/>
+    <Index ID="177493" Value="6"/>
+    <Index ID="177494" Value="7"/>
+    <Index ID="177495" Value="8"/>
+    <Index ID="177496" Value="9"/>
+    <Index ID="177497" Value="10"/>
   </IndexMap>
 </TextGroup>

@@ -37,45 +37,12 @@
       <Property Name="Width" Value="800"/>
       <Property Name="Z-Order" Value="1"/>
       <TextGroup>
-        <TextLayer LanguageId="en">
-          <Text ID="175704" Value="Stop Pallet Magazine"/>
-          <Text ID="175797" Value="Start Palletization"/>
-          <Text ID="175799" Value="Stop Palletization"/>
-        </TextLayer>
-        <TextLayer LanguageId="cs">
-          <Text ID="175704" Value=""/>
-          <Text ID="175797" Value=""/>
-          <Text ID="175799" Value=""/>
-        </TextLayer>
-        <TextLayer LanguageId="fr">
-          <Text ID="175704" Value=""/>
-          <Text ID="175797" Value=""/>
-          <Text ID="175799" Value=""/>
-        </TextLayer>
-        <IndexMap>
-          <Index ID="175704" Value="3"/>
-          <Index ID="175797" Value="5"/>
-          <Index ID="175799" Value="7"/>
-        </IndexMap>
+        <TextLayer LanguageId="en"/>
+        <TextLayer LanguageId="cs"/>
+        <TextLayer LanguageId="fr"/>
+        <IndexMap/>
       </TextGroup>
       <Controls>
-        <Control ClassId="0x00001004" Name="txtGroupControl">
-          <Property Name="Border" Value="Source[local].Border[Mp_GroupControl]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
-          <Property Name="Height" Value="388"/>
-          <Property Name="Left" Value="0"/>
-          <Property Name="Multiline" Value="Automatic"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value=""/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[MpButtons_PageTexts]"/>
-          <Property Name="TextIndexOffset" Value="1"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="27"/>
-          <Property Name="Width" Value="800"/>
-        </Control>
         <Control ClassId="0x00001002" Name="Button_1a2">
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -94,8 +61,8 @@
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.magazineStatusDatapointAuto]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="3"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[AutomaticMode]"/>
+          <Property Name="TextIndex" Value="0"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
@@ -121,8 +88,8 @@
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.conveyorsStatusDatapointAuto]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="7"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[AutomaticMode]"/>
+          <Property Name="TextIndex" Value="6"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
@@ -148,7 +115,7 @@
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.conveyorsStatusDatapointManual]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[AutomaticMode]"/>
           <Property Name="TextIndex" Value="5"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
