@@ -21,4 +21,5 @@ VAR
 	TON_ConveyorP1 : TON;
 	acpI_P11 : AcpInoSdc;
 	stateConveyorP2 : StateConveyor;
+	cmdMoveTrayP2 : BOOL;
 END_VAR

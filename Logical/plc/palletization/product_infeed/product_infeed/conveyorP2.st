@@ -21,15 +21,15 @@ ACTION ConveyorP2:
 		
 		stateConveyorWait:
 		
-//			IF cmdMoveTrayP1 THEN
+			IF cmdMoveTrayP2 THEN
 //				IF trayOnConveyorP1 AND NOT diReset THEN
 //					alarmImagePalletization[19] := TRUE;
 //					stateConveyorP1 := stateConveyorStop;
 //				ELSE
 //					TON_ConveyorP1(IN := FALSE);
-//					stateConveyorP1 := stateConveyorMoving;
+					stateConveyorP2 := stateConveyorMoving;
 //				END_IF
-//			END_IF
+			END_IF
 //						
 //			IF trayOnConveyorP1 > trayOnConveyorP1old THEN
 //				alarmImagePalletization[20] := TRUE;
@@ -38,11 +38,11 @@ ACTION ConveyorP2:
 		
 		stateConveyorMoving:
 			
-//			acpI_P11.speed := 100;
+			acpI_P11.speed := actualRecipe.conveyorP2speed;
 //				
-//			IF NOT cmdMoveTrayP1 THEN
-//				stateConveyorP1 := stateConveyorStop;
-//			END_IF	
+			IF NOT cmdMoveTrayP2 THEN
+				stateConveyorP2 := stateConveyorStop;
+			END_IF	
 //				
 //			//sensor reached?
 //			IF trayOnConveyorP1 AND NOT diReset THEN
@@ -60,7 +60,13 @@ ACTION ConveyorP2:
 	
 	//control of ACOPOSinverter P14
 	acpI_P11();
-
+	
+	IF acpI_P11.error THEN
+		alarmImagePalletization[23] := TRUE;
+	ELSE
+		alarmImagePalletization[23] := FALSE;
+	END_IF
+	
 //	//edge alarms
 //	IF acknowledgeImagePalletization[19] THEN
 //		alarmImagePalletization[19] := FALSE;

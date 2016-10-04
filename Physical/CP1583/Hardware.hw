@@ -182,7 +182,6 @@
     <Parameter ID="ACC" Value="0" />
     <Parameter ID="DEC" Value="0" />
     <Parameter ID="FLU" Value="0" />
-    <Parameter ID="CTT" Value="0" />
     <Parameter ID="NPR" Value="110" />
     <Parameter ID="COS" Value="73" />
     <Parameter ID="UNS" Value="400" />
@@ -401,6 +400,14 @@
     <Parameter ID="Cyclic7Tolerance" Value="1000000" />
     <Parameter ID="Cyclic8Duration" Value="10000" />
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="USER" />
+    <Parameter ID="FileDevicePath1" Value="F:\" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="atrima" />
+    <Parameter ID="FtpUserPassword1" Value="WTu4FPCiIceACZRqUEgJEtXb7Eb63HUzCfqgyyypU7s=" />
+    <Parameter ID="FtpUserSalt1" Value="2eJIzixw" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
   </Module>
   <Module Name="X20PS2100a" Type="X20PS2100" Version="1.1.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />

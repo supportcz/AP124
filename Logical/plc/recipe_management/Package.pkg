@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.5.388?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">recipe_management.typ</Object>
+    <Object Type="File">recipe_management.var</Object>
+    <Object Type="Program" Language="IEC">recipe_management</Object>
+  </Objects>
+</Package>

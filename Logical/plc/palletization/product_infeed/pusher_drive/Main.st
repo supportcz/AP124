@@ -46,10 +46,10 @@ PROGRAM _CYCLIC
 			pusherDrive.cmdJogPlus := FALSE;
 			pusherDrive.cmdJogMinus := FALSE;
 
-			IF diReset THEN
+			//IF diReset THEN
 				acpI_P12.reset := TRUE;
 				FI_12.cmd.acknowledge := TRUE;
-			END_IF
+			//END_IF
 		
 			IF NOT pusherDrive.driveError AND NOT pusherDrive.encoderError THEN
 				statePusherDriveP12 := statePusherDriveWait;
@@ -137,7 +137,8 @@ PROGRAM _CYCLIC
 				FI_12.cmd.stop := TRUE;	
 			END_IF
 			
-			IF oldMoveActive > FI_12.info.moveActive THEN
+			//IF oldMoveActive > FI_12.info.moveActive THEN
+			IF NOT FI_12.info.moveActive THEN
 				statePusherDriveP12 := statePusherDriveStop;
 			END_IF
 		
@@ -169,14 +170,14 @@ PROGRAM _CYCLIC
 				FI_12.cmd.stop := TRUE;	
 			END_IF
 			
-			IF oldMoveActive > FI_12.info.moveActive THEN
+			//IF oldMoveActive > FI_12.info.moveActive THEN
+			IF NOT FI_12.info.moveActive THEN
 				statePusherDriveP12 := statePusherDriveStop;
 			END_IF
 	END_CASE
 
 	oldMoveActive :=  FI_12.info.moveActive;
 	
-	memcpy(ADR(FI_12.IOMapping.referenceSwitch), ADR(diReferenceSwitch), SIZEOF(diReferenceSwitch));
 	memcpy(ADR(FI_12.IOMapping.Encoder), ADR(aiDistanceSensor), 2);
 	FI_12();
 	acpI_P12();

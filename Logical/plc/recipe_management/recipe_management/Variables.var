@@ -1,0 +1,9 @@
+VAR
+	cmdLoad : BOOL;
+	cmdSave : BOOL;
+	MpRecipeCsv_0 : MpRecipeCsv;
+	MpRecipeRegPar_0 : MpRecipeRegPar;
+	readyToStart : BOOL;
+	recipes : Recipes;
+	stateRecipe : StateRecipe;
+END_VAR

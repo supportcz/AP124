@@ -7,6 +7,5 @@ VAR
 	tolerance : DINT;
 	oldMoveActive : BOOL;
 	aiDistanceSensor : INT; (*SICK DL50*)
-	diReferenceSwitch : BOOL; (*not used*)
 	actualPosition : DINT;
 END_VAR

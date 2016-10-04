@@ -21,6 +21,7 @@
   <TaskClass Name="Cyclic#4">
     <Task Name="visu_manag" Source="visualization.visu_manager.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="visu_roman" Source="visualization.visu_roman.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="recipe_man" Source="plc.recipe_management.recipe_management.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
@@ -112,5 +113,7 @@
     <LibraryObject Name="visapi" Source="Libraries.visapi.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="Motorky" Source="Libraries.Motorky.lby" Memory="UserROM" Language="ANSIC" Debugging="true" />
     <LibraryObject Name="powerlnk" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="MpRecipe" Source="Libraries.MpRecipe.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="MpCom" Source="Libraries.MpCom.lby" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>

@@ -82,4 +82,10 @@ ACTION ConveyorP14P15Control:
 		alarmImagePalletization[11] := FALSE;
 	END_IF	
 	
+	IF acpI_P15.error THEN
+		alarmImagePalletization[25] := TRUE;
+	ELSE
+		alarmImagePalletization[25] := FALSE;
+	END_IF	
+	
 END_ACTION
