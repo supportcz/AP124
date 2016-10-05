@@ -4,9 +4,11 @@ TYPE
 		cmdAbsolute : BOOL;
 		cmdJogPlus : BOOL;
 		cmdJogMinus : BOOL;
+		tolerance : DINT;
 		positions : ARRAY[0..4]OF DINT;
 		speed : DINT;
-		selectedPosition : USINT;
+		requestedPositionIndex : INT;
+		actualPositionIndex : INT;
 		actualPosition : DINT;
 		driveError : BOOL;
 		encoderError : BOOL;

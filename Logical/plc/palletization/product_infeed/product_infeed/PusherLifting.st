@@ -19,12 +19,12 @@ ACTION PusherLifting:
 
 		
 			IF statePusherLifting = statePusherLiftingUndefined THEN
-				IF cmdDown THEN
+				IF cmdPusherLiftingDown THEN
 					TON_VerticalMovement(IN := FALSE);
 					statePusherLifting := stateMoveToLowerPosition;
 				END_IF	
 			
-				IF cmdUp THEN
+				IF cmdPusherLiftingUp THEN
 					TON_VerticalMovement(IN := FALSE);
 					statePusherLifting := stateMoveToUpperPosition;
 				END_IF	
@@ -36,7 +36,7 @@ ACTION PusherLifting:
 			//start timer
 			TON_VerticalMovement(IN := TRUE, PT := T#3s);
 			//position reached?
-			IF diPusherLiftingUpperPosition OR NOT cmdUp THEN
+			IF diPusherLiftingUpperPosition OR NOT cmdPusherLiftingUp THEN
 				StopMovement;
 			END_IF	
 			//timeout?
@@ -47,11 +47,11 @@ ACTION PusherLifting:
 		
 		stateUpperPosition:
 	
-			IF cmdDown THEN
+			IF cmdPusherLiftingDown THEN
 				TON_VerticalMovement(IN := FALSE); 
 				statePusherLifting := stateMoveToLowerPosition;
 			END_IF	
-			cmdUp := FALSE;
+			cmdPusherLiftingUp := FALSE;
 		
 		
 		stateMoveToLowerPosition:
@@ -60,7 +60,7 @@ ACTION PusherLifting:
 			//start timer
 			TON_VerticalMovement(IN := TRUE, PT := T#3s);
 			//position reached?
-			IF diPusherLiftingLowerPosition OR NOT cmdDown THEN
+			IF diPusherLiftingLowerPosition OR NOT cmdPusherLiftingDown THEN
 				StopMovement;
 			END_IF	
 			//timeout?
@@ -71,11 +71,11 @@ ACTION PusherLifting:
 		
 		stateLowerPosition:
 			
-			IF cmdUp THEN
+			IF cmdPusherLiftingUp THEN
 				TON_VerticalMovement(IN := FALSE);
 				statePusherLifting := stateMoveToUpperPosition;
 			END_IF	
-			cmdDown := FALSE;
+			cmdPusherLiftingDown := FALSE;
 
 	END_CASE
 				
@@ -98,8 +98,8 @@ ACTION PusherLifting:
 END_ACTION
 
 ACTION StopMovement: 
-	cmdUp := FALSE;
-	cmdDown := FALSE;
+	cmdPusherLiftingUp := FALSE;
+	cmdPusherLiftingDown := FALSE;
 	doPusherLiftingDown := doPusherLiftingUp :=  FALSE;
 	statePusherLifting := statePusherLiftingUndefined;
 END_ACTION

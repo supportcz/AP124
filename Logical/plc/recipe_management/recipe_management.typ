@@ -1,7 +1,7 @@
 
 TYPE
 	Layout : 	STRUCT 
-		nbOfTrays : USINT;
+		nbOfTrays : INT;
 		tray : ARRAY[0..39]OF Tray;
 	END_STRUCT;
 	Recipe : 	STRUCT 
@@ -10,15 +10,16 @@ TYPE
 		interlayerSheetTop : BOOL;
 		conveyorP1speed : INT;
 		conveyorP2speed : INT;
-		nbOfLayers : USINT;
-		layer : ARRAY[0..9]OF USINT;
+		nbOfLayers : INT;
+		layer : ARRAY[0..9]OF INT;
 	END_STRUCT;
 	Recipes : 	STRUCT 
+		actualRecipeIndex : INT;
 		recipe : ARRAY[0..9]OF Recipe;
 		layout : ARRAY[0..9]OF Layout;
 	END_STRUCT;
 	Tray : 	STRUCT 
-		gapBetweenTrays : INT;
+		gapBetweenTrays : TIME;
 		makeGap : BOOL;
 		turnTray : BOOL;
 		lastTrayInLayer : BOOL;

@@ -5,7 +5,8 @@ ACTION ConveyorP2:
 		stateConveyorP2 := stateConveyorStop;  
 	END_IF
 	
-
+	//pause conveyor when no trays on input
+//	TOF_TrayOnInputP2b(IN := diTrayOnInputP2, PT := T#10s);
 	
 	CASE stateConveyorP2 OF
 		
@@ -22,39 +23,29 @@ ACTION ConveyorP2:
 		stateConveyorWait:
 		
 			IF cmdMoveTrayP2 THEN
-//				IF trayOnConveyorP1 AND NOT diReset THEN
-//					alarmImagePalletization[19] := TRUE;
-//					stateConveyorP1 := stateConveyorStop;
-//				ELSE
-//					TON_ConveyorP1(IN := FALSE);
-					stateConveyorP2 := stateConveyorMoving;
-//				END_IF
+				stateConveyorP2 := stateConveyorMoving;
 			END_IF
-//						
-//			IF trayOnConveyorP1 > trayOnConveyorP1old THEN
-//				alarmImagePalletization[20] := TRUE;
-//				stateConveyorP1 := stateConveyorStop;
-//			END_IF	
+
 		
 		stateConveyorMoving:
 			
 			acpI_P11.speed := actualRecipe.conveyorP2speed;
-//				
+				
+			IF NOT TOF_TrayOnInputP1.Q THEN
+				stateConveyorP2 := stateConveyorPause;
+			END_IF
+			
 			IF NOT cmdMoveTrayP2 THEN
 				stateConveyorP2 := stateConveyorStop;
 			END_IF	
-//				
-//			//sensor reached?
-//			IF trayOnConveyorP1 AND NOT diReset THEN
-//				stateConveyorP1 := stateConveyorStop;
-//			END_IF	
-//			
-//			//timeout?
-//			TON_ConveyorP1(IN := TRUE, PT := T#12s);
-//			IF TON_ConveyorP1.Q AND NOT diReset THEN
-//				alarmImagePalletization[21] := TRUE;
-//				stateConveyorP1 := stateConveyorStop;
-//			END_IF
+
+		stateConveyorPause:
+			
+			acpI_P11.speed := 0;
+			
+			IF TOF_TrayOnInputP1.Q THEN
+				stateConveyorP2 := stateConveyorMoving;
+			END_IF
 		
 	END_CASE
 	
@@ -71,12 +62,6 @@ ACTION ConveyorP2:
 //	IF acknowledgeImagePalletization[19] THEN
 //		alarmImagePalletization[19] := FALSE;
 //	END_IF	
-//	IF acknowledgeImagePalletization[20] THEN
-//		alarmImagePalletization[20] := FALSE;
-//	END_IF	
-//	IF acknowledgeImagePalletization[21] THEN
-//		alarmImagePalletization[21] := FALSE;
-//	END_IF					
-//	trayOnConveyorP1old := trayOnConveyorP1;
+
 
 END_ACTION

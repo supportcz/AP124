@@ -243,7 +243,7 @@
           <Folder Name="product_infeed">
             <Property Name="Description" Value=""/>
             <Property Name="FolderType" Value="Program"/>
-            <DataPoint Name="cmdUp">
+            <DataPoint Name="cmdPusherLiftingDown">
               <Property Name="ConnectedBySharedResource" Value="False"/>
               <Property Name="ConnectingVisus" Value="visualization\Visu"/>
               <Property Name="Description" Value=""/>
@@ -252,7 +252,7 @@
               <Property Name="UserID" Value="None"/>
               <Property Name="VCType" Value="BOOL"/>
             </DataPoint>
-            <DataPoint Name="cmdDown">
+            <DataPoint Name="cmdPusherLiftingUp">
               <Property Name="ConnectedBySharedResource" Value="False"/>
               <Property Name="ConnectingVisus" Value="visualization\Visu"/>
               <Property Name="Description" Value=""/>
@@ -261,7 +261,7 @@
               <Property Name="UserID" Value="None"/>
               <Property Name="VCType" Value="BOOL"/>
             </DataPoint>
-            <DataPoint Name="cmdMoveTrayP1">
+            <DataPoint Name="cmdRunConveyorP1">
               <Property Name="ConnectedBySharedResource" Value="False"/>
               <Property Name="ConnectingVisus" Value="visualization\Visu"/>
               <Property Name="Description" Value=""/>

@@ -1,8 +1,8 @@
 VAR
 	actualLayout : Layout;
-	actualLayoutIndex : USINT;
+	actualLayoutIndex : INT;
 	actualRecipe : Recipe;
-	actualRecipeIndex : USINT;
-	requestedLayoutIndex : USINT;
-	requestedRecipeIndex : USINT;
+	actualRecipeIndex : INT;
+	requestedLayoutIndex : INT;
+	requestedRecipeIndex : INT;
 END_VAR

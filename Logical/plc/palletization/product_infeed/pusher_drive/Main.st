@@ -12,14 +12,14 @@ PROGRAM _INIT
 	FI_12.init.speedFilter := 100;
 	FI_12.init.settleTime := 0.5;
 
-	tolerance := 30;
-
-	pusherDrive.positions[0] := FI_12.init.negativeSwLimit+tolerance;
+	pusherDrive.tolerance := 30;
+	pusherDrive.positions[0] := FI_12.init.negativeSwLimit + pusherDrive.tolerance;
 	pusherDrive.positions[1] := 925;
 	pusherDrive.positions[2] := 1360;
 	pusherDrive.positions[3] := 1870;
 	pusherDrive.positions[4] := 2000;//FI_12.init.positiveSwLimit-tolerance;
-	pusherDrive.selectedPosition := 1;
+	pusherDrive.requestedPositionIndex := 1;
+	pusherDrive.actualPositionIndex := -1;
 	pusherDrive.speed := 500;
 	 
 END_PROGRAM
@@ -50,7 +50,7 @@ PROGRAM _CYCLIC
 				acpI_P12.reset := TRUE;
 				FI_12.cmd.acknowledge := TRUE;
 			//END_IF
-		
+			
 			IF NOT pusherDrive.driveError AND NOT pusherDrive.encoderError THEN
 				statePusherDriveP12 := statePusherDriveWait;
 			END_IF
@@ -94,7 +94,7 @@ PROGRAM _CYCLIC
 			
 			IF FI_12.info.powerOn AND acpI_P12.switchedOn THEN
 				FI_12.cmd.absolute := TRUE;
-				FI_12.param.position := pusherDrive.positions[pusherDrive.selectedPosition];
+				FI_12.param.position := pusherDrive.positions[pusherDrive.requestedPositionIndex];
 				FI_12.param.speed := pusherDrive.speed;
 				statePusherDriveP12 := statePusherDriveAbsolute2;
 			END_IF
@@ -106,6 +106,7 @@ PROGRAM _CYCLIC
 			END_IF
 			
 			IF oldMoveActive > FI_12.info.moveActive THEN
+				pusherDrive.actualPositionIndex := pusherDrive.requestedPositionIndex;
 				statePusherDriveP12 := statePusherDriveStop;
 			END_IF
 				
@@ -115,18 +116,21 @@ PROGRAM _CYCLIC
 			acpI_P12.switchOn := TRUE;					
 			
 			IF FI_12.info.powerOn AND acpI_P12.switchedOn THEN
-				FOR i := 1 TO 4 DO
-					IF pusherDrive.actualPosition < pusherDrive.positions[i] - tolerance THEN
-						EXIT;
-					END_IF
-				END_FOR
-				IF i > 4 THEN
-					i := 4;
+//				FOR i := 1 TO 4 DO
+//					IF pusherDrive.actualPosition < pusherDrive.positions[i] - pusherDrive.tolerance THEN
+//						EXIT;
+//					END_IF
+//				END_FOR
+//				IF i > 4 THEN
+//					i := 4;
+//				END_IF
+				pusherDrive.requestedPositionIndex := pusherDrive.actualPositionIndex + 1;
+				IF pusherDrive.requestedPositionIndex > 4 THEN
+					pusherDrive.requestedPositionIndex := 4;
 				END_IF
-				pusherDrive.selectedPosition := INT_TO_USINT(i);
 				
 				FI_12.cmd.absolute := TRUE;
-				FI_12.param.position := pusherDrive.positions[pusherDrive.selectedPosition];
+				FI_12.param.position := pusherDrive.positions[pusherDrive.requestedPositionIndex];
 				FI_12.param.speed := pusherDrive.speed;
 				statePusherDriveP12 := statePusherDriveJogPlus2;
 			END_IF
@@ -139,6 +143,7 @@ PROGRAM _CYCLIC
 			
 			//IF oldMoveActive > FI_12.info.moveActive THEN
 			IF NOT FI_12.info.moveActive THEN
+				pusherDrive.actualPositionIndex := pusherDrive.requestedPositionIndex;
 				statePusherDriveP12 := statePusherDriveStop;
 			END_IF
 		
@@ -148,18 +153,23 @@ PROGRAM _CYCLIC
 			acpI_P12.switchOn := TRUE;					
 			
 			IF FI_12.info.powerOn AND acpI_P12.switchedOn THEN
-				FOR i := 3 TO 0 BY -1 DO
-					IF pusherDrive.actualPosition > pusherDrive.positions[i] + tolerance THEN
-						EXIT;
-					END_IF
-				END_FOR
-				IF i < 0 THEN
-					i := 0;
-				END_IF	
-				pusherDrive.selectedPosition := INT_TO_USINT(i);
+//				FOR i := 3 TO 0 BY -1 DO
+//					IF pusherDrive.actualPosition > pusherDrive.positions[i] + pusherDrive.tolerance THEN
+//						EXIT;
+//					END_IF
+//				END_FOR
+//				IF i < 0 THEN
+//					i := 0;
+//				END_IF	
+//				pusherDrive.requestedPositionIndex := i;
+//				
+				pusherDrive.requestedPositionIndex := pusherDrive.actualPositionIndex - 1;
+				IF pusherDrive.requestedPositionIndex < 0 THEN
+					pusherDrive.requestedPositionIndex := 0;
+				END_IF
 				
 				FI_12.cmd.absolute := TRUE;
-				FI_12.param.position := pusherDrive.positions[pusherDrive.selectedPosition];
+				FI_12.param.position := pusherDrive.positions[pusherDrive.requestedPositionIndex];
 				FI_12.param.speed := pusherDrive.speed;
 				statePusherDriveP12 := statePusherDriveJogMinus2;
 			END_IF
@@ -172,6 +182,7 @@ PROGRAM _CYCLIC
 			
 			//IF oldMoveActive > FI_12.info.moveActive THEN
 			IF NOT FI_12.info.moveActive THEN
+				pusherDrive.actualPositionIndex := pusherDrive.requestedPositionIndex;
 				statePusherDriveP12 := statePusherDriveStop;
 			END_IF
 	END_CASE

@@ -3,8 +3,6 @@ VAR
 	FI_12 : FI;
 	statePusherDriveP12 : StatePusherDrive;
 	aoPusherDriveP12 : INT;
-	i : INT;
-	tolerance : DINT;
 	oldMoveActive : BOOL;
 	aiDistanceSensor : INT; (*SICK DL50*)
 	actualPosition : DINT;

@@ -140,6 +140,36 @@
       <Point X="824" Y="276" />
       <Point X="824" Y="276" />
     </Link>
+    <Link From="U10" To="X20CP1583" FromPort="PLK1" ToPort="IF3" IsRoutedByUser="False">
+      <Point X="278" Y="638" />
+      <Point X="278" Y="638" />
+      <Point X="278" Y="685" />
+      <Point X="278" Y="695" />
+      <Point X="166" Y="695" />
+      <Point X="166" Y="211" />
+      <Point X="166" Y="197" />
+      <Point X="166" Y="197" />
+    </Link>
+    <Link From="U10" To="U11" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="288" Y="638" />
+      <Point X="288" Y="638" />
+      <Point X="288" Y="685" />
+      <Point X="288" Y="695" />
+      <Point X="366" Y="695" />
+      <Point X="366" Y="685" />
+      <Point X="366" Y="638" />
+      <Point X="366" Y="638" />
+    </Link>
+    <Link From="U11" To="U12" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="376" Y="638" />
+      <Point X="376" Y="638" />
+      <Point X="376" Y="685" />
+      <Point X="376" Y="695" />
+      <Point X="454" Y="695" />
+      <Point X="454" Y="685" />
+      <Point X="454" Y="638" />
+      <Point X="454" Y="638" />
+    </Link>
     <Link From="U12" To="U14" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
       <Point X="464" Y="638" />
       <Point X="464" Y="638" />
@@ -195,36 +225,6 @@
       <Point X="537" Y="308" />
       <Point X="530" Y="308" />
       <Point X="530" Y="308" />
-    </Link>
-    <Link From="U12" To="U11" FromPort="PLK1" ToPort="PLK2" IsRoutedByUser="False">
-      <Point X="454" Y="638" />
-      <Point X="454" Y="638" />
-      <Point X="454" Y="685" />
-      <Point X="454" Y="695" />
-      <Point X="376" Y="695" />
-      <Point X="376" Y="685" />
-      <Point X="376" Y="638" />
-      <Point X="376" Y="638" />
-    </Link>
-    <Link From="U11" To="U10" FromPort="PLK1" ToPort="PLK2" IsRoutedByUser="False">
-      <Point X="366" Y="638" />
-      <Point X="366" Y="638" />
-      <Point X="366" Y="685" />
-      <Point X="366" Y="695" />
-      <Point X="288" Y="695" />
-      <Point X="288" Y="685" />
-      <Point X="288" Y="638" />
-      <Point X="288" Y="638" />
-    </Link>
-    <Link From="U10" To="X20CP1583" FromPort="PLK1" ToPort="IF3" IsRoutedByUser="False">
-      <Point X="278" Y="638" />
-      <Point X="278" Y="638" />
-      <Point X="278" Y="685" />
-      <Point X="278" Y="695" />
-      <Point X="166" Y="695" />
-      <Point X="166" Y="211" />
-      <Point X="166" Y="197" />
-      <Point X="166" Y="197" />
     </Link>
   </Links>
   <InfoElements>
