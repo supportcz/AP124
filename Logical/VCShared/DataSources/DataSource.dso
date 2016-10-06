@@ -297,7 +297,208 @@
               <Property Name="UserID" Value="None"/>
               <Property Name="VCType" Value="BOOL"/>
             </DataPoint>
-            <Folder Name="actualTray">
+            <DataPoint Name="nbOfTraysOnInputP2">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="INT"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="INTEGER"/>
+            </DataPoint>
+            <Folder Name="dActualLayout">
+              <Property Name="Description" Value=""/>
+              <Property Name="FolderType" Value="Struct"/>
+              <DataPoint Name="nbOfTrays">
+                <Property Name="ConnectedBySharedResource" Value="False"/>
+                <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                <Property Name="Description" Value=""/>
+                <Property Name="PLCType" Value="INT"/>
+                <Property Name="UpdateTime" Value="Default"/>
+                <Property Name="UserID" Value="None"/>
+                <Property Name="VCType" Value="INTEGER"/>
+              </DataPoint>
+            </Folder>
+            <Folder Name="dActualRecipe">
+              <Property Name="Description" Value=""/>
+              <Property Name="FolderType" Value="Struct"/>
+              <DataPoint Name="conveyorP1speed">
+                <Property Name="ConnectedBySharedResource" Value="False"/>
+                <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                <Property Name="Description" Value=""/>
+                <Property Name="PLCType" Value="INT"/>
+                <Property Name="UpdateTime" Value="Default"/>
+                <Property Name="UserID" Value="None"/>
+                <Property Name="VCType" Value="INTEGER"/>
+              </DataPoint>
+              <DataPoint Name="conveyorP2speed">
+                <Property Name="ConnectedBySharedResource" Value="False"/>
+                <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                <Property Name="Description" Value=""/>
+                <Property Name="PLCType" Value="INT"/>
+                <Property Name="UpdateTime" Value="Default"/>
+                <Property Name="UserID" Value="None"/>
+                <Property Name="VCType" Value="INTEGER"/>
+              </DataPoint>
+              <DataPoint Name="interlayerSheetBottom">
+                <Property Name="ConnectedBySharedResource" Value="False"/>
+                <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                <Property Name="Description" Value=""/>
+                <Property Name="PLCType" Value="BOOL"/>
+                <Property Name="UpdateTime" Value="Default"/>
+                <Property Name="UserID" Value="None"/>
+                <Property Name="VCType" Value="BOOL"/>
+              </DataPoint>
+              <DataPoint Name="interlayerSheetTop">
+                <Property Name="ConnectedBySharedResource" Value="False"/>
+                <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                <Property Name="Description" Value=""/>
+                <Property Name="PLCType" Value="BOOL"/>
+                <Property Name="UpdateTime" Value="Default"/>
+                <Property Name="UserID" Value="None"/>
+                <Property Name="VCType" Value="BOOL"/>
+              </DataPoint>
+              <DataPoint Name="layer">
+                <Property Name="ConnectedBySharedResource" Value="False"/>
+                <Property Name="Description" Value=""/>
+                <Property Name="PLCType" Value="INT[0..9]"/>
+                <Property Name="UpdateTime" Value="Default"/>
+                <Property Name="UserID" Value="None"/>
+                <Property Name="VCType" Value="INTEGER[]"/>
+                <DataPoint Name="layer[0]">
+                  <Property Name="ConnectedBySharedResource" Value="False"/>
+                  <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                  <Property Name="Description" Value=""/>
+                  <Property Name="PLCType" Value="INT"/>
+                  <Property Name="UpdateTime" Value="Default"/>
+                  <Property Name="UserID" Value="None"/>
+                  <Property Name="VCType" Value="INTEGER"/>
+                </DataPoint>
+                <DataPoint Name="layer[1]">
+                  <Property Name="ConnectedBySharedResource" Value="False"/>
+                  <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                  <Property Name="Description" Value=""/>
+                  <Property Name="PLCType" Value="INT"/>
+                  <Property Name="UpdateTime" Value="Default"/>
+                  <Property Name="UserID" Value="None"/>
+                  <Property Name="VCType" Value="INTEGER"/>
+                </DataPoint>
+                <DataPoint Name="layer[2]">
+                  <Property Name="ConnectedBySharedResource" Value="False"/>
+                  <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                  <Property Name="Description" Value=""/>
+                  <Property Name="PLCType" Value="INT"/>
+                  <Property Name="UpdateTime" Value="Default"/>
+                  <Property Name="UserID" Value="None"/>
+                  <Property Name="VCType" Value="INTEGER"/>
+                </DataPoint>
+                <DataPoint Name="layer[3]">
+                  <Property Name="ConnectedBySharedResource" Value="False"/>
+                  <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                  <Property Name="Description" Value=""/>
+                  <Property Name="PLCType" Value="INT"/>
+                  <Property Name="UpdateTime" Value="Default"/>
+                  <Property Name="UserID" Value="None"/>
+                  <Property Name="VCType" Value="INTEGER"/>
+                </DataPoint>
+                <DataPoint Name="layer[4]">
+                  <Property Name="ConnectedBySharedResource" Value="False"/>
+                  <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                  <Property Name="Description" Value=""/>
+                  <Property Name="PLCType" Value="INT"/>
+                  <Property Name="UpdateTime" Value="Default"/>
+                  <Property Name="UserID" Value="None"/>
+                  <Property Name="VCType" Value="INTEGER"/>
+                </DataPoint>
+                <DataPoint Name="layer[5]">
+                  <Property Name="ConnectedBySharedResource" Value="False"/>
+                  <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                  <Property Name="Description" Value=""/>
+                  <Property Name="PLCType" Value="INT"/>
+                  <Property Name="UpdateTime" Value="Default"/>
+                  <Property Name="UserID" Value="None"/>
+                  <Property Name="VCType" Value="INTEGER"/>
+                </DataPoint>
+                <DataPoint Name="layer[6]">
+                  <Property Name="ConnectedBySharedResource" Value="False"/>
+                  <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                  <Property Name="Description" Value=""/>
+                  <Property Name="PLCType" Value="INT"/>
+                  <Property Name="UpdateTime" Value="Default"/>
+                  <Property Name="UserID" Value="None"/>
+                  <Property Name="VCType" Value="INTEGER"/>
+                </DataPoint>
+                <DataPoint Name="layer[7]">
+                  <Property Name="ConnectedBySharedResource" Value="False"/>
+                  <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                  <Property Name="Description" Value=""/>
+                  <Property Name="PLCType" Value="INT"/>
+                  <Property Name="UpdateTime" Value="Default"/>
+                  <Property Name="UserID" Value="None"/>
+                  <Property Name="VCType" Value="INTEGER"/>
+                </DataPoint>
+                <DataPoint Name="layer[8]">
+                  <Property Name="ConnectedBySharedResource" Value="False"/>
+                  <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                  <Property Name="Description" Value=""/>
+                  <Property Name="PLCType" Value="INT"/>
+                  <Property Name="UpdateTime" Value="Default"/>
+                  <Property Name="UserID" Value="None"/>
+                  <Property Name="VCType" Value="INTEGER"/>
+                </DataPoint>
+                <DataPoint Name="layer[9]">
+                  <Property Name="ConnectedBySharedResource" Value="False"/>
+                  <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                  <Property Name="Description" Value=""/>
+                  <Property Name="PLCType" Value="INT"/>
+                  <Property Name="UpdateTime" Value="Default"/>
+                  <Property Name="UserID" Value="None"/>
+                  <Property Name="VCType" Value="INTEGER"/>
+                </DataPoint>
+              </DataPoint>
+              <DataPoint Name="name">
+                <Property Name="ConnectedBySharedResource" Value="False"/>
+                <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                <Property Name="Description" Value=""/>
+                <Property Name="PLCType" Value="STRING"/>
+                <Property Name="StringLength" Value="80"/>
+                <Property Name="UpdateTime" Value="Default"/>
+                <Property Name="UserID" Value="None"/>
+                <Property Name="VCType" Value="STRING"/>
+              </DataPoint>
+              <DataPoint Name="nbOfLayers">
+                <Property Name="ConnectedBySharedResource" Value="False"/>
+                <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                <Property Name="Description" Value=""/>
+                <Property Name="PLCType" Value="INT"/>
+                <Property Name="UpdateTime" Value="Default"/>
+                <Property Name="UserID" Value="None"/>
+                <Property Name="VCType" Value="INTEGER"/>
+              </DataPoint>
+            </Folder>
+            <Folder Name="dRecipes">
+              <Property Name="Description" Value=""/>
+              <Property Name="FolderType" Value="Struct"/>
+              <DataPoint Name="actualRecipeIndex">
+                <Property Name="ConnectedBySharedResource" Value="False"/>
+                <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+                <Property Name="Description" Value=""/>
+                <Property Name="PLCType" Value="INT"/>
+                <Property Name="UpdateTime" Value="Default"/>
+                <Property Name="UserID" Value="None"/>
+                <Property Name="VCType" Value="INTEGER"/>
+              </DataPoint>
+            </Folder>
+            <DataPoint Name="actualLayer">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="INT"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="INTEGER"/>
+            </DataPoint>
+            <Folder Name="dActualTray">
               <Property Name="Description" Value=""/>
               <Property Name="FolderType" Value="Struct"/>
               <DataPoint Name="gapBetweenTrays">
@@ -364,15 +565,6 @@
                 <Property Name="VCType" Value="INTEGER"/>
               </DataPoint>
             </Folder>
-            <DataPoint Name="nbOfTraysOnInputP2">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="INT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
           </Folder>
         </Folder>
       </Folder>
@@ -392,163 +584,6 @@
       <Folder Name="recipe_management">
         <Property Name="Description" Value=""/>
         <Property Name="FolderType" Value="Package"/>
-        <Folder Name="actualRecipe">
-          <Property Name="Description" Value=""/>
-          <Property Name="FolderType" Value="Struct"/>
-          <DataPoint Name="name">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="STRING"/>
-            <Property Name="StringLength" Value="80"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="STRING"/>
-          </DataPoint>
-          <DataPoint Name="interlayerSheetBottom">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="BOOL"/>
-          </DataPoint>
-          <DataPoint Name="interlayerSheetTop">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="BOOL"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="BOOL"/>
-          </DataPoint>
-          <DataPoint Name="conveyorP1speed">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="INT"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
-          </DataPoint>
-          <DataPoint Name="conveyorP2speed">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="INT"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
-          </DataPoint>
-          <DataPoint Name="nbOfLayers">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="INT"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
-          </DataPoint>
-          <DataPoint Name="layer">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="INT[0..9]"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER[]"/>
-            <DataPoint Name="layer[0]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="INT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="layer[1]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="INT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="layer[2]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="INT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="layer[3]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="INT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="layer[4]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="INT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="layer[5]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="INT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="layer[6]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="INT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="layer[7]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="INT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="layer[8]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="INT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-            <DataPoint Name="layer[9]">
-              <Property Name="ConnectedBySharedResource" Value="False"/>
-              <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="PLCType" Value="INT"/>
-              <Property Name="UpdateTime" Value="Default"/>
-              <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
-            </DataPoint>
-          </DataPoint>
-        </Folder>
         <Folder Name="recipe_management">
           <Property Name="Description" Value=""/>
           <Property Name="FolderType" Value="Program"/>
@@ -569,37 +604,6 @@
             <Property Name="UpdateTime" Value="Default"/>
             <Property Name="UserID" Value="None"/>
             <Property Name="VCType" Value="BOOL"/>
-          </DataPoint>
-        </Folder>
-        <DataPoint Name="requestedLayoutIndex">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="INT"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="INTEGER"/>
-        </DataPoint>
-        <DataPoint Name="requestedRecipeIndex">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="INT"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="INTEGER"/>
-        </DataPoint>
-        <Folder Name="actualLayout">
-          <Property Name="Description" Value=""/>
-          <Property Name="FolderType" Value="Struct"/>
-          <DataPoint Name="nbOfTrays">
-            <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-            <Property Name="Description" Value=""/>
-            <Property Name="PLCType" Value="INT"/>
-            <Property Name="UpdateTime" Value="Default"/>
-            <Property Name="UserID" Value="None"/>
-            <Property Name="VCType" Value="INTEGER"/>
           </DataPoint>
         </Folder>
       </Folder>

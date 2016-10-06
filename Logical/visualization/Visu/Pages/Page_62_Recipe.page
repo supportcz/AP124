@@ -138,7 +138,7 @@
           <Property Name="SimulationValue" Value="ABC"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="Top" Value="109"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualRecipe.name]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.name]"/>
           <Property Name="Width" Value="206"/>
         </Control>
         <Control ClassId="0x00001002" Name="Button_1">
@@ -235,15 +235,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="33"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
           <Property Name="Left" Value="219"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -253,7 +245,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="238"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualRecipe.conveyorP1speed]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.conveyorP1speed]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="92"/>
         </Control>
@@ -261,15 +253,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="33"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
           <Property Name="Left" Value="224"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -279,7 +263,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="268"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualRecipe.conveyorP2speed]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.conveyorP2speed]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="90"/>
         </Control>
@@ -315,15 +299,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="33"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
           <Property Name="Left" Value="242"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -333,7 +309,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="310"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualRecipe.nbOfLayers]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.nbOfLayers]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="62"/>
         </Control>
@@ -341,15 +317,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
           <Property Name="Left" Value="487"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -359,7 +327,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="377"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualRecipe.layer[6]]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[6]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="67"/>
         </Control>
@@ -381,15 +349,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
           <Property Name="Left" Value="409"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -399,7 +359,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="380"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualRecipe.layer[5]]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[5]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="67"/>
         </Control>
@@ -407,15 +367,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
           <Property Name="Left" Value="329"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -425,7 +377,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="377"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualRecipe.layer[4]]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[4]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="67"/>
         </Control>
@@ -433,15 +385,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
           <Property Name="Left" Value="245"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -451,7 +395,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="375"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualRecipe.layer[3]]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[3]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="67"/>
         </Control>
@@ -459,15 +403,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
           <Property Name="Left" Value="166"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -477,7 +413,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="378"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualRecipe.layer[2]]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[2]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="67"/>
         </Control>
@@ -485,15 +421,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
           <Property Name="Left" Value="87"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -503,7 +431,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="375"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualRecipe.layer[1]]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[1]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="67"/>
         </Control>
@@ -511,15 +439,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
           <Property Name="Left" Value="14"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -529,7 +449,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="374"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualRecipe.layer[0]]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[0]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="67"/>
         </Control>
@@ -537,15 +457,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
           <Property Name="Left" Value="565"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -555,7 +467,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="377"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualRecipe.layer[7]]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[7]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="67"/>
         </Control>
@@ -563,15 +475,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
           <Property Name="Left" Value="645"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -581,7 +485,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="379"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualRecipe.layer[8]]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[8]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="67"/>
         </Control>
@@ -589,15 +493,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
           <Property Name="Left" Value="721"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -607,7 +503,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="374"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualRecipe.layer[9]]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[9]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="67"/>
         </Control>
@@ -704,7 +600,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="68"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.requestedRecipeIndex]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dRecipes.actualRecipeIndex]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="58"/>
         </Control>
@@ -766,7 +662,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualRecipe.interlayerSheetBottom]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.interlayerSheetBottom]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -782,7 +678,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualRecipe.interlayerSheetTop]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.interlayerSheetTop]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -844,7 +740,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="Repeat" Value="True"/>
               <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.requestedRecipeIndex]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dRecipes.actualRecipeIndex]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -862,7 +758,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="Repeat" Value="True"/>
               <Property Name="StepValue" Value="-1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.requestedRecipeIndex]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dRecipes.actualRecipeIndex]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

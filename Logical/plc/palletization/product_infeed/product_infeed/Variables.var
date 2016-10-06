@@ -1,25 +1,35 @@
 VAR
 	acpI_P10 : AcpInoSdc;
 	acpI_P11 : AcpInoSdc;
-	actualLayer : USINT;
-	actualTray : REFERENCE TO Tray;
+	actualLayer : INT;
 	cmdFillUpConveyorP1 : BOOL;
 	cmdPusherLiftingDown : BOOL;
 	cmdPusherLiftingUp : BOOL;
+	cmdRotationBack : BOOL;
+	cmdRotationForward : BOOL;
 	cmdRunConveyorP1 : BOOL;
 	cmdRunConveyorP2 : BOOL;
+	dActualLayout : REFERENCE TO Layout;
+	dActualRecipe : REFERENCE TO Recipe;
+	dActualTray : REFERENCE TO Tray;
 	diCloseDoors1 : BOOL; (*button to close doors*)
 	diDoor1opened : BOOL;
 	diMotorProtectionP3 : BOOL;
 	diOpenDoors1 : BOOL; (*button to open doors*)
 	diPusherLiftingLowerPosition : BOOL;
 	diPusherLiftingUpperPosition : BOOL;
+	diRotationBack : BOOL;
+	diRotationForward : BOOL;
 	diTrayBehindRotation : BOOL;
 	diTrayOnInputP1 : BOOL;
 	diTrayOnInputP2 : BOOL;
+	diTrayOnOutputP1 : BOOL;
 	doPusherLiftingBrake : BOOL;
 	doPusherLiftingDown : BOOL;
 	doPusherLiftingUp : BOOL;
+	doRotationBack : BOOL;
+	doRotationForward : BOOL;
+	dRecipes : REFERENCE TO Recipes;
 	nbOfTraysBehindRotation : INT;
 	nbOfTraysOnInputP2 : INT;
 	nbOfTraysOnInputP2old : INT;
@@ -27,20 +37,13 @@ VAR
 	stateConveyorP1 : StateConveyor;
 	stateConveyorP2 : StateConveyor;
 	statePusherLifting : StatePusherLifting;
+	stateRotation : StateRotation;
 	TOF_TrayBehindRotation : TOF;
 	TOF_TrayOnInputP1 : TOF;
 	TOF_TrayOnInputP2 : TOF;
+	TON_RotationRequest : TON;
 	TON_VerticalMovement : TON;
 	TON_WaitForLastTray : TON;
 	trayBehindRotationOld : BOOL;
 	trayOnInputP2old : BOOL;
-	doRotationForward : BOOL;
-	doRotationBack : BOOL;
-	stateRotation : StateRotation;
-	diRotationBack : BOOL;
-	diRotationForward : BOOL;
-	cmdRotationBack : BOOL;
-	TON_RotationRequest : TON;
-	cmdRotationForward : BOOL;
-	diTrayOnOutputP1 : BOOL;
 END_VAR

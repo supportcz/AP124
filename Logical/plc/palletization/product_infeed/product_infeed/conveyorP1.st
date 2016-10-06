@@ -36,7 +36,7 @@ ACTION ConveyorP1:
 		
 		stateConveyorMoving:
 			
-			acpI_P10.speed := actualRecipe.conveyorP1speed;
+			acpI_P10.speed := dActualRecipe.conveyorP1speed;
 				
 			IF NOT TOF_TrayOnInputP1.Q AND modePalletization = modePalletizationAuto THEN
 				stateConveyorP1 := stateConveyorPause;
@@ -56,7 +56,7 @@ ACTION ConveyorP1:
 			
 			cmdFillUpConveyorP1 := FALSE;
 
-			acpI_P10.speed := actualRecipe.conveyorP1speed;
+			acpI_P10.speed := dActualRecipe.conveyorP1speed;
 
 			IF NOT TOF_TrayOnInputP1.Q THEN
 				stateConveyorP1 := stateConveyorPause;

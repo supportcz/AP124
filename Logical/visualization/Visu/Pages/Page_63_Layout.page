@@ -40,14 +40,13 @@
         <TextLayer LanguageId="en">
           <Text ID="178033" Value="Back"/>
           <Text ID="178035" Value="Number of trays"/>
-          <Text ID="178036" Value="%m/%d/%Y %H:%M:%S"/>
-          <Text ID="178037" Value="Gap between trays [s]"/>
+          <Text ID="178037" Value="Gap between trays [ms]"/>
           <Text ID="178038" Value="Make gap"/>
           <Text ID="178039" Value="Turn tray"/>
           <Text ID="178040" Value="Last tray in layer"/>
           <Text ID="178041" Value="Last tray in half layer"/>
           <Text ID="178042" Value="Last tray in a row"/>
-          <Text ID="178043" Value="Time after last tray[s]"/>
+          <Text ID="178043" Value="Time after last tray[ms]"/>
           <Text ID="178044" Value="no"/>
           <Text ID="178045" Value="yes"/>
           <Text ID="178046" Value="Selected tray"/>
@@ -68,7 +67,6 @@
         <TextLayer LanguageId="cs">
           <Text ID="178033" Value=""/>
           <Text ID="178035" Value="Text_1"/>
-          <Text ID="178036" Value="%d.%m.%Y %H:%M:%S"/>
           <Text ID="178037" Value="Text_2"/>
           <Text ID="178038" Value="Text_2"/>
           <Text ID="178039" Value="Text_2"/>
@@ -96,7 +94,6 @@
         <TextLayer LanguageId="fr">
           <Text ID="178033" Value=""/>
           <Text ID="178035" Value="Text_1"/>
-          <Text ID="178036" Value=""/>
           <Text ID="178037" Value="Text_2"/>
           <Text ID="178038" Value="Text_2"/>
           <Text ID="178039" Value="Text_2"/>
@@ -124,7 +121,6 @@
         <IndexMap>
           <Index ID="178033" Value="0"/>
           <Index ID="178035" Value="2"/>
-          <Index ID="178036" Value="3"/>
           <Index ID="178037" Value="4"/>
           <Index ID="178038" Value="5"/>
           <Index ID="178039" Value="6"/>
@@ -191,15 +187,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="25"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
           <Property Name="Left" Value="192"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -209,7 +197,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="151"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.actualLayout.nbOfTrays]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualLayout.nbOfTrays]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="57"/>
         </Control>
@@ -217,15 +205,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="25"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
           <Property Name="Left" Value="506"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -235,7 +215,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="121"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.actualTray.gapBetweenTrays]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualTray.gapBetweenTrays]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="72"/>
         </Control>
@@ -419,7 +399,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="94"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.requestedLayoutIndex]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.actualLayer]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="58"/>
         </Control>
@@ -523,15 +503,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="25"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
           <Property Name="Left" Value="529"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
@@ -541,7 +513,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="368"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.actualTray.timeAfterLastTray]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualTray.timeAfterLastTray]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="72"/>
         </Control>
@@ -660,7 +632,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.actualTray.makeGap]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualTray.makeGap]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -676,7 +648,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.actualTray.turnTray]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualTray.turnTray]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -692,7 +664,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.actualTray.lastTrayInLayer]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualTray.lastTrayInLayer]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -708,7 +680,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.actualTray.lastTrayHalfLayer]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualTray.lastTrayHalfLayer]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -724,7 +696,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.actualTray.lastTrayInRow]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualTray.lastTrayInRow]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -778,7 +750,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="Repeat" Value="True"/>
               <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.requestedLayoutIndex]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.actualLayer]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -796,7 +768,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="Repeat" Value="True"/>
               <Property Name="StepValue" Value="-1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.requestedLayoutIndex]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.actualLayer]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

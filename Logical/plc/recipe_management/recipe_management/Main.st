@@ -1,12 +1,12 @@
 
 PROGRAM _INIT
-	
-//	actualRecipeIndex := 255;
-//	actualLayoutIndex := 255;
+
 	
 END_PROGRAM
 
 PROGRAM _CYCLIC
+	
+	adrRecipes := ADR(recipes);
 	
 	readyToStart :=  NOT MpRecipeRegPar_0.Error AND NOT MpRecipeCsv_0.Error;
 	
@@ -18,8 +18,6 @@ PROGRAM _CYCLIC
 		
 		stateRecipeError:
 			
-			//MpRecipeRegPar_0.Enable := FALSE;
-			//MpRecipeCsv_0.Enable := FALSE;
 			cmdLoad := FALSE;
 			cmdSave := FALSE;
 			
@@ -31,7 +29,6 @@ PROGRAM _CYCLIC
 			
 			MpRecipeRegPar_0.MpLink := ADR(gRecipeCsv);
 			MpRecipeRegPar_0.Enable := TRUE;
-//			MpRecipeRegPar_0.PVName := ADR('recipes');
 			MpRecipeRegPar_0.PVName := ADR('recipe_man:recipes');
 			
 			MpRecipeCsv_0.MpLink := ADR(gRecipeCsv);
@@ -45,22 +42,22 @@ PROGRAM _CYCLIC
 		
 		stateRecipeWait:
 			
-			IF requestedRecipeIndex <> actualRecipeIndex THEN
-				//memcpy (ADR(recipes.recipe[actualRecipeIndex]), ADR(actualRecipe),SIZEOF(actualRecipe));
-				recipes.recipe[actualRecipeIndex] := actualRecipe;
-				//memcpy (ADR(actualRecipe), ADR(recipes.recipe[requestedRecipeIndex]), SIZEOF(actualRecipe));
-				actualRecipe := recipes.recipe[requestedRecipeIndex];
-				actualRecipeIndex := requestedRecipeIndex;
-				recipes.actualRecipeIndex := actualRecipeIndex;
-			END_IF
-			
-			IF requestedLayoutIndex <> actualLayoutIndex THEN
-				//memcpy (ADR(recipes.layout[actualLayoutIndex]), ADR(actualLayout), SIZEOF(actualLayout));
-				recipes.layout[actualLayoutIndex] := actualLayout;
-				//memcpy (ADR(actualLayout), ADR(recipes.layout[requestedLayoutIndex]), SIZEOF(actualLayout));
-				actualLayout := recipes.layout[requestedLayoutIndex];
-				actualLayoutIndex := requestedLayoutIndex;
-			END_IF
+//			IF requestedRecipeIndex <> actualRecipeIndex THEN
+//				//memcpy (ADR(recipes.recipe[actualRecipeIndex]), ADR(actualRecipe),SIZEOF(actualRecipe));
+//				recipes.recipe[actualRecipeIndex] := actualRecipe;
+//				//memcpy (ADR(actualRecipe), ADR(recipes.recipe[requestedRecipeIndex]), SIZEOF(actualRecipe));
+//				actualRecipe := recipes.recipe[requestedRecipeIndex];
+//				actualRecipeIndex := requestedRecipeIndex;
+//				recipes.actualRecipeIndex := actualRecipeIndex;
+//			END_IF
+//			
+//			IF requestedLayoutIndex <> actualLayoutIndex THEN
+//				//memcpy (ADR(recipes.layout[actualLayoutIndex]), ADR(actualLayout), SIZEOF(actualLayout));
+//				recipes.layout[actualLayoutIndex] := actualLayout;
+//				//memcpy (ADR(actualLayout), ADR(recipes.layout[requestedLayoutIndex]), SIZEOF(actualLayout));
+//				actualLayout := recipes.layout[requestedLayoutIndex];
+//				actualLayoutIndex := requestedLayoutIndex;
+//			END_IF
 			
 			IF cmdLoad THEN
 				stateRecipe := stateRecipeLoad;
@@ -85,22 +82,22 @@ PROGRAM _CYCLIC
 		
 		stateRecipeLoad3:
 			
-			//refresh actual recipe and layout
-			actualRecipeIndex := recipes.actualRecipeIndex;
-			//memcpy (ADR(actualRecipe), ADR(recipes.recipe[actualRecipeIndex]), SIZEOF(actualRecipe));
-			actualRecipe := recipes.recipe[actualRecipeIndex];
-			//memcpy (ADR(actualLayout), ADR(recipes.layout[actualLayoutIndex]), SIZEOF(actualLayout));
-			actualLayout := recipes.layout[actualLayoutIndex];
+//			//refresh actual recipe and layout
+//			actualRecipeIndex := recipes.actualRecipeIndex;
+//			//memcpy (ADR(actualRecipe), ADR(recipes.recipe[actualRecipeIndex]), SIZEOF(actualRecipe));
+//			actualRecipe := recipes.recipe[actualRecipeIndex];
+//			//memcpy (ADR(actualLayout), ADR(recipes.layout[actualLayoutIndex]), SIZEOF(actualLayout));
+//			actualLayout := recipes.layout[actualLayoutIndex];
 			stateRecipe := stateRecipeWait;
 
 		stateRecipeSave:
 			
-			//refresh actual recipe and layout
-			recipes.actualRecipeIndex := actualRecipeIndex;
-			//memcpy (ADR(recipes.recipe[actualRecipeIndex]), ADR(actualRecipe),SIZEOF(actualRecipe));
-			recipes.recipe[actualRecipeIndex] := actualRecipe;
-			//memcpy (ADR(recipes.layout[actualLayoutIndex]), ADR(actualLayout), SIZEOF(actualLayout));
-			recipes.layout[actualLayoutIndex] := actualLayout;
+//			//refresh actual recipe and layout
+//			recipes.actualRecipeIndex := actualRecipeIndex;
+//			//memcpy (ADR(recipes.recipe[actualRecipeIndex]), ADR(actualRecipe),SIZEOF(actualRecipe));
+//			recipes.recipe[actualRecipeIndex] := actualRecipe;
+//			//memcpy (ADR(recipes.layout[actualLayoutIndex]), ADR(actualLayout), SIZEOF(actualLayout));
+//			recipes.layout[actualLayoutIndex] := actualLayout;
 			stateRecipe := stateRecipeSave2;
 		
 		stateRecipeSave2:

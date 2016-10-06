@@ -8,6 +8,24 @@ PROGRAM _CYCLIC
 	diOpenDoors1;
 	diCloseDoors1;
 	
+	IF adrRecipes = 0 THEN 
+		RETURN;
+	END_IF
+	
+	dRecipes ACCESS adrRecipes;
+	IF dRecipes.actualRecipeIndex < 0 OR dRecipes.actualRecipeIndex > 9 THEN
+		RETURN;
+	END_IF
+	
+	dActualRecipe ACCESS ADR(dRecipes.recipe[dRecipes.actualRecipeIndex]);
+		
+	//select actual layout
+	IF actualLayer < 0 OR actualLayer > 9 THEN
+		RETURN;
+	END_IF
+	
+	dActualLayout ACCESS ADR(dRecipes.layout[dActualRecipe.layer[actualLayer]]);
+	
 	//detect tray on input of conveyor P2
 	TOF_TrayOnInputP2(IN := diTrayOnInputP2, PT := T#60ms);
 	IF TOF_TrayOnInputP2.Q < trayOnInputP2old THEN
@@ -22,13 +40,15 @@ PROGRAM _CYCLIC
 	END_IF
 	trayBehindRotationOld := TOF_TrayBehindRotation.Q;
 	
-	//select actual layout
-	requestedLayoutIndex := actualRecipe.layer[actualLayer];
+
 	
-	IF requestedLayoutIndex = actualLayoutIndex AND nbOfTraysOnInputP2 > 0 AND nbOfTraysOnInputP2 <= actualLayout.nbOfTrays THEN
-		//select actual tray
-		actualTray ACCESS ADR(actualLayout.tray[nbOfTraysOnInputP2-1]); 
+	IF nbOfTraysOnInputP2 <= 0 OR nbOfTraysOnInputP2 > dActualLayout.nbOfTrays THEN
+		RETURN;
 	END_IF
+	
+	//select actual tray
+	dActualTray ACCESS ADR(dActualLayout.tray[nbOfTraysOnInputP2-1]); 
+	
 	
 	CASE modePalletization OF
 		
@@ -77,7 +97,7 @@ PROGRAM _CYCLIC
 //					IF actualTray.turnTray THEN
 //						cmdRotationForward := TRUE;
 					
-					IF actualTray.lastTrayInRow THEN
+					IF dActualTray.lastTrayInRow THEN
 						cmdFillUpConveyorP1 := TRUE;
 						stateAuto := stateAutoLastTray;
 					END_IF	
@@ -91,7 +111,7 @@ PROGRAM _CYCLIC
 				
 				stateAutoLastTray2:
 					
-					TON_WaitForLastTray(IN := TRUE, PT := actualTray.timeAfterLastTray);
+					TON_WaitForLastTray(IN := TRUE, PT := dActualTray.timeAfterLastTray);
 					IF TON_WaitForLastTray.Q THEN
 						cmdRunConveyorP2 := FALSE;
 						stateAuto := stateAutoPusherToTable;
