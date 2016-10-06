@@ -57,6 +57,7 @@ PROGRAM _CYCLIC
 		
 	StatusMessageMagazine;
 	StatusMessagePalletization;
+	
 
 END_PROGRAM
 

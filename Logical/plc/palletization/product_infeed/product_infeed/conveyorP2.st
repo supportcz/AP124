@@ -22,7 +22,7 @@ ACTION ConveyorP2:
 		
 		stateConveyorWait:
 		
-			IF cmdMoveTrayP2 THEN
+			IF cmdRunConveyorP2 THEN
 				stateConveyorP2 := stateConveyorMoving;
 			END_IF
 
@@ -31,11 +31,11 @@ ACTION ConveyorP2:
 			
 			acpI_P11.speed := actualRecipe.conveyorP2speed;
 				
-			IF NOT TOF_TrayOnInputP1.Q THEN
+			IF NOT TOF_TrayOnInputP1.Q AND modePalletization = modePalletizationAuto THEN
 				stateConveyorP2 := stateConveyorPause;
 			END_IF
 			
-			IF NOT cmdMoveTrayP2 THEN
+			IF NOT cmdRunConveyorP2 THEN
 				stateConveyorP2 := stateConveyorStop;
 			END_IF	
 
@@ -46,7 +46,10 @@ ACTION ConveyorP2:
 			IF TOF_TrayOnInputP1.Q THEN
 				stateConveyorP2 := stateConveyorMoving;
 			END_IF
-		
+			
+			IF modePalletization <> modePalletizationAuto THEN
+				stateConveyorP2 := stateConveyorStop;
+			END_IF	
 	END_CASE
 	
 	//control of ACOPOSinverter P14

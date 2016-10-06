@@ -2,6 +2,7 @@
 TYPE
 	StatePusherDrive : 
 		(
+		statePusherDriveUndefined,
 		statePusherDriveStop,
 		statePusherDriveHoming,
 		statePusherDriveHoming2,

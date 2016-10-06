@@ -6,4 +6,5 @@ VAR
 	oldMoveActive : BOOL;
 	aiDistanceSensor : INT; (*SICK DL50*)
 	actualPosition : DINT;
+	i : INT;
 END_VAR

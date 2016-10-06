@@ -88,4 +88,9 @@ VAR_CONFIG
 	::product_in:diTrayOnInputP2 AT %IX."I50".DigitalInput04;
 	::product_in:diTrayBehindRotation AT %IX."I50".DigitalInput08;
 	::product_in:diTrayOnInputP1 AT %IX."I50".DigitalInput01;
+	::product_in:doRotationBack AT %QX."Q52".DigitalOutput01;
+	::product_in:doRotationForward AT %QX."Q52".DigitalOutput02;
+	::product_in:diRotationBack AT %IX."I50".DigitalInput06;
+	::product_in:diRotationForward AT %IX."I50".DigitalInput07;
+	::product_in:diTrayOnOutputP1 AT %IX."I50".DigitalInput03;
 END_VAR

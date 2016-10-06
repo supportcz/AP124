@@ -8,5 +8,6 @@
     <File>conveyorP1.st</File>
     <File>conveyorP2.st</File>
     <File>PusherLifting.st</File>
+    <File>Rotation.st</File>
   </Files>
 </Program>

@@ -2,12 +2,12 @@ VAR
 	acpI_P10 : AcpInoSdc;
 	acpI_P11 : AcpInoSdc;
 	actualLayer : USINT;
-	actualTray : Tray;
+	actualTray : REFERENCE TO Tray;
 	cmdFillUpConveyorP1 : BOOL;
-	cmdMoveTrayP2 : BOOL;
 	cmdPusherLiftingDown : BOOL;
 	cmdPusherLiftingUp : BOOL;
 	cmdRunConveyorP1 : BOOL;
+	cmdRunConveyorP2 : BOOL;
 	diCloseDoors1 : BOOL; (*button to close doors*)
 	diDoor1opened : BOOL;
 	diMotorProtectionP3 : BOOL;
@@ -15,6 +15,7 @@ VAR
 	diPusherLiftingLowerPosition : BOOL;
 	diPusherLiftingUpperPosition : BOOL;
 	diTrayBehindRotation : BOOL;
+	diTrayOnInputP1 : BOOL;
 	diTrayOnInputP2 : BOOL;
 	doPusherLiftingBrake : BOOL;
 	doPusherLiftingDown : BOOL;
@@ -27,11 +28,19 @@ VAR
 	stateConveyorP2 : StateConveyor;
 	statePusherLifting : StatePusherLifting;
 	TOF_TrayBehindRotation : TOF;
+	TOF_TrayOnInputP1 : TOF;
 	TOF_TrayOnInputP2 : TOF;
 	TON_VerticalMovement : TON;
 	TON_WaitForLastTray : TON;
 	trayBehindRotationOld : BOOL;
 	trayOnInputP2old : BOOL;
-	diTrayOnInputP1 : BOOL;
-	TOF_TrayOnInputP1 : TOF;
+	doRotationForward : BOOL;
+	doRotationBack : BOOL;
+	stateRotation : StateRotation;
+	diRotationBack : BOOL;
+	diRotationForward : BOOL;
+	cmdRotationBack : BOOL;
+	TON_RotationRequest : TON;
+	cmdRotationForward : BOOL;
+	diTrayOnOutputP1 : BOOL;
 END_VAR

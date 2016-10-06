@@ -39,15 +39,19 @@
       <TextGroup>
         <TextLayer LanguageId="en">
           <Text ID="176405" Value="SafeLOGIC"/>
+          <Text ID="178014" Value="Recipe"/>
         </TextLayer>
         <TextLayer LanguageId="cs">
           <Text ID="176405" Value="SafeLOGIC"/>
+          <Text ID="178014" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="fr">
           <Text ID="176405" Value="SafeLOGIC"/>
+          <Text ID="178014" Value=""/>
         </TextLayer>
         <IndexMap>
           <Index ID="176405" Value="15"/>
+          <Index ID="178014" Value="6"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -392,6 +396,28 @@
           <Property Name="StartY" Value="101"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
+        <Control ClassId="0x00001002" Name="Button_1">
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_Button]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_67]"/>
+          <Property Name="Height" Value="49"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="408"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="6"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="268"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_67]"/>
+          <Property Name="Width" Value="168"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="TouchCalibration">
@@ -430,6 +456,19 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="0"/>
               <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.LanguageLayer]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_67">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000160">
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="Page" Value="Source[local].Page[Page_62_Recipe]"/>
+              <Property Name="Target" Value="Page"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

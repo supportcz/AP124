@@ -50,7 +50,7 @@ ACTION HorizontalArmsControl:
 			TON_RightRequest(IN := NOT diRightArmOpened, PT := T#6s);
 			//open check
 			IF diLeftArmOpened AND diRightArmOpened THEN
-				stateArms := stateArmsUndefined;
+				stateArms := stateArmsOpened;
 			END_IF	
 			//timeout left side?
 			IF TON_LeftRequest.Q THEN
@@ -91,7 +91,7 @@ ACTION HorizontalArmsControl:
 			TON_RightRequest(IN := NOT diRightArmClosed, PT := T#6s);
 			//close check
 			IF diLeftArmClosed AND diRightArmClosed THEN
-				stateArms := stateArmsUndefined;
+				stateArms := stateArmsClosed;
 			END_IF	
 			//timeout left side?
 			IF TON_LeftRequest.Q THEN

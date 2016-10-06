@@ -1,5 +1,13 @@
 
 TYPE
+	StateRotation : 
+		(
+		stateRotationUndefined,
+		stateRotationMovingForward,
+		stateRotationForward,
+		stateRotationMovingBack,
+		stateRotationBack
+		);
 	StateConveyor : 
 		(
 		stateConveyorStop,

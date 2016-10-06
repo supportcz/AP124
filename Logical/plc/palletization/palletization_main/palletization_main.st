@@ -4,6 +4,9 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
+	
+	modePalletizationOld := modePalletization;
+	
 	readyToStart := NOT diPalletizationEDM AND NOT pusherDrive.driveError AND NOT pusherDrive.encoderError;
 	
 	IF NOT readyToStart THEN
@@ -38,6 +41,8 @@ PROGRAM _CYCLIC
 			END_IF
 		
 	END_CASE
+	
+
 	 
 END_PROGRAM
 

@@ -24,10 +24,12 @@ ACTION ConveyorP1:
 		stateConveyorWait:
 		
 			IF cmdRunConveyorP1 THEN
+				TOF_TrayOnInputP1(IN:=TRUE);
 				stateConveyorP1 := stateConveyorMoving;
 			END_IF
 			
 			IF cmdFillUpConveyorP1 THEN
+				TOF_TrayOnInputP1(IN:=TRUE);
 				stateConveyorP1 := stateConveyorFillUp;
 			END_IF
 						
@@ -36,7 +38,7 @@ ACTION ConveyorP1:
 			
 			acpI_P10.speed := actualRecipe.conveyorP1speed;
 				
-			IF NOT TOF_TrayOnInputP1.Q THEN
+			IF NOT TOF_TrayOnInputP1.Q AND modePalletization = modePalletizationAuto THEN
 				stateConveyorP1 := stateConveyorPause;
 			END_IF
 			
@@ -45,6 +47,7 @@ ACTION ConveyorP1:
 			END_IF	
 		
 			IF cmdFillUpConveyorP1 THEN
+				TOF_TrayOnInputP1(IN:=TRUE);
 				stateConveyorP1 := stateConveyorFillUp;
 			END_IF
 		
@@ -55,13 +58,17 @@ ACTION ConveyorP1:
 
 			acpI_P10.speed := actualRecipe.conveyorP1speed;
 
-			IF diTrayOnInputP2 THEN
+			IF NOT TOF_TrayOnInputP1.Q THEN
+				stateConveyorP1 := stateConveyorPause;
+			END_IF
+			
+			IF diTrayOnOutputP1 THEN
 				stateConveyorP1 := stateConveyorStop;
 			END_IF
 		
-			IF cmdRunConveyorP1 THEN
-				stateConveyorP1 := stateConveyorMoving;
-			END_IF
+//			IF cmdRunConveyorP1 THEN
+//				stateConveyorP1 := stateConveyorMoving;
+//			END_IF
 		
 		stateConveyorPause:
 			
@@ -70,6 +77,10 @@ ACTION ConveyorP1:
 			IF TOF_TrayOnInputP1.Q THEN
 				stateConveyorP1 := stateConveyorMoving;
 			END_IF
+		
+			IF modePalletization <> modePalletizationAuto THEN
+				stateConveyorP1 := stateConveyorStop;
+			END_IF				
 		
 	END_CASE
 	

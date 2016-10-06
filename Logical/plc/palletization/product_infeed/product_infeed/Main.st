@@ -9,14 +9,14 @@ PROGRAM _CYCLIC
 	diCloseDoors1;
 	
 	//detect tray on input of conveyor P2
-	TOF_TrayOnInputP2(IN := diTrayOnInputP2, PT := T#100ms);
+	TOF_TrayOnInputP2(IN := diTrayOnInputP2, PT := T#60ms);
 	IF TOF_TrayOnInputP2.Q < trayOnInputP2old THEN
 		nbOfTraysOnInputP2 := nbOfTraysOnInputP2 + 1;
 	END_IF
 	trayOnInputP2old := TOF_TrayOnInputP2.Q;
 
 	//detect tray behind roration
-	TOF_TrayBehindRotation(IN := diTrayBehindRotation, PT := T#100ms);
+	TOF_TrayBehindRotation(IN := diTrayBehindRotation, PT := T#60ms);
 	IF TOF_TrayBehindRotation.Q < trayBehindRotationOld THEN
 		nbOfTraysBehindRotation := nbOfTraysBehindRotation + 1;
 	END_IF
@@ -27,7 +27,7 @@ PROGRAM _CYCLIC
 	
 	IF requestedLayoutIndex = actualLayoutIndex AND nbOfTraysOnInputP2 > 0 AND nbOfTraysOnInputP2 <= actualLayout.nbOfTrays THEN
 		//select actual tray
-		actualTray := actualLayout.tray[nbOfTraysOnInputP2-1]; 
+		actualTray ACCESS ADR(actualLayout.tray[nbOfTraysOnInputP2-1]); 
 	END_IF
 	
 	CASE modePalletization OF
@@ -37,12 +37,17 @@ PROGRAM _CYCLIC
 
 		modePalletizationManual:
 
-			cmdRunConveyorP1 := FALSE;
-			cmdMoveTrayP2 := FALSE;
+			pusherDrive.speed := 200;
+			IF modePalletizationOld <> modePalletizationManual THEN
+				cmdRunConveyorP1 := FALSE;
+				cmdRunConveyorP2 := FALSE;
+			END_IF
 			stateAuto := stateAutoUndefined;
 
 		modePalletizationAuto:
 			
+			pusherDrive.speed := 500;
+
 			CASE stateAuto OF
 				
 				stateAutoUndefined:
@@ -57,9 +62,8 @@ PROGRAM _CYCLIC
 				
 				stateAutoRunConveyors:
 					
-					pusherDrive.speed := 400;
 					cmdRunConveyorP1 := TRUE;
-					cmdMoveTrayP2 := TRUE;		
+					cmdRunConveyorP2 := TRUE;		
 					stateAuto := stateAutoWaitForFirstTray;
 				
 				stateAutoWaitForFirstTray:
@@ -69,6 +73,9 @@ PROGRAM _CYCLIC
 					END_IF						
 				
 				stateAutoFillARow:
+					
+//					IF actualTray.turnTray THEN
+//						cmdRotationForward := TRUE;
 					
 					IF actualTray.lastTrayInRow THEN
 						cmdFillUpConveyorP1 := TRUE;
@@ -86,13 +93,12 @@ PROGRAM _CYCLIC
 					
 					TON_WaitForLastTray(IN := TRUE, PT := actualTray.timeAfterLastTray);
 					IF TON_WaitForLastTray.Q THEN
-						cmdMoveTrayP2 := FALSE;
+						cmdRunConveyorP2 := FALSE;
 						stateAuto := stateAutoPusherToTable;
 					END_IF
 				
 				stateAutoPusherToTable:
 					
-					pusherDrive.speed := 500;
 					pusherDrive.requestedPositionIndex := 2;
 					pusherDrive.cmdAbsolute := TRUE;
 					stateAuto := stateAutoPusherToTable2;
@@ -146,6 +152,7 @@ PROGRAM _CYCLIC
 	ConveyorP1;
 	ConveyorP2;
 	PusherLifting;
+	Rotation;
 	
 	IF pusherDrive.driveError THEN
 		alarmImagePalletization[14] := TRUE;

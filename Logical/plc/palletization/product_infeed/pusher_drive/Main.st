@@ -18,8 +18,8 @@ PROGRAM _INIT
 	pusherDrive.positions[2] := 1360;
 	pusherDrive.positions[3] := 1870;
 	pusherDrive.positions[4] := 2000;//FI_12.init.positiveSwLimit-tolerance;
-	pusherDrive.requestedPositionIndex := 1;
-	pusherDrive.actualPositionIndex := -1;
+//	pusherDrive.requestedPositionIndex := 1;
+//	pusherDrive.actualPositionIndex := -1;
 	pusherDrive.speed := 500;
 	 
 END_PROGRAM
@@ -36,6 +36,20 @@ PROGRAM _CYCLIC
 	END_IF
 		
 	CASE statePusherDriveP12 OF
+		
+		statePusherDriveUndefined:
+			
+			FOR i := 0 TO 4 DO
+				IF actualPosition >= pusherDrive.positions[i] - pusherDrive.tolerance AND  actualPosition <= pusherDrive.positions[i] + pusherDrive.tolerance THEN
+					EXIT;
+				END_IF
+			END_FOR
+			IF i <= 4 THEN
+				pusherDrive.actualPositionIndex := i;
+			ELSE
+				pusherDrive.actualPositionIndex := 0;				
+			END_IF
+			statePusherDriveP12 := statePusherDriveStop;
 		
 		statePusherDriveStop:
 			
@@ -116,14 +130,7 @@ PROGRAM _CYCLIC
 			acpI_P12.switchOn := TRUE;					
 			
 			IF FI_12.info.powerOn AND acpI_P12.switchedOn THEN
-//				FOR i := 1 TO 4 DO
-//					IF pusherDrive.actualPosition < pusherDrive.positions[i] - pusherDrive.tolerance THEN
-//						EXIT;
-//					END_IF
-//				END_FOR
-//				IF i > 4 THEN
-//					i := 4;
-//				END_IF
+
 				pusherDrive.requestedPositionIndex := pusherDrive.actualPositionIndex + 1;
 				IF pusherDrive.requestedPositionIndex > 4 THEN
 					pusherDrive.requestedPositionIndex := 4;

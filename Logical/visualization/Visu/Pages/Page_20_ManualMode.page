@@ -50,10 +50,18 @@
       <Property Name="Width" Value="800"/>
       <Property Name="Z-Order" Value="2"/>
       <TextGroup>
-        <TextLayer LanguageId="en"/>
-        <TextLayer LanguageId="cs"/>
-        <TextLayer LanguageId="fr"/>
-        <IndexMap/>
+        <TextLayer LanguageId="en">
+          <Text ID="177854" Value="Product Infeed"/>
+        </TextLayer>
+        <TextLayer LanguageId="cs">
+          <Text ID="177854" Value=""/>
+        </TextLayer>
+        <TextLayer LanguageId="fr">
+          <Text ID="177854" Value=""/>
+        </TextLayer>
+        <IndexMap>
+          <Index ID="177854" Value="4"/>
+        </IndexMap>
       </TextGroup>
       <Controls>
         <Control ClassId="0x00001005" Name="Bitmap_1">
@@ -350,8 +358,8 @@
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[Manual_Mode]"/>
-          <Property Name="TextIndex" Value="0"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="4"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
