@@ -18,11 +18,12 @@ ACTION ConveyorP1:
 			acpI_P10.speed := 0;
 			acpI_P10.reset := TRUE;
 			IF modePalletization <> modePalletizationNotReadyToStart THEN
+				acpI_P10.stop := FALSE;		
 				stateConveyorP1 := stateConveyorWait;
 			END_IF
 		
 		stateConveyorWait:
-		
+			
 			IF cmdRunConveyorP1 THEN
 				TOF_TrayOnInputP1(IN:=TRUE);
 				stateConveyorP1 := stateConveyorMoving;
@@ -62,7 +63,8 @@ ACTION ConveyorP1:
 				stateConveyorP1 := stateConveyorPause;
 			END_IF
 			
-			IF diTrayOnOutputP1 THEN
+			IF diTrayOnOutputP1 AND NOT diTrayOnInputP2 THEN
+				acpI_P10.stop := TRUE;
 				stateConveyorP1 := stateConveyorStop;
 			END_IF
 		

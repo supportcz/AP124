@@ -40,15 +40,19 @@ PROGRAM _CYCLIC
 	END_IF
 	trayBehindRotationOld := TOF_TrayBehindRotation.Q;
 	
-
+	//select next tray	
+	IF nbOfTraysOnInputP2 >= 0 AND nbOfTraysOnInputP2 < dActualLayout.nbOfTrays THEN
+		dTrayOnInputP2 ACCESS ADR(dActualLayout.tray[nbOfTraysOnInputP2]); 
+	ELSE
+		dTrayOnInputP2 ACCESS ADR(nullTray);
+	END_IF	
 	
-	IF nbOfTraysOnInputP2 <= 0 OR nbOfTraysOnInputP2 > dActualLayout.nbOfTrays THEN
-		RETURN;
-	END_IF
-	
-	//select actual tray
-	dActualTray ACCESS ADR(dActualLayout.tray[nbOfTraysOnInputP2-1]); 
-	
+	//select old tray
+	IF nbOfTraysOnInputP2 > 0 AND nbOfTraysOnInputP2 <= dActualLayout.nbOfTrays THEN
+		dTrayOnInputP2old ACCESS ADR(dActualLayout.tray[nbOfTraysOnInputP2-1]);
+	ELSE
+		dTrayOnInputP2old ACCESS ADR(nullTray);
+	END_IF	
 	
 	CASE modePalletization OF
 		
@@ -84,24 +88,17 @@ PROGRAM _CYCLIC
 					
 					cmdRunConveyorP1 := TRUE;
 					cmdRunConveyorP2 := TRUE;		
-					stateAuto := stateAutoWaitForFirstTray;
+					stateAuto := stateAutoWaitForNextTray;
 				
-				stateAutoWaitForFirstTray:
+				stateAutoWaitForNextTray:
 					
 					IF nbOfTraysOnInputP2 > nbOfTraysOnInputP2old THEN
-						stateAuto := stateAutoFillARow;
+						IF dTrayOnInputP2old.lastTrayInRow THEN
+							cmdFillUpConveyorP1 := TRUE;
+							stateAuto := stateAutoLastTray;
+						END_IF	
 					END_IF						
-				
-				stateAutoFillARow:
-					
-//					IF actualTray.turnTray THEN
-//						cmdRotationForward := TRUE;
-					
-					IF dActualTray.lastTrayInRow THEN
-						cmdFillUpConveyorP1 := TRUE;
-						stateAuto := stateAutoLastTray;
-					END_IF	
-				
+								
 				stateAutoLastTray:
 					
 					IF nbOfTraysBehindRotation = nbOfTraysOnInputP2 THEN
@@ -111,7 +108,7 @@ PROGRAM _CYCLIC
 				
 				stateAutoLastTray2:
 					
-					TON_WaitForLastTray(IN := TRUE, PT := dActualTray.timeAfterLastTray);
+					TON_WaitForLastTray(IN := TRUE, PT := dTrayOnInputP2.timeAfterLastTray);
 					IF TON_WaitForLastTray.Q THEN
 						cmdRunConveyorP2 := FALSE;
 						stateAuto := stateAutoPusherToTable;
@@ -168,6 +165,7 @@ PROGRAM _CYCLIC
 	END_CASE
 	
 	nbOfTraysOnInputP2old := nbOfTraysOnInputP2;
+
 	
 	ConveyorP1;
 	ConveyorP2;

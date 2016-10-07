@@ -28,8 +28,7 @@ TYPE
 		(
 		stateAutoUndefined,
 		stateAutoRunConveyors,
-		stateAutoWaitForFirstTray,
-		stateAutoFillARow,
+		stateAutoWaitForNextTray,
 		stateAutoLastTray,
 		stateAutoLastTray2,
 		stateAutoPusherToTable,

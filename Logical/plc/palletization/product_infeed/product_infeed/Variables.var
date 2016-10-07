@@ -11,7 +11,7 @@ VAR
 	cmdRunConveyorP2 : BOOL;
 	dActualLayout : REFERENCE TO Layout;
 	dActualRecipe : REFERENCE TO Recipe;
-	dActualTray : REFERENCE TO Tray;
+	dTrayOnInputP2 : REFERENCE TO Tray;
 	diCloseDoors1 : BOOL; (*button to close doors*)
 	diDoor1opened : BOOL;
 	diMotorProtectionP3 : BOOL;
@@ -46,4 +46,6 @@ VAR
 	TON_WaitForLastTray : TON;
 	trayBehindRotationOld : BOOL;
 	trayOnInputP2old : BOOL;
+	nullTray : Tray;
+	dTrayOnInputP2old : REFERENCE TO Tray;
 END_VAR

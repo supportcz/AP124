@@ -51,10 +51,11 @@
           <Text ID="178026" Value="Layer"/>
           <Text ID="178027" Value="Save"/>
           <Text ID="178029" Value="Discard changes"/>
-          <Text ID="178031" Value="Edit Layouts"/>
+          <Text ID="178031" Value="Edit Layout"/>
           <Text ID="178064" Value="Selected recipe"/>
           <Text ID="178065" Value="+"/>
           <Text ID="178067" Value="-"/>
+          <Text ID="178247" Value="uses layout"/>
         </TextLayer>
         <TextLayer LanguageId="cs">
           <Text ID="178016" Value="Text_1"/>
@@ -74,6 +75,7 @@
           <Text ID="178064" Value="Text_9"/>
           <Text ID="178065" Value=""/>
           <Text ID="178067" Value=""/>
+          <Text ID="178247" Value="Text_2"/>
         </TextLayer>
         <TextLayer LanguageId="fr">
           <Text ID="178016" Value="Text_1"/>
@@ -93,6 +95,7 @@
           <Text ID="178064" Value="Text_9"/>
           <Text ID="178065" Value=""/>
           <Text ID="178067" Value=""/>
+          <Text ID="178247" Value="Text_2"/>
         </TextLayer>
         <IndexMap>
           <Index ID="178016" Value="0"/>
@@ -112,6 +115,7 @@
           <Index ID="178064" Value="17"/>
           <Index ID="178065" Value="18"/>
           <Index ID="178067" Value="20"/>
+          <Index ID="178247" Value="22"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -313,29 +317,11 @@
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="62"/>
         </Control>
-        <Control ClassId="0x00001007" Name="Numeric_4">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="35"/>
-          <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="Left" Value="487"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="None"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="377"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[6]]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="67"/>
-        </Control>
         <Control ClassId="0x00001004" Name="Text_7">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="32"/>
-          <Property Name="Left" Value="31"/>
+          <Property Name="Left" Value="50"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
@@ -345,84 +331,12 @@
           <Property Name="Top" Value="343"/>
           <Property Name="Width" Value="81"/>
         </Control>
-        <Control ClassId="0x00001007" Name="Numeric_5">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="35"/>
-          <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="Left" Value="409"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="None"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="380"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[5]]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="67"/>
-        </Control>
-        <Control ClassId="0x00001007" Name="Numeric_6">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="35"/>
-          <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="Left" Value="329"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="None"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="377"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[4]]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="67"/>
-        </Control>
-        <Control ClassId="0x00001007" Name="Numeric_7">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="35"/>
-          <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="Left" Value="245"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="None"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="375"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[3]]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="67"/>
-        </Control>
-        <Control ClassId="0x00001007" Name="Numeric_8">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="35"/>
-          <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="Left" Value="166"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="None"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="378"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[2]]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="67"/>
-        </Control>
         <Control ClassId="0x00001007" Name="Numeric_9">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="Left" Value="87"/>
+          <Property Name="Left" Value="347"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -430,7 +344,7 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="375"/>
+          <Property Name="Top" Value="343"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[1]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="67"/>
@@ -440,7 +354,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="Left" Value="14"/>
+          <Property Name="Left" Value="139"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -448,62 +362,8 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="374"/>
+          <Property Name="Top" Value="348"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[0]]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="67"/>
-        </Control>
-        <Control ClassId="0x00001007" Name="Numeric_11">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="35"/>
-          <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="Left" Value="565"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="None"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="377"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[7]]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="67"/>
-        </Control>
-        <Control ClassId="0x00001007" Name="Numeric_12">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="35"/>
-          <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="Left" Value="645"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="None"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="379"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[8]]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="67"/>
-        </Control>
-        <Control ClassId="0x00001007" Name="Numeric_13">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="35"/>
-          <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="Left" Value="721"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="None"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="374"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[9]]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="67"/>
         </Control>
@@ -560,7 +420,7 @@
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_72]"/>
           <Property Name="Height" Value="57"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="649"/>
+          <Property Name="Left" Value="491"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
@@ -569,7 +429,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="302"/>
+          <Property Name="Top" Value="325"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_72]"/>
           <Property Name="Width" Value="126"/>
         </Control>
@@ -647,6 +507,20 @@
           <Property Name="Top" Value="72"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_84]"/>
           <Property Name="Width" Value="49"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_8">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="32"/>
+          <Property Name="Left" Value="258"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="22"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="345"/>
+          <Property Name="Width" Value="81"/>
         </Control>
       </Controls>
       <KeyMapping>
@@ -781,87 +655,39 @@
   <MovementOrder>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[String_1]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_9]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_8]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_10]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_10]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_10]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_1]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_8]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_10]"/>
       <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
       <Property Name="Up" Value="Source[embedded].Layer[Default].Control[String_1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_2]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_6]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_9]"/>
       <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_3]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_7]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_8]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_6]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
-    </MovementEntry>
-    <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_4]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_13]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_11]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
-    </MovementEntry>
-    <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_5]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_13]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_6]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
-    </MovementEntry>
-    <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_6]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[String_1]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_7]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[String_1]"/>
-    </MovementEntry>
-    <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_7]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[String_1]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_8]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_6]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
-    </MovementEntry>
-    <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_8]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[String_1]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_9]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_7]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_9]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_10]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_9]"/>
       <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_9]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[String_1]"/>
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_10]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_8]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_10]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[String_1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_10]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[String_1]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_13]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_9]"/>
       <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_9]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
-    </MovementEntry>
-    <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_11]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_13]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_12]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
-    </MovementEntry>
-    <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_12]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_13]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_11]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_13]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
-    </MovementEntry>
-    <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_13]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[String_1]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_12]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_10]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[String_1]"/>
     </MovementEntry>
   </MovementOrder>
   <TabSequence>
@@ -869,16 +695,8 @@
     <TabSeqItem Index="1" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
     <TabSeqItem Index="2" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
     <TabSeqItem Index="3" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
-    <TabSeqItem Index="4" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
-    <TabSeqItem Index="5" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
-    <TabSeqItem Index="6" Value="Source[embedded].Layer[Default].Control[Numeric_6]"/>
-    <TabSeqItem Index="7" Value="Source[embedded].Layer[Default].Control[Numeric_7]"/>
-    <TabSeqItem Index="8" Value="Source[embedded].Layer[Default].Control[Numeric_8]"/>
-    <TabSeqItem Index="9" Value="Source[embedded].Layer[Default].Control[Numeric_9]"/>
-    <TabSeqItem Index="10" Value="Source[embedded].Layer[Default].Control[Numeric_10]"/>
-    <TabSeqItem Index="11" Value="Source[embedded].Layer[Default].Control[Numeric_11]"/>
-    <TabSeqItem Index="12" Value="Source[embedded].Layer[Default].Control[Numeric_12]"/>
-    <TabSeqItem Index="13" Value="Source[embedded].Layer[Default].Control[Numeric_13]"/>
-    <TabSeqItem Index="14" Value="Source[embedded].Layer[Default].Control[Numeric_14]"/>
+    <TabSeqItem Index="4" Value="Source[embedded].Layer[Default].Control[Numeric_9]"/>
+    <TabSeqItem Index="5" Value="Source[embedded].Layer[Default].Control[Numeric_10]"/>
+    <TabSeqItem Index="6" Value="Source[embedded].Layer[Default].Control[Numeric_14]"/>
   </TabSequence>
 </Page>
