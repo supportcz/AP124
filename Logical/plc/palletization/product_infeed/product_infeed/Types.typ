@@ -14,7 +14,8 @@ TYPE
 		stateConveyorWait,
 		stateConveyorMoving,
 		stateConveyorFillUp,
-		stateConveyorPause
+		stateConveyorPause,
+		stateConveyorMakeGap
 		);
 	StatePusherLifting : 
 		(

@@ -5,13 +5,11 @@ VAR
 	cmdFillUpConveyorP1 : BOOL;
 	cmdPusherLiftingDown : BOOL;
 	cmdPusherLiftingUp : BOOL;
-	cmdRotationBack : BOOL;
-	cmdRotationForward : BOOL;
+	rotationForward : BOOL; (*1..requested forward,0..requested back*)
 	cmdRunConveyorP1 : BOOL;
 	cmdRunConveyorP2 : BOOL;
 	dActualLayout : REFERENCE TO Layout;
 	dActualRecipe : REFERENCE TO Recipe;
-	dTrayOnInputP2 : REFERENCE TO Tray;
 	diCloseDoors1 : BOOL; (*button to close doors*)
 	diDoor1opened : BOOL;
 	diMotorProtectionP3 : BOOL;
@@ -22,7 +20,6 @@ VAR
 	diRotationForward : BOOL;
 	diTrayBehindRotation : BOOL;
 	diTrayOnInputP1 : BOOL;
-	diTrayOnInputP2 : BOOL;
 	diTrayOnOutputP1 : BOOL;
 	doPusherLiftingBrake : BOOL;
 	doPusherLiftingDown : BOOL;
@@ -30,9 +27,14 @@ VAR
 	doRotationBack : BOOL;
 	doRotationForward : BOOL;
 	dRecipes : REFERENCE TO Recipes;
+	dTrayBehindRotation : REFERENCE TO Tray;
+	dTrayOnConveyorP2 : REFERENCE TO Tray;
+	dTrayOnConveyorP2old : REFERENCE TO Tray;
 	nbOfTraysBehindRotation : INT;
-	nbOfTraysOnInputP2 : INT;
-	nbOfTraysOnInputP2old : INT;
+	nbOfTraysBehindRotationOld : INT;
+	nbOfTraysOnConveyorP2 : INT;
+	nbOfTraysOnConveyorP2old : INT;
+	nullTray : Tray;
 	stateAuto : StateAuto;
 	stateConveyorP1 : StateConveyor;
 	stateConveyorP2 : StateConveyor;
@@ -40,12 +42,13 @@ VAR
 	stateRotation : StateRotation;
 	TOF_TrayBehindRotation : TOF;
 	TOF_TrayOnInputP1 : TOF;
-	TOF_TrayOnInputP2 : TOF;
+	TOF_TrayOnOutputP1 : TOF;
 	TON_RotationRequest : TON;
 	TON_VerticalMovement : TON;
 	TON_WaitForLastTray : TON;
 	trayBehindRotationOld : BOOL;
 	trayOnInputP2old : BOOL;
-	nullTray : Tray;
-	dTrayOnInputP2old : REFERENCE TO Tray;
+	cmdMakeGap : BOOL;
+	TON_MakeGap : TON;
+	conveyorP1gap : TIME;
 END_VAR

@@ -6,7 +6,7 @@ ACTION ConveyorP1:
 	END_IF
 	
 	//pause conveyor when no trays on input
-	TOF_TrayOnInputP1(IN := diTrayOnInputP1, PT := T#10s);
+	TOF_TrayOnInputP1(IN := diTrayOnInputP1 OR diTrayOnOutputP1, PT := T#10s);
 	
 	CASE stateConveyorP1 OF
 		
@@ -46,7 +46,12 @@ ACTION ConveyorP1:
 			IF NOT cmdRunConveyorP1 THEN
 				stateConveyorP1 := stateConveyorStop;
 			END_IF	
-		
+			
+			IF cmdMakeGap THEN 
+				TON_MakeGap(IN:=FALSE);
+				stateConveyorP1 := stateConveyorMakeGap;
+			END_IF
+				
 			IF cmdFillUpConveyorP1 THEN
 				TOF_TrayOnInputP1(IN:=TRUE);
 				stateConveyorP1 := stateConveyorFillUp;
@@ -63,7 +68,7 @@ ACTION ConveyorP1:
 				stateConveyorP1 := stateConveyorPause;
 			END_IF
 			
-			IF diTrayOnOutputP1 AND NOT diTrayOnInputP2 THEN
+			IF diTrayOnOutputP1 THEN
 				acpI_P10.stop := TRUE;
 				stateConveyorP1 := stateConveyorStop;
 			END_IF
@@ -82,7 +87,16 @@ ACTION ConveyorP1:
 		
 			IF modePalletization <> modePalletizationAuto THEN
 				stateConveyorP1 := stateConveyorStop;
-			END_IF				
+			END_IF	
+				
+		stateConveyorMakeGap:
+			
+			acpI_P10.speed := 0;
+			TON_MakeGap(IN:=TRUE, PT := conveyorP1gap);
+			IF TON_MakeGap.Q THEN	
+				cmdMakeGap := FALSE;
+				stateConveyorP1 := stateConveyorMoving;
+			END_IF
 		
 	END_CASE
 	

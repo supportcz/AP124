@@ -19,15 +19,13 @@ ACTION Rotation:
 		
 			IF stateRotation = stateRotationUndefined THEN
 				// command back 
-				IF cmdRotationBack THEN
-					cmdRotationBack := FALSE;
+				IF NOT rotationForward THEN
 					TON_RotationRequest(IN := FALSE);
 					stateRotation := stateRotationMovingBack;		
 				END_IF
 
 				// command forward 
-				IF cmdRotationForward THEN
-					cmdRotationForward := FALSE;
+				IF rotationForward THEN
 					TON_RotationRequest(IN := FALSE);
 					stateRotation := stateRotationMovingForward;	
 				END_IF	
@@ -57,12 +55,10 @@ ACTION Rotation:
 		stateRotationForward:
 		
 			// command back 
-			IF cmdRotationBack THEN
-				cmdRotationBack := FALSE;
+			IF NOT rotationForward THEN
 				TON_RotationRequest(IN := FALSE);
 				stateRotation := stateRotationMovingBack;		
 			END_IF
-			cmdRotationForward := FALSE;
 
 		stateRotationMovingBack:
 
@@ -85,13 +81,10 @@ ACTION Rotation:
 		stateRotationBack:
 
 			// command forward 
-			IF cmdRotationForward THEN
-				cmdRotationForward := FALSE;
-				
+			IF rotationForward THEN
 				TON_RotationRequest(IN := FALSE);
 				stateRotation := stateRotationMovingForward;	
 			END_IF	
-			cmdRotationBack := FALSE;
 	END_CASE
 	
 	//edge alarms

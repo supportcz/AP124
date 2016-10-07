@@ -27,11 +27,11 @@ PROGRAM _CYCLIC
 	dActualLayout ACCESS ADR(dRecipes.layout[dActualRecipe.layer[actualLayer]]);
 	
 	//detect tray on input of conveyor P2
-	TOF_TrayOnInputP2(IN := diTrayOnInputP2, PT := T#60ms);
-	IF TOF_TrayOnInputP2.Q < trayOnInputP2old THEN
-		nbOfTraysOnInputP2 := nbOfTraysOnInputP2 + 1;
+	TOF_TrayOnOutputP1(IN := diTrayOnOutputP1, PT := T#60ms);
+	IF TOF_TrayOnOutputP1.Q < trayOnInputP2old THEN
+		nbOfTraysOnConveyorP2 := nbOfTraysOnConveyorP2 + 1;
 	END_IF
-	trayOnInputP2old := TOF_TrayOnInputP2.Q;
+	trayOnInputP2old := TOF_TrayOnOutputP1.Q;
 
 	//detect tray behind roration
 	TOF_TrayBehindRotation(IN := diTrayBehindRotation, PT := T#60ms);
@@ -41,18 +41,25 @@ PROGRAM _CYCLIC
 	trayBehindRotationOld := TOF_TrayBehindRotation.Q;
 	
 	//select next tray	
-	IF nbOfTraysOnInputP2 >= 0 AND nbOfTraysOnInputP2 < dActualLayout.nbOfTrays THEN
-		dTrayOnInputP2 ACCESS ADR(dActualLayout.tray[nbOfTraysOnInputP2]); 
+	IF nbOfTraysOnConveyorP2 >= 0 AND nbOfTraysOnConveyorP2 < dActualLayout.nbOfTrays THEN
+		dTrayOnConveyorP2 ACCESS ADR(dActualLayout.tray[nbOfTraysOnConveyorP2]); 
 	ELSE
-		dTrayOnInputP2 ACCESS ADR(nullTray);
+		dTrayOnConveyorP2 ACCESS ADR(nullTray);
 	END_IF	
 	
 	//select old tray
-	IF nbOfTraysOnInputP2 > 0 AND nbOfTraysOnInputP2 <= dActualLayout.nbOfTrays THEN
-		dTrayOnInputP2old ACCESS ADR(dActualLayout.tray[nbOfTraysOnInputP2-1]);
+	IF nbOfTraysOnConveyorP2 > 0 AND nbOfTraysOnConveyorP2 <= dActualLayout.nbOfTrays THEN
+		dTrayOnConveyorP2old ACCESS ADR(dActualLayout.tray[nbOfTraysOnConveyorP2-1]);
 	ELSE
-		dTrayOnInputP2old ACCESS ADR(nullTray);
+		dTrayOnConveyorP2old ACCESS ADR(nullTray);
 	END_IF	
+	
+	//select tray behind rotation
+	IF nbOfTraysBehindRotation >= 0 AND nbOfTraysBehindRotation < dActualLayout.nbOfTrays THEN
+		dTrayBehindRotation ACCESS ADR(dActualLayout.tray[nbOfTraysBehindRotation]);
+	ELSE
+		dTrayBehindRotation ACCESS ADR(nullTray);
+	END_IF		
 	
 	CASE modePalletization OF
 		
@@ -72,6 +79,7 @@ PROGRAM _CYCLIC
 			
 			pusherDrive.speed := 500;
 
+
 			CASE stateAuto OF
 				
 				stateAutoUndefined:
@@ -84,6 +92,14 @@ PROGRAM _CYCLIC
 						stateAuto := stateAutoRunConveyors;
 					END_IF
 				
+					IF statePusherLifting = stateLowerPosition AND pusherDrive.actualPositionIndex = 2 THEN
+						stateAuto := stateAutoPusherLiftingUp;
+					END_IF
+				
+					IF statePusherLifting = stateUpperPosition AND pusherDrive.actualPositionIndex = 2 THEN
+						stateAuto := stateAutoPusherToBasic;
+					END_IF
+				
 				stateAutoRunConveyors:
 					
 					cmdRunConveyorP1 := TRUE;
@@ -92,23 +108,29 @@ PROGRAM _CYCLIC
 				
 				stateAutoWaitForNextTray:
 					
-					IF nbOfTraysOnInputP2 > nbOfTraysOnInputP2old THEN
-						IF dTrayOnInputP2old.lastTrayInRow THEN
+					rotationForward := dTrayBehindRotation.turnTray;
+					
+					IF nbOfTraysOnConveyorP2 > nbOfTraysOnConveyorP2old THEN
+						IF dTrayOnConveyorP2.makeGap THEN
+							conveyorP1gap := dTrayOnConveyorP2.gapBetweenTrays;
+							cmdMakeGap := TRUE;
+						END_IF					
+						IF dTrayOnConveyorP2old.lastTrayInRow THEN
 							cmdFillUpConveyorP1 := TRUE;
 							stateAuto := stateAutoLastTray;
 						END_IF	
-					END_IF						
+					END_IF	
 								
 				stateAutoLastTray:
 					
-					IF nbOfTraysBehindRotation = nbOfTraysOnInputP2 THEN
+					IF nbOfTraysBehindRotation = nbOfTraysOnConveyorP2 THEN
 						TON_WaitForLastTray(IN := FALSE);					
 						stateAuto := stateAutoLastTray2;
 					END_IF
 				
 				stateAutoLastTray2:
 					
-					TON_WaitForLastTray(IN := TRUE, PT := dTrayOnInputP2.timeAfterLastTray);
+					TON_WaitForLastTray(IN := TRUE, PT := dTrayOnConveyorP2.timeAfterLastTray);
 					IF TON_WaitForLastTray.Q THEN
 						cmdRunConveyorP2 := FALSE;
 						stateAuto := stateAutoPusherToTable;
@@ -164,8 +186,8 @@ PROGRAM _CYCLIC
 		
 	END_CASE
 	
-	nbOfTraysOnInputP2old := nbOfTraysOnInputP2;
-
+	nbOfTraysOnConveyorP2old := nbOfTraysOnConveyorP2;
+	nbOfTraysBehindRotationOld := nbOfTraysBehindRotation;
 	
 	ConveyorP1;
 	ConveyorP2;
