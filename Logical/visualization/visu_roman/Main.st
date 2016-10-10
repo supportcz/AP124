@@ -58,7 +58,28 @@ PROGRAM _CYCLIC
 	StatusMessageMagazine;
 	StatusMessagePalletization;
 	
-
+	
+	(* recipe edit *)
+	IF adrRecipes <> 0 THEN 
+		dRecipes ACCESS adrRecipes;
+		IF dRecipes.actualRecipeIndex >= 0 OR dRecipes.actualRecipeIndex <= 9 THEN
+			dActualRecipe ACCESS ADR(dRecipes.recipe[dRecipes.actualRecipeIndex]);
+		
+			//select actual layout
+			IF actualLayer >= 0 AND actualLayer <= 9 THEN
+				actualLayout := dActualRecipe.layer[actualLayer];
+			
+				IF actualLayout >= 0 AND actualLayout <= 9 THEN 
+					dActualLayout ACCESS ADR(dRecipes.layout[actualLayout]);
+					//select actual tray
+					IF actualTray >= 0 AND actualTray <= 39 THEN
+						dActualTray := dActualLayout.tray[actualTray];
+					END_IF
+				END_IF
+			END_IF
+		END_IF
+	END_IF
+	
 END_PROGRAM
 
 

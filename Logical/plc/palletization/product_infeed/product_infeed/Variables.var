@@ -48,7 +48,6 @@ VAR
 	TON_WaitForLastTray : TON;
 	trayBehindRotationOld : BOOL;
 	trayOnInputP2old : BOOL;
-	cmdMakeGap : BOOL;
-	TON_MakeGap : TON;
-	conveyorP1gap : TIME;
+	cmdTurnTray : BOOL;
+	TON_TurnTray : TON;
 END_VAR

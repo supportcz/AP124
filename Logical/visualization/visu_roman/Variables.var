@@ -9,4 +9,11 @@ VAR
 	magazineStatusDatapointManual : UINT;
 	statusMessageMagazine : INT;
 	statusMessagePalletization : INT;
+	dRecipes : REFERENCE TO Recipes;
+	dActualRecipe : REFERENCE TO Recipe;
+	actualLayer : INT;
+	dActualLayout : REFERENCE TO Layout;
+	actualLayout : INT;
+	dActualTray : Tray;
+	actualTray : INT;
 END_VAR

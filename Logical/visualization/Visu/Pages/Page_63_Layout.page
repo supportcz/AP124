@@ -189,7 +189,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="151"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualLayout.nbOfTrays]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dActualLayout.nbOfTrays]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="57"/>
         </Control>
@@ -360,7 +360,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="202"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.nbOfTraysOnConveyorP2]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.actualTray]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="33"/>
         </Control>
@@ -391,7 +391,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="94"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.actualLayer]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.actualLayout]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="58"/>
         </Control>
@@ -662,7 +662,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="Repeat" Value="True"/>
               <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.nbOfTraysOnConveyorP2]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.actualTray]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -680,7 +680,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="Repeat" Value="True"/>
               <Property Name="StepValue" Value="-1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.nbOfTraysOnConveyorP2]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.actualTray]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

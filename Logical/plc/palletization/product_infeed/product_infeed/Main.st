@@ -84,20 +84,20 @@ PROGRAM _CYCLIC
 				
 				stateAutoUndefined:
 				
+					IF statePusherLifting = stateLowerPosition THEN
+						stateAuto := stateAutoPusherLiftingUp;
+					END_IF
+				
+					IF statePusherLifting = stateUpperPosition THEN
+						stateAuto := stateAutoPusherToBasic;
+					END_IF
+					
 					IF statePusherLifting = stateUpperPosition AND pusherDrive.actualPositionIndex = 1 THEN
 						stateAuto := stateAutoPusherLiftingDown;
 					END_IF
 
 					IF statePusherLifting = stateLowerPosition AND pusherDrive.actualPositionIndex = 1 THEN
 						stateAuto := stateAutoRunConveyors;
-					END_IF
-				
-					IF statePusherLifting = stateLowerPosition AND pusherDrive.actualPositionIndex = 2 THEN
-						stateAuto := stateAutoPusherLiftingUp;
-					END_IF
-				
-					IF statePusherLifting = stateUpperPosition AND pusherDrive.actualPositionIndex = 2 THEN
-						stateAuto := stateAutoPusherToBasic;
 					END_IF
 				
 				stateAutoRunConveyors:
@@ -111,9 +111,8 @@ PROGRAM _CYCLIC
 					rotationForward := dTrayBehindRotation.turnTray;
 					
 					IF nbOfTraysOnConveyorP2 > nbOfTraysOnConveyorP2old THEN
-						IF dTrayOnConveyorP2.makeGap THEN
-							conveyorP1gap := dTrayOnConveyorP2.gapBetweenTrays;
-							cmdMakeGap := TRUE;
+						IF dTrayOnConveyorP2.turnTray THEN
+							cmdTurnTray := TRUE;
 						END_IF					
 						IF dTrayOnConveyorP2old.lastTrayInRow THEN
 							cmdFillUpConveyorP1 := TRUE;
@@ -130,7 +129,7 @@ PROGRAM _CYCLIC
 				
 				stateAutoLastTray2:
 					
-					TON_WaitForLastTray(IN := TRUE, PT := dTrayOnConveyorP2.timeAfterLastTray);
+					TON_WaitForLastTray(IN := TRUE, PT := dActualRecipe.timeAfterLastTrayInRow);
 					IF TON_WaitForLastTray.Q THEN
 						cmdRunConveyorP2 := FALSE;
 						stateAuto := stateAutoPusherToTable;

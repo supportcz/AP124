@@ -47,9 +47,9 @@ ACTION ConveyorP1:
 				stateConveyorP1 := stateConveyorStop;
 			END_IF	
 			
-			IF cmdMakeGap THEN 
-				TON_MakeGap(IN:=FALSE);
-				stateConveyorP1 := stateConveyorMakeGap;
+			IF cmdTurnTray THEN 
+				TON_TurnTray(IN:=FALSE);
+				stateConveyorP1 := stateConveyorTurnTray;
 			END_IF
 				
 			IF cmdFillUpConveyorP1 THEN
@@ -89,12 +89,12 @@ ACTION ConveyorP1:
 				stateConveyorP1 := stateConveyorStop;
 			END_IF	
 				
-		stateConveyorMakeGap:
+		stateConveyorTurnTray:
 			
 			acpI_P10.speed := 0;
-			TON_MakeGap(IN:=TRUE, PT := conveyorP1gap);
-			IF TON_MakeGap.Q THEN	
-				cmdMakeGap := FALSE;
+			TON_TurnTray(IN:=TRUE, PT := dActualRecipe.timeDelayForTurn);
+			IF TON_TurnTray.Q THEN	
+				cmdTurnTray := FALSE;
 				stateConveyorP1 := stateConveyorMoving;
 			END_IF
 		

@@ -131,7 +131,7 @@
     <Connection Connector="SS1" TargetModule="X20TB1F10" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM15d" TargetConnector="SL1" />
   </Module>
-  <Module Name="U10" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
+  <Module Name="U10" Type="8I74xxxxxxx.01P-1" Version="1.3.0.0">
     <Connection Connector="PLK1" TargetModule="X20CP1583" TargetConnector="IF3" NodeNumber="10" />
     <Connection Connector="PLK2" TargetModule="U11" TargetConnector="PLK1" NodeNumber="10" />
     <Parameter ID="Supervision" Value="off" />
@@ -142,7 +142,7 @@
     <Parameter ID="ACC" Value="5" />
     <Parameter ID="DEC" Value="5" />
     <Parameter ID="HSP" Value="600" />
-    <Parameter ID="CTT" Value="0" />
+    <Parameter ID="CTT" Value="3" />
     <Parameter ID="NPR" Value="55" />
     <Parameter ID="COS" Value="72" />
     <Parameter ID="UNS" Value="400" />
@@ -151,7 +151,7 @@
     <Parameter ID="BLC" Value="2" />
     <Parameter ID="BST" Value="0" />
   </Module>
-  <Module Name="U11" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
+  <Module Name="U11" Type="8I74xxxxxxx.01P-1" Version="1.3.0.0">
     <Connection Connector="PLK1" TargetModule="U10" TargetConnector="PLK2" NodeNumber="11" />
     <Connection Connector="PLK2" TargetModule="U12" TargetConnector="PLK1" NodeNumber="11" />
     <Parameter ID="Supervision" Value="off" />
@@ -162,7 +162,7 @@
     <Parameter ID="ACC" Value="5" />
     <Parameter ID="DEC" Value="5" />
     <Parameter ID="HSP" Value="600" />
-    <Parameter ID="CTT" Value="0" />
+    <Parameter ID="CTT" Value="3" />
     <Parameter ID="NPR" Value="55" />
     <Parameter ID="COS" Value="72" />
     <Parameter ID="UNS" Value="400" />
@@ -171,7 +171,7 @@
     <Parameter ID="BLC" Value="2" />
     <Parameter ID="BST" Value="0" />
   </Module>
-  <Module Name="U12" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
+  <Module Name="U12" Type="8I74xxxxxxx.01P-1" Version="1.3.0.0">
     <Connection Connector="PLK1" TargetModule="U11" TargetConnector="PLK2" NodeNumber="12" />
     <Connection Connector="PLK2" TargetModule="U14" TargetConnector="PLK1" NodeNumber="12" />
     <Parameter ID="Supervision" Value="off" />
@@ -182,6 +182,7 @@
     <Parameter ID="ACC" Value="0" />
     <Parameter ID="DEC" Value="0" />
     <Parameter ID="FLU" Value="0" />
+    <Parameter ID="CTT" Value="3" />
     <Parameter ID="NPR" Value="110" />
     <Parameter ID="COS" Value="73" />
     <Parameter ID="UNS" Value="400" />
@@ -193,7 +194,7 @@
     <Parameter ID="TRA" Value="153" />
     <Parameter ID="ADC" Value="0" />
   </Module>
-  <Module Name="U14" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
+  <Module Name="U14" Type="8I74xxxxxxx.01P-1" Version="1.3.0.0">
     <Connection Connector="PLK1" TargetModule="U12" TargetConnector="PLK2" NodeNumber="14" />
     <Connection Connector="PLK2" TargetModule="U15" TargetConnector="PLK1" NodeNumber="14" />
     <Parameter ID="Supervision" Value="off" />
@@ -205,7 +206,7 @@
     <Parameter ID="ACC" Value="10" />
     <Parameter ID="DEC" Value="10" />
     <Parameter ID="HSP" Value="600" />
-    <Parameter ID="CTT" Value="0" />
+    <Parameter ID="CTT" Value="3" />
     <Parameter ID="NPR" Value="55" />
     <Parameter ID="COS" Value="72" />
     <Parameter ID="UNS" Value="400" />
@@ -214,7 +215,7 @@
     <Parameter ID="BLC" Value="2" />
     <Parameter ID="BST" Value="0" />
   </Module>
-  <Module Name="U15" Type="8I74xxxxxxx.01P-1" Version="1.2.0.1">
+  <Module Name="U15" Type="8I74xxxxxxx.01P-1" Version="1.3.0.0">
     <Connection Connector="PLK1" TargetModule="U14" TargetConnector="PLK2" NodeNumber="15" />
     <Parameter ID="Supervision" Value="off" />
     <Parameter ID="packedETAD" Value="packed" />
@@ -225,7 +226,7 @@
     <Parameter ID="ACC" Value="10" />
     <Parameter ID="DEC" Value="10" />
     <Parameter ID="HSP" Value="600" />
-    <Parameter ID="CTT" Value="0" />
+    <Parameter ID="CTT" Value="3" />
     <Parameter ID="NPR" Value="55" />
     <Parameter ID="COS" Value="72" />
     <Parameter ID="UNS" Value="400" />

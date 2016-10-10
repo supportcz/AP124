@@ -42,23 +42,6 @@ PROGRAM _CYCLIC
 		
 		stateRecipeWait:
 			
-//			IF requestedRecipeIndex <> actualRecipeIndex THEN
-//				//memcpy (ADR(recipes.recipe[actualRecipeIndex]), ADR(actualRecipe),SIZEOF(actualRecipe));
-//				recipes.recipe[actualRecipeIndex] := actualRecipe;
-//				//memcpy (ADR(actualRecipe), ADR(recipes.recipe[requestedRecipeIndex]), SIZEOF(actualRecipe));
-//				actualRecipe := recipes.recipe[requestedRecipeIndex];
-//				actualRecipeIndex := requestedRecipeIndex;
-//				recipes.actualRecipeIndex := actualRecipeIndex;
-//			END_IF
-//			
-//			IF requestedLayoutIndex <> actualLayoutIndex THEN
-//				//memcpy (ADR(recipes.layout[actualLayoutIndex]), ADR(actualLayout), SIZEOF(actualLayout));
-//				recipes.layout[actualLayoutIndex] := actualLayout;
-//				//memcpy (ADR(actualLayout), ADR(recipes.layout[requestedLayoutIndex]), SIZEOF(actualLayout));
-//				actualLayout := recipes.layout[requestedLayoutIndex];
-//				actualLayoutIndex := requestedLayoutIndex;
-//			END_IF
-			
 			IF cmdLoad THEN
 				stateRecipe := stateRecipeLoad;
 			END_IF
@@ -77,35 +60,15 @@ PROGRAM _CYCLIC
 			IF MpRecipeCsv_0.CommandDone THEN
 				cmdLoad := FALSE;
 				MpRecipeCsv_0.Load := FALSE;
-				stateRecipe := stateRecipeLoad3;
+				stateRecipe := stateRecipeWait;
 			END_IF
-		
-		stateRecipeLoad3:
-			
-//			//refresh actual recipe and layout
-//			actualRecipeIndex := recipes.actualRecipeIndex;
-//			//memcpy (ADR(actualRecipe), ADR(recipes.recipe[actualRecipeIndex]), SIZEOF(actualRecipe));
-//			actualRecipe := recipes.recipe[actualRecipeIndex];
-//			//memcpy (ADR(actualLayout), ADR(recipes.layout[actualLayoutIndex]), SIZEOF(actualLayout));
-//			actualLayout := recipes.layout[actualLayoutIndex];
-			stateRecipe := stateRecipeWait;
 
 		stateRecipeSave:
 			
-//			//refresh actual recipe and layout
-//			recipes.actualRecipeIndex := actualRecipeIndex;
-//			//memcpy (ADR(recipes.recipe[actualRecipeIndex]), ADR(actualRecipe),SIZEOF(actualRecipe));
-//			recipes.recipe[actualRecipeIndex] := actualRecipe;
-//			//memcpy (ADR(recipes.layout[actualLayoutIndex]), ADR(actualLayout), SIZEOF(actualLayout));
-//			recipes.layout[actualLayoutIndex] := actualLayout;
-			stateRecipe := stateRecipeSave2;
-		
-		stateRecipeSave2:
-			
 			MpRecipeCsv_0.Save := TRUE;
-			stateRecipe := stateRecipeSave3;
+			stateRecipe := stateRecipeSave2;
 			
-		stateRecipeSave3:
+		stateRecipeSave2:
 		
 			IF MpRecipeCsv_0.CommandDone THEN
 				cmdSave := FALSE;

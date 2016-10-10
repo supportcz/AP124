@@ -7,9 +7,7 @@ TYPE
 		stateRecipeWait,
 		stateRecipeLoad,
 		stateRecipeLoad2,
-		stateRecipeLoad3,
 		stateRecipeSave,
-		stateRecipeSave2,
-		stateRecipeSave3
+		stateRecipeSave2
 		);
 END_TYPE

@@ -10,6 +10,8 @@ TYPE
 		interlayerSheetTop : BOOL;
 		conveyorP1speed : INT;
 		conveyorP2speed : INT;
+		timeAfterLastTrayInRow : TIME;
+		timeDelayForTurn : TIME;
 		nbOfLayers : INT;
 		layer : ARRAY[0..9]OF INT;
 	END_STRUCT;
@@ -19,12 +21,9 @@ TYPE
 		layout : ARRAY[0..9]OF Layout;
 	END_STRUCT;
 	Tray : 	STRUCT 
-		gapBetweenTrays : TIME;
-		makeGap : BOOL;
 		turnTray : BOOL;
 		lastTrayInLayer : BOOL;
 		lastTrayHalfLayer : BOOL;
 		lastTrayInRow : BOOL;
-		timeAfterLastTray : TIME;
 	END_STRUCT;
 END_TYPE

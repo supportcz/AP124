@@ -142,7 +142,7 @@
           <Property Name="SimulationValue" Value="ABC"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="Top" Value="109"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.name]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dActualRecipe.name]"/>
           <Property Name="Width" Value="206"/>
         </Control>
         <Control ClassId="0x00001002" Name="Button_1">
@@ -249,7 +249,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="238"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.conveyorP1speed]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dActualRecipe.conveyorP1speed]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="92"/>
         </Control>
@@ -267,7 +267,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="268"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.conveyorP2speed]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dActualRecipe.conveyorP2speed]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="90"/>
         </Control>
@@ -313,7 +313,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="310"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.nbOfLayers]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dActualRecipe.nbOfLayers]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="62"/>
         </Control>
@@ -345,7 +345,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="343"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[1]]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.actualLayout]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="67"/>
         </Control>
@@ -363,7 +363,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="348"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.layer[0]]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.actualLayer]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="67"/>
         </Control>
@@ -460,7 +460,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="68"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dRecipes.actualRecipeIndex]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dRecipes.actualRecipeIndex]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="58"/>
         </Control>
@@ -536,7 +536,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.interlayerSheetBottom]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dActualRecipe.interlayerSheetBottom]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -552,7 +552,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.interlayerSheetTop]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dActualRecipe.interlayerSheetTop]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -614,7 +614,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="Repeat" Value="True"/>
               <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dRecipes.actualRecipeIndex]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dRecipes.actualRecipeIndex]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -632,7 +632,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="Repeat" Value="True"/>
               <Property Name="StepValue" Value="-1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dRecipes.actualRecipeIndex]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dRecipes.actualRecipeIndex]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
