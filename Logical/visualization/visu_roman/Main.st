@@ -62,18 +62,18 @@ PROGRAM _CYCLIC
 	(* recipe edit *)
 	IF adrRecipes <> 0 THEN 
 		dRecipes ACCESS adrRecipes;
-		IF dRecipes.actualRecipeIndex >= 0 OR dRecipes.actualRecipeIndex <= 9 THEN
+		IF dRecipes.actualRecipeIndex >= 0 AND dRecipes.actualRecipeIndex <= 9 THEN
 			dActualRecipe ACCESS ADR(dRecipes.recipe[dRecipes.actualRecipeIndex]);
 		
 			//select actual layout
-			IF actualLayer >= 0 AND actualLayer <= 9 THEN
-				actualLayout := dActualRecipe.layer[actualLayer];
+			IF actualLayerIndex >= 0 AND actualLayerIndex <= 9 THEN
+				dActualLayoutIndex ACCESS ADR(dActualRecipe.layer[actualLayerIndex]);
 			
-				IF actualLayout >= 0 AND actualLayout <= 9 THEN 
-					dActualLayout ACCESS ADR(dRecipes.layout[actualLayout]);
+				IF dActualLayoutIndex >= 0 AND dActualLayoutIndex <= 9 THEN 
+					dActualLayout ACCESS ADR(dRecipes.layout[dActualLayoutIndex]);
 					//select actual tray
-					IF actualTray >= 0 AND actualTray <= 39 THEN
-						dActualTray := dActualLayout.tray[actualTray];
+					IF actualTrayIndex >= 0 AND actualTrayIndex <= 39 THEN
+						dActualTray ACCESS ADR(dActualLayout.tray[actualTrayIndex]);
 					END_IF
 				END_IF
 			END_IF

@@ -11,9 +11,9 @@ VAR
 	statusMessagePalletization : INT;
 	dRecipes : REFERENCE TO Recipes;
 	dActualRecipe : REFERENCE TO Recipe;
-	actualLayer : INT;
+	actualLayerIndex : INT;
 	dActualLayout : REFERENCE TO Layout;
-	actualLayout : INT;
-	dActualTray : Tray;
-	actualTray : INT;
+	dActualTray : REFERENCE TO Tray;
+	actualTrayIndex : INT;
+	dActualLayoutIndex : REFERENCE TO INT;
 END_VAR
