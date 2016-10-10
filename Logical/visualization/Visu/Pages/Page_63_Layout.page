@@ -207,7 +207,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="121"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualTray.gapBetweenTrays]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dTrayOnConveyorP2.gapBetweenTrays]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="72"/>
         </Control>
@@ -360,7 +360,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="202"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.nbOfTraysOnInputP2]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.nbOfTraysOnConveyorP2]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="33"/>
         </Control>
@@ -505,7 +505,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpInput]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="368"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualTray.timeAfterLastTray]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dTrayOnConveyorP2.timeAfterLastTray]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="72"/>
         </Control>
@@ -580,7 +580,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualTray.makeGap]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dTrayOnConveyorP2.makeGap]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -596,7 +596,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualTray.turnTray]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dTrayOnConveyorP2.turnTray]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -612,7 +612,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualTray.lastTrayInLayer]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dTrayOnConveyorP2.lastTrayInLayer]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -628,7 +628,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualTray.lastTrayHalfLayer]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dTrayOnConveyorP2.lastTrayHalfLayer]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -644,7 +644,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualTray.lastTrayInRow]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dTrayOnConveyorP2.lastTrayInRow]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -662,7 +662,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="Repeat" Value="True"/>
               <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.nbOfTraysOnInputP2]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.nbOfTraysOnConveyorP2]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -680,7 +680,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="Repeat" Value="True"/>
               <Property Name="StepValue" Value="-1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.nbOfTraysOnInputP2]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.nbOfTraysOnConveyorP2]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

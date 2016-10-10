@@ -19,16 +19,12 @@ ACTION HorizontalArmsControl:
 		
 			IF stateArms = stateArmsUndefined THEN
 				// command to close 
-				IF cmdCloseArms THEN
-					cmdCloseArms := FALSE;
+				IF closeArms THEN
 					TON_LeftRequest(IN := FALSE);
 					TON_RightRequest(IN := FALSE);
 					stateArms := stateArmsClosing;		
-				END_IF
-
+				ELSE
 				// command to open 
-				IF cmdOpenArms THEN
-					cmdOpenArms := FALSE;
 					TON_LeftRequest(IN := FALSE);
 					TON_RightRequest(IN := FALSE);
 					stateArms := stateArmsOpening;	
@@ -66,18 +62,16 @@ ACTION HorizontalArmsControl:
 		stateArmsOpened:
 		
 			// command to close 
-			IF cmdCloseArms THEN
+			IF closeArms THEN
 				IF stateMagazine = stateUpperPosition THEN
 					alarmImageMagazine[16] := TRUE;
 					stateArms := stateArmsUndefined;
 				ELSE	
-					cmdCloseArms := FALSE;
 					TON_LeftRequest(IN := FALSE);
 					TON_RightRequest(IN := FALSE);
 					stateArms := stateArmsClosing;		
 				END_IF
 			END_IF
-			cmdOpenArms := FALSE;
 
 		stateArmsClosing:
 
@@ -107,9 +101,7 @@ ACTION HorizontalArmsControl:
 		stateArmsClosed:
 
 			// command to open 
-			IF cmdOpenArms THEN
-				cmdOpenArms := FALSE;
-				
+			IF NOT closeArms THEN
 				IF stateMagazine = stateLowerPosition OR (diReset AND stateMagazine <> stateUpperPosition) THEN
 					TON_LeftRequest(IN := FALSE);
 					TON_RightRequest(IN := FALSE);
@@ -118,14 +110,7 @@ ACTION HorizontalArmsControl:
 					alarmImageMagazine[15] := TRUE;
 				END_IF
 			END_IF	
-			cmdCloseArms := FALSE;
 	END_CASE
-	
-//	IF stateArms = stateArmsUndefined THEN
-//		alarmImageMagazine[0] := TRUE;
-//	ELSE
-//		alarmImageMagazine[0] := FALSE;
-//	END_IF
 	
 	//edge alarms
 	IF acknowledgeImageMagazine[2] THEN

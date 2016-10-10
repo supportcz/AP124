@@ -74,7 +74,7 @@ PROGRAM _CYCLIC
 				
 				stateAutoOpenArms:
 					
-					cmdOpenArms := TRUE;
+					closeArms := FALSE;
 					stateAuto := stateAutoWaitForOpenedArms;
 				
 				stateAutoWaitForOpenedArms:
@@ -96,7 +96,7 @@ PROGRAM _CYCLIC
 				
 				stateAutoCloseArms:
 					
-					cmdCloseArms := TRUE;
+					closeArms := TRUE;
 					stateAuto := stateAutoWaitForClosedArms;
 			
 				stateAutoWaitForClosedArms:
