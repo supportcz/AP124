@@ -15,7 +15,8 @@ TYPE
 		stateConveyorMoving,
 		stateConveyorFillUp,
 		stateConveyorPause,
-		stateConveyorTurnTray
+		stateConveyorTurnTray,
+		stateConveyorTurnTray2
 		);
 	StatePusherLifting : 
 		(

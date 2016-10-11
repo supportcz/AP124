@@ -28,7 +28,7 @@ VAR
 	doRotationForward : BOOL;
 	dRecipes : REFERENCE TO Recipes;
 	dTrayBehindRotation : REFERENCE TO Tray;
-	dTrayOnConveyorP2 : REFERENCE TO Tray;
+	dNextTray : REFERENCE TO Tray;
 	dTrayOnConveyorP2old : REFERENCE TO Tray;
 	nbOfTraysBehindRotation : INT;
 	nbOfTraysBehindRotationOld : INT;
@@ -50,4 +50,5 @@ VAR
 	trayOnInputP2old : BOOL;
 	cmdTurnTray : BOOL;
 	TON_TurnTray : TON;
+	diTrayInRotationZone : BOOL;
 END_VAR

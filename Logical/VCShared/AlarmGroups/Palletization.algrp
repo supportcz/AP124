@@ -332,6 +332,18 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="26">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="True"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -373,6 +385,7 @@
       <Text ID="756" Value="Rotation in undefined position"/>
       <Text ID="765" Value="Rotation: forward position not reached"/>
       <Text ID="774" Value="Rotation: back position not reached"/>
+      <Text ID="780" Value="Tray In rotation zone"/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -402,6 +415,7 @@
       <Text ID="756" Value=""/>
       <Text ID="765" Value=""/>
       <Text ID="774" Value=""/>
+      <Text ID="780" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -431,6 +445,7 @@
       <Text ID="756" Value=""/>
       <Text ID="765" Value=""/>
       <Text ID="774" Value=""/>
+      <Text ID="780" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -460,6 +475,7 @@
       <Index ID="756" Value="19"/>
       <Index ID="765" Value="20"/>
       <Index ID="774" Value="21"/>
+      <Index ID="780" Value="26"/>
       <Index ID="312" Value="Group"/>
     </IndexMap>
   </TextGroup>

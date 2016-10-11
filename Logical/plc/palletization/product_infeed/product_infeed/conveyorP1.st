@@ -48,7 +48,6 @@ ACTION ConveyorP1:
 			END_IF	
 			
 			IF cmdTurnTray THEN 
-				TON_TurnTray(IN:=FALSE);
 				stateConveyorP1 := stateConveyorTurnTray;
 			END_IF
 				
@@ -91,12 +90,27 @@ ACTION ConveyorP1:
 				
 		stateConveyorTurnTray:
 			
+			cmdTurnTray := FALSE;
+			
+			//check if rotation is forward
+			IF stateRotation = stateRotationForward THEN
+				TON_TurnTray(IN:=FALSE);
+				acpI_P10.speed := dActualRecipe.conveyorP1speed;
+				stateConveyorP1 := stateConveyorTurnTray2;
+			ELSE
+				acpI_P10.speed := 0;
+			END_IF
+			
+		stateConveyorTurnTray2:
+			
+			//stop conveyor for certain time
 			acpI_P10.speed := 0;
 			TON_TurnTray(IN:=TRUE, PT := dActualRecipe.timeDelayForTurn);
 			IF TON_TurnTray.Q THEN	
-				cmdTurnTray := FALSE;
 				stateConveyorP1 := stateConveyorMoving;
 			END_IF
+		
+				
 		
 	END_CASE
 	

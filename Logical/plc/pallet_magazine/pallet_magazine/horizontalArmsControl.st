@@ -29,9 +29,6 @@ ACTION HorizontalArmsControl:
 					TON_RightRequest(IN := FALSE);
 					stateArms := stateArmsOpening;	
 				END_IF	
-				alarmImageMagazine[0] := TRUE;
-			ELSE
-				alarmImageMagazine[0] := FALSE;
 			END_IF
 						
 		stateArmsOpening:
@@ -111,6 +108,13 @@ ACTION HorizontalArmsControl:
 				END_IF
 			END_IF	
 	END_CASE
+	
+	//alarms
+	IF stateArms = stateArmsUndefined THEN
+		alarmImageMagazine[0] := TRUE;
+	ELSE
+		alarmImageMagazine[0] := FALSE;
+	END_IF
 	
 	//edge alarms
 	IF acknowledgeImageMagazine[2] THEN

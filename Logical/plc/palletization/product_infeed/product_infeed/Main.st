@@ -42,9 +42,9 @@ PROGRAM _CYCLIC
 	
 	//select next tray	
 	IF nbOfTraysOnConveyorP2 >= 0 AND nbOfTraysOnConveyorP2 < dActualLayout.nbOfTrays THEN
-		dTrayOnConveyorP2 ACCESS ADR(dActualLayout.tray[nbOfTraysOnConveyorP2]); 
+		dNextTray ACCESS ADR(dActualLayout.tray[nbOfTraysOnConveyorP2]); 
 	ELSE
-		dTrayOnConveyorP2 ACCESS ADR(nullTray);
+		dNextTray ACCESS ADR(nullTray);
 	END_IF	
 	
 	//select old tray
@@ -108,10 +108,12 @@ PROGRAM _CYCLIC
 				
 				stateAutoWaitForNextTray:
 					
-					rotationForward := dTrayBehindRotation.turnTray;
+					IF nbOfTraysBehindRotation = nbOfTraysOnConveyorP2 THEN
+						rotationForward := dNextTray.turnTray;
+					END_IF
 					
 					IF nbOfTraysOnConveyorP2 > nbOfTraysOnConveyorP2old THEN
-						IF dTrayOnConveyorP2.turnTray THEN
+						IF dNextTray.turnTray THEN
 							cmdTurnTray := TRUE;
 						END_IF					
 						IF dTrayOnConveyorP2old.lastTrayInRow THEN

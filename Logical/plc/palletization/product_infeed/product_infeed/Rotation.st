@@ -29,9 +29,6 @@ ACTION Rotation:
 					TON_RotationRequest(IN := FALSE);
 					stateRotation := stateRotationMovingForward;	
 				END_IF	
-				alarmImagePalletization[19] := TRUE;
-			ELSE
-				alarmImagePalletization[19] := FALSE;
 			END_IF
 						
 		stateRotationMovingForward:
@@ -50,6 +47,12 @@ ACTION Rotation:
 			IF TON_RotationRequest.Q THEN
 				alarmImagePalletization[20] := TRUE;
 				stateRotation := stateRotationUndefined;
+			END_IF
+			
+			IF diTrayInRotationZone THEN
+				alarmImagePalletization[26] := TRUE;
+				rotationForward := FALSE;
+				stateRotation := stateRotationMovingBack;
 			END_IF
 		
 		stateRotationForward:
@@ -87,6 +90,13 @@ ACTION Rotation:
 			END_IF	
 	END_CASE
 	
+	//alarms
+	IF stateRotation = stateRotationUndefined THEN
+		alarmImagePalletization[19] := TRUE;
+	ELSE
+		alarmImagePalletization[19] := FALSE;
+	END_IF
+		
 	//edge alarms
 	IF acknowledgeImagePalletization[20] THEN
 		alarmImagePalletization[20] := FALSE;
@@ -94,5 +104,7 @@ ACTION Rotation:
 	IF acknowledgeImagePalletization[21] THEN
 		alarmImagePalletization[21] := FALSE;
 	END_IF
-	
+	IF acknowledgeImagePalletization[26] THEN
+		alarmImagePalletization[26] := FALSE;
+	END_IF	
 END_ACTION
