@@ -371,6 +371,11 @@
     <Source File="Bitmaps\uk.bminfo"/>
     <Source File="Bitmaps\cz.bminfo"/>
     <Source File="Bitmaps\fr.bminfo"/>
+    <Source File="Bitmaps\Button_Red.bminfo"/>
+    <Source File="Bitmaps\Button_Red_Selected.bminfo"/>
+    <Source File="Bitmaps\ButtonGreen.bminfo"/>
+    <Source File="Bitmaps\ButtonGreenSelected.bminfo"/>
+    <Source File="Bitmaps\RobotMedium.bminfo"/>
     <Source File="BitmapGroups\MpAlarmAcknowledgeState.bmgrp"/>
     <Source File="BitmapGroups\MpPads.bmgrp"/>
     <Source File="BitmapGroups\MpUserIcons.bmgrp"/>
@@ -399,6 +404,7 @@
     <Source File="Layers\MpPageControl.layer"/>
     <Source File="Layers\MpBackground.layer"/>
     <Source File="Layers\Language_DropDown.layer"/>
+    <Source File="Layers\Robot.layer"/>
     <Source File="StyleSheets\Color.vcs"/>
     <Source File="StyleSheets\mapp.vcs"/>
     <Source File="Borders\Mp_AttentionOff.bdr"/>
@@ -462,6 +468,10 @@
     <Source File="Borders\Button_pressed.bdr"/>
     <Source File="Borders\Button_Global_Area_pressed.bdr"/>
     <Source File="Borders\Button_Global_Area.bdr"/>
+    <Source File="Borders\Button_Red.bdr"/>
+    <Source File="Borders\Button_Red_Pressed.bdr"/>
+    <Source File="Borders\Button_Green_Pressed.bdr"/>
+    <Source File="Borders\Button_Green.bdr"/>
     <Source File="TouchPads\MpNavigationPad_ver.tpr"/>
     <Source File="TouchPads\MpNumPad.tpr"/>
     <Source File="TouchPads\MpAlphaPad.tpr"/>
@@ -471,6 +481,7 @@
     <Source File="ColorMaps\ColorMap_PageControl.clm"/>
     <Source File="ColorMaps\ColorMap_PageControlAlarm.clm"/>
     <Source File="ColorMaps\ColorMap_SelectedLanguage.clm"/>
+    <Source File="ColorMaps\ColorMap_GreenRed.clm"/>
     <Source File="VirtualKeys.vcvk"/>
     <Source File="Palette.vcr"/>
   </SourceFiles>
