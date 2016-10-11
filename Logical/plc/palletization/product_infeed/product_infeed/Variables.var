@@ -2,7 +2,6 @@ VAR
 	acpI_P10 : AcpInoSdc;
 	acpI_P11 : AcpInoSdc;
 	actualLayer : INT;
-	cmdFillUpConveyorP1 : BOOL;
 	cmdPusherLiftingDown : BOOL;
 	cmdPusherLiftingUp : BOOL;
 	rotationForward : BOOL; (*1..requested forward,0..requested back*)
@@ -29,11 +28,8 @@ VAR
 	dRecipes : REFERENCE TO Recipes;
 	dTrayBehindRotation : REFERENCE TO Tray;
 	dNextTray : REFERENCE TO Tray;
-	dTrayOnConveyorP2old : REFERENCE TO Tray;
 	nbOfTraysBehindRotation : INT;
-	nbOfTraysBehindRotationOld : INT;
 	nbOfTraysOnConveyorP2 : INT;
-	nbOfTraysOnConveyorP2old : INT;
 	nullTray : Tray;
 	stateAuto : StateAuto;
 	stateConveyorP1 : StateConveyor;
@@ -48,7 +44,9 @@ VAR
 	TON_WaitForLastTray : TON;
 	trayBehindRotationOld : BOOL;
 	trayOnInputP2old : BOOL;
-	cmdTurnTray : BOOL;
 	TON_TurnTray : TON;
 	diTrayInRotationZone : BOOL;
+	nbOfPushedTrays : INT;
+	doBumper : BOOL;
+	stopOnSensor : BOOL;
 END_VAR

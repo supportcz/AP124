@@ -13,12 +13,11 @@ ACTION ConveyorP1:
 		stateConveyorStop:
 			
 			cmdRunConveyorP1 := FALSE;
-			cmdFillUpConveyorP1 := FALSE;
+			stopOnSensor := FALSE;
 			acpI_P10.switchOn := TRUE;
-			acpI_P10.speed := 0;
+			acpI_P10.stop := TRUE;
 			acpI_P10.reset := TRUE;
 			IF modePalletization <> modePalletizationNotReadyToStart THEN
-				acpI_P10.stop := FALSE;		
 				stateConveyorP1 := stateConveyorWait;
 			END_IF
 		
@@ -27,58 +26,36 @@ ACTION ConveyorP1:
 			IF cmdRunConveyorP1 THEN
 				TOF_TrayOnInputP1(IN:=TRUE);
 				stateConveyorP1 := stateConveyorMoving;
-			END_IF
-			
-			IF cmdFillUpConveyorP1 THEN
-				TOF_TrayOnInputP1(IN:=TRUE);
-				stateConveyorP1 := stateConveyorFillUp;
-			END_IF
-						
+			END_IF	
 		
 		stateConveyorMoving:
 			
+			acpI_P10.stop := FALSE;	
 			acpI_P10.speed := dActualRecipe.conveyorP1speed;
 				
 			IF NOT TOF_TrayOnInputP1.Q AND modePalletization = modePalletizationAuto THEN
 				stateConveyorP1 := stateConveyorPause;
 			END_IF
+
 			
+			IF TOF_TrayOnOutputP1.Q THEN
+				acpI_P10.stop := TRUE;
+				stateConveyorP1 := stateConveyorNewTray;
+			END_IF	
+							
 			IF NOT cmdRunConveyorP1 THEN
 				stateConveyorP1 := stateConveyorStop;
 			END_IF	
-			
-			IF cmdTurnTray THEN 
-				stateConveyorP1 := stateConveyorTurnTray;
-			END_IF
-				
-			IF cmdFillUpConveyorP1 THEN
-				TOF_TrayOnInputP1(IN:=TRUE);
-				stateConveyorP1 := stateConveyorFillUp;
-			END_IF
 		
-				
-		stateConveyorFillUp:
-			
-			cmdFillUpConveyorP1 := FALSE;
-
-			acpI_P10.speed := dActualRecipe.conveyorP1speed;
-
-			IF NOT TOF_TrayOnInputP1.Q THEN
-				stateConveyorP1 := stateConveyorPause;
-			END_IF
-			
-			IF diTrayOnOutputP1 THEN
-				acpI_P10.stop := TRUE;
+			IF stopOnSensor AND TOF_TrayOnOutputP1.Q THEN
+				//cmdRunConveyorP1 := FALSE;
 				stateConveyorP1 := stateConveyorStop;
-			END_IF
-		
-//			IF cmdRunConveyorP1 THEN
-//				stateConveyorP1 := stateConveyorMoving;
-//			END_IF
+			END_IF	
 		
 		stateConveyorPause:
 			
-			acpI_P10.speed := 0;
+			stopOnSensor := FALSE;
+			acpI_P10.stop := TRUE;
 			
 			IF TOF_TrayOnInputP1.Q THEN
 				stateConveyorP1 := stateConveyorMoving;
@@ -88,29 +65,40 @@ ACTION ConveyorP1:
 				stateConveyorP1 := stateConveyorStop;
 			END_IF	
 				
-		stateConveyorTurnTray:
-			
-			cmdTurnTray := FALSE;
-			
-			//check if rotation is forward
-			IF stateRotation = stateRotationForward THEN
-				TON_TurnTray(IN:=FALSE);
-				acpI_P10.speed := dActualRecipe.conveyorP1speed;
-				stateConveyorP1 := stateConveyorTurnTray2;
-			ELSE
-				acpI_P10.speed := 0;
+		stateConveyorNewTray:
+	
+			IF dNextTray.lastTrayInRow THEN
+				stopOnSensor := TRUE;
 			END_IF
 			
-		stateConveyorTurnTray2:
+			IF dNextTray.turnTray AND stateRotation = stateRotationForward THEN	
+				stateConveyorP1 := stateConveyorNewTray2;
+			END_IF
+
+			IF NOT dNextTray.turnTray AND stateRotation = stateRotationBack THEN
+				stateConveyorP1 := stateConveyorNewTray2;
+			END_IF
+
+		
+		stateConveyorNewTray2:
 			
-			//stop conveyor for certain time
-			acpI_P10.speed := 0;
-			TON_TurnTray(IN:=TRUE, PT := dActualRecipe.timeDelayForTurn);
-			IF TON_TurnTray.Q THEN	
-				stateConveyorP1 := stateConveyorMoving;
+			//move tray from P1 to P2 
+			acpI_P10.speed := dActualRecipe.conveyorP1speed;
+			acpI_P10.stop := FALSE;
+			
+			IF NOT TOF_TrayOnOutputP1.Q THEN
+				acpI_P10.stop := TRUE;
+				TON_TurnTray(IN:=FALSE);
+				stateConveyorP1 := stateConveyorNewTray3;
 			END_IF
 		
-				
+		stateConveyorNewTray3:
+			
+			//time delay
+			TON_TurnTray(IN:=TRUE, PT := dActualRecipe.timeDelayForTurn);
+			IF TON_TurnTray.Q OR NOT dNextTray.turnTray THEN	
+				stateConveyorP1 := stateConveyorMoving;
+			END_IF				
 		
 	END_CASE
 	

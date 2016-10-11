@@ -13,10 +13,10 @@ TYPE
 		stateConveyorStop,
 		stateConveyorWait,
 		stateConveyorMoving,
-		stateConveyorFillUp,
 		stateConveyorPause,
-		stateConveyorTurnTray,
-		stateConveyorTurnTray2
+		stateConveyorNewTray,
+		stateConveyorNewTray2,
+		stateConveyorNewTray3
 		);
 	StatePusherLifting : 
 		(
@@ -32,7 +32,6 @@ TYPE
 		stateAutoRunConveyors,
 		stateAutoWaitForNextTray,
 		stateAutoLastTray,
-		stateAutoLastTray2,
 		stateAutoPusherToTable,
 		stateAutoPusherToTable2,
 		stateAutoPusherLiftingUp,
