@@ -80,6 +80,15 @@ PROGRAM _CYCLIC
 		END_IF
 	END_IF
 	
+	//auto or manual
+	IF cmdAuto THEN
+		cmdPalletizationAuto := TRUE;
+	END_IF
+	
+	IF cmdManual THEN
+		cmdPalletizationManual := TRUE;
+	END_IF
+	
 END_PROGRAM
 
 

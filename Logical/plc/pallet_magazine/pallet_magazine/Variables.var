@@ -1,8 +1,6 @@
 VAR
-	cmdAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
 	closeArms : BOOL; (*VISU:1..command to close the arms, 0...open arms*)
 	cmdDown : BOOL; (*VISU: button to go with magazine down*)
-	cmdManual : BOOL;
 	cmdUp : BOOL; (*VISU: go with magazine down*)
 	diActivateMagazineSafetyCircuits : BOOL; (*magazine:3 funkce v 1 (reset safety+ovladaci obvody + start automatu pokud jede paletizace)*)
 	diEStop5 : BOOL; (*emergency stop 5*)

@@ -16,4 +16,6 @@ VAR
 	dActualTray : REFERENCE TO Tray;
 	actualTrayIndex : INT;
 	dActualLayoutIndex : REFERENCE TO INT;
+	cmdAuto : BOOL;
+	cmdManual : BOOL;
 END_VAR

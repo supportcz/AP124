@@ -21,24 +21,24 @@ PROGRAM _CYCLIC
 			IF readyToStart THEN
 				modeMagazine := modeMagazineManual;
 			END_IF
-			cmdManual := FALSE;
-			cmdAuto := FALSE;
+			cmdMagazineManual := FALSE;
+			cmdMagazineAuto := FALSE;
 		
 		modeMagazineManual:
 
-			IF NOT alarmInZoneMagazine AND (cmdAuto OR TP_Start.Q) THEN 
+			IF NOT alarmInZoneMagazine AND (cmdMagazineAuto OR TP_Start.Q) THEN 
 				modeMagazine := modeMagazineAuto;
 				stateAuto := stateAutoUndefined;
 				magazineEmpty := FALSE;
 			END_IF
-			cmdManual := FALSE;
+			cmdMagazineManual := FALSE;
 
 		modeMagazineAuto:
 			
-			IF alarmInZoneMagazine OR cmdManual THEN
+			IF alarmInZoneMagazine OR cmdMagazineManual THEN
 				modeMagazine := modeMagazineManual;
 			END_IF
-			cmdAuto := FALSE;
+			cmdMagazineAuto := FALSE;
 				
 			CASE stateAuto OF
 				

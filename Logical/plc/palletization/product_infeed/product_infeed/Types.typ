@@ -16,7 +16,9 @@ TYPE
 		stateConveyorPause,
 		stateConveyorNewTray,
 		stateConveyorNewTray2,
-		stateConveyorNewTray3
+		stateConveyorNewTray3,
+		stateConveyorNewTray4,
+		stateConveyorNewTray5
 		);
 	StatePusherLifting : 
 		(

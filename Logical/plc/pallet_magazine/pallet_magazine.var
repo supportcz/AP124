@@ -1,6 +1,8 @@
 VAR
 	acknowledgeImageMagazine : ARRAY[0..39] OF BOOL;
 	alarmImageMagazine : ARRAY[0..39] OF BOOL;
+	cmdMagazineAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
+	cmdMagazineManual : BOOL;
 	magazineEmpty : BOOL;
 	modeMagazine : ModeMagazine;
 	palletOnConveyorP12 : BOOL; (*VISU:pallet lies on conveyor*)

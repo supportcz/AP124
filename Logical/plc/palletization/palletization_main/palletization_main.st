@@ -17,8 +17,8 @@ PROGRAM _CYCLIC
 		
 		modePalletizationNotReadyToStart: //the automat is not ready to start
 			
-			cmdManual := FALSE;
-			cmdAuto := FALSE;
+			cmdPalletizationManual := FALSE;
+			cmdPalletizationAuto := FALSE;
 			
 			IF readyToStart THEN
 				modePalletization := modePalletizationManual;
@@ -26,17 +26,17 @@ PROGRAM _CYCLIC
 
 		modePalletizationManual:
 
-			cmdManual := FALSE;
+			cmdPalletizationManual := FALSE;
 			
-			IF NOT alarmInZonePalletization AND cmdAuto THEN
+			IF NOT alarmInZonePalletization AND cmdPalletizationAuto THEN
 				modePalletization := modePalletizationAuto;
 			END_IF
 
 		modePalletizationAuto:
 				
-			cmdAuto := FALSE;
+			cmdPalletizationAuto := FALSE;
 			
-			IF alarmInZonePalletization OR cmdManual THEN 
+			IF alarmInZonePalletization OR cmdPalletizationManual THEN 
 				modePalletization := modePalletizationManual;
 			END_IF
 		

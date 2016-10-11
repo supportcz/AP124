@@ -48,5 +48,6 @@ VAR
 	diTrayInRotationZone : BOOL;
 	nbOfPushedTrays : INT;
 	doBumper : BOOL;
-	stopOnSensor : BOOL;
+	lastTrayInRow : BOOL;
+	turnTray : BOOL;
 END_VAR

@@ -5,16 +5,13 @@ ACTION ConveyorP2:
 		stateConveyorP2 := stateConveyorStop;  
 	END_IF
 	
-	//pause conveyor when no trays on input
-//	TOF_TrayOnInputP2b(IN := diTrayOnInputP2, PT := T#10s);
-	
 	CASE stateConveyorP2 OF
 		
 		stateConveyorStop:
 			
-			//cmdMoveTrayP1 := FALSE;
+			cmdRunConveyorP2 := FALSE;
 			acpI_P11.switchOn := TRUE;
-			acpI_P11.speed := 0;
+			acpI_P11.stop := TRUE;
 			acpI_P11.reset := TRUE;
 			IF modePalletization <> modePalletizationNotReadyToStart THEN
 				stateConveyorP2 := stateConveyorWait;
@@ -25,14 +22,17 @@ ACTION ConveyorP2:
 			IF cmdRunConveyorP2 THEN
 				stateConveyorP2 := stateConveyorMoving;
 			END_IF
-
 		
 		stateConveyorMoving:
 			
+			acpI_P11.stop := FALSE;
 			acpI_P11.speed := dActualRecipe.conveyorP2speed;
 				
-			IF NOT TOF_TrayOnInputP1.Q AND modePalletization = modePalletizationAuto THEN
-				stateConveyorP2 := stateConveyorPause;
+			IF modePalletization = modePalletizationAuto THEN
+				//pause?
+				IF NOT TOF_TrayOnInputP1.Q THEN
+					stateConveyorP2 := stateConveyorPause;
+				END_IF
 			END_IF
 			
 			IF NOT cmdRunConveyorP2 THEN
@@ -41,8 +41,9 @@ ACTION ConveyorP2:
 
 		stateConveyorPause:
 			
-			acpI_P11.speed := 0;
+			acpI_P11.stop := TRUE;
 			
+			//wake up
 			IF TOF_TrayOnInputP1.Q THEN
 				stateConveyorP2 := stateConveyorMoving;
 			END_IF
