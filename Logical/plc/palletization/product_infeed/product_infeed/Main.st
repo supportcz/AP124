@@ -8,6 +8,7 @@ PROGRAM _CYCLIC
 	diOpenDoors1;
 	diCloseDoors1;
 	HMIS;
+	RFRD;
 	
 	IF adrRecipes = 0 THEN 
 		RETURN;
@@ -105,8 +106,6 @@ PROGRAM _CYCLIC
 					cmdRunConveyorP1 := TRUE;
 					cmdRunConveyorP2 := TRUE;	
 					
-
-					
 					stateAuto := stateAutoWaitForNextTray;
 				
 				stateAutoWaitForNextTray:
@@ -154,7 +153,7 @@ PROGRAM _CYCLIC
 					IF NOT pusherDrive.cmdAbsolute THEN
 						nbOfTraysOnTable := nbOfTraysBehindRotation;
 						
-						cmdRunConveyorP1 := TRUE;
+						fullRow := FALSE;
 						cmdRunConveyorP2 := TRUE;	
 						
 						stateAuto := stateAutoPusherToBasic;
@@ -213,6 +212,7 @@ PROGRAM _CYCLIC
 				stateAutoPusherToRobotHead3:
 					
 					IF NOT pusherDrive.cmdAbsolute THEN
+						fullRow := FALSE;
 						nbOfTraysOnTable := nbOfTraysBehindRotation;
 						nbOfTraysInRobotHead := nbOfTraysBehindRotation;
 						stateAuto := stateAutoPusherLiftingUp;

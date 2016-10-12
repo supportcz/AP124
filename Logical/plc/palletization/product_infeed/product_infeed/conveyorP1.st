@@ -12,7 +12,7 @@ ACTION ConveyorP1:
 		
 		stateConveyorStop:
 			
-			cmdRunConveyorP1 := FALSE;
+			//cmdRunConveyorP1 := FALSE;
 			acpI_P10.switchOn := TRUE;
 			acpI_P10.stop := TRUE;
 			acpI_P10.reset := TRUE;
@@ -59,14 +59,14 @@ ACTION ConveyorP1:
 				stateConveyorP1 := stateConveyorMoving;
 			END_IF
 		
-			IF modePalletization <> modePalletizationAuto THEN
-				stateConveyorP1 := stateConveyorStop;
-			END_IF	
+//			IF modePalletization <> modePalletizationAuto THEN
+//				stateConveyorP1 := stateConveyorStop;
+//			END_IF	
 				
 		stateConveyorNewTray:
 			
 			//backup data of new tray
-			lastTrayInRow := dNextTray.lastTrayInRow OR dNextTray.lastTrayHalfLayer OR dNextTray.lastTrayInLayer;
+			fullRow := dNextTray.lastTrayInRow OR dNextTray.lastTrayHalfLayer OR dNextTray.lastTrayInLayer;
 			turnTray := dNextTray.turnTray;
 			
 			//wait till rotation is in correct place
@@ -102,7 +102,7 @@ ACTION ConveyorP1:
 		stateConveyorNewTray4:
 		
 			//check if this was last tray in a row
-			IF lastTrayInRow THEN
+			IF fullRow THEN
 				stateConveyorP1 := stateConveyorNewTray5;
 			ELSE
 				stateConveyorP1 := stateConveyorMoving;
@@ -115,14 +115,23 @@ ACTION ConveyorP1:
 			
 			//pause?
 			IF NOT TOF_TrayOnInputP1.Q THEN
-				stateConveyorP1 := stateConveyorPause;
+				stateConveyorP1 := stateConveyorNewTray6;
 			END_IF
 			
 			//tray detected
 			IF TOF_TrayOnOutputP1.Q THEN
 				acpI_P10.stop := TRUE;
-				stateConveyorP1 := stateConveyorStop;
+				stateConveyorP1 := stateConveyorNewTray6;
 			END_IF	
+		
+		stateConveyorNewTray6:
+		
+			//wait for P2 conveyor
+			acpI_P10.stop := TRUE;
+			
+			IF NOT fullRow THEN
+				stateConveyorP1 := stateConveyorMoving;
+			END_IF				
 		
 	END_CASE
 	

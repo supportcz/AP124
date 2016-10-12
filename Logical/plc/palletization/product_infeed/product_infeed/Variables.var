@@ -30,7 +30,7 @@ VAR
 	doRotationForward : BOOL;
 	dRecipes : REFERENCE TO Recipes;
 	dTrayBehindRotation : REFERENCE TO Tray;
-	lastTrayInRow : BOOL;
+	fullRow : BOOL;
 	nbOfTraysOnConveyorP2 : INT;
 	nullTray : Tray;
 	rotationForward : BOOL; (*1..requested forward,0..requested back*)
@@ -56,4 +56,5 @@ VAR
 	TON_Bumper : TON;
 	HMIS : UINT;
 	diRobotReady : BOOL;
+	RFRD : INT;
 END_VAR

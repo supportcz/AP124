@@ -9,7 +9,7 @@ ACTION ConveyorP2:
 		
 		stateConveyorStop:
 			
-			cmdRunConveyorP2 := FALSE;
+			//cmdRunConveyorP2 := FALSE;
 			acpI_P11.switchOn := TRUE;
 			acpI_P11.stop := TRUE;
 			acpI_P11.reset := TRUE;
