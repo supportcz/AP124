@@ -153,7 +153,7 @@ PROGRAM _CYCLIC
 					IF NOT pusherDrive.cmdAbsolute THEN
 						nbOfTraysOnTable := nbOfTraysBehindRotation;
 						
-						fullRow := FALSE;
+						cmdRunConveyorP1 := TRUE;
 						cmdRunConveyorP2 := TRUE;	
 						
 						stateAuto := stateAutoPusherToBasic;
@@ -212,7 +212,8 @@ PROGRAM _CYCLIC
 				stateAutoPusherToRobotHead3:
 					
 					IF NOT pusherDrive.cmdAbsolute THEN
-						fullRow := FALSE;
+						cmdRunConveyorP1 := TRUE;
+						cmdRunConveyorP2 := TRUE;
 						nbOfTraysOnTable := nbOfTraysBehindRotation;
 						nbOfTraysInRobotHead := nbOfTraysBehindRotation;
 						stateAuto := stateAutoPusherLiftingUp;

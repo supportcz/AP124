@@ -30,7 +30,6 @@ VAR
 	doRotationForward : BOOL;
 	dRecipes : REFERENCE TO Recipes;
 	dTrayBehindRotation : REFERENCE TO Tray;
-	fullRow : BOOL;
 	nbOfTraysOnConveyorP2 : INT;
 	nullTray : Tray;
 	rotationForward : BOOL; (*1..requested forward,0..requested back*)

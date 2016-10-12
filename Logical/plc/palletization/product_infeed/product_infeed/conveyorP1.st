@@ -66,7 +66,7 @@ ACTION ConveyorP1:
 		stateConveyorNewTray:
 			
 			//backup data of new tray
-			fullRow := dNextTray.lastTrayInRow OR dNextTray.lastTrayHalfLayer OR dNextTray.lastTrayInLayer;
+			cmdRunConveyorP1 := NOT (dNextTray.lastTrayInRow OR dNextTray.lastTrayHalfLayer OR dNextTray.lastTrayInLayer);
 			turnTray := dNextTray.turnTray;
 			
 			//wait till rotation is in correct place
@@ -101,35 +101,17 @@ ACTION ConveyorP1:
 		
 		stateConveyorNewTray4:
 		
-			//check if this was last tray in a row
-			IF fullRow THEN
-				stateConveyorP1 := stateConveyorNewTray5;
-			ELSE
-				stateConveyorP1 := stateConveyorMoving;
-			END_IF
-		
-		stateConveyorNewTray5:
-				
 			//fill conveyor P1 and stop
 			acpI_P10.stop := FALSE;	
 			
 			//pause?
 			IF NOT TOF_TrayOnInputP1.Q THEN
-				stateConveyorP1 := stateConveyorNewTray6;
+				stateConveyorP1 := stateConveyorMoving;
 			END_IF
 			
 			//tray detected
 			IF TOF_TrayOnOutputP1.Q THEN
 				acpI_P10.stop := TRUE;
-				stateConveyorP1 := stateConveyorNewTray6;
-			END_IF	
-		
-		stateConveyorNewTray6:
-		
-			//wait for P2 conveyor
-			acpI_P10.stop := TRUE;
-			
-			IF NOT fullRow THEN
 				stateConveyorP1 := stateConveyorMoving;
 			END_IF				
 		
