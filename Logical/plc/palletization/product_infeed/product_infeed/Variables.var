@@ -4,7 +4,6 @@ VAR
 	actualLayer : INT;
 	cmdPusherLiftingDown : BOOL;
 	cmdPusherLiftingUp : BOOL;
-	rotationForward : BOOL; (*1..requested forward,0..requested back*)
 	cmdRunConveyorP1 : BOOL;
 	cmdRunConveyorP2 : BOOL;
 	dActualLayout : REFERENCE TO Layout;
@@ -13,13 +12,17 @@ VAR
 	diDoor1opened : BOOL;
 	diMotorProtectionP3 : BOOL;
 	diOpenDoors1 : BOOL; (*button to open doors*)
+	diPusherBlockedByTray : BOOL;
 	diPusherLiftingLowerPosition : BOOL;
 	diPusherLiftingUpperPosition : BOOL;
 	diRotationBack : BOOL;
 	diRotationForward : BOOL;
 	diTrayBehindRotation : BOOL;
+	diTrayInRotationZone : BOOL;
 	diTrayOnInputP1 : BOOL;
 	diTrayOnOutputP1 : BOOL;
+	dNextTray : REFERENCE TO Tray;
+	doBumper : BOOL;
 	doPusherLiftingBrake : BOOL;
 	doPusherLiftingDown : BOOL;
 	doPusherLiftingUp : BOOL;
@@ -27,10 +30,10 @@ VAR
 	doRotationForward : BOOL;
 	dRecipes : REFERENCE TO Recipes;
 	dTrayBehindRotation : REFERENCE TO Tray;
-	dNextTray : REFERENCE TO Tray;
-	nbOfTraysBehindRotation : INT;
+	lastTrayInRow : BOOL;
 	nbOfTraysOnConveyorP2 : INT;
 	nullTray : Tray;
+	rotationForward : BOOL; (*1..requested forward,0..requested back*)
 	stateAuto : StateAuto;
 	stateConveyorP1 : StateConveyor;
 	stateConveyorP2 : StateConveyor;
@@ -40,14 +43,17 @@ VAR
 	TOF_TrayOnInputP1 : TOF;
 	TOF_TrayOnOutputP1 : TOF;
 	TON_RotationRequest : TON;
+	TON_TurnTray : TON;
 	TON_VerticalMovement : TON;
 	TON_WaitForLastTray : TON;
 	trayBehindRotationOld : BOOL;
 	trayOnInputP2old : BOOL;
-	TON_TurnTray : TON;
-	diTrayInRotationZone : BOOL;
-	nbOfPushedTrays : INT;
-	doBumper : BOOL;
-	lastTrayInRow : BOOL;
 	turnTray : BOOL;
+	diBumperForward : BOOL;
+	stateBumper : StateBumper;
+	bumperForward : BOOL;
+	bumperAuto : BOOL;
+	TON_Bumper : TON;
+	HMIS : UINT;
+	diRobotReady : BOOL;
 END_VAR

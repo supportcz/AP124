@@ -18,6 +18,7 @@ FUNCTION_BLOCK AcpInoSdc
 		
 		16#37, 16#27: (*Operation enabled *)
 		IF stop THEN
+//			LFRD_Output := 0;
 			CMDD_Output := 16#010F;
 		ELSE
 			CMDD_Output := 16#000F;			

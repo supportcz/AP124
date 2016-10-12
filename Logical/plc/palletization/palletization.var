@@ -6,6 +6,10 @@ VAR
 	cmdPalletizationManual : BOOL;
 	modePalletization : ModePalletization;
 	modePalletizationOld : ModePalletization;
+	nbOfTraysBehindRotation : INT;
+	nbOfTraysInRobotHead : INT;
+	nbOfTraysOnPallet : INT;
+	nbOfTraysOnTable : INT;
 	palletOnConveyorP13 : BOOL; (*VISU:pallet lies on conveyor*)
 	palletOnConveyorP14 : BOOL;
 	palletOnConveyorP15 : BOOL;

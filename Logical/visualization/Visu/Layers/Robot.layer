@@ -28,6 +28,7 @@
     </Control>
     <Control ClassId="0x00001001" Name="Shape_2">
       <Property Name="BackColor" Value="231"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.colorDataPointRobot]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_GreenRed]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
@@ -72,7 +73,7 @@
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.dActualRecipe.name]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dActualRecipe.name]"/>
       <Property Name="TextSource" Value="SingleString"/>
       <Property Name="Top" Value="64"/>
       <Property Name="Width" Value="291"/>
@@ -96,6 +97,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x00001001" Name="Shape_4">
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.colorDataPointTable]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_GreenRed]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
@@ -104,9 +106,9 @@
       <Property Name="ForeColor" Value="148"/>
       <Property Name="GroupID" Value="12"/>
       <Property Name="Height" Value="32"/>
-      <Property Name="Left" Value="268"/>
+      <Property Name="Left" Value="267"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="172"/>
+      <Property Name="Top" Value="173"/>
       <Property Name="Width" Value="100"/>
     </Control>
     <Control ClassId="0x00001001" Name="Shape_5">
@@ -220,146 +222,157 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_7">
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.colorDataPointTable]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_GreenRed]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="EndX" Value="278"/>
-      <Property Name="EndY" Value="172"/>
+      <Property Name="EndX" Value="277"/>
+      <Property Name="EndY" Value="173"/>
       <Property Name="ForeColor" Value="148"/>
       <Property Name="GroupID" Value="12"/>
-      <Property Name="StartX" Value="268"/>
-      <Property Name="StartY" Value="182"/>
+      <Property Name="StartX" Value="267"/>
+      <Property Name="StartY" Value="183"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_8">
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.colorDataPointTable]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_GreenRed]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="EndX" Value="288"/>
-      <Property Name="EndY" Value="172"/>
+      <Property Name="EndX" Value="287"/>
+      <Property Name="EndY" Value="173"/>
       <Property Name="ForeColor" Value="148"/>
       <Property Name="GroupID" Value="12"/>
-      <Property Name="StartX" Value="268"/>
-      <Property Name="StartY" Value="192"/>
+      <Property Name="StartX" Value="267"/>
+      <Property Name="StartY" Value="193"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_9">
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.colorDataPointTable]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_GreenRed]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="EndX" Value="300"/>
-      <Property Name="EndY" Value="172"/>
+      <Property Name="EndX" Value="299"/>
+      <Property Name="EndY" Value="173"/>
       <Property Name="ForeColor" Value="148"/>
       <Property Name="GroupID" Value="12"/>
-      <Property Name="StartX" Value="269"/>
-      <Property Name="StartY" Value="203"/>
+      <Property Name="StartX" Value="268"/>
+      <Property Name="StartY" Value="204"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_10">
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.colorDataPointTable]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_GreenRed]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="EndX" Value="310"/>
-      <Property Name="EndY" Value="172"/>
+      <Property Name="EndX" Value="309"/>
+      <Property Name="EndY" Value="173"/>
       <Property Name="ForeColor" Value="148"/>
       <Property Name="GroupID" Value="12"/>
-      <Property Name="StartX" Value="279"/>
-      <Property Name="StartY" Value="203"/>
+      <Property Name="StartX" Value="278"/>
+      <Property Name="StartY" Value="204"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_11">
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.colorDataPointTable]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_GreenRed]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="EndX" Value="322"/>
-      <Property Name="EndY" Value="172"/>
+      <Property Name="EndX" Value="321"/>
+      <Property Name="EndY" Value="173"/>
       <Property Name="ForeColor" Value="148"/>
       <Property Name="GroupID" Value="12"/>
-      <Property Name="StartX" Value="291"/>
-      <Property Name="StartY" Value="203"/>
+      <Property Name="StartX" Value="290"/>
+      <Property Name="StartY" Value="204"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_12">
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.colorDataPointTable]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_GreenRed]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="EndX" Value="334"/>
-      <Property Name="EndY" Value="172"/>
+      <Property Name="EndX" Value="333"/>
+      <Property Name="EndY" Value="173"/>
       <Property Name="ForeColor" Value="148"/>
       <Property Name="GroupID" Value="12"/>
-      <Property Name="StartX" Value="303"/>
-      <Property Name="StartY" Value="203"/>
+      <Property Name="StartX" Value="302"/>
+      <Property Name="StartY" Value="204"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_13">
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.colorDataPointTable]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_GreenRed]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="EndX" Value="345"/>
-      <Property Name="EndY" Value="172"/>
+      <Property Name="EndX" Value="344"/>
+      <Property Name="EndY" Value="173"/>
       <Property Name="ForeColor" Value="148"/>
       <Property Name="GroupID" Value="12"/>
-      <Property Name="StartX" Value="314"/>
-      <Property Name="StartY" Value="203"/>
+      <Property Name="StartX" Value="313"/>
+      <Property Name="StartY" Value="204"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_14">
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.colorDataPointTable]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_GreenRed]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="EndX" Value="357"/>
-      <Property Name="EndY" Value="172"/>
+      <Property Name="EndX" Value="356"/>
+      <Property Name="EndY" Value="173"/>
       <Property Name="ForeColor" Value="148"/>
       <Property Name="GroupID" Value="12"/>
-      <Property Name="StartX" Value="326"/>
-      <Property Name="StartY" Value="203"/>
+      <Property Name="StartX" Value="325"/>
+      <Property Name="StartY" Value="204"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_15">
-      <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_GreenRed]"/>
-      <Property Name="ColorMapIndexOffset" Value="0"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="EndX" Value="368"/>
-      <Property Name="EndY" Value="174"/>
-      <Property Name="ForeColor" Value="148"/>
-      <Property Name="GroupID" Value="12"/>
-      <Property Name="StartX" Value="339"/>
-      <Property Name="StartY" Value="203"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-    </Control>
-    <Control ClassId="0x0000100D" Name="Line_16">
-      <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_GreenRed]"/>
-      <Property Name="ColorMapIndexOffset" Value="0"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="EndX" Value="368"/>
-      <Property Name="EndY" Value="186"/>
-      <Property Name="ForeColor" Value="148"/>
-      <Property Name="GroupID" Value="12"/>
-      <Property Name="StartX" Value="351"/>
-      <Property Name="StartY" Value="203"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-    </Control>
-    <Control ClassId="0x0000100D" Name="Line_17">
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.colorDataPointTable]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_GreenRed]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EndX" Value="367"/>
-      <Property Name="EndY" Value="197"/>
+      <Property Name="EndY" Value="175"/>
       <Property Name="ForeColor" Value="148"/>
       <Property Name="GroupID" Value="12"/>
-      <Property Name="StartX" Value="361"/>
-      <Property Name="StartY" Value="203"/>
+      <Property Name="StartX" Value="338"/>
+      <Property Name="StartY" Value="204"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_16">
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.colorDataPointTable]"/>
+      <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_GreenRed]"/>
+      <Property Name="ColorMapIndexOffset" Value="0"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="367"/>
+      <Property Name="EndY" Value="187"/>
+      <Property Name="ForeColor" Value="148"/>
+      <Property Name="GroupID" Value="12"/>
+      <Property Name="StartX" Value="350"/>
+      <Property Name="StartY" Value="204"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+    </Control>
+    <Control ClassId="0x0000100D" Name="Line_17">
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.colorDataPointTable]"/>
+      <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_GreenRed]"/>
+      <Property Name="ColorMapIndexOffset" Value="0"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EndX" Value="366"/>
+      <Property Name="EndY" Value="198"/>
+      <Property Name="ForeColor" Value="148"/>
+      <Property Name="GroupID" Value="12"/>
+      <Property Name="StartX" Value="360"/>
+      <Property Name="StartY" Value="204"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x00001007" Name="Numeric_1">
@@ -379,7 +392,7 @@
       <Property Name="InputStart" Value="Any Key"/>
       <Property Name="InputTouchpad" Value="None"/>
       <Property Name="InputUpDown" Value="Disabled"/>
-      <Property Name="Left" Value="272"/>
+      <Property Name="Left" Value="273"/>
       <Property Name="MaxDatapoint" Value="None"/>
       <Property Name="MaxValue" Value="None"/>
       <Property Name="MinDatapoint" Value="None"/>
@@ -388,7 +401,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="TeachDatapoint" Value="None"/>
       <Property Name="Top" Value="121"/>
-      <Property Name="ValueDatapoint" Value="None"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.nbOfTraysOnP2]"/>
       <Property Name="ValueMode" Value="Standard"/>
       <Property Name="Width" Value="93"/>
     </Control>

@@ -1,5 +1,13 @@
 
 TYPE
+	StateBumper : 
+		(
+		stateBumperUndefined,
+		stateBumperMovingForward,
+		stateBumperForward,
+		stateBumperMovingBack,
+		stateBumperBack
+		);
 	StateRotation : 
 		(
 		stateRotationUndefined,
@@ -41,6 +49,9 @@ TYPE
 		stateAutoPusherToBasic,
 		stateAutoPusherToBasic2,
 		stateAutoPusherLiftingDown,
-		stateAutoPusherLiftingDown2
+		stateAutoPusherLiftingDown2,
+		stateAutoPusherToRobotHead,
+		stateAutoPusherToRobotHead2,
+		stateAutoPusherToRobotHead3
 		);
 END_TYPE

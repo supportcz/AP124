@@ -248,20 +248,6 @@
               <Property Name="UserID" Value="None"/>
               <Property Name="VCType" Value="BOOL"/>
             </DataPoint>
-            <Folder Name="dActualRecipe">
-              <Property Name="Description" Value=""/>
-              <Property Name="FolderType" Value="Struct"/>
-              <DataPoint Name="name">
-                <Property Name="ConnectedBySharedResource" Value="False"/>
-                <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-                <Property Name="Description" Value=""/>
-                <Property Name="PLCType" Value="STRING"/>
-                <Property Name="StringLength" Value="80"/>
-                <Property Name="UpdateTime" Value="Default"/>
-                <Property Name="UserID" Value="None"/>
-                <Property Name="VCType" Value="STRING"/>
-              </DataPoint>
-            </Folder>
           </Folder>
         </Folder>
         <DataPoint Name="cmdPalletizationAuto">
@@ -281,6 +267,15 @@
           <Property Name="UpdateTime" Value="Default"/>
           <Property Name="UserID" Value="None"/>
           <Property Name="VCType" Value="BOOL"/>
+        </DataPoint>
+        <DataPoint Name="nbOfTraysOnTable">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="INT"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="INTEGER"/>
         </DataPoint>
       </Folder>
       <Folder Name="pallet_outfeed">
@@ -609,6 +604,33 @@
           <Property Name="UpdateTime" Value="Default"/>
           <Property Name="UserID" Value="None"/>
           <Property Name="VCType" Value="BOOL"/>
+        </DataPoint>
+        <DataPoint Name="nbOfTraysOnP2">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="INT"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="INTEGER"/>
+        </DataPoint>
+        <DataPoint Name="colorDataPointTable">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="INT"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="INTEGER"/>
+        </DataPoint>
+        <DataPoint Name="colorDataPointRobot">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="INT"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="INTEGER"/>
         </DataPoint>
       </Folder>
       <Folder Name="visu_manager">

@@ -94,4 +94,8 @@ VAR_CONFIG
 	::product_in:diTrayOnOutputP1 AT %IX."I50".DigitalInput03;
 	::product_in:diTrayInRotationZone AT %IX."I50".DigitalInput05;
 	::product_in:doBumper AT %QX."Q52".DigitalOutput03;
+	::product_in:diPusherBlockedByTray AT %IX."I50".DigitalInput09;
+	::product_in:diBumperForward AT %IX."I50".DigitalInput10;
+	::product_in:HMIS AT %IW."U10".HMIS_Input;
+	::product_in:diRobotReady AT %IX."I50".DigitalInput04;
 END_VAR

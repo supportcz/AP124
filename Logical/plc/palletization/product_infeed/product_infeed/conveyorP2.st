@@ -20,6 +20,9 @@ ACTION ConveyorP2:
 		stateConveyorWait:
 		
 			IF cmdRunConveyorP2 THEN
+				//intialize counters
+				nbOfTraysOnConveyorP2 := nbOfTraysBehindRotation := nbOfTraysOnTable;
+				
 				stateConveyorP2 := stateConveyorMoving;
 			END_IF
 		

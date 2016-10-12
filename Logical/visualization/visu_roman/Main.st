@@ -81,12 +81,35 @@ PROGRAM _CYCLIC
 	END_IF
 	
 	//auto or manual
-	IF cmdAuto THEN
+	IF EDGEPOS(cmdAuto) THEN
 		cmdPalletizationAuto := TRUE;
 	END_IF
-	
-	IF cmdManual THEN
+
+	IF EDGENEG(cmdAuto) THEN
+		cmdPalletizationAuto := FALSE;
+	END_IF
+
+	IF EDGEPOS(cmdManual) THEN
 		cmdPalletizationManual := TRUE;
+	END_IF
+
+	IF EDGENEG(cmdManual) THEN
+		cmdPalletizationManual := FALSE;
+	END_IF
+	
+	//start dialog
+	nbOfTraysOnP2 := nbOfTraysBehindRotation - nbOfTraysOnTable;
+	
+	IF nbOfTraysInRobotHead = nbOfTraysOnTable THEN
+		colorDataPointTable := 1;
+	ELSE
+		colorDataPointTable := 0;
+	END_IF
+	
+	IF nbOfTraysInRobotHead = nbOfTraysOnPallet THEN
+		colorDataPointRobot := 1;
+	ELSE
+		colorDataPointRobot := 0;
 	END_IF
 	
 END_PROGRAM

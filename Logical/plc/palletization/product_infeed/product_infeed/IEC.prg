@@ -9,5 +9,6 @@
     <File>conveyorP2.st</File>
     <File>PusherLifting.st</File>
     <File>Rotation.st</File>
+    <File>Bumper.st</File>
   </Files>
 </Program>
