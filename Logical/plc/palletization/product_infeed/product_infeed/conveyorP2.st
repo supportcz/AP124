@@ -1,7 +1,7 @@
 
 ACTION ConveyorP2: 
 	
-	IF modePalletization = modePalletizationNotReadyToStart THEN
+	IF modePalletization = modePalletizationNotReadyToStart OR (modePalletizationOld = modePalletizationAuto AND modePalletization <> modePalletizationAuto) THEN
 		stateConveyorP2 := stateConveyorStop;  
 	END_IF
 	
@@ -36,6 +36,18 @@ ACTION ConveyorP2:
 				IF NOT TOF_TrayOnInputP1.Q THEN
 					stateConveyorP2 := stateConveyorPause;
 				END_IF
+				
+				//check sensor error
+				IF nbOfTraysBehindRotation = nbOfTraysOnConveyorP2 THEN
+					//reset timer
+					TON_TransitTime(IN := FALSE);
+				ELSE
+					//run timer
+					TON_TransitTime(IN := TRUE, PT:=T#5s);
+					IF TON_TransitTime.Q THEN
+						alarmImagePalletization[27] := TRUE;
+					END_IF
+				END_IF
 			END_IF
 			
 			IF NOT cmdRunConveyorP2 THEN
@@ -51,9 +63,9 @@ ACTION ConveyorP2:
 				stateConveyorP2 := stateConveyorMoving;
 			END_IF
 			
-			IF modePalletization <> modePalletizationAuto THEN
-				stateConveyorP2 := stateConveyorStop;
-			END_IF	
+//			IF modePalletization <> modePalletizationAuto THEN
+//				stateConveyorP2 := stateConveyorStop;
+//			END_IF	
 	END_CASE
 	
 	//control of ACOPOSinverter P14

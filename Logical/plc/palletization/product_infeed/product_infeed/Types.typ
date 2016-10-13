@@ -38,7 +38,7 @@ TYPE
 	StateAuto : 
 		(
 		stateAutoUndefined,
-		stateAutoRunConveyors,
+		stateAutoStart,
 		stateAutoWaitForNextTray,
 		stateAutoLastTray,
 		stateAutoPusherToTable,
@@ -51,6 +51,9 @@ TYPE
 		stateAutoPusherLiftingDown2,
 		stateAutoPusherToRobotHead,
 		stateAutoPusherToRobotHead2,
-		stateAutoPusherToRobotHead3
+		stateAutoPusherToRobotHead3,
+		stateAutoPusherToRobotHead4,
+		stateAutoPusherToRobotHead5,
+		stateAutoPusherToRobotHead6
 		);
 END_TYPE

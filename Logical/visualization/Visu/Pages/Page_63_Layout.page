@@ -41,19 +41,11 @@
           <Text ID="178033" Value="Back"/>
           <Text ID="178035" Value="Number of trays"/>
           <Text ID="178039" Value="Turn tray"/>
-          <Text ID="178040" Value="Last tray in layer"/>
-          <Text ID="178041" Value="Last tray in half layer"/>
-          <Text ID="178042" Value="Last tray in a row"/>
+          <Text ID="178042" Value="Last tray in "/>
           <Text ID="178046" Value="Selected tray"/>
           <Text ID="178047" Value="Selected layout"/>
           <Text ID="178048" Value="no"/>
           <Text ID="178049" Value="yes"/>
-          <Text ID="178050" Value="no"/>
-          <Text ID="178051" Value="yes"/>
-          <Text ID="178052" Value="no"/>
-          <Text ID="178053" Value="yes"/>
-          <Text ID="178054" Value="no"/>
-          <Text ID="178055" Value="yes"/>
           <Text ID="178056" Value="+"/>
           <Text ID="178058" Value="-"/>
         </TextLayer>
@@ -61,19 +53,11 @@
           <Text ID="178033" Value=""/>
           <Text ID="178035" Value="Text_1"/>
           <Text ID="178039" Value="Text_2"/>
-          <Text ID="178040" Value="Text_2"/>
-          <Text ID="178041" Value="Text_2"/>
           <Text ID="178042" Value="Text_2"/>
           <Text ID="178046" Value="Text_9"/>
           <Text ID="178047" Value="Text_9"/>
           <Text ID="178048" Value=""/>
           <Text ID="178049" Value=""/>
-          <Text ID="178050" Value=""/>
-          <Text ID="178051" Value="yes"/>
-          <Text ID="178052" Value=""/>
-          <Text ID="178053" Value=""/>
-          <Text ID="178054" Value=""/>
-          <Text ID="178055" Value=""/>
           <Text ID="178056" Value=""/>
           <Text ID="178058" Value=""/>
         </TextLayer>
@@ -81,19 +65,11 @@
           <Text ID="178033" Value=""/>
           <Text ID="178035" Value="Text_1"/>
           <Text ID="178039" Value="Text_2"/>
-          <Text ID="178040" Value="Text_2"/>
-          <Text ID="178041" Value="Text_2"/>
           <Text ID="178042" Value="Text_2"/>
           <Text ID="178046" Value="Text_9"/>
           <Text ID="178047" Value="Text_9"/>
           <Text ID="178048" Value=""/>
           <Text ID="178049" Value=""/>
-          <Text ID="178050" Value=""/>
-          <Text ID="178051" Value=""/>
-          <Text ID="178052" Value=""/>
-          <Text ID="178053" Value=""/>
-          <Text ID="178054" Value=""/>
-          <Text ID="178055" Value=""/>
           <Text ID="178056" Value=""/>
           <Text ID="178058" Value=""/>
         </TextLayer>
@@ -101,19 +77,11 @@
           <Index ID="178033" Value="0"/>
           <Index ID="178035" Value="2"/>
           <Index ID="178039" Value="6"/>
-          <Index ID="178040" Value="7"/>
-          <Index ID="178041" Value="8"/>
           <Index ID="178042" Value="9"/>
           <Index ID="178046" Value="13"/>
           <Index ID="178047" Value="14"/>
           <Index ID="178048" Value="15"/>
           <Index ID="178049" Value="16"/>
-          <Index ID="178050" Value="17"/>
-          <Index ID="178051" Value="18"/>
-          <Index ID="178052" Value="19"/>
-          <Index ID="178053" Value="20"/>
-          <Index ID="178054" Value="21"/>
-          <Index ID="178055" Value="22"/>
           <Index ID="178056" Value="23"/>
           <Index ID="178058" Value="25"/>
         </IndexMap>
@@ -185,34 +153,6 @@
           <Property Name="TextIndexOffset" Value="6"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="201"/>
-          <Property Name="Width" Value="155"/>
-        </Control>
-        <Control ClassId="0x00001004" Name="Text_5">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="331"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value=""/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="7"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="361"/>
-          <Property Name="Width" Value="155"/>
-        </Control>
-        <Control ClassId="0x00001004" Name="Text_6">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="340"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value=""/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="8"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="293"/>
           <Property Name="Width" Value="155"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_7">
@@ -316,78 +256,6 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_75]"/>
           <Property Name="Width" Value="89"/>
         </Control>
-        <Control ClassId="0x00001002" Name="Button_3">
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="Border" Value="Source[local].Border[Button]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_76]"/>
-          <Property Name="Height" Value="30"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="514"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedTextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="PressedTextIndex" Value="18"/>
-          <Property Name="PressedTextSource" Value="SingleText"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="17"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="370"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_76]"/>
-          <Property Name="Width" Value="89"/>
-        </Control>
-        <Control ClassId="0x00001002" Name="Button_4">
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="Border" Value="Source[local].Border[Button]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_77]"/>
-          <Property Name="Height" Value="30"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="516"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedTextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="PressedTextIndex" Value="20"/>
-          <Property Name="PressedTextSource" Value="SingleText"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="19"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="294"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_77]"/>
-          <Property Name="Width" Value="89"/>
-        </Control>
-        <Control ClassId="0x00001002" Name="Button_6">
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="Border" Value="Source[local].Border[Button]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_78]"/>
-          <Property Name="Height" Value="30"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="513"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedTextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="PressedTextIndex" Value="22"/>
-          <Property Name="PressedTextSource" Value="SingleText"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="21"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="248"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_78]"/>
-          <Property Name="Width" Value="89"/>
-        </Control>
         <Control ClassId="0x00001002" Name="Button_7">
           <Property Name="BitmapIndexDatapoint" Value="None"/>
           <Property Name="BitmapSource" Value="None"/>
@@ -432,6 +300,31 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_80]"/>
           <Property Name="Width" Value="49"/>
         </Control>
+        <Control ClassId="0x00001018" Name="Dropdown_1">
+          <Property Name="ButtonsBitmapGroup" Value="None"/>
+          <Property Name="ButtonsPressedBitmapGroup" Value="None"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="41"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dActualTray.lastTray]"/>
+          <Property Name="Left" Value="508"/>
+          <Property Name="LeftBitmap" Value="None"/>
+          <Property Name="LeftTextGroup" Value="None"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxIndex" Value="None"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinIndex" Value="None"/>
+          <Property Name="OptionDatapoint" Value="None"/>
+          <Property Name="RightBitmap" Value="None"/>
+          <Property Name="RightTextGroup" Value="None"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="TextGroup" Value="Source[local].TextGroup[LastTray]"/>
+          <Property Name="TextIndexOffset" Value="0"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="245"/>
+          <Property Name="Width" Value="142"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_73">
@@ -460,54 +353,6 @@
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
               <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dActualTray.turnTray]"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_76">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x0000016A">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="ResetValue" Value="0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dActualTray.lastTrayInLayer]"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_77">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x0000016A">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="ResetValue" Value="0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dActualTray.lastTrayHalfLayer]"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_78">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x0000016A">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="ResetValue" Value="0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dActualTray.lastTrayInRow]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -566,20 +411,27 @@
   <MovementOrder>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_1]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Dropdown_1]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Dropdown_1]"/>
       <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_3]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Dropdown_1]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Dropdown_1]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[Dropdown_1]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
     </MovementEntry>
   </MovementOrder>
   <TabSequence>
     <TabSeqItem Index="0" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
     <TabSeqItem Index="1" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
     <TabSeqItem Index="2" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
+    <TabSeqItem Index="3" Value="Source[embedded].Layer[Default].Control[Dropdown_1]"/>
   </TabSequence>
 </Page>

@@ -74,9 +74,15 @@ PROGRAM _CYCLIC
 					//select actual tray
 					IF actualTrayIndex >= 0 AND actualTrayIndex <= 39 THEN
 						dActualTray ACCESS ADR(dActualLayout.tray[actualTrayIndex]);
+					ELSE
+						dActualTray ACCESS ADR (nullTray);
 					END_IF
+				ELSE
+					dActualLayout ACCESS ADR(nullLayout);
 				END_IF
 			END_IF
+		ELSE
+			dActualRecipe ACCESS ADR(nullRecipe);
 		END_IF
 	END_IF
 	

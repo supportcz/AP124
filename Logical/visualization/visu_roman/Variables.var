@@ -21,4 +21,7 @@ VAR
 	nbOfTraysOnP2 : INT;
 	colorDataPointTable : INT;
 	colorDataPointRobot : INT;
+	nullRecipe : Recipe;
+	nullLayout : Layout;
+	nullTray : Tray;
 END_VAR

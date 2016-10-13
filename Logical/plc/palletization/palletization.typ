@@ -5,7 +5,7 @@ TYPE
 		cmdJogPlus : BOOL;
 		cmdJogMinus : BOOL;
 		tolerance : DINT;
-		positions : ARRAY[0..4]OF DINT;
+		positions : ARRAY[0..5]OF DINT;
 		speed : DINT;
 		requestedPositionIndex : INT;
 		actualPositionIndex : INT;

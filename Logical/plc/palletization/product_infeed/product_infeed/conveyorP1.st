@@ -1,7 +1,7 @@
 
 ACTION ConveyorP1: 
 	
-	IF modePalletization = modePalletizationNotReadyToStart THEN
+	IF modePalletization = modePalletizationNotReadyToStart OR (modePalletizationOld = modePalletizationAuto AND modePalletization <> modePalletizationAuto) THEN
 		stateConveyorP1 := stateConveyorStop;  
 	END_IF
 	
@@ -40,7 +40,7 @@ ACTION ConveyorP1:
 	
 				//detection of new tray
 				IF TOF_TrayOnOutputP1.Q THEN
-					acpI_P10.stop := TRUE;
+//					acpI_P10.stop := TRUE;
 					stateConveyorP1 := stateConveyorNewTray;
 				END_IF
 			END_IF
@@ -58,7 +58,7 @@ ACTION ConveyorP1:
 			IF TOF_TrayOnInputP1.Q THEN
 				stateConveyorP1 := stateConveyorMoving;
 			END_IF
-		
+//		
 //			IF modePalletization <> modePalletizationAuto THEN
 //				stateConveyorP1 := stateConveyorStop;
 //			END_IF	
@@ -66,8 +66,12 @@ ACTION ConveyorP1:
 		stateConveyorNewTray:
 			
 			//backup data of new tray
-			cmdRunConveyorP1 := NOT (dNextTray.lastTrayInRow OR dNextTray.lastTrayHalfLayer OR dNextTray.lastTrayInLayer);
 			turnTray := dNextTray.turnTray;
+			
+			//stop request?
+			IF dNextTray.lastTray <> lastTrayNo THEN
+				cmdRunConveyorP1 := FALSE;
+			END_IF
 			
 			//wait till rotation is in correct place
 			IF turnTray THEN 
@@ -86,14 +90,15 @@ ACTION ConveyorP1:
 			acpI_P10.stop := FALSE;
 			
 			IF NOT TOF_TrayOnOutputP1.Q THEN
-				acpI_P10.stop := TRUE;
 				TON_TurnTray(IN:=FALSE);
 				stateConveyorP1 := stateConveyorNewTray3;
 			END_IF
 		
 		stateConveyorNewTray3:
 			
-			//time delay
+			//time delay for turn
+			acpI_P10.stop := TRUE;
+			
 			TON_TurnTray(IN:=TRUE, PT := dActualRecipe.timeDelayForTurn);
 			IF TON_TurnTray.Q OR NOT turnTray THEN	
 				stateConveyorP1 := stateConveyorNewTray4;
@@ -111,9 +116,13 @@ ACTION ConveyorP1:
 			
 			//tray detected
 			IF TOF_TrayOnOutputP1.Q THEN
-				acpI_P10.stop := TRUE;
+//				acpI_P10.stop := TRUE;
 				stateConveyorP1 := stateConveyorMoving;
-			END_IF				
+			END_IF	
+//		
+//			IF modePalletization <> modePalletizationAuto THEN
+//				stateConveyorP1 := stateConveyorStop;
+//			END_IF	
 		
 	END_CASE
 	
