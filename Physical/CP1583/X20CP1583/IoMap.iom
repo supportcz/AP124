@@ -98,4 +98,5 @@ VAR_CONFIG
 	::product_in:diBumperForward AT %IX."I50".DigitalInput10;
 	::product_in:HMIS AT %IW."U10".HMIS_Input;
 	::product_in:diRobotReady AT %IX."I50".DigitalInput04;
+	::product_in:RFRD AT %IW."U10".RFRD_Input;
 END_VAR

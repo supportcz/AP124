@@ -1,7 +1,7 @@
 VAR
 	acpI_P10 : AcpInoSdc;
 	acpI_P11 : AcpInoSdc;
-	actualLayer : INT;
+	actualLayerIndex : INT;
 	cmdPusherLiftingDown : BOOL;
 	cmdPusherLiftingUp : BOOL;
 	cmdRunConveyorP1 : BOOL;
@@ -56,4 +56,6 @@ VAR
 	HMIS : UINT;
 	diRobotReady : BOOL;
 	RFRD : INT;
+	TON_TransitTime : TON;
+	firstTrayInLayer : INT;
 END_VAR

@@ -22,8 +22,13 @@ TYPE
 	END_STRUCT;
 	Tray : 	STRUCT 
 		turnTray : BOOL;
-		lastTrayInLayer : BOOL;
-		lastTrayHalfLayer : BOOL;
-		lastTrayInRow : BOOL;
+		lastTray : LastTray;
 	END_STRUCT;
+	LastTray : 
+		(
+		lastTrayNo,
+		lastTrayInRow,
+		lastTrayInHalfLayer,
+		lastTrayInLayer
+		);
 END_TYPE
