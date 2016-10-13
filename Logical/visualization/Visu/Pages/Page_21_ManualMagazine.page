@@ -207,7 +207,8 @@
           <Property Name="PressedBackColor" Value="253"/>
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[ButtonArrowLeftPressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
-          <Property Name="PressedBorder" Value="Source[local].Border[Border_1]"/>
+          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
+          <Property Name="PressedForeColor" Value="253"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[ManualMode_ProductInfeed]"/>
