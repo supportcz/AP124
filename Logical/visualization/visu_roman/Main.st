@@ -104,18 +104,22 @@ PROGRAM _CYCLIC
 	END_IF
 	
 	//start dialog
-	nbOfTraysOnP2 := nbOfTraysBehindRotation - nbOfTraysOnTable;
-	
-	IF nbOfTraysInRobotHead = nbOfTraysOnTable THEN
-		colorDataPointTable := 1;
-	ELSE
+	IF tableFull THEN
 		colorDataPointTable := 0;
+	ELSE
+		colorDataPointTable := 1;
 	END_IF
 	
-	IF nbOfTraysInRobotHead = nbOfTraysOnPallet THEN
-		colorDataPointRobot := 1;
-	ELSE
+	IF robotHeadFull THEN
 		colorDataPointRobot := 0;
+	ELSE
+		colorDataPointRobot := 1;
+	END_IF
+	
+	IF halfPallet THEN
+		colorDataPointHalfPallet := 0;
+	ELSE
+		colorDataPointHalfPallet := 1;
 	END_IF
 	
 END_PROGRAM

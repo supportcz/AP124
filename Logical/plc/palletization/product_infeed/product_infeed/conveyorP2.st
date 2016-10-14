@@ -20,9 +20,6 @@ ACTION ConveyorP2:
 		stateConveyorWait:
 		
 			IF cmdRunConveyorP2 THEN
-				//intialize counters
-				nbOfTraysOnConveyorP2 := nbOfTraysBehindRotation := nbOfTraysOnTable;
-				
 				stateConveyorP2 := stateConveyorMoving;
 			END_IF
 		
@@ -36,18 +33,7 @@ ACTION ConveyorP2:
 				IF NOT TOF_TrayOnInputP1.Q THEN
 					stateConveyorP2 := stateConveyorPause;
 				END_IF
-				
-				//check sensor error
-				IF nbOfTraysBehindRotation = nbOfTraysOnConveyorP2 THEN
-					//reset timer
-					TON_TransitTime(IN := FALSE);
-				ELSE
-					//run timer
-					TON_TransitTime(IN := TRUE, PT:=T#5s);
-					IF TON_TransitTime.Q THEN
-						alarmImagePalletization[27] := TRUE;
-					END_IF
-				END_IF
+
 			END_IF
 			
 			IF NOT cmdRunConveyorP2 THEN

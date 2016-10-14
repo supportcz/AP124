@@ -22,10 +22,10 @@ TYPE
 		stateConveyorWait,
 		stateConveyorMoving,
 		stateConveyorPause,
-		stateConveyorNewTray,
-		stateConveyorNewTray2,
-		stateConveyorNewTray3,
-		stateConveyorNewTray4
+		stateConveyorWaitForRotation,
+		stateConveyorMoveTrayFromP1toP2,
+		stateConveyorDelayForTurn,
+		stateConveyorFillP1
 		);
 	StatePusherLifting : 
 		(
@@ -39,7 +39,7 @@ TYPE
 		(
 		stateAutoUndefined,
 		stateAutoStart,
-		stateAutoWaitForNextTray,
+		stateAutoFillRow,
 		stateAutoLastTray,
 		stateAutoPusherToTable,
 		stateAutoPusherToTable2,

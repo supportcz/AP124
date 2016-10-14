@@ -1,5 +1,7 @@
 PROGRAM _INIT
-
+	
+	dNextTray ACCESS ADR(nullTray);
+	dTrayBehindRotation ACCESS ADR(nullTray);
 		 
 END_PROGRAM
 
@@ -10,60 +12,8 @@ PROGRAM _CYCLIC
 	HMIS;
 	RFRD;
 	
-	IF adrRecipes = 0 THEN 
-		RETURN;
-	END_IF
-	
-	dRecipes ACCESS adrRecipes;
-	IF dRecipes.actualRecipeIndex < 0 OR dRecipes.actualRecipeIndex > 9 THEN
-		RETURN;
-	END_IF
-	
-	dActualRecipe ACCESS ADR(dRecipes.recipe[dRecipes.actualRecipeIndex]);
-	
-	//correct wrong value in recipe
-	IF dActualRecipe.nbOfLayers < 1 THEN
-		dActualRecipe.nbOfLayers := 1;
-	END_IF
-	
-	//select actual layout
-	IF actualLayerIndex < 0 OR actualLayerIndex > 9 THEN
-		RETURN;
-	END_IF
-	
-	dActualLayout ACCESS ADR(dRecipes.layout[dActualRecipe.layer[actualLayerIndex]]);
-	
-	//the last tray in layout has to have set flag lastTrayInLayer
-	dActualLayout.tray[dActualLayout.nbOfTrays - 1].lastTray := lastTrayInLayer;
-	
-	//detect tray on input of conveyor P2
-	TOF_TrayOnOutputP1(IN := diTrayOnOutputP1, PT := T#40ms);
-	IF TOF_TrayOnOutputP1.Q < trayOnInputP2old THEN
-		nbOfTraysOnConveyorP2 := nbOfTraysOnConveyorP2 + 1;
-	END_IF
-	trayOnInputP2old := TOF_TrayOnOutputP1.Q;
-	
-	//select next tray	
-	IF nbOfTraysOnConveyorP2 - firstTrayInLayer >= 0 AND nbOfTraysOnConveyorP2 - firstTrayInLayer < dActualLayout.nbOfTrays THEN
-		dNextTray ACCESS ADR(dActualLayout.tray[nbOfTraysOnConveyorP2 - firstTrayInLayer]); 
-	ELSE
-		dNextTray ACCESS ADR(nullTray);
-	END_IF	
-	
-	//detect tray behind roration
-	TOF_TrayBehindRotation(IN := diTrayBehindRotation, PT := T#60ms);
-	IF TOF_TrayBehindRotation.Q < trayBehindRotationOld THEN
-		nbOfTraysBehindRotation := nbOfTraysBehindRotation + 1;
-	END_IF
-	trayBehindRotationOld := TOF_TrayBehindRotation.Q;
-	
-	//select tray behind rotation
-	IF nbOfTraysBehindRotation - firstTrayInLayer > 0 AND nbOfTraysBehindRotation - firstTrayInLayer <= dActualLayout.nbOfTrays THEN
-		dTrayBehindRotation ACCESS ADR(dActualLayout.tray[nbOfTraysBehindRotation - firstTrayInLayer - 1]);
-	ELSE
-		dTrayBehindRotation ACCESS ADR(nullTray);
-	END_IF		
-
+	TOF_TrayOnOutputP1(IN := diTrayOnOutputP1, PT := T#50ms);
+	TOF_TrayBehindRotation(IN := diTrayBehindRotation, PT := T#50ms);
 	
 	CASE modePalletization OF
 		
@@ -86,6 +36,71 @@ PROGRAM _CYCLIC
 			pusherDrive.speed := 500;
 			bumperAuto := TRUE;
 
+			IF adrRecipes = 0 THEN 
+				RETURN;
+			END_IF
+	
+			dRecipes ACCESS adrRecipes;
+			IF dRecipes.actualRecipeIndex < 0 OR dRecipes.actualRecipeIndex > 9 THEN
+				RETURN;
+			END_IF
+	
+			dActualRecipe ACCESS ADR(dRecipes.recipe[dRecipes.actualRecipeIndex]);
+	
+			//correct wrong value in recipe
+			IF dActualRecipe.nbOfLayers < 1 THEN
+				dActualRecipe.nbOfLayers := 1;
+			END_IF
+	
+			//select actual layout
+			IF actualLayerIndex < 0 OR actualLayerIndex > 9 THEN
+				RETURN;
+			END_IF
+	
+			dActualLayout ACCESS ADR(dRecipes.layout[dActualRecipe.layer[actualLayerIndex]]);
+	
+			//the last tray in layout has to have set flag lastTrayInLayer
+			dActualLayout.tray[dActualLayout.nbOfTrays - 1].lastTray := lastTrayInLayer;
+	
+			//detect tray on output of conveyor P1
+			IF TOF_TrayOnOutputP1.Q < trayOnInputP2old THEN
+				nbOfTraysOnConveyorP2 := nbOfTraysOnConveyorP2 + 1;
+				//reset timer
+				TON_TransitTime(IN := FALSE);
+			END_IF
+
+			//select next tray	
+			IF nbOfTraysOnConveyorP2 - firstTrayInLayer >= 0 AND nbOfTraysOnConveyorP2 - firstTrayInLayer < dActualLayout.nbOfTrays THEN
+				dNextTray ACCESS ADR(dActualLayout.tray[nbOfTraysOnConveyorP2 - firstTrayInLayer]); 
+			END_IF	
+
+			//detect tray behind roration
+			IF TOF_TrayBehindRotation.Q < trayBehindRotationOld THEN
+				nbOfTraysBehindRotation := nbOfTraysBehindRotation + 1;		
+				
+				//select tray behind rotation
+				IF nbOfTraysBehindRotation - firstTrayInLayer > 0 AND nbOfTraysBehindRotation - firstTrayInLayer <= dActualLayout.nbOfTrays THEN
+					dTrayBehindRotation ACCESS ADR(dActualLayout.tray[nbOfTraysBehindRotation - firstTrayInLayer - 1]);
+				END_IF	
+				
+				//correct counters
+				IF nbOfTraysBehindRotation - firstTrayInLayer = dActualLayout.nbOfTrays THEN
+					//start new layer
+					actualLayerIndex := actualLayerIndex + 1;
+					IF actualLayerIndex = dActualRecipe.nbOfLayers THEN
+						//new pallet, reset counters
+						nbOfTraysInRobotHead := 0;
+						nbOfTraysOnTable := 0;
+						nbOfTraysBehindRotation := 0;
+						nbOfTraysOnConveyorP2 := 0;
+						actualLayerIndex := 0;
+					END_IF
+					firstTrayInLayer := nbOfTraysBehindRotation;
+				END_IF
+
+			END_IF
+
+			
 			CASE stateAuto OF
 				
 				stateAutoUndefined:
@@ -112,24 +127,28 @@ PROGRAM _CYCLIC
 				
 				stateAutoStart:
 					
-//					actualLayerIndex := 0;
-//					firstTrayInLayer := 0;
 					cmdRunConveyorP1 := TRUE;
-					cmdRunConveyorP2 := TRUE;						
-					stateAuto := stateAutoWaitForNextTray;
-				
-				stateAutoWaitForNextTray:
+					cmdRunConveyorP2 := TRUE;		
 					
-					IF nbOfTraysBehindRotation = nbOfTraysOnConveyorP2 THEN
-						rotationForward := dNextTray.turnTray;
-					END_IF
+					dNextTray ACCESS ADR(nullTray);
+					dTrayBehindRotation ACCESS ADR(nullTray);
+					
+					//intialize counters
+					nbOfTraysBehindRotation := nbOfTraysOnTable + nbOfTraysOnP2;
+					nbOfTraysOnConveyorP2 := nbOfTraysBehindRotation;
+					
+					stateAuto := stateAutoFillRow;
 				
-					IF nbOfTraysBehindRotation > nbOfTraysOnTable THEN 
+				stateAutoFillRow:
+					
+
+				
+//					IF nbOfTraysBehindRotation > nbOfTraysOnTable THEN 
 						IF dTrayBehindRotation.lastTray <> lastTrayNo THEN
 							TON_WaitForLastTray(IN := FALSE);					
 							stateAuto := stateAutoLastTray;
 						END_IF
-					END_IF
+//					END_IF
 
 				stateAutoLastTray:
 					
@@ -196,7 +215,7 @@ PROGRAM _CYCLIC
 				stateAutoPusherLiftingDown2:
 
 					IF NOT cmdPusherLiftingDown THEN
-						stateAuto := stateAutoWaitForNextTray;
+						stateAuto := stateAutoFillRow;
 					END_IF
 				
 				stateAutoPusherToRobotHead:
@@ -206,6 +225,10 @@ PROGRAM _CYCLIC
 					END_IF
 				
 				stateAutoPusherToRobotHead2:
+					//run conveyors
+					cmdRunConveyorP1 := TRUE;
+					cmdRunConveyorP2 := TRUE;
+					
 					//push to robot head
 					IF diPusherBlockedByTray THEN
 						alarmImagePalletization[28] := TRUE;
@@ -222,24 +245,15 @@ PROGRAM _CYCLIC
 					END_IF
 
 				stateAutoPusherToRobotHead4:
-					
-					cmdRunConveyorP1 := TRUE;
-					cmdRunConveyorP2 := TRUE;
 				
-					IF nbOfTraysBehindRotation = dActualLayout.nbOfTrays THEN
-						//start new layer
-						actualLayerIndex := actualLayerIndex + 1;
-						IF actualLayerIndex = dActualRecipe.nbOfLayers THEN
-							//new pallet
-							nbOfTraysBehindRotation := 0;
-							actualLayerIndex := 0;
-						END_IF
-						firstTrayInLayer := nbOfTraysBehindRotation;
-					END_IF
-					
+//					//run conveyors
+//					cmdRunConveyorP1 := TRUE;
+//					cmdRunConveyorP2 := TRUE;
+							
 					//correct counters
-					nbOfTraysOnTable := nbOfTraysBehindRotation;
-					nbOfTraysInRobotHead := nbOfTraysBehindRotation;
+//					nbOfTraysOnConveyorP2 := nbOfTraysBehindRotation;
+//					nbOfTraysOnTable := nbOfTraysBehindRotation;
+//					nbOfTraysInRobotHead := nbOfTraysBehindRotation;
 					stateAuto := stateAutoPusherToRobotHead5;
 						
 				stateAutoPusherToRobotHead5:
@@ -254,9 +268,36 @@ PROGRAM _CYCLIC
 						stateAuto := stateAutoPusherLiftingUp;
 					END_IF
 			END_CASE
-		
+			
+			IF stateAuto > stateAutoStart THEN	
+				//control rotation only when no tray is in rotation zone
+				IF nbOfTraysBehindRotation = nbOfTraysOnConveyorP2 THEN
+					rotationForward := dNextTray.turnTray;
+				END_IF
+												
+				//check sensor error
+				TON_TransitTime(IN := TRUE, PT:=T#4s);
+				IF TON_TransitTime.Q AND nbOfTraysBehindRotation <> nbOfTraysOnConveyorP2 THEN
+					alarmImagePalletization[27] := TRUE;
+				END_IF
+				
+				//for start dialog
+				nbOfTraysOnP2 := nbOfTraysBehindRotation - nbOfTraysOnTable;
+			
+				//flag if table is full
+				IF nbOfTraysInRobotHead = nbOfTraysOnTable THEN
+					tableFull := FALSE;
+				ELSE
+					tableFull := TRUE;
+				END_IF
+			END_IF
 	END_CASE
+
+
+	trayOnInputP2old := TOF_TrayOnOutputP1.Q;
+	trayBehindRotationOld := TOF_TrayBehindRotation.Q;
 	
+		
 	ConveyorP1;
 	ConveyorP2;
 	PusherLifting;

@@ -37,18 +37,10 @@
       <Property Name="Width" Value="800"/>
       <Property Name="Z-Order" Value="1"/>
       <TextGroup>
-        <TextLayer LanguageId="en">
-          <Text ID="179185" Value="reset counter"/>
-        </TextLayer>
-        <TextLayer LanguageId="cs">
-          <Text ID="179185" Value=""/>
-        </TextLayer>
-        <TextLayer LanguageId="fr">
-          <Text ID="179185" Value=""/>
-        </TextLayer>
-        <IndexMap>
-          <Index ID="179185" Value="11"/>
-        </IndexMap>
+        <TextLayer LanguageId="en"/>
+        <TextLayer LanguageId="cs"/>
+        <TextLayer LanguageId="fr"/>
+        <IndexMap/>
       </TextGroup>
       <Controls>
         <Control ClassId="0x00001004" Name="Text_1">
@@ -218,28 +210,6 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_96]"/>
           <Property Name="Width" Value="92"/>
         </Control>
-        <Control ClassId="0x00001002" Name="Button_13">
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="Border" Value="Source[local].Border[Button]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_17]"/>
-          <Property Name="Height" Value="34"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="103"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="11"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="303"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_17]"/>
-          <Property Name="Width" Value="158"/>
-        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_95">
@@ -268,21 +238,6 @@
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
               <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.cmdPalletizationManual]"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_17">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x00000161">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="SetValue" Value="0"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.nbOfTraysOnTable]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

@@ -38,10 +38,18 @@
       <Property Name="Width" Value="800"/>
       <Property Name="Z-Order" Value="1"/>
       <TextGroup>
-        <TextLayer LanguageId="en"/>
-        <TextLayer LanguageId="cs"/>
-        <TextLayer LanguageId="fr"/>
-        <IndexMap/>
+        <TextLayer LanguageId="en">
+          <Text ID="179838" Value="Reset"/>
+        </TextLayer>
+        <TextLayer LanguageId="cs">
+          <Text ID="179838" Value=""/>
+        </TextLayer>
+        <TextLayer LanguageId="fr">
+          <Text ID="179838" Value=""/>
+        </TextLayer>
+        <IndexMap>
+          <Index ID="179838" Value="18"/>
+        </IndexMap>
       </TextGroup>
       <Controls>
         <Control ClassId="0x00001002" Name="cmdAlarmDetail">
@@ -94,7 +102,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="178"/>
+          <Property Name="Top" Value="163"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_210]"/>
           <Property Name="Width" Value="130"/>
         </Control>
@@ -607,17 +615,31 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_3]"/>
           <Property Name="Width" Value="526"/>
         </Control>
-        <Control ClassId="0x00001003" Name="HotSpot_3">
+        <Control ClassId="0x00001002" Name="cmdAlarmDetail2">
+          <Property Name="BitmapAlignmentHorizontal" Value="Right of Text"/>
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_81]"/>
-          <Property Name="Height" Value="51"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_211]"/>
+          <Property Name="Height" Value="60"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="646"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="239"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_81]"/>
-          <Property Name="Width" Value="128"/>
+          <Property Name="Left" Value="644"/>
+          <Property Name="Multiline" Value="Manual"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
+          <Property Name="PressedForeColor" Value="253"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpControlButton]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="18"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="228"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_211]"/>
+          <Property Name="Width" Value="130"/>
         </Control>
       </Controls>
       <KeyMapping>
@@ -713,7 +735,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_81">
+        <VirtualKey Name="%embVirtualKey_211">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>

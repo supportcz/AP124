@@ -47,7 +47,6 @@ VAR
 	TON_WaitForLastTray : TON;
 	trayBehindRotationOld : BOOL;
 	trayOnInputP2old : BOOL;
-	turnTray : BOOL;
 	diBumperForward : BOOL;
 	stateBumper : StateBumper;
 	bumperForward : BOOL;
