@@ -86,7 +86,7 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="57"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="15"/>
+          <Property Name="Left" Value="24"/>
           <Property Name="PressedBackColor" Value="253"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
@@ -113,7 +113,7 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="57"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="14"/>
+          <Property Name="Left" Value="24"/>
           <Property Name="PressedBackColor" Value="253"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
@@ -140,7 +140,7 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="57"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="14"/>
+          <Property Name="Left" Value="24"/>
           <Property Name="PressedBackColor" Value="253"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
@@ -1051,18 +1051,18 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="15"/>
           <Property Name="Height" Value="33"/>
-          <Property Name="Left" Value="217"/>
+          <Property Name="Left" Value="182"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="29"/>
-          <Property Name="Width" Value="583"/>
+          <Property Name="Width" Value="618"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_25">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="217"/>
+          <Property Name="EndX" Value="181"/>
           <Property Name="EndY" Value="415"/>
           <Property Name="ForeColor" Value="250"/>
-          <Property Name="StartX" Value="217"/>
+          <Property Name="StartX" Value="181"/>
           <Property Name="StartY" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>

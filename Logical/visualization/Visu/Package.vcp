@@ -40,7 +40,7 @@
   <Property Name="WheelCountDatapoint" Value="None"/>
   <Property Name="WheelEnterDatapoint" Value="None"/>
   <SourceFiles>
-    <Source File="TextGroups\MpButtons_PageTexts.txtgrp"/>
+    <Source File="TextGroups\PageTexts.txtgrp"/>
     <Source File="TextGroups\SRC_MXCHG_Led.txtgrp"/>
     <Source File="TextGroups\SRC_RE_Led.txtgrp"/>
     <Source File="TextGroups\SRC_FWACKN_Led.txtgrp"/>
@@ -378,6 +378,20 @@
     <Source File="Bitmaps\ButtonGreenSelected.bminfo"/>
     <Source File="Bitmaps\RobotMedium.bminfo"/>
     <Source File="Bitmaps\RobotSmall.bminfo"/>
+    <Source File="Bitmaps\DropDownArrowLeft.bminfo"/>
+    <Source File="Bitmaps\DropDownArrowRight.bminfo"/>
+    <Source File="Bitmaps\GreenArrowDown.bminfo"/>
+    <Source File="Bitmaps\GreenArrowDown_pressed.bminfo"/>
+    <Source File="Bitmaps\GreenArrowLeft.bminfo"/>
+    <Source File="Bitmaps\GreenArrowLeft_pressed.bminfo"/>
+    <Source File="Bitmaps\GreenArrowRight.bminfo"/>
+    <Source File="Bitmaps\GreenArrowRight_pressed.bminfo"/>
+    <Source File="Bitmaps\GreenArrowUp.bminfo"/>
+    <Source File="Bitmaps\GreenArrowUp_pressed.bminfo"/>
+    <Source File="Bitmaps\LtBlueArrowDown.bminfo"/>
+    <Source File="Bitmaps\LtBlueArrowDown_pressed.bminfo"/>
+    <Source File="Bitmaps\LtBlueArrowUp.bminfo"/>
+    <Source File="Bitmaps\LtBlueArrowUp_pressed.bminfo"/>
     <Source File="BitmapGroups\MpAlarmAcknowledgeState.bmgrp"/>
     <Source File="BitmapGroups\MpPads.bmgrp"/>
     <Source File="BitmapGroups\MpUserIcons.bmgrp"/>
@@ -388,6 +402,7 @@
     <Source File="BitmapGroups\MpBorders.bmgrp"/>
     <Source File="BitmapGroups\Borders.bmgrp"/>
     <Source File="BitmapGroups\Flags.bmgrp"/>
+    <Source File="BitmapGroups\DropDownArrow.bmgrp"/>
     <Source File="Pages\Page_60_Settings.page"/>
     <Source File="Pages\Page_40_AlarmList.page"/>
     <Source File="Pages\Page_11_AutomaticModeStart.page"/>
@@ -483,8 +498,8 @@
     <Source File="ColorMaps\ColorMap_PageControl.clm"/>
     <Source File="ColorMaps\ColorMap_PageControlAlarm.clm"/>
     <Source File="ColorMaps\ColorMap_SelectedLanguage.clm"/>
-    <Source File="ColorMaps\ColorMap_GreenRed.clm"/>
     <Source File="ColorMaps\ColorMap_GreenGrey.clm"/>
+    <Source File="ColorMaps\ColorMap_MpRecipeState.clm"/>
     <Source File="VirtualKeys.vcvk"/>
     <Source File="Palette.vcr"/>
   </SourceFiles>

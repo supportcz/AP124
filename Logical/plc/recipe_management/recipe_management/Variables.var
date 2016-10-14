@@ -6,4 +6,5 @@ VAR
 	readyToStart : BOOL;
 	recipes : Recipes;
 	stateRecipe : StateRecipe;
+	VisuRecipeState : INT;
 END_VAR

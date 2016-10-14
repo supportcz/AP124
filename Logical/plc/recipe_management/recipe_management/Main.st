@@ -20,7 +20,7 @@ PROGRAM _CYCLIC
 			
 			cmdLoad := FALSE;
 			cmdSave := FALSE;
-			
+			VisuRecipeState := 4;							//Visu Error Text
 			IF readyToStart THEN
 				stateRecipe := stateRecipeInit;
 			END_IF
@@ -35,6 +35,8 @@ PROGRAM _CYCLIC
 			MpRecipeCsv_0.Enable := TRUE;
 			MpRecipeCsv_0.DeviceName := ADR('USER');
 			MpRecipeCsv_0.FileName := ADR('recipe.csv');
+			
+			VisuRecipeState := 0;						//Visu Empty Text
 			
 			IF MpRecipeRegPar_0.Active AND MpRecipeCsv_0.Active THEN
 				stateRecipe := stateRecipeLoad;
@@ -54,19 +56,22 @@ PROGRAM _CYCLIC
 			
 			MpRecipeCsv_0.Load := TRUE;
 			stateRecipe := stateRecipeLoad2;
-	
+			VisuRecipeState := 3;						//Visu Discart changes Text
+		
 		stateRecipeLoad2:
 			
 			IF MpRecipeCsv_0.CommandDone THEN
 				cmdLoad := FALSE;
 				MpRecipeCsv_0.Load := FALSE;
 				stateRecipe := stateRecipeWait;
+				VisuRecipeState := 0;					//Visu Empty Text
 			END_IF
 
 		stateRecipeSave:
 			
 			MpRecipeCsv_0.Save := TRUE;
 			stateRecipe := stateRecipeSave2;
+			VisuRecipeState := 1;						//Visu Saving Text
 			
 		stateRecipeSave2:
 		
@@ -74,6 +79,7 @@ PROGRAM _CYCLIC
 				cmdSave := FALSE;
 				MpRecipeCsv_0.Save := FALSE;
 				stateRecipe := stateRecipeWait;
+				VisuRecipeState := 2;					//Visu Saved Text
 			END_IF
 		
 	END_CASE

@@ -125,8 +125,6 @@
       <Property Name="Width" Value="268"/>
     </Control>
     <Control ClassId="0x00001001" Name="Shape_7">
-      <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_GreenRed]"/>
-      <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
@@ -258,9 +256,9 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="Height" Value="32"/>
-      <Property Name="Left" Value="485"/>
+      <Property Name="Left" Value="484"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="66"/>
+      <Property Name="Top" Value="65"/>
       <Property Name="Width" Value="75"/>
     </Control>
     <Control ClassId="0x00001004" Name="Text_2">
@@ -268,14 +266,14 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="487"/>
+      <Property Name="Left" Value="486"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
       <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
       <Property Name="TextIndexOffset" Value="1"/>
       <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="70"/>
+      <Property Name="Top" Value="69"/>
       <Property Name="Width" Value="69"/>
     </Control>
   </Controls>

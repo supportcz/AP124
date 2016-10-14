@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?AutomationStudio Version="4.2.5.388"?>
-<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpButtons_PageTexts">
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="PageTexts">
   <Property Name="Description" Value="Texts for elements on pages"/>
   <Property Name="Index" Value="1109"/>
   <TextSnippets/>
@@ -35,8 +35,10 @@
     <Text ID="177448" Value=""/>
     <Text ID="177449" Value=""/>
     <Text ID="177450" Value=""/>
-    <Text ID="177451" Value=""/>
     <Text ID="177452" Value="Page"/>
+    <Text ID="180322" Value="Recipe Settings"/>
+    <Text ID="180323" Value="Layout Settings"/>
+    <Text ID="180324" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="cs">
     <Text ID="89135" Value=""/>
@@ -69,8 +71,10 @@
     <Text ID="177448" Value=""/>
     <Text ID="177449" Value=""/>
     <Text ID="177450" Value=""/>
-    <Text ID="177451" Value=""/>
     <Text ID="177452" Value="Stránka"/>
+    <Text ID="180322" Value="Nastanení Recepů"/>
+    <Text ID="180323" Value="Nastavení Vrsev"/>
+    <Text ID="180324" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="fr">
     <Text ID="89135" Value=""/>
@@ -103,8 +107,10 @@
     <Text ID="177448" Value=""/>
     <Text ID="177449" Value=""/>
     <Text ID="177450" Value=""/>
-    <Text ID="177451" Value=""/>
     <Text ID="177452" Value=""/>
+    <Text ID="180322" Value=""/>
+    <Text ID="180323" Value=""/>
+    <Text ID="180324" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="89135" Value="6010"/>
@@ -137,7 +143,9 @@
     <Index ID="177448" Value="31"/>
     <Index ID="177449" Value="43"/>
     <Index ID="177450" Value="51"/>
-    <Index ID="177451" Value="62"/>
     <Index ID="177452" Value="0"/>
+    <Index ID="180322" Value="62"/>
+    <Index ID="180323" Value="63"/>
+    <Index ID="180324" Value="64"/>
   </IndexMap>
 </TextGroup>
