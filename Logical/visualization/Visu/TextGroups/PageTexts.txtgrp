@@ -31,7 +31,6 @@
     <Text ID="177444" Value="Manual Mode - Conveyors Control"/>
     <Text ID="177445" Value="Manual Mode - Product Infeed"/>
     <Text ID="177446" Value=""/>
-    <Text ID="177447" Value=""/>
     <Text ID="177448" Value=""/>
     <Text ID="177449" Value=""/>
     <Text ID="177450" Value=""/>
@@ -39,6 +38,8 @@
     <Text ID="180322" Value="Recipe Settings"/>
     <Text ID="180323" Value="Layout Settings"/>
     <Text ID="180324" Value=""/>
+    <Text ID="180919" Value="Manual Mode - Conveyor 2 Control"/>
+    <Text ID="180920" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="cs">
     <Text ID="89135" Value=""/>
@@ -67,7 +68,6 @@
     <Text ID="177444" Value="Manuálny Mód - Ovládáni Dopravníků"/>
     <Text ID="177445" Value="Manuálny Mód - Ovládání Prisunovače Produktů"/>
     <Text ID="177446" Value=""/>
-    <Text ID="177447" Value=""/>
     <Text ID="177448" Value=""/>
     <Text ID="177449" Value=""/>
     <Text ID="177450" Value=""/>
@@ -75,6 +75,8 @@
     <Text ID="180322" Value="Nastanení Recepů"/>
     <Text ID="180323" Value="Nastavení Vrsev"/>
     <Text ID="180324" Value=""/>
+    <Text ID="180919" Value="Manuálny Mód - Ovládáni Dopravníku 2"/>
+    <Text ID="180920" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="fr">
     <Text ID="89135" Value=""/>
@@ -103,7 +105,6 @@
     <Text ID="177444" Value=""/>
     <Text ID="177445" Value=""/>
     <Text ID="177446" Value=""/>
-    <Text ID="177447" Value=""/>
     <Text ID="177448" Value=""/>
     <Text ID="177449" Value=""/>
     <Text ID="177450" Value=""/>
@@ -111,6 +112,8 @@
     <Text ID="180322" Value=""/>
     <Text ID="180323" Value=""/>
     <Text ID="180324" Value=""/>
+    <Text ID="180919" Value=""/>
+    <Text ID="180920" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="89135" Value="6010"/>
@@ -139,7 +142,6 @@
     <Index ID="177444" Value="22"/>
     <Index ID="177445" Value="23"/>
     <Index ID="177446" Value="12"/>
-    <Index ID="177447" Value="24"/>
     <Index ID="177448" Value="31"/>
     <Index ID="177449" Value="43"/>
     <Index ID="177450" Value="51"/>
@@ -147,5 +149,7 @@
     <Index ID="180322" Value="62"/>
     <Index ID="180323" Value="63"/>
     <Index ID="180324" Value="64"/>
+    <Index ID="180919" Value="24"/>
+    <Index ID="180920" Value="25"/>
   </IndexMap>
 </TextGroup>
