@@ -116,7 +116,7 @@ PROGRAM _CYCLIC
 		colorDataPointRobot := 1;
 	END_IF
 	
-	IF halfPallet THEN
+	IF halfLayer THEN
 		colorDataPointHalfPallet := 0;
 	ELSE
 		colorDataPointHalfPallet := 1;

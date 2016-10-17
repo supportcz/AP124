@@ -59,4 +59,7 @@ VAR
 	cmdRunConveyorsP1P2 : BOOL;
 	nbOfLayersOnPallet : INT;
 	actualRecipeIndexOld : INT;
+	tableCount : INT;
+	robotHeadCount : INT;
+	halfLayerCount : INT;
 END_VAR

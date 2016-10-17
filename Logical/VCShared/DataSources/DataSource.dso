@@ -304,7 +304,7 @@
           <Property Name="UserID" Value="None"/>
           <Property Name="VCType" Value="BOOL"/>
         </DataPoint>
-        <DataPoint Name="halfPallet">
+        <DataPoint Name="halfLayer">
           <Property Name="ConnectedBySharedResource" Value="False"/>
           <Property Name="ConnectingVisus" Value="visualization\Visu"/>
           <Property Name="Description" Value=""/>
@@ -313,7 +313,7 @@
           <Property Name="UserID" Value="None"/>
           <Property Name="VCType" Value="BOOL"/>
         </DataPoint>
-        <DataPoint Name="nbOfTraysOnP2">
+        <DataPoint Name="onP2count">
           <Property Name="ConnectedBySharedResource" Value="False"/>
           <Property Name="ConnectingVisus" Value="visualization\Visu"/>
           <Property Name="Description" Value=""/>

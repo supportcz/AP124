@@ -4,12 +4,12 @@ VAR
 	alarmInZonePalletization : BOOL;
 	cmdPalletizationAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
 	cmdPalletizationManual : BOOL;
-	halfPallet : BOOL;
+	halfLayer : BOOL;
 	modePalletization : ModePalletization;
 	modePalletizationOld : ModePalletization;
 	nbOfTraysBehindRotation : INT;
 	nbOfTraysInRobotHead : INT;
-	nbOfTraysOnP2 : INT;
+	onP2count : INT;
 	nbOfTraysOnPallet : INT;
 	nbOfTraysOnTable : INT;
 	palletOnConveyorP13 : BOOL; (*VISU:pallet lies on conveyor*)
