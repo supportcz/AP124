@@ -30,7 +30,6 @@ ACTION ConveyorP1:
 		stateConveyorMoving:
 			
 			acpI_P10.stop := FALSE;	
-			acpI_P10.speed := dActualRecipe.conveyorP1speed;
 
 			IF modePalletization = modePalletizationAuto THEN
 				//pause?

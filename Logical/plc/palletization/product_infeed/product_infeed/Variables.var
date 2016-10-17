@@ -18,7 +18,6 @@ VAR
 	diRotationBack : BOOL;
 	diRotationForward : BOOL;
 	diTrayBehindRotation : BOOL;
-	diTrayInRotationZone : BOOL;
 	diTrayOnInputP1 : BOOL;
 	diTrayOnOutputP1 : BOOL;
 	dNextTray : REFERENCE TO Tray;
@@ -57,4 +56,7 @@ VAR
 	RFRD : INT;
 	TON_TransitTime : TON;
 	firstTrayInLayer : INT;
+	cmdRunConveyorsP1P2 : BOOL;
+	nbOfLayersOnPallet : INT;
+	actualRecipeIndexOld : INT;
 END_VAR

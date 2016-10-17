@@ -92,7 +92,6 @@ VAR_CONFIG
 	::product_in:diRotationBack AT %IX."I50".DigitalInput06;
 	::product_in:diRotationForward AT %IX."I50".DigitalInput07;
 	::product_in:diTrayOnOutputP1 AT %IX."I50".DigitalInput03;
-	::product_in:diTrayInRotationZone AT %IX."I50".DigitalInput05;
 	::product_in:doBumper AT %QX."Q52".DigitalOutput03;
 	::product_in:diPusherBlockedByTray AT %IX."I50".DigitalInput09;
 	::product_in:diBumperForward AT %IX."I50".DigitalInput10;

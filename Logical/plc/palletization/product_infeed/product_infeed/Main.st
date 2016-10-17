@@ -22,20 +22,31 @@ PROGRAM _CYCLIC
 
 		modePalletizationManual:
 
-			pusherDrive.speed := 300;
 			IF modePalletizationOld <> modePalletizationManual THEN
 				cmdRunConveyorP1 := FALSE;
 				cmdRunConveyorP2 := FALSE;
 				rotationForward := FALSE;
 				bumperAuto := FALSE;
 			END_IF
+			
+			acpI_P10.speed := 1000;
+			acpI_P11.speed := 1200;
+			pusherDrive.speed := 300;
+			
+			IF EDGEPOS(cmdRunConveyorsP1P2) THEN
+				cmdRunConveyorP1 := TRUE;
+				cmdRunConveyorP2 := TRUE;
+			END_IF
+			
+			IF EDGENEG(cmdRunConveyorsP1P2) THEN
+				cmdRunConveyorP1 := FALSE;
+				cmdRunConveyorP2 := FALSE;
+			END_IF
+
 			stateAuto := stateAutoUndefined;
 
 		modePalletizationAuto:
 			
-			pusherDrive.speed := 500;
-			bumperAuto := TRUE;
-
 			IF adrRecipes = 0 THEN 
 				RETURN;
 			END_IF
@@ -82,24 +93,14 @@ PROGRAM _CYCLIC
 				IF nbOfTraysBehindRotation - firstTrayInLayer > 0 AND nbOfTraysBehindRotation - firstTrayInLayer <= dActualLayout.nbOfTrays THEN
 					dTrayBehindRotation ACCESS ADR(dActualLayout.tray[nbOfTraysBehindRotation - firstTrayInLayer - 1]);
 				END_IF	
-				
-				//correct counters
-				IF nbOfTraysBehindRotation - firstTrayInLayer = dActualLayout.nbOfTrays THEN
-					//start new layer
-					actualLayerIndex := actualLayerIndex + 1;
-					IF actualLayerIndex = dActualRecipe.nbOfLayers THEN
-						//new pallet, reset counters
-						nbOfTraysInRobotHead := 0;
-						nbOfTraysOnTable := 0;
-						nbOfTraysBehindRotation := 0;
-						nbOfTraysOnConveyorP2 := 0;
-						actualLayerIndex := 0;
-					END_IF
-					firstTrayInLayer := nbOfTraysBehindRotation;
-				END_IF
+
 
 			END_IF
 
+			acpI_P10.speed := dActualRecipe.conveyorP1speed;
+			acpI_P11.speed := dActualRecipe.conveyorP2speed;
+			pusherDrive.speed := 500;
+			bumperAuto := TRUE;
 			
 			CASE stateAuto OF
 				
@@ -126,34 +127,61 @@ PROGRAM _CYCLIC
 					END_IF
 				
 				stateAutoStart:
+										
+					//initialize counters when program changes
+					IF dRecipes.actualRecipeIndex <> actualRecipeIndexOld THEN
+						nbOfLayersOnPallet := 0;
+						robotHeadFull := FALSE;
+						tableFull := FALSE;
+					END_IF
+					actualRecipeIndexOld := dRecipes.actualRecipeIndex;
+					
+					nbOfTraysOnPallet := nbOfLayersOnPallet * dActualLayout.nbOfTrays;
+
+					//correct nbOfTraysInRobotHead
+					IF NOT robotHeadFull THEN
+						nbOfTraysInRobotHead := nbOfTraysOnPallet;
+					END_IF	
+					
+					//correct nbOfTraysOnTable
+					IF NOT tableFull THEN
+						nbOfTraysOnTable := nbOfTraysInRobotHead;
+					END_IF				
+					
+					nbOfTraysBehindRotation := nbOfTraysOnTable + nbOfTraysOnP2;
+					
+					nbOfTraysOnConveyorP2 := nbOfTraysBehindRotation;
+					
+					IF dActualLayout.nbOfTrays > 0 AND nbOfTraysBehindRotation > 0 THEN
+						actualLayerIndex := (nbOfTraysBehindRotation - 1) / dActualLayout.nbOfTrays;
+					ELSE
+						actualLayerIndex := 0;						
+					END_IF
+					firstTrayInLayer := dActualLayout.nbOfTrays * actualLayerIndex; 
+					
+					//select tray behind rotation
+					IF nbOfTraysBehindRotation - firstTrayInLayer > 0 AND nbOfTraysBehindRotation - firstTrayInLayer <= dActualLayout.nbOfTrays THEN
+						dTrayBehindRotation ACCESS ADR(dActualLayout.tray[nbOfTraysBehindRotation - firstTrayInLayer - 1]);
+					END_IF	
 					
 					cmdRunConveyorP1 := TRUE;
 					cmdRunConveyorP2 := TRUE;		
-					
-					dNextTray ACCESS ADR(nullTray);
-					dTrayBehindRotation ACCESS ADR(nullTray);
-					
-					//intialize counters
-					nbOfTraysBehindRotation := nbOfTraysOnTable + nbOfTraysOnP2;
-					nbOfTraysOnConveyorP2 := nbOfTraysBehindRotation;
 					
 					stateAuto := stateAutoFillRow;
 				
 				stateAutoFillRow:
 					
+					IF dTrayBehindRotation.lastTray <> lastTrayNo THEN
+						TON_WaitForLastTray(IN := FALSE);					
+						stateAuto := stateAutoLastTray;
+					END_IF
 
-				
-//					IF nbOfTraysBehindRotation > nbOfTraysOnTable THEN 
-						IF dTrayBehindRotation.lastTray <> lastTrayNo THEN
-							TON_WaitForLastTray(IN := FALSE);					
-							stateAuto := stateAutoLastTray;
-						END_IF
-//					END_IF
 
 				stateAutoLastTray:
 					
 					TON_WaitForLastTray(IN := TRUE, PT := dActualRecipe.timeAfterLastTrayInRow);
 					IF TON_WaitForLastTray.Q THEN
+						cmdRunConveyorP1 := FALSE;
 						cmdRunConveyorP2 := FALSE;
 						IF dTrayBehindRotation.lastTray = lastTrayInRow THEN
 							stateAuto := stateAutoPusherToTable;
@@ -176,6 +204,8 @@ PROGRAM _CYCLIC
 				stateAutoPusherToTable2:
 					
 					IF NOT pusherDrive.cmdAbsolute THEN
+						
+						dTrayBehindRotation ACCESS ADR(nullTray);
 						nbOfTraysOnTable := nbOfTraysBehindRotation;
 						
 						cmdRunConveyorP1 := TRUE;
@@ -219,12 +249,39 @@ PROGRAM _CYCLIC
 					END_IF
 				
 				stateAutoPusherToRobotHead:
+					
 					//wait for robot
-					IF diRobotReady THEN
+					IF diRobotReady THEN	
 						stateAuto := stateAutoPusherToRobotHead2;
 					END_IF
 				
 				stateAutoPusherToRobotHead2:
+					
+					//correct counters
+					IF nbOfTraysBehindRotation - firstTrayInLayer = dActualLayout.nbOfTrays THEN
+						//start new layer
+						actualLayerIndex := actualLayerIndex + 1;
+						IF actualLayerIndex = dActualRecipe.nbOfLayers THEN
+							//new pallet, reset counters
+							nbOfTraysOnPallet := 0;
+							nbOfTraysInRobotHead := 0;
+							nbOfTraysOnTable := 0;
+							nbOfTraysBehindRotation := 0;
+							nbOfTraysOnConveyorP2 := 0;
+							actualLayerIndex := 0;
+						END_IF
+						firstTrayInLayer := nbOfTraysBehindRotation;
+						
+						nbOfTraysInRobotHead := nbOfTraysBehindRotation;
+						
+					END_IF
+					stateAuto := stateAutoPusherToRobotHead3;
+						
+
+				stateAutoPusherToRobotHead3:
+					
+					dTrayBehindRotation ACCESS ADR(nullTray);
+
 					//run conveyors
 					cmdRunConveyorP1 := TRUE;
 					cmdRunConveyorP2 := TRUE;
@@ -235,34 +292,29 @@ PROGRAM _CYCLIC
 					ELSE
 						pusherDrive.requestedPositionIndex := 4;
 						pusherDrive.cmdAbsolute := TRUE;
-						stateAuto := stateAutoPusherToRobotHead3;
-					END_IF
-						
-				stateAutoPusherToRobotHead3:
-					
-					IF NOT pusherDrive.cmdAbsolute THEN
 						stateAuto := stateAutoPusherToRobotHead4;
 					END_IF
-
-				stateAutoPusherToRobotHead4:
-				
-//					//run conveyors
-//					cmdRunConveyorP1 := TRUE;
-//					cmdRunConveyorP2 := TRUE;
-							
-					//correct counters
-//					nbOfTraysOnConveyorP2 := nbOfTraysBehindRotation;
-//					nbOfTraysOnTable := nbOfTraysBehindRotation;
-//					nbOfTraysInRobotHead := nbOfTraysBehindRotation;
-					stateAuto := stateAutoPusherToRobotHead5;
 						
+				stateAutoPusherToRobotHead4:
+					
+					IF NOT pusherDrive.cmdAbsolute THEN
+						stateAuto := stateAutoPusherToRobotHead5;
+					END_IF
+
 				stateAutoPusherToRobotHead5:
+									
+					//correct counters
+					nbOfTraysOnTable := nbOfTraysBehindRotation;
+					nbOfTraysInRobotHead := nbOfTraysBehindRotation;
+					stateAuto := stateAutoPusherToRobotHead6;
+						
+				stateAutoPusherToRobotHead6:
 					//back
 					pusherDrive.requestedPositionIndex := 3;
 					pusherDrive.cmdAbsolute := TRUE;
-					stateAuto := stateAutoPusherToRobotHead6;
+					stateAuto := stateAutoPusherToRobotHead7;
 				
-				stateAutoPusherToRobotHead6:
+				stateAutoPusherToRobotHead7:
 					
 					IF NOT pusherDrive.cmdAbsolute THEN
 						stateAuto := stateAutoPusherLiftingUp;
@@ -290,6 +342,16 @@ PROGRAM _CYCLIC
 				ELSE
 					tableFull := TRUE;
 				END_IF
+
+				//flag if robot head is full
+				IF nbOfTraysOnPallet = nbOfTraysInRobotHead THEN
+					robotHeadFull := FALSE;
+				ELSE
+					robotHeadFull := TRUE;
+				END_IF
+				
+				nbOfLayersOnPallet := nbOfTraysOnPallet / dActualLayout.nbOfTrays;
+
 			END_IF
 	END_CASE
 

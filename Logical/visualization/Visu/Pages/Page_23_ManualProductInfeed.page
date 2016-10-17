@@ -153,7 +153,6 @@
           <Property Name="Width" Value="154"/>
         </Control>
         <Control ClassId="0x00001002" Name="Button_13">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="Bitmap" Value="Source[local].Bitmap[GreenArrowRight]"/>
           <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -250,7 +249,7 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="48"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="646"/>
+          <Property Name="Left" Value="503"/>
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[GreenArrowUp_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -258,7 +257,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="91"/>
+          <Property Name="Top" Value="90"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_78]"/>
           <Property Name="Width" Value="48"/>
         </Control>
@@ -273,7 +272,7 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="48"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="645"/>
+          <Property Name="Left" Value="568"/>
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[GreenArrowDown_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -281,7 +280,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="173"/>
+          <Property Name="Top" Value="91"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_81]"/>
           <Property Name="Width" Value="48"/>
         </Control>
@@ -296,7 +295,7 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="48"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="571"/>
+          <Property Name="Left" Value="645"/>
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[GreenArrowDown_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -304,7 +303,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="92"/>
+          <Property Name="Top" Value="188"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_97]"/>
           <Property Name="Width" Value="48"/>
         </Control>
@@ -319,7 +318,7 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="48"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="515"/>
+          <Property Name="Left" Value="645"/>
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[GreenArrowUp_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -641,7 +640,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.pusherDrive.cmdJogMinus]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.pusherDrive.cmdJogPlus]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -657,7 +656,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.pusherDrive.cmdJogPlus]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.pusherDrive.cmdJogMinus]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -742,7 +741,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.cmdRunConveyorP1]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.product_infeed.cmdRunConveyorsP1P2]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

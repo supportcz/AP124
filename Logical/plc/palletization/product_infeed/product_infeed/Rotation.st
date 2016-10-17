@@ -49,12 +49,6 @@ ACTION Rotation:
 				stateRotation := stateRotationUndefined;
 			END_IF
 			
-			IF diTrayInRotationZone THEN
-				alarmImagePalletization[26] := TRUE;
-				rotationForward := FALSE;
-				stateRotation := stateRotationMovingBack;
-			END_IF
-		
 		stateRotationForward:
 		
 			// command back 

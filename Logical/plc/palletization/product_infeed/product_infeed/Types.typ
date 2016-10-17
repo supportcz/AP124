@@ -54,6 +54,7 @@ TYPE
 		stateAutoPusherToRobotHead3,
 		stateAutoPusherToRobotHead4,
 		stateAutoPusherToRobotHead5,
-		stateAutoPusherToRobotHead6
+		stateAutoPusherToRobotHead6,
+		stateAutoPusherToRobotHead7
 		);
 END_TYPE
