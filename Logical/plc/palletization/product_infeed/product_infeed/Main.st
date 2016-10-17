@@ -137,18 +137,26 @@ PROGRAM _CYCLIC
 					actualRecipeIndexOld := dRecipes.actualRecipeIndex;
 					
 					nbOfTraysOnPallet := nbOfLayersOnPallet * dActualLayout.nbOfTrays;
+					
+					IF halfLayer THEN
+						nbOfTraysOnPallet := nbOfTraysOnPallet + halfLayerCount;
+					END_IF
 
 					//correct nbOfTraysInRobotHead
-					IF NOT robotHeadFull THEN
+					IF robotHeadFull THEN
+						nbOfTraysInRobotHead := nbOfTraysOnPallet + robotHeadCount;
+					ELSE
 						nbOfTraysInRobotHead := nbOfTraysOnPallet;
 					END_IF	
 					
 					//correct nbOfTraysOnTable
-					IF NOT tableFull THEN
+					IF tableFull THEN
+						nbOfTraysOnTable := nbOfTraysInRobotHead + tableCount;
+					ELSE
 						nbOfTraysOnTable := nbOfTraysInRobotHead;
 					END_IF				
 					
-					nbOfTraysBehindRotation := nbOfTraysOnTable + nbOfTraysOnP2;
+					nbOfTraysBehindRotation := nbOfTraysOnTable + onP2count;
 					
 					nbOfTraysOnConveyorP2 := nbOfTraysBehindRotation;
 					
@@ -334,20 +342,27 @@ PROGRAM _CYCLIC
 				END_IF
 				
 				//for start dialog
-				nbOfTraysOnP2 := nbOfTraysBehindRotation - nbOfTraysOnTable;
+				onP2count := nbOfTraysBehindRotation - nbOfTraysOnTable;
 			
-				//flag if table is full
-				IF nbOfTraysInRobotHead = nbOfTraysOnTable THEN
+				tableCount := nbOfTraysInRobotHead - nbOfTraysOnTable;
+				IF tableCount = 0 THEN
 					tableFull := FALSE;
 				ELSE
 					tableFull := TRUE;
 				END_IF
 
-				//flag if robot head is full
-				IF nbOfTraysOnPallet = nbOfTraysInRobotHead THEN
+				robotHeadCount := nbOfTraysOnPallet - nbOfTraysInRobotHead;
+				IF robotHeadCount = 0 THEN
 					robotHeadFull := FALSE;
 				ELSE
 					robotHeadFull := TRUE;
+				END_IF
+				
+				halfLayerCount := nbOfTraysOnPallet MOD dActualLayout.nbOfTrays;
+				IF halfLayerCount = 0 THEN
+					halfLayer := FALSE;
+				ELSE
+					halfLayer := TRUE;
 				END_IF
 				
 				nbOfLayersOnPallet := nbOfTraysOnPallet / dActualLayout.nbOfTrays;

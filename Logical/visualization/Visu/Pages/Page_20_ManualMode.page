@@ -76,10 +76,8 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x00001002" Name="Button_1">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapIndexDatapoint" Value="None"/>
           <Property Name="BitmapSource" Value="None"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_23]"/>
@@ -87,10 +85,7 @@
           <Property Name="Height" Value="57"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="24"/>
-          <Property Name="PressedBackColor" Value="253"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
-          <Property Name="PressedForeColor" Value="253"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[Manual_Mode]"/>
@@ -103,10 +98,8 @@
           <Property Name="Width" Value="135"/>
         </Control>
         <Control ClassId="0x00001002" Name="Button_2">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapIndexDatapoint" Value="None"/>
           <Property Name="BitmapSource" Value="None"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_34]"/>
@@ -114,10 +107,7 @@
           <Property Name="Height" Value="57"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="24"/>
-          <Property Name="PressedBackColor" Value="253"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
-          <Property Name="PressedForeColor" Value="253"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[Manual_Mode]"/>
@@ -130,10 +120,8 @@
           <Property Name="Width" Value="135"/>
         </Control>
         <Control ClassId="0x00001002" Name="Button_3">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapIndexDatapoint" Value="None"/>
           <Property Name="BitmapSource" Value="None"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_55]"/>
@@ -141,10 +129,7 @@
           <Property Name="Height" Value="57"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="24"/>
-          <Property Name="PressedBackColor" Value="253"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
-          <Property Name="PressedForeColor" Value="253"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
