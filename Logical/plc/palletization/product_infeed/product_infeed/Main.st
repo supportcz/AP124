@@ -75,23 +75,23 @@ PROGRAM _CYCLIC
 	
 			//detect tray on output of conveyor P1
 			IF TOF_TrayOnOutputP1.Q < trayOnInputP2old THEN
-				nbOfTraysOnConveyorP2 := nbOfTraysOnConveyorP2 + 1;
+				counterTraysOnConveyorP2 := counterTraysOnConveyorP2 + 1;
 				//reset timer
 				TON_TransitTime(IN := FALSE);
 			END_IF
 
 			//select next tray	
-			IF nbOfTraysOnConveyorP2 - firstTrayInLayer >= 0 AND nbOfTraysOnConveyorP2 - firstTrayInLayer < dActualLayout.nbOfTrays THEN
-				dNextTray ACCESS ADR(dActualLayout.tray[nbOfTraysOnConveyorP2 - firstTrayInLayer]); 
+			IF counterTraysOnConveyorP2 - firstTrayInLayer >= 0 AND counterTraysOnConveyorP2 - firstTrayInLayer < dActualLayout.nbOfTrays THEN
+				dNextTray ACCESS ADR(dActualLayout.tray[counterTraysOnConveyorP2 - firstTrayInLayer]); 
 			END_IF	
 
 			//detect tray behind roration
 			IF TOF_TrayBehindRotation.Q < trayBehindRotationOld THEN
-				nbOfTraysBehindRotation := nbOfTraysBehindRotation + 1;		
+				counterTraysBehindRotation := counterTraysBehindRotation + 1;		
 				
 				//select tray behind rotation
-				IF nbOfTraysBehindRotation - firstTrayInLayer > 0 AND nbOfTraysBehindRotation - firstTrayInLayer <= dActualLayout.nbOfTrays THEN
-					dTrayBehindRotation ACCESS ADR(dActualLayout.tray[nbOfTraysBehindRotation - firstTrayInLayer - 1]);
+				IF counterTraysBehindRotation - firstTrayInLayer > 0 AND counterTraysBehindRotation - firstTrayInLayer <= dActualLayout.nbOfTrays THEN
+					dTrayBehindRotation ACCESS ADR(dActualLayout.tray[counterTraysBehindRotation - firstTrayInLayer - 1]);
 				END_IF	
 
 
@@ -131,75 +131,31 @@ PROGRAM _CYCLIC
 					//initialize counters when program changes
 					IF dRecipes.actualRecipeIndex <> actualRecipeIndexOld THEN
 						nbOfLayersOnPallet := 0;
-						robotHeadFull := FALSE;
-						tableFull := FALSE;
+						nbOfTraysInHalfLayer := 0;
+						nbOfTraysInRobotHead := 0;
+						nbOfTraysOnTable := 0;
+						nbOfTraysOnP2 := 0;
 					END_IF
 					actualRecipeIndexOld := dRecipes.actualRecipeIndex;
 					
-					nbOfTraysOnPallet := nbOfLayersOnPallet * dActualLayout.nbOfTrays;
+					counterTraysOnPallet := nbOfLayersOnPallet * dActualLayout.nbOfTrays;
+					counterTraysOnPallet := counterTraysOnPallet + nbOfTraysInHalfLayer;
+					counterTraysInRobotHead := nbOfLayersOnPallet + nbOfTraysInRobotHead;
+					counterTraysOnTable := counterTraysInRobotHead + nbOfTraysOnTable;			
+					counterTraysBehindRotation := counterTraysOnTable + nbOfTraysOnP2;
 					
-					//get layout
-					actualLayerIndex := nbOfTraysOnPallet / dActualLayout.nbOfTrays;
-					dActualLayout ACCESS ADR(dRecipes.layout[dActualRecipe.layer[actualLayerIndex]]);
-					trayIndexWithinLayout := 0;
+					counterTraysOnConveyorP2 := counterTraysBehindRotation;
 					
-					//correct nbOfTraysOnPallet
-					IF halfLayer THEN
-						//find half layer
-						REPEAT
-							trayIndexWithinLayout := trayIndexWithinLayout + 1;
-						UNTIL 
-							dActualLayout.tray[trayIndexWithinLayout - 1].lastTray = lastTrayInHalfLayer 
-						END_REPEAT
-					END_IF
-					nbOfTraysOnPallet := nbOfTraysOnPallet + trayIndexWithinLayout;
-
-					//get layout
-//					actualLayerIndex := nbOfTraysOnPallet / dActualLayout.nbOfTrays;
-//					dActualLayout ACCESS ADR(dRecipes.layout[dActualRecipe.layer[actualLayerIndex]]);
-//					trayIndexWithinLayout := nbOfTraysOnPallet MOD dActualLayout.nbOfTrays;
-					
-					//correct nbOfTraysInRobotHead
-					IF robotHeadFull THEN
-						//find last tray
-						REPEAT
-							trayIndexWithinLayout := trayIndexWithinLayout + 1;
-						UNTIL 
-							dActualLayout.tray[trayIndexWithinLayout - 1].lastTray = lastTrayInHalfLayer OR dActualLayout.tray[trayIndexWithinLayout - 1].lastTray = lastTrayInLayer 
-						END_REPEAT
-					END_IF		
-					nbOfTraysInRobotHead := nbOfLayersOnPallet * dActualLayout.nbOfTrays + trayIndexWithinLayout;
-					
-					//get layout
-					actualLayerIndex := nbOfTraysInRobotHead / dActualLayout.nbOfTrays;
-					dActualLayout ACCESS ADR(dRecipes.layout[dActualRecipe.layer[actualLayerIndex]]);
-					trayIndexWithinLayout := trayIndexWithinLayout MOD dActualLayout.nbOfTrays;
-					
-					//correct nbOfTraysOnTable
-					IF tableFull THEN
-						//find last tray in row
-						REPEAT
-							trayIndexWithinLayout := trayIndexWithinLayout + 1;
-						UNTIL 
-							dActualLayout.tray[trayIndexWithinLayout - 1].lastTray = lastTrayInRow  
-						END_REPEAT						
-					END_IF				
-					nbOfTraysOnTable := nbOfTraysInRobotHead + trayIndexWithinLayout + 1;
-					
-					nbOfTraysBehindRotation := nbOfTraysOnTable + onP2count;
-					
-					nbOfTraysOnConveyorP2 := nbOfTraysBehindRotation;
-					
-					IF dActualLayout.nbOfTrays > 0 AND nbOfTraysBehindRotation > 0 THEN
-						actualLayerIndex := (nbOfTraysBehindRotation - 1) / dActualLayout.nbOfTrays;
+					IF dActualLayout.nbOfTrays > 0 AND counterTraysBehindRotation > 0 THEN
+						actualLayerIndex := (counterTraysBehindRotation - 1) / dActualLayout.nbOfTrays;
 					ELSE
 						actualLayerIndex := 0;						
 					END_IF
 					firstTrayInLayer := dActualLayout.nbOfTrays * actualLayerIndex; 
 					
 					//select tray behind rotation
-					IF nbOfTraysBehindRotation - firstTrayInLayer > 0 AND nbOfTraysBehindRotation - firstTrayInLayer <= dActualLayout.nbOfTrays THEN
-						dTrayBehindRotation ACCESS ADR(dActualLayout.tray[nbOfTraysBehindRotation - firstTrayInLayer - 1]);
+					IF counterTraysBehindRotation - firstTrayInLayer > 0 AND counterTraysBehindRotation - firstTrayInLayer <= dActualLayout.nbOfTrays THEN
+						dTrayBehindRotation ACCESS ADR(dActualLayout.tray[counterTraysBehindRotation - firstTrayInLayer - 1]);
 					END_IF	
 					
 					cmdRunConveyorP1 := TRUE;
@@ -244,7 +200,7 @@ PROGRAM _CYCLIC
 					IF NOT pusherDrive.cmdAbsolute THEN
 						
 						dTrayBehindRotation ACCESS ADR(nullTray);
-						nbOfTraysOnTable := nbOfTraysBehindRotation;
+						counterTraysOnTable := counterTraysBehindRotation;
 						
 						cmdRunConveyorP1 := TRUE;
 						cmdRunConveyorP2 := TRUE;	
@@ -296,21 +252,21 @@ PROGRAM _CYCLIC
 				stateAutoPusherToRobotHead2:
 					
 					//correct counters
-					IF nbOfTraysBehindRotation - firstTrayInLayer = dActualLayout.nbOfTrays THEN
+					IF counterTraysBehindRotation - firstTrayInLayer = dActualLayout.nbOfTrays THEN
 						//start new layer
 						actualLayerIndex := actualLayerIndex + 1;
 						IF actualLayerIndex = dActualRecipe.nbOfLayers THEN
 							//new pallet, reset counters
-							nbOfTraysOnPallet := 0;
-							nbOfTraysInRobotHead := 0;
-							nbOfTraysOnTable := 0;
-							nbOfTraysBehindRotation := 0;
-							nbOfTraysOnConveyorP2 := 0;
+							counterTraysOnPallet := 0;
+							counterTraysInRobotHead := 0;
+							counterTraysOnTable := 0;
+							counterTraysBehindRotation := 0;
+							counterTraysOnConveyorP2 := 0;
 							actualLayerIndex := 0;
 						END_IF
-						firstTrayInLayer := nbOfTraysBehindRotation;
+						firstTrayInLayer := counterTraysBehindRotation;
 						
-						nbOfTraysInRobotHead := nbOfTraysBehindRotation;
+						counterTraysInRobotHead := counterTraysBehindRotation;
 						
 					END_IF
 					stateAuto := stateAutoPusherToRobotHead3;
@@ -342,8 +298,8 @@ PROGRAM _CYCLIC
 				stateAutoPusherToRobotHead5:
 									
 					//correct counters
-					nbOfTraysOnTable := nbOfTraysBehindRotation;
-					nbOfTraysInRobotHead := nbOfTraysBehindRotation;
+					counterTraysOnTable := counterTraysBehindRotation;
+					counterTraysInRobotHead := counterTraysBehindRotation;
 					stateAuto := stateAutoPusherToRobotHead6;
 						
 				stateAutoPusherToRobotHead6:
@@ -361,39 +317,23 @@ PROGRAM _CYCLIC
 			
 			IF stateAuto > stateAutoStart THEN	
 				//control rotation only when no tray is in rotation zone
-				IF nbOfTraysBehindRotation = nbOfTraysOnConveyorP2 THEN
+				IF counterTraysBehindRotation = counterTraysOnConveyorP2 THEN
 					rotationForward := dNextTray.turnTray;
 				END_IF
 												
 				//check sensor error
 				TON_TransitTime(IN := TRUE, PT:=T#4s);
-				IF TON_TransitTime.Q AND nbOfTraysBehindRotation <> nbOfTraysOnConveyorP2 THEN
+				IF TON_TransitTime.Q AND counterTraysBehindRotation <> counterTraysOnConveyorP2 THEN
 					alarmImagePalletization[27] := TRUE;
 				END_IF
 				
 				//for start dialog
-				onP2count := nbOfTraysBehindRotation - nbOfTraysOnTable;
+				nbOfLayersOnPallet := counterTraysOnPallet / dActualLayout.nbOfTrays;
+				nbOfTraysInHalfLayer := counterTraysOnPallet MOD dActualLayout.nbOfTrays;
+				nbOfTraysInRobotHead := counterTraysInRobotHead - counterTraysOnPallet;
+				nbOfTraysOnTable := counterTraysOnTable - counterTraysInRobotHead;
+				nbOfTraysOnP2 := counterTraysBehindRotation - counterTraysOnTable;
 			
-				IF nbOfTraysOnTable = nbOfTraysInRobotHead THEN
-					tableFull := FALSE;
-				ELSE
-					tableFull := TRUE;
-				END_IF
-
-				IF nbOfTraysInRobotHead = nbOfTraysOnPallet THEN
-					robotHeadFull := FALSE;
-				ELSE
-					robotHeadFull := TRUE;
-				END_IF
-				
-				IF nbOfTraysOnPallet MOD dActualLayout.nbOfTrays = 0 THEN
-					halfLayer := FALSE;
-				ELSE
-					halfLayer := TRUE;
-				END_IF
-				
-				nbOfLayersOnPallet := nbOfTraysOnPallet / dActualLayout.nbOfTrays;
-
 			END_IF
 	END_CASE
 

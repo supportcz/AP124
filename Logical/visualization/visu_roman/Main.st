@@ -104,23 +104,23 @@ PROGRAM _CYCLIC
 	END_IF
 	
 	//start dialog
-	IF tableFull THEN
-		colorDataPointTable := 0;
-	ELSE
-		colorDataPointTable := 1;
-	END_IF
+//	IF tableFull THEN
+//		colorDataPointTable := 0;
+//	ELSE
+//		colorDataPointTable := 1;
+//	END_IF
 	
-	IF robotHeadFull THEN
-		colorDataPointRobot := 0;
-	ELSE
-		colorDataPointRobot := 1;
-	END_IF
+//	IF robotHeadFull THEN
+//		colorDataPointRobot := 0;
+//	ELSE
+//		colorDataPointRobot := 1;
+//	END_IF
 	
-	IF halfLayer THEN
-		colorDataPointHalfPallet := 0;
-	ELSE
-		colorDataPointHalfPallet := 1;
-	END_IF
+//	IF halfLayer THEN
+//		colorDataPointHalfPallet := 0;
+//	ELSE
+//		colorDataPointHalfPallet := 1;
+//	END_IF
 	
 END_PROGRAM
 
