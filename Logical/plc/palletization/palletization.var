@@ -18,8 +18,9 @@ VAR RETAIN
 	nbOfTraysOnTable : INT;
 END_VAR
 VAR
-	palletOnConveyorP13 : BOOL; (*VISU:pallet lies on conveyor*)
-	palletOnConveyorP14 : BOOL;
-	palletOnConveyorP15 : BOOL;
 	pusherDrive : PusherDrive;
+	statePalletP12 : StatePallet;
+	statePalletP13 : StatePallet;
+	statePalletP14 : StatePallet;
+	statePalletP15 : StatePallet;
 END_VAR

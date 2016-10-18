@@ -4,6 +4,8 @@ VAR
 	cmdMovePalletP12P13 : BOOL;
 	cmdMovePalletP13P14 : BOOL;
 	cmdMovePalletP14P15 : BOOL;
+	diMotorProtectionP12 : BOOL;
+	diMotorProtectionP13 : BOOL;
 	diPalletSlowDownP14 : BOOL;
 	diPalletStopP13 : BOOL;
 	diPalletStopP14 : BOOL;
@@ -11,16 +13,8 @@ VAR
 	doConveyorP12 : BOOL; (*starts conveyor P12*)
 	doConveyorP13 : BOOL;
 	lightCurtainP15 : BOOL;
-	stateConveyorP12P13 : StateConveyor;
-	stateConveyorP13P14 : StateConveyor;
-	stateConveyorP14P15 : StateConveyor;
+	lightCurtainP17 : BOOL;
 	TON_ConveyorP12P13 : TON;
 	TON_ConveyorP13P14 : TON;
 	TON_ConveyorP14P15 : TON;
-	lightCurtainP17 : BOOL;
-	palletOnConveyorP13old : BOOL;
-	palletOnConveyorP14old : BOOL;
-	palletOnConveyorP15old : BOOL;
-	diMotorProtectionP12 : BOOL;
-	diMotorProtectionP13 : BOOL;
 END_VAR

@@ -57,7 +57,7 @@ PROGRAM _CYCLIC
 							
 				stateAutoWaitForNoPallet:
 					
-					IF palletOnConveyorP12 = palletNotPresent AND NOT magazineEmpty THEN
+					IF statePalletP12 = palletNotPresent AND NOT magazineEmpty THEN
 						stateAuto := stateAutoMoveToLowerPosition;
 					END_IF
 				
@@ -114,7 +114,7 @@ PROGRAM _CYCLIC
 
 				stateAutoDetectPalletOnConveyor:
 					
-					IF palletOnConveyorP12 = palletNotPresent THEN
+					IF statePalletP12 = palletNotPresent THEN
 						magazineEmpty := TRUE;
 					END_IF
 					stateAuto := stateAutoWaitForNoPallet;
@@ -139,7 +139,7 @@ PROGRAM _CYCLIC
 	
 	//detect pallet on conveyor
 	IF diPalletOnConveyorP12 AND stateMagazine = stateUpperPosition THEN
-		palletOnConveyorP12 := palletPresent;
+		statePalletP12 := palletPresent;
 	END_IF
 	
 	//LED P11

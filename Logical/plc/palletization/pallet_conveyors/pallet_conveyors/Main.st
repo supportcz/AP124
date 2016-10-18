@@ -16,15 +16,15 @@ PROGRAM _CYCLIC
 
 		modePalletizationAuto:
 	
-			IF palletOnConveyorP12 = palletPresent AND NOT palletOnConveyorP13 THEN
+			IF statePalletP12 = palletPresent AND statePalletP13 = palletNotPresent THEN
 				cmdMovePalletP12P13 := TRUE;
 			END_IF
 
-			IF palletOnConveyorP13 AND NOT palletOnConveyorP14 THEN
+			IF statePalletP13 = palletPresent AND statePalletP14 = palletNotPresent THEN
 				cmdMovePalletP13P14 := TRUE;
 			END_IF
 
-			IF palletOnConveyorP14 AND NOT palletOnConveyorP15 THEN
+			IF statePalletP14 = palletPresent AND statePalletP15 = palletNotPresent THEN
 				cmdMovePalletP14P15 := TRUE;
 			END_IF
 
@@ -33,8 +33,8 @@ PROGRAM _CYCLIC
 	
 	//conveyor P12 + P13
 	ConveyorP12P13Control; 
-	ConveyorP13P14Control; 
-	ConveyorP14P15Control; 
+//	ConveyorP13P14Control; 
+//	ConveyorP14P15Control; 
 
 	alarmImagePalletization[5] := NOT lightCurtainP15;
 	alarmImagePalletization[8] := NOT lightCurtainP17;

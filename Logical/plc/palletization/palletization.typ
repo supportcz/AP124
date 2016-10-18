@@ -19,4 +19,10 @@ TYPE
 		modePalletizationManual,
 		modePalletizationAuto
 		);
+	StatePallet : 
+		(
+		palletNotPresent,
+		palletPresent,
+		palletMoving
+		);
 END_TYPE

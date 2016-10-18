@@ -2,68 +2,70 @@
 ACTION ConveyorP12P13Control: 
 
 	IF modePalletization = modePalletizationNotReadyToStart THEN
-		stateConveyorP12P13 := stateConveyorStop;
+		statePalletP12 := palletNotPresent;
 	END_IF
-		
-	//detect pallet on conveyor
-	IF diPalletStopP13 THEN
-		palletOnConveyorP13 := TRUE;
-	END_IF
-	
-	CASE stateConveyorP12P13 OF
-		
-		stateConveyorStop:
 			
-			cmdMovePalletP12P13 := FALSE;
+	CASE statePalletP12 OF
+		
+		palletNotPresent:
+			
 			doConveyorP12 := FALSE;
 			doConveyorP13 := FALSE;
-			IF modePalletization <> modePalletizationNotReadyToStart THEN
-				stateConveyorP12P13 := stateConveyorWait;
-			END_IF
-		
-		stateConveyorWait:
-		
+			
 			IF cmdMovePalletP12P13 THEN
-				IF palletOnConveyorP13 AND NOT diReset THEN
+				IF statePalletP13 = palletPresent AND NOT diReset THEN
 					alarmImagePalletization[1] := TRUE;
-					stateConveyorP12P13 := stateConveyorStop;
+					cmdMovePalletP12P13 := FALSE;
 				ELSE
 					TON_ConveyorP12P13(IN := FALSE);
-					stateConveyorP12P13 := stateConveyorMoving;
+					statePalletP12 := palletMoving;
+				END_IF
+			END_IF
+						
+			IF diPalletStopP13 THEN
+				alarmImagePalletization[9] := TRUE;
+			END_IF	
+		
+		palletPresent:
+		
+			doConveyorP12 := FALSE;
+			doConveyorP13 := FALSE;
+
+			IF cmdMovePalletP12P13 THEN
+				IF statePalletP13 = palletPresent AND NOT diReset THEN
+					alarmImagePalletization[1] := TRUE;
+//					statePalletP12 := stateConveyorStop;
+				ELSE
+					TON_ConveyorP12P13(IN := FALSE);
+					statePalletP12 := palletMoving;
 				END_IF
 			END_IF	
 			
-			IF palletOnConveyorP13 > palletOnConveyorP13old THEN
-				alarmImagePalletization[9] := TRUE;
-				stateConveyorP12P13 := stateConveyorStop;
-			END_IF				
 		
-		stateConveyorMoving:
+		palletMoving:
 			
-			doConveyorP12 := TRUE;
-			doConveyorP13 := TRUE;
-
-			IF NOT cmdMovePalletP12P13 THEN
-				stateConveyorP12P13 := stateConveyorStop;
+			IF cmdMovePalletP12P13 THEN
+				doConveyorP12 := TRUE;
+				doConveyorP13 := TRUE;
+			ELSE
+				statePalletP12 := palletNotPresent;
 			END_IF	
-				
+			
 			//sensor reached?
-			IF palletOnConveyorP13 AND NOT diReset THEN
-				palletOnConveyorP12 := palletNotPresent;
-				stateConveyorP12P13 := stateConveyorStop;
+			IF diPalletStopP13 AND NOT diReset THEN
+				statePalletP13 := palletPresent;
+				statePalletP12 := palletNotPresent;
 			END_IF	
 			
 			//timeout?
 			TON_ConveyorP12P13(IN := TRUE, PT := T#12s);
 			IF TON_ConveyorP12P13.Q AND NOT diReset THEN
 				alarmImagePalletization[0] := TRUE;
-				stateConveyorP12P13 := stateConveyorStop;
+				cmdMovePalletP12P13 := FALSE;
 			END_IF
 		
 	END_CASE
 
-
-	palletOnConveyorP13old := palletOnConveyorP13;
 	
 	alarmImagePalletization[12] := NOT diMotorProtectionP12;
 	
