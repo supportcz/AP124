@@ -97,7 +97,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="13"/>
-          <Property Name="Left" Value="531"/>
+          <Property Name="Left" Value="533"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="169"/>
           <Property Name="Width" Value="6"/>
@@ -107,7 +107,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="504"/>
+          <Property Name="Left" Value="506"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="181"/>
           <Property Name="Width" Value="99"/>
@@ -127,7 +127,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="13"/>
-          <Property Name="Left" Value="578"/>
+          <Property Name="Left" Value="580"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="169"/>
           <Property Name="Width" Value="6"/>
@@ -517,22 +517,19 @@
           <Property Name="Width" Value="135"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_1">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="AlignmentVertical" Value="Center"/>
-          <Property Name="BackColor" Value="15"/>
           <Property Name="Border" Value="Source[local].Border[Mp_SunkenNGgray]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpDefault]"/>
           <Property Name="ForeColor" Value="255"/>
           <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="705"/>
+          <Property Name="Left" Value="700"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
           <Property Name="MinValue" Value="None"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
+          <Property Name="SimulationValue" Value="5"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="142"/>
           <Property Name="UnitText" Value="Abbreviation"/>
@@ -541,7 +538,7 @@
           <Property Name="UnitTextWidth" Value="0"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.product_infeed.pusher_drive.actualPosition]"/>
           <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="68"/>
+          <Property Name="Width" Value="73"/>
         </Control>
         <Control ClassId="0x00001002" Name="Button_14">
           <Property Name="Bitmap" Value="Source[local].Bitmap[GreenArrowRight]"/>

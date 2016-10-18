@@ -201,7 +201,7 @@
             <Property Name="DPLimit" Value="Default"/>
             <Property Name="Description" Value=""/>
             <Property Name="PLCType" Value="DINT"/>
-            <Property Name="PLCUnit" Value="Source[relative:UnitGroup].Unit[Millimeter]"/>
+            <Property Name="PLCUnit" Value="Source[relative:UnitGroup].Unit[Milimeter]"/>
             <Property Name="UnitGroup" Value="Source[global].UnitGroup[Length]"/>
             <Property Name="UpdateTime" Value="Default"/>
             <Property Name="UserID" Value="None"/>
@@ -284,11 +284,14 @@
             <DataPoint Name="actualPosition">
               <Property Name="ConnectedBySharedResource" Value="False"/>
               <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+              <Property Name="DPLimit" Value="Default"/>
               <Property Name="Description" Value=""/>
               <Property Name="PLCType" Value="DINT"/>
+              <Property Name="PLCUnit" Value="Source[relative:UnitGroup].Unit[Milimeter]"/>
+              <Property Name="UnitGroup" Value="Source[global].UnitGroup[Length]"/>
               <Property Name="UpdateTime" Value="Default"/>
               <Property Name="UserID" Value="None"/>
-              <Property Name="VCType" Value="INTEGER"/>
+              <Property Name="VCType" Value="SCALED"/>
             </DataPoint>
           </Folder>
         </Folder>
