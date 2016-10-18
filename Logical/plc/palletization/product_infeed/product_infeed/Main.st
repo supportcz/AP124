@@ -344,14 +344,14 @@ PROGRAM _CYCLIC
 				//for start dialog
 				onP2count := nbOfTraysBehindRotation - nbOfTraysOnTable;
 			
-				tableCount := nbOfTraysInRobotHead - nbOfTraysOnTable;
+				tableCount := nbOfTraysOnTable - nbOfTraysInRobotHead;
 				IF tableCount = 0 THEN
 					tableFull := FALSE;
 				ELSE
 					tableFull := TRUE;
 				END_IF
 
-				robotHeadCount := nbOfTraysOnPallet - nbOfTraysInRobotHead;
+				robotHeadCount := nbOfTraysInRobotHead - nbOfTraysOnPallet;
 				IF robotHeadCount = 0 THEN
 					robotHeadFull := FALSE;
 				ELSE
