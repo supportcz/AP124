@@ -139,21 +139,6 @@
           <Property Name="Top" Value="217"/>
           <Property Name="Width" Value="431"/>
         </Control>
-        <Control ClassId="0x00001004" Name="Text_8">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="36"/>
-          <Property Name="IndexDatapoint" Value="None"/>
-          <Property Name="Left" Value="54"/>
-          <Property Name="SimulationIndex" Value="10"/>
-          <Property Name="SimulationValue" Value=""/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[StatusMessage]"/>
-          <Property Name="TextIndexOffset" Value="21"/>
-          <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="275"/>
-          <Property Name="Width" Value="183"/>
-        </Control>
         <Control ClassId="0x00001002" Name="Button_7">
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapAlignmentHorizontal" Value="Center"/>

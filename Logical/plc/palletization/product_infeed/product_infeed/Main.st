@@ -138,23 +138,53 @@ PROGRAM _CYCLIC
 					
 					nbOfTraysOnPallet := nbOfLayersOnPallet * dActualLayout.nbOfTrays;
 					
+					//get layout
+					actualLayerIndex := nbOfTraysOnPallet / dActualLayout.nbOfTrays;
+					dActualLayout ACCESS ADR(dRecipes.layout[dActualRecipe.layer[actualLayerIndex]]);
+					trayIndexWithinLayout := 0;
+					
+					//correct nbOfTraysOnPallet
 					IF halfLayer THEN
-						nbOfTraysOnPallet := nbOfTraysOnPallet + halfLayerCount;
+						//find half layer
+						REPEAT
+							trayIndexWithinLayout := trayIndexWithinLayout + 1;
+						UNTIL 
+							dActualLayout.tray[trayIndexWithinLayout - 1].lastTray = lastTrayInHalfLayer 
+						END_REPEAT
 					END_IF
+					nbOfTraysOnPallet := nbOfTraysOnPallet + trayIndexWithinLayout;
 
+					//get layout
+//					actualLayerIndex := nbOfTraysOnPallet / dActualLayout.nbOfTrays;
+//					dActualLayout ACCESS ADR(dRecipes.layout[dActualRecipe.layer[actualLayerIndex]]);
+//					trayIndexWithinLayout := nbOfTraysOnPallet MOD dActualLayout.nbOfTrays;
+					
 					//correct nbOfTraysInRobotHead
 					IF robotHeadFull THEN
-						nbOfTraysInRobotHead := nbOfTraysOnPallet + robotHeadCount;
-					ELSE
-						nbOfTraysInRobotHead := nbOfTraysOnPallet;
-					END_IF	
+						//find last tray
+						REPEAT
+							trayIndexWithinLayout := trayIndexWithinLayout + 1;
+						UNTIL 
+							dActualLayout.tray[trayIndexWithinLayout - 1].lastTray = lastTrayInHalfLayer OR dActualLayout.tray[trayIndexWithinLayout - 1].lastTray = lastTrayInLayer 
+						END_REPEAT
+					END_IF		
+					nbOfTraysInRobotHead := nbOfLayersOnPallet * dActualLayout.nbOfTrays + trayIndexWithinLayout;
+					
+					//get layout
+					actualLayerIndex := nbOfTraysInRobotHead / dActualLayout.nbOfTrays;
+					dActualLayout ACCESS ADR(dRecipes.layout[dActualRecipe.layer[actualLayerIndex]]);
+					trayIndexWithinLayout := trayIndexWithinLayout MOD dActualLayout.nbOfTrays;
 					
 					//correct nbOfTraysOnTable
 					IF tableFull THEN
-						nbOfTraysOnTable := nbOfTraysInRobotHead + tableCount;
-					ELSE
-						nbOfTraysOnTable := nbOfTraysInRobotHead;
+						//find last tray in row
+						REPEAT
+							trayIndexWithinLayout := trayIndexWithinLayout + 1;
+						UNTIL 
+							dActualLayout.tray[trayIndexWithinLayout - 1].lastTray = lastTrayInRow  
+						END_REPEAT						
 					END_IF				
+					nbOfTraysOnTable := nbOfTraysInRobotHead + trayIndexWithinLayout + 1;
 					
 					nbOfTraysBehindRotation := nbOfTraysOnTable + onP2count;
 					
@@ -344,22 +374,19 @@ PROGRAM _CYCLIC
 				//for start dialog
 				onP2count := nbOfTraysBehindRotation - nbOfTraysOnTable;
 			
-				tableCount := nbOfTraysOnTable - nbOfTraysInRobotHead;
-				IF tableCount = 0 THEN
+				IF nbOfTraysOnTable = nbOfTraysInRobotHead THEN
 					tableFull := FALSE;
 				ELSE
 					tableFull := TRUE;
 				END_IF
 
-				robotHeadCount := nbOfTraysInRobotHead - nbOfTraysOnPallet;
-				IF robotHeadCount = 0 THEN
+				IF nbOfTraysInRobotHead = nbOfTraysOnPallet THEN
 					robotHeadFull := FALSE;
 				ELSE
 					robotHeadFull := TRUE;
 				END_IF
 				
-				halfLayerCount := nbOfTraysOnPallet MOD dActualLayout.nbOfTrays;
-				IF halfLayerCount = 0 THEN
+				IF nbOfTraysOnPallet MOD dActualLayout.nbOfTrays = 0 THEN
 					halfLayer := FALSE;
 				ELSE
 					halfLayer := TRUE;
