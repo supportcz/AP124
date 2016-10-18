@@ -21,30 +21,6 @@
       <Property Name="VisibilityMode" Value="Normal"/>
       <Property Name="Z-Order" Value="0"/>
     </LayerRef>
-    <Layer Name="FrameLayer">
-      <Property Name="BackColor" Value="9"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="EditingMode" Value="Frozen"/>
-      <Property Name="Height" Value="480"/>
-      <Property Name="Left" Value="0"/>
-      <Property Name="OutlineColor" Value="0"/>
-      <Property Name="OutlineDisplayControl" Value="False"/>
-      <Property Name="OutlineDisplayName" Value="True"/>
-      <Property Name="OutlineHatched" Value="False"/>
-      <Property Name="StatusDatapoint" Value="None"/>
-      <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Normal"/>
-      <Property Name="Width" Value="800"/>
-      <Property Name="Z-Order" Value="1"/>
-      <TextGroup>
-        <TextLayer LanguageId="en"/>
-        <TextLayer LanguageId="cs"/>
-        <TextLayer LanguageId="fr"/>
-        <IndexMap/>
-      </TextGroup>
-      <Controls/>
-      <KeyMapping/>
-    </Layer>
     <Layer Name="Default">
       <Property Name="BackColor" Value="9"/>
       <Property Name="Description" Value=""/>
@@ -59,7 +35,7 @@
       <Property Name="Top" Value="0"/>
       <Property Name="VisibilityMode" Value="Normal"/>
       <Property Name="Width" Value="800"/>
-      <Property Name="Z-Order" Value="2"/>
+      <Property Name="Z-Order" Value="1"/>
       <TextGroup>
         <TextLayer LanguageId="en">
           <Text ID="175928" Value="Current PW:"/>
@@ -1596,7 +1572,7 @@
       <Property Name="OutlineHatched" Value="False"/>
       <Property Name="Top" Value="0"/>
       <Property Name="VisibilityMode" Value="Normal"/>
-      <Property Name="Z-Order" Value="3"/>
+      <Property Name="Z-Order" Value="2"/>
     </LayerRef>
   </Layers>
   <MovementOrder>

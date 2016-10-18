@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="SRC_RemoteControlStatus">
+  <Property Name="Description" Value="Texts for remote control status"/>
+  <Property Name="Index" Value="20"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="182936" Value="The last received command was valid and is being executed"/>
+    <Text ID="182937" Value="HMI command was executed with errors (Logger)"/>
+    <Text ID="182938" Value="Remote command was executed successfully (Logger)"/>
+    <Text ID="182939" Value="Remote command was executed with errors (Logger)"/>
+    <Text ID="182940" Value="The command is unknown"/>
+    <Text ID="182941" Value="The ENTER command in the Data field is unknown"/>
+    <Text ID="182942" Value="Remote control is not activated via the SafeDESIGNER or application is missing"/>
+    <Text ID="182943" Value="Incorrect password"/>
+    <Text ID="182944" Value="Remote Control State Machine is not in IDLE (last command still being processed)"/>
+    <Text ID="182945" Value="Locked by HMI (command activated via rotary switch and ENTER button)"/>
+    <Text ID="182946" Value="SK-XCNG command not authorized"/>
+    <Text ID="182947" Value="FW-ACKN command not authorized"/>
+    <Text ID="182948" Value="1 to N modules exchanged command not authorized"/>
+    <Text ID="182949" Value="SK-XCNG command cannot be executed, SafeKEY was not exchanged"/>
+    <Text ID="182950" Value="FW-ACKN command cannot be executed, different Firmware not found"/>
+    <Text ID="182951" Value="1 module exchanged command cannot be executed, no modules or multiple modules were exchanged"/>
+    <Text ID="182952" Value="2 modules exchanged command cannot be executed, fewer or more than two modules were exchanged"/>
+    <Text ID="182953" Value="3 modules exchanged command cannot be executed, fewer or more than three modules were"/>
+    <Text ID="182954" Value="4 modules exchanged command cannot be executed, fewer or more than four modules were exchanged"/>
+    <Text ID="182955" Value="N modules exchanged command cannot be executed, fewer or more than five modules were exchanged"/>
+    <Text ID="182956" Value="SK-CONTINUE command cannot be executed, SK-COPY not started or time for"/>
+    <Text ID="182957" Value="ENTER command not possible, SK-XCNG required"/>
+    <Text ID="182958" Value="SK-FORMAT command is being processed, no other commands can be sent at this time"/>
+    <Text ID="182959" Value="SK-COPY command is being processed, no other commands can be sent at this time"/>
+    <Text ID="182960" Value="SK-XCNG command is being processed, no other commands can be sent at this time"/>
+    <Text ID="182961" Value="1 to N modules exchanged command is being processed, no other commands can be sent at this time"/>
+    <Text ID="182962" Value="A SCAN is being executed, no other commands can be sent at this time"/>
+    <Text ID="182963" Value="Remote status send failed (Logger)"/>
+    <Text ID="182964" Value="HMI command was executed successfully (Logger)"/>
+    <Text ID="182965" Value="Incorrect length of the 0x5000 command (change password)"/>
+    <Text ID="182966" Value="Incorrect length of the command (for commands other than 0x5000)"/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="182936" Value=""/>
+    <Text ID="182937" Value=""/>
+    <Text ID="182938" Value=""/>
+    <Text ID="182939" Value=""/>
+    <Text ID="182940" Value=""/>
+    <Text ID="182941" Value=""/>
+    <Text ID="182942" Value=""/>
+    <Text ID="182943" Value=""/>
+    <Text ID="182944" Value=""/>
+    <Text ID="182945" Value=""/>
+    <Text ID="182946" Value=""/>
+    <Text ID="182947" Value=""/>
+    <Text ID="182948" Value=""/>
+    <Text ID="182949" Value=""/>
+    <Text ID="182950" Value=""/>
+    <Text ID="182951" Value=""/>
+    <Text ID="182952" Value=""/>
+    <Text ID="182953" Value=""/>
+    <Text ID="182954" Value=""/>
+    <Text ID="182955" Value=""/>
+    <Text ID="182956" Value=""/>
+    <Text ID="182957" Value=""/>
+    <Text ID="182958" Value=""/>
+    <Text ID="182959" Value=""/>
+    <Text ID="182960" Value=""/>
+    <Text ID="182961" Value=""/>
+    <Text ID="182962" Value=""/>
+    <Text ID="182963" Value=""/>
+    <Text ID="182964" Value=""/>
+    <Text ID="182965" Value=""/>
+    <Text ID="182966" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="182936" Value=""/>
+    <Text ID="182937" Value=""/>
+    <Text ID="182938" Value=""/>
+    <Text ID="182939" Value=""/>
+    <Text ID="182940" Value=""/>
+    <Text ID="182941" Value=""/>
+    <Text ID="182942" Value=""/>
+    <Text ID="182943" Value=""/>
+    <Text ID="182944" Value=""/>
+    <Text ID="182945" Value=""/>
+    <Text ID="182946" Value=""/>
+    <Text ID="182947" Value=""/>
+    <Text ID="182948" Value=""/>
+    <Text ID="182949" Value=""/>
+    <Text ID="182950" Value=""/>
+    <Text ID="182951" Value=""/>
+    <Text ID="182952" Value=""/>
+    <Text ID="182953" Value=""/>
+    <Text ID="182954" Value=""/>
+    <Text ID="182955" Value=""/>
+    <Text ID="182956" Value=""/>
+    <Text ID="182957" Value=""/>
+    <Text ID="182958" Value=""/>
+    <Text ID="182959" Value=""/>
+    <Text ID="182960" Value=""/>
+    <Text ID="182961" Value=""/>
+    <Text ID="182962" Value=""/>
+    <Text ID="182963" Value=""/>
+    <Text ID="182964" Value=""/>
+    <Text ID="182965" Value=""/>
+    <Text ID="182966" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="182936" Value="0"/>
+    <Index ID="182937" Value="2"/>
+    <Index ID="182938" Value="3"/>
+    <Index ID="182939" Value="4"/>
+    <Index ID="182940" Value="5"/>
+    <Index ID="182941" Value="6"/>
+    <Index ID="182942" Value="7"/>
+    <Index ID="182943" Value="8"/>
+    <Index ID="182944" Value="9"/>
+    <Index ID="182945" Value="10"/>
+    <Index ID="182946" Value="11"/>
+    <Index ID="182947" Value="12"/>
+    <Index ID="182948" Value="13"/>
+    <Index ID="182949" Value="14"/>
+    <Index ID="182950" Value="15"/>
+    <Index ID="182951" Value="16"/>
+    <Index ID="182952" Value="17"/>
+    <Index ID="182953" Value="18"/>
+    <Index ID="182954" Value="19"/>
+    <Index ID="182955" Value="20"/>
+    <Index ID="182956" Value="21"/>
+    <Index ID="182957" Value="22"/>
+    <Index ID="182958" Value="23"/>
+    <Index ID="182959" Value="24"/>
+    <Index ID="182960" Value="25"/>
+    <Index ID="182961" Value="26"/>
+    <Index ID="182962" Value="27"/>
+    <Index ID="182963" Value="28"/>
+    <Index ID="182964" Value="1"/>
+    <Index ID="182965" Value="29"/>
+    <Index ID="182966" Value="30"/>
+  </IndexMap>
+</TextGroup>

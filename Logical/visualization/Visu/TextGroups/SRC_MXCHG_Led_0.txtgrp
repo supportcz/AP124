@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="SRC_MXCHG_Led_0">
+  <Property Name="Description" Value="Texts for MXCHG LED"/>
+  <Property Name="Index" Value="15"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="182839" Value="Module missing"/>
+    <Text ID="182840" Value="Modules OK"/>
+    <Text ID="182841" Value="1 module exchang."/>
+    <Text ID="182842" Value="2 modules exchang."/>
+    <Text ID="182843" Value="3 modules exchang."/>
+    <Text ID="182844" Value="4 modules exchang."/>
+    <Text ID="182845" Value="n modules exchang."/>
+    <Text ID="182846" Value=""/>
+    <Text ID="182847" Value="LED test activ"/>
+    <Text ID="182848" Value="Scanning"/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="182839" Value=""/>
+    <Text ID="182840" Value=""/>
+    <Text ID="182841" Value=""/>
+    <Text ID="182842" Value=""/>
+    <Text ID="182843" Value=""/>
+    <Text ID="182844" Value=""/>
+    <Text ID="182845" Value=""/>
+    <Text ID="182846" Value=""/>
+    <Text ID="182847" Value=""/>
+    <Text ID="182848" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="182839" Value=""/>
+    <Text ID="182840" Value=""/>
+    <Text ID="182841" Value=""/>
+    <Text ID="182842" Value=""/>
+    <Text ID="182843" Value=""/>
+    <Text ID="182844" Value=""/>
+    <Text ID="182845" Value=""/>
+    <Text ID="182846" Value=""/>
+    <Text ID="182847" Value=""/>
+    <Text ID="182848" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="182839" Value="20"/>
+    <Index ID="182840" Value="10"/>
+    <Index ID="182841" Value="1"/>
+    <Index ID="182842" Value="2"/>
+    <Index ID="182843" Value="3"/>
+    <Index ID="182844" Value="4"/>
+    <Index ID="182845" Value="5"/>
+    <Index ID="182846" Value="0"/>
+    <Index ID="182847" Value="40"/>
+    <Index ID="182848" Value="30"/>
+  </IndexMap>
+</TextGroup>

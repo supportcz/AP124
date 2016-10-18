@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="SRC_RE_Led_0">
+  <Property Name="Description" Value="Texts for RE LED"/>
+  <Property Name="Index" Value="19"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="182895" Value="Offline"/>
+    <Text ID="182896" Value="No Application"/>
+    <Text ID="182897" Value="Loading"/>
+    <Text ID="182898" Value="Stop [Safe]"/>
+    <Text ID="182899" Value="Run [Safe]"/>
+    <Text ID="182900" Value="Halt [Debug]"/>
+    <Text ID="182901" Value="Stop [Debug]"/>
+    <Text ID="182902" Value="Run [Debug]"/>
+    <Text ID="182903" Value="No Execution"/>
+    <Text ID="182904" Value="Invalid"/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="182895" Value=""/>
+    <Text ID="182896" Value=""/>
+    <Text ID="182897" Value=""/>
+    <Text ID="182898" Value=""/>
+    <Text ID="182899" Value=""/>
+    <Text ID="182900" Value=""/>
+    <Text ID="182901" Value=""/>
+    <Text ID="182902" Value=""/>
+    <Text ID="182903" Value=""/>
+    <Text ID="182904" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="182895" Value=""/>
+    <Text ID="182896" Value=""/>
+    <Text ID="182897" Value=""/>
+    <Text ID="182898" Value=""/>
+    <Text ID="182899" Value=""/>
+    <Text ID="182900" Value=""/>
+    <Text ID="182901" Value=""/>
+    <Text ID="182902" Value=""/>
+    <Text ID="182903" Value=""/>
+    <Text ID="182904" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="182895" Value="255"/>
+    <Index ID="182896" Value="25"/>
+    <Index ID="182897" Value="51"/>
+    <Index ID="182898" Value="85"/>
+    <Index ID="182899" Value="102"/>
+    <Index ID="182900" Value="153"/>
+    <Index ID="182901" Value="170"/>
+    <Index ID="182902" Value="204"/>
+    <Index ID="182903" Value="240"/>
+    <Index ID="182904" Value="0"/>
+  </IndexMap>
+</TextGroup>

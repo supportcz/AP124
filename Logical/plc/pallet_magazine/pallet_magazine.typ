@@ -1,5 +1,11 @@
 
 TYPE
+	PalletStatus : 
+		(
+		palletNotPresent,
+		palletPresent,
+		palletMoving
+		);
 	ModeMagazine : 
 		(
 		modeMagazineNotReadyToStart,

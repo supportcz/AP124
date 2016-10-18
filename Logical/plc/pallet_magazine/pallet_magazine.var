@@ -5,5 +5,5 @@ VAR
 	cmdMagazineManual : BOOL;
 	magazineEmpty : BOOL;
 	modeMagazine : ModeMagazine;
-	palletOnConveyorP12 : BOOL; (*VISU:pallet lies on conveyor*)
+	palletOnConveyorP12 : PalletStatus; (*VISU:pallet lies on conveyor*)
 END_VAR

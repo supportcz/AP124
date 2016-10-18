@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="SRC_MessageBoxText">
+  <Property Name="Description" Value="Texts for message box"/>
+  <Property Name="Index" Value="18"/>
+  <TextSnippets>
+    <TextSnippet ClassId="0x00002002" Name="ApplicationCRC">
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.AsSafetySolution.SafetySample.visuApplicationCRC]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+    </TextSnippet>
+  </TextSnippets>
+  <TextLayer LanguageId="en">
+    <Text ID="182873" Value="Do you really want to format the SafeKEY?"/>
+    <Text ID="182874" Value="Do you really want to acknowledge a new SafeKEY? SafeLOGIC will reboot afterwards."/>
+    <Text ID="182875" Value="Do you really want to acknowledge that 1 module was exchanged?"/>
+    <Text ID="182876" Value="Do you really want to acknowledge that 2 modules were exchanged?"/>
+    <Text ID="182877" Value="Do you really want to acknowledge that 3 modules were exchanged?"/>
+    <Text ID="182878" Value="Do you really want to acknowledge that 4 modules were exchanged?"/>
+    <Text ID="182879" Value="Do you really want to acknowledge that more than 4 modules were exchanged?"/>
+    <Text ID="182880" Value="Do you really want to clear all additional downloaded data?"/>
+    <Text ID="182881" Value="Do you really want to acknowledge a new firmware? SafeLOGIC will reboot afterwards."/>
+    <Text ID="182882" Value="Do you really want to restart the SafeLOGIC?"/>
+    <Text ID="182883" Value="Do you really want to unlock the application with CRC {ApplicationCRC}?\n\n\nIf you cancel the process the current application on the SafeLOGIC is destroyed and you have to download a new application - the SafeLOGIC will reboot afterwards."/>
+    <Text ID="182884" Value="Do you really want to unlock the data?\n\n\nIf you cancel the process the current data file on the SafeLOGIC is destroyed and you have to download a data file - the SafeLOGIC will reboot afterwards."/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="182873" Value=""/>
+    <Text ID="182874" Value=""/>
+    <Text ID="182875" Value=""/>
+    <Text ID="182876" Value=""/>
+    <Text ID="182877" Value=""/>
+    <Text ID="182878" Value=""/>
+    <Text ID="182879" Value=""/>
+    <Text ID="182880" Value=""/>
+    <Text ID="182881" Value=""/>
+    <Text ID="182882" Value=""/>
+    <Text ID="182883" Value=""/>
+    <Text ID="182884" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="182873" Value=""/>
+    <Text ID="182874" Value=""/>
+    <Text ID="182875" Value=""/>
+    <Text ID="182876" Value=""/>
+    <Text ID="182877" Value=""/>
+    <Text ID="182878" Value=""/>
+    <Text ID="182879" Value=""/>
+    <Text ID="182880" Value=""/>
+    <Text ID="182881" Value=""/>
+    <Text ID="182882" Value=""/>
+    <Text ID="182883" Value=""/>
+    <Text ID="182884" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="182873" Value="0"/>
+    <Index ID="182874" Value="1"/>
+    <Index ID="182875" Value="2"/>
+    <Index ID="182876" Value="3"/>
+    <Index ID="182877" Value="4"/>
+    <Index ID="182878" Value="5"/>
+    <Index ID="182879" Value="6"/>
+    <Index ID="182880" Value="7"/>
+    <Index ID="182881" Value="8"/>
+    <Index ID="182882" Value="9"/>
+    <Index ID="182883" Value="10"/>
+    <Index ID="182884" Value="11"/>
+  </IndexMap>
+</TextGroup>

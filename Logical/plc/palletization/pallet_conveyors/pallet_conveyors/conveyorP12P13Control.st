@@ -49,7 +49,7 @@ ACTION ConveyorP12P13Control:
 				
 			//sensor reached?
 			IF palletOnConveyorP13 AND NOT diReset THEN
-				palletOnConveyorP12 := FALSE;
+				palletOnConveyorP12 := palletNotPresent;
 				stateConveyorP12P13 := stateConveyorStop;
 			END_IF	
 			

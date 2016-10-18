@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="PageNames">
+  <Property Name="Description" Value="Texts for page names"/>
+  <Property Name="Index" Value="13"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="182696" Value="10 Main Page"/>
+    <Text ID="182697" Value="00 Initialize Project"/>
+    <Text ID="182698" Value="60 Setup"/>
+    <Text ID="182699" Value="20 Trend"/>
+    <Text ID="182700" Value="30 Active Alarms"/>
+    <Text ID="182701" Value="31 Alarm History"/>
+    <Text ID="182702" Value="61 System Diagnostics"/>
+    <Text ID="182703" Value="5010 Remote Control"/>
+    <Text ID="182704" Value="5020 Application Download"/>
+    <Text ID="182705" Value="5030 Data Download"/>
+    <Text ID="182706" Value="5040 Extended Data Download"/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="182696" Value=""/>
+    <Text ID="182697" Value=""/>
+    <Text ID="182698" Value=""/>
+    <Text ID="182699" Value=""/>
+    <Text ID="182700" Value=""/>
+    <Text ID="182701" Value=""/>
+    <Text ID="182702" Value=""/>
+    <Text ID="182703" Value=""/>
+    <Text ID="182704" Value=""/>
+    <Text ID="182705" Value=""/>
+    <Text ID="182706" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="182696" Value=""/>
+    <Text ID="182697" Value=""/>
+    <Text ID="182698" Value=""/>
+    <Text ID="182699" Value=""/>
+    <Text ID="182700" Value=""/>
+    <Text ID="182701" Value=""/>
+    <Text ID="182702" Value=""/>
+    <Text ID="182703" Value=""/>
+    <Text ID="182704" Value=""/>
+    <Text ID="182705" Value=""/>
+    <Text ID="182706" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="182696" Value="10"/>
+    <Index ID="182697" Value="0"/>
+    <Index ID="182698" Value="60"/>
+    <Index ID="182699" Value="20"/>
+    <Index ID="182700" Value="30"/>
+    <Index ID="182701" Value="31"/>
+    <Index ID="182702" Value="61"/>
+    <Index ID="182703" Value="5010"/>
+    <Index ID="182704" Value="5020"/>
+    <Index ID="182705" Value="5030"/>
+    <Index ID="182706" Value="5040"/>
+  </IndexMap>
+</TextGroup>

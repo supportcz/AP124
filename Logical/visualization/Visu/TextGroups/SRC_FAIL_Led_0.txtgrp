@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="SRC_FAIL_Led_0">
+  <Property Name="Description" Value="Texts for FAIL LED"/>
+  <Property Name="Index" Value="8"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="182716" Value="Pre-operational"/>
+    <Text ID="182717" Value="Operational"/>
+    <Text ID="182718" Value="Fail Safe"/>
+  </TextLayer>
+  <TextLayer LanguageId="cs">
+    <Text ID="182716" Value=""/>
+    <Text ID="182717" Value=""/>
+    <Text ID="182718" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr">
+    <Text ID="182716" Value=""/>
+    <Text ID="182717" Value=""/>
+    <Text ID="182718" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="182716" Value="0"/>
+    <Index ID="182717" Value="1"/>
+    <Index ID="182718" Value="2"/>
+  </IndexMap>
+</TextGroup>

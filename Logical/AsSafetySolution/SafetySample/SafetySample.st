@@ -12,16 +12,16 @@ PROGRAM _INIT
 
 (* command structure for remote control FUB *)
 remotecmd.Version := safeVERSION_R107;	(* version *)
-remotecmd.Password := '';				(* password *)
+remotecmd.Password := '123456';				(* password *)
 
 (* command structure for application download *)
 appcmd1.Version := safeVERSION_R107;	(* version *)
-appcmd1.Password := '';					(* password *)
+appcmd1.Password := '123456';					(* password *)
 appcmd1.ApplicationID := 1;				(* application id *)
 
 (* command structure for machine options download *)
 datacmd1.Version := safeVERSION_R107;								(* version *)
-datacmd1.Password := '';											(* password *)
+datacmd1.Password := '123456';											(* password *)
 datacmd1.pDeviceListInput := ADR(visuDeviceListInput);				(* device list *)
 datacmd1.pMachineOptionsInput := ADR(dataMachineOptionsBitInput);	(* bit machine options *)
 datacmd1.pModuleFlagsInput := ADR(dataModuleFlagsInput);			(* module flags *)
@@ -29,7 +29,7 @@ datacmd1.pAcknMachineOptions := ADR(dataAcknMachineOptions);		(* acknowledge inf
 
 (* command structure for extended machine options *)
 datacmd2.Version := safeVERSION_R107;					(* version *)
-datacmd2.Password := '';								(* password *)
+datacmd2.Password := '123456';								(* password *)
 datacmd2.pIntDataInput := ADR(visuIntInput);			(* INT channels *)
 datacmd2.NumberIntInput := 1;							(* number of INT channels *)
 datacmd2.pUintDataInput := ADR(visuUintInput);			(* UINT channels *)

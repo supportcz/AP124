@@ -12,7 +12,7 @@
       <Property Name="FolderType" Value="Struct"/>
       <DataPoint Name="Brightness">
         <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="visu_manager\Visu,Visu,Interface,Panel,hugo"/>
+        <Property Name="ConnectingVisus" Value="visu_manager\Visu,Visu,Interface,Panel,hugo,visualization\Visu"/>
         <Property Name="Description" Value="Brightness (0 - 100)"/>
         <Property Name="PLCType" Value="USINT"/>
         <Property Name="UpdateTime" Value="Default"/>
@@ -21,7 +21,7 @@
       </DataPoint>
       <DataPoint Name="Contrast">
         <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="visu_manager\Visu,Visu,Interface,Panel,hugo"/>
+        <Property Name="ConnectingVisus" Value="visu_manager\Visu,Visu,Interface,Panel,hugo,visualization\Visu"/>
         <Property Name="Description" Value="Contrast (0 - 100)"/>
         <Property Name="PLCType" Value="USINT"/>
         <Property Name="UpdateTime" Value="Default"/>

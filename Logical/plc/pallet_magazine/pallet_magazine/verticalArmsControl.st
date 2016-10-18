@@ -51,7 +51,7 @@ ACTION VerticalArmsControl:
 		stateUpperPosition:
 	
 			IF cmdDown THEN
-				IF palletOnConveyorP12 AND stateArms = stateArmsClosed THEN
+				IF palletOnConveyorP12 = palletPresent AND stateArms = stateArmsClosed THEN
 					alarmImageMagazine[13] := TRUE;
 					StopMovement;
 				ELSE
@@ -79,7 +79,7 @@ ACTION VerticalArmsControl:
 		stateMiddlePosition:
 			
 			IF cmdDown THEN
-				IF palletOnConveyorP12 AND stateArms = stateArmsClosed THEN
+				IF palletOnConveyorP12 = palletPresent AND stateArms = stateArmsClosed THEN
 					alarmImageMagazine[13] := TRUE;
 					StopMovement;
 				ELSE

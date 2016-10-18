@@ -1,10 +1,6 @@
 VAR
 	conveyorsStatusDatapointAuto : UINT;
 	conveyorsStatusDatapointManual : UINT;
-	hideP12 : UINT;
-	hideP13 : UINT;
-	hideP14 : UINT;
-	hideP15 : UINT;
 	magazineStatusDatapointAuto : UINT;
 	magazineStatusDatapointManual : UINT;
 	statusMessageMagazine : INT;

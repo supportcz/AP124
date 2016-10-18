@@ -48,10 +48,10 @@
           <Property Name="ConnectedBySharedResource" Value="False"/>
           <Property Name="ConnectingVisus" Value="visualization\Visu"/>
           <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
+          <Property Name="PLCType" Value="PalletStatus"/>
           <Property Name="UpdateTime" Value="Default"/>
           <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
+          <Property Name="VCType" Value="INTEGER"/>
         </DataPoint>
         <DataPoint Name="alarmImageMagazine">
           <Property Name="ConnectedBySharedResource" Value="True"/>
@@ -722,7 +722,7 @@
         </DataPoint>
         <DataPoint Name="visuApplicationCRC">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="STRING"/>
           <Property Name="StringLength" Value="8"/>
@@ -895,7 +895,7 @@
           <Property Name="FolderType" Value="FunctionBlock"/>
           <DataPoint Name="StatusID">
             <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+            <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
             <Property Name="Description" Value=""/>
             <Property Name="PLCType" Value="UINT"/>
             <Property Name="UpdateTime" Value="Default"/>
@@ -1088,7 +1088,7 @@
         </DataPoint>
         <DataPoint Name="statusDialog">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="UINT"/>
           <Property Name="UpdateTime" Value="Default"/>
@@ -1097,7 +1097,7 @@
         </DataPoint>
         <DataPoint Name="visuUDID_High">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="STRING"/>
           <Property Name="StringLength" Value="8"/>
@@ -1151,7 +1151,7 @@
         </DataPoint>
         <DataPoint Name="indexMessageText">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="UINT"/>
           <Property Name="UpdateTime" Value="Default"/>
@@ -1267,7 +1267,7 @@
         </DataPoint>
         <DataPoint Name="stautsSLXInformation">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="UINT"/>
           <Property Name="UpdateTime" Value="Default"/>
@@ -1285,7 +1285,7 @@
         </DataPoint>
         <DataPoint Name="dialogButtonRight">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="BOOL"/>
           <Property Name="UpdateTime" Value="Default"/>
@@ -1294,7 +1294,7 @@
         </DataPoint>
         <DataPoint Name="visuUDID_Low">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="STRING"/>
           <Property Name="StringLength" Value="8"/>
@@ -1313,7 +1313,7 @@
         </DataPoint>
         <DataPoint Name="Interface">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="STRING"/>
           <Property Name="StringLength" Value="80"/>
@@ -1345,7 +1345,7 @@
         </Folder>
         <DataPoint Name="indexHeaderText">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="UINT"/>
           <Property Name="UpdateTime" Value="Default"/>
@@ -1354,7 +1354,7 @@
         </DataPoint>
         <DataPoint Name="dialogButtonLeft">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="BOOL"/>
           <Property Name="UpdateTime" Value="Default"/>
@@ -1363,7 +1363,7 @@
         </DataPoint>
         <DataPoint Name="indexButtonLeft">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="UINT"/>
           <Property Name="UpdateTime" Value="Default"/>
@@ -1381,7 +1381,7 @@
         </DataPoint>
         <DataPoint Name="Node">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="USINT"/>
           <Property Name="UpdateTime" Value="Default"/>
@@ -1425,7 +1425,7 @@
         </DataPoint>
         <DataPoint Name="statusSLInformation">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="UINT"/>
           <Property Name="UpdateTime" Value="Default"/>
@@ -1452,7 +1452,7 @@
         </DataPoint>
         <DataPoint Name="indexButtonRight">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="UINT"/>
           <Property Name="UpdateTime" Value="Default"/>
@@ -1580,7 +1580,7 @@
         </Folder>
         <DataPoint Name="statusButtonUnlockApp">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="UINT"/>
           <Property Name="UpdateTime" Value="Default"/>
@@ -1646,7 +1646,7 @@
         </Folder>
         <DataPoint Name="Station">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="STRING"/>
           <Property Name="StringLength" Value="80"/>
@@ -1656,7 +1656,7 @@
         </DataPoint>
         <DataPoint Name="dialogApplication">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="BOOL"/>
           <Property Name="UpdateTime" Value="Default"/>
@@ -1902,7 +1902,7 @@
         </DataPoint>
         <DataPoint Name="executeapp1">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="Visu,AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="Visu,AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="BOOL"/>
           <Property Name="UpdateTime" Value="Default"/>
@@ -2027,7 +2027,7 @@
         </Folder>
         <DataPoint Name="slxused">
           <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+          <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
           <Property Name="Description" Value=""/>
           <Property Name="PLCType" Value="BOOL"/>
           <Property Name="UpdateTime" Value="Default"/>
@@ -2080,7 +2080,7 @@
           </DataPoint>
           <DataPoint Name="Unlock">
             <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+            <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
             <Property Name="Description" Value=""/>
             <Property Name="PLCType" Value="USINT"/>
             <Property Name="UpdateTime" Value="Default"/>
@@ -2089,7 +2089,7 @@
           </DataPoint>
           <DataPoint Name="Password">
             <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel"/>
+            <Property Name="ConnectingVisus" Value="AsSafetySolution\Panel,visualization\Visu"/>
             <Property Name="Description" Value=""/>
             <Property Name="PLCType" Value="STRING"/>
             <Property Name="StringLength" Value="16"/>
@@ -2109,7 +2109,7 @@
           </DataPoint>
           <DataPoint Name="ApplicationID">
             <Property Name="ConnectedBySharedResource" Value="False"/>
-            <Property Name="ConnectingVisus" Value="Visu,AsSafetySolution\Panel"/>
+            <Property Name="ConnectingVisus" Value="Visu,AsSafetySolution\Panel,visualization\Visu"/>
             <Property Name="Description" Value=""/>
             <Property Name="PLCType" Value="UINT"/>
             <Property Name="UpdateTime" Value="Default"/>

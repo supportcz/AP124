@@ -16,7 +16,7 @@ PROGRAM _CYCLIC
 
 		modePalletizationAuto:
 	
-			IF palletOnConveyorP12 AND NOT palletOnConveyorP13 THEN
+			IF palletOnConveyorP12 = palletPresent AND NOT palletOnConveyorP13 THEN
 				cmdMovePalletP12P13 := TRUE;
 			END_IF
 
