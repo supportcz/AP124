@@ -25,4 +25,6 @@ VAR
 	statePalletP15 : StatePallet;
 	statePalletP16 : StatePallet;
 	statePalletP17 : StatePallet;
+	PalletStatus_old : ARRAY[12..22] OF DINT;
+	PalletStatus : ARRAY[12..22] OF DINT;
 END_VAR

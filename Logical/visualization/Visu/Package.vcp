@@ -454,6 +454,12 @@
     <Source File="Bitmaps\information_0.bminfo"/>
     <Source File="Bitmaps\sl_interface_0.bminfo"/>
     <Source File="Bitmaps\warning.bminfo"/>
+    <Source File="Bitmaps\conveyor.bminfo"/>
+    <Source File="Bitmaps\conveyor2.bminfo"/>
+    <Source File="Bitmaps\MpFile_Move.bminfo"/>
+    <Source File="Bitmaps\PalleteInMove.bminfo"/>
+    <Source File="Bitmaps\PalleteInMoveDown.bminfo"/>
+    <Source File="Bitmaps\PalleteInMoveUp.bminfo"/>
     <Source File="BitmapGroups\MpAlarmAcknowledgeState.bmgrp"/>
     <Source File="BitmapGroups\MpPads.bmgrp"/>
     <Source File="BitmapGroups\MpUserIcons.bmgrp"/>
@@ -469,6 +475,10 @@
     <Source File="BitmapGroups\AlarmEvent.bmgrp"/>
     <Source File="BitmapGroups\Borders_0.bmgrp"/>
     <Source File="BitmapGroups\msgBox.bmgrp"/>
+    <Source File="BitmapGroups\AddRemovePallet.bmgrp"/>
+    <Source File="BitmapGroups\PalletInMove.bmgrp"/>
+    <Source File="BitmapGroups\PalletInMoveDown.bmgrp"/>
+    <Source File="BitmapGroups\PalletInMoveUp.bmgrp"/>
     <Source File="Pages\Page_60_Settings.page"/>
     <Source File="Pages\Page_40_AlarmList.page"/>
     <Source File="Pages\Page_11_AutomaticModeStart.page"/>
@@ -491,6 +501,9 @@
     <Source File="Layers\Language_DropDown.layer"/>
     <Source File="Layers\Robot.layer"/>
     <Source File="Layers\msgBox.layer"/>
+    <Source File="Layers\RightLayout.layer"/>
+    <Source File="Layers\Conveyor1.layer"/>
+    <Source File="Layers\Conveyor2.layer"/>
     <Source File="StyleSheets\Color.vcs"/>
     <Source File="StyleSheets\mapp.vcs"/>
     <Source File="Borders\Mp_AttentionOff.bdr"/>
@@ -572,6 +585,7 @@
     <Source File="ColorMaps\ColorMap_SelectedLanguage.clm"/>
     <Source File="ColorMaps\ColorMap_GreenGrey.clm"/>
     <Source File="ColorMaps\ColorMap_MpRecipeState.clm"/>
+    <Source File="ColorMaps\ColorMap_PalletStatus.clm"/>
     <Source File="VirtualKeys.vcvk"/>
     <Source File="Palette.vcr"/>
   </SourceFiles>

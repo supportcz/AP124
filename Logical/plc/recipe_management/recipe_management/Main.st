@@ -65,6 +65,7 @@ PROGRAM _CYCLIC
 				MpRecipeCsv_0.Load := FALSE;
 				stateRecipe := stateRecipeWait;
 				VisuRecipeState := 0;					//Visu Empty Text
+				RecipeChanged := TRUE;
 			END_IF
 
 		stateRecipeSave:
@@ -80,6 +81,7 @@ PROGRAM _CYCLIC
 				MpRecipeCsv_0.Save := FALSE;
 				stateRecipe := stateRecipeWait;
 				VisuRecipeState := 2;					//Visu Saved Text
+				RecipeChanged := TRUE;
 			END_IF
 		
 	END_CASE

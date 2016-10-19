@@ -9,7 +9,10 @@ PROGRAM _CYCLIC
 		
 		modePalletizationNotReadyToStart: //the automat is not ready to start
 		
-
+			(***************************************************************************)
+			(* 								Pallet Status							   *)
+			(***************************************************************************)
+			CopyToArray;
 
 		modePalletizationManual:
 			
@@ -18,6 +21,19 @@ PROGRAM _CYCLIC
 				cmdMovePalletP13 := FALSE;
 				cmdMovePalletP14 := FALSE;
 			END_IF
+		
+			(***************************************************************************)
+			(* 								Pallet Status							   *)
+			(***************************************************************************)
+			FOR i:=12 TO 22 DO
+				IF (PalletStatus[i] <> PalletStatus_old[i]) THEN
+					IF ((PalletStatus[i]) = 3) THEN
+						PalletStatus[i] := 0;
+					END_IF;
+					PalletStatus_old[i] := PalletStatus[i]; 
+				END_IF;
+			END_FOR;
+			CopyFromArray;
 
 		modePalletizationAuto:
 	
@@ -33,6 +49,7 @@ PROGRAM _CYCLIC
 				cmdMovePalletP14 := TRUE;
 			END_IF
 
+			CopyToArray;
 	END_CASE
 
 	
@@ -45,6 +62,7 @@ PROGRAM _CYCLIC
 
 	alarmImagePalletization[5] := NOT lightCurtainP15;
 	alarmImagePalletization[8] := NOT lightCurtainP17;
+
 
 	
 END_PROGRAM

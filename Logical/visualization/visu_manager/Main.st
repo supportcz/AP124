@@ -80,8 +80,18 @@ PROGRAM _CYCLIC
 		gVisu.TON_0(IN := FALSE, PT := ALARM_BLINK);
 	END_IF;
  	
-
-	
+	(***************************************************************************)
+	(* 							Robot Layout DropDown					  	   *)
+	(***************************************************************************)
+	IF adrRecipes <> 0 THEN 
+		dRecipes ACCESS adrRecipes;
+		IF EDGEPOS(RecipeChanged) THEN
+			FOR i:= 0 TO 9 DO
+				RecipeNames[i] := dRecipes.recipe[i].name;
+			END_FOR;
+			RecipeChanged := FALSE;
+		END_IF;
+	END_IF;		
 	
 END_PROGRAM
 

@@ -411,6 +411,7 @@
     </Connector>
     <Parameter ID="ConfigurationID" Value="AP124_CP1583" />
     <Parameter ID="UserPartitionSize" Value="200" />
+    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="VolatileGlobalPvSize" Value="262144" />
     <Parameter ID="TimerDeviceType" Value="EPLX2X" />
     <Parameter ID="TimerDevice" Value="X20CP1583.IF3" />
@@ -440,8 +441,6 @@
     <Parameter ID="FtpUserPassword1" Value="WTu4FPCiIceACZRqUEgJEtXb7Eb63HUzCfqgyyypU7s=" />
     <Parameter ID="FtpUserSalt1" Value="2eJIzixw" />
     <Parameter ID="FTPAccessRight1" Value="0" />
-    <Parameter ID="Temp.ProjectDirectory" Value="C:\Work\Atrima\projekt\AP124\" />
-    <Parameter ID="Temp.ConfigurationName" Value="CP1583" />
   </Module>
   <Module Name="X20PS2100a" Type="X20PS2100" Version="1.1.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />

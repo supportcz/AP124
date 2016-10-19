@@ -40,39 +40,6 @@
       <Property Name="Top" Value="210"/>
       <Property Name="Width" Value="269"/>
     </Control>
-    <Control ClassId="0x00001004" Name="Text_1">
-      <Property Name="Border" Value="Source[local].Border[Mp_SunkenNGgray]"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="Font" Value="Source[local].Font[MpInfo]"/>
-      <Property Name="Height" Value="38"/>
-      <Property Name="Left" Value="84"/>
-      <Property Name="SimulationIndex" Value="0"/>
-      <Property Name="SimulationValue" Value=""/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.dActualRecipe.name]"/>
-      <Property Name="TextSource" Value="SingleString"/>
-      <Property Name="Top" Value="64"/>
-      <Property Name="Width" Value="291"/>
-    </Control>
-    <Control ClassId="0x0000100D" Name="Line_2">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="EndX" Value="347"/>
-      <Property Name="EndY" Value="90"/>
-      <Property Name="StartX" Value="333"/>
-      <Property Name="StartY" Value="76"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-    </Control>
-    <Control ClassId="0x0000100D" Name="Line_3">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="EndX" Value="362"/>
-      <Property Name="EndY" Value="75"/>
-      <Property Name="StartX" Value="348"/>
-      <Property Name="StartY" Value="89"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-    </Control>
     <Control ClassId="0x00001001" Name="Shape_5">
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
@@ -309,9 +276,9 @@
       <Property Name="ForeColor" Value="149"/>
       <Property Name="GroupID" Value="29"/>
       <Property Name="Height" Value="32"/>
-      <Property Name="Left" Value="467"/>
+      <Property Name="Left" Value="459"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="66"/>
+      <Property Name="Top" Value="65"/>
       <Property Name="Width" Value="100"/>
     </Control>
     <Control ClassId="0x00001007" Name="Numeric_5">
@@ -332,7 +299,7 @@
       <Property Name="InputStart" Value="Any Key"/>
       <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
       <Property Name="InputUpDown" Value="Disabled"/>
-      <Property Name="Left" Value="472"/>
+      <Property Name="Left" Value="464"/>
       <Property Name="MaxDatapoint" Value="None"/>
       <Property Name="MaxValue" Value="10"/>
       <Property Name="MinDatapoint" Value="None"/>
@@ -340,10 +307,45 @@
       <Property Name="SimulationValue" Value="4"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="TeachDatapoint" Value="None"/>
-      <Property Name="Top" Value="68"/>
+      <Property Name="Top" Value="67"/>
       <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.nbOfTraysInHalfLayer]"/>
       <Property Name="ValueMode" Value="Standard"/>
       <Property Name="Width" Value="93"/>
+    </Control>
+    <Control ClassId="0x00001018" Name="Dropdown_1">
+      <Property Name="BackColor" Value="15"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_SunkenNG]"/>
+      <Property Name="ButtonsBackColor" Value="253"/>
+      <Property Name="ButtonsBitmapGroup" Value="None"/>
+      <Property Name="ButtonsPressedBitmapGroup" Value="None"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="DropdownBackColor" Value="15"/>
+      <Property Name="DropdownBorder" Value="Source[local].Border[Mp_SunkenNG]"/>
+      <Property Name="DropdownDirection" Value="Down"/>
+      <Property Name="DropdownMaxHeight" Value="250"/>
+      <Property Name="Font" Value="Source[local].Font[MpPads]"/>
+      <Property Name="Height" Value="37"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.recipe_management.recipe_management.recipes.actualRecipeIndex]"/>
+      <Property Name="Left" Value="106"/>
+      <Property Name="LeftBitmap" Value="None"/>
+      <Property Name="LeftTextGroup" Value="None"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxIndex" Value="9"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinIndex" Value="0"/>
+      <Property Name="OptionDatapoint" Value="None"/>
+      <Property Name="RightBitmap" Value="None"/>
+      <Property Name="RightTextGroup" Value="None"/>
+      <Property Name="SelectedBackColor" Value="253"/>
+      <Property Name="SimulationValue" Value="5"/>
+      <Property Name="SpacingVertical" Value="25"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+      <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.RecipeNames]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="MultipleStrings"/>
+      <Property Name="Top" Value="68"/>
+      <Property Name="Width" Value="284"/>
     </Control>
   </Controls>
   <KeyMapping/>
