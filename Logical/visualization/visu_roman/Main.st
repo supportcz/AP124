@@ -73,10 +73,12 @@ PROGRAM _CYCLIC
 
 	IF EDGEPOS(cmdManual) THEN
 		cmdPalletizationManual := TRUE;
+		cmdMagazineManual := TRUE;
 	END_IF
 
 	IF EDGENEG(cmdManual) THEN
 		cmdPalletizationManual := FALSE;
+		cmdMagazineManual := FALSE;
 	END_IF
 
 	

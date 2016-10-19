@@ -105,6 +105,7 @@ ACTION HorizontalArmsControl:
 					stateArms := stateArmsOpening;	
 				ELSE	
 					alarmImageMagazine[15] := TRUE;
+					closeArms := TRUE;
 				END_IF
 			END_IF	
 	END_CASE

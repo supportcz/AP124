@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=?>
+<NcMapping NcSwId="Acp10">
+  <NcObject Name="U15a_ncAXIS1" ModuleId="U16" ModuleAddress="SDC_IF1.ST1" Type="ncAXIS" Channel="1" AcoposSimulation="Off" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="U15b_ncAXIS1" ModuleId="U17" ModuleAddress="SDC_IF1.ST2" Type="ncAXIS" Channel="1" AcoposSimulation="Off" Disabled="TRUE" ModuleDisabled="FALSE" />
+</NcMapping>

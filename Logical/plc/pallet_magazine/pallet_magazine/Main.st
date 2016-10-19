@@ -137,8 +137,10 @@ PROGRAM _CYCLIC
 
 	doSafetyCurtainSupplyP11 := TRUE;
 	
+	TON_PalletOnConveyorP12(IN := diPalletOnConveyorP12, PT := T#50ms);
+	
 	//detect pallet on conveyor
-	IF diPalletOnConveyorP12 AND stateMagazine = stateUpperPosition THEN
+	IF TON_PalletOnConveyorP12.Q AND stateMagazine = stateUpperPosition AND statePalletP12 = palletNotPresent THEN
 		statePalletP12 := palletPresent;
 	END_IF
 	

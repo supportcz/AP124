@@ -98,4 +98,9 @@ VAR_CONFIG
 	::product_in:HMIS AT %IW."U10".HMIS_Input;
 	::product_in:diRobotReady AT %IX."I50".DigitalInput04;
 	::product_in:RFRD AT %IW."U10".RFRD_Input;
+	::pallet_con:diPalletStopP16 AT %IX."I80".DigitalInput05;
+	::pallet_con:diPalletStopP17 AT %IX."I80".DigitalInput06;
+	::pallet_con:acpI_P16.ETAD_Input AT %IW."U16".ETAD_Input;
+	::pallet_con:acpI_P16.CMDD_Output AT %QW."U16".CMDD_Output;
+	::pallet_con:acpI_P16.LFRD_Output AT %QW."U16".LFR_Output;
 END_VAR
