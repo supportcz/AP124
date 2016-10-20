@@ -22,7 +22,7 @@
     <Object Type="Library" Language="Binary" Description="The AsEPL library is used to access service data objects of Ethernet-Powerlink stations">AsEPL</Object>
     <Object Type="Library" Language="Binary" Description="The Visapi library provides support to access and control visualizations at runtime.">visapi</Object>
     <Object Type="Library" Language="ANSIC">Motorky</Object>
-    <Object Type="Library" Language="Binary" Description="Recipe management">MpRecipe</Object>
     <Object Type="Library" Language="Binary" Description="MpCom Library">MpCom</Object>
+    <Object Type="Library" Language="Binary" Description="Recipe management">MpRecipe</Object>
   </Objects>
 </Package>

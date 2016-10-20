@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpCom 1.30.0 */
+/* MpCom 1.40.0 */
 
 #ifndef _MPCOM_
 #define _MPCOM_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpCom_VERSION
-#define _MpCom_VERSION 1.30.0
+#define _MpCom_VERSION 1.40.0
 #endif
 
 #include <bur/plctypes.h>
@@ -95,7 +95,8 @@ typedef enum MpComErrorEnum
 	mpCOM_ERR_NO_CONFIG_IMPORT = -1064238844,
 	mpCOM_ERR_MISSING_UICONNECT = -1064238843,
 	mpCOM_ERR_CONFIG_IMPORT_ERR = -1064238842,
-	mpCOM_ERR_WRONG_FILTER_STRING = -1064238841
+	mpCOM_ERR_WRONG_FILTER_STRING = -1064238841,
+	mpCOM_ERR_COMPONENT_NOT_FOUND = -1064238840
 } MpComErrorEnum;
 
 typedef struct MpComInternalIDType
@@ -252,6 +253,22 @@ typedef struct MpComDump
 	plcbit CommandDone;
 } MpComDump_typ;
 
+typedef struct MpComGetLink
+{
+	/* VAR_INPUT (analog) */
+	plcstring (*ComponentName);
+	/* VAR_OUTPUT (analog) */
+	struct MpComIdentType MpLink;
+	signed long StatusID;
+	/* VAR_INPUT (digital) */
+	plcbit Enable;
+	/* VAR_OUTPUT (digital) */
+	plcbit Error;
+	plcbit Active;
+	/* VAR (digital) */
+	plcbit Internal;
+} MpComGetLink_typ;
+
 
 
 /* Prototyping of functions and function blocks */
@@ -259,6 +276,7 @@ _BUR_PUBLIC void MpComConfigManager(struct MpComConfigManager* inst);
 _BUR_PUBLIC void MpComLoggerUI(struct MpComLoggerUI* inst);
 _BUR_PUBLIC void MpComLinkToParent(struct MpComLinkToParent* inst);
 _BUR_PUBLIC void MpComDump(struct MpComDump* inst);
+_BUR_PUBLIC void MpComGetLink(struct MpComGetLink* inst);
 _BUR_PUBLIC unsigned long MpComHandle(void);
 _BUR_PUBLIC unsigned long MpComVersion(void);
 _BUR_PUBLIC signed long MpComLink(struct MpComIdentType* ParentLink, struct MpComIdentType* MpLink);

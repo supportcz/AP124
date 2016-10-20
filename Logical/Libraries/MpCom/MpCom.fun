@@ -88,3 +88,19 @@ FUNCTION_BLOCK MpComDump (*Creates a mapp diagnostic dump file*) (* $GROUP=mapp,
 		Internal : MpComDumpInternalType;
 	END_VAR
 END_FUNCTION_BLOCK
+
+FUNCTION_BLOCK MpComGetLink (*Get MpLink by component name*)
+	VAR_INPUT
+		Enable : BOOL; (*Enables/Disables the function block *) (* *) (*#PAR#;*)
+		ComponentName : REFERENCE TO STRING[100]; (*Full-qualified component name (including scope if necessary)*) (* *) (*#CMD#;*)
+	END_VAR
+	VAR_OUTPUT
+		MpLink : MpComIdentType; (*Link to mapp-component*) (* *) (*#CMD#;*)
+		Error : BOOL; (*A error has occurred when trying to find component*) (* *) (*#PAR#;*)
+		Active : BOOL; (*Component was found (MpLink valid)*) (* *) (*#PAR#;*)
+		StatusID : DINT; (*Information about the error that has occurred*) (* *) (*#PAR#;*)
+	END_VAR
+	VAR
+		Internal : BOOL;
+	END_VAR
+END_FUNCTION_BLOCK

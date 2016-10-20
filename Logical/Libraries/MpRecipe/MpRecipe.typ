@@ -16,6 +16,7 @@ TYPE
 		RecipeSave : BOOL; (*Enables a confirmation window when saving a recipe*)
 		RecipeCreate : BOOL; (*Enables a confirmation window when creating a recipe	*)
 		RecipeDelete : BOOL; (*Enables a confirmation window when creating a recipe*)
+		RecipeRename : BOOL; (*Enables a confirmation window when renaming a recipe*)
 	END_STRUCT;
 	MpRecipeUISetupType : 	STRUCT 
 		RecipeListSize : UINT := 20; (*Number of recipes to be displayed on one page of the list in the HMI application*)
@@ -29,7 +30,8 @@ TYPE
 		mpRECIPE_UI_MSG_CONFIRM_LOAD := 1, (*Dialog box for confirming the loading procedure*)
 		mpRECIPE_UI_MSG_CONFIRM_SAVE := 2, (*Dialog box for confirming the saving procedure*)
 		mpRECIPE_UI_MSG_CONFIRM_CREATE := 3, (*Dialog box for confirming the creation of a new recipe	*)
-		mpRECIPE_UI_MSG_CONFIRM_DELETE := 4 (*Dialog box for confirming the deletion of an existing recipe*)
+		mpRECIPE_UI_MSG_CONFIRM_DELETE := 4, (*Dialog box for confirming the deletion of an existing recipe*)
+		mpRECIPE_UI_MSG_CONFIRM_RENAME := 5 (*Dialog box for confirming the renaming of an existing recipe*)
 		);
 	MpRecipeUIStatusEnum : 
 		(

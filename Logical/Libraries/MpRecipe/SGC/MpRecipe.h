@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpRecipe 1.30.0 */
+/* MpRecipe 1.40.0 */
 
 #ifndef _MPRECIPE_
 #define _MPRECIPE_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpRecipe_VERSION
-#define _MpRecipe_VERSION 1.30.0
+#define _MpRecipe_VERSION 1.40.0
 #endif
 
 #include <bur/plctypes.h>
@@ -38,7 +38,8 @@ typedef enum MpRecipeUIMessageEnum
 	mpRECIPE_UI_MSG_CONFIRM_LOAD = 1,
 	mpRECIPE_UI_MSG_CONFIRM_SAVE = 2,
 	mpRECIPE_UI_MSG_CONFIRM_CREATE = 3,
-	mpRECIPE_UI_MSG_CONFIRM_DELETE = 4
+	mpRECIPE_UI_MSG_CONFIRM_DELETE = 4,
+	mpRECIPE_UI_MSG_CONFIRM_RENAME = 5
 } MpRecipeUIMessageEnum;
 
 typedef enum MpRecipeUIStatusEnum
@@ -130,6 +131,7 @@ typedef struct MpRecipeUISetupConfirmType
 	plcbit RecipeSave;
 	plcbit RecipeCreate;
 	plcbit RecipeDelete;
+	plcbit RecipeRename;
 } MpRecipeUISetupConfirmType;
 
 typedef struct MpRecipeUISetupType
