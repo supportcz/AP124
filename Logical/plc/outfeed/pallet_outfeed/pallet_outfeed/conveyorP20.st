@@ -11,8 +11,8 @@ ACTION ConveyorP20:
 		
 		palletNotPresent:
 			
-			doConveyorP20 := cmdMovePalletP20 AND (statePalletP21 = palletNotPresent OR diReset);
-			
+			doConveyorP20 := (cmdMovePalletP20 AND (statePalletP21 = palletNotPresent OR diReset)) OR cmdMovePalletP19;
+
 		palletPresent:
 		
 			doConveyorP20 := FALSE;

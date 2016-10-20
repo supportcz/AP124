@@ -43,6 +43,8 @@ PROGRAM _CYCLIC
 	//conveyors
 	ConveyorP19; 
 	ConveyorP20; 
+	ConveyorP21; 
+	ConveyorP22; 
 	
 	alarmImageOutfeed[0] := NOT lightCurtainP17;
 	

@@ -7,5 +7,7 @@
     <File Description="Local variables" Private="true">Variables.var</File>
     <File>conveyorP19.st</File>
     <File>conveyorP20.st</File>
+    <File>conveyorP21.st</File>
+    <File>conveyorP22.st</File>
   </Files>
 </Program>

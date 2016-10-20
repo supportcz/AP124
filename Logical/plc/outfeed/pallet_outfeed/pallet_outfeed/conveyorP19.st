@@ -10,8 +10,8 @@ ACTION ConveyorP19:
 	CASE statePalletP19 OF
 		
 		palletNotPresent:
-			
-			doConveyorP19 := cmdMovePalletP19 AND (statePalletP20 = palletNotPresent OR diReset);
+
+			doConveyorP19 := (cmdMovePalletP19 AND (statePalletP20 = palletNotPresent OR diReset)) OR cmdMovePalletP18;
 			
 		palletPresent:
 		

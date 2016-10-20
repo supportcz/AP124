@@ -96,6 +96,9 @@ ACTION StatusMessageOutfeed:
 	IF modeOutfeed = modeOutfeedManual THEN
 		statusMessageOutfeed := 22;
 	END_IF
+	IF statePalletP22 <> palletNotPresent THEN
+		statusMessageOutfeed := 34;
+	END_IF		
 	IF alarmImageOutfeed[0] THEN
 		statusMessageOutfeed := 13;
 	END_IF

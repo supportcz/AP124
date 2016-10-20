@@ -140,6 +140,54 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="10">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="True"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="11">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="True"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="12">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="13">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -165,6 +213,10 @@
       <Text ID="1056" Value="Unexpected pallet on conveyor P21"/>
       <Text ID="1067" Value="Stop sensor on conveyor P21 not reached"/>
       <Text ID="1078" Value="Motor protection P20"/>
+      <Text ID="1085" Value="Unexpected pallet on conveyor P22"/>
+      <Text ID="1096" Value="Stop sensor on conveyor P22 not reached"/>
+      <Text ID="1107" Value="Motor protection P21"/>
+      <Text ID="1114" Value="Motor protection P22"/>
       <Text ID="952" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -178,6 +230,10 @@
       <Text ID="1056" Value=""/>
       <Text ID="1067" Value=""/>
       <Text ID="1078" Value=""/>
+      <Text ID="1085" Value=""/>
+      <Text ID="1096" Value=""/>
+      <Text ID="1107" Value=""/>
+      <Text ID="1114" Value=""/>
       <Text ID="952" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -191,6 +247,10 @@
       <Text ID="1056" Value=""/>
       <Text ID="1067" Value=""/>
       <Text ID="1078" Value=""/>
+      <Text ID="1085" Value=""/>
+      <Text ID="1096" Value=""/>
+      <Text ID="1107" Value=""/>
+      <Text ID="1114" Value=""/>
       <Text ID="952" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -204,6 +264,10 @@
       <Index ID="1056" Value="7"/>
       <Index ID="1067" Value="8"/>
       <Index ID="1078" Value="9"/>
+      <Index ID="1085" Value="10"/>
+      <Index ID="1096" Value="11"/>
+      <Index ID="1107" Value="12"/>
+      <Index ID="1114" Value="13"/>
       <Index ID="952" Value="Group"/>
     </IndexMap>
   </TextGroup>

@@ -2,7 +2,6 @@ VAR
 	diDoor2opened : BOOL;
 	diOpenDoors2 : BOOL; (*button to open doors*)
 	diCloseDoors2 : BOOL; (*button to close doors*)
-	cmdMovePalletP18 : BOOL;
 	diPalletStopP19 : BOOL;
 	TON_PalletStopP19 : TON;
 	TON_ConveyorP18 : TON;
