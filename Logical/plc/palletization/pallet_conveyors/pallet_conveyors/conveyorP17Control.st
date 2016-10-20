@@ -2,7 +2,7 @@
 
 ACTION ConveyorP17Control: 
 
-//	TON_PalletStopP17(IN := diPalletStopP17, PT := T#50ms);
+//	TON_PalletStopP17(IN := diPalletStopP17, PT := T#200ms);
 	
 	acpI_P17.switchOn := TRUE;
 	acpI_P17.speed := 500;
@@ -15,9 +15,6 @@ ACTION ConveyorP17Control:
 
 			acpI_P17.stop := NOT cmdMovePalletP17 AND NOT cmdMovePalletP16;
 				
-			IF TON_PalletStopP17.Q > palletStopP17old THEN
-				alarmImagePalletization[4] := TRUE;
-			END_IF	
 		
 		palletPresent:
 		
@@ -56,6 +53,10 @@ ACTION ConveyorP17Control:
 	acpI_P17();
 	
 	alarmImagePalletization[29] := acpI_P16.error;
+	
+//	IF EDGEPOS(TON_PalletStopP17.Q) AND statePalletP17 <> palletMoving THEN
+//		alarmImagePalletization[4] := TRUE;
+//	END_IF	
 	
 //	palletStopP17old := TON_PalletStopP17.Q;
 	

@@ -9,6 +9,10 @@ PROGRAM _CYCLIC
 		
 		modePalletizationNotReadyToStart: //the automat is not ready to start
 		
+			acpI_P14.reset := TRUE;
+			acpI_P15.reset := TRUE;
+			acpI_P16.reset := TRUE;
+			acpI_P17.reset := TRUE;
 
 
 		modePalletizationManual:

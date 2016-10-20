@@ -1,7 +1,7 @@
 
 ACTION ConveyorP12Control: 
 
-	TON_PalletStopP13(IN := diPalletStopP13, PT := T#50ms);
+	TON_PalletStopP13(IN := diPalletStopP13, PT := T#200ms);
 			
 	CASE statePalletP12 OF
 		
@@ -9,10 +9,6 @@ ACTION ConveyorP12Control:
 			
 			doConveyorP12 := cmdMovePalletP12 AND (statePalletP13 = palletNotPresent OR diReset);
 			
-			IF TON_PalletStopP13.Q > palletStopP13old THEN
-				alarmImagePalletization[9] := TRUE;
-			END_IF	
-		
 		palletPresent:
 		
 			doConveyorP12 := FALSE;
@@ -46,8 +42,11 @@ ACTION ConveyorP12Control:
 			
 	END_CASE
 
-	palletStopP13old := TON_PalletStopP13.Q;
 	
+	IF EDGEPOS(TON_PalletStopP13.Q) AND statePalletP12 <> palletMoving THEN
+		alarmImagePalletization[9] := TRUE;
+	END_IF	
+		
 	alarmImagePalletization[12] := NOT diMotorProtectionP12;
 	
 	//edge alarms

@@ -24,9 +24,5 @@
     <Object Type="Library" Language="ANSIC">Motorky</Object>
     <Object Type="Library" Language="Binary" Description="Recipe management">MpRecipe</Object>
     <Object Type="Library" Language="Binary" Description="MpCom Library">MpCom</Object>
-    <Object Type="Library" Language="Binary" Description="Smart Device Controller">Acp10sdc</Object>
-    <Object Type="Library" Language="Binary" Description="Motion Control Manager">Acp10man</Object>
-    <Object Type="Library" Language="Binary" Description="ACOPOS Parameters">Acp10par</Object>
-    <Object Type="Library" Language="Binary" Description="Global NC functions">NcGlobal</Object>
   </Objects>
 </Package>

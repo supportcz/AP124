@@ -17,10 +17,6 @@ VAR
 	doConveyorP13 : BOOL;
 	lightCurtainP15 : BOOL;
 	lightCurtainP17 : BOOL;
-	palletStopP13old : BOOL;
-	palletStopP14old : BOOL;
-	palletStopP15old : BOOL;
-	palletStopP16old : BOOL;
 	TON_ConveyorP12 : TON;
 	TON_ConveyorP13 : TON;
 	TON_ConveyorP14 : TON;
