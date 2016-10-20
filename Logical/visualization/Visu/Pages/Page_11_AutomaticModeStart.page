@@ -360,9 +360,9 @@
       <Property Name="Up" Value="Source[local].Layer[Robot].Control[Dropdown_1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[Robot].Control[Numeric_2]">
-      <Property Name="Down" Value="Source[local].Layer[Robot].Control[Numeric_3]"/>
-      <Property Name="Left" Value="Source[local].Layer[Robot].Control[Numeric_1]"/>
-      <Property Name="Right" Value="Source[local].Layer[Robot].Control[Numeric_1]"/>
+      <Property Name="Down" Value="Source[local].Layer[Robot].Control[Numeric_4]"/>
+      <Property Name="Left" Value="Source[local].Layer[Robot].Control[Dropdown_1]"/>
+      <Property Name="Right" Value="Source[local].Layer[Robot].Control[Dropdown_1]"/>
       <Property Name="Up" Value="Source[local].Layer[Robot].Control[Numeric_5]"/>
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[Robot].Control[Numeric_3]">
@@ -386,7 +386,7 @@
     <MovementEntry Control="Source[local].Layer[Robot].Control[Dropdown_1]">
       <Property Name="Down" Value="Source[local].Layer[Robot].Control[Numeric_1]"/>
       <Property Name="Left" Value="Source[local].Layer[Robot].Control[Numeric_5]"/>
-      <Property Name="Right" Value="Source[local].Layer[Robot].Control[Numeric_5]"/>
+      <Property Name="Right" Value="Source[local].Layer[Robot].Control[Numeric_2]"/>
       <Property Name="Up" Value="Source[local].Layer[Robot].Control[Numeric_4]"/>
     </MovementEntry>
   </MovementOrder>

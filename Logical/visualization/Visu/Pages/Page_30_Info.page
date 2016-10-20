@@ -63,13 +63,67 @@
       <Property Name="Width" Value="800"/>
       <Property Name="Z-Order" Value="3"/>
       <TextGroup>
-        <TextLayer LanguageId="en"/>
-        <TextLayer LanguageId="cs"/>
-        <TextLayer LanguageId="fr"/>
-        <IndexMap/>
+        <TextLayer LanguageId="en">
+          <Text ID="184420" Value="Conveyors Info"/>
+        </TextLayer>
+        <TextLayer LanguageId="cs">
+          <Text ID="184420" Value="Info o Dopravnících"/>
+        </TextLayer>
+        <TextLayer LanguageId="fr">
+          <Text ID="184420" Value=""/>
+        </TextLayer>
+        <IndexMap>
+          <Index ID="184420" Value="0"/>
+        </IndexMap>
       </TextGroup>
-      <Controls/>
-      <KeyMapping/>
+      <Controls>
+        <Control ClassId="0x00001002" Name="Button_1">
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_26]"/>
+          <Property Name="Height" Value="52"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="643"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="0"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="86"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_26]"/>
+          <Property Name="Width" Value="131"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_1">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="617"/>
+          <Property Name="EndY" Value="415"/>
+          <Property Name="ForeColor" Value="250"/>
+          <Property Name="StartX" Value="617"/>
+          <Property Name="StartY" Value="62"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+      </Controls>
+      <KeyMapping>
+        <VirtualKey Name="%embVirtualKey_26">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000160">
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="Page" Value="Source[local].Page[Page_31_InfoConveyors]"/>
+              <Property Name="Target" Value="Page"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+      </KeyMapping>
     </Layer>
   </Layers>
   <MovementOrder>
@@ -80,9 +134,9 @@
       <Property Name="Up" Value="Source[local].Layer[Robot].Control[Dropdown_1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[Robot].Control[Numeric_2]">
-      <Property Name="Down" Value="Source[local].Layer[Robot].Control[Numeric_3]"/>
-      <Property Name="Left" Value="Source[local].Layer[Robot].Control[Numeric_1]"/>
-      <Property Name="Right" Value="Source[local].Layer[Robot].Control[Numeric_1]"/>
+      <Property Name="Down" Value="Source[local].Layer[Robot].Control[Numeric_4]"/>
+      <Property Name="Left" Value="Source[local].Layer[Robot].Control[Dropdown_1]"/>
+      <Property Name="Right" Value="Source[local].Layer[Robot].Control[Dropdown_1]"/>
       <Property Name="Up" Value="Source[local].Layer[Robot].Control[Numeric_5]"/>
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[Robot].Control[Numeric_3]">
@@ -106,7 +160,7 @@
     <MovementEntry Control="Source[local].Layer[Robot].Control[Dropdown_1]">
       <Property Name="Down" Value="Source[local].Layer[Robot].Control[Numeric_1]"/>
       <Property Name="Left" Value="Source[local].Layer[Robot].Control[Numeric_5]"/>
-      <Property Name="Right" Value="Source[local].Layer[Robot].Control[Numeric_5]"/>
+      <Property Name="Right" Value="Source[local].Layer[Robot].Control[Numeric_2]"/>
       <Property Name="Up" Value="Source[local].Layer[Robot].Control[Numeric_4]"/>
     </MovementEntry>
   </MovementOrder>

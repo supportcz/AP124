@@ -238,7 +238,7 @@
     </Control>
     <Control ClassId="0x00001004" Name="Text_16">
       <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[19]]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP19]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
@@ -369,7 +369,7 @@
     </Control>
     <Control ClassId="0x00001004" Name="Text_17">
       <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[20]]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP20]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
@@ -500,7 +500,7 @@
     </Control>
     <Control ClassId="0x00001004" Name="Text_18">
       <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[21]]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP21]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
@@ -631,7 +631,7 @@
     </Control>
     <Control ClassId="0x00001004" Name="Text_19">
       <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[22]]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP22]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
@@ -762,13 +762,13 @@
     </Control>
     <Control ClassId="0x00001004" Name="Text_22">
       <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[17]]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.statePalletP17]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Opaque"/>
-      <Property Name="GroupID" Value="70"/>
+      <Property Name="GroupID" Value="24"/>
       <Property Name="Height" Value="62"/>
       <Property Name="Left" Value="620"/>
       <Property Name="SimulationIndex" Value="0"/>
@@ -776,7 +776,7 @@
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
       <Property Name="TextDatapoint" Value="None"/>
       <Property Name="TextSource" Value="SingleString"/>
-      <Property Name="Top" Value="223"/>
+      <Property Name="Top" Value="222"/>
       <Property Name="Width" Value="39"/>
     </Control>
     <Control ClassId="0x00001001" Name="Shape_122">
@@ -784,11 +784,11 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="70"/>
+      <Property Name="GroupID" Value="24"/>
       <Property Name="Height" Value="24"/>
       <Property Name="Left" Value="625"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="228"/>
+      <Property Name="Top" Value="227"/>
       <Property Name="Width" Value="2"/>
     </Control>
     <Control ClassId="0x00001001" Name="Shape_123">
@@ -796,11 +796,11 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="70"/>
+      <Property Name="GroupID" Value="24"/>
       <Property Name="Height" Value="24"/>
       <Property Name="Left" Value="634"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="228"/>
+      <Property Name="Top" Value="227"/>
       <Property Name="Width" Value="2"/>
     </Control>
     <Control ClassId="0x00001001" Name="Shape_124">
@@ -808,11 +808,11 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="70"/>
+      <Property Name="GroupID" Value="24"/>
       <Property Name="Height" Value="24"/>
       <Property Name="Left" Value="642"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="228"/>
+      <Property Name="Top" Value="227"/>
       <Property Name="Width" Value="2"/>
     </Control>
     <Control ClassId="0x00001001" Name="Shape_125">
@@ -820,11 +820,11 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="70"/>
+      <Property Name="GroupID" Value="24"/>
       <Property Name="Height" Value="24"/>
       <Property Name="Left" Value="651"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="228"/>
+      <Property Name="Top" Value="227"/>
       <Property Name="Width" Value="2"/>
     </Control>
     <Control ClassId="0x00001001" Name="Shape_126">
@@ -832,11 +832,11 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="70"/>
+      <Property Name="GroupID" Value="24"/>
       <Property Name="Height" Value="24"/>
       <Property Name="Left" Value="625"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="257"/>
+      <Property Name="Top" Value="256"/>
       <Property Name="Width" Value="2"/>
     </Control>
     <Control ClassId="0x00001001" Name="Shape_127">
@@ -844,11 +844,11 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="70"/>
+      <Property Name="GroupID" Value="24"/>
       <Property Name="Height" Value="24"/>
       <Property Name="Left" Value="634"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="257"/>
+      <Property Name="Top" Value="256"/>
       <Property Name="Width" Value="2"/>
     </Control>
     <Control ClassId="0x00001001" Name="Shape_128">
@@ -856,11 +856,11 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="70"/>
+      <Property Name="GroupID" Value="24"/>
       <Property Name="Height" Value="24"/>
       <Property Name="Left" Value="642"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="257"/>
+      <Property Name="Top" Value="256"/>
       <Property Name="Width" Value="2"/>
     </Control>
     <Control ClassId="0x00001001" Name="Shape_129">
@@ -868,11 +868,11 @@
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="70"/>
+      <Property Name="GroupID" Value="24"/>
       <Property Name="Height" Value="24"/>
       <Property Name="Left" Value="651"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="257"/>
+      <Property Name="Top" Value="256"/>
       <Property Name="Width" Value="2"/>
     </Control>
     <Control ClassId="0x00001005" Name="Bitmap_9">
@@ -885,18 +885,18 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="GroupID" Value="70"/>
+      <Property Name="GroupID" Value="24"/>
       <Property Name="Height" Value="77"/>
       <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.statePalletP17]"/>
       <Property Name="Left" Value="615"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="233"/>
+      <Property Name="Top" Value="232"/>
       <Property Name="Width" Value="47"/>
     </Control>
     <Control ClassId="0x00001004" Name="Text_23">
       <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[18]]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP18]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>

@@ -66,6 +66,12 @@ PROGRAM _CYCLIC
 		Idle:
 	END_CASE;
 	
+	IF (gVisu.CurrentPage = 11) THEN
+		gVisu.InfoLock := 24576;
+	ELSE
+		gVisu.InfoLock := 8194;
+	END_IF;
+	
 	IF (ButtonColor <> 3) AND alarmPresent THEN
 		gVisu.TON_0(IN := TRUE, PT := ALARM_BLINK);
 		IF gVisu.TON_0.Q THEN
@@ -181,6 +187,39 @@ PROGRAM _CYCLIC
 		PalletStatus[22] := 0;
 	END_IF;
 
+	(***************************************************************************)
+	(* 							Password Managment						  	   *)
+	(***************************************************************************)
+	gVisu.TON_PW();
+	CASE PasswordManagment OF
+		LOGIN: 
+			gVisu.PasswordStatusDatapoint := 8;
+			PasswordManagment := AUTHORIZE;
+		
+		AUTHORIZE:
+			gVisu.TON_PW(IN := TRUE, PT := 6000);
+			IF gVisu.TON_PW.Q OR gVisu.PasswordStatusDatapoint = 16384 THEN
+				gVisu.PasswordStatusDatapoint := 1;
+				gVisu.TON_PW(IN := FALSE, PT := 6000);
+				PasswordManagment := LOGOUT;
+			END_IF;
+			
+			IF (gVisu.PasswordStatusDatapoint = 0)  THEN
+				IF ((strcmp(ADR(gVisu.Password),ADR('357'))) = 0) THEN
+					gVisu.ChangePage := gVisu.DesiredPage;
+					PasswordManagment := LOGEDIN;
+				END_IF;
+				gVisu.Password := '';
+			END_IF;
+
+		LOGEDIN:
+			gVisu.TON_PW(IN := FALSE, PT := 6000);
+			IF ( gVisu.CurrentPage <> gVisu.DesiredPage) THEN
+				PasswordManagment := LOGOUT;
+			END_IF;
+		LOGOUT:
+			gVisu.Password := '';
+	END_CASE;
 	
 END_PROGRAM
 
