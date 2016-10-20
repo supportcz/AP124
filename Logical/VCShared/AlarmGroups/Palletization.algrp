@@ -68,18 +68,6 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
-    <Alarm Index="8">
-      <Property Name="Acknowledge" Value="Possible"/>
-      <Property Name="AcknowledgeActive" Value="Enabled"/>
-      <Property Name="Bypass" Value="Enabled"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="Latched" Value="False"/>
-      <Property Name="RecordAcknowledge" Value="True"/>
-      <Property Name="RecordBypass" Value="All"/>
-      <Property Name="RecordReset" Value="All"/>
-      <Property Name="RecordTrigger" Value="True"/>
-      <Property Name="TriggerGroupAlarm" Value="False"/>
-    </Alarm>
     <Alarm Index="9">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -380,6 +368,30 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="30">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="True"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="31">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="True"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -399,17 +411,16 @@
       <Text ID="331" Value="Stop sensor on conveyor P14 not reached"/>
       <Text ID="400" Value="Light Curtain P15"/>
       <Text ID="431" Value="Stop sensor on conveyor P15 not reached"/>
-      <Text ID="613" Value="Light Curtain P17"/>
       <Text ID="619" Value="Unexpected pallet on conveyor P13"/>
       <Text ID="636" Value="Unexpected pallet on conveyor P14"/>
       <Text ID="645" Value="Unexpected pallet on conveyor P15"/>
-      <Text ID="651" Value="Motor protection Q143"/>
-      <Text ID="652" Value="Motor protection Q134"/>
+      <Text ID="651" Value="Motor protection P12"/>
+      <Text ID="652" Value="Motor protection P13"/>
       <Text ID="658" Value="Drive U12 (Pusher P3) error"/>
       <Text ID="664" Value="Distance sensor error"/>
       <Text ID="670" Value="Pusher Lifting:Upper position not reached"/>
       <Text ID="679" Value="Pusher Lifting:Lower position not reached"/>
-      <Text ID="688" Value="Motor protection Q120"/>
+      <Text ID="688" Value="Motor protection P3"/>
       <Text ID="723" Value="Drive U10 (conveyor P1) error"/>
       <Text ID="732" Value="Drive U11 (conveyor P2) error"/>
       <Text ID="741" Value="Drive U14 (conveyor P14) error"/>
@@ -425,6 +436,8 @@
       <Text ID="881" Value="Stop sensor on conveyor P17 not reached"/>
       <Text ID="890" Value="Drive U16 (conveyor P16) error"/>
       <Text ID="923" Value="Drive U17 (conveyor P17) error"/>
+      <Text ID="937" Value="Stop sensor on conveyor P18 not reached"/>
+      <Text ID="946" Value="Unexpected pallet on conveyor P18"/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -432,7 +445,6 @@
       <Text ID="331" Value=""/>
       <Text ID="400" Value=""/>
       <Text ID="431" Value=""/>
-      <Text ID="613" Value=""/>
       <Text ID="619" Value=""/>
       <Text ID="636" Value=""/>
       <Text ID="645" Value=""/>
@@ -458,6 +470,8 @@
       <Text ID="881" Value=""/>
       <Text ID="890" Value=""/>
       <Text ID="923" Value=""/>
+      <Text ID="937" Value=""/>
+      <Text ID="946" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -465,7 +479,6 @@
       <Text ID="331" Value=""/>
       <Text ID="400" Value=""/>
       <Text ID="431" Value=""/>
-      <Text ID="613" Value=""/>
       <Text ID="619" Value=""/>
       <Text ID="636" Value=""/>
       <Text ID="645" Value=""/>
@@ -491,6 +504,8 @@
       <Text ID="881" Value=""/>
       <Text ID="890" Value=""/>
       <Text ID="923" Value=""/>
+      <Text ID="937" Value=""/>
+      <Text ID="946" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -498,7 +513,6 @@
       <Index ID="331" Value="2"/>
       <Index ID="400" Value="5"/>
       <Index ID="431" Value="7"/>
-      <Index ID="613" Value="8"/>
       <Index ID="619" Value="9"/>
       <Index ID="636" Value="10"/>
       <Index ID="645" Value="11"/>
@@ -524,6 +538,8 @@
       <Index ID="881" Value="6"/>
       <Index ID="890" Value="26"/>
       <Index ID="923" Value="29"/>
+      <Index ID="937" Value="30"/>
+      <Index ID="946" Value="31"/>
       <Index ID="312" Value="Group"/>
     </IndexMap>
   </TextGroup>

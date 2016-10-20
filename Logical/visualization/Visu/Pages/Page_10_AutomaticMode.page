@@ -128,7 +128,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpPads]"/>
           <Property Name="Height" Value="30"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_outfeed.statusMessageOutfeed]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.statusMessageOutfeed]"/>
           <Property Name="Left" Value="259"/>
           <Property Name="SimulationIndex" Value="3"/>
           <Property Name="SimulationValue" Value=""/>

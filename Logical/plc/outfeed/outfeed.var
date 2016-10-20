@@ -1,0 +1,14 @@
+VAR
+	acknowledgeImageOutfeed : ARRAY[0..39] OF BOOL;
+	alarmImageOutfeed : ARRAY[0..39] OF BOOL;
+	alarmInZoneOutfeed : BOOL;
+	cmdOutfeedAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
+	cmdOutfeedManual : BOOL;
+	statePalletP18 : StatePallet;
+	statePalletP19 : StatePallet;
+	statePalletP20 : StatePallet;
+	statePalletP21 : StatePallet;
+	statePalletP22 : StatePallet;
+	modeOutfeed : ModeOutfeed;
+	modeOutfeedOld : ModeOutfeed;
+END_VAR

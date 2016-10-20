@@ -33,7 +33,7 @@ PROGRAM _CYCLIC
 		
 	StatusMessageMagazine;
 	StatusMessagePalletization;
-	
+	StatusMessageOutfeed;
 	
 	(* recipe edit *)
 	IF adrRecipes <> 0 THEN 
@@ -64,21 +64,27 @@ PROGRAM _CYCLIC
 	
 	//auto or manual
 	IF EDGEPOS(cmdAuto) THEN
+		cmdMagazineAuto := TRUE;
 		cmdPalletizationAuto := TRUE;
+		cmdOutfeedAuto := TRUE;
 	END_IF
 
 	IF EDGENEG(cmdAuto) THEN
+		cmdMagazineAuto := FALSE;
 		cmdPalletizationAuto := FALSE;
+		cmdOutfeedAuto := FALSE;
 	END_IF
 
 	IF EDGEPOS(cmdManual) THEN
-		cmdPalletizationManual := TRUE;
 		cmdMagazineManual := TRUE;
+		cmdPalletizationManual := TRUE;
+		cmdOutfeedManual := TRUE;
 	END_IF
 
 	IF EDGENEG(cmdManual) THEN
-		cmdPalletizationManual := FALSE;
 		cmdMagazineManual := FALSE;
+		cmdPalletizationManual := FALSE;
+		cmdOutfeedManual := FALSE;
 	END_IF
 
 	

@@ -64,7 +64,7 @@ VAR_CONFIG
 	::pallet_con:acpI_P15.CMDD_Output AT %QW."U15".CMDD_Output;
 	::pallet_con:acpI_P15.LFRD_Output AT %QW."U15".LFR_Output;
 	::pallet_con:diPalletStopP15 AT %IX."I80".DigitalInput04;
-	::pallet_con:lightCurtainP17 AT %IX."I18".BOOL007;
+	::pallet_out:lightCurtainP17 AT %IX."I18".BOOL007;
 	::pusher_dri:aoPusherDriveP12 AT %QW."U12".LFRD_Output;
 	::pusher_dri:acpI_P12.ETAD_Input AT %IW."U12".ETAD_Input;
 	::pusher_dri:acpI_P12.CMDD_Output AT %QW."U12".CMDD_Output;
@@ -103,4 +103,23 @@ VAR_CONFIG
 	::pallet_con:acpI_P16.ETAD_Input AT %IW."U16".ETAD_Input;
 	::pallet_con:acpI_P16.CMDD_Output AT %QW."U16".CMDD_Output;
 	::pallet_con:acpI_P16.LFRD_Output AT %QW."U16".LFR_Output;
+	::pallet_con:acpI_P17.ETAD_Input AT %IW."U17".ETAD_Input;
+	::pallet_con:acpI_P17.CMDD_Output AT %QW."U17".CMDD_Output;
+	::pallet_con:acpI_P17.LFRD_Output AT %QW."U17".LFR_Output;
+	::pallet_out:doConveyorP20 AT %QX."Q14".DigitalOutput06;
+	::pallet_out:doConveyorP19 AT %QX."Q14".DigitalOutput05;
+	::pallet_out:doConveyorP21 AT %QX."Q14".DigitalOutput07;
+	::pallet_out:doConveyorP22 AT %QX."Q14".DigitalOutput08;
+	::pallet_con:diPalletStopP18 AT %IX."I80".DigitalInput07;
+	::wrapper:diPalletStopP19 AT %IX."I80".DigitalInput08;
+	::pallet_out:diPalletStopP20 AT %IX."I80".DigitalInput09;
+	::pallet_out:diPalletStopP21 AT %IX."I80".DigitalInput10;
+	::pallet_out:diPalletStopP22 AT %IX."I80".DigitalInput11;
+	::pallet_out:diMotorProtectionP19 AT %IX."I06".DigitalInput08;
+	::pallet_out:diMotorProtectionP20 AT %IX."I06".DigitalInput09;
+	::pallet_out:diMotorProtectionP21 AT %IX."I06".DigitalInput10;
+	::pallet_out:diMotorProtectionP22 AT %IX."I06".DigitalInput11;
+	::wrapper:acpI_P18.ETAD_Input AT %IW."U18.1".ETAD_Input;
+	::wrapper:acpI_P18.CMDD_Output AT %QW."U18.1".CMDD_Output;
+	::wrapper:acpI_P18.speed AT %QW."U18.1".LFR_Output;
 END_VAR

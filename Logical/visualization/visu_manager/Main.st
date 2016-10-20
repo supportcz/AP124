@@ -141,6 +141,47 @@ PROGRAM _CYCLIC
 		PalletStatus[17] := 0;
 	END_IF;
 	
+	IF PalletStatus[18] THEN
+		IF (statePalletP18 = palletMoving) THEN
+			statePalletP18 := 0;
+		ELSE statePalletP18 := statePalletP18 + 1;
+		END_IF;
+		PalletStatus[18] := 0;
+	END_IF;
+
+	IF PalletStatus[19] THEN
+		IF (statePalletP19 = palletMoving) THEN
+			statePalletP19 := 0;
+		ELSE statePalletP19 := statePalletP19 + 1;
+		END_IF;
+		PalletStatus[19] := 0;
+	END_IF;
+
+	IF PalletStatus[20] THEN
+		IF (statePalletP20 = palletMoving) THEN
+			statePalletP20 := 0;
+		ELSE statePalletP20 := statePalletP20 + 1;
+		END_IF;
+		PalletStatus[20] := 0;
+	END_IF;
+
+	IF PalletStatus[21] THEN
+		IF (statePalletP21 = palletMoving) THEN
+			statePalletP21 := 0;
+		ELSE statePalletP21 := statePalletP21 + 1;
+		END_IF;
+		PalletStatus[21] := 0;
+	END_IF;
+	
+	IF PalletStatus[22] THEN
+		IF (statePalletP22 = palletMoving) THEN
+			statePalletP22 := 0;
+		ELSE statePalletP22 := statePalletP22 + 1;
+		END_IF;
+		PalletStatus[22] := 0;
+	END_IF;
+
+	
 END_PROGRAM
 
 PROGRAM _EXIT

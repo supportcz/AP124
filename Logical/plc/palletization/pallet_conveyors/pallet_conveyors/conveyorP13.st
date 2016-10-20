@@ -1,9 +1,13 @@
 
 
-ACTION ConveyorP13Control: 
+ACTION ConveyorP13: 
 
 	TON_PalletStopP14(IN := diPalletStopP14, PT := T#200ms);
 	
+	IF EDGEPOS(TON_PalletStopP14.Q) AND statePalletP13 <> palletMoving THEN
+		alarmImagePalletization[10] := TRUE;
+	END_IF		
+
 	CASE statePalletP13 OF
 		
 		palletNotPresent:
@@ -49,13 +53,9 @@ ACTION ConveyorP13Control:
 	END_CASE
 
 									
-	IF EDGEPOS(TON_PalletStopP14.Q) AND statePalletP13 <> palletMoving THEN
-		alarmImagePalletization[10] := TRUE;
-	END_IF	
-	
+	// alarms
 	alarmImagePalletization[13] := NOT diMotorProtectionP13;
 	
-	//edge alarms
 	IF acknowledgeImagePalletization[2] THEN
 		alarmImagePalletization[2] := FALSE;
 	END_IF

@@ -1,0 +1,22 @@
+VAR
+	cmdMovePalletP19 : BOOL;
+	cmdMovePalletP20 : BOOL;
+	cmdMovePalletP21 : BOOL;
+	cmdMovePalletP22 : BOOL;
+	diMotorProtectionP19 : BOOL;
+	diMotorProtectionP20 : BOOL;
+	diMotorProtectionP21 : BOOL;
+	diMotorProtectionP22 : BOOL;
+	diPalletStopP20 : BOOL;
+	diPalletStopP21 : BOOL;
+	diPalletStopP22 : BOOL;
+	doConveyorP19 : BOOL;
+	doConveyorP20 : BOOL;
+	doConveyorP21 : BOOL;
+	doConveyorP22 : BOOL;
+	lightCurtainP17 : BOOL;
+	TON_ConveyorP19 : TON;
+	TON_ConveyorP20 : TON;
+	TON_PalletStopP20 : TON;
+	TON_PalletStopP21 : TON;
+END_VAR

@@ -3,11 +3,12 @@
 ACTION HorizontalArmsControl: 
 	
 	IF modeMagazine = modeMagazineNotReadyToStart THEN
-		stateArms := stateArmsUndefined;
+		stateArms := stateArmsInit;
 	END_IF
 	
 	CASE stateArms OF
-		stateArmsUndefined:
+		
+		stateArmsInit:
 			
 			IF diLeftArmClosed AND diRightArmClosed AND NOT diLeftArmOpened AND NOT diRightArmOpened THEN
 				stateArms := stateArmsClosed;
@@ -17,18 +18,10 @@ ACTION HorizontalArmsControl:
 				stateArms := stateArmsOpened;
 			END_IF
 		
-			IF stateArms = stateArmsUndefined THEN
-				// command to close 
-				IF closeArms THEN
-					TON_LeftRequest(IN := FALSE);
-					TON_RightRequest(IN := FALSE);
-					stateArms := stateArmsClosing;		
-				ELSE
-				// command to open 
-					TON_LeftRequest(IN := FALSE);
-					TON_RightRequest(IN := FALSE);
-					stateArms := stateArmsOpening;	
-				END_IF	
+			//default state
+			IF stateArms = stateArmsInit THEN
+				doCloseArms := closeArms;
+				doOpenArms := NOT doCloseArms;
 			END_IF
 						
 		stateArmsOpening:
@@ -48,12 +41,14 @@ ACTION HorizontalArmsControl:
 			//timeout left side?
 			IF TON_LeftRequest.Q THEN
 				alarmImageMagazine[4] := TRUE;
-				stateArms := stateArmsUndefined;
+				closeArms := TRUE;
+				stateArms := stateArmsClosed;
 			END_IF
 			//timeout right side?
 			IF TON_RightRequest.Q THEN
 				alarmImageMagazine[5] := TRUE;
-				stateArms := stateArmsUndefined;
+				closeArms := TRUE;
+				stateArms := stateArmsClosed;
 			END_IF
 		
 		stateArmsOpened:
@@ -62,7 +57,7 @@ ACTION HorizontalArmsControl:
 			IF closeArms THEN
 				IF stateMagazine = stateUpperPosition THEN
 					alarmImageMagazine[16] := TRUE;
-					stateArms := stateArmsUndefined;
+					closeArms := FALSE;
 				ELSE	
 					TON_LeftRequest(IN := FALSE);
 					TON_RightRequest(IN := FALSE);
@@ -87,12 +82,14 @@ ACTION HorizontalArmsControl:
 			//timeout left side?
 			IF TON_LeftRequest.Q THEN
 				alarmImageMagazine[2] := TRUE;
-				stateArms := stateArmsUndefined;
+				closeArms := FALSE;
+				stateArms := stateArmsOpened;
 			END_IF
 			//timeout right side?
 			IF TON_RightRequest.Q THEN
 				alarmImageMagazine[3] := TRUE;
-				stateArms := stateArmsUndefined;
+				closeArms := FALSE;
+				stateArms := stateArmsOpened;
 			END_IF
 
 		stateArmsClosed:
@@ -111,7 +108,7 @@ ACTION HorizontalArmsControl:
 	END_CASE
 	
 	//alarms
-	IF stateArms = stateArmsUndefined THEN
+	IF stateArms = stateArmsInit THEN
 		alarmImageMagazine[0] := TRUE;
 	ELSE
 		alarmImageMagazine[0] := FALSE;

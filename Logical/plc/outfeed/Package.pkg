@@ -2,7 +2,9 @@
 <?AutomationStudio Version=4.2.5.388?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="File">pallet_outfeed.var</Object>
+    <Object Type="File">outfeed.typ</Object>
+    <Object Type="File">outfeed.var</Object>
+    <Object Type="Program" Language="IEC" Description="palletization state machine">outfeed_main</Object>
     <Object Type="Package">pallet_outfeed</Object>
     <Object Type="Package">wrapper</Object>
   </Objects>

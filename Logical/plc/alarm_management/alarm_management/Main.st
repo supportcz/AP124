@@ -30,7 +30,7 @@ PROGRAM _CYCLIC
 		END_IF
 	END_FOR
 	
-	//detect if there is any alarm 
+	//detect if there is any alarm in zone Magazine
 	alarmInZoneMagazine := FALSE;
 	FOR i:=0 TO 39 DO
 		IF alarmImageMagazine[i] OR acknowledgeImageMagazine[i] THEN
@@ -38,7 +38,7 @@ PROGRAM _CYCLIC
 		END_IF
 	END_FOR
 	
-	//detect if there is any alarm 
+	//detect if there is any alarm in zone Palletization
 	alarmInZonePalletization := FALSE;
 	FOR i:=0 TO 39 DO
 		IF alarmImagePalletization[i] OR acknowledgeImagePalletization[i] THEN
@@ -46,13 +46,14 @@ PROGRAM _CYCLIC
 		END_IF
 	END_FOR
 	
+	//detect if there is any alarm in zone Outfeed
+	alarmInZoneOutfeed := FALSE;
+	FOR i:=0 TO 39 DO
+		IF alarmImageOutfeed[i] OR acknowledgeImageOutfeed[i] THEN
+			alarmInZoneOutfeed := TRUE;
+		END_IF
+	END_FOR
 		
-	//reset all errors
-//	IF diReset THEN
-//		FOR i:= 0 TO 39 DO
-//			acknowledgeImageMagazine[i] := 0;
-//			acknowledgeImage[i] := 0;
-//		END_FOR
-//	END_IF
+
 	
 END_PROGRAM

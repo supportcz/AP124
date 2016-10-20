@@ -110,6 +110,8 @@
     <Module Name="U11" Type="8I74xxxxxxx.01P-1" X="352" Y="484" />
     <Module Name="U16" Type="8I74xxxxxxx.01P-1" X="704" Y="484" />
     <Module Name="U17" Type="8I74xxxxxxx.01P-1" X="792" Y="484" />
+    <Module Name="U18.1" Type="8I74xxxxxxx.01P-1" X="880" Y="484" />
+    <Module Name="U18.2" Type="8I74xxxxxxx.01P-1" X="968" Y="484" />
   </Modules>
   <Links>
     <Link From="6PPT30.0702-20B" To="X20CP1583" FromPort="ETH1" ToPort="IF2" IsRoutedByUser="False">
@@ -192,6 +194,26 @@
       <Point X="630" Y="638" />
       <Point X="630" Y="638" />
     </Link>
+    <Link From="U15" To="U16" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="640" Y="638" />
+      <Point X="640" Y="638" />
+      <Point X="640" Y="685" />
+      <Point X="640" Y="695" />
+      <Point X="718" Y="695" />
+      <Point X="718" Y="685" />
+      <Point X="718" Y="638" />
+      <Point X="718" Y="638" />
+    </Link>
+    <Link From="U16" To="U17" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="728" Y="638" />
+      <Point X="728" Y="638" />
+      <Point X="728" Y="685" />
+      <Point X="728" Y="695" />
+      <Point X="806" Y="695" />
+      <Point X="806" Y="685" />
+      <Point X="806" Y="638" />
+      <Point X="806" Y="638" />
+    </Link>
     <Link From="X20BR9300" To="X20BT9100" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
       <Point X="270" Y="308" />
       <Point X="270" Y="308" />
@@ -228,25 +250,25 @@
       <Point X="530" Y="308" />
       <Point X="530" Y="308" />
     </Link>
-    <Link From="U15" To="U16" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
-      <Point X="640" Y="638" />
-      <Point X="640" Y="638" />
-      <Point X="640" Y="685" />
-      <Point X="640" Y="695" />
-      <Point X="718" Y="695" />
-      <Point X="718" Y="685" />
-      <Point X="718" Y="638" />
-      <Point X="718" Y="638" />
+    <Link From="U18.1" To="U17" FromPort="PLK1" ToPort="PLK2" IsRoutedByUser="False">
+      <Point X="894" Y="638" />
+      <Point X="894" Y="638" />
+      <Point X="894" Y="685" />
+      <Point X="894" Y="695" />
+      <Point X="816" Y="695" />
+      <Point X="816" Y="685" />
+      <Point X="816" Y="638" />
+      <Point X="816" Y="638" />
     </Link>
-    <Link From="U16" To="U17" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
-      <Point X="728" Y="638" />
-      <Point X="728" Y="638" />
-      <Point X="728" Y="685" />
-      <Point X="728" Y="695" />
-      <Point X="806" Y="695" />
-      <Point X="806" Y="685" />
-      <Point X="806" Y="638" />
-      <Point X="806" Y="638" />
+    <Link From="U18.1" To="U18.2" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="904" Y="638" />
+      <Point X="904" Y="638" />
+      <Point X="904" Y="685" />
+      <Point X="904" Y="695" />
+      <Point X="982" Y="695" />
+      <Point X="982" Y="685" />
+      <Point X="982" Y="638" />
+      <Point X="982" Y="638" />
     </Link>
   </Links>
   <InfoElements>

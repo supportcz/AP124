@@ -1143,7 +1143,7 @@
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="GroupID" Value="37"/>
       <Property Name="Height" Value="47"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[18]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP18]"/>
       <Property Name="Left" Value="239"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -1274,7 +1274,7 @@
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="GroupID" Value="38"/>
       <Property Name="Height" Value="77"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[19]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP19]"/>
       <Property Name="Left" Value="236"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>

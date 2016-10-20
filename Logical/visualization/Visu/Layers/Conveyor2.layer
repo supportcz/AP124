@@ -360,7 +360,7 @@
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="GroupID" Value="66"/>
       <Property Name="Height" Value="47"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[19]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP19]"/>
       <Property Name="Left" Value="532"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -491,7 +491,7 @@
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="GroupID" Value="67"/>
       <Property Name="Height" Value="47"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[20]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP20]"/>
       <Property Name="Left" Value="447"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -622,7 +622,7 @@
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="GroupID" Value="68"/>
       <Property Name="Height" Value="47"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[21]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP21]"/>
       <Property Name="Left" Value="360"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -753,7 +753,7 @@
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="GroupID" Value="69"/>
       <Property Name="Height" Value="47"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[22]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP22]"/>
       <Property Name="Left" Value="274"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -887,7 +887,7 @@
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="GroupID" Value="70"/>
       <Property Name="Height" Value="77"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[17]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.statePalletP17]"/>
       <Property Name="Left" Value="615"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -1018,7 +1018,7 @@
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="GroupID" Value="71"/>
       <Property Name="Height" Value="77"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[18]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP18]"/>
       <Property Name="Left" Value="614"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>

@@ -249,6 +249,7 @@
   </Module>
   <Module Name="U17" Type="8I74xxxxxxx.01P-1" Version="1.3.0.0">
     <Connection Connector="PLK1" TargetModule="U16" TargetConnector="PLK2" NodeNumber="17" />
+    <Connection Connector="PLK2" TargetModule="U18.1" TargetConnector="PLK1" NodeNumber="17" />
     <Parameter ID="Supervision" Value="off" />
     <Parameter ID="packedETAD" Value="packed" />
     <Parameter ID="packedETI" Value="packed" />
@@ -263,6 +264,40 @@
     <Parameter ID="UNS" Value="400" />
     <Parameter ID="NCR" Value="16" />
     <Parameter ID="NSP" Value="1360" />
+  </Module>
+  <Module Name="U18.1" Type="8I74xxxxxxx.01P-1" Version="1.3.0.0">
+    <Connection Connector="PLK1" TargetModule="U17" TargetConnector="PLK2" NodeNumber="18" />
+    <Connection Connector="PLK2" TargetModule="U18.2" TargetConnector="PLK1" NodeNumber="18" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="packedETAD" Value="packed" />
+    <Parameter ID="packedETI" Value="packed" />
+    <Parameter ID="packedCMDD" Value="packed" />
+    <Parameter ID="packedCMI" Value="packed" />
+    <Parameter ID="LFRD_LFR_Filter" Value="LFR_RFR" />
+    <Parameter ID="ACC" Value="5" />
+    <Parameter ID="DEC" Value="5" />
+    <Parameter ID="HSP" Value="600" />
+    <Parameter ID="NPR" Value="55" />
+    <Parameter ID="COS" Value="72" />
+    <Parameter ID="UNS" Value="400" />
+    <Parameter ID="NCR" Value="16" />
+    <Parameter ID="NSP" Value="1360" />
+  </Module>
+  <Module Name="U18.2" Type="8I74xxxxxxx.01P-1" Version="1.3.0.0">
+    <Connection Connector="PLK1" TargetModule="U18.1" TargetConnector="PLK2" NodeNumber="19" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="packedETAD" Value="packed" />
+    <Parameter ID="packedETI" Value="packed" />
+    <Parameter ID="packedCMDD" Value="packed" />
+    <Parameter ID="packedCMI" Value="packed" />
+    <Parameter ID="ACC" Value="5" />
+    <Parameter ID="DEC" Value="5" />
+    <Parameter ID="HSP" Value="600" />
+    <Parameter ID="NPR" Value="25" />
+    <Parameter ID="COS" Value="81" />
+    <Parameter ID="UNS" Value="400" />
+    <Parameter ID="NCR" Value="7" />
+    <Parameter ID="NSP" Value="1300" />
   </Module>
   <Module Name="X20BM01" Type="X20BM01" Version="1.0.1.1">
     <Connection Connector="X2X1" TargetModule="X20CP1583" TargetConnector="IF6" />

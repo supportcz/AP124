@@ -1,20 +1,21 @@
 VAR
-	conveyorsStatusDatapointAuto : UINT;
-	conveyorsStatusDatapointManual : UINT;
-	magazineStatusDatapointAuto : UINT;
-	magazineStatusDatapointManual : UINT;
-	statusMessageMagazine : INT;
-	statusMessagePalletization : INT;
-	dRecipes : REFERENCE TO Recipes;
-	dActualRecipe : REFERENCE TO Recipe;
 	actualLayerIndex : INT;
-	dActualLayout : REFERENCE TO Layout;
-	dActualTray : REFERENCE TO Tray;
 	actualTrayIndex : INT;
-	dActualLayoutIndex : REFERENCE TO INT;
 	cmdAuto : BOOL;
 	cmdManual : BOOL;
-	nullRecipe : Recipe;
+	conveyorsStatusDatapointAuto : UINT;
+	conveyorsStatusDatapointManual : UINT;
+	dActualLayout : REFERENCE TO Layout;
+	dActualLayoutIndex : REFERENCE TO INT;
+	dActualRecipe : REFERENCE TO Recipe;
+	dActualTray : REFERENCE TO Tray;
+	dRecipes : REFERENCE TO Recipes;
+	magazineStatusDatapointAuto : UINT;
+	magazineStatusDatapointManual : UINT;
 	nullLayout : Layout;
+	nullRecipe : Recipe;
 	nullTray : Tray;
+	statusMessageMagazine : INT;
+	statusMessageOutfeed : INT;
+	statusMessagePalletization : INT;
 END_VAR

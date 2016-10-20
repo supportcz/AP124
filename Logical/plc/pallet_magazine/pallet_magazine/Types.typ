@@ -27,7 +27,7 @@ TYPE
 		);
 	StateArms : 
 		(
-		stateArmsUndefined,
+		stateArmsInit,
 		stateArmsOpening,
 		stateArmsOpened,
 		stateArmsClosing,

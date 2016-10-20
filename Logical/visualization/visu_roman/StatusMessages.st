@@ -38,7 +38,6 @@ ACTION StatusMessageMagazine:
 		statusMessageMagazine := 1;
 	END_IF
 	
-	
 END_ACTION
 
 ACTION StatusMessagePalletization: 
@@ -57,6 +56,9 @@ ACTION StatusMessagePalletization:
 	END_IF
 	IF alarmImagePalletization[5] THEN
 		statusMessagePalletization := 12;
+	END_IF
+	IF alarmImageOutfeed[0] THEN
+		statusMessagePalletization := 13;
 	END_IF
 	IF diPalletizationEDM THEN
 		statusMessagePalletization := 14;
@@ -80,5 +82,43 @@ ACTION StatusMessagePalletization:
 		statusMessagePalletization := 1;
 	END_IF
 	
+	
+END_ACTION
+
+ACTION StatusMessageOutfeed: 
+
+	IF modeOutfeed = modeOutfeedAuto THEN
+		statusMessageOutfeed := 28;
+	END_IF
+	IF alarmInZoneOutfeed THEN
+		statusMessageOutfeed := 25;
+	END_IF
+	IF modeOutfeed = modeOutfeedManual THEN
+		statusMessageOutfeed := 22;
+	END_IF
+	IF alarmImageOutfeed[0] THEN
+		statusMessageOutfeed := 13;
+	END_IF
+	IF diOutfeedEDM THEN
+		statusMessageOutfeed := 16;
+	END_IF
+	IF alarmImageCommon[6] THEN
+		statusMessageOutfeed := 7;
+	END_IF
+	IF alarmImageCommon[5] THEN
+		statusMessageOutfeed := 6;
+	END_IF
+	IF alarmImageCommon[4] THEN
+		statusMessageOutfeed := 4;
+	END_IF
+	IF alarmImageCommon[3] THEN
+		statusMessageOutfeed := 3;
+	END_IF
+	IF alarmImageCommon[2] THEN
+		statusMessageOutfeed := 2;
+	END_IF
+	IF alarmImageCommon[1] THEN
+		statusMessageOutfeed := 1;
+	END_IF
 	
 END_ACTION
