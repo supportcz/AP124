@@ -93,6 +93,54 @@ PROGRAM _CYCLIC
 		END_IF;
 	END_IF;		
 	
+	IF (EDGEPOS(PalletStatus[12])) THEN
+		IF (statePalletP12 = palletMoving) THEN
+			statePalletP12 := 0;
+		ELSE statePalletP12 := statePalletP12 + 1;
+		END_IF;
+		PalletStatus[12] := 0;
+	END_IF;
+	
+	IF (EDGEPOS(PalletStatus[13])) THEN
+		IF (statePalletP13 = palletMoving) THEN
+			statePalletP13 := 0;
+		ELSE statePalletP13 := statePalletP13 + 1;
+		END_IF; 
+		PalletStatus[13] := 0;
+	END_IF;
+	
+	IF (EDGEPOS(PalletStatus[14])) THEN
+		IF (statePalletP14 = palletMoving) THEN
+			statePalletP14 := 0;
+		ELSE statePalletP14 := statePalletP14 + 1;
+		END_IF;
+		PalletStatus[14]:= 0;
+	END_IF;
+	
+	IF (EDGEPOS(PalletStatus[15])) THEN
+		IF (statePalletP15 = palletMoving) THEN
+			statePalletP15 := 0;
+		ELSE statePalletP15 := statePalletP15 + 1;
+		END_IF;
+		PalletStatus[15] := 0;
+	END_IF;
+	
+	IF (EDGEPOS(PalletStatus[16])) THEN
+		IF (statePalletP16 = palletMoving) THEN
+			statePalletP16 := 0;
+		ELSE statePalletP16 := statePalletP16 + 1;
+		END_IF;
+		PalletStatus[16] := 0;
+	END_IF;
+	
+	IF (EDGEPOS(PalletStatus[17])) THEN
+		IF (statePalletP17 = palletMoving) THEN
+			statePalletP17 := 0;
+		ELSE statePalletP17 := statePalletP17 + 1;
+		END_IF;
+		PalletStatus[17] := 0;
+	END_IF;
+	
 END_PROGRAM
 
 PROGRAM _EXIT

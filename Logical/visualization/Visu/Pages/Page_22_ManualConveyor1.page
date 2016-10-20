@@ -433,7 +433,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpButton]"/>
           <Property Name="Height" Value="23"/>
-          <Property Name="Left" Value="183"/>
+          <Property Name="Left" Value="185"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.conveyorsStatusDatapointManual]"/>
@@ -441,7 +441,7 @@
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="82"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="247"/>
+          <Property Name="Top" Value="343"/>
           <Property Name="Width" Value="29"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_14">
@@ -457,7 +457,7 @@
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="87"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="64"/>
+          <Property Name="Top" Value="92"/>
           <Property Name="Width" Value="29"/>
         </Control>
         <Control ClassId="0x00001002" Name="Button_14">
@@ -533,13 +533,10 @@
           <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AddRemovePallet]"/>
           <Property Name="BitmapIndex" Value="0"/>
-          <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[12]]"/>
+          <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.statePalletP12]"/>
           <Property Name="BitmapSimulationValue" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[12]]"/>
-          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
-          <Property Name="ColorMapIndexOffset" Value="0"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_75]"/>
@@ -667,13 +664,10 @@
           <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AddRemovePallet]"/>
           <Property Name="BitmapIndex" Value="0"/>
-          <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[13]]"/>
+          <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.statePalletP13]"/>
           <Property Name="BitmapSimulationValue" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[13]]"/>
-          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
-          <Property Name="ColorMapIndexOffset" Value="0"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_79]"/>
@@ -695,13 +689,10 @@
           <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AddRemovePallet]"/>
           <Property Name="BitmapIndex" Value="0"/>
-          <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[14]]"/>
+          <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.statePalletP14]"/>
           <Property Name="BitmapSimulationValue" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[14]]"/>
-          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
-          <Property Name="ColorMapIndexOffset" Value="0"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_80]"/>
@@ -723,13 +714,10 @@
           <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AddRemovePallet]"/>
           <Property Name="BitmapIndex" Value="0"/>
-          <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[15]]"/>
+          <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.statePalletP15]"/>
           <Property Name="BitmapSimulationValue" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[15]]"/>
-          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
-          <Property Name="ColorMapIndexOffset" Value="0"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_82]"/>
@@ -751,13 +739,10 @@
           <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AddRemovePallet]"/>
           <Property Name="BitmapIndex" Value="0"/>
-          <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[16]]"/>
+          <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.statePalletP16]"/>
           <Property Name="BitmapSimulationValue" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[16]]"/>
-          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
-          <Property Name="ColorMapIndexOffset" Value="0"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_86]"/>
@@ -779,13 +764,10 @@
           <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AddRemovePallet]"/>
           <Property Name="BitmapIndex" Value="0"/>
-          <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[17]]"/>
+          <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.statePalletP17]"/>
           <Property Name="BitmapSimulationValue" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[17]]"/>
-          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
-          <Property Name="ColorMapIndexOffset" Value="0"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_87]"/>
@@ -807,13 +789,10 @@
           <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AddRemovePallet]"/>
           <Property Name="BitmapIndex" Value="0"/>
-          <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[18]]"/>
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
           <Property Name="BitmapSimulationValue" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[18]]"/>
-          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
-          <Property Name="ColorMapIndexOffset" Value="0"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_88]"/>
@@ -835,13 +814,10 @@
           <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AddRemovePallet]"/>
           <Property Name="BitmapIndex" Value="0"/>
-          <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[19]]"/>
+          <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[19]]"/>
           <Property Name="BitmapSimulationValue" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
           <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[19]]"/>
-          <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
-          <Property Name="ColorMapIndexOffset" Value="0"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_106]"/>
@@ -858,18 +834,6 @@
           <Property Name="Top" Value="303"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_106]"/>
           <Property Name="Width" Value="40"/>
-        </Control>
-        <Control ClassId="0x00001003" Name="HotSpot_1">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_37]"/>
-          <Property Name="Height" Value="40"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="737"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="181"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_37]"/>
-          <Property Name="Width" Value="61"/>
         </Control>
         <Control ClassId="0x00001003" Name="HotSpot_2">
           <Property Name="ControlID" Value="0"/>
@@ -1109,17 +1073,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000162">
+            <KeyAction ClassId="0x00000161">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
-              <Property Name="MaxValue" Value="3"/>
-              <Property Name="MinValue" Value="0"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Repeat" Value="True"/>
-              <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[12]]"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[12]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1127,17 +1088,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000162">
+            <KeyAction ClassId="0x00000161">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
-              <Property Name="MaxValue" Value="3"/>
-              <Property Name="MinValue" Value="0"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Repeat" Value="True"/>
-              <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[13]]"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[13]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1145,17 +1103,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000162">
+            <KeyAction ClassId="0x00000161">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
-              <Property Name="MaxValue" Value="3"/>
-              <Property Name="MinValue" Value="0"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Repeat" Value="True"/>
-              <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[14]]"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[14]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1163,17 +1118,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000162">
+            <KeyAction ClassId="0x00000161">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
-              <Property Name="MaxValue" Value="3"/>
-              <Property Name="MinValue" Value="0"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Repeat" Value="True"/>
-              <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[15]]"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[15]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1181,17 +1133,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000162">
+            <KeyAction ClassId="0x00000161">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
-              <Property Name="MaxValue" Value="3"/>
-              <Property Name="MinValue" Value="0"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Repeat" Value="True"/>
-              <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[16]]"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[16]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1199,17 +1148,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000162">
+            <KeyAction ClassId="0x00000161">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
-              <Property Name="MaxValue" Value="3"/>
-              <Property Name="MinValue" Value="0"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Repeat" Value="True"/>
-              <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[17]]"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[17]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1217,17 +1163,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000162">
+            <KeyAction ClassId="0x00000161">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
-              <Property Name="MaxValue" Value="3"/>
-              <Property Name="MinValue" Value="0"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Repeat" Value="True"/>
-              <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[18]]"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[18]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1235,35 +1178,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000162">
+            <KeyAction ClassId="0x00000161">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
-              <Property Name="MaxValue" Value="3"/>
-              <Property Name="MinValue" Value="0"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Repeat" Value="True"/>
-              <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[19]]"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_37">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x00000162">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="MaxValue" Value="3"/>
-              <Property Name="MinValue" Value="0"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="Repeat" Value="True"/>
-              <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[12]]"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[19]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1271,17 +1193,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000162">
+            <KeyAction ClassId="0x0000016B">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
-              <Property Name="MaxValue" Value="3"/>
-              <Property Name="MinValue" Value="0"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Repeat" Value="True"/>
-              <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[13]]"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[13]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1289,17 +1209,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000162">
+            <KeyAction ClassId="0x0000016B">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
-              <Property Name="MaxValue" Value="3"/>
-              <Property Name="MinValue" Value="0"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Repeat" Value="True"/>
-              <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[14]]"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[14]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1307,17 +1225,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000162">
+            <KeyAction ClassId="0x0000016B">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
-              <Property Name="MaxValue" Value="3"/>
-              <Property Name="MinValue" Value="0"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Repeat" Value="True"/>
-              <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[15]]"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[15]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1325,17 +1241,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000162">
+            <KeyAction ClassId="0x0000016B">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
-              <Property Name="MaxValue" Value="3"/>
-              <Property Name="MinValue" Value="0"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Repeat" Value="True"/>
-              <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[16]]"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[16]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1343,17 +1257,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000162">
+            <KeyAction ClassId="0x0000016B">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
-              <Property Name="MaxValue" Value="3"/>
-              <Property Name="MinValue" Value="0"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Repeat" Value="True"/>
-              <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[17]]"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[17]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1361,17 +1273,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000162">
+            <KeyAction ClassId="0x0000016B">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
-              <Property Name="MaxValue" Value="3"/>
-              <Property Name="MinValue" Value="0"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Repeat" Value="True"/>
-              <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[18]]"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[18]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1379,17 +1289,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000162">
+            <KeyAction ClassId="0x0000016B">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
-              <Property Name="MaxValue" Value="3"/>
-              <Property Name="MinValue" Value="0"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Repeat" Value="True"/>
-              <Property Name="StepValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[19]]"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[19]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

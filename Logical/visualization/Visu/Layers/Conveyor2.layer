@@ -18,7 +18,7 @@
     <Control ClassId="0x00001005" Name="Bitmap_1">
       <Property Name="Bitmap" Value="Source[local].Bitmap[conveyor2]"/>
       <Property Name="BitmapSource" Value="SingleBitmap"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[17]]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[17]]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
@@ -238,7 +238,7 @@
     </Control>
     <Control ClassId="0x00001004" Name="Text_16">
       <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[19]]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[19]]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
@@ -360,7 +360,7 @@
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="GroupID" Value="66"/>
       <Property Name="Height" Value="47"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[19]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[19]]"/>
       <Property Name="Left" Value="532"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -369,7 +369,7 @@
     </Control>
     <Control ClassId="0x00001004" Name="Text_17">
       <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[20]]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[20]]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
@@ -491,7 +491,7 @@
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="GroupID" Value="67"/>
       <Property Name="Height" Value="47"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[20]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[20]]"/>
       <Property Name="Left" Value="447"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -500,7 +500,7 @@
     </Control>
     <Control ClassId="0x00001004" Name="Text_18">
       <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[21]]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[21]]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
@@ -622,7 +622,7 @@
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="GroupID" Value="68"/>
       <Property Name="Height" Value="47"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[21]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[21]]"/>
       <Property Name="Left" Value="360"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -631,7 +631,7 @@
     </Control>
     <Control ClassId="0x00001004" Name="Text_19">
       <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[22]]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[22]]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
@@ -753,7 +753,7 @@
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="GroupID" Value="69"/>
       <Property Name="Height" Value="47"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[22]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[22]]"/>
       <Property Name="Left" Value="274"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -762,7 +762,7 @@
     </Control>
     <Control ClassId="0x00001004" Name="Text_22">
       <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[17]]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[17]]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
@@ -879,7 +879,7 @@
       <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[PalletInMoveUp]"/>
       <Property Name="BitmapIndex" Value="0"/>
       <Property Name="BitmapSource" Value="MultipleBitmaps"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[17]]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[17]]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
@@ -887,7 +887,7 @@
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="GroupID" Value="70"/>
       <Property Name="Height" Value="77"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[17]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[17]]"/>
       <Property Name="Left" Value="615"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -896,7 +896,7 @@
     </Control>
     <Control ClassId="0x00001004" Name="Text_23">
       <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[18]]"/>
+      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[18]]"/>
       <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
@@ -1018,7 +1018,7 @@
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="GroupID" Value="71"/>
       <Property Name="Height" Value="77"/>
-      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.PalletStatus[18]]"/>
+      <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[18]]"/>
       <Property Name="Left" Value="614"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>

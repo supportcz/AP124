@@ -12,7 +12,6 @@ PROGRAM _CYCLIC
 			(***************************************************************************)
 			(* 								Pallet Status							   *)
 			(***************************************************************************)
-			CopyToArray;
 
 		modePalletizationManual:
 			
@@ -25,15 +24,6 @@ PROGRAM _CYCLIC
 			(***************************************************************************)
 			(* 								Pallet Status							   *)
 			(***************************************************************************)
-			FOR i:=12 TO 22 DO
-				IF (PalletStatus[i] <> PalletStatus_old[i]) THEN
-					IF ((PalletStatus[i]) = 3) THEN
-						PalletStatus[i] := 0;
-					END_IF;
-					PalletStatus_old[i] := PalletStatus[i]; 
-				END_IF;
-			END_FOR;
-			CopyFromArray;
 
 		modePalletizationAuto:
 	
@@ -48,9 +38,8 @@ PROGRAM _CYCLIC
 			IF statePalletP14 <> palletNotPresent AND statePalletP15 = palletNotPresent THEN
 				cmdMovePalletP14 := TRUE;
 			END_IF
-
-			CopyToArray;
 	END_CASE
+
 
 	
 	//conveyors
