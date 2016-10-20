@@ -355,9 +355,9 @@
   <MovementOrder>
     <MovementEntry Control="Source[local].Layer[Robot].Control[Numeric_1]">
       <Property Name="Down" Value="Source[local].Layer[Robot].Control[Numeric_3]"/>
-      <Property Name="Left" Value="Source[local].Layer[Robot].Control[Numeric_2]"/>
+      <Property Name="Left" Value="Source[local].Layer[Robot].Control[Dropdown_1]"/>
       <Property Name="Right" Value="Source[local].Layer[Robot].Control[Numeric_2]"/>
-      <Property Name="Up" Value="Source[local].Layer[Robot].Control[Numeric_5]"/>
+      <Property Name="Up" Value="Source[local].Layer[Robot].Control[Dropdown_1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[Robot].Control[Numeric_2]">
       <Property Name="Down" Value="Source[local].Layer[Robot].Control[Numeric_3]"/>
@@ -367,21 +367,27 @@
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[Robot].Control[Numeric_3]">
       <Property Name="Down" Value="Source[local].Layer[Robot].Control[Numeric_4]"/>
-      <Property Name="Left" Value="Source[local].Layer[Robot].Control[Numeric_5]"/>
+      <Property Name="Left" Value="Source[local].Layer[Robot].Control[Dropdown_1]"/>
       <Property Name="Right" Value="Source[local].Layer[Robot].Control[Numeric_2]"/>
       <Property Name="Up" Value="Source[local].Layer[Robot].Control[Numeric_1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[Robot].Control[Numeric_4]">
-      <Property Name="Down" Value="Source[local].Layer[Robot].Control[Numeric_1]"/>
-      <Property Name="Left" Value="Source[local].Layer[Robot].Control[Numeric_5]"/>
+      <Property Name="Down" Value="Source[local].Layer[Robot].Control[Dropdown_1]"/>
+      <Property Name="Left" Value="Source[local].Layer[Robot].Control[Dropdown_1]"/>
       <Property Name="Right" Value="Source[local].Layer[Robot].Control[Numeric_2]"/>
       <Property Name="Up" Value="Source[local].Layer[Robot].Control[Numeric_3]"/>
     </MovementEntry>
     <MovementEntry Control="Source[local].Layer[Robot].Control[Numeric_5]">
       <Property Name="Down" Value="Source[local].Layer[Robot].Control[Numeric_2]"/>
-      <Property Name="Left" Value="Source[local].Layer[Robot].Control[Numeric_4]"/>
-      <Property Name="Right" Value="Source[local].Layer[Robot].Control[Numeric_3]"/>
+      <Property Name="Left" Value="Source[local].Layer[Robot].Control[Dropdown_1]"/>
+      <Property Name="Right" Value="Source[local].Layer[Robot].Control[Dropdown_1]"/>
       <Property Name="Up" Value="Source[local].Layer[Robot].Control[Numeric_2]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[local].Layer[Robot].Control[Dropdown_1]">
+      <Property Name="Down" Value="Source[local].Layer[Robot].Control[Numeric_1]"/>
+      <Property Name="Left" Value="Source[local].Layer[Robot].Control[Numeric_5]"/>
+      <Property Name="Right" Value="Source[local].Layer[Robot].Control[Numeric_5]"/>
+      <Property Name="Up" Value="Source[local].Layer[Robot].Control[Numeric_4]"/>
     </MovementEntry>
   </MovementOrder>
   <TabSequence>
@@ -390,5 +396,6 @@
     <TabSeqItem Index="2" Value="Source[local].Layer[Robot].Control[Numeric_3]"/>
     <TabSeqItem Index="3" Value="Source[local].Layer[Robot].Control[Numeric_4]"/>
     <TabSeqItem Index="4" Value="Source[local].Layer[Robot].Control[Numeric_5]"/>
+    <TabSeqItem Index="5" Value="Source[local].Layer[Robot].Control[Dropdown_1]"/>
   </TabSequence>
 </Page>

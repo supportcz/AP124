@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="PalletInMove">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="6"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="3623" Value="None"/>
+    <BitmapRef ID="3624" Value="None"/>
+    <BitmapRef ID="3625" Value="Source[local].Bitmap[PalleteInMove]"/>
+    <BitmapRef ID="3626" Value="None"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="3623" Value="1"/>
+    <Index ID="3624" Value="0"/>
+    <Index ID="3625" Value="2"/>
+    <Index ID="3626" Value="3"/>
+  </IndexMap>
+</BitmapGroup>

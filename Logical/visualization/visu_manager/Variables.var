@@ -11,4 +11,7 @@ VAR CONSTANT
 END_VAR
 VAR
 	uiAlarmCount : UINT;
+	dRecipes : REFERENCE TO Recipes;
+	i : INT;
+	PalletStatus : ARRAY[12..22] OF BOOL;
 END_VAR
