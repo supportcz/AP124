@@ -60,18 +60,6 @@
       <Property Name="Top" Value="111"/>
       <Property Name="Width" Value="268"/>
     </Control>
-    <Control ClassId="0x00001001" Name="Shape_7">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="149"/>
-      <Property Name="GroupID" Value="24"/>
-      <Property Name="Height" Value="32"/>
-      <Property Name="Left" Value="268"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="119"/>
-      <Property Name="Width" Value="100"/>
-    </Control>
     <Control ClassId="0x00001001" Name="Shape_8">
       <Property Name="BackColor" Value="122"/>
       <Property Name="ControlID" Value="0"/>
@@ -112,110 +100,6 @@
       <Property Name="Top" Value="96"/>
       <Property Name="Width" Value="147"/>
     </Control>
-    <Control ClassId="0x00001007" Name="Numeric_1">
-      <Property Name="AlignmentHorizontal" Value="Center"/>
-      <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="Font" Value="Source[local].Font[MpPads]"/>
-      <Property Name="ForeColor" Value="149"/>
-      <Property Name="GroupID" Value="24"/>
-      <Property Name="Height" Value="28"/>
-      <Property Name="Input" Value="True"/>
-      <Property Name="InputCancel" Value="Lost Focus"/>
-      <Property Name="InputComma" Value="Explicit"/>
-      <Property Name="InputConfirm" Value="Enter"/>
-      <Property Name="InputMinus" Value="Normal"/>
-      <Property Name="InputNext" Value="Enter"/>
-      <Property Name="InputStart" Value="Any Key"/>
-      <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-      <Property Name="InputUpDown" Value="Disabled"/>
-      <Property Name="Left" Value="273"/>
-      <Property Name="MaxDatapoint" Value="None"/>
-      <Property Name="MaxValue" Value="10"/>
-      <Property Name="MinDatapoint" Value="None"/>
-      <Property Name="MinValue" Value="0"/>
-      <Property Name="SimulationValue" Value="4"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="TeachDatapoint" Value="None"/>
-      <Property Name="Top" Value="121"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.nbOfTraysOnP2]"/>
-      <Property Name="ValueMode" Value="Standard"/>
-      <Property Name="Width" Value="93"/>
-    </Control>
-    <Control ClassId="0x00001007" Name="Numeric_2">
-      <Property Name="AlignmentHorizontal" Value="Center"/>
-      <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="Font" Value="Source[local].Font[MpPads]"/>
-      <Property Name="ForeColor" Value="149"/>
-      <Property Name="Height" Value="28"/>
-      <Property Name="Input" Value="True"/>
-      <Property Name="InputCancel" Value="Lost Focus"/>
-      <Property Name="InputComma" Value="Explicit"/>
-      <Property Name="InputConfirm" Value="Enter"/>
-      <Property Name="InputMinus" Value="Normal"/>
-      <Property Name="InputNext" Value="Enter"/>
-      <Property Name="InputStart" Value="Any Key"/>
-      <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-      <Property Name="InputUpDown" Value="Disabled"/>
-      <Property Name="Left" Value="444"/>
-      <Property Name="MaxDatapoint" Value="None"/>
-      <Property Name="MaxValue" Value="10"/>
-      <Property Name="MinDatapoint" Value="None"/>
-      <Property Name="MinValue" Value="0"/>
-      <Property Name="SimulationValue" Value="4"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="TeachDatapoint" Value="None"/>
-      <Property Name="Top" Value="143"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.nbOfLayersOnPallet]"/>
-      <Property Name="ValueMode" Value="Standard"/>
-      <Property Name="Width" Value="93"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_12">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="149"/>
-      <Property Name="GroupID" Value="25"/>
-      <Property Name="Height" Value="32"/>
-      <Property Name="Left" Value="267"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="172"/>
-      <Property Name="Width" Value="100"/>
-    </Control>
-    <Control ClassId="0x00001007" Name="Numeric_3">
-      <Property Name="AlignmentHorizontal" Value="Center"/>
-      <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="Font" Value="Source[local].Font[MpPads]"/>
-      <Property Name="ForeColor" Value="149"/>
-      <Property Name="GroupID" Value="25"/>
-      <Property Name="Height" Value="28"/>
-      <Property Name="Input" Value="True"/>
-      <Property Name="InputCancel" Value="Lost Focus"/>
-      <Property Name="InputComma" Value="Explicit"/>
-      <Property Name="InputConfirm" Value="Enter"/>
-      <Property Name="InputMinus" Value="Normal"/>
-      <Property Name="InputNext" Value="Enter"/>
-      <Property Name="InputStart" Value="Any Key"/>
-      <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-      <Property Name="InputUpDown" Value="Disabled"/>
-      <Property Name="Left" Value="272"/>
-      <Property Name="MaxDatapoint" Value="None"/>
-      <Property Name="MaxValue" Value="10"/>
-      <Property Name="MinDatapoint" Value="None"/>
-      <Property Name="MinValue" Value="0"/>
-      <Property Name="SimulationValue" Value="4"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="TeachDatapoint" Value="None"/>
-      <Property Name="Top" Value="174"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.nbOfTraysOnTable]"/>
-      <Property Name="ValueMode" Value="Standard"/>
-      <Property Name="Width" Value="93"/>
-    </Control>
     <Control ClassId="0x00001001" Name="Shape_3">
       <Property Name="BackColor" Value="15"/>
       <Property Name="ControlID" Value="0"/>
@@ -226,27 +110,27 @@
       <Property Name="Top" Value="237"/>
       <Property Name="Width" Value="115"/>
     </Control>
-    <Control ClassId="0x00001001" Name="Shape_14">
+    <Control ClassId="0x00001001" Name="Shape_7">
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="ForeColor" Value="149"/>
-      <Property Name="GroupID" Value="27"/>
+      <Property Name="GroupID" Value="48"/>
       <Property Name="Height" Value="32"/>
-      <Property Name="Left" Value="273"/>
+      <Property Name="Left" Value="268"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.InfoLock]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="245"/>
+      <Property Name="Top" Value="118"/>
       <Property Name="Width" Value="100"/>
     </Control>
-    <Control ClassId="0x00001007" Name="Numeric_4">
+    <Control ClassId="0x00001007" Name="Numeric_1">
       <Property Name="AlignmentHorizontal" Value="Center"/>
-      <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="Font" Value="Source[local].Font[MpPads]"/>
       <Property Name="ForeColor" Value="149"/>
-      <Property Name="GroupID" Value="27"/>
-      <Property Name="Height" Value="28"/>
+      <Property Name="GroupID" Value="48"/>
+      <Property Name="Height" Value="30"/>
       <Property Name="Input" Value="True"/>
       <Property Name="InputCancel" Value="Lost Focus"/>
       <Property Name="InputComma" Value="Explicit"/>
@@ -256,40 +140,159 @@
       <Property Name="InputStart" Value="Any Key"/>
       <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
       <Property Name="InputUpDown" Value="Disabled"/>
-      <Property Name="Left" Value="278"/>
+      <Property Name="Left" Value="269"/>
       <Property Name="MaxDatapoint" Value="None"/>
       <Property Name="MaxValue" Value="10"/>
       <Property Name="MinDatapoint" Value="None"/>
       <Property Name="MinValue" Value="0"/>
       <Property Name="SimulationValue" Value="4"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.InfoLock]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="TeachDatapoint" Value="None"/>
-      <Property Name="Top" Value="247"/>
+      <Property Name="Top" Value="119"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.nbOfTraysOnP2]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="98"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="Numeric_2">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[MpPads]"/>
+      <Property Name="ForeColor" Value="149"/>
+      <Property Name="Height" Value="109"/>
+      <Property Name="Input" Value="True"/>
+      <Property Name="InputCancel" Value="Lost Focus"/>
+      <Property Name="InputComma" Value="Explicit"/>
+      <Property Name="InputConfirm" Value="Enter"/>
+      <Property Name="InputMinus" Value="Normal"/>
+      <Property Name="InputNext" Value="Enter"/>
+      <Property Name="InputStart" Value="Any Key"/>
+      <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
+      <Property Name="InputUpDown" Value="Disabled"/>
+      <Property Name="Left" Value="413"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="10"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="0"/>
+      <Property Name="SimulationValue" Value="4"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.InfoLock]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="97"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.nbOfLayersOnPallet]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="145"/>
+    </Control>
+    <Control ClassId="0x00001001" Name="Shape_12">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="ForeColor" Value="149"/>
+      <Property Name="GroupID" Value="49"/>
+      <Property Name="Height" Value="32"/>
+      <Property Name="Left" Value="267"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.InfoLock]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+      <Property Name="Top" Value="171"/>
+      <Property Name="Width" Value="100"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="Numeric_3">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[MpPads]"/>
+      <Property Name="ForeColor" Value="149"/>
+      <Property Name="GroupID" Value="49"/>
+      <Property Name="Height" Value="30"/>
+      <Property Name="Input" Value="True"/>
+      <Property Name="InputCancel" Value="Lost Focus"/>
+      <Property Name="InputComma" Value="Explicit"/>
+      <Property Name="InputConfirm" Value="Enter"/>
+      <Property Name="InputMinus" Value="Normal"/>
+      <Property Name="InputNext" Value="Enter"/>
+      <Property Name="InputStart" Value="Any Key"/>
+      <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
+      <Property Name="InputUpDown" Value="Disabled"/>
+      <Property Name="Left" Value="268"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="10"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="0"/>
+      <Property Name="SimulationValue" Value="4"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.InfoLock]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="172"/>
+      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.nbOfTraysOnTable]"/>
+      <Property Name="ValueMode" Value="Standard"/>
+      <Property Name="Width" Value="98"/>
+    </Control>
+    <Control ClassId="0x00001001" Name="Shape_14">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="ForeColor" Value="149"/>
+      <Property Name="GroupID" Value="50"/>
+      <Property Name="Height" Value="32"/>
+      <Property Name="Left" Value="273"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.InfoLock]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+      <Property Name="Top" Value="244"/>
+      <Property Name="Width" Value="100"/>
+    </Control>
+    <Control ClassId="0x00001007" Name="Numeric_4">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[MpPads]"/>
+      <Property Name="ForeColor" Value="149"/>
+      <Property Name="GroupID" Value="50"/>
+      <Property Name="Height" Value="30"/>
+      <Property Name="Input" Value="True"/>
+      <Property Name="InputCancel" Value="Lost Focus"/>
+      <Property Name="InputComma" Value="Explicit"/>
+      <Property Name="InputConfirm" Value="Enter"/>
+      <Property Name="InputMinus" Value="Normal"/>
+      <Property Name="InputNext" Value="Enter"/>
+      <Property Name="InputStart" Value="Any Key"/>
+      <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
+      <Property Name="InputUpDown" Value="Disabled"/>
+      <Property Name="Left" Value="274"/>
+      <Property Name="MaxDatapoint" Value="None"/>
+      <Property Name="MaxValue" Value="10"/>
+      <Property Name="MinDatapoint" Value="None"/>
+      <Property Name="MinValue" Value="0"/>
+      <Property Name="SimulationValue" Value="4"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.InfoLock]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+      <Property Name="TeachDatapoint" Value="None"/>
+      <Property Name="Top" Value="245"/>
       <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.nbOfTraysInRobotHead]"/>
       <Property Name="ValueMode" Value="Standard"/>
-      <Property Name="Width" Value="93"/>
+      <Property Name="Width" Value="98"/>
     </Control>
     <Control ClassId="0x00001001" Name="Shape_13">
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
       <Property Name="ForeColor" Value="149"/>
-      <Property Name="GroupID" Value="29"/>
+      <Property Name="GroupID" Value="51"/>
       <Property Name="Height" Value="32"/>
       <Property Name="Left" Value="459"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.InfoLock]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="65"/>
+      <Property Name="Top" Value="64"/>
       <Property Name="Width" Value="100"/>
     </Control>
     <Control ClassId="0x00001007" Name="Numeric_5">
       <Property Name="AlignmentHorizontal" Value="Center"/>
-      <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="Font" Value="Source[local].Font[MpPads]"/>
       <Property Name="ForeColor" Value="149"/>
-      <Property Name="GroupID" Value="29"/>
-      <Property Name="Height" Value="28"/>
+      <Property Name="GroupID" Value="51"/>
+      <Property Name="Height" Value="30"/>
       <Property Name="Input" Value="True"/>
       <Property Name="InputCancel" Value="Lost Focus"/>
       <Property Name="InputComma" Value="Explicit"/>
@@ -299,18 +302,19 @@
       <Property Name="InputStart" Value="Any Key"/>
       <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
       <Property Name="InputUpDown" Value="Disabled"/>
-      <Property Name="Left" Value="464"/>
+      <Property Name="Left" Value="460"/>
       <Property Name="MaxDatapoint" Value="None"/>
       <Property Name="MaxValue" Value="10"/>
       <Property Name="MinDatapoint" Value="None"/>
       <Property Name="MinValue" Value="0"/>
       <Property Name="SimulationValue" Value="4"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.InfoLock]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="TeachDatapoint" Value="None"/>
-      <Property Name="Top" Value="67"/>
+      <Property Name="Top" Value="65"/>
       <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.nbOfTraysInHalfLayer]"/>
       <Property Name="ValueMode" Value="Standard"/>
-      <Property Name="Width" Value="93"/>
+      <Property Name="Width" Value="98"/>
     </Control>
     <Control ClassId="0x00001018" Name="Dropdown_1">
       <Property Name="BackColor" Value="15"/>
@@ -340,11 +344,12 @@
       <Property Name="SelectedBackColor" Value="253"/>
       <Property Name="SimulationValue" Value="5"/>
       <Property Name="SpacingVertical" Value="25"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.InfoLock]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.visualization.RecipeNames]"/>
       <Property Name="TextIndexOffset" Value="0"/>
       <Property Name="TextSource" Value="MultipleStrings"/>
-      <Property Name="Top" Value="68"/>
+      <Property Name="Top" Value="67"/>
       <Property Name="Width" Value="284"/>
     </Control>
   </Controls>

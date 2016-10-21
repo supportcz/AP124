@@ -629,7 +629,7 @@
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
             <KeyAction ClassId="0x0000016E">
-              <Property Name="Action" Value="Cancel Input"/>
+              <Property Name="Action" Value="Goto Document Start"/>
               <Property Name="Control" Value="Source[local].Page[Page_42_AlarmHistory].Layer[Default].Control[Alarm_1]"/>
               <Property Name="Description" Value=""/>
             </KeyAction>
@@ -640,7 +640,7 @@
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
             <KeyAction ClassId="0x0000016E">
-              <Property Name="Action" Value="Cancel Input"/>
+              <Property Name="Action" Value="Goto Document End"/>
               <Property Name="Control" Value="Source[local].Page[Page_42_AlarmHistory].Layer[Default].Control[Alarm_1]"/>
               <Property Name="Description" Value=""/>
             </KeyAction>
@@ -651,7 +651,7 @@
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
             <KeyAction ClassId="0x0000016E">
-              <Property Name="Action" Value="Cancel Input"/>
+              <Property Name="Action" Value="Line Up"/>
               <Property Name="Control" Value="Source[local].Page[Page_42_AlarmHistory].Layer[Default].Control[Alarm_1]"/>
               <Property Name="Description" Value=""/>
             </KeyAction>
@@ -662,7 +662,7 @@
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
             <KeyAction ClassId="0x0000016E">
-              <Property Name="Action" Value="Cancel Input"/>
+              <Property Name="Action" Value="Line Down"/>
               <Property Name="Control" Value="Source[local].Page[Page_42_AlarmHistory].Layer[Default].Control[Alarm_1]"/>
               <Property Name="Description" Value=""/>
             </KeyAction>

@@ -38,24 +38,24 @@
       <Property Name="Z-Order" Value="1"/>
       <TextGroup>
         <TextLayer LanguageId="en">
-          <Text ID="180316" Value="Safety1"/>
-          <Text ID="180318" Value="Recipe"/>
-          <Text ID="183412" Value="Safety2"/>
+          <Text ID="184700" Value="Safety1"/>
+          <Text ID="184702" Value="Recipe"/>
+          <Text ID="184704" Value="Safety2"/>
         </TextLayer>
         <TextLayer LanguageId="cs">
-          <Text ID="180316" Value=""/>
-          <Text ID="180318" Value=""/>
-          <Text ID="183412" Value=""/>
+          <Text ID="184700" Value=""/>
+          <Text ID="184702" Value=""/>
+          <Text ID="184704" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="fr">
-          <Text ID="180316" Value=""/>
-          <Text ID="180318" Value=""/>
-          <Text ID="183412" Value=""/>
+          <Text ID="184700" Value=""/>
+          <Text ID="184702" Value=""/>
+          <Text ID="184704" Value=""/>
         </TextLayer>
         <IndexMap>
-          <Index ID="180316" Value="8"/>
-          <Index ID="180318" Value="10"/>
-          <Index ID="183412" Value="7"/>
+          <Index ID="184700" Value="11"/>
+          <Index ID="184702" Value="13"/>
+          <Index ID="184704" Value="15"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -255,51 +255,27 @@
           <Property Name="Top" Value="89"/>
           <Property Name="Width" Value="188"/>
         </Control>
-        <Control ClassId="0x00001002" Name="cmdSetEnglish1">
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_Button]"/>
+        <Control ClassId="0x0000100B" Name="String_1">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_4_2]"/>
-          <Property Name="Height" Value="40"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="185"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_pressed]"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="8"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="232"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_4_2]"/>
-          <Property Name="Width" Value="120"/>
-        </Control>
-        <Control ClassId="0x00001002" Name="Button_1">
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_Button]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_67]"/>
-          <Property Name="Height" Value="40"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="186"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_pressed]"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="10"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="290"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_67]"/>
-          <Property Name="Width" Value="120"/>
+          <Property Name="ForeColor" Value="15"/>
+          <Property Name="Height" Value="17"/>
+          <Property Name="Input" Value="True"/>
+          <Property Name="InputCancel" Value="Lost Focus"/>
+          <Property Name="InputConfirm" Value="Enter"/>
+          <Property Name="InputMode" Value="Password"/>
+          <Property Name="InputNext" Value="Enter"/>
+          <Property Name="InputPasswordChar" Value="*"/>
+          <Property Name="InputStart" Value="Any Key"/>
+          <Property Name="InputTabSize" Value="0"/>
+          <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
+          <Property Name="Left" Value="234"/>
+          <Property Name="SimulationValue" Value="ABC"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.PasswordStatusDatapoint]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="92"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.Password]"/>
+          <Property Name="Width" Value="28"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_1">
           <Property Name="Border" Value="Source[local].Border[Mp_SunkenNGgray]"/>
@@ -400,6 +376,52 @@
           <Property Name="Top" Value="93"/>
           <Property Name="Width" Value="9"/>
         </Control>
+        <Control ClassId="0x00001002" Name="cmdSetEnglish1">
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_Button]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_4_2]"/>
+          <Property Name="Height" Value="40"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="185"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_pressed]"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="11"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="244"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[ChangeToSafety1]"/>
+          <Property Name="Width" Value="120"/>
+        </Control>
+        <Control ClassId="0x00001002" Name="Button_1">
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_Button]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_67]"/>
+          <Property Name="Height" Value="40"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="185"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_pressed]"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="13"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="302"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[ChangeToRecipe]"/>
+          <Property Name="Width" Value="120"/>
+        </Control>
         <Control ClassId="0x00001002" Name="cmdSetEnglish2">
           <Property Name="BitmapIndexDatapoint" Value="None"/>
           <Property Name="BitmapSource" Value="None"/>
@@ -415,12 +437,12 @@
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="7"/>
+          <Property Name="TextIndex" Value="15"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="234"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_4_3]"/>
+          <Property Name="Top" Value="243"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[ChangeToSafety2]"/>
           <Property Name="Width" Value="120"/>
         </Control>
       </Controls>
@@ -433,32 +455,6 @@
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_4_2">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x00000160">
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="Page" Value="Source[local].Page[Page_61_Safety]"/>
-              <Property Name="Target" Value="Page"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_67">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x00000160">
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="Page" Value="Source[local].Page[Page_62_Recipe]"/>
-              <Property Name="Target" Value="Page"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -477,16 +473,75 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_4_3">
+        <VirtualKey Name="ChangeToRecipe">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000160">
+            <KeyAction ClassId="0x00000161">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Page" Value="Source[local].Page[Page_64_Safety2]"/>
-              <Property Name="Target" Value="Page"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.PasswordManagment]"/>
+            </KeyAction>
+            <KeyAction ClassId="0x00000161">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_1"/>
+              <Property Name="SetValue" Value="62"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.DesiredPage]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="ChangeToSafety2">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000161">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.PasswordManagment]"/>
+            </KeyAction>
+            <KeyAction ClassId="0x00000161">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_1"/>
+              <Property Name="SetValue" Value="64"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.DesiredPage]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="ChangeToSafety1">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000161">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.PasswordManagment]"/>
+            </KeyAction>
+            <KeyAction ClassId="0x00000161">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_1"/>
+              <Property Name="SetValue" Value="61"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.gVisu.DesiredPage]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -524,23 +579,23 @@
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setDay1]"/>
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setMinute1]"/>
       <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setHour1]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setDay1]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[String_1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[setMinute1]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setMonth1]"/>
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setHour1]"/>
       <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setSecond1]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setMonth1]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[String_1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[setHour1]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setYear1]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setSecond1]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[String_1]"/>
       <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setMinute1]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setYear1]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[String_1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[setYear1]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour1]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setDay1]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[String_1]"/>
       <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setMonth1]"/>
       <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setHour1]"/>
     </MovementEntry>
@@ -556,6 +611,12 @@
       <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setYear1]"/>
       <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setSecond1]"/>
     </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[String_1]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[setHour1]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[setSecond1]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[setHour1]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[setYear1]"/>
+    </MovementEntry>
   </MovementOrder>
   <TabSequence>
     <TabSeqItem Index="0" Value="Source[embedded].Layer[Default].Control[setSecond1]"/>
@@ -564,5 +625,6 @@
     <TabSeqItem Index="3" Value="Source[embedded].Layer[Default].Control[setYear1]"/>
     <TabSeqItem Index="4" Value="Source[embedded].Layer[Default].Control[setMonth1]"/>
     <TabSeqItem Index="5" Value="Source[embedded].Layer[Default].Control[setDay1]"/>
+    <TabSeqItem Index="6" Value="Source[embedded].Layer[Default].Control[String_1]"/>
   </TabSequence>
 </Page>

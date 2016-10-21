@@ -61,7 +61,6 @@
     <Source File="TextGroups\SRC_MessageBoxText.txtgrp"/>
     <Source File="TextGroups\SRC_RE_Led_0.txtgrp"/>
     <Source File="TextGroups\SRC_RemoteControlStatus.txtgrp"/>
-    <Source File="TextGroups\PalletStatus.txtgrp"/>
     <Source File="Fonts\MpButton.fninfo"/>
     <Source File="Fonts\MpDefault.fninfo"/>
     <Source File="Fonts\MpHeader2.fninfo"/>
@@ -378,7 +377,6 @@
     <Source File="Bitmaps\border.bminfo"/>
     <Source File="Bitmaps\activeAlarm.bminfo"/>
     <Source File="Bitmaps\inactiveAlarm.bminfo"/>
-    <Source File="Bitmaps\AlarmMapVGA.bminfo"/>
     <Source File="Bitmaps\Alarm_Map.bminfo"/>
     <Source File="Bitmaps\sl_interface.bminfo"/>
     <Source File="Bitmaps\button_default.bminfo"/>
@@ -460,6 +458,10 @@
     <Source File="Bitmaps\PalleteInMove.bminfo"/>
     <Source File="Bitmaps\PalleteInMoveDown.bminfo"/>
     <Source File="Bitmaps\PalleteInMoveUp.bminfo"/>
+    <Source File="Bitmaps\ConveyorFull.bminfo"/>
+    <Source File="Bitmaps\LtBlueButtonClose.bminfo"/>
+    <Source File="Bitmaps\LtBlueButtonOpen.bminfo"/>
+    <Source File="Bitmaps\empty.bminfo"/>
     <Source File="BitmapGroups\MpAlarmAcknowledgeState.bmgrp"/>
     <Source File="BitmapGroups\MpPads.bmgrp"/>
     <Source File="BitmapGroups\MpUserIcons.bmgrp"/>
@@ -479,6 +481,7 @@
     <Source File="BitmapGroups\PalletInMove.bmgrp"/>
     <Source File="BitmapGroups\PalletInMoveDown.bmgrp"/>
     <Source File="BitmapGroups\PalletInMoveUp.bmgrp"/>
+    <Source File="BitmapGroups\AlarmMap.bmgrp"/>
     <Source File="Pages\Page_60_Settings.page"/>
     <Source File="Pages\Page_40_AlarmList.page"/>
     <Source File="Pages\Page_11_AutomaticModeStart.page"/>
@@ -496,6 +499,7 @@
     <Source File="Pages\Page_63_Layout.page"/>
     <Source File="Pages\Page_24_ManualConveyor2.page"/>
     <Source File="Pages\Page_64_Safety2.page"/>
+    <Source File="Pages\Page_31_InfoConveyors.page"/>
     <Source File="Layers\MpPageControl.layer"/>
     <Source File="Layers\MpBackground.layer"/>
     <Source File="Layers\Language_DropDown.layer"/>

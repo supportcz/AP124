@@ -2,4 +2,5 @@ VAR
 	gVisu : gVisu_type;
 	PageControl : PageControl_enum;
 	RecipeNames : ARRAY[0..9] OF STRING[80];
+	PasswordManagment : PasswordManagment_enum;
 END_VAR
