@@ -3,4 +3,10 @@ VAR
 	PageControl : PageControl_enum;
 	RecipeNames : ARRAY[0..9] OF STRING[80];
 	PasswordManagment : PasswordManagment_enum;
+	magazineStatusDatapointAuto : UINT;
+	magazineStatusDatapointManual : UINT;
+	outfeedStatusDatapointAuto : UINT;
+	outfeedStatusDatapointManual : UINT;
+	conveyorsStatusDatapointAuto : UINT;
+	conveyorsStatusDatapointManual : UINT;
 END_VAR

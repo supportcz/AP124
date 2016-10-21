@@ -984,15 +984,6 @@
             <Property Name="VCType" Value="INTEGER"/>
           </DataPoint>
         </Folder>
-        <DataPoint Name="conveyorsStatusDatapointManual">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="visualization\Visu"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="UINT"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="INTEGER"/>
-        </DataPoint>
         <DataPoint Name="cmdManual">
           <Property Name="ConnectedBySharedResource" Value="False"/>
           <Property Name="ConnectingVisus" Value="visualization\Visu"/>
@@ -1304,6 +1295,33 @@
         <Property Name="ConnectingVisus" Value="visualization\Visu"/>
         <Property Name="Description" Value=""/>
         <Property Name="PLCType" Value="PasswordManagment_enum"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="INTEGER"/>
+      </DataPoint>
+      <DataPoint Name="conveyorsStatusDatapointManual">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="UINT"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="INTEGER"/>
+      </DataPoint>
+      <DataPoint Name="outfeedStatusDatapointManual">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="UINT"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="INTEGER"/>
+      </DataPoint>
+      <DataPoint Name="magazineStatusDatapointManual">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="visualization\Visu"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="UINT"/>
         <Property Name="UpdateTime" Value="Default"/>
         <Property Name="UserID" Value="None"/>
         <Property Name="VCType" Value="INTEGER"/>

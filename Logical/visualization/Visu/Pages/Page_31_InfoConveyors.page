@@ -52,10 +52,10 @@
       <Property Name="Z-Order" Value="2"/>
       <TextGroup>
         <TextLayer LanguageId="en">
-          <Text ID="184448" Value="Conveyors Info"/>
+          <Text ID="184448" Value="Infeed Info"/>
         </TextLayer>
         <TextLayer LanguageId="cs">
-          <Text ID="184448" Value="Info o Dopravnících"/>
+          <Text ID="184448" Value="Info o přisunovači"/>
         </TextLayer>
         <TextLayer LanguageId="fr">
           <Text ID="184448" Value=""/>
@@ -1569,7 +1569,7 @@
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="Page" Value="Source[local].Page[Page_31_InfoConveyors]"/>
+              <Property Name="Page" Value="Source[local].Page[Page_30_Info]"/>
               <Property Name="Target" Value="Page"/>
             </KeyAction>
           </KeyActions>

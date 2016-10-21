@@ -5,32 +5,7 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	
-	IF modeMagazine = modeMagazineManual THEN
-		magazineStatusDatapointManual := 0;
-	ELSE
-		magazineStatusDatapointManual := 1;
-	END_IF
-
-	IF modeMagazine = modeMagazineAuto THEN
-		magazineStatusDatapointAuto := 0;
-	ELSE
-		magazineStatusDatapointAuto := 1;
-	END_IF
-
-	IF modePalletization = modePalletizationManual THEN
-		conveyorsStatusDatapointManual := 0;
-	ELSE
-		conveyorsStatusDatapointManual := 1;
-	END_IF
-
-	IF modePalletization = modePalletizationAuto THEN
-		conveyorsStatusDatapointAuto := 0;
-	ELSE
-		conveyorsStatusDatapointAuto := 1;
-	END_IF
-	
-		
+			
 	StatusMessageMagazine;
 	StatusMessagePalletization;
 	StatusMessageOutfeed;

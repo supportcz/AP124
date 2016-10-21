@@ -276,14 +276,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpPads]"/>
           <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="570"/>
+          <Property Name="Left" Value="554"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[AutomaticMode]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="210"/>
+          <Property Name="Top" Value="216"/>
           <Property Name="Width" Value="110"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_3">
@@ -292,15 +292,29 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpPads]"/>
           <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="510"/>
+          <Property Name="Left" Value="497"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[AutomaticMode]"/>
           <Property Name="TextIndexOffset" Value="2"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="320"/>
+          <Property Name="Top" Value="317"/>
           <Property Name="Width" Value="180"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_1">
+          <Property Name="Bitmap" Value="Source[local].Bitmap[ConveyorFull]"/>
+          <Property Name="BitmapSource" Value="SingleBitmap"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="90"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="62"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="320"/>
+          <Property Name="Width" Value="364"/>
         </Control>
       </Controls>
       <KeyMapping>

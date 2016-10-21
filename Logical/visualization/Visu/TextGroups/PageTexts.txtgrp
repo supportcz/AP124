@@ -31,15 +31,17 @@
     <Text ID="177444" Value="Manual Mode - Conveyor 1 Control"/>
     <Text ID="177445" Value="Manual Mode - Product Infeed"/>
     <Text ID="177446" Value=""/>
-    <Text ID="177448" Value=""/>
+    <Text ID="177448" Value="Conveyor Info"/>
     <Text ID="177449" Value=""/>
     <Text ID="177450" Value=""/>
     <Text ID="177452" Value="Page"/>
     <Text ID="180322" Value="Recipe Settings"/>
     <Text ID="180323" Value="Layout Settings"/>
-    <Text ID="180324" Value=""/>
+    <Text ID="180324" Value="SafeLOGIC Download"/>
     <Text ID="180919" Value="Manual Mode - Conveyor 2 Control"/>
     <Text ID="180920" Value=""/>
+    <Text ID="185372" Value=""/>
+    <Text ID="186142" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="cs">
     <Text ID="89135" Value=""/>
@@ -57,7 +59,7 @@
     <Text ID="95076" Value=""/>
     <Text ID="95694" Value="Manuálny Mód"/>
     <Text ID="89137" Value="Nastavení"/>
-    <Text ID="124258" Value="Automatický Mód - ŠTART"/>
+    <Text ID="124258" Value="Automatický Mód - START"/>
     <Text ID="174649" Value="Automatický Mód"/>
     <Text ID="174650" Value="Informace"/>
     <Text ID="174651" Value="Alarmy"/>
@@ -68,15 +70,17 @@
     <Text ID="177444" Value="Manuálny Mód - Ovládáni Dopravníku 1"/>
     <Text ID="177445" Value="Manuálny Mód - Ovládání Prisunovače Produktů"/>
     <Text ID="177446" Value=""/>
-    <Text ID="177448" Value=""/>
+    <Text ID="177448" Value="Informace o Dopravnícich"/>
     <Text ID="177449" Value=""/>
     <Text ID="177450" Value=""/>
     <Text ID="177452" Value="Stránka"/>
     <Text ID="180322" Value="Nastanení Recepů"/>
     <Text ID="180323" Value="Nastavení Vrsev"/>
-    <Text ID="180324" Value=""/>
+    <Text ID="180324" Value="Stahnutí SafeLOGIC"/>
     <Text ID="180919" Value="Manuálny Mód - Ovládáni Dopravníku 2"/>
     <Text ID="180920" Value=""/>
+    <Text ID="185372" Value=""/>
+    <Text ID="186142" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="fr">
     <Text ID="89135" Value=""/>
@@ -114,6 +118,8 @@
     <Text ID="180324" Value=""/>
     <Text ID="180919" Value=""/>
     <Text ID="180920" Value=""/>
+    <Text ID="185372" Value=""/>
+    <Text ID="186142" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="89135" Value="6010"/>
@@ -151,5 +157,7 @@
     <Index ID="180324" Value="64"/>
     <Index ID="180919" Value="24"/>
     <Index ID="180920" Value="25"/>
+    <Index ID="185372" Value="32"/>
+    <Index ID="186142" Value="65"/>
   </IndexMap>
 </TextGroup>

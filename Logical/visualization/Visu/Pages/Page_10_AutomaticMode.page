@@ -228,9 +228,10 @@
         <Control ClassId="0x0000100D" Name="Line_1">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="789"/>
-          <Property Name="EndY" Value="123"/>
-          <Property Name="StartX" Value="14"/>
+          <Property Name="EndX" Value="739"/>
+          <Property Name="EndY" Value="125"/>
+          <Property Name="ForeColor" Value="248"/>
+          <Property Name="StartX" Value="38"/>
           <Property Name="StartY" Value="125"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>

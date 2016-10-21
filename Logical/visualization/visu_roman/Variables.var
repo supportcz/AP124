@@ -3,15 +3,11 @@ VAR
 	actualTrayIndex : INT;
 	cmdAuto : BOOL;
 	cmdManual : BOOL;
-	conveyorsStatusDatapointAuto : UINT;
-	conveyorsStatusDatapointManual : UINT;
 	dActualLayout : REFERENCE TO Layout;
 	dActualLayoutIndex : REFERENCE TO INT;
 	dActualRecipe : REFERENCE TO Recipe;
 	dActualTray : REFERENCE TO Tray;
 	dRecipes : REFERENCE TO Recipes;
-	magazineStatusDatapointAuto : UINT;
-	magazineStatusDatapointManual : UINT;
 	nullLayout : Layout;
 	nullRecipe : Recipe;
 	nullTray : Tray;

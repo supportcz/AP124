@@ -22,9 +22,9 @@
       <Property Name="ColorMapIndexOffset" Value="5"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="GroupID" Value="2"/>
+      <Property Name="GroupID" Value="44"/>
       <Property Name="Height" Value="51"/>
-      <Property Name="Left" Value="19"/>
+      <Property Name="Left" Value="48"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="Top" Value="421"/>
       <Property Name="Width" Value="115"/>
@@ -33,9 +33,9 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="Font" Value="Source[local].Font[MpInput]"/>
-      <Property Name="GroupID" Value="2"/>
+      <Property Name="GroupID" Value="44"/>
       <Property Name="Height" Value="40"/>
-      <Property Name="Left" Value="54"/>
+      <Property Name="Left" Value="83"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
@@ -53,9 +53,9 @@
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="GroupID" Value="11"/>
+      <Property Name="GroupID" Value="45"/>
       <Property Name="Height" Value="51"/>
-      <Property Name="Left" Value="411"/>
+      <Property Name="Left" Value="498"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="Top" Value="421"/>
       <Property Name="Width" Value="115"/>
@@ -64,9 +64,9 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="Font" Value="Source[local].Font[MpInput]"/>
-      <Property Name="GroupID" Value="11"/>
+      <Property Name="GroupID" Value="45"/>
       <Property Name="Height" Value="40"/>
-      <Property Name="Left" Value="458"/>
+      <Property Name="Left" Value="545"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
@@ -83,10 +83,10 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="GroupID" Value="2"/>
+      <Property Name="GroupID" Value="44"/>
       <Property Name="Height" Value="32"/>
       <Property Name="IndexDatapoint" Value="None"/>
-      <Property Name="Left" Value="22"/>
+      <Property Name="Left" Value="51"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="Top" Value="431"/>
@@ -98,10 +98,10 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="GroupID" Value="11"/>
+      <Property Name="GroupID" Value="45"/>
       <Property Name="Height" Value="32"/>
       <Property Name="IndexDatapoint" Value="None"/>
-      <Property Name="Left" Value="421"/>
+      <Property Name="Left" Value="508"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="Top" Value="430"/>
@@ -114,9 +114,9 @@
       <Property Name="ColorMapIndexOffset" Value="4"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="GroupID" Value="8"/>
+      <Property Name="GroupID" Value="46"/>
       <Property Name="Height" Value="51"/>
-      <Property Name="Left" Value="149"/>
+      <Property Name="Left" Value="199"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="Top" Value="421"/>
       <Property Name="Width" Value="115"/>
@@ -125,9 +125,9 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="Font" Value="Source[local].Font[MpInput]"/>
-      <Property Name="GroupID" Value="8"/>
+      <Property Name="GroupID" Value="46"/>
       <Property Name="Height" Value="40"/>
-      <Property Name="Left" Value="195"/>
+      <Property Name="Left" Value="245"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
@@ -144,10 +144,10 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="GroupID" Value="8"/>
+      <Property Name="GroupID" Value="46"/>
       <Property Name="Height" Value="40"/>
       <Property Name="IndexDatapoint" Value="None"/>
-      <Property Name="Left" Value="155"/>
+      <Property Name="Left" Value="205"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="Top" Value="427"/>
@@ -160,9 +160,9 @@
       <Property Name="ColorMapIndexOffset" Value="0"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="GroupID" Value="9"/>
+      <Property Name="GroupID" Value="47"/>
       <Property Name="Height" Value="51"/>
-      <Property Name="Left" Value="668"/>
+      <Property Name="Left" Value="644"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="Top" Value="421"/>
       <Property Name="Width" Value="115"/>
@@ -171,9 +171,9 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="Font" Value="Source[local].Font[MpInput]"/>
-      <Property Name="GroupID" Value="9"/>
+      <Property Name="GroupID" Value="47"/>
       <Property Name="Height" Value="40"/>
-      <Property Name="Left" Value="715"/>
+      <Property Name="Left" Value="691"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
@@ -190,69 +190,23 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="GroupID" Value="9"/>
+      <Property Name="GroupID" Value="47"/>
       <Property Name="Height" Value="32"/>
       <Property Name="IndexDatapoint" Value="None"/>
-      <Property Name="Left" Value="678"/>
+      <Property Name="Left" Value="654"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="Top" Value="430"/>
-      <Property Name="Width" Value="32"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_11">
-      <Property Name="BackColor" Value="248"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.ButtonColor]"/>
-      <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PageControl]"/>
-      <Property Name="ColorMapIndexOffset" Value="1"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="GroupID" Value="10"/>
-      <Property Name="Height" Value="51"/>
-      <Property Name="Left" Value="540"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="421"/>
-      <Property Name="Width" Value="115"/>
-    </Control>
-    <Control ClassId="0x00001004" Name="Text_6">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="Font" Value="Source[local].Font[MpInput]"/>
-      <Property Name="GroupID" Value="10"/>
-      <Property Name="Height" Value="46"/>
-      <Property Name="Left" Value="594"/>
-      <Property Name="Multiline" Value="Automatic"/>
-      <Property Name="SimulationIndex" Value="0"/>
-      <Property Name="SimulationValue" Value=""/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextGroup" Value="Source[global].TextGroup[PageControlNames]"/>
-      <Property Name="TextIndexOffset" Value="4"/>
-      <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="423"/>
-      <Property Name="Width" Value="55"/>
-    </Control>
-    <Control ClassId="0x00001005" Name="Bitmap_3">
-      <Property Name="Bitmap" Value="Source[local].Bitmap[MpImg_Diagnostics]"/>
-      <Property Name="BitmapSource" Value="SingleBitmap"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="GroupID" Value="10"/>
-      <Property Name="Height" Value="32"/>
-      <Property Name="IndexDatapoint" Value="None"/>
-      <Property Name="Left" Value="550"/>
-      <Property Name="SimulationValue" Value="0"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="431"/>
       <Property Name="Width" Value="32"/>
     </Control>
     <Control ClassId="0x00001003" Name="HotSpot_1">
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_7]"/>
-      <Property Name="GroupID" Value="2"/>
+      <Property Name="GroupID" Value="44"/>
       <Property Name="Height" Value="51"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="19"/>
+      <Property Name="Left" Value="48"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="Top" Value="421"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_7]"/>
@@ -262,10 +216,10 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_8]"/>
-      <Property Name="GroupID" Value="8"/>
+      <Property Name="GroupID" Value="46"/>
       <Property Name="Height" Value="52"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="149"/>
+      <Property Name="Left" Value="199"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="Top" Value="421"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_8]"/>
@@ -275,10 +229,10 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_9]"/>
-      <Property Name="GroupID" Value="9"/>
+      <Property Name="GroupID" Value="47"/>
       <Property Name="Height" Value="52"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="668"/>
+      <Property Name="Left" Value="644"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="Top" Value="421"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_9]"/>
@@ -288,26 +242,13 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_10]"/>
-      <Property Name="GroupID" Value="11"/>
+      <Property Name="GroupID" Value="45"/>
       <Property Name="Height" Value="52"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="411"/>
+      <Property Name="Left" Value="498"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="Top" Value="421"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_10]"/>
-      <Property Name="Width" Value="115"/>
-    </Control>
-    <Control ClassId="0x00001003" Name="HotSpot_5">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_11]"/>
-      <Property Name="GroupID" Value="10"/>
-      <Property Name="Height" Value="52"/>
-      <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="540"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="421"/>
-      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_11]"/>
       <Property Name="Width" Value="115"/>
     </Control>
     <Control ClassId="0x00001001" Name="Shape_12">
@@ -317,9 +258,9 @@
       <Property Name="ColorMapIndexOffset" Value="3"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="GroupID" Value="1"/>
+      <Property Name="GroupID" Value="52"/>
       <Property Name="Height" Value="51"/>
-      <Property Name="Left" Value="278"/>
+      <Property Name="Left" Value="349"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="Top" Value="421"/>
       <Property Name="Width" Value="115"/>
@@ -328,9 +269,9 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="Font" Value="Source[local].Font[MpInput]"/>
-      <Property Name="GroupID" Value="1"/>
+      <Property Name="GroupID" Value="52"/>
       <Property Name="Height" Value="41"/>
-      <Property Name="Left" Value="336"/>
+      <Property Name="Left" Value="407"/>
       <Property Name="Multiline" Value="Automatic"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
@@ -347,10 +288,10 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="GroupID" Value="1"/>
+      <Property Name="GroupID" Value="52"/>
       <Property Name="Height" Value="32"/>
       <Property Name="IndexDatapoint" Value="None"/>
-      <Property Name="Left" Value="290"/>
+      <Property Name="Left" Value="361"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="Top" Value="431"/>
@@ -360,10 +301,10 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_18]"/>
-      <Property Name="GroupID" Value="1"/>
+      <Property Name="GroupID" Value="52"/>
       <Property Name="Height" Value="52"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="278"/>
+      <Property Name="Left" Value="349"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
       <Property Name="Top" Value="421"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_18]"/>
@@ -427,21 +368,6 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="4"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.PageControl]"/>
-        </KeyAction>
-      </KeyActions>
-    </VirtualKey>
-    <VirtualKey Name="%embVirtualKey_11">
-      <Property Name="Description" Value=""/>
-      <Property Name="VirtualKey_LED" Value="False"/>
-      <KeyActions>
-        <KeyAction ClassId="0x00000161">
-          <Property Name="CompletionDatapoint" Value="None"/>
-          <Property Name="CompletionValue" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Locking" Value="Never"/>
-          <Property Name="Name" Value="Action_0"/>
-          <Property Name="SetValue" Value="5"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.PageControl]"/>
         </KeyAction>
       </KeyActions>

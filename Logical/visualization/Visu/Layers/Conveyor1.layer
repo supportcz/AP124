@@ -35,9 +35,12 @@
       <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_28]"/>
       <Property Name="Height" Value="95"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="231"/>
+      <Property Name="Left" Value="230"/>
+      <Property Name="Locking" Value="Datapoint &gt;= Level"/>
+      <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
+      <Property Name="LockingLevel" Value="1"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="306"/>
+      <Property Name="Top" Value="305"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_28]"/>
       <Property Name="Width" Value="58"/>
     </Control>
@@ -51,6 +54,7 @@
       <Property Name="LineWidth" Value="2"/>
       <Property Name="StartX" Value="233"/>
       <Property Name="StartY" Value="399"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_14">
@@ -63,6 +67,7 @@
       <Property Name="LineWidth" Value="2"/>
       <Property Name="StartX" Value="255"/>
       <Property Name="StartY" Value="399"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_22">
@@ -75,6 +80,7 @@
       <Property Name="LineWidth" Value="2"/>
       <Property Name="StartX" Value="278"/>
       <Property Name="StartY" Value="399"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_24">
@@ -87,6 +93,7 @@
       <Property Name="LineWidth" Value="2"/>
       <Property Name="StartX" Value="288"/>
       <Property Name="StartY" Value="399"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_31">
@@ -99,6 +106,7 @@
       <Property Name="LineWidth" Value="2"/>
       <Property Name="StartX" Value="288"/>
       <Property Name="StartY" Value="377"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_32">
@@ -111,6 +119,7 @@
       <Property Name="LineWidth" Value="2"/>
       <Property Name="StartX" Value="288"/>
       <Property Name="StartY" Value="355"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_33">
@@ -123,6 +132,7 @@
       <Property Name="LineWidth" Value="2"/>
       <Property Name="StartX" Value="288"/>
       <Property Name="StartY" Value="335"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_34">
@@ -135,6 +145,7 @@
       <Property Name="LineWidth" Value="2"/>
       <Property Name="StartX" Value="288"/>
       <Property Name="StartY" Value="313"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_35">
@@ -147,6 +158,7 @@
       <Property Name="LineWidth" Value="2"/>
       <Property Name="StartX" Value="232"/>
       <Property Name="StartY" Value="307"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_36">
@@ -159,6 +171,7 @@
       <Property Name="LineWidth" Value="2"/>
       <Property Name="StartX" Value="254"/>
       <Property Name="StartY" Value="307"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_37">
@@ -171,6 +184,7 @@
       <Property Name="LineWidth" Value="2"/>
       <Property Name="StartX" Value="277"/>
       <Property Name="StartY" Value="307"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_38">
@@ -183,6 +197,7 @@
       <Property Name="LineWidth" Value="2"/>
       <Property Name="StartX" Value="231"/>
       <Property Name="StartY" Value="399"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_39">
@@ -195,6 +210,7 @@
       <Property Name="LineWidth" Value="2"/>
       <Property Name="StartX" Value="231"/>
       <Property Name="StartY" Value="377"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_40">
@@ -207,6 +223,7 @@
       <Property Name="LineWidth" Value="2"/>
       <Property Name="StartX" Value="231"/>
       <Property Name="StartY" Value="355"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_41">
@@ -219,6 +236,7 @@
       <Property Name="LineWidth" Value="2"/>
       <Property Name="StartX" Value="231"/>
       <Property Name="StartY" Value="335"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x0000100D" Name="Line_51">
@@ -231,6 +249,7 @@
       <Property Name="LineWidth" Value="2"/>
       <Property Name="StartX" Value="231"/>
       <Property Name="StartY" Value="313"/>
+      <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
     </Control>
     <Control ClassId="0x00001004" Name="Text_15">

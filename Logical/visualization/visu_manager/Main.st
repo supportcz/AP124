@@ -53,11 +53,7 @@ PROGRAM _CYCLIC
 			ButtonColor_tmp := ButtonColor;
 			ButtonAlarmColor := 1;
 			PageControl := Idle;
-		ButtonSDM:
-			gVisu.ChangePage := 50;
-			ButtonColor := 4;
-			ButtonColor_tmp := ButtonColor;
-			PageControl := Idle;
+
 		ButtonSettings:
 			gVisu.ChangePage := 60;
 			ButtonColor := 5;
@@ -220,6 +216,46 @@ PROGRAM _CYCLIC
 		LOGOUT:
 			gVisu.Password := '';
 	END_CASE;
+	
+	(***************************************************************************)
+	(* 							Auto/Manual StatusDatapoint					   *)
+	(***************************************************************************)
+	
+	IF modeMagazine = modeMagazineManual THEN
+		magazineStatusDatapointManual := 0;
+	ELSE
+		magazineStatusDatapointManual := 1;
+	END_IF
+
+	IF modeMagazine = modeMagazineAuto THEN
+		magazineStatusDatapointAuto := 0;
+	ELSE
+		magazineStatusDatapointAuto := 1;
+	END_IF
+
+	IF modePalletization = modePalletizationManual THEN
+		conveyorsStatusDatapointManual := 0;
+	ELSE
+		conveyorsStatusDatapointManual := 1;
+	END_IF
+
+	IF modePalletization = modePalletizationAuto THEN
+		conveyorsStatusDatapointAuto := 0;
+	ELSE
+		conveyorsStatusDatapointAuto := 1;
+	END_IF
+	
+	IF modeOutfeed = modeOutfeedManual THEN
+		outfeedStatusDatapointManual := 0;
+	ELSE
+		outfeedStatusDatapointManual := 1;
+	END_IF
+
+	IF modeOutfeed = modeOutfeedAuto THEN
+		outfeedStatusDatapointAuto := 0;
+	ELSE
+		outfeedStatusDatapointAuto := 1;
+	END_IF
 	
 END_PROGRAM
 

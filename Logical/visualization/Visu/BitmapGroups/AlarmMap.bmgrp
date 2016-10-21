@@ -5,11 +5,11 @@
   <Property Name="Index" Value="9"/>
   <Property Name="Translate" Value="False"/>
   <BitmapLayer LanguageId="neutral">
-    <BitmapRef ID="3635" Value="Source[local].Bitmap[empty]"/>
-    <BitmapRef ID="3636" Value="Source[local].Bitmap[activeAlarm]"/>
+    <BitmapRef ID="3635" Value="Source[local].Bitmap[activeAlarm]"/>
+    <BitmapRef ID="3636" Value="Source[local].Bitmap[empty]"/>
   </BitmapLayer>
   <IndexMap>
-    <Index ID="3635" Value="0"/>
-    <Index ID="3636" Value="1"/>
+    <Index ID="3635" Value="1"/>
+    <Index ID="3636" Value="0"/>
   </IndexMap>
 </BitmapGroup>
