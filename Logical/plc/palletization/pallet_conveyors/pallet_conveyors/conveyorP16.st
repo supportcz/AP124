@@ -2,11 +2,6 @@
 
 ACTION ConveyorP16: 
 
-	TON_PalletStopP17(IN := diPalletStopP17, PT := T#200ms);
-	
-	IF EDGEPOS(TON_PalletStopP17.Q) AND statePalletP16 <> palletMoving THEN
-		alarmImagePalletization[4] := TRUE;
-	END_IF	
 
 	acpI_P16.switchOn := TRUE;
 	acpI_P16.speed := 500;
@@ -29,7 +24,7 @@ ACTION ConveyorP16:
 		palletMoving:
 			
 			//sensor reached?
-			IF TON_PalletStopP17.Q AND NOT diReset THEN
+			IF TON_PalletStopP17.Q AND cmdMovePalletP16 AND NOT diReset THEN
 				statePalletP17 := palletPresent;
 				statePalletP16 := palletNotPresent;
 				cmdMovePalletP16 := FALSE;
@@ -59,10 +54,7 @@ ACTION ConveyorP16:
 	IF acknowledgeImagePalletization[6] THEN
 		alarmImagePalletization[6] := FALSE;
 	END_IF
-	
-	IF acknowledgeImagePalletization[4] THEN
-		alarmImagePalletization[4] := FALSE;
-	END_IF	
+
 	
 	alarmImagePalletization[26] := acpI_P16.error;
 	IF EDGENEG(acknowledgeImagePalletization[26]) THEN

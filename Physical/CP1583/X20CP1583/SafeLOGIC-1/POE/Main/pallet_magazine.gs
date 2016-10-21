@@ -27,7 +27,7 @@
 22	94	95	108	97	4	5	SAFEFALSE
 23	100	122	126	124	4	3	SM6_ReleaseOutput03
 24	99	125	125	127	4	3	SM6_ReleaseOutput04
-25	24	79	49	81	4	5	allSafetyCircuitsReady
+25	28	79	49	81	4	5	allEStopsReleased
 26	81	83	99	85	4	5	diMagazineEDM
 27	145	83	166	85	4	3	magazineEdmError
 29	96	37	104	39	4	5	TRUE

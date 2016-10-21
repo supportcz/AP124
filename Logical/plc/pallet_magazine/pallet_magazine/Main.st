@@ -135,8 +135,6 @@ PROGRAM _CYCLIC
 	//conveyor P12
 	//ConveyorP12Control;
 
-	doSafetyCurtainSupplyP11 := TRUE;
-	
 	TON_PalletOnConveyorP12(IN := diPalletOnConveyorP12, PT := T#50ms);
 	
 	//detect pallet on conveyor

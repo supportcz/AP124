@@ -177,31 +177,6 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_134]"/>
           <Property Name="Width" Value="135"/>
         </Control>
-        <Control ClassId="0x00001002" Name="Button_7">
-          <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
-          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AddRemovePallet]"/>
-          <Property Name="BitmapIndex" Value="0"/>
-          <Property Name="BitmapIndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.statePalletP12]"/>
-          <Property Name="BitmapSimulationValue" Value="0"/>
-          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_129]"/>
-          <Property Name="Height" Value="40"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="507"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="86"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_129]"/>
-          <Property Name="Width" Value="40"/>
-        </Control>
         <Control ClassId="0x00001001" Name="Shape_1">
           <Property Name="BackColor" Value="252"/>
           <Property Name="ControlID" Value="0"/>
@@ -1035,6 +1010,18 @@
           <Property Name="Top" Value="282"/>
           <Property Name="Width" Value="16"/>
         </Control>
+        <Control ClassId="0x00001003" Name="HotSpot_1">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_79]"/>
+          <Property Name="Height" Value="110"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="440"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="190"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_79]"/>
+          <Property Name="Width" Value="170"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_124">
@@ -1086,21 +1073,6 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="Page" Value="Source[local].Page[Page_22_ManualConveyor1]"/>
               <Property Name="Target" Value="Page"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_129">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x00000161">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[12]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1177,8 +1149,23 @@
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="SetValue" Value="1"/>
+              <Property Name="SetValue" Value="0"/>
               <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.pallet_magazine.closeArms]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_79">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000161">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[12]]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

@@ -1,12 +1,6 @@
 
 ACTION ConveyorP19: 
 
-	TON_PalletStopP20(IN := diPalletStopP20, PT := T#200ms);
-			
-	IF EDGEPOS(TON_PalletStopP20.Q) AND statePalletP19 <> palletMoving THEN
-		alarmImageOutfeed[2] := TRUE;
-	END_IF	
-
 	CASE statePalletP19 OF
 		
 		palletNotPresent:
@@ -25,14 +19,14 @@ ACTION ConveyorP19:
 		palletMoving:
 			
 			//sensor reached?
-			IF TON_PalletStopP20.Q AND NOT diReset THEN
+			IF TON_PalletStopP20.Q AND cmdMovePalletP19 AND NOT diReset THEN
 				statePalletP20 := palletPresent;
 				statePalletP19 := palletNotPresent;
 				cmdMovePalletP19 := FALSE;
 			END_IF	
 
 			//timeout?
-			IF modePalletization = modePalletizationAuto THEN
+			IF modeOutfeed = modeOutfeedAuto THEN
 				TON_ConveyorP19(IN := TRUE, PT := T#12s);
 				IF TON_ConveyorP19.Q THEN
 					alarmImageOutfeed[1] := TRUE;
@@ -50,12 +44,10 @@ ACTION ConveyorP19:
 	// alarms
 	alarmImageOutfeed[3] := NOT diMotorProtectionP19;
 
-	IF alarmImageOutfeed[1] THEN
+	IF acknowledgeImageOutfeed[1] THEN
 		alarmImageOutfeed[1] := FALSE;
 	END_IF
 	
-	IF alarmImageOutfeed[2] THEN
-		alarmImageOutfeed[2] := FALSE;
-	END_IF	
+
 	
 END_ACTION

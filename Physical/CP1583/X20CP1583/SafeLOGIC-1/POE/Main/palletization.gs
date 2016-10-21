@@ -53,7 +53,7 @@
 5	81	116	95	118	4	5	SAFEFALSE
 6	94	154	120	156	4	3	SM6_ReleaseOutput01
 7	93	161	119	163	4	3	SM6_ReleaseOutput02
-8	18	95	43	97	4	5	allSafetyCircuitsReady
+8	22	95	43	97	4	5	allEStopsReleased
 9	65	104	86	106	4	5	diPalletizationEDM
 14	132	104	156	106	4	3	palletizationEdmError
 17	113	12	143	14	4	3	activateSafetyPalletization
@@ -89,7 +89,7 @@
 136	138	45	160	47	4	3	doMutingLampP15
 160	9	105	28	107	4	5	lightCurtainP15
 161	11	109	28	111	4	5	diOverrideP15
-166	15	113	28	115	4	5	SAFETRUE
+166	14	113	28	115	4	5	SAFEFALSE
 
 [FBS]
 12

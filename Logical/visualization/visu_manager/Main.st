@@ -22,7 +22,7 @@ PROGRAM _CYCLIC
 		VA_Srelease(1,uiHandle);
 	END_IF;
 	
-	IF alarmCommon OR alarmInZoneMagazine OR alarmInZonePalletization THEN
+	IF alarmCommon OR alarmInZoneMagazine OR alarmInZonePalletization OR alarmInZoneOutfeed THEN
 		alarmPresent := TRUE;
 	ELSE
 		alarmPresent := FALSE;

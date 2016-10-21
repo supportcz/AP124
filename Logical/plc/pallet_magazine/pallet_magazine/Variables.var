@@ -21,7 +21,6 @@ VAR
 	doMagazineDown : BOOL; (*contactor to go down*)
 	doMagazineUp : BOOL; (*contactor to go up*)
 	doOpenArms : BOOL; (*valve to open the arms*)
-	doSafetyCurtainSupplyP11 : BOOL;
 	lightCurtainP11 : BOOL; (*status of light curtain P11*)
 	MTBasicsPWM_0 : MTBasicsPWM;
 	readyToStart : BOOL;

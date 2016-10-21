@@ -4,11 +4,7 @@ ACTION ConveyorP18:
 	
 	RETURN;
 	
-	TON_PalletStopP19(IN := diPalletStopP19, PT := T#200ms);
-	
-	IF EDGEPOS(TON_PalletStopP19.Q) AND statePalletP18 <> palletMoving THEN
-		alarmImageOutfeed[5] := TRUE;
-	END_IF	
+
 
 	acpI_P18.switchOn := TRUE;
 	acpI_P18.speed := 500;
@@ -31,14 +27,14 @@ ACTION ConveyorP18:
 		palletMoving:
 			
 			//sensor reached?
-			IF TON_PalletStopP19.Q AND NOT diReset THEN
+			IF TON_PalletStopP19.Q AND cmdMovePalletP18 AND NOT diReset THEN
 				statePalletP19 := palletPresent;
 				statePalletP18 := palletNotPresent;
 				cmdMovePalletP18 := FALSE;
 			END_IF	
 
 			//timeout?
-			IF modePalletization = modePalletizationAuto THEN
+			IF modeOutfeed = modeOutfeedAuto THEN
 				TON_ConveyorP18(IN := TRUE, PT := T#12s);
 				IF TON_ConveyorP18.Q THEN
 					alarmImageOutfeed[4] := TRUE;
@@ -60,10 +56,7 @@ ACTION ConveyorP18:
 	IF acknowledgeImageOutfeed[4] THEN
 		alarmImageOutfeed[4] := FALSE;
 	END_IF
-	
-	IF acknowledgeImageOutfeed[5] THEN
-		alarmImageOutfeed[5] := FALSE;
-	END_IF	
+
 	
 	alarmImageOutfeed[6] := acpI_P18.error;
 	IF EDGENEG(acknowledgeImageOutfeed[6]) THEN

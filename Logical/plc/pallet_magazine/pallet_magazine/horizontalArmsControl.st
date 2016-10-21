@@ -11,16 +11,18 @@ ACTION HorizontalArmsControl:
 		stateArmsInit:
 			
 			IF diLeftArmClosed AND diRightArmClosed AND NOT diLeftArmOpened AND NOT diRightArmOpened THEN
+				closeArms := TRUE;
 				stateArms := stateArmsClosed;
 			END_IF
 
 			IF diLeftArmOpened AND diRightArmOpened AND NOT diLeftArmClosed AND NOT diRightArmClosed THEN
+				closeArms := FALSE;
 				stateArms := stateArmsOpened;
 			END_IF
 		
 			//default state
 			IF stateArms = stateArmsInit THEN
-				doCloseArms := closeArms;
+				doCloseArms := TRUE;
 				doOpenArms := NOT doCloseArms;
 			END_IF
 						

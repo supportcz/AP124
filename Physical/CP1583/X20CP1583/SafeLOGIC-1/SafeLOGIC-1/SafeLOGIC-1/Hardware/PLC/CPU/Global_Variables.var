@@ -1,7 +1,7 @@
 ﻿{GroupDefinition(0,'pallet_magazine')}
 {GroupDefinition(8,'palletization')}
-{GroupDefinition(28,'common')}
-{GroupDefinition(47,'outfeed')}
+{GroupDefinition(29,'common')}
+{GroupDefinition(48,'outfeed')}
 
 VAR_GLOBAL {Group(0)}
     {LINE(1)}
@@ -22,99 +22,101 @@ END_VAR
 
 VAR_GLOBAL {Group(8)}
     {LINE(9)}
-    diLightCurtainP15muting2 AT %IX60.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput06')};
+    diOverrideP15 AT %IX61.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput11')};
     {LINE(10)}
-    diLightCurtainP15muting1 AT %IX60.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput05')};
+    diLightCurtainP15muting2 AT %IX60.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput06')};
     {LINE(11)}
-    lightCurtainP15grey AT %QX0.5 : BOOL {Custom('SL1.SM1.BOOL006')};
+    diLightCurtainP15muting1 AT %IX60.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput05')};
     {LINE(12)}
-    doFI16 AT %QX14.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalOutput03')};
+    lightCurtainP15grey AT %QX0.5 : BOOL {Custom('SL1.SM1.BOOL006')};
     {LINE(13)}
-    doFI15 AT %QX14.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalOutput02')};
+    doFI16 AT %QX14.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalOutput03')};
     {LINE(14)}
-    diLightCurtainP17 AT %IX62.7 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeTwoChannelInput0708')};
+    doFI15 AT %QX14.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalOutput02')};
     {LINE(15)}
-    diLightCurtainP15 AT %IX62.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeTwoChannelInput0304')};
+    diLightCurtainP17 AT %IX62.7 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeTwoChannelInput0708')};
     {LINE(16)}
-    doFI14 AT %QX14.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalOutput01')};
+    diLightCurtainP15 AT %IX62.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeTwoChannelInput0304')};
     {LINE(17)}
-    diLightCurtainP11 AT %IX62.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeTwoChannelInput0102')};
+    doFI14 AT %QX14.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM3.SafeDigitalOutput01')};
     {LINE(18)}
-    SM6_ReleaseOutput02 AT %QX23.1 : BOOL {Custom('SL1.SM6.ReleaseOutput02')};
+    diLightCurtainP11 AT %IX62.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeTwoChannelInput0102')};
     {LINE(19)}
-    SM6_ReleaseOutput01 AT %QX23.0 : BOOL {Custom('SL1.SM6.ReleaseOutput01')};
+    SM6_ReleaseOutput02 AT %QX23.1 : BOOL {Custom('SL1.SM6.ReleaseOutput02')};
     {LINE(20)}
-    palletizationEdmError AT %QX0.2 : BOOL {Custom('SL1.SM1.BOOL003')};
+    SM6_ReleaseOutput01 AT %QX23.0 : BOOL {Custom('SL1.SM6.ReleaseOutput01')};
     {LINE(21)}
-    diPalletizationEDM AT %IX62.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput17')};
+    palletizationEdmError AT %QX0.2 : BOOL {Custom('SL1.SM1.BOOL003')};
     {LINE(22)}
-    diDoor1opened AT %IX19.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1516')};
+    diPalletizationEDM AT %IX62.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput17')};
     {LINE(23)}
-    doPalletizationContactor2 AT %QX17.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput02')};
+    diDoor1opened AT %IX19.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1516')};
     {LINE(24)}
-    doPalletizationContactor1 AT %QX17.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput01')};
+    doPalletizationContactor2 AT %QX17.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput02')};
     {LINE(25)}
-    doUnlockDoor1 AT %QX15.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM4.SafeDigitalOutput03')};
+    doPalletizationContactor1 AT %QX17.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM6.SafeDigitalOutput01')};
     {LINE(26)}
-    doUnlockDoor2 AT %QX15.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM4.SafeDigitalOutput04')};
+    doUnlockDoor1 AT %QX15.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM4.SafeDigitalOutput03')};
     {LINE(27)}
+    doUnlockDoor2 AT %QX15.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM4.SafeDigitalOutput04')};
+    {LINE(28)}
     lightCurtainP17grey AT %QX0.6 : BOOL {Custom('SL1.SM1.BOOL007')};
 END_VAR
 
-VAR_GLOBAL {Group(28)}
-    {LINE(29)}
-    diEStop5 AT %IX19.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0910')};
+VAR_GLOBAL {Group(29)}
     {LINE(30)}
-    diEStop1 AT %IX18.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0102')};
+    diEStop5 AT %IX19.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0910')};
     {LINE(31)}
-    diEStop2 AT %IX18.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0304')};
+    diEStop1 AT %IX18.4 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0102')};
     {LINE(32)}
-    diEStop3 AT %IX18.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0506')};
+    diEStop2 AT %IX18.5 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0304')};
     {LINE(33)}
-    diEStop4 AT %IX18.7 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0708')};
+    diEStop3 AT %IX18.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0506')};
     {LINE(34)}
-    diEStopRobot AT %IX19.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1112')};
+    diEStop4 AT %IX18.7 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0708')};
     {LINE(35)}
-    diEStopWrapper AT %IX19.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1314')};
+    diEStopRobot AT %IX19.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1112')};
     {LINE(36)}
-    diActivateAllSafetyCircuits AT %IX0.0 : BOOL {Custom('SL1.SM1.BOOL101')};
+    diEStopWrapper AT %IX19.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput1314')};
     {LINE(37)}
-    safetyAlive AT %QX0.0 : BOOL {Custom('SL1.SM1.BOOL001')};
+    diActivateAllSafetyCircuits AT %IX0.0 : BOOL {Custom('SL1.SM1.BOOL101')};
     {LINE(38)}
-    diActivateMagazineSafety AT %IX0.1 : BOOL {Custom('SL1.SM1.BOOL102')};
+    safetyAlive AT %QX0.0 : BOOL {Custom('SL1.SM1.BOOL001')};
     {LINE(39)}
-    SM3_ReleaseOutput01 AT %QX20.0 : BOOL {Custom('SL1.SM3.ReleaseOutput01')};
+    diActivateMagazineSafety AT %IX0.1 : BOOL {Custom('SL1.SM1.BOOL102')};
     {LINE(40)}
-    SM3_ReleaseOutput02 AT %QX20.1 : BOOL {Custom('SL1.SM3.ReleaseOutput02')};
+    SM3_ReleaseOutput01 AT %QX20.0 : BOOL {Custom('SL1.SM3.ReleaseOutput01')};
     {LINE(41)}
-    SM3_ReleaseOutput03 AT %QX20.2 : BOOL {Custom('SL1.SM3.ReleaseOutput03')};
+    SM3_ReleaseOutput02 AT %QX20.1 : BOOL {Custom('SL1.SM3.ReleaseOutput02')};
     {LINE(42)}
-    doMutingLampP15 AT %QX18.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM7.SafeDigitalOutput03')};
+    SM3_ReleaseOutput03 AT %QX20.2 : BOOL {Custom('SL1.SM3.ReleaseOutput03')};
     {LINE(43)}
-    SM7_ReleaseOutput03 AT %QX24.2 : BOOL {Custom('SL1.SM7.ReleaseOutput03')};
+    doMutingLampP15 AT %QX18.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM7.SafeDigitalOutput03')};
     {LINE(44)}
-    SM7_ReleaseOutput01 AT %QX24.0 : BOOL {Custom('SL1.SM7.ReleaseOutput01')};
+    SM7_ReleaseOutput03 AT %QX24.2 : BOOL {Custom('SL1.SM7.ReleaseOutput03')};
     {LINE(45)}
-    SM7_ReleaseOutput02 AT %QX24.1 : BOOL {Custom('SL1.SM7.ReleaseOutput02')};
+    SM7_ReleaseOutput01 AT %QX24.0 : BOOL {Custom('SL1.SM7.ReleaseOutput01')};
     {LINE(46)}
+    SM7_ReleaseOutput02 AT %QX24.1 : BOOL {Custom('SL1.SM7.ReleaseOutput02')};
+    {LINE(47)}
     SM7_ReleaseOutput04 AT %QX24.3 : BOOL {Custom('SL1.SM7.ReleaseOutput04')};
 END_VAR
 
-VAR_GLOBAL {Group(47)}
-    {LINE(48)}
-    doMutingLampP17 AT %QX18.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM7.SafeDigitalOutput04')};
+VAR_GLOBAL {Group(48)}
     {LINE(49)}
-    diLightCurtainP17muting2 AT %IX61.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput10')};
+    diOverrideP17 AT %IX61.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput12')};
     {LINE(50)}
-    diLightCurtainP17muting1 AT %IX61.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput09')};
+    doMutingLampP17 AT %QX18.3 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM7.SafeDigitalOutput04')};
     {LINE(51)}
-    diOutfeedEDM AT %IX62.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput19')};
+    diLightCurtainP17muting2 AT %IX61.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput10')};
     {LINE(52)}
-    outfeedEdmError AT %QX0.3 : BOOL {Custom('SL1.SM1.BOOL004')};
+    diLightCurtainP17muting1 AT %IX61.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput09')};
     {LINE(53)}
-    doOutfeedContactor2 AT %QX18.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM7.SafeDigitalOutput02')};
+    diOutfeedEDM AT %IX62.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput19')};
     {LINE(54)}
-    doOutfeedContactor1 AT %QX18.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM7.SafeDigitalOutput01')};
+    outfeedEdmError AT %QX0.3 : BOOL {Custom('SL1.SM1.BOOL004')};
     {LINE(55)}
-    diOverrideP15 AT %IX61.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput11')};
+    doOutfeedContactor2 AT %QX18.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM7.SafeDigitalOutput02')};
+    {LINE(56)}
+    doOutfeedContactor1 AT %QX18.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM7.SafeDigitalOutput01')};
 END_VAR

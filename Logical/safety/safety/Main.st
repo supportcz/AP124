@@ -1,6 +1,9 @@
 
 PROGRAM _INIT
-	(* Insert code here *)
+		
+	doSafetyCurtainSupplyP11 := TRUE;
+	doSafetyCurtainSupplyP15 := TRUE;
+	doSafetyCurtainSupplyP17 := TRUE;
 	 
 END_PROGRAM
 
@@ -26,10 +29,7 @@ PROGRAM _CYCLIC
 	doLedOff := NOT doLedOn;
 
 	diActivateAllSafetyCircuits;
-	
-	
-	doSafetyCurtainSupplyP15 := TRUE;
-	doSafetyCurtainSupplyP17 := TRUE;
+
 	
 	
 END_PROGRAM

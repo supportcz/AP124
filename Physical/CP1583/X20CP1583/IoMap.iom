@@ -46,7 +46,7 @@ VAR_CONFIG
 	::wrapper:diOpenDoors2 AT %IX."I01".DigitalInput04;
 	::robot_head:diCloseDoors3 AT %IX."I01".DigitalInput05;
 	::robot_head:diOpenDoors3 AT %IX."I01".DigitalInput06;
-	::pallet_mag:doSafetyCurtainSupplyP11 AT %QX."Q10".DigitalOutput07;
+	::safety:doSafetyCurtainSupplyP11 AT %QX."Q10".DigitalOutput07;
 	::pallet_mag:doLedP11 AT %QX."Q10".DigitalOutput12;
 	::pallet_mag:diActivateMagazineSafetyCircuits AT %QX."I18".BOOL102;
 	::safety:doSafetyCurtainSupplyP15 AT %QX."Q10".DigitalOutput08;
