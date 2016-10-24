@@ -112,15 +112,16 @@
           <Property Name="Top" Value="27"/>
           <Property Name="Width" Value="32"/>
         </Control>
-        <Control ClassId="0x0000100D" Name="Line_1">
+        <Control ClassId="0x00001001" Name="Shape_1">
+          <Property Name="BackColor" Value="15"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="43"/>
-          <Property Name="EndY" Value="61"/>
-          <Property Name="ForeColor" Value="250"/>
-          <Property Name="StartX" Value="799"/>
-          <Property Name="StartY" Value="61"/>
+          <Property Name="ForeColor" Value="15"/>
+          <Property Name="Height" Value="44"/>
+          <Property Name="Left" Value="197"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="23"/>
+          <Property Name="Width" Value="598"/>
         </Control>
         <Control ClassId="0x00001005" Name="Bitmap_2">
           <Property Name="Bitmap" Value="Source[local].Bitmap[ConveyorFull]"/>
@@ -130,10 +131,10 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="274"/>
           <Property Name="IndexDatapoint" Value="None"/>
-          <Property Name="Left" Value="127"/>
+          <Property Name="Left" Value="143"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="142"/>
+          <Property Name="Top" Value="143"/>
           <Property Name="Width" Value="451"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_83">
@@ -141,7 +142,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="84"/>
-          <Property Name="Left" Value="443"/>
+          <Property Name="Left" Value="438"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="28"/>
           <Property Name="Width" Value="23"/>
@@ -151,7 +152,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="21"/>
-          <Property Name="Left" Value="287"/>
+          <Property Name="Left" Value="282"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="57"/>
           <Property Name="Width" Value="154"/>
@@ -161,7 +162,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="17"/>
-          <Property Name="Left" Value="396"/>
+          <Property Name="Left" Value="391"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="77"/>
           <Property Name="Width" Value="45"/>
@@ -174,7 +175,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="59"/>
           <Property Name="IndexDatapoint" Value="None"/>
-          <Property Name="Left" Value="282"/>
+          <Property Name="Left" Value="277"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="110"/>
@@ -185,7 +186,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="8"/>
-          <Property Name="Left" Value="408"/>
+          <Property Name="Left" Value="403"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="39"/>
           <Property Name="Width" Value="51"/>
@@ -195,7 +196,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="10"/>
-          <Property Name="Left" Value="411"/>
+          <Property Name="Left" Value="406"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="46"/>
           <Property Name="Width" Value="17"/>
@@ -205,7 +206,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="6"/>
-          <Property Name="Left" Value="405"/>
+          <Property Name="Left" Value="400"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="55"/>
           <Property Name="Width" Value="29"/>
@@ -215,7 +216,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="398"/>
+          <Property Name="Left" Value="393"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="60"/>
           <Property Name="Width" Value="43"/>
@@ -225,7 +226,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="34"/>
-          <Property Name="Left" Value="398"/>
+          <Property Name="Left" Value="393"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="94"/>
           <Property Name="Width" Value="41"/>
@@ -235,7 +236,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="395"/>
+          <Property Name="Left" Value="390"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="93"/>
           <Property Name="Width" Value="4"/>
@@ -245,7 +246,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="35"/>
-          <Property Name="Left" Value="438"/>
+          <Property Name="Left" Value="433"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="93"/>
           <Property Name="Width" Value="4"/>
@@ -255,9 +256,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="37"/>
+          <Property Name="GroupID" Value="10"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="306"/>
+          <Property Name="Left" Value="301"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -268,9 +269,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="37"/>
+          <Property Name="GroupID" Value="10"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="309"/>
+          <Property Name="Left" Value="304"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -281,9 +282,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="37"/>
+          <Property Name="GroupID" Value="10"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="312"/>
+          <Property Name="Left" Value="307"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -294,9 +295,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="37"/>
+          <Property Name="GroupID" Value="10"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="306"/>
+          <Property Name="Left" Value="301"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -307,9 +308,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="37"/>
+          <Property Name="GroupID" Value="10"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="309"/>
+          <Property Name="Left" Value="304"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -320,9 +321,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="37"/>
+          <Property Name="GroupID" Value="10"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="312"/>
+          <Property Name="Left" Value="307"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -333,9 +334,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="37"/>
+          <Property Name="GroupID" Value="10"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="306"/>
+          <Property Name="Left" Value="301"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -346,9 +347,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="37"/>
+          <Property Name="GroupID" Value="10"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="309"/>
+          <Property Name="Left" Value="304"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -359,9 +360,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="37"/>
+          <Property Name="GroupID" Value="10"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="312"/>
+          <Property Name="Left" Value="307"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -370,33 +371,33 @@
         <Control ClassId="0x0000100D" Name="Line_26">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="305"/>
+          <Property Name="EndX" Value="300"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="37"/>
-          <Property Name="StartX" Value="305"/>
+          <Property Name="GroupID" Value="10"/>
+          <Property Name="StartX" Value="300"/>
           <Property Name="StartY" Value="63"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_27">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="305"/>
+          <Property Name="EndX" Value="300"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="37"/>
-          <Property Name="StartX" Value="315"/>
+          <Property Name="GroupID" Value="10"/>
+          <Property Name="StartX" Value="310"/>
           <Property Name="StartY" Value="76"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_28">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="315"/>
+          <Property Name="EndX" Value="310"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="37"/>
-          <Property Name="StartX" Value="315"/>
+          <Property Name="GroupID" Value="10"/>
+          <Property Name="StartX" Value="310"/>
           <Property Name="StartY" Value="63"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
@@ -405,9 +406,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="37"/>
+          <Property Name="GroupID" Value="10"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="306"/>
+          <Property Name="Left" Value="301"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="64"/>
@@ -418,9 +419,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="37"/>
+          <Property Name="GroupID" Value="10"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="309"/>
+          <Property Name="Left" Value="304"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="64"/>
@@ -431,9 +432,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="37"/>
+          <Property Name="GroupID" Value="10"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="312"/>
+          <Property Name="Left" Value="307"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="64"/>
@@ -442,11 +443,11 @@
         <Control ClassId="0x0000100D" Name="Line_29">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="305"/>
+          <Property Name="EndX" Value="300"/>
           <Property Name="EndY" Value="63"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="37"/>
-          <Property Name="StartX" Value="315"/>
+          <Property Name="GroupID" Value="10"/>
+          <Property Name="StartX" Value="310"/>
           <Property Name="StartY" Value="63"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
@@ -455,7 +456,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="21"/>
-          <Property Name="Left" Value="334"/>
+          <Property Name="Left" Value="329"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="57"/>
           <Property Name="Width" Value="20"/>
@@ -465,7 +466,7 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="21"/>
-          <Property Name="Left" Value="366"/>
+          <Property Name="Left" Value="361"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="45"/>
           <Property Name="Width" Value="7"/>
@@ -475,9 +476,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="38"/>
+          <Property Name="GroupID" Value="11"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="339"/>
+          <Property Name="Left" Value="334"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -488,9 +489,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="38"/>
+          <Property Name="GroupID" Value="11"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="342"/>
+          <Property Name="Left" Value="337"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -501,9 +502,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="38"/>
+          <Property Name="GroupID" Value="11"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="345"/>
+          <Property Name="Left" Value="340"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -514,9 +515,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="38"/>
+          <Property Name="GroupID" Value="11"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="339"/>
+          <Property Name="Left" Value="334"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -527,9 +528,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="38"/>
+          <Property Name="GroupID" Value="11"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="342"/>
+          <Property Name="Left" Value="337"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -540,9 +541,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="38"/>
+          <Property Name="GroupID" Value="11"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="345"/>
+          <Property Name="Left" Value="340"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -553,9 +554,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="38"/>
+          <Property Name="GroupID" Value="11"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="339"/>
+          <Property Name="Left" Value="334"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -566,9 +567,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="38"/>
+          <Property Name="GroupID" Value="11"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="342"/>
+          <Property Name="Left" Value="337"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -579,9 +580,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="38"/>
+          <Property Name="GroupID" Value="11"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="345"/>
+          <Property Name="Left" Value="340"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -590,33 +591,33 @@
         <Control ClassId="0x0000100D" Name="Line_30">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="338"/>
+          <Property Name="EndX" Value="333"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="38"/>
-          <Property Name="StartX" Value="338"/>
+          <Property Name="GroupID" Value="11"/>
+          <Property Name="StartX" Value="333"/>
           <Property Name="StartY" Value="63"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_31">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="338"/>
+          <Property Name="EndX" Value="333"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="38"/>
-          <Property Name="StartX" Value="348"/>
+          <Property Name="GroupID" Value="11"/>
+          <Property Name="StartX" Value="343"/>
           <Property Name="StartY" Value="76"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_32">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="348"/>
+          <Property Name="EndX" Value="343"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="38"/>
-          <Property Name="StartX" Value="348"/>
+          <Property Name="GroupID" Value="11"/>
+          <Property Name="StartX" Value="343"/>
           <Property Name="StartY" Value="63"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
@@ -625,9 +626,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="38"/>
+          <Property Name="GroupID" Value="11"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="339"/>
+          <Property Name="Left" Value="334"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="64"/>
@@ -638,9 +639,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="38"/>
+          <Property Name="GroupID" Value="11"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="342"/>
+          <Property Name="Left" Value="337"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="64"/>
@@ -651,9 +652,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="38"/>
+          <Property Name="GroupID" Value="11"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="345"/>
+          <Property Name="Left" Value="340"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="64"/>
@@ -662,11 +663,11 @@
         <Control ClassId="0x0000100D" Name="Line_33">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="338"/>
+          <Property Name="EndX" Value="333"/>
           <Property Name="EndY" Value="63"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="38"/>
-          <Property Name="StartX" Value="348"/>
+          <Property Name="GroupID" Value="11"/>
+          <Property Name="StartX" Value="343"/>
           <Property Name="StartY" Value="63"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
@@ -675,9 +676,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="39"/>
+          <Property Name="GroupID" Value="13"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="398"/>
+          <Property Name="Left" Value="393"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -688,9 +689,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="39"/>
+          <Property Name="GroupID" Value="13"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="401"/>
+          <Property Name="Left" Value="396"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -701,9 +702,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="39"/>
+          <Property Name="GroupID" Value="13"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="404"/>
+          <Property Name="Left" Value="399"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -714,9 +715,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="39"/>
+          <Property Name="GroupID" Value="13"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="398"/>
+          <Property Name="Left" Value="393"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -727,9 +728,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="39"/>
+          <Property Name="GroupID" Value="13"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="401"/>
+          <Property Name="Left" Value="396"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -740,9 +741,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="39"/>
+          <Property Name="GroupID" Value="13"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="404"/>
+          <Property Name="Left" Value="399"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -753,9 +754,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="39"/>
+          <Property Name="GroupID" Value="13"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="398"/>
+          <Property Name="Left" Value="393"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -766,9 +767,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="39"/>
+          <Property Name="GroupID" Value="13"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="401"/>
+          <Property Name="Left" Value="396"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -779,9 +780,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="39"/>
+          <Property Name="GroupID" Value="13"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="404"/>
+          <Property Name="Left" Value="399"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -792,9 +793,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="39"/>
+          <Property Name="GroupID" Value="13"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="407"/>
+          <Property Name="Left" Value="402"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -805,9 +806,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="39"/>
+          <Property Name="GroupID" Value="13"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="407"/>
+          <Property Name="Left" Value="402"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -818,9 +819,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="39"/>
+          <Property Name="GroupID" Value="13"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="407"/>
+          <Property Name="Left" Value="402"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -829,44 +830,44 @@
         <Control ClassId="0x0000100D" Name="Line_34">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="410"/>
+          <Property Name="EndX" Value="405"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="39"/>
-          <Property Name="StartX" Value="410"/>
+          <Property Name="GroupID" Value="13"/>
+          <Property Name="StartX" Value="405"/>
           <Property Name="StartY" Value="66"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_35">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="398"/>
+          <Property Name="EndX" Value="393"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="39"/>
-          <Property Name="StartX" Value="410"/>
+          <Property Name="GroupID" Value="13"/>
+          <Property Name="StartX" Value="405"/>
           <Property Name="StartY" Value="76"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_36">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="397"/>
+          <Property Name="EndX" Value="392"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="39"/>
-          <Property Name="StartX" Value="397"/>
+          <Property Name="GroupID" Value="13"/>
+          <Property Name="StartX" Value="392"/>
           <Property Name="StartY" Value="66"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_37">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="398"/>
+          <Property Name="EndX" Value="393"/>
           <Property Name="EndY" Value="66"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="39"/>
-          <Property Name="StartX" Value="409"/>
+          <Property Name="GroupID" Value="13"/>
+          <Property Name="StartX" Value="404"/>
           <Property Name="StartY" Value="66"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
@@ -875,9 +876,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="40"/>
+          <Property Name="GroupID" Value="14"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="430"/>
+          <Property Name="Left" Value="425"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -888,9 +889,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="40"/>
+          <Property Name="GroupID" Value="14"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="433"/>
+          <Property Name="Left" Value="428"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -901,9 +902,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="40"/>
+          <Property Name="GroupID" Value="14"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="436"/>
+          <Property Name="Left" Value="431"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -914,9 +915,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="40"/>
+          <Property Name="GroupID" Value="14"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="430"/>
+          <Property Name="Left" Value="425"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -927,9 +928,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="40"/>
+          <Property Name="GroupID" Value="14"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="433"/>
+          <Property Name="Left" Value="428"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -940,9 +941,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="40"/>
+          <Property Name="GroupID" Value="14"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="436"/>
+          <Property Name="Left" Value="431"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -953,9 +954,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="40"/>
+          <Property Name="GroupID" Value="14"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="430"/>
+          <Property Name="Left" Value="425"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -966,9 +967,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="40"/>
+          <Property Name="GroupID" Value="14"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="433"/>
+          <Property Name="Left" Value="428"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -979,9 +980,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="40"/>
+          <Property Name="GroupID" Value="14"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="436"/>
+          <Property Name="Left" Value="431"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -990,33 +991,33 @@
         <Control ClassId="0x0000100D" Name="Line_38">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="429"/>
+          <Property Name="EndX" Value="424"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="40"/>
-          <Property Name="StartX" Value="429"/>
+          <Property Name="GroupID" Value="14"/>
+          <Property Name="StartX" Value="424"/>
           <Property Name="StartY" Value="63"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_39">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="429"/>
+          <Property Name="EndX" Value="424"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="40"/>
-          <Property Name="StartX" Value="439"/>
+          <Property Name="GroupID" Value="14"/>
+          <Property Name="StartX" Value="434"/>
           <Property Name="StartY" Value="76"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_40">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="439"/>
+          <Property Name="EndX" Value="434"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="40"/>
-          <Property Name="StartX" Value="439"/>
+          <Property Name="GroupID" Value="14"/>
+          <Property Name="StartX" Value="434"/>
           <Property Name="StartY" Value="63"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
@@ -1025,9 +1026,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="40"/>
+          <Property Name="GroupID" Value="14"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="430"/>
+          <Property Name="Left" Value="425"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="64"/>
@@ -1038,9 +1039,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="40"/>
+          <Property Name="GroupID" Value="14"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="433"/>
+          <Property Name="Left" Value="428"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="64"/>
@@ -1051,9 +1052,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="40"/>
+          <Property Name="GroupID" Value="14"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="436"/>
+          <Property Name="Left" Value="431"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="64"/>
@@ -1062,11 +1063,11 @@
         <Control ClassId="0x0000100D" Name="Line_41">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="429"/>
+          <Property Name="EndX" Value="424"/>
           <Property Name="EndY" Value="63"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="40"/>
-          <Property Name="StartX" Value="439"/>
+          <Property Name="GroupID" Value="14"/>
+          <Property Name="StartX" Value="434"/>
           <Property Name="StartY" Value="63"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
@@ -1075,9 +1076,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="42"/>
+          <Property Name="GroupID" Value="15"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="420"/>
+          <Property Name="Left" Value="415"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -1088,9 +1089,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="42"/>
+          <Property Name="GroupID" Value="15"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="423"/>
+          <Property Name="Left" Value="418"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -1101,9 +1102,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="42"/>
+          <Property Name="GroupID" Value="15"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="426"/>
+          <Property Name="Left" Value="421"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -1114,9 +1115,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="42"/>
+          <Property Name="GroupID" Value="15"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="420"/>
+          <Property Name="Left" Value="415"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -1127,9 +1128,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="42"/>
+          <Property Name="GroupID" Value="15"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="423"/>
+          <Property Name="Left" Value="418"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -1140,9 +1141,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="42"/>
+          <Property Name="GroupID" Value="15"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="426"/>
+          <Property Name="Left" Value="421"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -1153,9 +1154,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="42"/>
+          <Property Name="GroupID" Value="15"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="420"/>
+          <Property Name="Left" Value="415"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -1166,9 +1167,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="42"/>
+          <Property Name="GroupID" Value="15"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="423"/>
+          <Property Name="Left" Value="418"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -1179,9 +1180,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="42"/>
+          <Property Name="GroupID" Value="15"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="426"/>
+          <Property Name="Left" Value="421"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -1190,33 +1191,33 @@
         <Control ClassId="0x0000100D" Name="Line_42">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="419"/>
+          <Property Name="EndX" Value="414"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="42"/>
-          <Property Name="StartX" Value="419"/>
+          <Property Name="GroupID" Value="15"/>
+          <Property Name="StartX" Value="414"/>
           <Property Name="StartY" Value="63"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_43">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="419"/>
+          <Property Name="EndX" Value="414"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="42"/>
-          <Property Name="StartX" Value="429"/>
+          <Property Name="GroupID" Value="15"/>
+          <Property Name="StartX" Value="424"/>
           <Property Name="StartY" Value="76"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_44">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="429"/>
+          <Property Name="EndX" Value="424"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="42"/>
-          <Property Name="StartX" Value="429"/>
+          <Property Name="GroupID" Value="15"/>
+          <Property Name="StartX" Value="424"/>
           <Property Name="StartY" Value="63"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
@@ -1225,9 +1226,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="42"/>
+          <Property Name="GroupID" Value="15"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="420"/>
+          <Property Name="Left" Value="415"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="64"/>
@@ -1238,9 +1239,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="42"/>
+          <Property Name="GroupID" Value="15"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="423"/>
+          <Property Name="Left" Value="418"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="64"/>
@@ -1251,9 +1252,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="42"/>
+          <Property Name="GroupID" Value="15"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="426"/>
+          <Property Name="Left" Value="421"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="64"/>
@@ -1262,11 +1263,11 @@
         <Control ClassId="0x0000100D" Name="Line_45">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="419"/>
+          <Property Name="EndX" Value="414"/>
           <Property Name="EndY" Value="63"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="42"/>
-          <Property Name="StartX" Value="429"/>
+          <Property Name="GroupID" Value="15"/>
+          <Property Name="StartX" Value="424"/>
           <Property Name="StartY" Value="63"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
@@ -1275,9 +1276,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="43"/>
+          <Property Name="GroupID" Value="16"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="411"/>
+          <Property Name="Left" Value="406"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -1288,9 +1289,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="43"/>
+          <Property Name="GroupID" Value="16"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="414"/>
+          <Property Name="Left" Value="409"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -1301,9 +1302,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="43"/>
+          <Property Name="GroupID" Value="16"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="417"/>
+          <Property Name="Left" Value="412"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="73"/>
@@ -1314,9 +1315,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="43"/>
+          <Property Name="GroupID" Value="16"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="411"/>
+          <Property Name="Left" Value="406"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -1327,9 +1328,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="43"/>
+          <Property Name="GroupID" Value="16"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="414"/>
+          <Property Name="Left" Value="409"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -1340,9 +1341,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="43"/>
+          <Property Name="GroupID" Value="16"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="417"/>
+          <Property Name="Left" Value="412"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="70"/>
@@ -1353,9 +1354,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="43"/>
+          <Property Name="GroupID" Value="16"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="411"/>
+          <Property Name="Left" Value="406"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -1366,9 +1367,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="43"/>
+          <Property Name="GroupID" Value="16"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="414"/>
+          <Property Name="Left" Value="409"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -1379,9 +1380,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="43"/>
+          <Property Name="GroupID" Value="16"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="417"/>
+          <Property Name="Left" Value="412"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="67"/>
@@ -1390,33 +1391,33 @@
         <Control ClassId="0x0000100D" Name="Line_46">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="410"/>
+          <Property Name="EndX" Value="405"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="43"/>
-          <Property Name="StartX" Value="410"/>
+          <Property Name="GroupID" Value="16"/>
+          <Property Name="StartX" Value="405"/>
           <Property Name="StartY" Value="63"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_47">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="410"/>
+          <Property Name="EndX" Value="405"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="43"/>
-          <Property Name="StartX" Value="420"/>
+          <Property Name="GroupID" Value="16"/>
+          <Property Name="StartX" Value="415"/>
           <Property Name="StartY" Value="76"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_48">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="420"/>
+          <Property Name="EndX" Value="415"/>
           <Property Name="EndY" Value="76"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="43"/>
-          <Property Name="StartX" Value="420"/>
+          <Property Name="GroupID" Value="16"/>
+          <Property Name="StartX" Value="415"/>
           <Property Name="StartY" Value="63"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
@@ -1425,9 +1426,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="43"/>
+          <Property Name="GroupID" Value="16"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="411"/>
+          <Property Name="Left" Value="406"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="64"/>
@@ -1438,9 +1439,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="43"/>
+          <Property Name="GroupID" Value="16"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="414"/>
+          <Property Name="Left" Value="409"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="64"/>
@@ -1451,9 +1452,9 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="185"/>
-          <Property Name="GroupID" Value="43"/>
+          <Property Name="GroupID" Value="16"/>
           <Property Name="Height" Value="3"/>
-          <Property Name="Left" Value="417"/>
+          <Property Name="Left" Value="412"/>
           <Property Name="Shape" Value="Ellipse"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="64"/>
@@ -1462,11 +1463,11 @@
         <Control ClassId="0x0000100D" Name="Line_49">
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="410"/>
+          <Property Name="EndX" Value="405"/>
           <Property Name="EndY" Value="63"/>
           <Property Name="ForeColor" Value="231"/>
-          <Property Name="GroupID" Value="43"/>
-          <Property Name="StartX" Value="420"/>
+          <Property Name="GroupID" Value="16"/>
+          <Property Name="StartX" Value="415"/>
           <Property Name="StartY" Value="63"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
@@ -1479,7 +1480,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[16]]"/>
-          <Property Name="Left" Value="525"/>
+          <Property Name="Left" Value="520"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="189"/>
@@ -1494,7 +1495,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[9]]"/>
-          <Property Name="Left" Value="526"/>
+          <Property Name="Left" Value="521"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="188"/>
@@ -1509,7 +1510,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[15]]"/>
-          <Property Name="Left" Value="527"/>
+          <Property Name="Left" Value="522"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="189"/>
@@ -1524,10 +1525,10 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[4]]"/>
-          <Property Name="Left" Value="561"/>
+          <Property Name="Left" Value="560"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="175"/>
+          <Property Name="Top" Value="188"/>
           <Property Name="Width" Value="16"/>
         </Control>
         <Control ClassId="0x00001005" Name="Bitmap_7">
@@ -1539,7 +1540,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[10]]"/>
-          <Property Name="Left" Value="526"/>
+          <Property Name="Left" Value="521"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="188"/>
@@ -1554,7 +1555,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[8]]"/>
-          <Property Name="Left" Value="526"/>
+          <Property Name="Left" Value="521"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="188"/>
@@ -1569,7 +1570,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[7]]"/>
-          <Property Name="Left" Value="526"/>
+          <Property Name="Left" Value="521"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="188"/>
@@ -1584,7 +1585,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[5]]"/>
-          <Property Name="Left" Value="487"/>
+          <Property Name="Left" Value="482"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="173"/>
@@ -1599,7 +1600,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[2]]"/>
-          <Property Name="Left" Value="487"/>
+          <Property Name="Left" Value="482"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="173"/>
@@ -1614,10 +1615,10 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[1]]"/>
-          <Property Name="Left" Value="561"/>
+          <Property Name="Left" Value="560"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="175"/>
+          <Property Name="Top" Value="188"/>
           <Property Name="Width" Value="16"/>
         </Control>
         <Control ClassId="0x00001005" Name="Bitmap_13">
@@ -1629,7 +1630,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[0]]"/>
-          <Property Name="Left" Value="525"/>
+          <Property Name="Left" Value="520"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="165"/>
@@ -1644,7 +1645,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[13]]"/>
-          <Property Name="Left" Value="526"/>
+          <Property Name="Left" Value="521"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="189"/>
@@ -1659,7 +1660,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[11]]"/>
-          <Property Name="Left" Value="526"/>
+          <Property Name="Left" Value="521"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="189"/>
@@ -1674,7 +1675,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[0]]"/>
-          <Property Name="Left" Value="470"/>
+          <Property Name="Left" Value="465"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="157"/>
@@ -1689,7 +1690,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[1]]"/>
-          <Property Name="Left" Value="292"/>
+          <Property Name="Left" Value="287"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="190"/>
@@ -1704,7 +1705,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[2]]"/>
-          <Property Name="Left" Value="411"/>
+          <Property Name="Left" Value="406"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="158"/>
@@ -1719,10 +1720,10 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[3]]"/>
-          <Property Name="Left" Value="293"/>
+          <Property Name="Left" Value="288"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="163"/>
+          <Property Name="Top" Value="160"/>
           <Property Name="Width" Value="16"/>
         </Control>
         <Control ClassId="0x00001005" Name="Bitmap_20">
@@ -1734,7 +1735,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[4]]"/>
-          <Property Name="Left" Value="238"/>
+          <Property Name="Left" Value="233"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="190"/>
@@ -1749,10 +1750,10 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[6]]"/>
-          <Property Name="Left" Value="225"/>
+          <Property Name="Left" Value="220"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="160"/>
+          <Property Name="Top" Value="159"/>
           <Property Name="Width" Value="16"/>
         </Control>
         <Control ClassId="0x00001005" Name="Bitmap_22">
@@ -1764,7 +1765,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[0]]"/>
-          <Property Name="Left" Value="350"/>
+          <Property Name="Left" Value="345"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="159"/>
@@ -1779,7 +1780,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[9]]"/>
-          <Property Name="Left" Value="468"/>
+          <Property Name="Left" Value="463"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="190"/>
@@ -1794,7 +1795,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[10]]"/>
-          <Property Name="Left" Value="410"/>
+          <Property Name="Left" Value="405"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="190"/>
@@ -1809,7 +1810,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[11]]"/>
-          <Property Name="Left" Value="355"/>
+          <Property Name="Left" Value="350"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="191"/>
@@ -1824,7 +1825,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[16]]"/>
-          <Property Name="Left" Value="414"/>
+          <Property Name="Left" Value="409"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="39"/>
@@ -1839,7 +1840,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[17]]"/>
-          <Property Name="Left" Value="414"/>
+          <Property Name="Left" Value="409"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="39"/>
@@ -1854,7 +1855,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[19]]"/>
-          <Property Name="Left" Value="361"/>
+          <Property Name="Left" Value="356"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="35"/>
@@ -1869,7 +1870,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[20]]"/>
-          <Property Name="Left" Value="361"/>
+          <Property Name="Left" Value="356"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="35"/>
@@ -1884,7 +1885,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[21]]"/>
-          <Property Name="Left" Value="361"/>
+          <Property Name="Left" Value="356"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="35"/>
@@ -1899,10 +1900,454 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[28]]"/>
-          <Property Name="Left" Value="412"/>
+          <Property Name="Left" Value="407"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="64"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x0000100D" Name="Line_2">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EndX" Value="196"/>
+          <Property Name="EndY" Value="29"/>
+          <Property Name="ForeColor" Value="249"/>
+          <Property Name="StartX" Value="196"/>
+          <Property Name="StartY" Value="61"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_32">
+          <Property Name="Bitmap" Value="Source[local].Bitmap[curtain]"/>
+          <Property Name="BitmapSource" Value="SingleBitmap"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="355"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="77"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="6"/>
+          <Property Name="Width" Value="580"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_33">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[1]]"/>
+          <Property Name="Left" Value="565"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="225"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_34">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[6]]"/>
+          <Property Name="Left" Value="558"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="163"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_35">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[5]]"/>
+          <Property Name="Left" Value="272"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="212"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_36">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[12]]"/>
+          <Property Name="Left" Value="465"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="158"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_37">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[13]]"/>
+          <Property Name="Left" Value="406"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="159"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_38">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[14]]"/>
+          <Property Name="Left" Value="440"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="34"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_39">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[15]]"/>
+          <Property Name="Left" Value="368"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="57"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_40">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[18]]"/>
+          <Property Name="Left" Value="440"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="35"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_41">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[22]]"/>
+          <Property Name="Left" Value="284"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="38"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_42">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[23]]"/>
+          <Property Name="Left" Value="378"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="35"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_43">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[24]]"/>
+          <Property Name="Left" Value="406"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="159"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_44">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[25]]"/>
+          <Property Name="Left" Value="345"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="160"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_45">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[26]]"/>
+          <Property Name="Left" Value="288"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="160"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_46">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[27]]"/>
+          <Property Name="Left" Value="368"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="57"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_47">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[29]]"/>
+          <Property Name="Left" Value="220"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="159"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_48">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[0]]"/>
+          <Property Name="Left" Value="272"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="213"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_49">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[1]]"/>
+          <Property Name="Left" Value="217"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="316"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_50">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[2]]"/>
+          <Property Name="Left" Value="184"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="302"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_51">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[3]]"/>
+          <Property Name="Left" Value="154"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="256"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_52">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[4]]"/>
+          <Property Name="Left" Value="154"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="257"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_53">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[5]]"/>
+          <Property Name="Left" Value="185"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="250"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_54">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[6]]"/>
+          <Property Name="Left" Value="157"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="160"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_55">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[7]]"/>
+          <Property Name="Left" Value="184"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="354"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_56">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[9]]"/>
+          <Property Name="Left" Value="156"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="294"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_57">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[10]]"/>
+          <Property Name="Left" Value="183"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="396"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_58">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[11]]"/>
+          <Property Name="Left" Value="154"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="397"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_59">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[12]]"/>
+          <Property Name="Left" Value="153"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="356"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="Bitmap_60">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[22]]"/>
+          <Property Name="Left" Value="154"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="398"/>
           <Property Name="Width" Value="16"/>
         </Control>
       </Controls>

@@ -257,6 +257,20 @@ PROGRAM _CYCLIC
 		outfeedStatusDatapointAuto := 1;
 	END_IF
 	
+	(***************************************************************************)
+	(* 			Info - Actual Date and Time after reset pallet Count		   *)
+	(***************************************************************************)
+	DTStructureGetTime_0.enable := 1;
+	IF ButtonResetTime > 0 THEN
+		DTStructureGetTime_0(enable := 1,pDTStructure := ADR(ResetTime));
+		IF DTStructureGetTime_0.status = 0 THEN
+			ButtonResetTime := 0;
+		ELSIF(DTStructureGetTime_0.status = 65535) THEN 
+			ButtonResetTime := 1;
+		ELSE ButtonResetTime := 0;
+		END_IF;
+	END_IF;
+	
 END_PROGRAM
 
 PROGRAM _EXIT

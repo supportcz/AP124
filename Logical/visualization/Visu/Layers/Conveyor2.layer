@@ -255,647 +255,68 @@
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_33]"/>
       <Property Name="Width" Value="57"/>
     </Control>
-    <Control ClassId="0x00001004" Name="Text_16">
-      <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP19]"/>
-      <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
-      <Property Name="ColorMapIndexOffset" Value="0"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Opaque"/>
-      <Property Name="GroupID" Value="66"/>
-      <Property Name="Height" Value="39"/>
-      <Property Name="Left" Value="518"/>
-      <Property Name="SimulationIndex" Value="0"/>
-      <Property Name="SimulationValue" Value=""/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="None"/>
-      <Property Name="TextSource" Value="SingleString"/>
-      <Property Name="Top" Value="147"/>
-      <Property Name="Width" Value="62"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_66">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="66"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="552"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="152"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_71">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="66"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="552"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="160"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_72">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="66"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="552"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="169"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_73">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="66"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="552"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="178"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_74">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="66"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="523"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="152"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_75">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="66"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="523"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="160"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_76">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="66"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="523"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="169"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_77">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="66"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="523"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="178"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
     <Control ClassId="0x00001005" Name="Bitmap_3">
-      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[PalletInMove]"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MediumPallet]"/>
       <Property Name="BitmapIndex" Value="0"/>
       <Property Name="BitmapSource" Value="MultipleBitmaps"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="GroupID" Value="66"/>
-      <Property Name="Height" Value="47"/>
+      <Property Name="Height" Value="42"/>
       <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP19]"/>
-      <Property Name="Left" Value="532"/>
+      <Property Name="Left" Value="520"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="144"/>
-      <Property Name="Width" Value="70"/>
-    </Control>
-    <Control ClassId="0x00001004" Name="Text_17">
-      <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP20]"/>
-      <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
-      <Property Name="ColorMapIndexOffset" Value="0"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Opaque"/>
-      <Property Name="GroupID" Value="67"/>
-      <Property Name="Height" Value="39"/>
-      <Property Name="Left" Value="433"/>
-      <Property Name="SimulationIndex" Value="0"/>
-      <Property Name="SimulationValue" Value=""/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="None"/>
-      <Property Name="TextSource" Value="SingleString"/>
-      <Property Name="Top" Value="147"/>
-      <Property Name="Width" Value="62"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_67">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="67"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="467"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="152"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_78">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="67"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="467"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="160"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_79">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="67"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="467"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="169"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_80">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="67"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="467"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="178"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_81">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="67"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="438"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="152"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_82">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="67"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="438"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="160"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_83">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="67"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="438"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="169"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_84">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="67"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="438"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="178"/>
-      <Property Name="Width" Value="24"/>
+      <Property Name="Top" Value="148"/>
+      <Property Name="Width" Value="65"/>
     </Control>
     <Control ClassId="0x00001005" Name="Bitmap_4">
-      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[PalletInMove]"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MediumPallet]"/>
       <Property Name="BitmapIndex" Value="0"/>
       <Property Name="BitmapSource" Value="MultipleBitmaps"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="GroupID" Value="67"/>
-      <Property Name="Height" Value="47"/>
+      <Property Name="Height" Value="42"/>
       <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP20]"/>
-      <Property Name="Left" Value="447"/>
+      <Property Name="Left" Value="434"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="144"/>
-      <Property Name="Width" Value="70"/>
-    </Control>
-    <Control ClassId="0x00001004" Name="Text_18">
-      <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP21]"/>
-      <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
-      <Property Name="ColorMapIndexOffset" Value="0"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Opaque"/>
-      <Property Name="GroupID" Value="68"/>
-      <Property Name="Height" Value="39"/>
-      <Property Name="Left" Value="346"/>
-      <Property Name="SimulationIndex" Value="0"/>
-      <Property Name="SimulationValue" Value=""/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="None"/>
-      <Property Name="TextSource" Value="SingleString"/>
-      <Property Name="Top" Value="147"/>
-      <Property Name="Width" Value="62"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_68">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="68"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="380"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="152"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_85">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="68"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="380"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="160"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_86">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="68"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="380"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="169"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_87">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="68"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="380"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="178"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_88">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="68"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="351"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="152"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_89">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="68"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="351"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="160"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_90">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="68"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="351"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="169"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_91">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="68"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="351"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="178"/>
-      <Property Name="Width" Value="24"/>
+      <Property Name="Top" Value="148"/>
+      <Property Name="Width" Value="65"/>
     </Control>
     <Control ClassId="0x00001005" Name="Bitmap_5">
-      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[PalletInMove]"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MediumPallet]"/>
       <Property Name="BitmapIndex" Value="0"/>
       <Property Name="BitmapSource" Value="MultipleBitmaps"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="GroupID" Value="68"/>
-      <Property Name="Height" Value="47"/>
+      <Property Name="Height" Value="43"/>
       <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP21]"/>
-      <Property Name="Left" Value="360"/>
+      <Property Name="Left" Value="350"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="144"/>
-      <Property Name="Width" Value="70"/>
-    </Control>
-    <Control ClassId="0x00001004" Name="Text_19">
-      <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP22]"/>
-      <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
-      <Property Name="ColorMapIndexOffset" Value="0"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Opaque"/>
-      <Property Name="GroupID" Value="69"/>
-      <Property Name="Height" Value="39"/>
-      <Property Name="Left" Value="260"/>
-      <Property Name="SimulationIndex" Value="0"/>
-      <Property Name="SimulationValue" Value=""/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="None"/>
-      <Property Name="TextSource" Value="SingleString"/>
-      <Property Name="Top" Value="147"/>
-      <Property Name="Width" Value="62"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_69">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="69"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="294"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="152"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_92">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="69"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="294"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="160"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_93">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="69"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="294"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="169"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_94">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="69"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="294"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="178"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_95">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="69"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="265"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="152"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_96">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="69"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="265"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="160"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_97">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="69"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="265"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="169"/>
-      <Property Name="Width" Value="24"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_98">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="69"/>
-      <Property Name="Height" Value="2"/>
-      <Property Name="Left" Value="265"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="178"/>
-      <Property Name="Width" Value="24"/>
+      <Property Name="Top" Value="148"/>
+      <Property Name="Width" Value="66"/>
     </Control>
     <Control ClassId="0x00001005" Name="Bitmap_6">
-      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[PalletInMove]"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MediumPallet]"/>
       <Property Name="BitmapIndex" Value="0"/>
       <Property Name="BitmapSource" Value="MultipleBitmaps"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="GroupID" Value="69"/>
-      <Property Name="Height" Value="47"/>
+      <Property Name="Height" Value="42"/>
       <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP22]"/>
-      <Property Name="Left" Value="274"/>
+      <Property Name="Left" Value="261"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="144"/>
-      <Property Name="Width" Value="70"/>
-    </Control>
-    <Control ClassId="0x00001004" Name="Text_22">
-      <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.statePalletP17]"/>
-      <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
-      <Property Name="ColorMapIndexOffset" Value="0"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Opaque"/>
-      <Property Name="GroupID" Value="24"/>
-      <Property Name="Height" Value="62"/>
-      <Property Name="Left" Value="620"/>
-      <Property Name="SimulationIndex" Value="0"/>
-      <Property Name="SimulationValue" Value=""/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="None"/>
-      <Property Name="TextSource" Value="SingleString"/>
-      <Property Name="Top" Value="222"/>
-      <Property Name="Width" Value="39"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_122">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="24"/>
-      <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="625"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="227"/>
-      <Property Name="Width" Value="2"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_123">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="24"/>
-      <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="634"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="227"/>
-      <Property Name="Width" Value="2"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_124">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="24"/>
-      <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="642"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="227"/>
-      <Property Name="Width" Value="2"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_125">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="24"/>
-      <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="651"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="227"/>
-      <Property Name="Width" Value="2"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_126">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="24"/>
-      <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="625"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="256"/>
-      <Property Name="Width" Value="2"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_127">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="24"/>
-      <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="634"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="256"/>
-      <Property Name="Width" Value="2"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_128">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="24"/>
-      <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="642"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="256"/>
-      <Property Name="Width" Value="2"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_129">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="24"/>
-      <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="651"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="256"/>
-      <Property Name="Width" Value="2"/>
+      <Property Name="Top" Value="148"/>
+      <Property Name="Width" Value="65"/>
     </Control>
     <Control ClassId="0x00001005" Name="Bitmap_9">
-      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[PalletInMoveUp]"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MediumPalletUp]"/>
       <Property Name="BitmapIndex" Value="0"/>
       <Property Name="BitmapSource" Value="MultipleBitmaps"/>
       <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.PalletStatus[17]]"/>
@@ -904,145 +325,28 @@
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="GroupID" Value="24"/>
-      <Property Name="Height" Value="77"/>
+      <Property Name="Height" Value="65"/>
       <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.statePalletP17]"/>
-      <Property Name="Left" Value="615"/>
+      <Property Name="Left" Value="620"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="232"/>
-      <Property Name="Width" Value="47"/>
-    </Control>
-    <Control ClassId="0x00001004" Name="Text_23">
-      <Property Name="BackColor" Value="229"/>
-      <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP18]"/>
-      <Property Name="ColorMap" Value="Source[local].ColorMap[ColorMap_PalletStatus]"/>
-      <Property Name="ColorMapIndexOffset" Value="0"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Opaque"/>
-      <Property Name="GroupID" Value="71"/>
-      <Property Name="Height" Value="62"/>
-      <Property Name="Left" Value="619"/>
-      <Property Name="SimulationIndex" Value="0"/>
-      <Property Name="SimulationValue" Value=""/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextDatapoint" Value="None"/>
-      <Property Name="TextSource" Value="SingleString"/>
-      <Property Name="Top" Value="137"/>
-      <Property Name="Width" Value="39"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_130">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="71"/>
-      <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="624"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="142"/>
-      <Property Name="Width" Value="2"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_131">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="71"/>
-      <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="633"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="142"/>
-      <Property Name="Width" Value="2"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_132">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="71"/>
-      <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="641"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="142"/>
-      <Property Name="Width" Value="2"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_133">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="71"/>
-      <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="650"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="142"/>
-      <Property Name="Width" Value="2"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_134">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="71"/>
-      <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="624"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="171"/>
-      <Property Name="Width" Value="2"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_135">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="71"/>
-      <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="633"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="171"/>
-      <Property Name="Width" Value="2"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_136">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="71"/>
-      <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="641"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="171"/>
-      <Property Name="Width" Value="2"/>
-    </Control>
-    <Control ClassId="0x00001001" Name="Shape_137">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="ForeColor" Value="15"/>
-      <Property Name="GroupID" Value="71"/>
-      <Property Name="Height" Value="24"/>
-      <Property Name="Left" Value="650"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="171"/>
-      <Property Name="Width" Value="2"/>
+      <Property Name="Top" Value="222"/>
+      <Property Name="Width" Value="43"/>
     </Control>
     <Control ClassId="0x00001005" Name="Bitmap_10">
-      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[PalletInMoveUp]"/>
+      <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MediumPalletUp]"/>
       <Property Name="BitmapIndex" Value="0"/>
       <Property Name="BitmapSource" Value="MultipleBitmaps"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
       <Property Name="FillStyle" Value="Transparent"/>
-      <Property Name="GroupID" Value="71"/>
-      <Property Name="Height" Value="77"/>
+      <Property Name="Height" Value="66"/>
       <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP18]"/>
-      <Property Name="Left" Value="614"/>
+      <Property Name="Left" Value="619"/>
       <Property Name="SimulationValue" Value="0"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="147"/>
-      <Property Name="Width" Value="47"/>
+      <Property Name="Top" Value="135"/>
+      <Property Name="Width" Value="42"/>
     </Control>
   </Controls>
   <KeyMapping>

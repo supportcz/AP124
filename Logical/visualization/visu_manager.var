@@ -10,3 +10,7 @@ VAR
 	conveyorsStatusDatapointAuto : UINT;
 	conveyorsStatusDatapointManual : UINT;
 END_VAR
+VAR RETAIN
+	ResetTime : DTStructure;
+	PalletCount : UDINT;
+END_VAR

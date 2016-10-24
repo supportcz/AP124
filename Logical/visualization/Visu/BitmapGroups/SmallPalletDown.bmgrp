@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="SmallPalletDown">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="14"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="3653" Value="Source[local].Bitmap[PalletGreenSmallDown]"/>
+    <BitmapRef ID="3654" Value="Source[local].Bitmap[PalletGraySmallDown]"/>
+    <BitmapRef ID="3655" Value="Source[local].Bitmap[PalletGreenMoveSmallDown]"/>
+    <BitmapRef ID="3656" Value="Source[local].Bitmap[PalletGraySmallDown]"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="3653" Value="1"/>
+    <Index ID="3654" Value="0"/>
+    <Index ID="3655" Value="2"/>
+    <Index ID="3656" Value="3"/>
+  </IndexMap>
+</BitmapGroup>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MediumPallet">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="10"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="3637" Value="Source[local].Bitmap[PalletGreenMedium]"/>
+    <BitmapRef ID="3638" Value="Source[local].Bitmap[PalletGrayMedium]"/>
+    <BitmapRef ID="3639" Value="Source[local].Bitmap[PalletGreenMoveMedium]"/>
+    <BitmapRef ID="3640" Value="Source[local].Bitmap[PalletGrayMedium]"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="3637" Value="1"/>
+    <Index ID="3638" Value="0"/>
+    <Index ID="3639" Value="2"/>
+    <Index ID="3640" Value="3"/>
+  </IndexMap>
+</BitmapGroup>

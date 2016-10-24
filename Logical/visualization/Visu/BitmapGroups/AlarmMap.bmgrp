@@ -6,7 +6,7 @@
   <Property Name="Translate" Value="False"/>
   <BitmapLayer LanguageId="neutral">
     <BitmapRef ID="3635" Value="Source[local].Bitmap[activeAlarm]"/>
-    <BitmapRef ID="3636" Value="Source[local].Bitmap[empty]"/>
+    <BitmapRef ID="3636" Value="Source[local].Bitmap[activeAlarm]"/>
   </BitmapLayer>
   <IndexMap>
     <Index ID="3635" Value="1"/>
