@@ -35,17 +35,19 @@ ACTION ConveyorP18:
 
 			//timeout?
 			IF modeOutfeed = modeOutfeedAuto THEN
-				TON_ConveyorP18(IN := TRUE, PT := T#12s);
+				TON_ConveyorP18(IN := TRUE, PT := T#20s);
 				IF TON_ConveyorP18.Q THEN
 					alarmImageOutfeed[4] := TRUE;
 					cmdMovePalletP18 := FALSE;
 				END_IF
-			ELSE
-				TON_ConveyorP18(IN := FALSE);
 			END_IF
 		
 			acpI_P18.stop := NOT cmdMovePalletP18;
 			
+			IF NOT cmdMovePalletP18 THEN
+				TON_ConveyorP18(IN := FALSE);
+			END_IF	
+		
 	END_CASE
 
 	//control of ACOPOSinverter

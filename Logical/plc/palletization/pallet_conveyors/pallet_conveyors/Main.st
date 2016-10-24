@@ -1,5 +1,9 @@
 PROGRAM _INIT
-	(* Insert code here *)
+	
+	acpI_P14.reset := TRUE;
+	acpI_P15.reset := TRUE;
+	acpI_P16.reset := TRUE;
+	acpI_P17.reset := TRUE;
 	 
 END_PROGRAM
 
@@ -16,10 +20,7 @@ PROGRAM _CYCLIC
 		
 		modePalletizationNotReadyToStart: //the automat is not ready to start
 		
-			acpI_P14.reset := TRUE;
-			acpI_P15.reset := TRUE;
-			acpI_P16.reset := TRUE;
-			acpI_P17.reset := TRUE;
+
 
 		modePalletizationManual:
 			
@@ -34,7 +35,7 @@ PROGRAM _CYCLIC
 
 		modePalletizationAuto:
 	
-			IF statePalletP12 <> palletNotPresent AND statePalletP13 = palletNotPresent THEN
+			IF statePalletP12 <> palletNotPresent AND statePalletP13 = palletNotPresent AND modeMagazine = modeMagazineAuto THEN
 				cmdMovePalletP12 := TRUE;
 			END_IF
 
@@ -59,27 +60,21 @@ PROGRAM _CYCLIC
 			END_IF
 		
 			IF TON_PalletStopP13.Q AND statePalletP13 = palletNotPresent AND NOT cmdMovePalletP12 THEN
-//				statePalletP13 := palletPresent;
 				alarmImagePalletization[9] := TRUE;
 			END_IF	
 			IF TON_PalletStopP14.Q AND statePalletP14 = palletNotPresent AND NOT cmdMovePalletP13 THEN
-//				statePalletP14 := palletPresent;
 				alarmImagePalletization[10] := TRUE;
 			END_IF	
 			IF TON_PalletStopP15.Q AND statePalletP15 = palletNotPresent AND NOT cmdMovePalletP14 THEN
-//				statePalletP15 := palletPresent;
 				alarmImagePalletization[11] := TRUE;
 			END_IF	
 			IF TON_PalletStopP16.Q AND statePalletP16 = palletNotPresent AND NOT cmdMovePalletP15 THEN
-//				statePalletP16 := palletPresent;
 				alarmImagePalletization[1] := TRUE;
 			END_IF	
 			IF TON_PalletStopP17.Q AND statePalletP17 = palletNotPresent AND NOT cmdMovePalletP16 THEN
-//				statePalletP17 := palletPresent;
 				alarmImagePalletization[4] := TRUE;
 			END_IF	
 			IF TON_PalletStopP18.Q AND statePalletP18 = palletNotPresent AND NOT cmdMovePalletP17 THEN
-//				statePalletP18 := palletPresent;
 				alarmImagePalletization[31] := TRUE;
 			END_IF	
 		

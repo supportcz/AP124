@@ -32,7 +32,7 @@
     <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11a" TargetConnector="SL1" />
   </Module>
-  <Module Name="I110" Type="X67DM9321.L12" Version="1.1.1.1" Disabled="true">
+  <Module Name="I110" Type="X67DM9321.L12" Version="1.1.1.1">
     <Connection Connector="X2X1" TargetModule="X20BT9400" TargetConnector="X2X1" NodeNumber="33" />
   </Module>
   <Module Name="I18" Type="X20SLX910" Version="1.10.0.0">
@@ -69,8 +69,9 @@
     <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11b" TargetConnector="SL1" />
   </Module>
-  <Module Name="Q112" Type="X67DO1332" Version="1.0.0.2" Disabled="true">
+  <Module Name="Q112" Type="X67DO1332" Version="1.0.0.2">
     <Connection Connector="X2X1" TargetModule="I110" TargetConnector="X2X2" />
+    <Parameter ID="Supervision" Value="off" />
   </Module>
   <Module Name="Q12" Type="X20DOF322" Version="1.1.0.2">
     <Connection Connector="SS1" TargetModule="X20TB1F3" TargetConnector="SS" />

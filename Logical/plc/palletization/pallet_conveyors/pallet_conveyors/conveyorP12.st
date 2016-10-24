@@ -1,6 +1,5 @@
 
 ACTION ConveyorP12: 
-
 	
 	CASE statePalletP12 OF
 		
@@ -28,23 +27,23 @@ ACTION ConveyorP12:
 
 			//timeout?
 			IF modePalletization = modePalletizationAuto THEN
-				TON_ConveyorP12(IN := TRUE, PT := T#12s);
+				TON_ConveyorP12(IN := TRUE, PT := T#20s);
 				IF TON_ConveyorP12.Q THEN
 					alarmImagePalletization[0] := TRUE;
 					cmdMovePalletP12 := FALSE;
 				END_IF
-			ELSE
-				TON_ConveyorP12(IN := FALSE);
 			END_IF
 		
 			doConveyorP12 := cmdMovePalletP12;
 			
+			IF NOT cmdMovePalletP12 THEN
+				TON_ConveyorP12(IN := FALSE);
+			END_IF	
+
 	END_CASE
 
 	
 	// alarms
-	alarmImagePalletization[12] := NOT diMotorProtectionP12;
-	
 	IF acknowledgeImagePalletization[0] THEN
 		alarmImagePalletization[0] := FALSE;
 	END_IF

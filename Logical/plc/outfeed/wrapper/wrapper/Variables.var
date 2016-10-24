@@ -1,9 +1,8 @@
 VAR
-	diDoor2opened : BOOL;
-	diOpenDoors2 : BOOL; (*button to open doors*)
-	diCloseDoors2 : BOOL; (*button to close doors*)
 	diPalletStopP19 : BOOL;
 	TON_PalletStopP19 : TON;
 	TON_ConveyorP18 : TON;
 	acpI_P18 : AcpInoSdc;
+	DoorLogic_2 : DoorLogic;
+	diDoor2opened : BOOL;
 END_VAR

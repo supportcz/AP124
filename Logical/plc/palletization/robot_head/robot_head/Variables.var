@@ -2,4 +2,11 @@ VAR
 	diOpenDoors3 : BOOL; (*button to open doors*)
 	diCloseDoors3 : BOOL; (*button to close doors*)
 	diDoor3opened : BOOL;
+	doRailingUp : BOOL;
+	doRailingDown : BOOL;
+	diRailingUp : BOOL;
+	diRailingDown : BOOL;
+	stateRailing : StateRailing;
+	railingUp : BOOL;
+	TON_MoveRequest : TON;
 END_VAR

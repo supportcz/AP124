@@ -32,17 +32,18 @@ ACTION ConveyorP16:
 
 			//timeout?
 			IF modePalletization = modePalletizationAuto THEN
-				TON_ConveyorP16(IN := TRUE, PT := T#12s);
+				TON_ConveyorP16(IN := TRUE, PT := T#20s);
 				IF TON_ConveyorP16.Q THEN
 					alarmImagePalletization[6] := TRUE;
 					cmdMovePalletP16 := FALSE;
 				END_IF
-			ELSE
-				TON_ConveyorP16(IN := FALSE);
 			END_IF
 		
 			acpI_P16.stop := NOT cmdMovePalletP16;
 			
+			IF NOT cmdMovePalletP16 THEN
+				TON_ConveyorP16(IN := FALSE);
+			END_IF	
 	END_CASE
 
 	//control of ACOPOSinverter

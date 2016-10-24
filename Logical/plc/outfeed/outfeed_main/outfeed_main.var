@@ -1,3 +1,7 @@
 VAR
 	readyToStart : BOOL;
+	diMotorProtectionP19 : BOOL;
+	diMotorProtectionP20 : BOOL;
+	diMotorProtectionP21 : BOOL;
+	diMotorProtectionP22 : BOOL;
 END_VAR

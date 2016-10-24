@@ -37,21 +37,18 @@ PROGRAM _CYCLIC
 				cmdMovePalletP21 := TRUE;
 			END_IF
 
-			IF statePalletP22 <> palletNotPresent THEN
-				cmdMovePalletP22 := TRUE;
-			END_IF
+//			IF statePalletP22 <> palletNotPresent THEN
+//				cmdMovePalletP22 := TRUE;
+//			END_IF
 		
 			//not expected pallet
 			IF TON_PalletStopP20.Q AND statePalletP20 = palletNotPresent AND NOT cmdMovePalletP19 THEN
-//				statePalletP20 := palletPresent;
 				alarmImageOutfeed[2] := TRUE;
 			END_IF	
 			IF TON_PalletStopP21.Q AND statePalletP21 = palletNotPresent AND NOT cmdMovePalletP20 THEN
-//				statePalletP21 := palletPresent;
 				alarmImageOutfeed[7] := TRUE;
 			END_IF		
 			IF TON_PalletStopP22.Q AND statePalletP22 = palletNotPresent AND NOT cmdMovePalletP21 THEN
-//				statePalletP22 := palletPresent;
 				alarmImageOutfeed[10] := TRUE;
 			END_IF	
 		

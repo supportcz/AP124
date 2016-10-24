@@ -5,8 +5,6 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	diDoor2opened;
-	diOpenDoors2;
-	diCloseDoors2; 
 	
 	TON_PalletStopP19(IN := diPalletStopP19, PT := T#200ms);
 
@@ -42,6 +40,8 @@ PROGRAM _CYCLIC
 	//conveyors
 	ConveyorP18; 
 
+	//door logic
+	DoorLogic_2();
 	
 	IF acknowledgeImageOutfeed[5] THEN
 		alarmImageOutfeed[5] := FALSE;

@@ -37,7 +37,7 @@ PROGRAM _CYCLIC
 		END_IF
 	END_IF
 	
-	//auto or manual
+	//all to auto or manual
 	IF EDGEPOS(cmdAuto) THEN
 		cmdMagazineAuto := TRUE;
 		cmdPalletizationAuto := TRUE;
@@ -62,6 +62,26 @@ PROGRAM _CYCLIC
 		cmdOutfeedManual := FALSE;
 	END_IF
 
+	//palletization t auto or manual
+	IF EDGEPOS(cmdAutoPM) THEN
+		cmdMagazineAuto := TRUE;
+		cmdPalletizationAuto := TRUE;
+	END_IF
+
+	IF EDGENEG(cmdAutoPM) THEN
+		cmdMagazineAuto := FALSE;
+		cmdPalletizationAuto := FALSE;
+	END_IF
+
+	IF EDGEPOS(cmdManualPM) THEN
+		cmdMagazineManual := TRUE;
+		cmdPalletizationManual := TRUE;
+	END_IF
+
+	IF EDGENEG(cmdManualPM) THEN
+		cmdMagazineManual := FALSE;
+		cmdPalletizationManual := FALSE;
+	END_IF
 	
 END_PROGRAM
 

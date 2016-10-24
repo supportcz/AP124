@@ -40,10 +40,10 @@ VAR_CONFIG
 	::robot_head:diDoor3opened AT %IX."I18".SafeTwoChannelInput1920;
 	::alarm_mana:magazineEdmError AT %IX."I18".BOOL002;
 	::alarm_mana:outfeedEdmError AT %IX."I18".BOOL004;
-	::product_in:diCloseDoors1 AT %IX."I01".DigitalInput01;
-	::product_in:diOpenDoors1 AT %IX."I01".DigitalInput02;
-	::wrapper:diCloseDoors2 AT %IX."I01".DigitalInput03;
-	::wrapper:diOpenDoors2 AT %IX."I01".DigitalInput04;
+	::product_in:DoorLogic_1.ButtonToClose AT %IX."I01".DigitalInput01;
+	::product_in:DoorLogic_1.ButtonToOpen AT %IX."I01".DigitalInput02;
+	::wrapper:DoorLogic_2.ButtonToOpen AT %IX."I01".DigitalInput03;
+	::wrapper:DoorLogic_2.ButtonToClose AT %IX."I01".DigitalInput04;
 	::robot_head:diCloseDoors3 AT %IX."I01".DigitalInput05;
 	::robot_head:diOpenDoors3 AT %IX."I01".DigitalInput06;
 	::safety:doSafetyCurtainSupplyP11 AT %QX."Q10".DigitalOutput07;
@@ -69,8 +69,8 @@ VAR_CONFIG
 	::pusher_dri:acpI_P12.ETAD_Input AT %IW."U12".ETAD_Input;
 	::pusher_dri:acpI_P12.CMDD_Output AT %QW."U12".CMDD_Output;
 	::pusher_dri:FI_12.IOMapping.DriveReady AT %IX."U12".ModuleOk;
-	::pallet_con:diMotorProtectionP12 AT %IX."I06".DigitalInput06;
-	::pallet_con:diMotorProtectionP13 AT %IX."I06".DigitalInput07;
+	::palletizat:diMotorProtectionP12 AT %IX."I06".DigitalInput06;
+	::palletizat:diMotorProtectionP13 AT %IX."I06".DigitalInput07;
 	::pusher_dri:acpI_P12.switchedOn AT %QX."U12".OL1R_Output_Bool_02;
 	::pusher_dri:aiDistanceSensor AT %IW."I00".AnalogInput01;
 	::product_in:acpI_P10.ETAD_Input AT %IW."U10".ETAD_Input;
@@ -115,11 +115,17 @@ VAR_CONFIG
 	::pallet_out:diPalletStopP20 AT %IX."I80".DigitalInput09;
 	::pallet_out:diPalletStopP21 AT %IX."I80".DigitalInput10;
 	::pallet_out:diPalletStopP22 AT %IX."I80".DigitalInput11;
-	::pallet_out:diMotorProtectionP19 AT %IX."I06".DigitalInput08;
-	::pallet_out:diMotorProtectionP20 AT %IX."I06".DigitalInput09;
-	::pallet_out:diMotorProtectionP21 AT %IX."I06".DigitalInput10;
-	::pallet_out:diMotorProtectionP22 AT %IX."I06".DigitalInput11;
+	::outfeed_ma:diMotorProtectionP19 AT %IX."I06".DigitalInput08;
+	::outfeed_ma:diMotorProtectionP20 AT %IX."I06".DigitalInput09;
+	::outfeed_ma:diMotorProtectionP21 AT %IX."I06".DigitalInput10;
+	::outfeed_ma:diMotorProtectionP22 AT %IX."I06".DigitalInput11;
 	::wrapper:acpI_P18.ETAD_Input AT %IW."U18.1".ETAD_Input;
 	::wrapper:acpI_P18.CMDD_Output AT %QW."U18.1".CMDD_Output;
 	::wrapper:acpI_P18.speed AT %QW."U18.1".LFR_Output;
+	::product_in:DoorLogic_1.UnlockDoors AT %QX."Q10".DigitalOutput01;
+	::product_in:DoorLogic_1.LED AT %QX."Q10".DigitalOutput02;
+	::robot_head:diRailingUp AT %IX."I110".DigitalInput01;
+	::robot_head:diRailingDown AT %IX."I110".DigitalInput02;
+	::robot_head:doRailingUp AT %QX."Q112".DigitalOutput01;
+	::robot_head:diRailingDown AT %QX."Q112".DigitalOutput02;
 END_VAR

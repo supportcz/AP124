@@ -3206,9 +3206,6 @@
           <Property Name="Height" Value="300"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="300"/>
-          <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
-          <Property Name="LockingLevel" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="115"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_20]"/>
@@ -3221,9 +3218,6 @@
           <Property Name="Height" Value="95"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="407"/>
-          <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.conveyorsStatusDatapointManual]"/>
-          <Property Name="LockingLevel" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="126"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_19]"/>

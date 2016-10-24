@@ -98,7 +98,7 @@ ACTION Rotation:
 	IF acknowledgeImagePalletization[21] THEN
 		alarmImagePalletization[21] := FALSE;
 	END_IF
-	IF acknowledgeImagePalletization[26] THEN
-		alarmImagePalletization[26] := FALSE;
-	END_IF	
+//	IF acknowledgeImagePalletization[26] THEN
+//		alarmImagePalletization[26] := FALSE;
+//	END_IF	
 END_ACTION

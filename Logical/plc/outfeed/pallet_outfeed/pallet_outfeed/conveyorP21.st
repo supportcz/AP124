@@ -27,22 +27,26 @@ ACTION ConveyorP21:
 
 			//timeout?
 			IF modeOutfeed = modeOutfeedAuto THEN
-				TON_ConveyorP21(IN := TRUE, PT := T#12s);
+				TON_ConveyorP21(IN := TRUE, PT := T#20s);
 				IF TON_ConveyorP21.Q THEN
 					alarmImageOutfeed[11] := TRUE;
 					cmdMovePalletP21 := FALSE;
 				END_IF
-			ELSE
-				TON_ConveyorP21(IN := FALSE);
+//			ELSE
+//				TON_ConveyorP21(IN := FALSE);
 			END_IF
 		
 			doConveyorP21 := cmdMovePalletP21;
 			
+			IF NOT cmdMovePalletP21 THEN
+				TON_ConveyorP21(IN := FALSE);
+			END_IF	
+		
 	END_CASE
 
 		
 	// alarms
-	alarmImageOutfeed[12] := NOT diMotorProtectionP21;
+
 	
 	IF acknowledgeImageOutfeed[11] THEN
 		alarmImageOutfeed[11] := FALSE;

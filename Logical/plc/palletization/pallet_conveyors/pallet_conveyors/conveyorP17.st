@@ -15,11 +15,11 @@ ACTION ConveyorP17:
 		palletPresent:
 		
 			acpI_P17.stop := TRUE;
-
-			IF cmdMovePalletP17 AND (statePalletP18 = palletNotPresent OR diReset) THEN
-				TON_ConveyorP17(IN := FALSE);
-				statePalletP17 := palletMoving;
-			END_IF	
+//
+//			IF cmdMovePalletP17 AND (statePalletP18 = palletNotPresent OR diReset) THEN
+//				TON_ConveyorP17(IN := FALSE);
+//				statePalletP17 := palletMoving;
+//			END_IF	
 		
 		palletMoving:
 			
@@ -32,7 +32,7 @@ ACTION ConveyorP17:
 
 			//timeout?
 			IF modePalletization = modePalletizationAuto THEN
-				TON_ConveyorP17(IN := TRUE, PT := T#12s);
+				TON_ConveyorP17(IN := TRUE, PT := T#20s);
 				IF TON_ConveyorP17.Q THEN
 					alarmImagePalletization[30] := TRUE;
 					cmdMovePalletP17 := FALSE;
@@ -43,6 +43,9 @@ ACTION ConveyorP17:
 		
 			acpI_P17.stop := NOT cmdMovePalletP17;
 			
+			IF NOT cmdMovePalletP17 THEN
+				TON_ConveyorP17(IN := FALSE);
+			END_IF	
 	END_CASE
 
 	//control of ACOPOSinverter

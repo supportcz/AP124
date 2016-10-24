@@ -5,12 +5,19 @@ ACTION ConveyorP14:
 
 	acpI_P14.switchOn := TRUE;
 	acpI_P14.speed := 500;
-			
+	
+
+	
 	CASE statePalletP14 OF
 		
 		palletNotPresent:
 			
 			acpI_P14.stop := NOT (cmdMovePalletP14 AND (statePalletP15 = palletNotPresent OR diReset)) AND NOT cmdMovePalletP13;
+			
+			//slow down sensor?
+			IF diPalletSlowDownP14 THEN
+				acpI_P14.speed := 200;
+			END_IF
 		
 		palletPresent:
 		
@@ -32,17 +39,19 @@ ACTION ConveyorP14:
 
 			//timeout?
 			IF modePalletization = modePalletizationAuto THEN
-				TON_ConveyorP14(IN := TRUE, PT := T#12s);
+				TON_ConveyorP14(IN := TRUE, PT := T#20s);
 				IF TON_ConveyorP14.Q THEN
 					alarmImagePalletization[7] := TRUE;
 					cmdMovePalletP14 := FALSE;
 				END_IF
-			ELSE
-				TON_ConveyorP14(IN := FALSE);
 			END_IF
 		
 			acpI_P14.stop := NOT cmdMovePalletP14;
 			
+			IF NOT cmdMovePalletP14 THEN
+				TON_ConveyorP14(IN := FALSE);
+			END_IF	
+		
 	END_CASE
 
 	//control of ACOPOSinverter

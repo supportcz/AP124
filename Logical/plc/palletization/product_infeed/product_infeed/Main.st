@@ -6,9 +6,8 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	diDoor1opened;
-	diOpenDoors1;
-	diCloseDoors1;
+diDoor1opened;
+	
 	HMIS;
 	RFRD;
 	
@@ -347,6 +346,9 @@ PROGRAM _CYCLIC
 	PusherLifting;
 	Rotation;
 	Bumper;
+	
+	//door logic
+	DoorLogic_1();
 	
 	IF pusherDrive.driveError THEN
 		alarmImagePalletization[14] := TRUE;

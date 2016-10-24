@@ -20,11 +20,6 @@ ACTION ConveyorP13:
 		
 		palletMoving:
 			
-			//slow down sensor?
-			IF diPalletSlowDownP14 THEN
-				acpI_P14.speed := 200;
-			END_IF
-			
 			//sensor reached?
 			IF TON_PalletStopP14.Q AND cmdMovePalletP13 AND NOT diReset THEN
 				statePalletP14 := palletPresent;
@@ -34,22 +29,24 @@ ACTION ConveyorP13:
 
 			//timeout?
 			IF modePalletization = modePalletizationAuto THEN
-				TON_ConveyorP13(IN := TRUE, PT := T#12s);
+				TON_ConveyorP13(IN := TRUE, PT := T#20s);
 				IF TON_ConveyorP13.Q THEN
 					alarmImagePalletization[2] := TRUE;
 					cmdMovePalletP13 := FALSE;
 				END_IF
-			ELSE
-				TON_ConveyorP13(IN := FALSE);
 			END_IF
 		
 			doConveyorP13 := cmdMovePalletP13;
 			
+			IF NOT cmdMovePalletP13 THEN
+				TON_ConveyorP13(IN := FALSE);
+			END_IF		
+		
 	END_CASE
 
 									
 	// alarms
-	alarmImagePalletization[13] := NOT diMotorProtectionP13;
+
 	
 	IF acknowledgeImagePalletization[2] THEN
 		alarmImagePalletization[2] := FALSE;
