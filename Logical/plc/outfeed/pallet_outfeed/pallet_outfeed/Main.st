@@ -61,7 +61,6 @@ PROGRAM _CYCLIC
 	ConveyorP21; 
 	ConveyorP22; 
 	
-	alarmImageOutfeed[0] := NOT lightCurtainP17;
 	
 	IF acknowledgeImageOutfeed[2] THEN
 		alarmImageOutfeed[2] := FALSE;

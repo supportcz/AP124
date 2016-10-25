@@ -80,13 +80,8 @@ ACTION PusherLifting:
 	END_CASE
 				
 	//brake control
-	IF doPusherLiftingUp OR doPusherLiftingDown THEN
-		doPusherLiftingBrake := TRUE;
-	ELSE
-		doPusherLiftingBrake := FALSE;
-	END_IF
+	doPusherLiftingBrake := doPusherLiftingUp OR doPusherLiftingDown;
 
-	alarmImagePalletization[18] := NOT diMotorProtectionP3;
 	
 	//edge alarms
 	IF acknowledgeImagePalletization[16] THEN

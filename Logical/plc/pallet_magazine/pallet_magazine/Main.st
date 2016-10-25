@@ -8,7 +8,11 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 
-	readyToStart := NOT diMagazineEDM AND diAirPresureOK AND diMotorProtectionP11;
+	readyToStart := NOT diMagazineEDM AND diAirPresureOK;
+	
+	IF cpuIsSimulated THEN
+		readyToStart := TRUE;
+	END_IF
 	
 	IF NOT readyToStart THEN
 		modeMagazine := modeMagazineNotReadyToStart;
@@ -158,9 +162,15 @@ PROGRAM _CYCLIC
 	
 	TP_Start(IN := diActivateMagazineSafetyCircuits AND modePalletization = modePalletizationAuto, PT := T#1s);
 
-	alarmImageMagazine[1] := NOT lightCurtainP11;
-	alarmImageMagazine[6] := NOT diMotorProtectionP11;
 	alarmImageMagazine[12] := NOT diEStop5;
+
+	IF NOT cpuIsSimulated THEN
+
+		alarmImageMagazine[1] := NOT lightCurtainP11;
+		alarmImageMagazine[6] := NOT diMotorProtectionP11;
+		
+	END_IF
+	
 
 
 	

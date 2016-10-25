@@ -8,6 +8,8 @@ VAR
 	cmdMovePalletP14 : BOOL;
 	cmdMovePalletP15 : BOOL;
 	cmdMovePalletP16 : BOOL;
+	diMotorProtectionP12 : BOOL;
+	diMotorProtectionP13 : BOOL;
 	diPalletSlowDownP14 : BOOL;
 	diPalletStopP13 : BOOL;
 	diPalletStopP14 : BOOL;

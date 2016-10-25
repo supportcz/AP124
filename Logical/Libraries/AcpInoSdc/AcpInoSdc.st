@@ -40,6 +40,10 @@ FUNCTION_BLOCK AcpInoSdc
 
 	(* Fault *)
 	error := ETAD_Input.3 OR ETAD_Input = 0;
+//	
+//	IF 	DiagCpuIsSimulated() THEN
+//		error := FALSE;
+//	END_IF
 	
 	IF reset AND ETAD_Input.3 THEN
 		CMDD_Output := 16#0080;						

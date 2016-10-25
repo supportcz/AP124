@@ -34,6 +34,7 @@
   </Module>
   <Module Name="I110" Type="X67DM9321.L12" Version="1.1.1.1">
     <Connection Connector="X2X1" TargetModule="X20BT9400" TargetConnector="X2X1" NodeNumber="33" />
+    <Parameter ID="Direction16" Value="output" />
   </Module>
   <Module Name="I18" Type="X20SLX910" Version="1.10.0.0">
     <Connection Connector="SS1" TargetModule="X20TB52" TargetConnector="SS" />
@@ -447,7 +448,6 @@
     </Connector>
     <Parameter ID="ConfigurationID" Value="AP124_CP1583" />
     <Parameter ID="UserPartitionSize" Value="200" />
-    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="VolatileGlobalPvSize" Value="262144" />
     <Parameter ID="TimerDeviceType" Value="EPLX2X" />
     <Parameter ID="TimerDevice" Value="X20CP1583.IF3" />

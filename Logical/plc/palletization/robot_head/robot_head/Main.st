@@ -25,5 +25,8 @@ PROGRAM _CYCLIC
 	END_CASE
 	
 	Railing;
+	Suckers;
+	Centering;
+	Roller;
 
 END_PROGRAM

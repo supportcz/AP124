@@ -10,25 +10,20 @@ ACTION Rotation:
 		stateRotationUndefined:
 			
 			IF diRotationBack AND NOT diRotationForward THEN
+				rotationForward := FALSE;
 				stateRotation := stateRotationBack;
 			END_IF
 
 			IF NOT diRotationBack AND diRotationForward THEN
+				rotationForward := TRUE;
 				stateRotation := stateRotationForward;
 			END_IF
 		
 			IF stateRotation = stateRotationUndefined THEN
-				// command back 
-				IF NOT rotationForward THEN
-					TON_RotationRequest(IN := FALSE);
-					stateRotation := stateRotationMovingBack;		
-				END_IF
-
-				// command forward 
-				IF rotationForward THEN
-					TON_RotationRequest(IN := FALSE);
-					stateRotation := stateRotationMovingForward;	
-				END_IF	
+				//set output
+				doRotationForward := FALSE;
+				//invert second output
+				doRotationBack := NOT doRotationForward;
 			END_IF
 						
 		stateRotationMovingForward:
@@ -41,12 +36,12 @@ ACTION Rotation:
 			IF diRotationForward THEN
 				stateRotation := stateRotationForward;
 			END_IF	
-			//run timer		
+			// timer		
 			TON_RotationRequest(IN := NOT diRotationForward, PT := T#5s);
-			//timeout?
 			IF TON_RotationRequest.Q THEN
+				rotationForward := FALSE;
 				alarmImagePalletization[20] := TRUE;
-				stateRotation := stateRotationUndefined;
+				stateRotation := stateRotationBack;
 			END_IF
 			
 		stateRotationForward:
@@ -67,12 +62,12 @@ ACTION Rotation:
 			IF diRotationBack THEN
 				stateRotation := stateRotationBack;
 			END_IF	
-			//start timer		
+			// timer		
 			TON_RotationRequest(IN := NOT diRotationBack, PT := T#5s);
-			//timeout ?
 			IF TON_RotationRequest.Q THEN
+				rotationForward := TRUE;
 				alarmImagePalletization[21] := TRUE;
-				stateRotation := stateRotationUndefined;
+				stateRotation := stateRotationForward;
 			END_IF
 
 		stateRotationBack:
@@ -98,7 +93,5 @@ ACTION Rotation:
 	IF acknowledgeImagePalletization[21] THEN
 		alarmImagePalletization[21] := FALSE;
 	END_IF
-//	IF acknowledgeImagePalletization[26] THEN
-//		alarmImagePalletization[26] := FALSE;
-//	END_IF	
+
 END_ACTION

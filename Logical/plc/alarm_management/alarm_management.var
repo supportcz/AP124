@@ -4,4 +4,5 @@ VAR
 	alarmInZoneMagazine : BOOL; (*VISU:there is at least one alarm in pallet magazine*)
 	diAirPresureOK : BOOL; (*VISU: 1...air pressure OK*)
 	diReset : BOOL; (*acknowledges all errors*)
+	cpuIsSimulated : BOOL;
 END_VAR

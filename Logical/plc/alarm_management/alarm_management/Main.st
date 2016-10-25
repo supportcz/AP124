@@ -1,20 +1,24 @@
 
 PROGRAM _INIT
-	 
+	 	
+	cpuIsSimulated := DiagCpuIsSimulated();
+
 END_PROGRAM
 
 PROGRAM _CYCLIC
+
+	IF NOT cpuIsSimulated THEN
+		alarmImageCommon[0] := NOT diAirPresureOK;
+		alarmImageCommon[1] := NOT diEStop1;
+		alarmImageCommon[2] := NOT diEStop2;
+		alarmImageCommon[3] := NOT diEStop3;
+		alarmImageCommon[4] := NOT diEStop4;
+		alarmImageCommon[5] := NOT diEStopRobot;
+		alarmImageCommon[6] := NOT diEStopWrapper;
 	
-	alarmImageCommon[0] := NOT diAirPresureOK;
-	alarmImageCommon[1] := NOT diEStop1;
-	alarmImageCommon[2] := NOT diEStop2;
-	alarmImageCommon[3] := NOT diEStop3;
-	alarmImageCommon[4] := NOT diEStop4;
-	alarmImageCommon[5] := NOT diEStopRobot;
-	alarmImageCommon[6] := NOT diEStopWrapper;
-
-	alarmImageCommon[7] := NOT safetyAlive;
-
+		alarmImageCommon[7] := NOT safetyAlive;
+	END_IF
+	
 	alarmImageCommon[8] := diMagazineEDM;
 	alarmImageCommon[9] := diPalletizationEDM;
 	alarmImageCommon[10] := diOutfeedEDM;
@@ -40,7 +44,7 @@ PROGRAM _CYCLIC
 	
 	//detect if there is any alarm in zone Palletization
 	alarmInZonePalletization := FALSE;
-	FOR i:=0 TO 39 DO
+	FOR i:=0 TO 69 DO
 		IF alarmImagePalletization[i] OR acknowledgeImagePalletization[i] THEN
 			alarmInZonePalletization := TRUE;
 		END_IF

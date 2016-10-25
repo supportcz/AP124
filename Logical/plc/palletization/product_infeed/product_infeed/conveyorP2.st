@@ -56,11 +56,7 @@ ACTION ConveyorP2:
 	//control of ACOPOSinverter P14
 	acpI_P11();
 	
-	IF acpI_P11.error THEN
-		alarmImagePalletization[23] := TRUE;
-	ELSE
-		alarmImagePalletization[23] := FALSE;
-	END_IF
+
 	
 //	//edge alarms
 //	IF acknowledgeImagePalletization[19] THEN

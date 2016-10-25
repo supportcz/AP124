@@ -7,7 +7,11 @@ PROGRAM _CYCLIC
 	
 	modePalletizationOld := modePalletization;
 	
-	readyToStart := NOT diPalletizationEDM AND NOT pusherDrive.driveError AND NOT pusherDrive.encoderError AND diAirPresureOK AND diMotorProtectionP12 AND diMotorProtectionP13;
+	readyToStart := NOT diPalletizationEDM AND diAirPresureOK;
+	
+	IF cpuIsSimulated THEN
+		readyToStart := TRUE;
+	END_IF
 	
 	IF NOT readyToStart THEN
 		modePalletization := modePalletizationNotReadyToStart; 
@@ -43,9 +47,8 @@ PROGRAM _CYCLIC
 	END_CASE
 	
 	//alarms
-	alarmImagePalletization[12] := NOT diMotorProtectionP12;
-	alarmImagePalletization[13] := NOT diMotorProtectionP13;
-	 
+
+	
 END_PROGRAM
 
 

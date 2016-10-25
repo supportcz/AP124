@@ -350,17 +350,8 @@ diDoor1opened;
 	//door logic
 	DoorLogic_1();
 	
-	IF pusherDrive.driveError THEN
-		alarmImagePalletization[14] := TRUE;
-	ELSE
-		alarmImagePalletization[14] := FALSE;
-	END_IF
 
-	IF pusherDrive.encoderError THEN
-		alarmImagePalletization[15] := TRUE;
-	ELSE
-		alarmImagePalletization[15] := FALSE;
-	END_IF
+	alarmImagePalletization[15] := pusherDrive.encoderError;
 	
 	//edge alarms
 	IF acknowledgeImagePalletization[27] THEN
@@ -370,4 +361,11 @@ diDoor1opened;
 		alarmImagePalletization[28] := FALSE;
 	END_IF
 	
+	//problems with motors
+	IF NOT cpuIsSimulated THEN
+		alarmImagePalletization[18] := NOT diMotorProtectionP3;
+		alarmImagePalletization[14] := pusherDrive.driveError;
+		alarmImagePalletization[22] := acpI_P10.error;
+		alarmImagePalletization[23] := acpI_P11.error;
+	END_IF	
 END_PROGRAM

@@ -56,10 +56,6 @@ ACTION ConveyorP16:
 		alarmImagePalletization[6] := FALSE;
 	END_IF
 
-	
-	alarmImagePalletization[26] := acpI_P16.error;
-	IF EDGENEG(acknowledgeImagePalletization[26]) THEN
-		acpI_P16.reset := TRUE;
-	END_IF	
+
 
 END_ACTION

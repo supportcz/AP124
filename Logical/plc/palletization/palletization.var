@@ -1,6 +1,6 @@
 VAR
-	acknowledgeImagePalletization : ARRAY[0..39] OF BOOL;
-	alarmImagePalletization : ARRAY[0..39] OF BOOL;
+	acknowledgeImagePalletization : ARRAY[0..69] OF BOOL;
+	alarmImagePalletization : ARRAY[0..69] OF BOOL;
 	alarmInZonePalletization : BOOL;
 	cmdMovePalletP17 : BOOL;
 	cmdPalletizationAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)

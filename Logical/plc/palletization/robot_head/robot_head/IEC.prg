@@ -6,5 +6,8 @@
     <File Description="Local data types" Private="true">Types.typ</File>
     <File Description="Local variables" Private="true">Variables.var</File>
     <File>Railing.st</File>
+    <File>Suckers.st</File>
+    <File>Centering.st</File>
+    <File>Roller.st</File>
   </Files>
 </Program>
