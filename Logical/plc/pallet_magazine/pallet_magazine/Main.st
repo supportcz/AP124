@@ -30,7 +30,7 @@ PROGRAM _CYCLIC
 		
 		modeMagazineManual:
 
-			IF NOT alarmInZoneMagazine AND (cmdMagazineAuto OR TP_Start.Q) THEN 
+			IF (NOT alarmInZoneMagazine OR cpuIsSimulated) AND (cmdMagazineAuto OR TP_Start.Q) THEN 
 				modeMagazine := modeMagazineAuto;
 				stateAuto := stateAutoUndefined;
 				magazineEmpty := FALSE;
@@ -39,7 +39,7 @@ PROGRAM _CYCLIC
 
 		modeMagazineAuto:
 			
-			IF alarmInZoneMagazine OR cmdMagazineManual THEN
+			IF (alarmInZoneMagazine AND NOT cpuIsSimulated) OR cmdMagazineManual THEN
 				modeMagazine := modeMagazineManual;
 			END_IF
 			cmdMagazineAuto := FALSE;
@@ -155,23 +155,14 @@ PROGRAM _CYCLIC
 	
 	MTBasicsPWM_0(Enable := 1, Period := 1);
 	doLedP11 := MTBasicsPWM_0.Out;
-
-//	IF diActivateMagazineSafetyCircuits  AND modePalletization = modePalletizationAuto THEN
-//		cmdAuto := TRUE;
-//	END_IF
 	
 	TP_Start(IN := diActivateMagazineSafetyCircuits AND modePalletization = modePalletizationAuto, PT := T#1s);
 
 	alarmImageMagazine[12] := NOT diEStop5;
 
-	IF NOT cpuIsSimulated THEN
-
-		alarmImageMagazine[1] := NOT lightCurtainP11;
-		alarmImageMagazine[6] := NOT diMotorProtectionP11;
-		
-	END_IF
+	alarmImageMagazine[1] := NOT lightCurtainP11;
+	alarmImageMagazine[6] := NOT diMotorProtectionP11;
 	
-
 
 	
 END_PROGRAM

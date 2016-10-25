@@ -24,7 +24,19 @@ PROGRAM _CYCLIC
 			END_IF
 
 		modeOutfeedAuto:
+			
+			//stop sensor not reached
+			TON_ConveyorP19(IN := cmdMovePalletP19, PT := T#20s);
+			alarmImageOutfeed[1] := TON_ConveyorP19.Q;
+			
+			TON_ConveyorP20(IN := cmdMovePalletP20, PT := T#20s);
+			alarmImageOutfeed[8] := TON_ConveyorP20.Q;
+			
+			TON_ConveyorP21(IN := cmdMovePalletP21, PT := T#20s);
+			alarmImageOutfeed[11] := TON_ConveyorP21.Q;
 
+			
+			// control conveyors			
 			IF statePalletP19 <> palletNotPresent AND statePalletP20 = palletNotPresent THEN
 				cmdMovePalletP19 := TRUE;
 			END_IF
@@ -36,12 +48,8 @@ PROGRAM _CYCLIC
 			IF statePalletP21 <> palletNotPresent AND statePalletP22 = palletNotPresent THEN
 				cmdMovePalletP21 := TRUE;
 			END_IF
-
-//			IF statePalletP22 <> palletNotPresent THEN
-//				cmdMovePalletP22 := TRUE;
-//			END_IF
 		
-			//not expected pallet
+			//unexpected pallet
 			IF TON_PalletStopP20.Q AND statePalletP20 = palletNotPresent AND NOT cmdMovePalletP19 THEN
 				alarmImageOutfeed[2] := TRUE;
 			END_IF	
@@ -60,8 +68,19 @@ PROGRAM _CYCLIC
 	ConveyorP20; 
 	ConveyorP21; 
 	ConveyorP22; 
-	
-	
+
+	//stop sensor not reached
+	IF acknowledgeImageOutfeed[1] THEN
+		alarmImageOutfeed[1] := FALSE;
+	END_IF
+	IF acknowledgeImageOutfeed[8] THEN
+		alarmImageOutfeed[8] := FALSE;
+	END_IF	
+	IF acknowledgeImageOutfeed[11] THEN
+		alarmImageOutfeed[11] := FALSE;
+	END_IF	
+
+	//unexpected pallet
 	IF acknowledgeImageOutfeed[2] THEN
 		alarmImageOutfeed[2] := FALSE;
 	END_IF	

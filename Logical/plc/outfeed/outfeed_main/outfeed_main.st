@@ -32,7 +32,7 @@ PROGRAM _CYCLIC
 
 			cmdOutfeedManual := FALSE;
 			
-			IF NOT alarmInZoneOutfeed AND cmdOutfeedAuto THEN
+			IF (NOT alarmInZoneOutfeed OR cpuIsSimulated) AND cmdOutfeedAuto THEN
 				modeOutfeed := modeOutfeedAuto;
 			END_IF
 
@@ -40,21 +40,18 @@ PROGRAM _CYCLIC
 				
 			cmdOutfeedAuto := FALSE;
 			
-			IF alarmInZoneOutfeed OR cmdOutfeedManual THEN 
+			IF (alarmInZoneOutfeed AND NOT cpuIsSimulated) OR cmdOutfeedManual THEN 
 				modeOutfeed := modeOutfeedManual;
 			END_IF
 		
 	END_CASE
 
 	//alarms
-	IF NOT cpuIsSimulated THEN
-		alarmImageOutfeed[0] := NOT lightCurtainP17;
-
-		alarmImageOutfeed[3] := NOT diMotorProtectionP19;
-		alarmImageOutfeed[9] := NOT diMotorProtectionP20;
-		alarmImageOutfeed[12] := NOT diMotorProtectionP21;
-		alarmImageOutfeed[13] := NOT diMotorProtectionP22;
-	 END_IF
+	alarmImageOutfeed[0] := NOT lightCurtainP17;
+	alarmImageOutfeed[3] := NOT diMotorProtectionP19;
+	alarmImageOutfeed[9] := NOT diMotorProtectionP20;
+	alarmImageOutfeed[12] := NOT diMotorProtectionP21;
+	alarmImageOutfeed[13] := NOT diMotorProtectionP22;
 END_PROGRAM
 
 

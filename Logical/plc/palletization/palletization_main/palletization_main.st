@@ -32,7 +32,7 @@ PROGRAM _CYCLIC
 
 			cmdPalletizationManual := FALSE;
 			
-			IF NOT alarmInZonePalletization AND cmdPalletizationAuto THEN
+			IF (NOT alarmInZonePalletization OR cpuIsSimulated)  AND cmdPalletizationAuto THEN
 				modePalletization := modePalletizationAuto;
 			END_IF
 
@@ -40,7 +40,7 @@ PROGRAM _CYCLIC
 				
 			cmdPalletizationAuto := FALSE;
 			
-			IF alarmInZonePalletization OR cmdPalletizationManual THEN 
+			IF (alarmInZonePalletization AND NOT cpuIsSimulated) OR cmdPalletizationManual THEN 
 				modePalletization := modePalletizationManual;
 			END_IF
 		

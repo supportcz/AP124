@@ -21,7 +21,6 @@ PROGRAM _CYCLIC
 		modePalletizationNotReadyToStart: //the automat is not ready to start
 		
 
-
 		modePalletizationManual:
 			
 			IF modePalletizationOld <> modePalletizationManual THEN
@@ -34,7 +33,28 @@ PROGRAM _CYCLIC
 			END_IF
 
 		modePalletizationAuto:
-	
+			
+			//stop sensor not reached
+			TON_ConveyorP12(IN := cmdMovePalletP12, PT := T#20s);
+			alarmImagePalletization[0] := TON_ConveyorP12.Q;
+
+			TON_ConveyorP13(IN := cmdMovePalletP13, PT := T#20s);
+			alarmImagePalletization[2] := TON_ConveyorP13.Q;
+
+			TON_ConveyorP14(IN := cmdMovePalletP14, PT := T#20s);
+			alarmImagePalletization[7] := TON_ConveyorP14.Q;
+
+			TON_ConveyorP15(IN := cmdMovePalletP15, PT := T#20s);
+			alarmImagePalletization[3] := TON_ConveyorP15.Q;
+
+			TON_ConveyorP16(IN := cmdMovePalletP16, PT := T#20s);
+			alarmImagePalletization[6] := TON_ConveyorP16.Q;
+			
+			TON_ConveyorP17(IN := cmdMovePalletP17, PT := T#20s);
+			alarmImagePalletization[30] := TON_ConveyorP17.Q;
+			
+			
+			// control conveyors
 			IF statePalletP12 <> palletNotPresent AND statePalletP13 = palletNotPresent AND modeMagazine = modeMagazineAuto THEN
 				cmdMovePalletP12 := TRUE;
 			END_IF
@@ -59,6 +79,7 @@ PROGRAM _CYCLIC
 				cmdMovePalletP17 := TRUE;
 			END_IF
 		
+			//unexpected pallet
 			IF TON_PalletStopP13.Q AND statePalletP13 = palletNotPresent AND NOT cmdMovePalletP12 THEN
 				alarmImagePalletization[9] := TRUE;
 			END_IF	
@@ -78,6 +99,7 @@ PROGRAM _CYCLIC
 				alarmImagePalletization[31] := TRUE;
 			END_IF	
 		
+
 	END_CASE
 
 	
@@ -89,55 +111,69 @@ PROGRAM _CYCLIC
 	ConveyorP16; 
 	ConveyorP17; 
 
-		
+	//stop sensor not reached
+	IF acknowledgeImagePalletization[0] THEN
+		alarmImagePalletization[0] := FALSE;
+	END_IF
+	IF acknowledgeImagePalletization[2] THEN
+		alarmImagePalletization[2] := FALSE;
+	END_IF
+	IF acknowledgeImagePalletization[7] THEN
+		alarmImagePalletization[7] := FALSE;
+	END_IF
+	IF acknowledgeImagePalletization[3] THEN
+		alarmImagePalletization[3] := FALSE;
+	END_IF
+	IF acknowledgeImagePalletization[6] THEN
+		alarmImagePalletization[6] := FALSE;
+	END_IF
+	IF acknowledgeImagePalletization[30] THEN
+		alarmImagePalletization[30] := FALSE;
+	END_IF
+	
+	
+	//unexpected pallet	
 	IF acknowledgeImagePalletization[9] THEN
 		alarmImagePalletization[9] := FALSE;
 	END_IF	
-		
 	IF acknowledgeImagePalletization[10] THEN
 		alarmImagePalletization[10] := FALSE;
 	END_IF	
-		
 	IF acknowledgeImagePalletization[11] THEN
 		alarmImagePalletization[11] := FALSE;
 	END_IF	
-		
 	IF acknowledgeImagePalletization[1] THEN
 		alarmImagePalletization[1] := FALSE;
 	END_IF
-	
-		
 	IF acknowledgeImagePalletization[4] THEN
 		alarmImagePalletization[4] := FALSE;
 	END_IF	
-	
-		
 	IF acknowledgeImagePalletization[31] THEN
 		alarmImagePalletization[31] := FALSE;
 	END_IF	
 	
-	//problems with motors
-	IF NOT cpuIsSimulated THEN
-		alarmImagePalletization[5] := NOT lightCurtainP15;
-		alarmImagePalletization[12] := NOT diMotorProtectionP12;
-		alarmImagePalletization[13] := NOT diMotorProtectionP13;
-		alarmImagePalletization[24] := acpI_P14.error;
-		alarmImagePalletization[25] := acpI_P15.error;
-		alarmImagePalletization[26] := acpI_P16.error;
-		alarmImagePalletization[29] := acpI_P17.error;
+
 	
-		IF EDGENEG(acknowledgeImagePalletization[24]) THEN
-			acpI_P14.reset := TRUE;
-		END_IF	
-		IF EDGENEG(acknowledgeImagePalletization[25]) THEN
-			acpI_P15.reset := TRUE;
-		END_IF	
-		IF EDGENEG(acknowledgeImagePalletization[26]) THEN
-			acpI_P16.reset := TRUE;
-		END_IF	
-		IF EDGENEG(acknowledgeImagePalletization[29]) THEN
-			acpI_P17.reset := TRUE;
-		END_IF	
-	END_IF
+	//problems with motors
+	alarmImagePalletization[5] := NOT lightCurtainP15;
+	alarmImagePalletization[12] := NOT diMotorProtectionP12;
+	alarmImagePalletization[13] := NOT diMotorProtectionP13;
+	alarmImagePalletization[24] := acpI_P14.error;
+	alarmImagePalletization[25] := acpI_P15.error;
+	alarmImagePalletization[26] := acpI_P16.error;
+	alarmImagePalletization[29] := acpI_P17.error;
+
+	IF EDGENEG(acknowledgeImagePalletization[24]) THEN
+		acpI_P14.reset := TRUE;
+	END_IF	
+	IF EDGENEG(acknowledgeImagePalletization[25]) THEN
+		acpI_P15.reset := TRUE;
+	END_IF	
+	IF EDGENEG(acknowledgeImagePalletization[26]) THEN
+		acpI_P16.reset := TRUE;
+	END_IF	
+	IF EDGENEG(acknowledgeImagePalletization[29]) THEN
+		acpI_P17.reset := TRUE;
+	END_IF	
 
 END_PROGRAM

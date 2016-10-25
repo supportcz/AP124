@@ -362,10 +362,8 @@ diDoor1opened;
 	END_IF
 	
 	//problems with motors
-	IF NOT cpuIsSimulated THEN
-		alarmImagePalletization[18] := NOT diMotorProtectionP3;
-		alarmImagePalletization[14] := pusherDrive.driveError;
-		alarmImagePalletization[22] := acpI_P10.error;
-		alarmImagePalletization[23] := acpI_P11.error;
-	END_IF	
+	alarmImagePalletization[18] := NOT diMotorProtectionP3;
+	alarmImagePalletization[14] := pusherDrive.driveError;
+	alarmImagePalletization[22] := acpI_P10.error;
+	alarmImagePalletization[23] := acpI_P11.error;
 END_PROGRAM
