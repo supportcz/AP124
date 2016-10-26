@@ -9,21 +9,21 @@ PROGRAM _CYCLIC
 	TON_PalletStopP21(IN := diPalletStopP21, PT := T#200ms);
 	TON_PalletStopP22(IN := diPalletStopP22, PT := T#200ms);
 	
-	CASE modeOutfeed OF
+	CASE modeZoneOutfeed OF
 		
-		modeOutfeedNotReadyToStart: //the automat is not ready to start
+		modeZoneOff: //the automat is not ready to start
 		
 
-		modeOutfeedManual:
+		modeZoneManual:
 			
-			IF modeOutfeedOld <> modeOutfeedManual THEN
+			IF modeZoneOutfeedOld <> modeZoneManual THEN
 				cmdMovePalletP19 := FALSE;
 				cmdMovePalletP20 := FALSE;
 				cmdMovePalletP21 := FALSE;
 				cmdMovePalletP22 := FALSE;
 			END_IF
 
-		modeOutfeedAuto:
+		modeZoneAuto:
 			
 			//stop sensor not reached
 			TON_ConveyorP19(IN := cmdMovePalletP19, PT := T#20s);

@@ -1,7 +1,7 @@
 
 ACTION Roller: 
 	
-	IF modePalletization = modePalletizationNotReadyToStart THEN
+	IF modeZonePalletization = modeZoneOff THEN
 		stateRoller := stateRollerInit;
 	END_IF
 	

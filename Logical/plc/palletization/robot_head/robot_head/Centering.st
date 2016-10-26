@@ -1,7 +1,7 @@
 
 ACTION Centering: 
 	
-	IF modePalletization = modePalletizationNotReadyToStart THEN
+	IF modeZonePalletization = modeZoneOff THEN
 		stateCentering := stateCenteringInit;
 	END_IF
 	

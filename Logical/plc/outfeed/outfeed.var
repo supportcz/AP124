@@ -5,8 +5,8 @@ VAR
 	cmdMovePalletP18 : BOOL;
 	cmdOutfeedAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
 	cmdOutfeedManual : BOOL;
-	modeOutfeed : ModeOutfeed;
-	modeOutfeedOld : ModeOutfeed;
+	modeZoneOutfeed : ModeZone;
+	modeZoneOutfeedOld : ModeZone;
 	statePalletP18 : StatePallet;
 	statePalletP19 : StatePallet;
 	statePalletP20 : StatePallet;

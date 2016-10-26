@@ -6,12 +6,12 @@ FUNCTION_BLOCK DoorLogic
 			
 			stopRequest := FALSE;
 			
-			IF buttonToOpen THEN
+			IF diOpenButton THEN
 				stateDoor := stateDoorStopRequest;
 			END_IF
 	
-			LED := FALSE;
-			unlockDoors := FALSE;
+			doLED := FALSE;
+			doUnlockDoors := FALSE;
 
 		stateDoorStopRequest:
 		
@@ -22,20 +22,20 @@ FUNCTION_BLOCK DoorLogic
 			END_IF
 			
 			
-			LED := TRUE;
-			unlockDoors := FALSE;
+			doLED := TRUE;
+			doUnlockDoors := FALSE;
 			
 		
 		stateDoorUnlocked:
 			
-			IF buttonToClose THEN
+			IF diCloseButton THEN
 				stateDoor := stateDoorLocked;
 			END_IF
 
 			MTBasicsPWM_0(Enable := 1, DutyCycle := 50, Period := 1);
 			
-			LED := MTBasicsPWM_0.Out;
-			unlockDoors := TRUE;
+			doLED := MTBasicsPWM_0.Out;
+			doUnlockDoors := TRUE;
 			
 	END_CASE
 	

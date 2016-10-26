@@ -15,7 +15,6 @@ VAR
 	dActualLayout : REFERENCE TO Layout;
 	dActualRecipe : REFERENCE TO Recipe;
 	diBumperForward : BOOL;
-	diDoor1locked : BOOL;
 	diMotorProtectionP3 : BOOL;
 	diPusherBlockedByTray : BOOL;
 	diPusherLiftingLowerPosition : BOOL;

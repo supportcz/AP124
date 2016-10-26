@@ -8,18 +8,18 @@ PROGRAM _CYCLIC
 	TON_PalletStopP19(IN := diPalletStopP19, PT := T#200ms);
 
 	
-	CASE modeOutfeed OF
+	CASE modeZoneOutfeed OF
 		
-		modeOutfeedNotReadyToStart: //the automat is not ready to start
+		modeZoneOff: //the automat is not ready to start
 
-		modeOutfeedManual:
+		modeZoneManual:
 			
-			IF modeOutfeedOld <> modeOutfeedManual THEN
+			IF modeZoneOutfeedOld <> modeZoneManual THEN
 				cmdMovePalletP18 := FALSE;
 
 			END_IF
 
-		modeOutfeedAuto:
+		modeZoneAuto:
 	
 			//stop sensor not reached
 			TON_ConveyorP18(IN := cmdMovePalletP18, PT := T#20s);
@@ -43,8 +43,8 @@ PROGRAM _CYCLIC
 	TurnTable;
 
 	//door logic
-	DoorLogic_2(doorLocked := diDoor2locked);
-	alarmImageOutfeed[15] := NOT diDoor2locked;
+	DoorLogic_2();
+	alarmImageOutfeed[15] := NOT DoorLogic_2.diDoorLocked;
 	
 
 

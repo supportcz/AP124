@@ -1,11 +1,5 @@
 
 TYPE
-	ModePalletization : 
-		(
-		modePalletizationNotReadyToStart,
-		modePalletizationManual,
-		modePalletizationAuto
-		);
 	PusherDrive : 	STRUCT 
 		cmdAbsolute : BOOL;
 		cmdJogPlus : BOOL;

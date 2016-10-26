@@ -2,7 +2,7 @@
 
 ACTION VerticalArmsControl: 
 	
-	IF modeMagazine = modeMagazineNotReadyToStart THEN
+	IF modeZoneMagazine = modeZoneOff THEN
 		StopMovement;
 	END_IF
 	

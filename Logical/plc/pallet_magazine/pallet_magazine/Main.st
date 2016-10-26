@@ -8,39 +8,39 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 
-	readyToStart := NOT diMagazineEDM AND diAirPresureOK;
+	readyToStart := NOT diMagazineEDM;
 	
 	IF cpuIsSimulated THEN
 		readyToStart := TRUE;
 	END_IF
 	
 	IF NOT readyToStart THEN
-		modeMagazine := modeMagazineNotReadyToStart;
+		modeZoneMagazine := modeZoneOff;
 	END_IF
 
-	CASE modeMagazine OF
+	CASE modeZoneMagazine OF
 		
-		modeMagazineNotReadyToStart: //the automat is not ready to start
+		modeZoneOff: //the automat is not ready to start
 			
 			IF readyToStart THEN
-				modeMagazine := modeMagazineManual;
+				modeZoneMagazine := modeZoneManual;
 			END_IF
 			cmdMagazineManual := FALSE;
 			cmdMagazineAuto := FALSE;
 		
-		modeMagazineManual:
+		modeZoneManual:
 
 			IF (NOT alarmInZoneMagazine OR cpuIsSimulated) AND (cmdMagazineAuto OR TP_Start.Q) THEN 
-				modeMagazine := modeMagazineAuto;
+				modeZoneMagazine := modeZoneAuto;
 				stateAuto := stateAutoUndefined;
 				magazineEmpty := FALSE;
 			END_IF
 			cmdMagazineManual := FALSE;
 
-		modeMagazineAuto:
+		modeZoneAuto:
 			
 			IF (alarmInZoneMagazine AND NOT cpuIsSimulated) OR cmdMagazineManual THEN
-				modeMagazine := modeMagazineManual;
+				modeZoneMagazine := modeZoneManual;
 			END_IF
 			cmdMagazineAuto := FALSE;
 				
@@ -156,7 +156,7 @@ PROGRAM _CYCLIC
 	MTBasicsPWM_0(Enable := 1, Period := 1);
 	doLedP11 := MTBasicsPWM_0.Out;
 	
-	TP_Start(IN := diActivateMagazineSafetyCircuits AND modePalletization = modePalletizationAuto, PT := T#1s);
+	TP_Start(IN := diActivateMagazineSafetyCircuits AND modeZonePalletization = modeZoneAuto, PT := T#1s);
 
 	alarmImageMagazine[12] := NOT diEStop5;
 

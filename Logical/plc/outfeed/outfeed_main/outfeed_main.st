@@ -5,7 +5,7 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
-	modeOutfeedOld := modeOutfeed;
+	modeZoneOutfeedOld := modeZoneOutfeed;
 	
 	readyToStart := NOT diOutfeedEDM;
 	
@@ -14,34 +14,34 @@ PROGRAM _CYCLIC
 	END_IF
 	
 	IF NOT readyToStart THEN
-		modeOutfeed := modeOutfeedNotReadyToStart; 
+		modeZoneOutfeed := modeZoneOff; 
 	END_IF
 
-	CASE modeOutfeed OF
+	CASE modeZoneOutfeed OF
 		
-		modeOutfeedNotReadyToStart: //the automat is not ready to start
+		modeZoneOff: //the automat is not ready to start
 			
 			cmdOutfeedManual := FALSE;
 			cmdOutfeedAuto := FALSE;
 			
 			IF readyToStart THEN
-				modeOutfeed := modeOutfeedManual;
+				modeZoneOutfeed := modeZoneManual;
 			END_IF
 
-		modeOutfeedManual:
+		modeZoneManual:
 
 			cmdOutfeedManual := FALSE;
 			
 			IF (NOT alarmInZoneOutfeed OR cpuIsSimulated) AND cmdOutfeedAuto THEN
-				modeOutfeed := modeOutfeedAuto;
+				modeZoneOutfeed := modeZoneAuto;
 			END_IF
 
-		modeOutfeedAuto:
+		modeZoneAuto:
 				
 			cmdOutfeedAuto := FALSE;
 			
 			IF (alarmInZoneOutfeed AND NOT cpuIsSimulated) OR cmdOutfeedManual THEN 
-				modeOutfeed := modeOutfeedManual;
+				modeZoneOutfeed := modeZoneManual;
 			END_IF
 		
 	END_CASE

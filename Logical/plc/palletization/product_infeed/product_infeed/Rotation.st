@@ -1,7 +1,7 @@
 
 ACTION Rotation: 
 
-	IF modePalletization = modePalletizationNotReadyToStart THEN
+	IF modeZonePalletization = modeZoneOff THEN
 		stateRotation := stateRotationUndefined;
 	END_IF
 	

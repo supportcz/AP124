@@ -1,7 +1,7 @@
 
 ACTION Suckers: 
 	
-	IF modePalletization = modePalletizationNotReadyToStart THEN
+	IF modeZonePalletization = modeZoneOff THEN
 		stateSuckers := stateSuckersInit;
 	END_IF
 	

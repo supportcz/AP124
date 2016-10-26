@@ -5,43 +5,43 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
-	modePalletizationOld := modePalletization;
+	modeZonePalletizationOld := modeZonePalletization;
 	
-	readyToStart := NOT diPalletizationEDM AND diAirPresureOK;
+	readyToStart := NOT diPalletizationEDM;
 	
 	IF cpuIsSimulated THEN
 		readyToStart := TRUE;
 	END_IF
 	
 	IF NOT readyToStart THEN
-		modePalletization := modePalletizationNotReadyToStart; 
+		modeZonePalletization := modeZoneOff; 
 	END_IF
 
-	CASE modePalletization OF
+	CASE modeZonePalletization OF
 		
-		modePalletizationNotReadyToStart: //the automat is not ready to start
+		modeZoneOff: //the automat is not ready to start
 			
 			cmdPalletizationManual := FALSE;
 			cmdPalletizationAuto := FALSE;
 			
 			IF readyToStart THEN
-				modePalletization := modePalletizationManual;
+				modeZonePalletization := modeZoneManual;
 			END_IF
 
-		modePalletizationManual:
+		modeZoneManual:
 
 			cmdPalletizationManual := FALSE;
 			
 			IF (NOT alarmInZonePalletization OR cpuIsSimulated)  AND cmdPalletizationAuto THEN
-				modePalletization := modePalletizationAuto;
+				modeZonePalletization := modeZoneAuto;
 			END_IF
 
-		modePalletizationAuto:
+		modeZoneAuto:
 				
 			cmdPalletizationAuto := FALSE;
 			
 			IF (alarmInZonePalletization AND NOT cpuIsSimulated) OR cmdPalletizationManual THEN 
-				modePalletization := modePalletizationManual;
+				modeZonePalletization := modeZoneManual;
 			END_IF
 		
 	END_CASE

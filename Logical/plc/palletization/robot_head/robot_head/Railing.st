@@ -1,7 +1,7 @@
 
 ACTION Railing: 
 	
-	IF modePalletization = modePalletizationNotReadyToStart THEN
+	IF modeZonePalletization = modeZoneOff THEN
 		stateRailing := stateRailingInit;
 	END_IF
 	

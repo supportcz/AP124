@@ -27,7 +27,7 @@ PROGRAM _CYCLIC
 	
 	actualPosition := FI_12.init.units*INT_TO_DINT(aiDistanceSensor)/32767+FI_12.init.negativeSwLimit;
 	
-	IF modePalletization = modePalletizationNotReadyToStart OR (modePalletizationOld = modePalletizationAuto AND modePalletization <> modePalletizationAuto) THEN
+	IF modeZonePalletization = modeZoneOff OR (modeZonePalletizationOld = modeZoneAuto AND modeZonePalletization <> modeZoneAuto) THEN
 		statePusherDriveP12 := statePusherDriveStop;
 	END_IF
 	
@@ -56,7 +56,7 @@ PROGRAM _CYCLIC
 			pusherDrive.cmdJogPlus := FALSE;
 			pusherDrive.cmdJogMinus := FALSE;
 			
-			IF modePalletization <> modePalletizationNotReadyToStart THEN
+			IF modeZonePalletization <> modeZoneOff THEN
 				statePusherDriveP12 := statePusherDriveWait;
 			END_IF
 		

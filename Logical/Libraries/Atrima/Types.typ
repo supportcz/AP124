@@ -8,7 +8,7 @@ TYPE
 		);
 	ModeZone : 
 		(
-		modeZoneNotReadyToStart,
+		modeZoneOff,
 		modeZoneManual,
 		modeZoneAuto
 		);

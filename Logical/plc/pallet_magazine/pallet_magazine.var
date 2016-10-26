@@ -4,5 +4,5 @@ VAR
 	cmdMagazineAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
 	cmdMagazineManual : BOOL;
 	magazineEmpty : BOOL;
-	modeMagazine : ModeMagazine;
+	modeZoneMagazine : ModeZone;
 END_VAR

@@ -8,8 +8,8 @@ VAR
 	counterTraysBehindRotation : INT;
 	counterTraysInRobotHead : INT;
 	counterTraysOnTable : INT;
-	modePalletization : ModePalletization;
-	modePalletizationOld : ModePalletization;
+	modeZonePalletization : ModeZone;
+	modeZonePalletizationOld : ModeZone;
 END_VAR
 VAR RETAIN
 	nbOfLayersOnPallet : INT;

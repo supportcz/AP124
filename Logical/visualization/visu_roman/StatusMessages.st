@@ -1,7 +1,7 @@
 
 ACTION StatusMessageMagazine: 
 
-	IF modeMagazine = modeMagazineAuto THEN
+	IF modeZoneMagazine = modeZoneAuto THEN
 		statusMessageMagazine := 27;
 	END_IF
 	IF magazineEmpty THEN
@@ -10,7 +10,7 @@ ACTION StatusMessageMagazine:
 	IF alarmInZoneMagazine THEN
 		statusMessageMagazine := 24;
 	END_IF
-	IF modeMagazine = modeMagazineManual THEN
+	IF modeZoneMagazine = modeZoneManual THEN
 		statusMessageMagazine := 21;
 	END_IF
 	IF alarmImageMagazine[1] THEN
@@ -42,13 +42,13 @@ END_ACTION
 
 ACTION StatusMessagePalletization: 
 
-	IF modePalletization = modePalletizationAuto THEN
+	IF modeZonePalletization = modeZoneAuto THEN
 		statusMessagePalletization := 26;
 	END_IF
 	IF alarmInZonePalletization THEN
 		statusMessagePalletization := 23;
 	END_IF
-	IF modePalletization = modePalletizationManual THEN
+	IF modeZonePalletization = modeZoneManual THEN
 		statusMessagePalletization := 20;
 	END_IF
 	IF alarmImagePalletization[8] THEN
@@ -93,7 +93,7 @@ END_ACTION
 
 ACTION StatusMessageOutfeed: 
 
-	IF modeOutfeed = modeOutfeedAuto THEN
+	IF modeZoneOutfeed = modeZoneAuto THEN
 		statusMessageOutfeed := 28;
 	END_IF
 	IF alarmInZoneOutfeed THEN
@@ -102,7 +102,7 @@ ACTION StatusMessageOutfeed:
 	IF statePalletP22 <> palletNotPresent THEN
 		statusMessageOutfeed := 34;
 	END_IF		
-	IF modeOutfeed = modeOutfeedManual THEN
+	IF modeZoneOutfeed = modeZoneManual THEN
 		statusMessageOutfeed := 22;
 	END_IF
 	IF alarmImageOutfeed[0] THEN

@@ -1,11 +1,5 @@
 
 TYPE
-	ModeOutfeed : 
-		(
-		modeOutfeedNotReadyToStart,
-		modeOutfeedManual,
-		modeOutfeedAuto
-		);
 	StateTurnTable : 
 		(
 		stateTurnTableInit,

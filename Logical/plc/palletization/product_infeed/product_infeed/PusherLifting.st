@@ -2,7 +2,7 @@
 
 ACTION PusherLifting: 
 	
-	IF modePalletization = modePalletizationNotReadyToStart THEN
+	IF modeZonePalletization = modeZoneOff THEN
 		StopMovement;
 	END_IF
 	

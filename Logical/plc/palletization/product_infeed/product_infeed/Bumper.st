@@ -1,7 +1,7 @@
 
 ACTION Bumper: 
 
-	IF modePalletization = modePalletizationNotReadyToStart THEN
+	IF modeZonePalletization = modeZoneOff THEN
 		stateBumper := stateBumperUndefined;
 	END_IF
 	

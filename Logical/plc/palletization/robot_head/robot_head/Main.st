@@ -5,19 +5,19 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	 
-	CASE modePalletization OF
+	CASE modeZonePalletization OF
 		
-		modePalletizationNotReadyToStart: //the automat is not ready to start
+		modeZoneOff: //the automat is not ready to start
 		
 
 
-		modePalletizationManual:
+		modeZoneManual:
 			
-			IF modePalletizationOld <> modePalletizationManual THEN
+			IF modeZonePalletizationOld <> modeZoneManual THEN
 
 			END_IF
 
-		modePalletizationAuto:
+		modeZoneAuto:
 		
 	END_CASE
 	
@@ -27,7 +27,7 @@ PROGRAM _CYCLIC
 	Roller;
 
 	//door logic
-	DoorLogic_3(doorLocked := diDoor3locked);
-	alarmImagePalletization[42] := NOT diDoor3locked;
+	DoorLogic_3();
+	alarmImagePalletization[42] := NOT DoorLogic_3.diDoorLocked;
 	
 END_PROGRAM

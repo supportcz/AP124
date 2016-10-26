@@ -221,37 +221,37 @@ PROGRAM _CYCLIC
 	(* 							Auto/Manual StatusDatapoint					   *)
 	(***************************************************************************)
 	
-	IF modeMagazine = modeMagazineManual THEN
+	IF modeZoneMagazine = modeZoneManual THEN
 		magazineStatusDatapointManual := 0;
 	ELSE
 		magazineStatusDatapointManual := 1;
 	END_IF
 
-	IF modeMagazine = modeMagazineAuto THEN
+	IF modeZoneMagazine = modeZoneAuto THEN
 		magazineStatusDatapointAuto := 0;
 	ELSE
 		magazineStatusDatapointAuto := 1;
 	END_IF
 
-	IF modePalletization = modePalletizationManual THEN
+	IF modeZonePalletization = modeZoneManual THEN
 		palletizationStatusDatapointManu := 0;
 	ELSE
 		palletizationStatusDatapointManu := 1;
 	END_IF
 
-	IF modePalletization = modePalletizationAuto THEN
+	IF modeZonePalletization = modeZoneAuto THEN
 		palletizationStatusDatapointAuto := 0;
 	ELSE
 		palletizationStatusDatapointAuto := 1;
 	END_IF
 	
-	IF modeOutfeed = modeOutfeedManual THEN
+	IF modeZoneOutfeed = modeZoneManual THEN
 		outfeedStatusDatapointManual := 0;
 	ELSE
 		outfeedStatusDatapointManual := 1;
 	END_IF
 
-	IF modeOutfeed = modeOutfeedAuto THEN
+	IF modeZoneOutfeed = modeZoneAuto THEN
 		outfeedStatusDatapointAuto := 0;
 	ELSE
 		outfeedStatusDatapointAuto := 1;

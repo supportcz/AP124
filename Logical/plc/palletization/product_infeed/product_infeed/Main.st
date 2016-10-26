@@ -14,14 +14,14 @@ PROGRAM _CYCLIC
 	TOF_TrayOnOutputP1(IN := diTrayOnOutputP1, PT := T#50ms);
 	TOF_TrayBehindRotation(IN := diTrayBehindRotation, PT := T#50ms);
 	
-	CASE modePalletization OF
+	CASE modeZonePalletization OF
 		
-		modePalletizationNotReadyToStart: //the automat is not ready to start
+		modeZoneOff: //the automat is not ready to start
 
 
-		modePalletizationManual:
+		modeZoneManual:
 
-			IF modePalletizationOld <> modePalletizationManual THEN
+			IF modeZonePalletizationOld <> modeZoneManual THEN
 				cmdRunConveyorP1 := FALSE;
 				cmdRunConveyorP2 := FALSE;
 				rotationForward := FALSE;
@@ -44,7 +44,7 @@ PROGRAM _CYCLIC
 
 			stateAuto := stateAutoUndefined;
 
-		modePalletizationAuto:
+		modeZoneAuto:
 			
 			IF adrRecipes = 0 THEN 
 				RETURN;
@@ -348,8 +348,8 @@ PROGRAM _CYCLIC
 	Bumper;
 	
 	//door logic
-	DoorLogic_1(doorLocked := diDoor1locked);
-	alarmImagePalletization[39] := NOT diDoor1locked;
+	DoorLogic_1();
+	alarmImagePalletization[39] := NOT DoorLogic_1.diDoorLocked;
 
 	
 	//edge alarms

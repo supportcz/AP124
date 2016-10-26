@@ -11,14 +11,14 @@ PROGRAM _CYCLIC
 	TON_PalletStopP17(IN := diPalletStopP17, PT := T#200ms);
 	TON_PalletStopP18(IN := diPalletStopP18, PT := T#200ms);
 	
-	CASE modePalletization OF
+	CASE modeZonePalletization OF
 		
-		modePalletizationNotReadyToStart: //the automat is not ready to start
+		modeZoneOff: //the automat is not ready to start
 		
 
-		modePalletizationManual:
+		modeZoneManual:
 			
-			IF modePalletizationOld <> modePalletizationManual THEN
+			IF modeZonePalletizationOld <> modeZoneManual THEN
 				cmdMovePalletP12 := FALSE;
 				cmdMovePalletP13 := FALSE;
 				cmdMovePalletP14 := FALSE;
@@ -27,7 +27,7 @@ PROGRAM _CYCLIC
 				cmdMovePalletP17 := FALSE;
 			END_IF
 
-		modePalletizationAuto:
+		modeZoneAuto:
 			
 			//stop sensor not reached
 			TON_ConveyorP12(IN := cmdMovePalletP12, PT := T#20s);
@@ -50,7 +50,7 @@ PROGRAM _CYCLIC
 			
 			
 			// control conveyors
-			IF statePalletP12 <> palletNotPresent AND statePalletP13 = palletNotPresent AND modeMagazine = modeMagazineAuto THEN
+			IF statePalletP12 <> palletNotPresent AND statePalletP13 = palletNotPresent AND modeZoneMagazine = modeZoneAuto THEN
 				cmdMovePalletP12 := TRUE;
 			END_IF
 

@@ -1,14 +1,14 @@
 
 FUNCTION_BLOCK DoorLogic
 	VAR_INPUT
-		buttonToOpen : BOOL;
-		buttonToClose : BOOL;
+		diOpenButton : BOOL;
+		diCloseButton : BOOL;
 		modeZone : ModeZone;
-		doorLocked : BOOL;
+		diDoorLocked : BOOL;
 	END_VAR
 	VAR_OUTPUT
-		unlockDoors : BOOL;
-		LED : BOOL;
+		doUnlockDoors : BOOL;
+		doLED : BOOL;
 		stopRequest : BOOL;
 	END_VAR
 	VAR
