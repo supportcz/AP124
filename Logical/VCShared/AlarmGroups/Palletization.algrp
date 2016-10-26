@@ -512,6 +512,30 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="39">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="42">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -568,6 +592,8 @@
       <Text ID="1240" Value="Robot head: centering: back sensor not reached"/>
       <Text ID="1272" Value="Robot head: roller not opened"/>
       <Text ID="1283" Value="Robot head: roller not closed"/>
+      <Text ID="1390" Value="Door 1 unlocked"/>
+      <Text ID="1401" Value="Door 3 unlocked"/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -612,6 +638,8 @@
       <Text ID="1240" Value=""/>
       <Text ID="1272" Value=""/>
       <Text ID="1283" Value=""/>
+      <Text ID="1390" Value=""/>
+      <Text ID="1401" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -656,6 +684,8 @@
       <Text ID="1240" Value=""/>
       <Text ID="1272" Value=""/>
       <Text ID="1283" Value=""/>
+      <Text ID="1390" Value=""/>
+      <Text ID="1401" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -700,6 +730,8 @@
       <Index ID="1240" Value="38"/>
       <Index ID="1272" Value="40"/>
       <Index ID="1283" Value="41"/>
+      <Index ID="1390" Value="39"/>
+      <Index ID="1401" Value="42"/>
       <Index ID="312" Value="Group"/>
     </IndexMap>
   </TextGroup>

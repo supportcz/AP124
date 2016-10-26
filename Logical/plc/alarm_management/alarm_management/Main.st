@@ -23,6 +23,9 @@ PROGRAM _CYCLIC
 	alarmImageCommon[12] := palletizationEdmError;
 	alarmImageCommon[13] := outfeedEdmError;
 	
+
+
+	
 	//detect if there is any alarm 
 	alarmCommon := FALSE;
 	FOR i:=0 TO 39 DO

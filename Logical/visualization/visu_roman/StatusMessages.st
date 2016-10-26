@@ -63,6 +63,12 @@ ACTION StatusMessagePalletization:
 	IF diPalletizationEDM THEN
 		statusMessagePalletization := 14;
 	END_IF
+	IF alarmImagePalletization[42] THEN
+		statusMessagePalletization := 10;
+	END_IF
+	IF alarmImagePalletization[39] THEN
+		statusMessagePalletization := 8;
+	END_IF
 	IF alarmImageCommon[6] THEN
 		statusMessagePalletization := 7;
 	END_IF
@@ -104,6 +110,9 @@ ACTION StatusMessageOutfeed:
 	END_IF
 	IF diOutfeedEDM THEN
 		statusMessageOutfeed := 16;
+	END_IF
+	IF alarmImageOutfeed[15] THEN
+		statusMessageOutfeed := 9;
 	END_IF
 	IF alarmImageCommon[6] THEN
 		statusMessageOutfeed := 7;

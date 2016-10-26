@@ -4,7 +4,6 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	diDoor2opened;
 	
 	TON_PalletStopP19(IN := diPalletStopP19, PT := T#200ms);
 
@@ -12,9 +11,6 @@ PROGRAM _CYCLIC
 	CASE modeOutfeed OF
 		
 		modeOutfeedNotReadyToStart: //the automat is not ready to start
-		
-			acpI_P18.reset := TRUE;
-
 
 		modeOutfeedManual:
 			
@@ -42,11 +38,16 @@ PROGRAM _CYCLIC
 	END_CASE
 
 	
-	//conveyors
+	//modules
 	ConveyorP18; 
+	TurnTable;
 
 	//door logic
-	DoorLogic_2();
+	DoorLogic_2(doorLocked := diDoor2locked);
+	alarmImageOutfeed[15] := NOT diDoor2locked;
+	
+
+
 	
 	//sensor not reached
 	IF acknowledgeImageOutfeed[4] THEN
@@ -59,9 +60,10 @@ PROGRAM _CYCLIC
 	END_IF	
 	
 	//problems with motors
-	alarmImageOutfeed[6] := acpI_P18.error;
-	IF EDGENEG(acknowledgeImageOutfeed[6]) THEN
-		acpI_P18.reset := TRUE;
-	END_IF	
+	alarmImageOutfeed[6] := acpI_P18_1.error;
+	acpI_P18_1.reset := EDGENEG(acknowledgeImageOutfeed[6]);
+
+	alarmImageOutfeed[14] := acpI_P18_2.error;
+	acpI_P18_2.reset := EDGENEG(acknowledgeImageOutfeed[14]);
 	
 END_PROGRAM

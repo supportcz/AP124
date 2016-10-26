@@ -7,7 +7,7 @@ ACTION ConveyorP14:
 		
 		palletNotPresent:
 			
-			acpI_P14.stop := NOT (cmdMovePalletP14 AND (statePalletP15 = palletNotPresent OR diReset)) AND NOT cmdMovePalletP13;
+			acpI_P14.run := (cmdMovePalletP14 AND (statePalletP15 = palletNotPresent OR diReset)) OR cmdMovePalletP13;
 			
 			//slow down sensor?
 			IF diPalletSlowDownP14 THEN
@@ -20,7 +20,7 @@ ACTION ConveyorP14:
 				statePalletP14 := palletMoving;
 			END_IF	
 		
-			acpI_P14.stop := TRUE;
+			acpI_P14.run := FALSE;
 
 		palletMoving:
 			
@@ -31,7 +31,7 @@ ACTION ConveyorP14:
 				cmdMovePalletP14 := FALSE;
 			END_IF	
 
-			acpI_P14.stop := NOT cmdMovePalletP14;
+			acpI_P14.run := cmdMovePalletP14;
 			
 	END_CASE
 

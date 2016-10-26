@@ -6,7 +6,7 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-diDoor1opened;
+
 	
 	HMIS;
 	RFRD;
@@ -348,10 +348,9 @@ diDoor1opened;
 	Bumper;
 	
 	//door logic
-	DoorLogic_1();
-	
+	DoorLogic_1(doorLocked := diDoor1locked);
+	alarmImagePalletization[39] := NOT diDoor1locked;
 
-	alarmImagePalletization[15] := pusherDrive.encoderError;
 	
 	//edge alarms
 	IF acknowledgeImagePalletization[27] THEN
@@ -363,7 +362,11 @@ diDoor1opened;
 	
 	//problems with motors
 	alarmImagePalletization[18] := NOT diMotorProtectionP3;
-	alarmImagePalletization[14] := pusherDrive.driveError;
+
 	alarmImagePalletization[22] := acpI_P10.error;
+	acpI_P10.reset := EDGENEG(acknowledgeImagePalletization[22]);
+
 	alarmImagePalletization[23] := acpI_P11.error;
+	acpI_P11.reset := EDGENEG(acknowledgeImagePalletization[23]);
+	
 END_PROGRAM

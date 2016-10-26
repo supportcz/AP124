@@ -1,12 +1,18 @@
 
 FUNCTION_BLOCK DoorLogic
 	VAR_INPUT
-		ButtonToOpen : BOOL;
-		ButtonToClose : BOOL;
-		PermissionToOpen : BOOL;
+		buttonToOpen : BOOL;
+		buttonToClose : BOOL;
+		modeZone : ModeZone;
+		doorLocked : BOOL;
 	END_VAR
 	VAR_OUTPUT
-		UnlockDoors : BOOL;
+		unlockDoors : BOOL;
 		LED : BOOL;
+		stopRequest : BOOL;
+	END_VAR
+	VAR
+		stateDoor : StateDoor;
+		MTBasicsPWM_0 : MTBasicsPWM;
 	END_VAR
 END_FUNCTION_BLOCK

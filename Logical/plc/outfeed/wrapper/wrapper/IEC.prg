@@ -6,5 +6,6 @@
     <File Description="Local data types" Private="true">Types.typ</File>
     <File Description="Local variables" Private="true">Variables.var</File>
     <File>conveyorP18.st</File>
+    <File>turnTable.st</File>
   </Files>
 </Program>

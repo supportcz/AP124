@@ -135,38 +135,38 @@ diPalletizationEDM	21	VAR_GLOBAL	@TYP:43
 ;
 
 @V 1 24 0
-diDoor1opened	22	VAR_GLOBAL	@TYP:43
-%SIX 19.3		     
-
-;
-
-@V 1 25 0
-doPalletizationContactor2	23	VAR_GLOBAL	@TYP:43
+doPalletizationContactor2	22	VAR_GLOBAL	@TYP:43
 %SQX 17.1		     
 
 ;
 
-@V 1 26 0
-doPalletizationContactor1	24	VAR_GLOBAL	@TYP:43
+@V 1 25 0
+doPalletizationContactor1	23	VAR_GLOBAL	@TYP:43
 %SQX 17.0		     
 
 ;
 
-@V 1 27 0
-doUnlockDoor1	25	VAR_GLOBAL	@TYP:43
-%SQX 15.2		     
+@V 1 26 0
+lightCurtainP17grey	24	VAR_GLOBAL	@TYP:1
+%NSQX 0.6		     
 
 ;
 
 @V 1 28 0
-doUnlockDoor2	26	VAR_GLOBAL	@TYP:43
-%SQX 15.3		     
+diDoor2locked	25	VAR_GLOBAL	@TYP:43
+%SIX 19.4		     
 
 ;
 
 @V 1 29 0
-lightCurtainP17grey	27	VAR_GLOBAL	@TYP:1
-%NSQX 0.6		     
+diDoor1locked	26	VAR_GLOBAL	@TYP:43
+%SIX 19.3		     
+
+;
+
+@V 1 30 0
+diDoor3locked	27	VAR_GLOBAL	@TYP:43
+%SIX 19.5		     
 
 ;
 

@@ -15,6 +15,7 @@ VAR
 	dActualLayout : REFERENCE TO Layout;
 	dActualRecipe : REFERENCE TO Recipe;
 	diBumperForward : BOOL;
+	diDoor1locked : BOOL;
 	diMotorProtectionP3 : BOOL;
 	diPusherBlockedByTray : BOOL;
 	diPusherLiftingLowerPosition : BOOL;
@@ -27,6 +28,7 @@ VAR
 	diTrayOnOutputP1 : BOOL;
 	dNextTray : REFERENCE TO Tray;
 	doBumper : BOOL;
+	DoorLogic_1 : DoorLogic;
 	doPusherLiftingBrake : BOOL;
 	doPusherLiftingDown : BOOL;
 	doPusherLiftingUp : BOOL;
@@ -56,6 +58,4 @@ VAR
 	TON_WaitForLastTray : TON;
 	trayBehindRotationOld : BOOL;
 	trayOnInputP2old : BOOL;
-	DoorLogic_1 : DoorLogic;
-	diDoor1opened : BOOL;
 END_VAR

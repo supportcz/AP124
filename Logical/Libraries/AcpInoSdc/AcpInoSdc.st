@@ -17,11 +17,11 @@ FUNCTION_BLOCK AcpInoSdc
 		CMDD_Output := 16#000F;
 		
 		16#37, 16#27: (*Operation enabled *)
-		IF stop THEN
-//			LFRD_Output := 0;
-			CMDD_Output := 16#010F;
-		ELSE
+		
+		IF run THEN
 			CMDD_Output := 16#000F;			
+		ELSE
+			CMDD_Output := 16#010F; //stop
 		END_IF
 
 		IF NOT switchOn THEN

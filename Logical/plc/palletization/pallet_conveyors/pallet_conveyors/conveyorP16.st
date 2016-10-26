@@ -7,7 +7,7 @@ ACTION ConveyorP16:
 		
 		palletNotPresent:
 			
-			acpI_P16.stop := NOT (cmdMovePalletP16 AND (statePalletP17 = palletNotPresent OR diReset)) AND NOT cmdMovePalletP15;
+			acpI_P16.run := (cmdMovePalletP16 AND (statePalletP17 = palletNotPresent OR diReset)) OR cmdMovePalletP15;
 		
 		palletPresent:
 
@@ -15,7 +15,7 @@ ACTION ConveyorP16:
 				statePalletP16 := palletMoving;
 			END_IF	
 		
-			acpI_P16.stop := TRUE;
+			acpI_P16.run := FALSE;
 
 		palletMoving:
 			
@@ -26,7 +26,7 @@ ACTION ConveyorP16:
 				cmdMovePalletP16 := FALSE;
 			END_IF	
 
-			acpI_P16.stop := NOT cmdMovePalletP16;
+			acpI_P16.run := cmdMovePalletP16;
 
 	END_CASE
 

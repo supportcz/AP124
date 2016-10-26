@@ -33,9 +33,9 @@
         <Info Name="ProjectSL" Value="1" />
         <Info Name="Description-de" Value="X20 SafeLOGIC Compact, 20xE, 24V, 2xKAT4" />
         <Info Name="Description-en" Value="X20 SafeLOGIC Compact, 20xI, 24V, 2xCAT4" />
-        <Info Name="AsVariable" Value="SafeTwoChannelInput1718,wrapper:diDoor2opened" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput1718,alarm_mana:diDoor2locked" />
         <Info Name="AsVariable" Value="BOOL002,alarm_mana:magazineEdmError" />
-        <Info Name="AsVariable" Value="SafeTwoChannelInput1516,product_in:diDoor1opened" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput1516,alarm_mana:diDoor1locked" />
         <Info Name="AsVariable" Value="BOOL004,alarm_mana:outfeedEdmError" />
         <Info Name="AsVariable" Value="BOOL006,pallet_con:lightCurtainP15" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0304,alarm_mana:diEStop2" />
@@ -47,9 +47,9 @@
         <Info Name="AsVariable" Value="BOOL005,pallet_mag:lightCurtainP11" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput1112,alarm_mana:diEStopRobot" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0708,alarm_mana:diEStop4" />
-        <Info Name="AsVariable" Value="SafeTwoChannelInput1920,robot_head:diDoor3opened" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput1920,alarm_mana:diDoor3locked" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput1314,alarm_mana:diEStopWrapper" />
-        <Info Name="AsVariable" Value="BOOL007,pallet_out:lightCurtainP17" />
+        <Info Name="AsVariable" Value="BOOL007,outfeed_ma:lightCurtainP17" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0506,alarm_mana:diEStop3" />
         <Info Name="AsVariable" Value="BOOL003,alarm_mana:palletizationEdmError" />
       </NodeDescription>

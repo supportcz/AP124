@@ -1,9 +1,4 @@
 PROGRAM _INIT
-	
-	acpI_P14.reset := TRUE;
-	acpI_P15.reset := TRUE;
-	acpI_P16.reset := TRUE;
-	acpI_P17.reset := TRUE;
 	 
 END_PROGRAM
 
@@ -158,22 +153,17 @@ PROGRAM _CYCLIC
 	alarmImagePalletization[5] := NOT lightCurtainP15;
 	alarmImagePalletization[12] := NOT diMotorProtectionP12;
 	alarmImagePalletization[13] := NOT diMotorProtectionP13;
-	alarmImagePalletization[24] := acpI_P14.error;
-	alarmImagePalletization[25] := acpI_P15.error;
-	alarmImagePalletization[26] := acpI_P16.error;
-	alarmImagePalletization[29] := acpI_P17.error;
 
-	IF EDGENEG(acknowledgeImagePalletization[24]) THEN
-		acpI_P14.reset := TRUE;
-	END_IF	
-	IF EDGENEG(acknowledgeImagePalletization[25]) THEN
-		acpI_P15.reset := TRUE;
-	END_IF	
-	IF EDGENEG(acknowledgeImagePalletization[26]) THEN
-		acpI_P16.reset := TRUE;
-	END_IF	
-	IF EDGENEG(acknowledgeImagePalletization[29]) THEN
-		acpI_P17.reset := TRUE;
-	END_IF	
+	alarmImagePalletization[24] := acpI_P14.error;
+	acpI_P14.reset := EDGENEG(acknowledgeImagePalletization[24]);
+
+	alarmImagePalletization[25] := acpI_P15.error;
+	acpI_P15.reset := EDGENEG(acknowledgeImagePalletization[25]);
+
+	alarmImagePalletization[26] := acpI_P16.error;
+	acpI_P16.reset := EDGENEG(acknowledgeImagePalletization[26]);
+
+	alarmImagePalletization[29] := acpI_P17.error;
+	acpI_P17.reset := EDGENEG(acknowledgeImagePalletization[29]);
 
 END_PROGRAM

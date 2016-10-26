@@ -2,7 +2,7 @@ VAR
 	alarmCommon : BOOL;
 	alarmImageCommon : ARRAY[0..39] OF BOOL;
 	alarmInZoneMagazine : BOOL; (*VISU:there is at least one alarm in pallet magazine*)
+	cpuIsSimulated : BOOL;
 	diAirPresureOK : BOOL; (*VISU: 1...air pressure OK*)
 	diReset : BOOL; (*acknowledges all errors*)
-	cpuIsSimulated : BOOL;
 END_VAR

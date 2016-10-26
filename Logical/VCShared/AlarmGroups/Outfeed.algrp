@@ -188,6 +188,30 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="14">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="15">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -209,7 +233,7 @@
       <Text ID="996" Value="Motor protection P19"/>
       <Text ID="1017" Value="Stop sensor on conveyor P19 not reached"/>
       <Text ID="1028" Value="Unexpected pallet on conveyor P19"/>
-      <Text ID="1039" Value="Drive U18 (conveyor P18) error"/>
+      <Text ID="1039" Value="Drive U18.1 (conveyor P18.1) error"/>
       <Text ID="1056" Value="Unexpected pallet on conveyor P21"/>
       <Text ID="1067" Value="Stop sensor on conveyor P21 not reached"/>
       <Text ID="1078" Value="Motor protection P20"/>
@@ -217,6 +241,8 @@
       <Text ID="1096" Value="Stop sensor on conveyor P22 not reached"/>
       <Text ID="1107" Value="Motor protection P21"/>
       <Text ID="1114" Value="Motor protection P22"/>
+      <Text ID="1305" Value="Drive U18.2 (turn table P18.2) error"/>
+      <Text ID="1412" Value="Door 2 unlocked"/>
       <Text ID="952" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -234,6 +260,8 @@
       <Text ID="1096" Value=""/>
       <Text ID="1107" Value=""/>
       <Text ID="1114" Value=""/>
+      <Text ID="1305" Value=""/>
+      <Text ID="1412" Value=""/>
       <Text ID="952" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -251,6 +279,8 @@
       <Text ID="1096" Value=""/>
       <Text ID="1107" Value=""/>
       <Text ID="1114" Value=""/>
+      <Text ID="1305" Value=""/>
+      <Text ID="1412" Value=""/>
       <Text ID="952" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -268,6 +298,8 @@
       <Index ID="1096" Value="11"/>
       <Index ID="1107" Value="12"/>
       <Index ID="1114" Value="13"/>
+      <Index ID="1305" Value="14"/>
+      <Index ID="1412" Value="15"/>
       <Index ID="952" Value="Group"/>
     </IndexMap>
   </TextGroup>

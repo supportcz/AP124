@@ -1,5 +1,11 @@
 
 TYPE
+	ModePalletization : 
+		(
+		modePalletizationNotReadyToStart,
+		modePalletizationManual,
+		modePalletizationAuto
+		);
 	PusherDrive : 	STRUCT 
 		cmdAbsolute : BOOL;
 		cmdJogPlus : BOOL;
@@ -10,15 +16,7 @@ TYPE
 		requestedPositionIndex : INT;
 		actualPositionIndex : INT;
 		actualPosition : DINT;
-		driveError : BOOL;
-		encoderError : BOOL;
 	END_STRUCT;
-	ModePalletization : 
-		(
-		modePalletizationNotReadyToStart,
-		modePalletizationManual,
-		modePalletizationAuto
-		);
 	StatePallet : 
 		(
 		palletNotPresent,

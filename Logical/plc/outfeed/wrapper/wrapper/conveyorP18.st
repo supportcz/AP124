@@ -1,21 +1,17 @@
 ACTION ConveyorP18: 
 	
-	RETURN;
-	
-
-
-	acpI_P18.switchOn := TRUE;
-	acpI_P18.speed := 500;
+	acpI_P18_1.switchOn := TRUE;
+	acpI_P18_1.speed := 500;
 			
 	CASE statePalletP18 OF
 		
 		palletNotPresent:
 			
-			acpI_P18.stop := NOT (cmdMovePalletP18 AND (statePalletP18 = palletNotPresent OR diReset)) AND NOT cmdMovePalletP17;
+			acpI_P18_1.run := (cmdMovePalletP18 AND (statePalletP18 = palletNotPresent OR diReset)) OR cmdMovePalletP17;
 		
 		palletPresent:
 		
-			acpI_P18.stop := TRUE;
+			acpI_P18_1.run := FALSE;
 
 			IF cmdMovePalletP18 AND (statePalletP18 = palletNotPresent OR diReset) THEN
 				statePalletP18 := palletMoving;
@@ -30,11 +26,11 @@ ACTION ConveyorP18:
 				cmdMovePalletP18 := FALSE;
 			END_IF	
 
-			acpI_P18.stop := NOT cmdMovePalletP18;
+			acpI_P18_1.run := cmdMovePalletP18;
 			
 	END_CASE
 
 	//control of ACOPOSinverter
-	acpI_P18();
+	acpI_P18_1();
 
 END_ACTION

@@ -1,12 +1,14 @@
 VAR
 	centeringForward : BOOL;
+	cmdRollerClose : BOOL;
+	cmdRollerOpen : BOOL;
 	diCenteringBack : BOOL;
 	diCenteringForward : BOOL;
-	diCloseDoors3 : BOOL; (*button to close doors*)
-	diDoor3opened : BOOL;
-	diOpenDoors3 : BOOL; (*button to open doors*)
+	diDoor3locked : BOOL;
 	diRailingDown : BOOL;
 	diRailingUp : BOOL;
+	diRollerClosed : BOOL;
+	diRollerOpened : BOOL;
 	diSuckerLeftBackBack : BOOL;
 	diSuckerLeftFrontBack : BOOL;
 	diSuckerRightBackBack : BOOL;
@@ -16,26 +18,23 @@ VAR
 	doCenteringBack : BOOL;
 	doCenteringForward : BOOL;
 	doNoSuck : BOOL;
+	DoorLogic_3 : DoorLogic;
 	doRailingDown : BOOL;
 	doRailingUp : BOOL;
+	doRollerBrake : BOOL;
+	doRollerClose : BOOL;
+	doRollerOpen : BOOL;
 	doSuck : BOOL;
 	doSuckersBack : BOOL;
 	doSuckersForward : BOOL;
 	railingUp : BOOL;
 	stateCentering : StateCentering;
 	stateRailing : StateRailing;
+	stateRoller : StateRoller;
 	stateSuckers : StateSuckers;
 	suckersForward : BOOL;
 	TON_CenteringRequest : TON;
 	TON_RailingRequest : TON;
-	TON_SuckersRequest : TON;
-	diRollerOpened : BOOL;
-	diRollerClosed : BOOL;
-	stateRoller : StateRoller;
-	doRollerOpen : BOOL;
-	doRollerClose : BOOL;
-	doRollerBrake : BOOL;
-	cmdRollerClose : BOOL;
-	cmdRollerOpen : BOOL;
 	TON_RollerRequest : TON;
+	TON_SuckersRequest : TON;
 END_VAR

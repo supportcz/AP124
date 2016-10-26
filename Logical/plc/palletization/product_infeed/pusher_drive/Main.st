@@ -25,15 +25,12 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
-	pusherDrive.driveError := FI_12.info.status <> 0 OR acpI_P12.error;
-	pusherDrive.encoderError := aiDistanceSensor < -4000 OR aiDistanceSensor = 32767;
-	
 	actualPosition := FI_12.init.units*INT_TO_DINT(aiDistanceSensor)/32767+FI_12.init.negativeSwLimit;
 	
-	IF pusherDrive.driveError OR pusherDrive.encoderError THEN
+	IF modePalletization = modePalletizationNotReadyToStart OR (modePalletizationOld = modePalletizationAuto AND modePalletization <> modePalletizationAuto) THEN
 		statePusherDriveP12 := statePusherDriveStop;
 	END_IF
-		
+	
 	CASE statePusherDriveP12 OF
 		
 		statePusherDriveUndefined:
@@ -58,13 +55,8 @@ PROGRAM _CYCLIC
 			pusherDrive.cmdAbsolute := FALSE;
 			pusherDrive.cmdJogPlus := FALSE;
 			pusherDrive.cmdJogMinus := FALSE;
-
-			//IF diReset THEN
-				acpI_P12.reset := TRUE;
-				FI_12.cmd.acknowledge := TRUE;
-			//END_IF
 			
-			IF NOT pusherDrive.driveError AND NOT pusherDrive.encoderError THEN
+			IF modePalletization <> modePalletizationNotReadyToStart THEN
 				statePusherDriveP12 := statePusherDriveWait;
 			END_IF
 		
@@ -191,7 +183,13 @@ PROGRAM _CYCLIC
 	aoPusherDriveP12 := FI_12.IOMapping.AnalogOutput;
 	pusherDrive.actualPosition := FI_12.info.position;
 	
-
-
+	alarmImagePalletization[15] := aiDistanceSensor < -4000 OR aiDistanceSensor = 32767;
+	
+	alarmImagePalletization[14] := FI_12.info.status <> 0 OR acpI_P12.error;
+	
+	IF EDGENEG(acknowledgeImagePalletization[14]) THEN
+		acpI_P12.reset := TRUE;
+		FI_12.cmd.acknowledge := TRUE;
+	END_IF
 	 
 END_PROGRAM

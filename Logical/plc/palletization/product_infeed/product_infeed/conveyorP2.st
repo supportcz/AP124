@@ -11,8 +11,7 @@ ACTION ConveyorP2:
 			
 			//cmdRunConveyorP2 := FALSE;
 			acpI_P11.switchOn := TRUE;
-			acpI_P11.stop := TRUE;
-			acpI_P11.reset := TRUE;
+			acpI_P11.run := FALSE;
 			IF modePalletization <> modePalletizationNotReadyToStart THEN
 				stateConveyorP2 := stateConveyorWait;
 			END_IF
@@ -25,7 +24,7 @@ ACTION ConveyorP2:
 		
 		stateConveyorMoving:
 			
-			acpI_P11.stop := FALSE;
+			acpI_P11.run := TRUE;
 				
 			IF modePalletization = modePalletizationAuto THEN
 				//pause?
@@ -41,7 +40,7 @@ ACTION ConveyorP2:
 
 		stateConveyorPause:
 			
-			acpI_P11.stop := TRUE;
+			acpI_P11.run := FALSE;
 			
 			//wake up
 			IF TOF_TrayOnInputP1.Q THEN

@@ -2,62 +2,62 @@
 T: PROGRAM Main
 FW: NO
 CI#: 80
-QSL: 30
-QVE: 30
-QVPC: 30
+QSL: 31
+QVE: 31
+QVPC: 31
 QPar: 0
 QFBI: 22
 *)
 @V 1 1 0
-lightCurtainP11	1	VAR	@TYP:43
+door13locked	1	VAR	@TYP:43
 		     
 
 ;
 
-@V 1 3 0
-SF_EDM_V1_00_1	2	VAR	@FB:81
+@V 1 2 0
+lightCurtainP11	2	VAR	@TYP:43
 		     
 
 ;
 
 @V 1 4 0
-TON_1	3	VAR	@FB:21
+SF_EDM_V1_00_1	3	VAR	@FB:81
 		     
 
 ;
 
 @V 1 5 0
-allEStopsReleased	4	VAR	@TYP:43
+TON_1	4	VAR	@FB:21
 		     
 
 ;
 
 @V 1 6 0
-TP_1	5	VAR	@FB:22
+allEStopsReleased	5	VAR	@TYP:43
 		     
 
 ;
 
 @V 1 7 0
-activateSafetyMagazine	6	VAR	@TYP:1
+TP_1	6	VAR	@FB:22
 		     
 
 ;
 
 @V 1 8 0
-SF_EmergencyStop_V1_00_1	7	VAR	@FB:83
+activateSafetyMagazine	7	VAR	@TYP:1
 		     
 
 ;
 
 @V 1 9 0
-TON_2	8	VAR	@FB:21
+SF_EmergencyStop_V1_00_1	8	VAR	@FB:83
 		     
 
 ;
 
 @V 1 10 0
-door1locked	9	VAR	@TYP:43
+TON_2	9	VAR	@FB:21
 		     
 
 ;
@@ -117,73 +117,79 @@ SF_MutingPar_2Sensor_V1_1	18	VAR	@FB:84
 ;
 
 @V 1 20 0
-TON_6	19	VAR	@FB:21
+lightCurtainP15	19	VAR	@TYP:43
 		     
 
 ;
 
 @V 1 21 0
-lightCurtainP15	20	VAR	@TYP:43
+TON_7	20	VAR	@FB:21
 		     
 
 ;
 
 @V 1 22 0
-TON_7	21	VAR	@FB:21
+TP_4	21	VAR	@FB:22
 		     
 
 ;
 
 @V 1 23 0
-TP_4	22	VAR	@FB:22
+activateSafetyOutfeed	22	VAR	@TYP:1
 		     
 
 ;
 
 @V 1 24 0
-activateSafetyOutfeed	23	VAR	@TYP:1
+SF_MutingPar_2Sensor_V1_2	23	VAR	@FB:84
 		     
 
 ;
 
 @V 1 25 0
-SF_MutingPar_2Sensor_V1_2	24	VAR	@FB:84
+lightCurtainP17	24	VAR	@TYP:43
 		     
 
 ;
 
 @V 1 26 0
-lightCurtainP17	25	VAR	@TYP:43
+SF_EDM_V1_00_3	25	VAR	@FB:81
 		     
 
 ;
 
 @V 1 27 0
-SF_EDM_V1_00_3	26	VAR	@FB:81
+TON_8	26	VAR	@FB:21
 		     
 
 ;
 
 @V 1 28 0
-TON_8	27	VAR	@FB:21
+TON_10	27	VAR	@FB:21
 		     
 
 ;
 
 @V 1 29 0
-TON_9	28	VAR	@FB:21
+TON_11	28	VAR	@FB:21
 		     
 
 ;
 
 @V 1 30 0
-TON_10	29	VAR	@FB:21
+SF_ESPE_V1_00_2	29	VAR	@FB:82
 		     
 
 ;
 
 @V 1 31 0
-TON_11	30	VAR	@FB:21
+door2locked	30	VAR	@TYP:43
+		     
+
+;
+
+@V 1 32 0
+SF_ESPE_V1_00_3	31	VAR	@FB:82
 		     
 
 ;

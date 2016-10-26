@@ -4,9 +4,6 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	diDoor3opened;
-	diOpenDoors3;
-	diCloseDoors3; 
 	 
 	CASE modePalletization OF
 		
@@ -29,4 +26,8 @@ PROGRAM _CYCLIC
 	Centering;
 	Roller;
 
+	//door logic
+	DoorLogic_3(doorLocked := diDoor3locked);
+	alarmImagePalletization[42] := NOT diDoor3locked;
+	
 END_PROGRAM

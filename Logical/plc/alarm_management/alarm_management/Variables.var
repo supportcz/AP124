@@ -6,9 +6,9 @@ VAR
 	diEStop4 : BOOL; (*emergency stop 4*)
 	diEStopRobot : BOOL; (*emergency stop - robot*)
 	diEStopWrapper : BOOL; (*emergency stop wrapper*)
-	palletizationEdmError : BOOL; (*1=power on*)
-	outfeedEdmError : BOOL; (*1=power on*)
-	magazineEdmError : BOOL; (*1=power on*)
 	i : INT;
+	magazineEdmError : BOOL; (*1=power on*)
+	outfeedEdmError : BOOL; (*1=power on*)
+	palletizationEdmError : BOOL; (*1=power on*)
 	safetyAlive : BOOL;
 END_VAR

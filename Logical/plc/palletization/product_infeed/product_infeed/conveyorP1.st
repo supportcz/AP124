@@ -14,8 +14,7 @@ ACTION ConveyorP1:
 			
 			//cmdRunConveyorP1 := FALSE;
 			acpI_P10.switchOn := TRUE;
-			acpI_P10.stop := TRUE;
-			acpI_P10.reset := TRUE;
+			acpI_P10.run := FALSE;
 			IF modePalletization <> modePalletizationNotReadyToStart THEN
 				stateConveyorP1 := stateConveyorWait;
 			END_IF
@@ -29,7 +28,7 @@ ACTION ConveyorP1:
 		
 		stateConveyorMoving:
 			
-			acpI_P10.stop := FALSE;	
+			acpI_P10.run := TRUE;	
 
 			IF modePalletization = modePalletizationAuto THEN
 				//pause?
@@ -49,7 +48,7 @@ ACTION ConveyorP1:
 		
 		stateConveyorPause:
 			
-			acpI_P10.stop := TRUE;
+			acpI_P10.run := FALSE;
 			
 			//wake up
 			IF TOF_TrayOnInputP1.Q THEN
@@ -64,7 +63,7 @@ ACTION ConveyorP1:
 			END_IF
 			
 			//wait till rotation is in correct place
-			acpI_P10.stop := TRUE;
+			acpI_P10.run := FALSE;
 			
 			IF dNextTray.turnTray THEN 
 				IF stateRotation = stateRotationForward THEN	
@@ -79,7 +78,7 @@ ACTION ConveyorP1:
 		stateConveyorMoveTrayFromP1toP2:
 			
 			//move tray from P1 to P2 
-			acpI_P10.stop := FALSE;
+			acpI_P10.run := TRUE;
 			
 			IF NOT TOF_TrayOnOutputP1.Q THEN
 				TON_TurnTray(IN:=FALSE);
@@ -89,7 +88,7 @@ ACTION ConveyorP1:
 		stateConveyorDelayForTurn:
 			
 			//time delay for turn
-			acpI_P10.stop := TRUE;
+			acpI_P10.run := FALSE;
 			
 			TON_TurnTray(IN:=TRUE, PT := dActualRecipe.timeDelayForTurn);
 			IF TON_TurnTray.Q OR stateRotation = stateRotationBack THEN	
@@ -99,7 +98,7 @@ ACTION ConveyorP1:
 		stateConveyorFillP1:
 		
 			//fill conveyor P1 
-			acpI_P10.stop := FALSE;	
+			acpI_P10.run := TRUE;	
 			
 			//pause?
 			IF NOT TOF_TrayOnInputP1.Q THEN
@@ -115,13 +114,6 @@ ACTION ConveyorP1:
 	
 	//control of ACOPOSinverter P14
 	acpI_P10();
-
-
-	
-	//edge alarms
-//	IF acknowledgeImagePalletization[19] THEN
-//		alarmImagePalletization[19] := FALSE;
-//	END_IF	
 
 
 END_ACTION
