@@ -234,15 +234,15 @@ PROGRAM _CYCLIC
 	END_IF
 
 	IF modePalletization = modePalletizationManual THEN
-		conveyorsStatusDatapointManual := 0;
+		palletizationStatusDatapointManu := 0;
 	ELSE
-		conveyorsStatusDatapointManual := 1;
+		palletizationStatusDatapointManu := 1;
 	END_IF
 
 	IF modePalletization = modePalletizationAuto THEN
-		conveyorsStatusDatapointAuto := 0;
+		palletizationStatusDatapointAuto := 0;
 	ELSE
-		conveyorsStatusDatapointAuto := 1;
+		palletizationStatusDatapointAuto := 1;
 	END_IF
 	
 	IF modeOutfeed = modeOutfeedManual THEN

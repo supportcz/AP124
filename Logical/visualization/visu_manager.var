@@ -7,8 +7,8 @@ VAR
 	magazineStatusDatapointManual : UINT;
 	outfeedStatusDatapointAuto : UINT;
 	outfeedStatusDatapointManual : UINT;
-	conveyorsStatusDatapointAuto : UINT;
-	conveyorsStatusDatapointManual : UINT;
+	palletizationStatusDatapointAuto : UINT;
+	palletizationStatusDatapointManu : UINT;
 END_VAR
 VAR RETAIN
 	ResetTime : DTStructure;
