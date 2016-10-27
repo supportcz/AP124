@@ -65,18 +65,36 @@
       <TextGroup>
         <TextLayer LanguageId="en">
           <Text ID="187730" Value=""/>
+          <Text ID="188023" Value="Product Infeed"/>
         </TextLayer>
         <TextLayer LanguageId="cs">
           <Text ID="187730" Value=""/>
+          <Text ID="188023" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="fr">
           <Text ID="187730" Value=""/>
+          <Text ID="188023" Value=""/>
         </TextLayer>
         <IndexMap>
           <Index ID="187730" Value="37"/>
+          <Index ID="188023" Value="27"/>
         </IndexMap>
       </TextGroup>
       <Controls>
+        <Control ClassId="0x00001005" Name="Bitmap_1">
+          <Property Name="Bitmap" Value="Source[local].Bitmap[RobotHeadImage]"/>
+          <Property Name="BitmapSource" Value="SingleBitmap"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="270"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="248"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="52"/>
+          <Property Name="Width" Value="514"/>
+        </Control>
         <Control ClassId="0x00001002" Name="Button_18">
           <Property Name="Bitmap" Value="Source[local].Bitmap[GreenArrowDown]"/>
           <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
@@ -88,7 +106,7 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="48"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="260"/>
+          <Property Name="Left" Value="271"/>
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[GreenArrowDown_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -97,7 +115,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="190"/>
+          <Property Name="Top" Value="132"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_111]"/>
           <Property Name="Width" Value="48"/>
         </Control>
@@ -112,7 +130,7 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="48"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="260"/>
+          <Property Name="Left" Value="272"/>
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[GreenArrowUp_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -123,7 +141,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="120"/>
+          <Property Name="Top" Value="66"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_112]"/>
           <Property Name="Width" Value="48"/>
         </Control>
@@ -158,7 +176,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="254"/>
+          <Property Name="Top" Value="210"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_143]"/>
           <Property Name="Width" Value="135"/>
         </Control>
@@ -182,7 +200,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="92"/>
+          <Property Name="Top" Value="70"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_144]"/>
           <Property Name="Width" Value="135"/>
         </Control>
@@ -207,7 +225,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="172"/>
+          <Property Name="Top" Value="140"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_145]"/>
           <Property Name="Width" Value="135"/>
         </Control>
@@ -232,7 +250,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="334"/>
+          <Property Name="Top" Value="280"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_147]"/>
           <Property Name="Width" Value="135"/>
         </Control>
@@ -247,7 +265,7 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="48"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="510"/>
+          <Property Name="Left" Value="494"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.magazineStatusDatapointManual]"/>
@@ -255,7 +273,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="330"/>
+          <Property Name="Top" Value="305"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_142]"/>
           <Property Name="Width" Value="48"/>
         </Control>
@@ -270,7 +288,7 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="48"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="570"/>
+          <Property Name="Left" Value="557"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.magazineStatusDatapointManual]"/>
@@ -278,12 +296,12 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="330"/>
+          <Property Name="Top" Value="305"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_146]"/>
           <Property Name="Width" Value="48"/>
         </Control>
         <Control ClassId="0x00001002" Name="Button_22">
-          <Property Name="Bitmap" Value="Source[local].Bitmap[LtBlueButtonClose]"/>
+          <Property Name="Bitmap" Value="Source[local].Bitmap[SuctionCupIn]"/>
           <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapIndexDatapoint" Value="None"/>
           <Property Name="BitmapSource" Value="SingleBitmap"/>
@@ -293,20 +311,21 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="48"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="290"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="Left" Value="494"/>
+          <Property Name="PressedBitmap" Value="Source[local].Bitmap[SuctionCupIn_pressed]"/>
+          <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.magazineStatusDatapointManual]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="330"/>
+          <Property Name="Top" Value="358"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_148]"/>
           <Property Name="Width" Value="48"/>
         </Control>
         <Control ClassId="0x00001002" Name="Button_23">
-          <Property Name="Bitmap" Value="Source[local].Bitmap[LtBlueButtonOpen]"/>
+          <Property Name="Bitmap" Value="Source[local].Bitmap[SuctionCupOut]"/>
           <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapIndexDatapoint" Value="None"/>
           <Property Name="BitmapSource" Value="SingleBitmap"/>
@@ -316,15 +335,16 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="48"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="360"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="Left" Value="557"/>
+          <Property Name="PressedBitmap" Value="Source[local].Bitmap[SuctionCupOut_pressed]"/>
+          <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.magazineStatusDatapointManual]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="330"/>
+          <Property Name="Top" Value="358"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_149]"/>
           <Property Name="Width" Value="48"/>
         </Control>
@@ -339,7 +359,7 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="48"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="600"/>
+          <Property Name="Left" Value="678"/>
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[GreenArrowRight_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -348,7 +368,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="160"/>
+          <Property Name="Top" Value="83"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_110]"/>
           <Property Name="Width" Value="48"/>
         </Control>
@@ -363,7 +383,7 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="48"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="490"/>
+          <Property Name="Left" Value="548"/>
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[GreenArrowRight_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -372,7 +392,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="250"/>
+          <Property Name="Top" Value="237"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_113]"/>
           <Property Name="Width" Value="48"/>
         </Control>
@@ -396,7 +416,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="250"/>
+          <Property Name="Top" Value="236"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_116]"/>
           <Property Name="Width" Value="48"/>
         </Control>
@@ -411,7 +431,7 @@
           <Property Name="ForeColor" Value="16"/>
           <Property Name="Height" Value="48"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="520"/>
+          <Property Name="Left" Value="607"/>
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[GreenArrowLeft_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -420,9 +440,34 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
-          <Property Name="Top" Value="160"/>
+          <Property Name="Top" Value="83"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_117]"/>
           <Property Name="Width" Value="48"/>
+        </Control>
+        <Control ClassId="0x00001002" Name="Button_7">
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_153]"/>
+          <Property Name="ForeColor" Value="16"/>
+          <Property Name="Height" Value="57"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="24"/>
+          <Property Name="Locking" Value="Datapoint &gt;= Level"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.palletizationStatusDatapointManu]"/>
+          <Property Name="LockingLevel" Value="1"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="27"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="350"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_153]"/>
+          <Property Name="Width" Value="135"/>
         </Control>
       </Controls>
       <KeyMapping>
@@ -627,6 +672,19 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="1"/>
               <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.robot_head.robot_head.centeringForward]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_153">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000160">
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="Page" Value="Source[local].Page[Page_23_ManualProductInfeed]"/>
+              <Property Name="Target" Value="Page"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

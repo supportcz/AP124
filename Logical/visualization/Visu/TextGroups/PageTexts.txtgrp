@@ -39,9 +39,10 @@
     <Text ID="180323" Value="Layout Settings"/>
     <Text ID="180324" Value="SafeLOGIC Download"/>
     <Text ID="180919" Value="Manual Mode - Conveyor 2 Control"/>
-    <Text ID="180920" Value=""/>
+    <Text ID="180920" Value="Manual Mode - Robot Head Control"/>
     <Text ID="185372" Value=""/>
     <Text ID="186142" Value=""/>
+    <Text ID="188025" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="cs">
     <Text ID="89135" Value=""/>
@@ -78,9 +79,10 @@
     <Text ID="180323" Value="Nastavení Vrsev"/>
     <Text ID="180324" Value="Stahnutí SafeLOGIC"/>
     <Text ID="180919" Value="Manuálny Mód - Ovládáni Dopravníku 2"/>
-    <Text ID="180920" Value=""/>
+    <Text ID="180920" Value="Manuálny Mód - Ovládání Hlavy Robota"/>
     <Text ID="185372" Value=""/>
     <Text ID="186142" Value=""/>
+    <Text ID="188025" Value=""/>
   </TextLayer>
   <TextLayer LanguageId="fr">
     <Text ID="89135" Value=""/>
@@ -120,6 +122,7 @@
     <Text ID="180920" Value=""/>
     <Text ID="185372" Value=""/>
     <Text ID="186142" Value=""/>
+    <Text ID="188025" Value=""/>
   </TextLayer>
   <IndexMap>
     <Index ID="89135" Value="6010"/>
@@ -159,5 +162,6 @@
     <Index ID="180920" Value="25"/>
     <Index ID="185372" Value="32"/>
     <Index ID="186142" Value="65"/>
+    <Index ID="188025" Value="26"/>
   </IndexMap>
 </TextGroup>

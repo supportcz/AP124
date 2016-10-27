@@ -84,6 +84,7 @@
           <Text ID="184343" Value="P21"/>
           <Text ID="184344" Value="P22"/>
           <Text ID="184353" Value="P18"/>
+          <Text ID="188021" Value="Robot head"/>
         </TextLayer>
         <TextLayer LanguageId="cs">
           <Text ID="181351" Value=""/>
@@ -93,6 +94,7 @@
           <Text ID="184343" Value="P21"/>
           <Text ID="184344" Value="P22"/>
           <Text ID="184353" Value="P18"/>
+          <Text ID="188021" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="fr">
           <Text ID="181351" Value=""/>
@@ -102,6 +104,7 @@
           <Text ID="184343" Value="P21"/>
           <Text ID="184344" Value="P22"/>
           <Text ID="184353" Value="P18"/>
+          <Text ID="188021" Value=""/>
         </TextLayer>
         <IndexMap>
           <Index ID="181351" Value="80"/>
@@ -111,6 +114,7 @@
           <Index ID="184343" Value="39"/>
           <Index ID="184344" Value="40"/>
           <Index ID="184353" Value="50"/>
+          <Index ID="188021" Value="23"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -253,7 +257,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="254"/>
+          <Property Name="Top" Value="210"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_42]"/>
           <Property Name="Width" Value="135"/>
         </Control>
@@ -277,7 +281,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="92"/>
+          <Property Name="Top" Value="70"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_125]"/>
           <Property Name="Width" Value="135"/>
         </Control>
@@ -302,7 +306,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="172"/>
+          <Property Name="Top" Value="140"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_46]"/>
           <Property Name="Width" Value="135"/>
         </Control>
@@ -327,7 +331,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="334"/>
+          <Property Name="Top" Value="280"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_135]"/>
           <Property Name="Width" Value="135"/>
         </Control>
@@ -573,6 +577,31 @@
           <Property Name="Top" Value="97"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_109]"/>
           <Property Name="Width" Value="40"/>
+        </Control>
+        <Control ClassId="0x00001002" Name="Button_8">
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_152]"/>
+          <Property Name="ForeColor" Value="16"/>
+          <Property Name="Height" Value="57"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="24"/>
+          <Property Name="Locking" Value="Datapoint &gt;= Level"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.palletizationStatusDatapointManu]"/>
+          <Property Name="LockingLevel" Value="1"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="23"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="350"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_152]"/>
+          <Property Name="Width" Value="135"/>
         </Control>
       </Controls>
       <KeyMapping>
@@ -843,6 +872,19 @@
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
               <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.wrapper.wrapper.cmdTurnToExitPosition]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_152">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000160">
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="Page" Value="Source[local].Page[Page_25_ManualRobotHead]"/>
+              <Property Name="Target" Value="Page"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
