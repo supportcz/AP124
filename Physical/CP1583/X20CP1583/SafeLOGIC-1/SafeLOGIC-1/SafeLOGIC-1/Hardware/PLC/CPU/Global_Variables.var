@@ -119,4 +119,16 @@ VAR_GLOBAL {Group(48)}
     doOutfeedContactor2 AT %QX18.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM7.SafeDigitalOutput02')};
     {LINE(56)}
     doOutfeedContactor1 AT %QX18.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM7.SafeDigitalOutput01')};
+    {LINE(57)}
+    doWrapperContactor1 AT %QX16.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM5.SafeDigitalOutput01')};
+    {LINE(58)}
+    doWrapperContactor2 AT %QX16.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM5.SafeDigitalOutput02')};
+    {LINE(59)}
+    diWrapperEDM AT %IX61.6 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM2.SafeDigitalInput15')};
+    {LINE(60)}
+    SM5_ReleaseOutput01 AT %QX22.0 : BOOL {Custom('SL1.SM5.ReleaseOutput01')};
+    {LINE(61)}
+    SM5_ReleaseOutput02 AT %QX22.1 : BOOL {Custom('SL1.SM5.ReleaseOutput02')};
+    {LINE(62)}
+    wrapperEdmError AT %QX0.7 : BOOL {Custom('SL1.SM1.BOOL008')};
 END_VAR

@@ -3,9 +3,9 @@ TYPE
 	StateTurnTable : 
 		(
 		stateTurnTableInit,
-		stateTurnTablePos1,
-		stateTurnTableMovingToPos2,
-		stateTurnTablePos2,
-		stateTurnTableMovingToPos1
+		stateTurnTableEntryPosition,
+		stateTurnTableMovingToExitPos,
+		stateTurnTableExitPosition,
+		stateTurnTableMovingToEntryPos
 		);
 END_TYPE

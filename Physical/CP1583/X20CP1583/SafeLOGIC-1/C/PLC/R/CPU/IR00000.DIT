@@ -2,9 +2,9 @@
 T: RESOURCE CPU
 FW: NO
 CI#: 0
-QSL: 53
-QVE: 53
-QVPC: 53
+QSL: 59
+QVE: 59
+QVPC: 59
 QPar: 0
 QFBI: 0
 *)
@@ -323,6 +323,42 @@ doOutfeedContactor2	52	VAR_GLOBAL	@TYP:43
 @V 1 57 0
 doOutfeedContactor1	53	VAR_GLOBAL	@TYP:43
 %SQX 18.0		     
+
+;
+
+@V 1 58 0
+doWrapperContactor1	54	VAR_GLOBAL	@TYP:43
+%SQX 16.0		     
+
+;
+
+@V 1 59 0
+doWrapperContactor2	55	VAR_GLOBAL	@TYP:43
+%SQX 16.1		     
+
+;
+
+@V 1 60 0
+diWrapperEDM	56	VAR_GLOBAL	@TYP:43
+%SIX 61.6		     
+
+;
+
+@V 1 61 0
+SM5_ReleaseOutput01	57	VAR_GLOBAL	@TYP:1
+%NSQX 22.0		     
+
+;
+
+@V 1 62 0
+SM5_ReleaseOutput02	58	VAR_GLOBAL	@TYP:1
+%NSQX 22.1		     
+
+;
+
+@V 1 63 0
+wrapperEdmError	59	VAR_GLOBAL	@TYP:1
+%NSQX 0.7		     
 
 ;
 

@@ -2,11 +2,11 @@
 T: PROGRAM Main
 FW: NO
 CI#: 80
-QSL: 31
-QVE: 31
-QVPC: 31
+QSL: 32
+QVE: 32
+QVPC: 32
 QPar: 0
-QFBI: 22
+QFBI: 23
 *)
 @V 1 1 0
 door13locked	1	VAR	@TYP:43
@@ -190,6 +190,12 @@ door2locked	30	VAR	@TYP:43
 
 @V 1 32 0
 SF_ESPE_V1_00_3	31	VAR	@FB:82
+		     
+
+;
+
+@V 1 33 0
+SF_EDM_V1_00_4	32	VAR	@FB:81
 		     
 
 ;

@@ -1,6 +1,21 @@
 PROGRAM _INIT
-	(* Insert code here *)
-	 
+	
+	diEntryFree;
+	diExitFree;
+	diWrappingFinished;
+	diWrapperInAuto;
+	diWrapperNoError;
+	diLowFoil;
+	diDoorCanBeOpened;
+	
+	doStartWrapping;
+	doNoExternalStop;
+	doSortiment1;
+	doSortiment2;
+	
+	diEntrySwitch;
+	diExitSwitch;
+	
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -47,6 +62,7 @@ PROGRAM _CYCLIC
 	alarmImageOutfeed[15] := NOT DoorLogic_2.diDoorLocked;
 	
 
+	alarmImageOutfeed[16] := wrapperEdmError;
 
 	
 	//sensor not reached

@@ -11,9 +11,9 @@ ACTION ConveyorP17:
 		
 		palletPresent:
 		
-//			IF cmdMovePalletP17 AND (statePalletP18 = palletNotPresent OR diReset) THEN
-//				statePalletP17 := palletMoving;
-//			END_IF	
+			IF cmdMovePalletP17 AND (statePalletP18 = palletNotPresent OR diReset) THEN
+				statePalletP17 := palletMoving;
+			END_IF	
 
 			acpI_P17.run := FALSE;
 

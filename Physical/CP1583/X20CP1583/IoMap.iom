@@ -110,7 +110,6 @@ VAR_CONFIG
 	::pallet_out:doConveyorP19 AT %QX."Q14".DigitalOutput05;
 	::pallet_out:doConveyorP21 AT %QX."Q14".DigitalOutput07;
 	::pallet_out:doConveyorP22 AT %QX."Q14".DigitalOutput08;
-	::pallet_con:diPalletStopP18 AT %IX."I80".DigitalInput07;
 	::wrapper:diPalletStopP19 AT %IX."I80".DigitalInput08;
 	::pallet_out:diPalletStopP20 AT %IX."I80".DigitalInput09;
 	::pallet_out:diPalletStopP21 AT %IX."I80".DigitalInput10;
@@ -145,7 +144,6 @@ VAR_CONFIG
 	::robot_head:doRollerClose AT %QX."Q12".DigitalOutput12;
 	::robot_head:diRollerOpened AT %IX."I110".DigitalInput01;
 	::robot_head:diRollerClosed AT %IX."I110".DigitalInput02;
-	::wrapper:acpI_P18_1.LFRD_Output AT %QW."U18.1".LFRD_Output;
 	::wrapper:acpI_P18_2.ETAD_Input AT %IW."U18.2".ETAD_Input;
 	::wrapper:acpI_P18_2.CMDD_Output AT %QW."U18.2".CMDD_Output;
 	::wrapper:acpI_P18_2.LFRD_Output AT %QW."U18.2".LFRD_Output;
@@ -153,4 +151,20 @@ VAR_CONFIG
 	::robot_head:DoorLogic_3.doUnlockDoors AT %QX."Q10".DigitalOutput05;
 	::wrapper:DoorLogic_2.doLED AT %QX."Q10".DigitalOutput04;
 	::robot_head:DoorLogic_3.doLED AT %QX."Q10".DigitalOutput06;
+	::wrapper:acpI_P18_1.LFRD_Output AT %QW."U18.1".LFR_Output;
+	::wrapper:diEntryFree AT %IX."I08".DigitalInput09;
+	::wrapper:diExitFree AT %IX."I08".DigitalInput10;
+	::wrapper:diWrappingFinished AT %IX."I08".DigitalInput11;
+	::wrapper:diWrapperInAuto AT %IX."I08".DigitalInput12;
+	::wrapper:diWrapperNoError AT %IX."I08".DigitalInput13;
+	::wrapper:diLowFoil AT %IX."I08".DigitalInput14;
+	::wrapper:diDoorCanBeOpened AT %IX."I08".DigitalInput15;
+	::wrapper:doStartWrapping AT %QX."Q16".DigitalOutput01;
+	wrapper:doNoExternalStop AT %QX."Q16".DigitalOutput02;
+	::wrapper:doSortiment1 AT %QX."Q16".DigitalOutput03;
+	::wrapper:doSortiment2 AT %QX."Q16".DigitalOutput04;
+	pallet_con:diPalletStopP18 AT %IX."I08".DigitalInput04;
+	::wrapper:diEntrySwitch AT %IX."I08".DigitalInput05;
+	::wrapper:diExitSwitch AT %IX."I08".DigitalInput06;
+	::wrapper:wrapperEdmError AT %IX."I18".BOOL008;
 END_VAR

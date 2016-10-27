@@ -9,9 +9,9 @@
 			<Channel Name="SafeTwoChannelInput0910" Mapping="SIX19.0" Variable="diEStop5" Address="pallet_mag:diEStop5" SODIndex="0x9999" SODSubIndex="0x4" />
 			<Channel Name="SafeTwoChannelInput1112" Mapping="SIX19.1" Variable="diEStopRobot" Address="alarm_mana:diEStopRobot" SODIndex="0x9999" SODSubIndex="0x4" />
 			<Channel Name="SafeTwoChannelInput1314" Mapping="SIX19.2" Variable="diEStopWrapper" Address="alarm_mana:diEStopWrapper" SODIndex="0x9999" SODSubIndex="0x4" />
-			<Channel Name="SafeTwoChannelInput1516" Mapping="SIX19.3" Variable="diDoor1locked" Address="alarm_mana:diDoor1locked" SODIndex="0x9999" SODSubIndex="0x4" />
-			<Channel Name="SafeTwoChannelInput1718" Mapping="SIX19.4" Variable="diDoor2locked" Address="alarm_mana:diDoor2locked" SODIndex="0x9999" SODSubIndex="0x4" />
-			<Channel Name="SafeTwoChannelInput1920" Mapping="SIX19.5" Variable="diDoor3locked" Address="alarm_mana:diDoor3locked" SODIndex="0x9999" SODSubIndex="0x4" />
+			<Channel Name="SafeTwoChannelInput1516" Mapping="SIX19.3" Variable="diDoor1locked" Address="product_in:DoorLogic_1.diDoorLocked" SODIndex="0x9999" SODSubIndex="0x4" />
+			<Channel Name="SafeTwoChannelInput1718" Mapping="SIX19.4" Variable="diDoor2locked" Address="wrapper:DoorLogic_2.diDoorLocked" SODIndex="0x9999" SODSubIndex="0x4" />
+			<Channel Name="SafeTwoChannelInput1920" Mapping="SIX19.5" Variable="diDoor3locked" Address="robot_head:DoorLogic_3.diDoorLocked" SODIndex="0x9999" SODSubIndex="0x4" />
 			<Channel Name="BOOL001" Mapping="NSQX0.0" Variable="safetyAlive" Address="alarm_mana:safetyAlive" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL002" Mapping="NSQX0.1" Variable="magazineEdmError" Address="alarm_mana:magazineEdmError" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL003" Mapping="NSQX0.2" Variable="palletizationEdmError" Address="alarm_mana:palletizationEdmError" SODIndex="0x2580" SODSubIndex="0x1" />
@@ -19,6 +19,7 @@
 			<Channel Name="BOOL005" Mapping="NSQX0.4" Variable="lightCurtainP11grey" Address="pallet_mag:lightCurtainP11" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL006" Mapping="NSQX0.5" Variable="lightCurtainP15grey" Address="pallet_con:lightCurtainP15" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL007" Mapping="NSQX0.6" Variable="lightCurtainP17grey" Address="outfeed_ma:lightCurtainP17" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL008" Mapping="NSQX0.7" Variable="wrapperEdmError" Address="wrapper:wrapperEdmError" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL101" Mapping="NSIX0.0" Variable="diActivateAllSafetyCircuits" Address="diActivateAllSafetyCircuits" SODIndex="0x2500" SODSubIndex="0x2" />
 			<Channel Name="BOOL102" Mapping="NSIX0.1" Variable="diActivateMagazineSafety" Address="pallet_mag:diActivateMagazineSafetyCircuits" SODIndex="0x2500" SODSubIndex="0x2" />
 		</Module>
@@ -32,6 +33,7 @@
 			<Channel Name="SafeDigitalInput10" Mapping="SIX61.1" Variable="diLightCurtainP17muting2" SODIndex="0x6000" SODSubIndex="0x2" />
 			<Channel Name="SafeDigitalInput11" Mapping="SIX61.2" Variable="diOverrideP15" SODIndex="0x6000" SODSubIndex="0x2" />
 			<Channel Name="SafeDigitalInput12" Mapping="SIX61.3" Variable="diOverrideP17" SODIndex="0x6000" SODSubIndex="0x2" />
+			<Channel Name="SafeDigitalInput15" Mapping="SIX61.6" Variable="diWrapperEDM" SODIndex="0x6000" SODSubIndex="0x2" />
 			<Channel Name="SafeDigitalInput17" Mapping="SIX62.0" Variable="diPalletizationEDM" Address="Cyclic#3.diPalletizationEDM" SODIndex="0x6000" SODSubIndex="0x3" />
 			<Channel Name="SafeDigitalInput18" Mapping="SIX62.1" Variable="diMagazineEDM" Address="Cyclic#3.diMagazineEDM" SODIndex="0x6000" SODSubIndex="0x3" />
 			<Channel Name="SafeDigitalInput19" Mapping="SIX62.2" Variable="diOutfeedEDM" Address="Cyclic#3.diOutfeedEDM" SODIndex="0x6000" SODSubIndex="0x3" />
@@ -45,7 +47,12 @@
 			<Channel Name="ReleaseOutput03" Mapping="NSQX20.2" Variable="SM3_ReleaseOutput03" SODIndex="0x6200" SODSubIndex="0x2" />
 		</Module>
 		<Module Name="SL1.SM4" Hardware="X20SO4110" SafeLogicID="1" SafeModuleID="4" SISize="1" SOSize="1" NSISize="1" NSOSize="1" SIOffset="69" SOOffset="15" NSIOffset="22" NSOOffset="21" ConnectionValidBitNumber="2" HWTypeCode="43" />
-		<Module Name="SL1.SM5" Hardware="X20SO4110" SafeLogicID="1" SafeModuleID="5" SISize="1" SOSize="1" NSISize="1" NSOSize="1" SIOffset="70" SOOffset="16" NSIOffset="23" NSOOffset="22" ConnectionValidBitNumber="3" HWTypeCode="43" />
+		<Module Name="SL1.SM5" Hardware="X20SO4110" SafeLogicID="1" SafeModuleID="5" SISize="1" SOSize="1" NSISize="1" NSOSize="1" SIOffset="70" SOOffset="16" NSIOffset="23" NSOOffset="22" ConnectionValidBitNumber="3" HWTypeCode="43" >
+			<Channel Name="SafeDigitalOutput01" Mapping="SQX16.0" Variable="doWrapperContactor1" SODIndex="0x6200" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalOutput02" Mapping="SQX16.1" Variable="doWrapperContactor2" SODIndex="0x6200" SODSubIndex="0x1" />
+			<Channel Name="ReleaseOutput01" Mapping="NSQX22.0" Variable="SM5_ReleaseOutput01" SODIndex="0x6200" SODSubIndex="0x2" />
+			<Channel Name="ReleaseOutput02" Mapping="NSQX22.1" Variable="SM5_ReleaseOutput02" SODIndex="0x6200" SODSubIndex="0x2" />
+		</Module>
 		<Module Name="SL1.SM6" Hardware="X20SO4110" SafeLogicID="1" SafeModuleID="6" SISize="1" SOSize="1" NSISize="1" NSOSize="1" SIOffset="71" SOOffset="17" NSIOffset="24" NSOOffset="23" ConnectionValidBitNumber="4" HWTypeCode="43" >
 			<Channel Name="SafeDigitalOutput01" Mapping="SQX17.0" Variable="doPalletizationContactor1" SODIndex="0x6200" SODSubIndex="0x1" />
 			<Channel Name="SafeDigitalOutput02" Mapping="SQX17.1" Variable="doPalletizationContactor2" SODIndex="0x6200" SODSubIndex="0x1" />

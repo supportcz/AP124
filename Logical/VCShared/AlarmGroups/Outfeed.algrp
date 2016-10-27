@@ -212,6 +212,18 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="16">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -243,6 +255,7 @@
       <Text ID="1114" Value="Motor protection P22"/>
       <Text ID="1305" Value="Drive U18.2 (turn table P18.2) error"/>
       <Text ID="1412" Value="Door 2 unlocked"/>
+      <Text ID="1435" Value="Wrapper EDM error"/>
       <Text ID="952" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -262,6 +275,7 @@
       <Text ID="1114" Value=""/>
       <Text ID="1305" Value=""/>
       <Text ID="1412" Value=""/>
+      <Text ID="1435" Value=""/>
       <Text ID="952" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -281,6 +295,7 @@
       <Text ID="1114" Value=""/>
       <Text ID="1305" Value=""/>
       <Text ID="1412" Value=""/>
+      <Text ID="1435" Value=""/>
       <Text ID="952" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -300,6 +315,7 @@
       <Index ID="1114" Value="13"/>
       <Index ID="1305" Value="14"/>
       <Index ID="1412" Value="15"/>
+      <Index ID="1435" Value="16"/>
       <Index ID="952" Value="Group"/>
     </IndexMap>
   </TextGroup>
