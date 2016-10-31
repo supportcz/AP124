@@ -38,7 +38,7 @@ PROGRAM _CYCLIC
 			
 			// control conveyors			
 			IF statePalletP19 <> palletNotPresent AND statePalletP20 = palletNotPresent THEN
-				cmdMovePalletP19 := TRUE;
+//				cmdMovePalletP19 := TRUE;
 			END_IF
 
 			IF statePalletP20 <> palletNotPresent AND statePalletP21 = palletNotPresent THEN

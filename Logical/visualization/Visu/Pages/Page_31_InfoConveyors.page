@@ -208,7 +208,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="27"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.statePalletP17]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP18]"/>
           <Property Name="Left" Value="147"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -225,7 +225,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="41"/>
-          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP19]"/>
           <Property Name="Left" Value="155"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -242,7 +242,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="41"/>
-          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP20]"/>
           <Property Name="Left" Value="155"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -259,7 +259,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="41"/>
-          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP21]"/>
           <Property Name="Left" Value="155"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -276,7 +276,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="41"/>
-          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP22]"/>
           <Property Name="Left" Value="155"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>

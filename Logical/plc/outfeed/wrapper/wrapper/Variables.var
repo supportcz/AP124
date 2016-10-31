@@ -3,24 +3,16 @@ VAR
 	acpI_P18_2 : AcpInoSdc;
 	cmdTurnToEntryPosition : BOOL;
 	cmdTurnToExitPosition : BOOL;
-	diDoorCanBeOpened : BOOL;
-	diEntryFree : BOOL;
+	conveyorP18speed : INT;
 	diEntrySwitch : BOOL;
-	diExitFree : BOOL;
 	diExitSwitch : BOOL;
-	diLowFoil : BOOL;
 	diPalletStopP19 : BOOL;
-	diWrapperNoError : BOOL;
-	diWrapperInAuto : BOOL;
-	diWrappingFinished : BOOL;
 	DoorLogic_2 : DoorLogic;
-	doSortiment1 : BOOL;
-	doSortiment2 : BOOL;
-	doStartWrapping : BOOL;
-	doNoExternalStop : BOOL;
 	TON_ConveyorP18 : TON;
 	TON_PalletStopP19 : TON;
 	turnTableSpeed : INT;
-	conveyorP18speed : INT;
 	wrapperEdmError : BOOL;
+	stateAuto : StateAuto;
+	dRecipes : REFERENCE TO Recipes;
+	dActualRecipe : REFERENCE TO Recipe;
 END_VAR

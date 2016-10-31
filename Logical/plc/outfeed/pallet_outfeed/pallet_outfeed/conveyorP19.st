@@ -4,7 +4,7 @@ ACTION ConveyorP19:
 		
 		palletNotPresent:
 
-			doConveyorP19 := (cmdMovePalletP19 AND (statePalletP20 = palletNotPresent OR diReset)) OR cmdMovePalletP18;
+			doConveyorP19 := (cmdMovePalletP19 AND (statePalletP20 = palletNotPresent OR diReset)) OR (cmdMovePalletP18 AND stateTurnTable = stateTurnTableExitPosition);
 			
 		palletPresent:	
 

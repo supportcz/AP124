@@ -12,6 +12,7 @@ TYPE
 		conveyorP2speed : INT;
 		timeAfterLastTrayInRow : TIME;
 		timeDelayForTurn : TIME;
+		wrapperSortiment : INT;
 		nbOfLayers : INT;
 		layer : ARRAY[0..9]OF INT;
 	END_STRUCT;

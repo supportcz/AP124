@@ -5,6 +5,17 @@ VAR
 	cmdMovePalletP18 : BOOL;
 	cmdOutfeedAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
 	cmdOutfeedManual : BOOL;
+	diWrapperDoorCanBeOpened : BOOL;
+	diWrapperEntryFree : BOOL;
+	diWrapperExitFree : BOOL;
+	diWrapperLowFoil : BOOL;
+	diWrapperInAuto : BOOL;
+	diWrapperNoError : BOOL;
+	diWrappingFinished : BOOL;
+	doWrapperNoExternalStop : BOOL;
+	doWrapperSortiment1 : BOOL;
+	doWrapperSortiment2 : BOOL;
+	doWrappingStart : BOOL;
 	modeZoneOutfeed : ModeZone;
 	modeZoneOutfeedOld : ModeZone;
 	statePalletP18 : StatePallet;

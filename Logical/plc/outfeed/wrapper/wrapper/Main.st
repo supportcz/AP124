@@ -1,20 +1,12 @@
 PROGRAM _INIT
 	
-	diEntryFree;
-	diExitFree;
-	diWrappingFinished;
-	diWrapperInAuto;
-	diWrapperNoError;
-	diLowFoil;
-	diDoorCanBeOpened;
+
+
+
+	diWrapperDoorCanBeOpened;
 	
-	doStartWrapping;
-	doNoExternalStop;
-	doSortiment1;
-	doSortiment2;
-	
-	diEntrySwitch;
-	diExitSwitch;
+
+
 	
 END_PROGRAM
 
@@ -30,21 +22,91 @@ PROGRAM _CYCLIC
 		modeZoneManual:
 			
 			IF modeZoneOutfeedOld <> modeZoneManual THEN
-				cmdMovePalletP18 := FALSE;
-
+				cmdMovePalletP18 := FALSE;			
 			END_IF
-
+			
+			doWrapperNoExternalStop := TRUE;
+			doWrappingStart := FALSE;
+			stateAuto := stateAutoUndefined;
+		
 		modeZoneAuto:
 	
+			IF adrRecipes = 0 THEN 
+				RETURN;
+			END_IF
+	
+			dRecipes ACCESS adrRecipes;
+			IF dRecipes.actualRecipeIndex < 0 OR dRecipes.actualRecipeIndex > 9 THEN
+				RETURN;
+			END_IF
+	
+			dActualRecipe ACCESS ADR(dRecipes.recipe[dRecipes.actualRecipeIndex]);
+			
+			doWrapperSortiment1 := dActualRecipe.wrapperSortiment.0;
+			doWrapperSortiment2 := dActualRecipe.wrapperSortiment.1;
+			
 			//stop sensor not reached
 			TON_ConveyorP18(IN := cmdMovePalletP18, PT := T#20s);
 			alarmImageOutfeed[4] := TON_ConveyorP18.Q;
 			
-			
-			
-			IF statePalletP18 <> palletNotPresent AND statePalletP19 = palletNotPresent THEN
-				cmdMovePalletP18 := TRUE;
-			END_IF
+			CASE stateAuto OF
+				
+				stateAutoUndefined:
+					
+					IF stateTurnTable = stateTurnTableEntryPosition THEN
+						stateAuto := stateAutoWait;
+					ELSE
+						stateAuto := stateAutoRemovePallet;
+					END_IF
+					
+				stateAutoWait:
+					
+					IF statePalletP18 = palletPresent AND stateTurnTable = stateTurnTableEntryPosition AND diWrapperInAuto THEN
+						stateAuto := stateAutoRun;
+					END_IF
+						
+				stateAutoRun:
+				
+					doWrappingStart := TRUE;
+				
+					IF diWrappingFinished THEN
+						stateAuto := stateAutoTurnToExitPosition;
+					END_IF
+				
+				stateAutoTurnToExitPosition:
+				
+					doWrappingStart := FALSE;
+					cmdTurnToExitPosition := TRUE;
+					stateAuto := stateAutoWaitForExitPosition;
+				
+				stateAutoWaitForExitPosition:
+				
+					IF stateTurnTable = stateTurnTableExitPosition THEN
+						stateAuto := stateAutoRemovePallet;
+					END_IF
+						
+				stateAutoRemovePallet:
+				
+					IF statePalletP18 <> palletNotPresent AND statePalletP19 = palletNotPresent AND stateTurnTable = stateTurnTableExitPosition AND diWrapperExitFree THEN
+						cmdMovePalletP18 := TRUE;
+					END_IF	
+				
+					IF statePalletP18 = palletNotPresent THEN
+						stateAuto := stateAutoTurnToEntryPosition;	
+					END_IF
+				
+				stateAutoTurnToEntryPosition:
+				
+					cmdTurnToEntryPosition := TRUE;
+					stateAuto := stateAutoWaitForEntryPosition;
+				
+				stateAutoWaitForEntryPosition:
+				
+					IF stateTurnTable = stateTurnTableEntryPosition THEN
+						stateAuto := stateAutoWait;
+					END_IF		
+						
+			END_CASE		
 
 			//unexpected pallet
 			IF TON_PalletStopP19.Q AND statePalletP19 = palletNotPresent AND NOT cmdMovePalletP18 THEN
@@ -63,7 +125,8 @@ PROGRAM _CYCLIC
 	
 
 	alarmImageOutfeed[16] := wrapperEdmError;
-
+	alarmImageOutfeed[17] := NOT diWrapperNoError;
+	alarmImageOutfeed[18] := diWrapperLowFoil;
 	
 	//sensor not reached
 	IF acknowledgeImageOutfeed[4] THEN

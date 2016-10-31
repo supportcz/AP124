@@ -70,7 +70,7 @@ PROGRAM _CYCLIC
 				cmdMovePalletP16 := TRUE;
 			END_IF
 
-			IF statePalletP17 <> palletNotPresent AND statePalletP18 = palletNotPresent THEN
+			IF statePalletP17 <> palletNotPresent AND statePalletP18 = palletNotPresent AND stateTurnTable = stateTurnTableEntryPosition AND diWrapperEntryFree THEN
 				cmdMovePalletP17 := TRUE;
 			END_IF
 		
@@ -90,7 +90,7 @@ PROGRAM _CYCLIC
 			IF TON_PalletStopP17.Q AND statePalletP17 = palletNotPresent AND NOT cmdMovePalletP16 THEN
 				alarmImagePalletization[4] := TRUE;
 			END_IF	
-			IF TON_PalletStopP18.Q AND statePalletP18 = palletNotPresent AND NOT cmdMovePalletP17 THEN
+			IF TON_PalletStopP18.Q AND statePalletP18 = palletNotPresent AND NOT cmdMovePalletP17 AND stateTurnTable = stateTurnTableEntryPosition THEN
 				alarmImagePalletization[31] := TRUE;
 			END_IF	
 		

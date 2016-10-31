@@ -3,12 +3,20 @@ ACTION ConveyorP18:
 	acpI_P18_1.switchOn := TRUE;
 	conveyorP18speed := 500;
 	
+	IF stateTurnTable = stateTurnTableEntryPosition THEN
+		acpI_P18_1.speed := conveyorP18speed;
+	END_IF
+
+	IF stateTurnTable = stateTurnTableExitPosition THEN
+		acpI_P18_1.speed := -conveyorP18speed;
+	END_IF
+
+		
 	CASE statePalletP18 OF
 		
 		palletNotPresent:
 			
-			acpI_P18_1.speed := conveyorP18speed;
-			acpI_P18_1.run := (cmdMovePalletP18 AND (statePalletP18 = palletNotPresent OR diReset)) OR cmdMovePalletP17;
+			acpI_P18_1.run := (cmdMovePalletP18 AND (statePalletP18 = palletNotPresent OR diReset)) OR (cmdMovePalletP17 AND stateTurnTable = stateTurnTableEntryPosition);
 		
 		palletPresent:
 		
@@ -27,7 +35,6 @@ ACTION ConveyorP18:
 				cmdMovePalletP18 := FALSE;
 			END_IF	
 
-			acpI_P18_1.speed := -conveyorP18speed;
 			acpI_P18_1.run := cmdMovePalletP18 AND (stateTurnTable = stateTurnTableExitPosition);
 			
 	END_CASE

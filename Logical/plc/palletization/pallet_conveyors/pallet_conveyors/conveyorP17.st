@@ -7,7 +7,7 @@ ACTION ConveyorP17:
 		
 		palletNotPresent:
 			
-			acpI_P17.run := (cmdMovePalletP17 AND (statePalletP18 = palletNotPresent OR diReset)) OR cmdMovePalletP16;
+			acpI_P17.run := (cmdMovePalletP17 AND (statePalletP18 = palletNotPresent OR diReset) AND stateTurnTable = stateTurnTableEntryPosition) OR cmdMovePalletP16;
 		
 		palletPresent:
 		
