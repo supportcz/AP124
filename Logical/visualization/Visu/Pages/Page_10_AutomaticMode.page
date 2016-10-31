@@ -5,7 +5,7 @@
   <Property Name="Height" Value="480"/>
   <Property Name="Index" Value="10"/>
   <Property Name="MoveFocus" Value="Circular"/>
-  <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+  <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
   <Property Name="Width" Value="800"/>
   <Layers>
     <LayerRef Source="Source[local].Layer[MpBackground]">
@@ -262,7 +262,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.cmdManual]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.cmdManual]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

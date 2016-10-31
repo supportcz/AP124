@@ -3,6 +3,12 @@ PROGRAM _INIT
 	PageControl := ButtonAutomaticMode;
 	uiHandle := 0;
 	gVisu.LanguageLayer := 1;
+	StatusDatapointCmdAuto := 0;
+	StatusDatapointCmdManual := 1;
+	StatusDatapointCmdAutoPM := 0;
+	StatusDatapointCmdManualPM := 1;
+	StatusDatapointCmdAutoOF := 0;
+	StatusDatapointCmdManualOF := 1;
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -61,12 +67,7 @@ PROGRAM _CYCLIC
 			PageControl := Idle;
 		Idle:
 	END_CASE;
-	
-	IF (gVisu.CurrentPage = 11) THEN
-		gVisu.InfoLock := 24576;
-	ELSE
-		gVisu.InfoLock := 8194;
-	END_IF;
+
 	
 	IF (ButtonColor <> 3) AND alarmPresent THEN
 		gVisu.TON_0(IN := TRUE, PT := ALARM_BLINK);
@@ -82,6 +83,16 @@ PROGRAM _CYCLIC
 		gVisu.TON_0(IN := FALSE, PT := ALARM_BLINK);
 	END_IF;
  	
+	(***************************************************************************)
+	(* 					Locking Infos/Automatic Mode - START			  	   *)
+	(***************************************************************************)
+	
+	IF (gVisu.CurrentPage = 11) AND (StatusDatapointCmdAutoPM = 0) THEN
+		gVisu.InfoLock := 24576;
+	ELSE
+		gVisu.InfoLock := 8194;
+	END_IF;
+	
 	(***************************************************************************)
 	(* 							Robot Layout DropDown					  	   *)
 	(***************************************************************************)
@@ -269,6 +280,88 @@ PROGRAM _CYCLIC
 			ButtonResetTime := 1;
 		ELSE ButtonResetTime := 0;
 		END_IF;
+	END_IF;
+	
+	(***************************************************************************)
+	(* 						Automatic Mode - START button Logic		  		   *)
+	(***************************************************************************)
+		
+	//all to auto or manual
+	IF EDGEPOS(cmdAuto) THEN
+		cmdMagazineAuto := TRUE;
+		cmdPalletizationAuto := TRUE;
+		cmdOutfeedAuto := TRUE;
+		StatusDatapointCmdManual := 0;
+		StatusDatapointCmdAuto := 1;
+		StatusDatapointCmdAutoOF := 1;
+		StatusDatapointCmdManualOF := 0;
+		StatusDatapointCmdAutoPM := 1;
+		StatusDatapointCmdManualPM := 0;
+		gVisu.ChangePage := 10;
+	END_IF
+
+	IF EDGENEG(cmdAuto) THEN
+		cmdMagazineAuto := FALSE;
+		cmdPalletizationAuto := FALSE;
+		cmdOutfeedAuto := FALSE;
+	END_IF
+
+	IF EDGEPOS(cmdManual) THEN
+		cmdMagazineManual := TRUE;
+		cmdPalletizationManual := TRUE;
+		cmdOutfeedManual := TRUE;
+		StatusDatapointCmdManual := 1;
+		StatusDatapointCmdAuto := 0;
+		StatusDatapointCmdAutoOF := 0;
+		StatusDatapointCmdManualOF := 1;
+		StatusDatapointCmdAutoPM := 0;
+		StatusDatapointCmdManualPM := 1;
+	END_IF
+
+	IF EDGENEG(cmdManual) THEN
+		cmdMagazineManual := FALSE;
+		cmdPalletizationManual := FALSE;
+		cmdOutfeedManual := FALSE;
+	END_IF
+
+	//palletization t auto or manual
+	IF EDGEPOS(cmdAutoPM) THEN
+		cmdMagazineAuto := TRUE;
+		cmdPalletizationAuto := TRUE;
+		StatusDatapointCmdAutoPM := 1;
+		StatusDatapointCmdManualPM := 0;
+	END_IF
+
+	IF EDGENEG(cmdAutoPM) THEN
+		cmdMagazineAuto := FALSE;
+		cmdPalletizationAuto := FALSE;
+	END_IF
+
+	IF EDGEPOS(cmdManualPM) THEN
+		cmdMagazineManual := TRUE;
+		cmdPalletizationManual := TRUE;
+		StatusDatapointCmdAutoPM := 0;
+		StatusDatapointCmdManualPM := 1;
+	END_IF
+
+	IF EDGENEG(cmdManualPM) THEN
+		cmdMagazineManual := FALSE;
+		cmdPalletizationManual := FALSE;
+	END_IF
+	
+	IF EDGEPOS(cmdOutfeedAuto) THEN
+		StatusDatapointCmdAutoOF := 1;
+		StatusDatapointCmdManualOF := 0;
+	END_IF
+	
+	IF EDGEPOS(cmdOutfeedManual) THEN
+		StatusDatapointCmdAutoOF := 0;
+		StatusDatapointCmdManualOF := 1;
+	END_IF
+	
+	IF StatusDatapointCmdAutoOF = 1 AND StatusDatapointCmdAutoPM = 1 THEN
+		StatusDatapointCmdManual := 0;
+		StatusDatapointCmdAuto := 1;
 	END_IF;
 	
 END_PROGRAM

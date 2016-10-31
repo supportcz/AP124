@@ -16,4 +16,14 @@ VAR
 	PalletStatus : ARRAY[12..22] OF BOOL;
 	DTStructureGetTime_0 : DTStructureGetTime;
 	ButtonResetTime : UINT;
+	cmdAuto : BOOL;
+	cmdManual : BOOL;
+	cmdAutoPM : BOOL;
+	cmdManualPM : BOOL;
+	StatusDatapointCmdManualPM : UINT;
+	StatusDatapointCmdAutoPM : UINT;
+	StatusDatapointCmdManual : UINT;
+	StatusDatapointCmdAuto : UINT;
+	StatusDatapointCmdManualOF : UINT;
+	StatusDatapointCmdAutoOF : UINT;
 END_VAR

@@ -1,8 +1,6 @@
 VAR
 	actualLayerIndex : INT;
 	actualTrayIndex : INT;
-	cmdAuto : BOOL;
-	cmdManual : BOOL;
 	dActualLayout : REFERENCE TO Layout;
 	dActualLayoutIndex : REFERENCE TO INT;
 	dActualRecipe : REFERENCE TO Recipe;
@@ -14,6 +12,4 @@ VAR
 	statusMessageMagazine : INT;
 	statusMessageOutfeed : INT;
 	statusMessagePalletization : INT;
-	cmdAutoPM : BOOL;
-	cmdManualPM : BOOL;
 END_VAR

@@ -120,6 +120,7 @@
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Button_Green_Pressed]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.StatusDatapointCmdAutoPM]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndex" Value="24"/>
@@ -148,6 +149,7 @@
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Button_Red_Pressed]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.StatusDatapointCmdManualPM]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndex" Value="26"/>
@@ -176,6 +178,7 @@
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Button_Green_Pressed]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.StatusDatapointCmdAutoOF]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndex" Value="28"/>
@@ -204,6 +207,7 @@
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Button_Red_Pressed]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.StatusDatapointCmdManualOF]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndex" Value="30"/>
@@ -232,6 +236,7 @@
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Button_Green_Pressed]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.StatusDatapointCmdAuto]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndex" Value="32"/>
@@ -260,6 +265,7 @@
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Button_Red_Pressed]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.StatusDatapointCmdManual]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndex" Value="34"/>
@@ -330,7 +336,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.cmdAutoPM]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.cmdAutoPM]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -346,7 +352,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.cmdManualPM]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.cmdManualPM]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -394,7 +400,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.cmdAuto]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.cmdAuto]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -410,7 +416,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_roman.cmdManual]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.cmdManual]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
