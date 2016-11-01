@@ -15,4 +15,5 @@ VAR
 	stateAuto : StateAuto;
 	dRecipes : REFERENCE TO Recipes;
 	dActualRecipe : REFERENCE TO Recipe;
+	TON_Wrapper : TON;
 END_VAR

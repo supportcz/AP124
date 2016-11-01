@@ -3,7 +3,6 @@ VAR
 	cmdDown : BOOL; (*VISU: button to go with magazine down*)
 	cmdUp : BOOL; (*VISU: go with magazine down*)
 	diActivateMagazineSafetyCircuits : BOOL; (*magazine:3 funkce v 1 (reset safety+ovladaci obvody + start automatu pokud jede paletizace)*)
-	diEStop5 : BOOL; (*emergency stop 5*)
 	diLeftArmClosed : BOOL; (*left arm is closed*)
 	diLeftArmOpened : BOOL; (*left arm is opened*)
 	diMagazineLooseChain : BOOL; (*lower HW end switch*)

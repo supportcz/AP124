@@ -16,7 +16,7 @@
     <Task Name="wrapper" Source="plc.outfeed.wrapper.wrapper.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="pallet_out" Source="plc.outfeed.pallet_outfeed.pallet_outfeed.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="alarm_mana" Source="plc.alarm_management.alarm_management.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="safety" Source="safety.safety.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="misc" Source="misc.misc.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#4">
     <Task Name="visu_manag" Source="visualization.visu_manager.prg" Memory="UserROM" Language="IEC" Debugging="true" />

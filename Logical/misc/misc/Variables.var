@@ -1,9 +1,17 @@
 VAR
 	doLedOn : BOOL; (*LED indicator on main cabinet*)
 	doLedOff : BOOL; (*LED indicator on main cabinet*)
+	MTBasicsPWM_2 : MTBasicsPWM;
+	MTBasicsPWM_1 : MTBasicsPWM;
 	MTBasicsPWM_0 : MTBasicsPWM;
-	sum : INT;
+	sumEDM : INT;
 	doSafetyCurtainSupplyP15 : BOOL;
 	doSafetyCurtainSupplyP17 : BOOL;
 	doSafetyCurtainSupplyP11 : BOOL;
+	doSignColumnGreen : BOOL;
+	doSignColumnOrange : BOOL;
+	doSignColumnRed : BOOL;
+	doSignColumnHorn : BOOL;
+	sumAuto : INT;
+	bypassHorn : BOOL;
 END_VAR

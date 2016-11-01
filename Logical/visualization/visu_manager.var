@@ -3,12 +3,6 @@ VAR
 	PageControl : PageControl_enum;
 	RecipeNames : ARRAY[0..9] OF STRING[80];
 	PasswordManagment : PasswordManagment_enum;
-	magazineStatusDatapointAuto : UINT;
-	magazineStatusDatapointManual : UINT;
-	outfeedStatusDatapointAuto : UINT;
-	outfeedStatusDatapointManual : UINT;
-	palletizationStatusDatapointAuto : UINT;
-	palletizationStatusDatapointManu : UINT;
 END_VAR
 VAR RETAIN
 	ResetTime : DTStructure;

@@ -102,7 +102,7 @@
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="24"/>
           <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.magazineStatusDatapointManual]"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.magazineStatusDatapointManual]"/>
           <Property Name="LockingLevel" Value="1"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -127,7 +127,7 @@
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="24"/>
           <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.palletizationStatusDatapointManu]"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="LockingLevel" Value="1"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -191,7 +191,7 @@
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="24"/>
           <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.palletizationStatusDatapointManu]"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="LockingLevel" Value="1"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -216,7 +216,7 @@
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="24"/>
           <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.outfeedStatusDatapointManual]"/>
           <Property Name="LockingLevel" Value="1"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -255,7 +255,7 @@
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="24"/>
           <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.palletizationStatusDatapointManu]"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="LockingLevel" Value="1"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -306,7 +306,7 @@
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="443"/>
           <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.palletizationStatusDatapointManu]"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="LockingLevel" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="0"/>
@@ -334,7 +334,7 @@
           <Property Name="Height" Value="81"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="402"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.palletizationStatusDatapointManu]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="142"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_19]"/>
@@ -348,7 +348,7 @@
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="662"/>
           <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.magazineStatusDatapointManual]"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.magazineStatusDatapointManual]"/>
           <Property Name="LockingLevel" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="129"/>
@@ -376,7 +376,7 @@
           <Property Name="Height" Value="300"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="300"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.outfeedStatusDatapointManual]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="115"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_20]"/>
@@ -403,7 +403,7 @@
           <Property Name="Height" Value="47"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="443"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.palletizationStatusDatapointManu]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="93"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_49]"/>

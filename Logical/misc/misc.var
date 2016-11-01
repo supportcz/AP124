@@ -1,3 +1,6 @@
+VAR CONSTANT
+	release : BOOL := FALSE;
+END_VAR
 VAR
 	diActivateAllSafetyCircuits : BOOL; (*button on main cabinet to activate all safety circuits*)
 	diMagazineEDM : BOOL; (*magazine safety zone: 0...contactor switched on*)

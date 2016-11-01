@@ -114,7 +114,7 @@
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[GreenArrowDown_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.palletizationStatusDatapointManu]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
@@ -138,7 +138,7 @@
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[GreenArrowUp_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.palletizationStatusDatapointManu]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndex" Value="37"/>
@@ -170,7 +170,7 @@
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="24"/>
           <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.palletizationStatusDatapointManu]"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="LockingLevel" Value="1"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -219,7 +219,7 @@
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="24"/>
           <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.magazineStatusDatapointManual]"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.magazineStatusDatapointManual]"/>
           <Property Name="LockingLevel" Value="1"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -244,7 +244,7 @@
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="24"/>
           <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.outfeedStatusDatapointManual]"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.outfeedStatusDatapointManual]"/>
           <Property Name="LockingLevel" Value="1"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -272,7 +272,7 @@
           <Property Name="Left" Value="409"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.magazineStatusDatapointManual]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
@@ -295,7 +295,7 @@
           <Property Name="Left" Value="472"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.magazineStatusDatapointManual]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
@@ -319,7 +319,7 @@
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[SuctionCupIn_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.magazineStatusDatapointManual]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
@@ -343,7 +343,7 @@
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[SuctionCupInStop_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.magazineStatusDatapointManual]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
@@ -367,7 +367,7 @@
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[GreenArrowRight_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.palletizationStatusDatapointManu]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
@@ -391,7 +391,7 @@
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[GreenArrowRight_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.palletizationStatusDatapointManu]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
@@ -415,7 +415,7 @@
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[GreenArrowLeft_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.palletizationStatusDatapointManu]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
@@ -439,7 +439,7 @@
           <Property Name="PressedBitmap" Value="Source[local].Bitmap[GreenArrowLeft_pressed]"/>
           <Property Name="PressedBitmapSource" Value="SingleBitmap"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.palletizationStatusDatapointManu]"/>
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
@@ -459,7 +459,7 @@
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="24"/>
           <Property Name="Locking" Value="Datapoint &gt;= Level"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.palletizationStatusDatapointManu]"/>
+          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.visualization.visu_manager.palletizationStatusDatapointManu]"/>
           <Property Name="LockingLevel" Value="1"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -642,7 +642,7 @@
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="SetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
               <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.robot_head.robot_head.centeringForward]"/>
             </KeyAction>
           </KeyActions>
@@ -659,7 +659,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.robot_head.robot_head.cmdRollerOpen]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.robot_head.robot_head.cmdRollerClose]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -675,7 +675,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.robot_head.robot_head.cmdRollerClose]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.robot_head.robot_head.cmdRollerOpen]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -689,7 +689,7 @@
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="SetValue" Value="1"/>
+              <Property Name="SetValue" Value="0"/>
               <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.robot_head.robot_head.centeringForward]"/>
             </KeyAction>
           </KeyActions>

@@ -5,4 +5,5 @@ VAR
 	cpuIsSimulated : BOOL;
 	diAirPresureOK : BOOL; (*VISU: 1...air pressure OK*)
 	diReset : BOOL; (*acknowledges all errors*)
+	alarmPresent : BOOL;
 END_VAR

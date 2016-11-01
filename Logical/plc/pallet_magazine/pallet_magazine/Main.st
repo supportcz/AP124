@@ -158,8 +158,6 @@ PROGRAM _CYCLIC
 	
 	TP_Start(IN := diActivateMagazineSafetyCircuits AND modeZonePalletization = modeZoneAuto, PT := T#1s);
 
-	alarmImageMagazine[12] := NOT diEStop5;
-
 	alarmImageMagazine[1] := NOT lightCurtainP11;
 	alarmImageMagazine[6] := NOT diMotorProtectionP11;
 	

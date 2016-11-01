@@ -11,4 +11,5 @@ VAR
 	outfeedEdmError : BOOL; (*1=power on*)
 	palletizationEdmError : BOOL; (*1=power on*)
 	safetyAlive : BOOL;
+	diEStop5 : BOOL;
 END_VAR

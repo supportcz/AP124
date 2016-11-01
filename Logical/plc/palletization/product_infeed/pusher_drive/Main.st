@@ -17,7 +17,7 @@ PROGRAM _INIT
 	pusherDrive.positions[1] := 925;
 	pusherDrive.positions[2] := 1360;
 	pusherDrive.positions[3] := 1650;
-	pusherDrive.positions[4] := 1870;
+	pusherDrive.positions[4] := 1930;
 	pusherDrive.positions[5] := 2000;//FI_12.init.positiveSwLimit-tolerance;
 	pusherDrive.speed := 500;
 	 

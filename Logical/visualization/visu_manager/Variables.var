@@ -2,7 +2,6 @@ VAR
 	ButtonColor : UINT;
 	ButtonAlarmColor : BOOL;
 	uiHandle : UDINT;
-	alarmPresent : BOOL;
 	uiStatus : UINT;
 	ButtonColor_tmp : UINT;
 END_VAR
@@ -20,10 +19,10 @@ VAR
 	cmdManual : BOOL;
 	cmdAutoPM : BOOL;
 	cmdManualPM : BOOL;
-	StatusDatapointCmdManualPM : UINT;
-	StatusDatapointCmdAutoPM : UINT;
-	StatusDatapointCmdManual : UINT;
-	StatusDatapointCmdAuto : UINT;
-	StatusDatapointCmdManualOF : UINT;
-	StatusDatapointCmdAutoOF : UINT;
+	magazineStatusDatapointAuto : UINT;
+	magazineStatusDatapointManual : UINT;
+	outfeedStatusDatapointAuto : UINT;
+	outfeedStatusDatapointManual : UINT;
+	palletizationStatusDatapointAuto : UINT;
+	palletizationStatusDatapointManu : UINT;
 END_VAR

@@ -62,9 +62,17 @@ PROGRAM _CYCLIC
 				stateAutoWait:
 					
 					IF statePalletP18 = palletPresent AND stateTurnTable = stateTurnTableEntryPosition AND diWrapperInAuto THEN
-						stateAuto := stateAutoRun;
+						TON_Wrapper(IN:=FALSE);
+						stateAuto := stateAutoWait2;
 					END_IF
 						
+				stateAutoWait2:
+					
+					TON_Wrapper(IN:=TRUE, PT:=T#2s);
+					IF TON_Wrapper.Q THEN
+						stateAuto := stateAutoRun;
+					END_IF						
+				
 				stateAutoRun:
 				
 					doWrappingStart := TRUE;
@@ -127,6 +135,7 @@ PROGRAM _CYCLIC
 	alarmImageOutfeed[16] := wrapperEdmError;
 	alarmImageOutfeed[17] := NOT diWrapperNoError;
 	alarmImageOutfeed[18] := diWrapperLowFoil;
+	alarmImageOutfeed[19] := NOT diWrapperInAuto;
 	
 	//sensor not reached
 	IF acknowledgeImageOutfeed[4] THEN

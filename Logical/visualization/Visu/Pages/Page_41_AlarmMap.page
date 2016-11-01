@@ -1471,7 +1471,7 @@
           <Property Name="StartY" Value="63"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_3">
+        <Control ClassId="0x00001005" Name="magazine6">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1480,13 +1480,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[16]]"/>
-          <Property Name="Left" Value="520"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="560"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="189"/>
+          <Property Name="Top" Value="160"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_4">
+        <Control ClassId="0x00001005" Name="magazine9">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1496,12 +1496,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[9]]"/>
           <Property Name="Left" Value="521"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="188"/>
+          <Property Name="Top" Value="160"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_5">
+        <Control ClassId="0x00001005" Name="magazine15">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1510,13 +1510,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[15]]"/>
-          <Property Name="Left" Value="522"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="540"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="189"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_6">
+        <Control ClassId="0x00001005" Name="magazine4">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1526,12 +1526,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[4]]"/>
           <Property Name="Left" Value="560"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="188"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_7">
+        <Control ClassId="0x00001005" Name="magazine10">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1540,13 +1540,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[10]]"/>
-          <Property Name="Left" Value="521"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="560"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="188"/>
+          <Property Name="Top" Value="160"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_8">
+        <Control ClassId="0x00001005" Name="magazine8">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1556,12 +1556,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[8]]"/>
           <Property Name="Left" Value="521"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="188"/>
+          <Property Name="Top" Value="160"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_9">
+        <Control ClassId="0x00001005" Name="magazine7">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1571,12 +1571,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[7]]"/>
           <Property Name="Left" Value="521"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="188"/>
+          <Property Name="Top" Value="160"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_10">
+        <Control ClassId="0x00001005" Name="magazine5">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1585,13 +1585,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[5]]"/>
-          <Property Name="Left" Value="482"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="520"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="173"/>
+          <Property Name="Top" Value="190"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_11">
+        <Control ClassId="0x00001005" Name="magazine2">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1600,13 +1600,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[2]]"/>
-          <Property Name="Left" Value="482"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="560"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="173"/>
+          <Property Name="Top" Value="190"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_12">
+        <Control ClassId="0x00001005" Name="magazine1">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1615,13 +1615,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[1]]"/>
-          <Property Name="Left" Value="560"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="530"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="188"/>
+          <Property Name="Top" Value="240"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_13">
+        <Control ClassId="0x00001005" Name="magazine0">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1631,12 +1631,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[0]]"/>
           <Property Name="Left" Value="520"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="165"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_14">
+        <Control ClassId="0x00001005" Name="magazine13">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1645,13 +1645,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[13]]"/>
-          <Property Name="Left" Value="521"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="540"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="189"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_15">
+        <Control ClassId="0x00001005" Name="magazine11">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1660,13 +1660,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[11]]"/>
-          <Property Name="Left" Value="521"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="560"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="189"/>
+          <Property Name="Top" Value="160"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_16">
+        <Control ClassId="0x00001005" Name="palletization0">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1676,12 +1676,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[0]]"/>
           <Property Name="Left" Value="465"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="157"/>
+          <Property Name="Top" Value="160"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_17">
+        <Control ClassId="0x00001005" Name="palletization1">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1691,12 +1691,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[1]]"/>
           <Property Name="Left" Value="287"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="190"/>
+          <Property Name="Top" Value="160"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_18">
+        <Control ClassId="0x00001005" Name="palletization2">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1706,12 +1706,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[2]]"/>
           <Property Name="Left" Value="406"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="158"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_19">
+        <Control ClassId="0x00001005" Name="palletization3">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1721,12 +1721,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[3]]"/>
           <Property Name="Left" Value="288"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="160"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_20">
+        <Control ClassId="0x00001005" Name="palletization4">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1735,13 +1735,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[4]]"/>
-          <Property Name="Left" Value="233"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="220"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="190"/>
+          <Property Name="Top" Value="160"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_21">
+        <Control ClassId="0x00001005" Name="palletization6">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1751,27 +1751,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[6]]"/>
           <Property Name="Left" Value="220"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="159"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_22">
-          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
-          <Property Name="BitmapIndex" Value="0"/>
-          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="FillStyle" Value="Transparent"/>
-          <Property Name="Height" Value="19"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[0]]"/>
-          <Property Name="Left" Value="345"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="159"/>
-          <Property Name="Width" Value="16"/>
-        </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_23">
+        <Control ClassId="0x00001005" Name="palletization9">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1781,12 +1766,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[9]]"/>
           <Property Name="Left" Value="463"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="190"/>
+          <Property Name="Top" Value="160"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_24">
+        <Control ClassId="0x00001005" Name="palletization10">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1796,12 +1781,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[10]]"/>
           <Property Name="Left" Value="405"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="190"/>
+          <Property Name="Top" Value="160"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_25">
+        <Control ClassId="0x00001005" Name="palletization11">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1811,12 +1796,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[11]]"/>
           <Property Name="Left" Value="350"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="191"/>
+          <Property Name="Top" Value="160"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_26">
+        <Control ClassId="0x00001005" Name="palletization16">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1826,12 +1811,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[16]]"/>
           <Property Name="Left" Value="409"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="39"/>
+          <Property Name="Top" Value="40"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_27">
+        <Control ClassId="0x00001005" Name="palletization17">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1841,12 +1826,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[17]]"/>
           <Property Name="Left" Value="409"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="39"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_28">
+        <Control ClassId="0x00001005" Name="palletization19">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1856,12 +1841,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[19]]"/>
           <Property Name="Left" Value="356"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="35"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_29">
+        <Control ClassId="0x00001005" Name="palletization20">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1871,12 +1856,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[20]]"/>
           <Property Name="Left" Value="356"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="35"/>
+          <Property Name="Top" Value="40"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_30">
+        <Control ClassId="0x00001005" Name="palletization21">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1886,12 +1871,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[21]]"/>
           <Property Name="Left" Value="356"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="35"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_31">
+        <Control ClassId="0x00001005" Name="palletization28">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1900,10 +1885,10 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[28]]"/>
-          <Property Name="Left" Value="407"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="390"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="64"/>
+          <Property Name="Top" Value="60"/>
           <Property Name="Width" Value="16"/>
         </Control>
         <Control ClassId="0x0000100D" Name="Line_2">
@@ -1930,7 +1915,7 @@
           <Property Name="Top" Value="6"/>
           <Property Name="Width" Value="580"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_33">
+        <Control ClassId="0x00001005" Name="common14">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1938,14 +1923,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[1]]"/>
-          <Property Name="Left" Value="565"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[14]]"/>
+          <Property Name="Left" Value="570"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="225"/>
+          <Property Name="Top" Value="240"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_34">
+        <Control ClassId="0x00001005" Name="magazine16">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1953,14 +1938,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[6]]"/>
-          <Property Name="Left" Value="558"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[16]]"/>
+          <Property Name="Left" Value="540"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="163"/>
+          <Property Name="Top" Value="190"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_35">
+        <Control ClassId="0x00001005" Name="palletization5">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1970,12 +1955,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[5]]"/>
           <Property Name="Left" Value="272"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="212"/>
+          <Property Name="Top" Value="190"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_36">
+        <Control ClassId="0x00001005" Name="palletization12">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1984,13 +1969,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[12]]"/>
-          <Property Name="Left" Value="465"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="520"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="158"/>
+          <Property Name="Top" Value="180"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_37">
+        <Control ClassId="0x00001005" Name="palletization13">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -1999,13 +1984,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[13]]"/>
-          <Property Name="Left" Value="406"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="470"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="159"/>
+          <Property Name="Top" Value="180"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_38">
+        <Control ClassId="0x00001005" Name="palletization14">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2015,12 +2000,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[14]]"/>
           <Property Name="Left" Value="440"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="34"/>
+          <Property Name="Top" Value="30"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_39">
+        <Control ClassId="0x00001005" Name="palletization15">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2029,13 +2014,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[15]]"/>
-          <Property Name="Left" Value="368"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="430"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="57"/>
+          <Property Name="Top" Value="20"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_40">
+        <Control ClassId="0x00001005" Name="palletization18">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2045,12 +2030,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[18]]"/>
           <Property Name="Left" Value="440"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="35"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_41">
+        <Control ClassId="0x00001005" Name="palletization22">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2059,13 +2044,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[22]]"/>
-          <Property Name="Left" Value="284"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="300"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="38"/>
+          <Property Name="Top" Value="60"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_42">
+        <Control ClassId="0x00001005" Name="palletization23">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2074,13 +2059,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[23]]"/>
-          <Property Name="Left" Value="378"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="370"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="35"/>
+          <Property Name="Top" Value="60"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_43">
+        <Control ClassId="0x00001005" Name="palletization24">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2090,12 +2075,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[24]]"/>
           <Property Name="Left" Value="406"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="159"/>
+          <Property Name="Top" Value="180"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_44">
+        <Control ClassId="0x00001005" Name="palletization25">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2105,12 +2090,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[25]]"/>
           <Property Name="Left" Value="345"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="160"/>
+          <Property Name="Top" Value="180"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_45">
+        <Control ClassId="0x00001005" Name="palletization26">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2120,12 +2105,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[26]]"/>
           <Property Name="Left" Value="288"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="160"/>
+          <Property Name="Top" Value="180"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_46">
+        <Control ClassId="0x00001005" Name="palletization27">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2135,12 +2120,12 @@
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[27]]"/>
           <Property Name="Left" Value="368"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="57"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_47">
+        <Control ClassId="0x00001005" Name="palletization29">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2149,13 +2134,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[29]]"/>
-          <Property Name="Left" Value="220"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="230"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="159"/>
+          <Property Name="Top" Value="180"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_48">
+        <Control ClassId="0x00001005" Name="outfeed0">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2164,13 +2149,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[0]]"/>
-          <Property Name="Left" Value="272"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="190"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="213"/>
+          <Property Name="Top" Value="320"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_49">
+        <Control ClassId="0x00001005" Name="outfeed1">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2179,13 +2164,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[1]]"/>
-          <Property Name="Left" Value="217"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="160"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="316"/>
+          <Property Name="Top" Value="300"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_50">
+        <Control ClassId="0x00001005" Name="outfeed2">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2194,13 +2179,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[2]]"/>
-          <Property Name="Left" Value="184"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="160"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="302"/>
+          <Property Name="Top" Value="300"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_51">
+        <Control ClassId="0x00001005" Name="outfeed3">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2209,13 +2194,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[3]]"/>
-          <Property Name="Left" Value="154"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="170"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="256"/>
+          <Property Name="Top" Value="260"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_52">
+        <Control ClassId="0x00001005" Name="outfeed4">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2224,13 +2209,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[4]]"/>
-          <Property Name="Left" Value="154"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="160"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="257"/>
+          <Property Name="Top" Value="270"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_53">
+        <Control ClassId="0x00001005" Name="outfeed5">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2239,13 +2224,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[5]]"/>
-          <Property Name="Left" Value="185"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="160"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="250"/>
+          <Property Name="Top" Value="270"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_54">
+        <Control ClassId="0x00001005" Name="outfeed6">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2254,13 +2239,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[6]]"/>
-          <Property Name="Left" Value="157"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="190"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="160"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_55">
+        <Control ClassId="0x00001005" Name="outfeed7">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2269,13 +2254,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[7]]"/>
-          <Property Name="Left" Value="184"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="160"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="354"/>
+          <Property Name="Top" Value="360"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_56">
+        <Control ClassId="0x00001005" Name="outfeed9">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2284,13 +2269,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[9]]"/>
-          <Property Name="Left" Value="156"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="170"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="294"/>
+          <Property Name="Top" Value="310"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_57">
+        <Control ClassId="0x00001005" Name="outfeed10">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2299,13 +2284,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[10]]"/>
-          <Property Name="Left" Value="183"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="180"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="396"/>
+          <Property Name="Top" Value="400"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_58">
+        <Control ClassId="0x00001005" Name="outfeed11">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2314,13 +2299,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[11]]"/>
-          <Property Name="Left" Value="154"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="180"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="397"/>
+          <Property Name="Top" Value="400"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_59">
+        <Control ClassId="0x00001005" Name="outfeed12">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2329,13 +2314,13 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[12]]"/>
-          <Property Name="Left" Value="153"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="Left" Value="170"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="356"/>
+          <Property Name="Top" Value="360"/>
           <Property Name="Width" Value="16"/>
         </Control>
-        <Control ClassId="0x00001005" Name="Bitmap_60">
+        <Control ClassId="0x00001005" Name="outfeed13">
           <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
           <Property Name="BitmapIndex" Value="0"/>
           <Property Name="BitmapSource" Value="MultipleBitmaps"/>
@@ -2343,11 +2328,566 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[22]]"/>
-          <Property Name="Left" Value="154"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[13]]"/>
+          <Property Name="Left" Value="180"/>
+          <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="398"/>
+          <Property Name="Top" Value="400"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="magazine3">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.pallet_magazine.alarmImageMagazine[3]]"/>
+          <Property Name="Left" Value="520"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="190"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="palletization7">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[7]]"/>
+          <Property Name="Left" Value="350"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="160"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="palletization8">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[8]]"/>
+          <Property Name="Left" Value="410"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="130"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="palletization30">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[30]]"/>
+          <Property Name="Left" Value="160"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="160"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="palletization31">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[31]]"/>
+          <Property Name="Left" Value="160"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="160"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="palletization32">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[32]]"/>
+          <Property Name="Left" Value="410"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="130"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="palletization33">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[33]]"/>
+          <Property Name="Left" Value="410"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="130"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="palletization34">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[34]]"/>
+          <Property Name="Left" Value="410"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="130"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="palletization35">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[35]]"/>
+          <Property Name="Left" Value="410"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="130"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="palletization36">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[36]]"/>
+          <Property Name="Left" Value="410"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="130"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="palletization37">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[37]]"/>
+          <Property Name="Left" Value="410"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="130"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="palletization38">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[38]]"/>
+          <Property Name="Left" Value="410"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="130"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="palletization39">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[39]]"/>
+          <Property Name="Left" Value="380"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="10"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="palletization40">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[40]]"/>
+          <Property Name="Left" Value="410"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="130"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="palletization41">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[41]]"/>
+          <Property Name="Left" Value="410"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="130"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="palletization42">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.alarmImagePalletization[42]]"/>
+          <Property Name="Left" Value="480"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="130"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="outfeed8">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[8]]"/>
+          <Property Name="Left" Value="160"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="360"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="outfeed14">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[14]]"/>
+          <Property Name="Left" Value="160"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="220"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="outfeed15">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[15]]"/>
+          <Property Name="Left" Value="80"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="100"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="outfeed16">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[16]]"/>
+          <Property Name="Left" Value="470"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="60"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="outfeed17">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[17]]"/>
+          <Property Name="Left" Value="190"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="90"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="outfeed18">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[18]]"/>
+          <Property Name="Left" Value="190"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="150"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="common0">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[0]]"/>
+          <Property Name="Left" Value="470"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="60"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="common1">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[1]]"/>
+          <Property Name="Left" Value="490"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="100"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="common2">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[2]]"/>
+          <Property Name="Left" Value="570"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="90"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="common3">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[3]]"/>
+          <Property Name="Left" Value="570"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="90"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="common4">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[4]]"/>
+          <Property Name="Left" Value="570"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="90"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="common5">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[5]]"/>
+          <Property Name="Left" Value="300"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="130"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="common6">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[6]]"/>
+          <Property Name="Left" Value="190"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="150"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="common7">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[7]]"/>
+          <Property Name="Left" Value="470"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="60"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="common8">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[8]]"/>
+          <Property Name="Left" Value="530"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="220"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="common9">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[9]]"/>
+          <Property Name="Left" Value="350"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="90"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="common10">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[10]]"/>
+          <Property Name="Left" Value="110"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="240"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="common11">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[11]]"/>
+          <Property Name="Left" Value="470"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="60"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="common12">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[12]]"/>
+          <Property Name="Left" Value="470"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="60"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="common13">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[13]]"/>
+          <Property Name="Left" Value="470"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="60"/>
+          <Property Name="Width" Value="16"/>
+        </Control>
+        <Control ClassId="0x00001005" Name="outfeed19">
+          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[AlarmMap]"/>
+          <Property Name="BitmapIndex" Value="0"/>
+          <Property Name="BitmapSource" Value="MultipleBitmaps"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="FillStyle" Value="Transparent"/>
+          <Property Name="Height" Value="19"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.alarmImageOutfeed[19]]"/>
+          <Property Name="Left" Value="190"/>
+          <Property Name="SimulationValue" Value="1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="90"/>
           <Property Name="Width" Value="16"/>
         </Control>
       </Controls>

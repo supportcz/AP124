@@ -12,6 +12,8 @@ PROGRAM _CYCLIC
 	alarmImageCommon[2] := NOT diEStop2;
 	alarmImageCommon[3] := NOT diEStop3;
 	alarmImageCommon[4] := NOT diEStop4;
+	alarmImageCommon[14] := NOT diEStop5;
+
 	alarmImageCommon[5] := NOT diEStopRobot;
 	alarmImageCommon[6] := NOT diEStopWrapper;
 	alarmImageCommon[7] := NOT safetyAlive;
@@ -58,6 +60,10 @@ PROGRAM _CYCLIC
 		END_IF
 	END_FOR
 		
-
+	IF alarmCommon OR alarmInZoneMagazine OR alarmInZonePalletization OR alarmInZoneOutfeed THEN
+		alarmPresent := TRUE;
+	ELSE
+		alarmPresent := FALSE;
+	END_IF
 	
 END_PROGRAM

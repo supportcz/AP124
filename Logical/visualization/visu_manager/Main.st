@@ -3,12 +3,6 @@ PROGRAM _INIT
 	PageControl := ButtonAutomaticMode;
 	uiHandle := 0;
 	gVisu.LanguageLayer := 1;
-	StatusDatapointCmdAuto := 0;
-	StatusDatapointCmdManual := 1;
-	StatusDatapointCmdAutoPM := 0;
-	StatusDatapointCmdManualPM := 1;
-	StatusDatapointCmdAutoOF := 0;
-	StatusDatapointCmdManualOF := 1;
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -28,11 +22,7 @@ PROGRAM _CYCLIC
 		VA_Srelease(1,uiHandle);
 	END_IF;
 	
-	IF alarmCommon OR alarmInZoneMagazine OR alarmInZonePalletization OR alarmInZoneOutfeed THEN
-		alarmPresent := TRUE;
-	ELSE
-		alarmPresent := FALSE;
-	END_IF
+
 	
 	(***************************************************************************)
 	(* 								Page Control						  	   *)
@@ -87,7 +77,7 @@ PROGRAM _CYCLIC
 	(* 					Locking Infos/Automatic Mode - START			  	   *)
 	(***************************************************************************)
 	
-	IF (gVisu.CurrentPage = 11) AND (StatusDatapointCmdAutoPM = 0) THEN
+	IF (gVisu.CurrentPage = 11) (*AND (StatusDatapointCmdAutoPM = 0)*) THEN
 		gVisu.InfoLock := 24576;
 	ELSE
 		gVisu.InfoLock := 8194;
@@ -291,12 +281,7 @@ PROGRAM _CYCLIC
 		cmdMagazineAuto := TRUE;
 		cmdPalletizationAuto := TRUE;
 		cmdOutfeedAuto := TRUE;
-		StatusDatapointCmdManual := 0;
-		StatusDatapointCmdAuto := 1;
-		StatusDatapointCmdAutoOF := 1;
-		StatusDatapointCmdManualOF := 0;
-		StatusDatapointCmdAutoPM := 1;
-		StatusDatapointCmdManualPM := 0;
+
 		gVisu.ChangePage := 10;
 	END_IF
 
@@ -310,12 +295,6 @@ PROGRAM _CYCLIC
 		cmdMagazineManual := TRUE;
 		cmdPalletizationManual := TRUE;
 		cmdOutfeedManual := TRUE;
-		StatusDatapointCmdManual := 1;
-		StatusDatapointCmdAuto := 0;
-		StatusDatapointCmdAutoOF := 0;
-		StatusDatapointCmdManualOF := 1;
-		StatusDatapointCmdAutoPM := 0;
-		StatusDatapointCmdManualPM := 1;
 	END_IF
 
 	IF EDGENEG(cmdManual) THEN
@@ -328,8 +307,6 @@ PROGRAM _CYCLIC
 	IF EDGEPOS(cmdAutoPM) THEN
 		cmdMagazineAuto := TRUE;
 		cmdPalletizationAuto := TRUE;
-		StatusDatapointCmdAutoPM := 1;
-		StatusDatapointCmdManualPM := 0;
 	END_IF
 
 	IF EDGENEG(cmdAutoPM) THEN
@@ -340,29 +317,13 @@ PROGRAM _CYCLIC
 	IF EDGEPOS(cmdManualPM) THEN
 		cmdMagazineManual := TRUE;
 		cmdPalletizationManual := TRUE;
-		StatusDatapointCmdAutoPM := 0;
-		StatusDatapointCmdManualPM := 1;
 	END_IF
 
 	IF EDGENEG(cmdManualPM) THEN
 		cmdMagazineManual := FALSE;
 		cmdPalletizationManual := FALSE;
 	END_IF
-	
-	IF EDGEPOS(cmdOutfeedAuto) THEN
-		StatusDatapointCmdAutoOF := 1;
-		StatusDatapointCmdManualOF := 0;
-	END_IF
-	
-	IF EDGEPOS(cmdOutfeedManual) THEN
-		StatusDatapointCmdAutoOF := 0;
-		StatusDatapointCmdManualOF := 1;
-	END_IF
-	
-	IF StatusDatapointCmdAutoOF = 1 AND StatusDatapointCmdAutoPM = 1 THEN
-		StatusDatapointCmdManual := 0;
-		StatusDatapointCmdAuto := 1;
-	END_IF;
+
 	
 END_PROGRAM
 

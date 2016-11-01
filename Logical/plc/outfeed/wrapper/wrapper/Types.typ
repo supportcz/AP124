@@ -4,6 +4,7 @@ TYPE
 		(
 		stateAutoUndefined,
 		stateAutoWait,
+		stateAutoWait2,
 		stateAutoRun,
 		stateAutoTurnToExitPosition,
 		stateAutoWaitForExitPosition,
