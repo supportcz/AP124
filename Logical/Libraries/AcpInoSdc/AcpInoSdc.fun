@@ -6,7 +6,7 @@ FUNCTION_BLOCK AcpInoSdc (*control of ACOPOSinverter without SDC*) (*$GROUP=User
 		reset : BOOL := TRUE;
 		speed : INT;
 		ETAD_Input : UINT;
-		run : BOOL := TRUE;
+		run : BOOL;
 	END_VAR
 	VAR_OUTPUT
 		CMDD_Output : UINT;

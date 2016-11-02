@@ -1,12 +1,6 @@
 PROGRAM _INIT
 	
-
-
-
 	diWrapperDoorCanBeOpened;
-	
-
-
 	
 END_PROGRAM
 
@@ -131,7 +125,6 @@ PROGRAM _CYCLIC
 	DoorLogic_2();
 	alarmImageOutfeed[15] := NOT DoorLogic_2.diDoorLocked;
 	
-
 	alarmImageOutfeed[16] := wrapperEdmError;
 	alarmImageOutfeed[17] := NOT diWrapperNoError;
 	alarmImageOutfeed[18] := diWrapperLowFoil;

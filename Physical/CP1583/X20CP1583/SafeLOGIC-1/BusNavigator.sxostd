@@ -4,7 +4,7 @@
     <GeneratorDescription Name="AutomationStudio" Version="4.2.5.388" LanguageID="1">
       <Info Name="ARVersion" Value="42510" />
       <Info Name="SafetyRelease" Value="1.10" />
-      <Info Name="Communication" Value="/IF=tcpip /LOPO=11159 /SA=1  /RT=1000 /AM=* /SDT=5 /DAIP=192.168.88.10 /REPO=11159 /ANSL=1 /PT=11169  /PORT=50000" />
+      <Info Name="Communication" Value="/IF=tcpip /LOPO=11159 /SA=1 /RT=1000 /AM=* /SDT=5 /DAIP=192.168.88.10 /REPO=11159 /ANSL=1 /PT=11169 /PORT=50000" />
     </GeneratorDescription>
     <SafetyConfigurationManager TransportSAddr="1">
       <DeviceDescription Module="X20SLXxxx_110.SCM" minOpenSafetyRelease="1.5"><![CDATA[C:\BrAutomation\AS42\AS\Hardware\Modules\OSDD\X20SLXxxx_SCM_R110.xosdd]]></DeviceDescription>
@@ -41,18 +41,19 @@
         <Info Name="AsVariable" Value="SafeTwoChannelInput0304,alarm_mana:diEStop2" />
         <Info Name="AsVariable" Value="BOOL102,pallet_mag:diActivateMagazineSafetyCircuits" />
         <Info Name="AsVariable" Value="BOOL008,wrapper:wrapperEdmError" />
-        <Info Name="AsVariable" Value="BOOL001,alarm_mana:safetyAlive" />
+        <Info Name="AsVariable" Value="BOOL001,safetyAlive" />
         <Info Name="AsVariable" Value="BOOL101,diActivateAllSafetyCircuits" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0102,alarm_mana:diEStop1" />
-        <Info Name="AsVariable" Value="SafeTwoChannelInput0910,pallet_mag:diEStop5" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput0910,alarm_mana:diEStop5" />
         <Info Name="AsVariable" Value="BOOL005,pallet_mag:lightCurtainP11" />
-        <Info Name="AsVariable" Value="SafeTwoChannelInput1112,alarm_mana:diEStopRobot" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput1112,alarm_mana:diEStopWrapper" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0708,alarm_mana:diEStop4" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput1920,robot_head:DoorLogic_3.diDoorLocked" />
-        <Info Name="AsVariable" Value="SafeTwoChannelInput1314,alarm_mana:diEStopWrapper" />
+        <Info Name="AsVariable" Value="SafeTwoChannelInput1314,alarm_mana:diEStopRobot" />
         <Info Name="AsVariable" Value="BOOL007,outfeed_ma:lightCurtainP17" />
         <Info Name="AsVariable" Value="SafeTwoChannelInput0506,alarm_mana:diEStop3" />
         <Info Name="AsVariable" Value="BOOL003,alarm_mana:palletizationEdmError" />
+        <Info Name="AsVariable" Value="BOOL009,robot:robotEdmError" />
       </NodeDescription>
       <ChannelConfiguration>
         <DataTransport>

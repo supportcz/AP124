@@ -665,7 +665,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="1"/>
               <Property Name="SetValue" Value="0"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.misc.misc.doSafetyCurtainSupplyP11]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.misc.misc.doSafetyCurtainSupplyP11]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -681,7 +681,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="1"/>
               <Property Name="SetValue" Value="0"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.misc.misc.doSafetyCurtainSupplyP15]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.misc.misc.doSafetyCurtainSupplyP15]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -697,7 +697,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="1"/>
               <Property Name="SetValue" Value="0"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.misc.misc.doSafetyCurtainSupplyP17]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.misc.misc.doSafetyCurtainSupplyP17]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

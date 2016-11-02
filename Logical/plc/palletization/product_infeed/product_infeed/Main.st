@@ -346,6 +346,7 @@ PROGRAM _CYCLIC
 	PusherLifting;
 	Rotation;
 	Bumper;
+	Interlayer;
 	
 	//door logic
 	DoorLogic_1();

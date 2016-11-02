@@ -5,6 +5,8 @@ VAR
 	actualRecipeIndexOld : INT;
 	bumperAuto : BOOL;
 	bumperForward : BOOL;
+	cmdInterlayerDown : BOOL;
+	cmdInterlayerUp : BOOL;
 	cmdPusherLiftingDown : BOOL;
 	cmdPusherLiftingUp : BOOL;
 	cmdRunConveyorP1 : BOOL;
@@ -15,6 +17,11 @@ VAR
 	dActualLayout : REFERENCE TO Layout;
 	dActualRecipe : REFERENCE TO Recipe;
 	diBumperForward : BOOL;
+	diInterlayerDown : BOOL;
+	diInterlayerSafeFrame : BOOL;
+	diInterlayerSheetPresent : BOOL;
+	diInterlayerUp : BOOL;
+	diInterlayerUpperHwEnd : BOOL;
 	diMotorProtectionP3 : BOOL;
 	diPusherBlockedByTray : BOOL;
 	diPusherLiftingLowerPosition : BOOL;
@@ -27,6 +34,10 @@ VAR
 	diTrayOnOutputP1 : BOOL;
 	dNextTray : REFERENCE TO Tray;
 	doBumper : BOOL;
+	doInterlayerDown : BOOL;
+	doInterlayerEnable : BOOL;
+	doInterlayerPowerOn : BOOL;
+	doInterlayerUp : BOOL;
 	DoorLogic_1 : DoorLogic;
 	doPusherLiftingBrake : BOOL;
 	doPusherLiftingDown : BOOL;
@@ -44,6 +55,7 @@ VAR
 	stateBumper : StateBumper;
 	stateConveyorP1 : StateConveyor;
 	stateConveyorP2 : StateConveyor;
+	stateInterlayer : StateInterlayer;
 	statePusherLifting : StatePusherLifting;
 	stateRotation : StateRotation;
 	TOF_TrayBehindRotation : TOF;

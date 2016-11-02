@@ -20,6 +20,9 @@ PROGRAM _INIT
 	pusherDrive.positions[4] := 1930;
 	pusherDrive.positions[5] := 2000;//FI_12.init.positiveSwLimit-tolerance;
 	pusherDrive.speed := 500;
+	
+	acpI_P12.run := TRUE;
+
 	 
 END_PROGRAM
 
@@ -152,8 +155,8 @@ PROGRAM _CYCLIC
 			
 			IF FI_12.info.powerOn AND acpI_P12.switchedOn THEN	
 				pusherDrive.requestedPositionIndex := pusherDrive.actualPositionIndex - 1;
-				IF pusherDrive.requestedPositionIndex < 0 THEN
-					pusherDrive.requestedPositionIndex := 0;
+				IF pusherDrive.requestedPositionIndex < 1 THEN
+					pusherDrive.requestedPositionIndex := 1;
 				END_IF
 				
 				FI_12.cmd.absolute := TRUE;

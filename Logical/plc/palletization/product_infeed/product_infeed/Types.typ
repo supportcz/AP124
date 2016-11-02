@@ -1,40 +1,5 @@
 
 TYPE
-	StateBumper : 
-		(
-		stateBumperUndefined,
-		stateBumperMovingForward,
-		stateBumperForward,
-		stateBumperMovingBack,
-		stateBumperBack
-		);
-	StateRotation : 
-		(
-		stateRotationUndefined,
-		stateRotationMovingForward,
-		stateRotationForward,
-		stateRotationMovingBack,
-		stateRotationBack
-		);
-	StateConveyor : 
-		(
-		stateConveyorStop,
-		stateConveyorWait,
-		stateConveyorMoving,
-		stateConveyorPause,
-		stateConveyorWaitForRotation,
-		stateConveyorMoveTrayFromP1toP2,
-		stateConveyorDelayForTurn,
-		stateConveyorFillP1
-		);
-	StatePusherLifting : 
-		(
-		statePusherLiftingUndefined,
-		stateMoveToUpperPosition,
-		stateUpperPosition,
-		stateMoveToLowerPosition,
-		stateLowerPosition
-		);
 	StateAuto : 
 		(
 		stateAutoUndefined,
@@ -56,5 +21,48 @@ TYPE
 		stateAutoPusherToRobotHead5,
 		stateAutoPusherToRobotHead6,
 		stateAutoPusherToRobotHead7
+		);
+	StateBumper : 
+		(
+		stateBumperUndefined,
+		stateBumperMovingForward,
+		stateBumperForward,
+		stateBumperMovingBack,
+		stateBumperBack
+		);
+	StateConveyor : 
+		(
+		stateConveyorStop,
+		stateConveyorWait,
+		stateConveyorMoving,
+		stateConveyorPause,
+		stateConveyorWaitForRotation,
+		stateConveyorMoveTrayFromP1toP2,
+		stateConveyorDelayForTurn,
+		stateConveyorFillP1
+		);
+	StateInterlayer : 
+		(
+		stateInterlayerInit,
+		stateInterlayerDown,
+		stateInterlayerGoUp,
+		stateInterlayerUp,
+		stateInterlayerGoDown
+		);
+	StatePusherLifting : 
+		(
+		statePusherLiftingUndefined,
+		stateMoveToUpperPosition,
+		stateUpperPosition,
+		stateMoveToLowerPosition,
+		stateLowerPosition
+		);
+	StateRotation : 
+		(
+		stateRotationUndefined,
+		stateRotationMovingForward,
+		stateRotationForward,
+		stateRotationMovingBack,
+		stateRotationBack
 		);
 END_TYPE

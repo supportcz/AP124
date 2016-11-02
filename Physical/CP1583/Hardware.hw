@@ -101,6 +101,10 @@
     <Connection Connector="SS1" TargetModule="X20TB52e" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM33c" TargetConnector="SL1" />
     <Parameter ID="SafeModuleID" Value="4" />
+    <Parameter ID="DigitalOutput01" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput02" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput03" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput04" Value="viaSafeLOGIC" />
   </Module>
   <Module Name="Q28" Type="X20SO4110" Version="1.10.0.1">
     <Connection Connector="SS1" TargetModule="X20TB52f" TargetConnector="SS" />
@@ -450,17 +454,19 @@
     </Connector>
     <Connector Name="IF3">
       <Parameter ID="EplInterfaceRedundant" Value="0" />
+      <Parameter ID="CycleTime" Value="5000" />
       <Parameter ID="EplEthInterfaceRedundant" Value="0" />
+    </Connector>
+    <Connector Name="IF6">
+      <Parameter ID="CycleTime" Value="5000" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="AP124_CP1583" />
     <Parameter ID="UserPartitionSize" Value="200" />
     <Parameter ID="VolatileGlobalPvSize" Value="262144" />
-    <Parameter ID="TimerDeviceType" Value="EPLX2X" />
-    <Parameter ID="TimerDevice" Value="X20CP1583.IF3" />
-    <Parameter ID="TaskClassIdleTime" Value="2000" />
+    <Parameter ID="TimerDeviceType" Value="SWIOTIMER" />
+    <Parameter ID="TaskClassIdleTime" Value="5000" />
     <Parameter ID="Cyclic1Duration" Value="10000" />
     <Parameter ID="Cyclic1Tolerance" Value="10000" />
-    <Parameter ID="Cyclic1Output" Value="1" />
     <Parameter ID="Cyclic2Duration" Value="20000" />
     <Parameter ID="Cyclic2Tolerance" Value="20000" />
     <Parameter ID="Cyclic3Duration" Value="50000" />
@@ -483,6 +489,9 @@
     <Parameter ID="FtpUserPassword1" Value="WTu4FPCiIceACZRqUEgJEtXb7Eb63HUzCfqgyyypU7s=" />
     <Parameter ID="FtpUserSalt1" Value="2eJIzixw" />
     <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="SystemTick" Value="5000" />
+    <Parameter ID="Temp.ProjectDirectory" Value="C:\Work\Atrima\projekt\AP124\" />
+    <Parameter ID="Temp.ConfigurationName" Value="CP1583" />
   </Module>
   <Module Name="X20PS2100a" Type="X20PS2100" Version="1.1.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />

@@ -17,4 +17,10 @@ TYPE
 		palletPresent,
 		palletMoving
 		);
+	StateInterlayerAuto : 
+		(
+		stateInterlayerAutoInit,
+		stateInterlayerAutoFill,
+		stateInterlayerAutoEmpty
+		);
 END_TYPE

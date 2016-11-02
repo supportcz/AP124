@@ -20,6 +20,7 @@ VAR RETAIN
 END_VAR
 VAR
 	pusherDrive : PusherDrive;
+	stateInterlayerAuto : StateInterlayerAuto;
 	statePalletP12 : StatePallet;
 	statePalletP13 : StatePallet;
 	statePalletP14 : StatePallet;

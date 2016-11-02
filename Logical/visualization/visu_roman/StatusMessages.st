@@ -45,6 +45,9 @@ ACTION StatusMessagePalletization:
 	IF modeZonePalletization = modeZoneAuto THEN
 		statusMessagePalletization := 26;
 	END_IF
+	IF stateInterlayerAuto = stateInterlayerAutoEmpty THEN
+		statusMessagePalletization := 31;
+	END_IF	
 	IF alarmInZonePalletization THEN
 		statusMessagePalletization := 23;
 	END_IF
@@ -104,6 +107,9 @@ ACTION StatusMessageOutfeed:
 	END_IF		
 	IF modeZoneOutfeed = modeZoneManual THEN
 		statusMessageOutfeed := 22;
+	END_IF
+	IF alarmImageOutfeed[17] OR alarmImageOutfeed[19] THEN
+		statusMessageOutfeed := 33;
 	END_IF
 	IF alarmImageOutfeed[0] THEN
 		statusMessageOutfeed := 13;

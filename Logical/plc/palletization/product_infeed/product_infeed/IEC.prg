@@ -10,5 +10,6 @@
     <File>PusherLifting.st</File>
     <File>Rotation.st</File>
     <File>Bumper.st</File>
+    <File>Interlayer.st</File>
   </Files>
 </Program>

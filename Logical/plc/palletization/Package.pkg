@@ -7,7 +7,7 @@
     <Object Type="Program" Language="IEC" Description="palletization state machine">palletization_main</Object>
     <Object Type="Package">product_infeed</Object>
     <Object Type="Package">robot_head</Object>
-    <Object Type="Package">robot_control</Object>
+    <Object Type="Package">robot</Object>
     <Object Type="Package">pallet_conveyors</Object>
   </Objects>
 </Package>

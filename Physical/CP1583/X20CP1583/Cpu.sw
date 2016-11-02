@@ -11,12 +11,12 @@
     <Task Name="palletizat" Source="plc.palletization.palletization_main.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="pallet_con" Source="plc.palletization.pallet_conveyors.pallet_conveyors.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="robot_head" Source="plc.palletization.robot_head.robot_head.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="robot_cont" Source="plc.palletization.robot_control.robot_control.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="robot" Source="plc.palletization.robot.robot.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="outfeed_ma" Source="plc.outfeed.outfeed_main.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="wrapper" Source="plc.outfeed.wrapper.wrapper.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="pallet_out" Source="plc.outfeed.pallet_outfeed.pallet_outfeed.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="alarm_mana" Source="plc.alarm_management.alarm_management.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="misc" Source="misc.misc.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="misc" Source="plc.misc.misc.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#4">
     <Task Name="visu_manag" Source="visualization.visu_manager.prg" Memory="UserROM" Language="IEC" Debugging="true" />
@@ -74,24 +74,24 @@
     <BinaryObject Name="vcdsloc" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vcpfx20" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="visvc" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="vcpfar00" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="arsvcreg" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vccddbox" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vccpopup" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Config" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="sysconf" Source="" Memory="SystemROM" Language="Binary" />
-    <BinaryObject Name="ashwd" Source="" Memory="SystemROM" Language="Binary" />
-    <BinaryObject Name="asfw" Source="" Memory="SystemROM" Language="Binary" />
-    <BinaryObject Name="iomap" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Role" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="User" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="arconfig" Source="" Memory="SystemROM" Language="Binary" />
-    <BinaryObject Name="Acp10map" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="acp10cfg" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="vccslider" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="vccscale" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="vcclbox" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="User" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Role" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="iomap" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="asfw" Source="" Memory="SystemROM" Language="Binary" />
+    <BinaryObject Name="ashwd" Source="" Memory="SystemROM" Language="Binary" />
+    <BinaryObject Name="sysconf" Source="" Memory="SystemROM" Language="Binary" />
+    <BinaryObject Name="Config" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="TC" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="vcclbox" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="vccscale" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="vccslider" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="acp10cfg" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Acp10map" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="vcpfar00" Source="" Memory="UserROM" Language="Binary" />
   </Binaries>
   <Libraries>
     <LibraryObject Name="AsSafety" Source="Libraries.AsSafety.lby" Memory="UserROM" Language="Binary" Debugging="true" />
@@ -118,8 +118,8 @@
     <LibraryObject Name="Motorky" Source="Libraries.Motorky.lby" Memory="UserROM" Language="ANSIC" Debugging="true" />
     <LibraryObject Name="MpRecipe" Source="Libraries.MpRecipe.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="MpCom" Source="Libraries.MpCom.lby" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="powerlnk" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="Atrima" Source="Libraries.Atrima.lby" Memory="UserROM" Language="IEC" Debugging="true" />
     <LibraryObject Name="AsIODiag" Source="Libraries.AsIODiag.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="powerlnk" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>
