@@ -572,6 +572,18 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="46">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -633,6 +645,7 @@
       <Text ID="1538" Value="Interlayer sheet magazine: Upper HW end reached"/>
       <Text ID="1549" Value="Interlayer sheet magazine: Safe frame"/>
       <Text ID="1577" Value="Robot EDM error"/>
+      <Text ID="1605" Value="Robot door EDM error"/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -682,6 +695,7 @@
       <Text ID="1538" Value=""/>
       <Text ID="1549" Value=""/>
       <Text ID="1577" Value=""/>
+      <Text ID="1605" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -731,6 +745,7 @@
       <Text ID="1538" Value=""/>
       <Text ID="1549" Value=""/>
       <Text ID="1577" Value=""/>
+      <Text ID="1605" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -780,6 +795,7 @@
       <Index ID="1538" Value="43"/>
       <Index ID="1549" Value="44"/>
       <Index ID="1577" Value="45"/>
+      <Index ID="1605" Value="46"/>
       <Index ID="312" Value="Group"/>
     </IndexMap>
   </TextGroup>

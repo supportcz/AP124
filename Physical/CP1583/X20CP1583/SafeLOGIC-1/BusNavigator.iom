@@ -21,6 +21,7 @@
 			<Channel Name="BOOL007" Mapping="NSQX0.6" Variable="lightCurtainP17grey" Address="outfeed_ma:lightCurtainP17" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL008" Mapping="NSQX0.7" Variable="wrapperEdmError" Address="wrapper:wrapperEdmError" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL009" Mapping="NSQX1.0" Variable="robotEdmError" Address="robot:robotEdmError" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="BOOL010" Mapping="NSQX1.1" Variable="robotDoorEdmError" SODIndex="0x2580" SODSubIndex="0x2" />
 			<Channel Name="BOOL101" Mapping="NSIX0.0" Variable="diActivateAllSafetyCircuits" Address="diActivateAllSafetyCircuits" SODIndex="0x2500" SODSubIndex="0x2" />
 			<Channel Name="BOOL102" Mapping="NSIX0.1" Variable="diActivateMagazineSafety" Address="pallet_mag:diActivateMagazineSafetyCircuits" SODIndex="0x2500" SODSubIndex="0x2" />
 		</Module>
@@ -35,6 +36,7 @@
 			<Channel Name="SafeDigitalInput11" Mapping="SIX61.2" Variable="diOverrideP15" SODIndex="0x6000" SODSubIndex="0x2" />
 			<Channel Name="SafeDigitalInput12" Mapping="SIX61.3" Variable="diOverrideP17" SODIndex="0x6000" SODSubIndex="0x2" />
 			<Channel Name="SafeDigitalInput13" Mapping="SIX61.4" Variable="diRobotEDM" SODIndex="0x6000" SODSubIndex="0x2" />
+			<Channel Name="SafeDigitalInput14" Mapping="SIX61.5" Variable="diRobotDoorEDM" SODIndex="0x6000" SODSubIndex="0x2" />
 			<Channel Name="SafeDigitalInput15" Mapping="SIX61.6" Variable="diWrapperEDM" SODIndex="0x6000" SODSubIndex="0x2" />
 			<Channel Name="SafeDigitalInput17" Mapping="SIX62.0" Variable="diPalletizationEDM" Address="Cyclic#3.diPalletizationEDM" SODIndex="0x6000" SODSubIndex="0x3" />
 			<Channel Name="SafeDigitalInput18" Mapping="SIX62.1" Variable="diMagazineEDM" Address="Cyclic#3.diMagazineEDM" SODIndex="0x6000" SODSubIndex="0x3" />
@@ -51,8 +53,12 @@
 		<Module Name="SL1.SM4" Hardware="X20SO4110" SafeLogicID="1" SafeModuleID="4" SISize="1" SOSize="1" NSISize="1" NSOSize="1" SIOffset="69" SOOffset="15" NSIOffset="22" NSOOffset="21" ConnectionValidBitNumber="2" HWTypeCode="43" >
 			<Channel Name="SafeDigitalOutput01" Mapping="SQX15.0" Variable="doRobotContactor1" SODIndex="0x6200" SODSubIndex="0x1" />
 			<Channel Name="SafeDigitalOutput02" Mapping="SQX15.1" Variable="doRobotContactor2" SODIndex="0x6200" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalOutput03" Mapping="SQX15.2" Variable="doRobotDoor1" SODIndex="0x6200" SODSubIndex="0x1" />
+			<Channel Name="SafeDigitalOutput04" Mapping="SQX15.3" Variable="doRobotDoor2" SODIndex="0x6200" SODSubIndex="0x1" />
 			<Channel Name="ReleaseOutput01" Mapping="NSQX21.0" Variable="SM4_ReleaseOutput01" SODIndex="0x6200" SODSubIndex="0x2" />
 			<Channel Name="ReleaseOutput02" Mapping="NSQX21.1" Variable="SM4_ReleaseOutput02" SODIndex="0x6200" SODSubIndex="0x2" />
+			<Channel Name="ReleaseOutput03" Mapping="NSQX21.2" Variable="SM4_ReleaseOutput03" SODIndex="0x6200" SODSubIndex="0x2" />
+			<Channel Name="ReleaseOutput04" Mapping="NSQX21.3" Variable="SM4_ReleaseOutput04" SODIndex="0x6200" SODSubIndex="0x2" />
 		</Module>
 		<Module Name="SL1.SM5" Hardware="X20SO4110" SafeLogicID="1" SafeModuleID="5" SISize="1" SOSize="1" NSISize="1" NSOSize="1" SIOffset="70" SOOffset="16" NSIOffset="23" NSOOffset="22" ConnectionValidBitNumber="3" HWTypeCode="43" >
 			<Channel Name="SafeDigitalOutput01" Mapping="SQX16.0" Variable="doWrapperContactor1" SODIndex="0x6200" SODSubIndex="0x1" />

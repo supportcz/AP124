@@ -1,3 +1,12 @@
 VAR
 	robotEdmError : BOOL;
 END_VAR
+VAR CONSTANT
+	IN_SIZE : USINT := 32;
+	OUT_SIZE : USINT := 32;
+END_VAR
+VAR
+	C5G : C5GMap_typ;
+	robotDoorEdmError : BOOL;
+	stateRobotAuto : StateRobotAuto;
+END_VAR

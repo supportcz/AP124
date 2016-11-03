@@ -17,6 +17,11 @@ TYPE
 		palletPresent,
 		palletMoving
 		);
+	StateRobotAuto : 
+		(
+		stateRobotAutoInit,
+		stateRobotAutoGoToHome
+		);
 	StateInterlayerAuto : 
 		(
 		stateInterlayerAutoInit,

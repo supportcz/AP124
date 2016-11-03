@@ -112,6 +112,7 @@
     <Module Name="U17" Type="8I74xxxxxxx.01P-1" X="792" Y="484" />
     <Module Name="U18.1" Type="8I74xxxxxxx.01P-1" X="880" Y="484" />
     <Module Name="U18.2" Type="8I74xxxxxxx.01P-1" X="968" Y="484" />
+    <Module Name="C5Gopen" Type="FBE.00000000_C5G-annex-cn" X="1078" Y="572" />
   </Modules>
   <Links>
     <Link From="6PPT30.0702-20B" To="X20CP1583" FromPort="ETH1" ToPort="IF2" IsRoutedByUser="False">
@@ -214,6 +215,26 @@
       <Point X="806" Y="638" />
       <Point X="806" Y="638" />
     </Link>
+    <Link From="U17" To="U18.1" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="816" Y="638" />
+      <Point X="816" Y="638" />
+      <Point X="816" Y="685" />
+      <Point X="816" Y="695" />
+      <Point X="894" Y="695" />
+      <Point X="894" Y="685" />
+      <Point X="894" Y="638" />
+      <Point X="894" Y="638" />
+    </Link>
+    <Link From="U18.1" To="U18.2" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="904" Y="638" />
+      <Point X="904" Y="638" />
+      <Point X="904" Y="685" />
+      <Point X="904" Y="695" />
+      <Point X="982" Y="695" />
+      <Point X="982" Y="685" />
+      <Point X="982" Y="638" />
+      <Point X="982" Y="638" />
+    </Link>
     <Link From="X20BR9300" To="X20BT9100" FromPort="X2X1" ToPort="X2X1" IsRoutedByUser="False">
       <Point X="270" Y="308" />
       <Point X="270" Y="308" />
@@ -250,25 +271,14 @@
       <Point X="530" Y="308" />
       <Point X="530" Y="308" />
     </Link>
-    <Link From="U18.1" To="U17" FromPort="PLK1" ToPort="PLK2" IsRoutedByUser="False">
-      <Point X="894" Y="638" />
-      <Point X="894" Y="638" />
-      <Point X="894" Y="685" />
-      <Point X="894" Y="695" />
-      <Point X="816" Y="695" />
-      <Point X="816" Y="685" />
-      <Point X="816" Y="638" />
-      <Point X="816" Y="638" />
-    </Link>
-    <Link From="U18.1" To="U18.2" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
-      <Point X="904" Y="638" />
-      <Point X="904" Y="638" />
-      <Point X="904" Y="685" />
-      <Point X="904" Y="695" />
-      <Point X="982" Y="695" />
-      <Point X="982" Y="685" />
-      <Point X="982" Y="638" />
-      <Point X="982" Y="638" />
+    <Link From="C5Gopen" To="U18.2" FromPort="PLK1" ToPort="PLK2" IsRoutedByUser="False">
+      <Point X="1111" Y="611" />
+      <Point X="1111" Y="611" />
+      <Point X="1111" Y="618" />
+      <Point X="1111" Y="685" />
+      <Point X="992" Y="685" />
+      <Point X="992" Y="638" />
+      <Point X="992" Y="638" />
     </Link>
   </Links>
   <InfoElements>

@@ -2,9 +2,9 @@
 T: RESOURCE CPU
 FW: NO
 CI#: 0
-QSL: 65
-QVE: 65
-QVPC: 65
+QSL: 71
+QVE: 71
+QVPC: 71
 QPar: 0
 QFBI: 0
 *)
@@ -57,343 +57,379 @@ diOverrideP15	8	VAR_GLOBAL	@TYP:43
 ;
 
 @V 1 11 0
-robotEdmError	9	VAR_GLOBAL	@TYP:1
-%NSQX 1.0		     
+doRobotDoor1	9	VAR_GLOBAL	@TYP:43
+%SQX 15.2		     
 
 ;
 
 @V 1 12 0
-diRobotEDM	10	VAR_GLOBAL	@TYP:43
-%SIX 61.4		     
+robotEdmError	10	VAR_GLOBAL	@TYP:1
+%NSQX 1.0		     
 
 ;
 
 @V 1 13 0
-diLightCurtainP15muting2	11	VAR_GLOBAL	@TYP:43
-%SIX 60.5		     
+diRobotEDM	11	VAR_GLOBAL	@TYP:43
+%SIX 61.4		     
 
 ;
 
 @V 1 14 0
-diLightCurtainP15muting1	12	VAR_GLOBAL	@TYP:43
-%SIX 60.4		     
+diLightCurtainP15muting2	12	VAR_GLOBAL	@TYP:43
+%SIX 60.5		     
 
 ;
 
 @V 1 15 0
-lightCurtainP15grey	13	VAR_GLOBAL	@TYP:1
-%NSQX 0.5		     
+diLightCurtainP15muting1	13	VAR_GLOBAL	@TYP:43
+%SIX 60.4		     
 
 ;
 
 @V 1 16 0
-doFI16	14	VAR_GLOBAL	@TYP:43
-%SQX 14.2		     
+lightCurtainP15grey	14	VAR_GLOBAL	@TYP:1
+%NSQX 0.5		     
 
 ;
 
 @V 1 17 0
-doFI15	15	VAR_GLOBAL	@TYP:43
-%SQX 14.1		     
+doFI16	15	VAR_GLOBAL	@TYP:43
+%SQX 14.2		     
 
 ;
 
 @V 1 18 0
-diLightCurtainP17	16	VAR_GLOBAL	@TYP:43
-%SIX 62.7		     
+doFI15	16	VAR_GLOBAL	@TYP:43
+%SQX 14.1		     
 
 ;
 
 @V 1 19 0
-diLightCurtainP15	17	VAR_GLOBAL	@TYP:43
-%SIX 62.5		     
+diLightCurtainP17	17	VAR_GLOBAL	@TYP:43
+%SIX 62.7		     
 
 ;
 
 @V 1 20 0
-doFI14	18	VAR_GLOBAL	@TYP:43
-%SQX 14.0		     
+diLightCurtainP15	18	VAR_GLOBAL	@TYP:43
+%SIX 62.5		     
 
 ;
 
 @V 1 21 0
-diLightCurtainP11	19	VAR_GLOBAL	@TYP:43
-%SIX 62.4		     
+doFI14	19	VAR_GLOBAL	@TYP:43
+%SQX 14.0		     
 
 ;
 
 @V 1 22 0
-SM6_ReleaseOutput02	20	VAR_GLOBAL	@TYP:1
-%NSQX 23.1		     
+diLightCurtainP11	20	VAR_GLOBAL	@TYP:43
+%SIX 62.4		     
 
 ;
 
 @V 1 23 0
-SM6_ReleaseOutput01	21	VAR_GLOBAL	@TYP:1
-%NSQX 23.0		     
+SM6_ReleaseOutput02	21	VAR_GLOBAL	@TYP:1
+%NSQX 23.1		     
 
 ;
 
 @V 1 24 0
-palletizationEdmError	22	VAR_GLOBAL	@TYP:1
-%NSQX 0.2		     
+SM6_ReleaseOutput01	22	VAR_GLOBAL	@TYP:1
+%NSQX 23.0		     
 
 ;
 
 @V 1 25 0
-diPalletizationEDM	23	VAR_GLOBAL	@TYP:43
-%SIX 62.0		     
+palletizationEdmError	23	VAR_GLOBAL	@TYP:1
+%NSQX 0.2		     
 
 ;
 
 @V 1 26 0
-doPalletizationContactor2	24	VAR_GLOBAL	@TYP:43
-%SQX 17.1		     
+diPalletizationEDM	24	VAR_GLOBAL	@TYP:43
+%SIX 62.0		     
 
 ;
 
 @V 1 27 0
-doPalletizationContactor1	25	VAR_GLOBAL	@TYP:43
-%SQX 17.0		     
+doPalletizationContactor2	25	VAR_GLOBAL	@TYP:43
+%SQX 17.1		     
 
 ;
 
 @V 1 28 0
-lightCurtainP17grey	26	VAR_GLOBAL	@TYP:1
-%NSQX 0.6		     
+doPalletizationContactor1	26	VAR_GLOBAL	@TYP:43
+%SQX 17.0		     
 
 ;
 
 @V 1 29 0
-doRobotContactor1	27	VAR_GLOBAL	@TYP:43
-%SQX 15.0		     
+lightCurtainP17grey	27	VAR_GLOBAL	@TYP:1
+%NSQX 0.6		     
 
 ;
 
 @V 1 30 0
-doRobotContactor2	28	VAR_GLOBAL	@TYP:43
-%SQX 15.1		     
+doRobotContactor1	28	VAR_GLOBAL	@TYP:43
+%SQX 15.0		     
 
 ;
 
 @V 1 31 0
-SM4_ReleaseOutput01	29	VAR_GLOBAL	@TYP:1
-%NSQX 21.0		     
+doRobotContactor2	29	VAR_GLOBAL	@TYP:43
+%SQX 15.1		     
 
 ;
 
 @V 1 32 0
-SM4_ReleaseOutput02	30	VAR_GLOBAL	@TYP:1
+SM4_ReleaseOutput01	30	VAR_GLOBAL	@TYP:1
+%NSQX 21.0		     
+
+;
+
+@V 1 33 0
+SM4_ReleaseOutput02	31	VAR_GLOBAL	@TYP:1
 %NSQX 21.1		     
 
 ;
 
 @V 1 34 0
-diDoor2locked	31	VAR_GLOBAL	@TYP:43
-%SIX 19.4		     
+doRobotDoor2	32	VAR_GLOBAL	@TYP:43
+%SQX 15.3		     
 
 ;
 
 @V 1 35 0
-diDoor1locked	32	VAR_GLOBAL	@TYP:43
-%SIX 19.3		     
+robotDoorEdmError	33	VAR_GLOBAL	@TYP:1
+%NSQX 1.1		     
 
 ;
 
 @V 1 36 0
-diDoor3locked	33	VAR_GLOBAL	@TYP:43
-%SIX 19.5		     
+diRobotDoorEDM	34	VAR_GLOBAL	@TYP:43
+%SIX 61.5		     
 
 ;
 
 @V 1 37 0
-diEStop5	34	VAR_GLOBAL	@TYP:43
-%SIX 19.0		     
+SM4_ReleaseOutput03	35	VAR_GLOBAL	@TYP:1
+%NSQX 21.2		     
 
 ;
 
 @V 1 38 0
-diEStop1	35	VAR_GLOBAL	@TYP:43
-%SIX 18.4		     
-
-;
-
-@V 1 39 0
-diEStop2	36	VAR_GLOBAL	@TYP:43
-%SIX 18.5		     
+SM4_ReleaseOutput04	36	VAR_GLOBAL	@TYP:1
+%NSQX 21.3		     
 
 ;
 
 @V 1 40 0
-diEStop3	37	VAR_GLOBAL	@TYP:43
-%SIX 18.6		     
+diDoor2locked	37	VAR_GLOBAL	@TYP:43
+%SIX 19.4		     
 
 ;
 
 @V 1 41 0
-diEStop4	38	VAR_GLOBAL	@TYP:43
-%SIX 18.7		     
+diDoor1locked	38	VAR_GLOBAL	@TYP:43
+%SIX 19.3		     
 
 ;
 
 @V 1 42 0
-diEStopRobot	39	VAR_GLOBAL	@TYP:43
-%SIX 19.2		     
+diDoor3locked	39	VAR_GLOBAL	@TYP:43
+%SIX 19.5		     
 
 ;
 
 @V 1 43 0
-diEStopWrapper	40	VAR_GLOBAL	@TYP:43
-%SIX 19.1		     
+diEStop5	40	VAR_GLOBAL	@TYP:43
+%SIX 19.0		     
 
 ;
 
 @V 1 44 0
-diActivateAllSafetyCircuits	41	VAR_GLOBAL	@TYP:1
-%NSIX 0.0		     
+diEStop1	41	VAR_GLOBAL	@TYP:43
+%SIX 18.4		     
 
 ;
 
 @V 1 45 0
-safetyAlive	42	VAR_GLOBAL	@TYP:1
-%NSQX 0.0		     
+diEStop2	42	VAR_GLOBAL	@TYP:43
+%SIX 18.5		     
 
 ;
 
 @V 1 46 0
-diActivateMagazineSafety	43	VAR_GLOBAL	@TYP:1
-%NSIX 0.1		     
+diEStop3	43	VAR_GLOBAL	@TYP:43
+%SIX 18.6		     
 
 ;
 
 @V 1 47 0
-SM3_ReleaseOutput01	44	VAR_GLOBAL	@TYP:1
-%NSQX 20.0		     
+diEStop4	44	VAR_GLOBAL	@TYP:43
+%SIX 18.7		     
 
 ;
 
 @V 1 48 0
-SM3_ReleaseOutput02	45	VAR_GLOBAL	@TYP:1
-%NSQX 20.1		     
+diEStopRobot	45	VAR_GLOBAL	@TYP:43
+%SIX 19.2		     
 
 ;
 
 @V 1 49 0
-SM3_ReleaseOutput03	46	VAR_GLOBAL	@TYP:1
-%NSQX 20.2		     
+diEStopWrapper	46	VAR_GLOBAL	@TYP:43
+%SIX 19.1		     
 
 ;
 
 @V 1 50 0
-doMutingLampP15	47	VAR_GLOBAL	@TYP:43
-%SQX 18.2		     
+diActivateAllSafetyCircuits	47	VAR_GLOBAL	@TYP:1
+%NSIX 0.0		     
 
 ;
 
 @V 1 51 0
-SM7_ReleaseOutput03	48	VAR_GLOBAL	@TYP:1
-%NSQX 24.2		     
+safetyAlive	48	VAR_GLOBAL	@TYP:1
+%NSQX 0.0		     
 
 ;
 
 @V 1 52 0
-SM7_ReleaseOutput01	49	VAR_GLOBAL	@TYP:1
-%NSQX 24.0		     
+diActivateMagazineSafety	49	VAR_GLOBAL	@TYP:1
+%NSIX 0.1		     
 
 ;
 
 @V 1 53 0
-SM7_ReleaseOutput02	50	VAR_GLOBAL	@TYP:1
-%NSQX 24.1		     
+SM3_ReleaseOutput01	50	VAR_GLOBAL	@TYP:1
+%NSQX 20.0		     
 
 ;
 
 @V 1 54 0
-SM7_ReleaseOutput04	51	VAR_GLOBAL	@TYP:1
-%NSQX 24.3		     
+SM3_ReleaseOutput02	51	VAR_GLOBAL	@TYP:1
+%NSQX 20.1		     
+
+;
+
+@V 1 55 0
+SM3_ReleaseOutput03	52	VAR_GLOBAL	@TYP:1
+%NSQX 20.2		     
 
 ;
 
 @V 1 56 0
-diOverrideP17	52	VAR_GLOBAL	@TYP:43
-%SIX 61.3		     
+doMutingLampP15	53	VAR_GLOBAL	@TYP:43
+%SQX 18.2		     
 
 ;
 
 @V 1 57 0
-doMutingLampP17	53	VAR_GLOBAL	@TYP:43
-%SQX 18.3		     
+SM7_ReleaseOutput03	54	VAR_GLOBAL	@TYP:1
+%NSQX 24.2		     
 
 ;
 
 @V 1 58 0
-diLightCurtainP17muting2	54	VAR_GLOBAL	@TYP:43
-%SIX 61.1		     
+SM7_ReleaseOutput01	55	VAR_GLOBAL	@TYP:1
+%NSQX 24.0		     
 
 ;
 
 @V 1 59 0
-diLightCurtainP17muting1	55	VAR_GLOBAL	@TYP:43
-%SIX 61.0		     
+SM7_ReleaseOutput02	56	VAR_GLOBAL	@TYP:1
+%NSQX 24.1		     
 
 ;
 
 @V 1 60 0
-diOutfeedEDM	56	VAR_GLOBAL	@TYP:43
-%SIX 62.2		     
-
-;
-
-@V 1 61 0
-outfeedEdmError	57	VAR_GLOBAL	@TYP:1
-%NSQX 0.3		     
+SM7_ReleaseOutput04	57	VAR_GLOBAL	@TYP:1
+%NSQX 24.3		     
 
 ;
 
 @V 1 62 0
-doOutfeedContactor2	58	VAR_GLOBAL	@TYP:43
-%SQX 18.1		     
+diOverrideP17	58	VAR_GLOBAL	@TYP:43
+%SIX 61.3		     
 
 ;
 
 @V 1 63 0
-doOutfeedContactor1	59	VAR_GLOBAL	@TYP:43
-%SQX 18.0		     
+doMutingLampP17	59	VAR_GLOBAL	@TYP:43
+%SQX 18.3		     
 
 ;
 
 @V 1 64 0
-doWrapperContactor1	60	VAR_GLOBAL	@TYP:43
-%SQX 16.0		     
+diLightCurtainP17muting2	60	VAR_GLOBAL	@TYP:43
+%SIX 61.1		     
 
 ;
 
 @V 1 65 0
-doWrapperContactor2	61	VAR_GLOBAL	@TYP:43
-%SQX 16.1		     
+diLightCurtainP17muting1	61	VAR_GLOBAL	@TYP:43
+%SIX 61.0		     
 
 ;
 
 @V 1 66 0
-diWrapperEDM	62	VAR_GLOBAL	@TYP:43
-%SIX 61.6		     
+diOutfeedEDM	62	VAR_GLOBAL	@TYP:43
+%SIX 62.2		     
 
 ;
 
 @V 1 67 0
-SM5_ReleaseOutput01	63	VAR_GLOBAL	@TYP:1
-%NSQX 22.0		     
+outfeedEdmError	63	VAR_GLOBAL	@TYP:1
+%NSQX 0.3		     
 
 ;
 
 @V 1 68 0
-SM5_ReleaseOutput02	64	VAR_GLOBAL	@TYP:1
-%NSQX 22.1		     
+doOutfeedContactor2	64	VAR_GLOBAL	@TYP:43
+%SQX 18.1		     
 
 ;
 
 @V 1 69 0
-wrapperEdmError	65	VAR_GLOBAL	@TYP:1
+doOutfeedContactor1	65	VAR_GLOBAL	@TYP:43
+%SQX 18.0		     
+
+;
+
+@V 1 70 0
+doWrapperContactor1	66	VAR_GLOBAL	@TYP:43
+%SQX 16.0		     
+
+;
+
+@V 1 71 0
+doWrapperContactor2	67	VAR_GLOBAL	@TYP:43
+%SQX 16.1		     
+
+;
+
+@V 1 72 0
+diWrapperEDM	68	VAR_GLOBAL	@TYP:43
+%SIX 61.6		     
+
+;
+
+@V 1 73 0
+SM5_ReleaseOutput01	69	VAR_GLOBAL	@TYP:1
+%NSQX 22.0		     
+
+;
+
+@V 1 74 0
+SM5_ReleaseOutput02	70	VAR_GLOBAL	@TYP:1
+%NSQX 22.1		     
+
+;
+
+@V 1 75 0
+wrapperEdmError	71	VAR_GLOBAL	@TYP:1
 %NSQX 0.7		     
 
 ;
