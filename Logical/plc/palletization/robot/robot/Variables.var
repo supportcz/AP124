@@ -9,4 +9,8 @@ VAR
 	C5G : C5GMap_typ;
 	robotDoorEdmError : BOOL;
 	stateRobotAuto : StateRobotAuto;
+	MTBasicsPWM_0 : MTBasicsPWM;
+	MTBasicsPWM_1 : MTBasicsPWM;
+	dataConsistent : BOOL;
+	MTBasicsPWM_2 : MTBasicsPWM;
 END_VAR

@@ -584,6 +584,42 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="47">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="48">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="False"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
+    <Alarm Index="49">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="True"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -646,6 +682,9 @@
       <Text ID="1549" Value="Interlayer sheet magazine: Safe frame"/>
       <Text ID="1577" Value="Robot EDM error"/>
       <Text ID="1605" Value="Robot door EDM error"/>
+      <Text ID="1633" Value="Robot key not in Remote position"/>
+      <Text ID="1644" Value="Robot has alarm"/>
+      <Text ID="1655" Value="Robot can not go to home position"/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -696,6 +735,9 @@
       <Text ID="1549" Value=""/>
       <Text ID="1577" Value=""/>
       <Text ID="1605" Value=""/>
+      <Text ID="1633" Value=""/>
+      <Text ID="1644" Value=""/>
+      <Text ID="1655" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -746,6 +788,9 @@
       <Text ID="1549" Value=""/>
       <Text ID="1577" Value=""/>
       <Text ID="1605" Value=""/>
+      <Text ID="1633" Value=""/>
+      <Text ID="1644" Value=""/>
+      <Text ID="1655" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -796,6 +841,9 @@
       <Index ID="1549" Value="44"/>
       <Index ID="1577" Value="45"/>
       <Index ID="1605" Value="46"/>
+      <Index ID="1633" Value="47"/>
+      <Index ID="1644" Value="48"/>
+      <Index ID="1655" Value="49"/>
       <Index ID="312" Value="Group"/>
     </IndexMap>
   </TextGroup>

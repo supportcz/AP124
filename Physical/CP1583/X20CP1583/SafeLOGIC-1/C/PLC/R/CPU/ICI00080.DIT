@@ -2,9 +2,9 @@
 T: PROGRAM Main
 FW: NO
 CI#: 80
-QSL: 34
-QVE: 34
-QVPC: 34
+QSL: 35
+QVE: 35
+QVPC: 35
 QPar: 0
 QFBI: 25
 *)
@@ -208,6 +208,12 @@ SF_EDM_V1_00_5	33	VAR	@FB:81
 
 @V 1 35 0
 SF_EDM_V1_00_6	34	VAR	@FB:81
+		     
+
+;
+
+@V 4 254 0
+__palletization@0	35	VAR	@TYP:43
 		     
 
 ;

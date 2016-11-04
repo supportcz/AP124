@@ -20,7 +20,12 @@ TYPE
 	StateRobotAuto : 
 		(
 		stateRobotAutoInit,
-		stateRobotAutoGoToHome
+		stateRobotAutoStart,
+		stateRobotAutoStart2,
+		stateRobotAutoGoToHome,
+		stateRobotAutoGoToHome2,
+		stateRobotAutoGoToHome3,
+		stateRobotAutoWait
 		);
 	StateInterlayerAuto : 
 		(

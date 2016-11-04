@@ -1,5 +1,17 @@
 
 TYPE
+	MoveType : 
+		(
+		moveTypeNo,
+		moveTypeGoHome,
+		moveTypeGoToTable,
+		moveTypeGoForSeparator,
+		moveTypePutSeparatorOnPallet,
+		moveTypeRelativeVerticalOffset,
+		moveTypePlaceFirstHalf,
+		moveTypePlaceSecondHalf,
+		moveTypeRelativeHorizontalOffset
+		);
 	C5GMap_In_typ : 	STRUCT 
 		NoAlarm : BOOL;
 		DriveOnStatus : BOOL;
@@ -17,6 +29,11 @@ TYPE
 		Local_Remote : BOOL;
 		SystemReady : BOOL;
 		HeartBit : BOOL;
+		moveActive : BOOL;
+		isItSafeToGoHome : BOOL;
+		moveType : MoveType;
+		productType : USINT;
+		nbOfLayers : USINT;
 	END_STRUCT;
 	C5GMap_Out_typ : 	STRUCT 
 		DriveOn : BOOL;
@@ -29,6 +46,10 @@ TYPE
 		U4 : BOOL;
 		CancelAlarm : BOOL;
 		SafetySpeed : BOOL;
+		startMove : BOOL;
+		moveType : MoveType;
+		productType : USINT;
+		nbOfLayers : USINT;
 	END_STRUCT;
 	C5GMap_DATA_typ : 	STRUCT 
 		IN : C5GMap_In_typ;

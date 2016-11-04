@@ -21,7 +21,7 @@
 			<Channel Name="BOOL007" Mapping="NSQX0.6" Variable="lightCurtainP17grey" Address="outfeed_ma:lightCurtainP17" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL008" Mapping="NSQX0.7" Variable="wrapperEdmError" Address="wrapper:wrapperEdmError" SODIndex="0x2580" SODSubIndex="0x1" />
 			<Channel Name="BOOL009" Mapping="NSQX1.0" Variable="robotEdmError" Address="robot:robotEdmError" SODIndex="0x2580" SODSubIndex="0x2" />
-			<Channel Name="BOOL010" Mapping="NSQX1.1" Variable="robotDoorEdmError" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="BOOL010" Mapping="NSQX1.1" Variable="robotDoorEdmError" Address="robot:robotDoorEdmError" SODIndex="0x2580" SODSubIndex="0x2" />
 			<Channel Name="BOOL101" Mapping="NSIX0.0" Variable="diActivateAllSafetyCircuits" Address="diActivateAllSafetyCircuits" SODIndex="0x2500" SODSubIndex="0x2" />
 			<Channel Name="BOOL102" Mapping="NSIX0.1" Variable="diActivateMagazineSafety" Address="pallet_mag:diActivateMagazineSafetyCircuits" SODIndex="0x2500" SODSubIndex="0x2" />
 		</Module>
