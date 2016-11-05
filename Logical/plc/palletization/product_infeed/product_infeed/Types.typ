@@ -41,14 +41,6 @@ TYPE
 		stateConveyorDelayForTurn,
 		stateConveyorFillP1
 		);
-	StateInterlayer : 
-		(
-		stateInterlayerInit,
-		stateInterlayerDown,
-		stateInterlayerGoUp,
-		stateInterlayerUp,
-		stateInterlayerGoDown
-		);
 	StatePusherLifting : 
 		(
 		statePusherLiftingUndefined,
@@ -64,5 +56,14 @@ TYPE
 		stateRotationForward,
 		stateRotationMovingBack,
 		stateRotationBack
+		);
+	StateInterlayer : 
+		(
+		stateInterlayerInit,
+		stateInterlayerDown,
+		stateInterlayerGoUp,
+		stateInterlayerUp,
+		stateInterlayerGoDown,
+		stateInterlayerGoDown2
 		);
 END_TYPE

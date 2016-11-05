@@ -45,7 +45,7 @@ ACTION StatusMessagePalletization:
 	IF modeZonePalletization = modeZoneAuto THEN
 		statusMessagePalletization := 26;
 	END_IF
-	IF stateInterlayerAuto = stateInterlayerAutoEmpty THEN
+	IF interlayerSheetMagazineEmpty THEN
 		statusMessagePalletization := 31;
 	END_IF	
 	IF alarmInZonePalletization THEN

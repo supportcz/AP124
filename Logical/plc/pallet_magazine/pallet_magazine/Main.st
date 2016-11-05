@@ -8,6 +8,8 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 
+	modeZoneMagazineOld := modeZoneMagazine;
+	
 	readyToStart := NOT diMagazineEDM;
 	
 	IF cpuIsSimulated THEN
@@ -27,16 +29,22 @@ PROGRAM _CYCLIC
 			END_IF
 			cmdMagazineManual := FALSE;
 			cmdMagazineAuto := FALSE;
+			magazineEmpty := FALSE;
 		
 		modeZoneManual:
 
+			IF modeZoneMagazineOld <> modeZoneManual THEN
+			END_IF	
+			
 			IF (NOT alarmInZoneMagazine OR cpuIsSimulated) AND (cmdMagazineAuto OR TP_Start.Q) THEN 
 				modeZoneMagazine := modeZoneAuto;
 				stateAuto := stateAutoUndefined;
-				magazineEmpty := FALSE;
 			END_IF
 			cmdMagazineManual := FALSE;
 
+			magazineEmpty := FALSE;
+
+		
 		modeZoneAuto:
 			
 			IF (alarmInZoneMagazine AND NOT cpuIsSimulated) OR cmdMagazineManual THEN

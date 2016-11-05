@@ -96,7 +96,6 @@ VAR_CONFIG
 	::product_in:diPusherBlockedByTray AT %IX."I50".DigitalInput09;
 	::product_in:diBumperForward AT %IX."I50".DigitalInput10;
 	::product_in:HMIS AT %IW."U10".HMIS_Input;
-	::product_in:diRobotReady AT %IX."I50".DigitalInput04;
 	::product_in:RFRD AT %IW."U10".RFRD_Input;
 	::pallet_con:diPalletStopP16 AT %IX."I80".DigitalInput05;
 	::pallet_con:diPalletStopP17 AT %IX."I80".DigitalInput06;
@@ -132,7 +131,7 @@ VAR_CONFIG
 	::robot_head:diSuckerLeftBackBack AT %IX."I110".DigitalInput06;
 	::robot_head:diSuckerRightFrontBack AT %IX."I110".DigitalInput07;
 	::robot_head:diSuckerRightBackBack AT %IX."I110".DigitalInput08;
-	::robot_head:doSuck AT %QX."Q112".DigitalOutput05;
+	::doSuck AT %QX."Q112".DigitalOutput05;
 	::robot_head:doNoSuck AT %QX."Q112".DigitalOutput06;
 	::robot_head:doCenteringBack AT %QX."Q112".DigitalOutput07;
 	::robot_head:doCenteringForward AT %QX."Q112".DigitalOutput08;
@@ -184,10 +183,8 @@ VAR_CONFIG
 	::robot:robotEdmError AT %IX."I18".BOOL009;
 	::robot:C5G.ModuleOk AT %IX."C5Gopen".ModuleOk;
 	::robot:C5G.Raw.IN[0] AT %ID."C5Gopen".Input1_U32_I3100_S01;
-	::robot:C5G.Raw.IN[1] AT %ID."C5Gopen".Input2_U32_I3100_S02;
-	::robot:C5G.Raw.IN[2] AT %ID."C5Gopen".Input3_U32_I3100_S03;
+	::robot:MakeMove_0.RawInput AT %ID."C5Gopen".Input2_U32_I3100_S02;
 	::robot:C5G.Raw.OUT[0] AT %QD."C5Gopen".Output1_U32_I3200_S01;
-	::robot:C5G.Raw.OUT[1] AT %QD."C5Gopen".Output2_U32_I3200_S02;
-	::robot:C5G.Raw.OUT[2] AT %QD."C5Gopen".Output3_U32_I3200_S03;
+	::robot:MakeMove_0.RawOutput AT %QD."C5Gopen".Output2_U32_I3200_S02;
 	::robot:robotDoorEdmError AT %IX."I18".BOOL010;
 END_VAR

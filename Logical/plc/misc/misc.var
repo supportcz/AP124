@@ -1,5 +1,5 @@
-VAR CONSTANT
-	release : BOOL := FALSE;
+VAR RETAIN
+	testAtAtrima : {REDUND_UNREPLICABLE} BOOL;
 END_VAR
 VAR
 	diActivateAllSafetyCircuits : BOOL; (*button on main cabinet to activate all safety circuits*)

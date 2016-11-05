@@ -8,9 +8,10 @@ END_VAR
 VAR
 	C5G : C5GMap_typ;
 	robotDoorEdmError : BOOL;
-	stateRobotAuto : StateRobotAuto;
 	MTBasicsPWM_0 : MTBasicsPWM;
 	MTBasicsPWM_1 : MTBasicsPWM;
-	dataConsistent : BOOL;
 	MTBasicsPWM_2 : MTBasicsPWM;
+	MakeMove_0 : MakeMove;
+	TON_Robot : TON;
+	dRecipes : REFERENCE TO Recipes;
 END_VAR

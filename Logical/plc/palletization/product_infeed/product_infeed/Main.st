@@ -244,14 +244,33 @@ PROGRAM _CYCLIC
 				stateAutoPusherToRobotHead:
 					
 					//wait for robot
-					IF diRobotReady THEN	
+					IF stateRobotAuto = stateRobotAutoWaitForBottles THEN	
 						stateAuto := stateAutoPusherToRobotHead2;
 					END_IF
 				
 				stateAutoPusherToRobotHead2:
 					
+					//send data to robot
+					robotData.layer := actualLayerIndex;
+					robotData.placeFirstHalf := dTrayBehindRotation.lastTray = lastTrayInHalfLayer;
+					robotData.placeSecondHalf := dTrayBehindRotation.lastTray = lastTrayInLayer;
+					
+					IF actualLayerIndex = 0 THEN
+						robotData.placeSaparator := dActualRecipe.interlayerSheetBottom;
+					ELSE
+						robotData.placeSaparator := TRUE;
+					END_IF
+
+					IF actualLayerIndex = dActualRecipe.nbOfLayers - 1 THEN
+						robotData.placeSeparatorOnTop := dActualRecipe.interlayerSheetTop;
+					ELSE
+						robotData.placeSeparatorOnTop := FALSE;
+					END_IF
+					
+					robotData.start := TRUE;
+					
 					//correct counters
-					IF counterTraysBehindRotation - firstTrayInLayer = dActualLayout.nbOfTrays THEN
+//					IF counterTraysBehindRotation - firstTrayInLayer = dActualLayout.nbOfTrays THEN
 						//start new layer
 						actualLayerIndex := actualLayerIndex + 1;
 						IF actualLayerIndex = dActualRecipe.nbOfLayers THEN
@@ -267,7 +286,7 @@ PROGRAM _CYCLIC
 						
 						counterTraysInRobotHead := counterTraysBehindRotation;
 						
-					END_IF
+//					END_IF
 					stateAuto := stateAutoPusherToRobotHead3;
 						
 

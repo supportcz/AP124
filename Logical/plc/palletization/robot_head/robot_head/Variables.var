@@ -1,7 +1,4 @@
 VAR
-	centeringForward : BOOL;
-	cmdRollerClose : BOOL;
-	cmdRollerOpen : BOOL;
 	diCenteringBack : BOOL;
 	diCenteringForward : BOOL;
 	diRailingDown : BOOL;
@@ -23,15 +20,8 @@ VAR
 	doRollerBrake : BOOL;
 	doRollerClose : BOOL;
 	doRollerOpen : BOOL;
-	doSuck : BOOL;
 	doSuckersBack : BOOL;
 	doSuckersForward : BOOL;
-	railingUp : BOOL;
-	stateCentering : StateCentering;
-	stateRailing : StateRailing;
-	stateRoller : StateRoller;
-	stateSuckers : StateSuckers;
-	suckersForward : BOOL;
 	TON_CenteringRequest : TON;
 	TON_RailingRequest : TON;
 	TON_RollerRequest : TON;

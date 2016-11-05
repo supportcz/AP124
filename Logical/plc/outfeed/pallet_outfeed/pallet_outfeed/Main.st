@@ -37,7 +37,7 @@ PROGRAM _CYCLIC
 
 			
 			// control conveyors			
-			IF release THEN	
+			IF NOT testAtAtrima THEN	
 				IF statePalletP19 <> palletNotPresent AND statePalletP20 = palletNotPresent THEN
 					cmdMovePalletP19 := TRUE;
 				END_IF

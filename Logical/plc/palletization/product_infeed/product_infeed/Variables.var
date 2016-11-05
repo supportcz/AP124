@@ -26,7 +26,6 @@ VAR
 	diPusherBlockedByTray : BOOL;
 	diPusherLiftingLowerPosition : BOOL;
 	diPusherLiftingUpperPosition : BOOL;
-	diRobotReady : BOOL;
 	diRotationBack : BOOL;
 	diRotationForward : BOOL;
 	diTrayBehindRotation : BOOL;
@@ -55,7 +54,6 @@ VAR
 	stateBumper : StateBumper;
 	stateConveyorP1 : StateConveyor;
 	stateConveyorP2 : StateConveyor;
-	stateInterlayer : StateInterlayer;
 	statePusherLifting : StatePusherLifting;
 	stateRotation : StateRotation;
 	TOF_TrayBehindRotation : TOF;
@@ -69,4 +67,6 @@ VAR
 	TON_WaitForLastTray : TON;
 	trayBehindRotationOld : BOOL;
 	trayOnInputP2old : BOOL;
+	TON_JumpUp : TON;
+	stateInterlayer : StateInterlayer;
 END_VAR

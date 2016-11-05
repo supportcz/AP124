@@ -2707,7 +2707,7 @@
           <Property Name="Left" Value="570"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="90"/>
+          <Property Name="Top" Value="50"/>
           <Property Name="Width" Value="16"/>
         </Control>
         <Control ClassId="0x00001005" Name="common3">
@@ -2719,10 +2719,10 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[3]]"/>
-          <Property Name="Left" Value="570"/>
+          <Property Name="Left" Value="380"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="90"/>
+          <Property Name="Top" Value="10"/>
           <Property Name="Width" Value="16"/>
         </Control>
         <Control ClassId="0x00001005" Name="common4">
@@ -2737,7 +2737,7 @@
           <Property Name="Left" Value="570"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="90"/>
+          <Property Name="Top" Value="50"/>
           <Property Name="Width" Value="16"/>
         </Control>
         <Control ClassId="0x00001005" Name="common5">
@@ -2764,10 +2764,10 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="19"/>
           <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.alarm_management.alarmImageCommon[6]]"/>
-          <Property Name="Left" Value="190"/>
+          <Property Name="Left" Value="210"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="150"/>
+          <Property Name="Top" Value="90"/>
           <Property Name="Width" Value="16"/>
         </Control>
         <Control ClassId="0x00001005" Name="common7">

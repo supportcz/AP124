@@ -31,4 +31,5 @@ VAR
 	TON_VerticalMovement : TON;
 	TP_Start : TP;
 	TON_PalletOnConveyorP12 : TON;
+	modeZoneMagazineOld : ModeZone;
 END_VAR

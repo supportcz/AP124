@@ -55,12 +55,15 @@ PROGRAM _CYCLIC
 	
 	doSignColumnGreen := MTBasicsPWM_1.Out;
 	
-	MTBasicsPWM_2(Enable := alarmPresent, DutyCycle := 50, Period := 1);
+	
+	//horn
+	MTBasicsPWM_2(Enable := alarmPresent OR magazineEmpty OR interlayerSheetMagazineEmpty, DutyCycle := 50, Period := 1);
 	
 	doSignColumnOrange := MTBasicsPWM_2.Out OR bypassHorn;
 	
-	IF release THEN
-		doSignColumnHorn := MTBasicsPWM_2.Out AND NOT bypassHorn;
+	doSignColumnHorn := MTBasicsPWM_2.Out AND NOT bypassHorn;
+	IF testAtAtrima THEN
+		doSignColumnHorn := FALSE;
 	END_IF
 	
 	IF NOT alarmPresent THEN

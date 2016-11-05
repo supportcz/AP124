@@ -1,7 +1,7 @@
 
 ACTION Interlayer: 
 
-	doInterlayerEnable := TRUE;
+	doInterlayerEnable := modeZonePalletization <> modeZoneOff;
 	doInterlayerPowerOn := TRUE;
 	
 //	diInterlayerSheetPresent;
@@ -50,14 +50,26 @@ ACTION Interlayer:
 			cmdInterlayerUp := FALSE;
 
 		stateInterlayerGoDown:
-
+			
+			//first go up 
+			doInterlayerUp := TRUE;
+			doInterlayerDown := FALSE;
+			
+			TON_JumpUp(IN := TRUE, PT := T#0.2s);
+			IF TON_JumpUp.Q THEN
+				stateInterlayer := stateInterlayerGoDown2;
+			END_IF
+		
+		stateInterlayerGoDown2:
+		
 			//set output		
+			doInterlayerUp := FALSE;
 			doInterlayerDown := TRUE;
 			
 			//position reached?
 			IF diInterlayerDown OR NOT cmdInterlayerDown THEN
 				StopInterlayer;
-			END_IF	
+			END_IF			
 			
 		stateInterlayerDown:
 
@@ -76,8 +88,9 @@ ACTION Interlayer:
 			IF modeZonePalletizationOld <> modeZoneManual THEN
 				cmdInterlayerUp := FALSE;
 				cmdInterlayerDown := FALSE;
-			END_IF
-		
+				interlayerSheetMagazineEmpty := FALSE;
+			END_IF	
+			
 			stateInterlayerAuto := stateInterlayerAutoInit;
 		
 		modeZoneAuto:
@@ -90,7 +103,7 @@ ACTION Interlayer:
 				
 				stateInterlayerAutoFill:
 				
-					cmdInterlayerUp := NOT diInterlayerSheetPresent;
+					cmdInterlayerUp := diInterlayerSheetPresent;
 				
 					IF stateInterlayer = stateInterlayerUp THEN
 						stateInterlayerAuto := stateInterlayerAutoEmpty;
@@ -98,6 +111,7 @@ ACTION Interlayer:
 				
 				stateInterlayerAutoEmpty:
 					
+					interlayerSheetMagazineEmpty := TRUE;
 					cmdInterlayerDown := TRUE;
 				
 			END_CASE
@@ -115,5 +129,6 @@ ACTION StopInterlayer:
 	cmdInterlayerDown := FALSE;
 	doInterlayerUp := doInterlayerDown :=  FALSE;
 	stateInterlayer := stateInterlayerInit;
+	TON_JumpUp(IN := FALSE);
 END_ACTION
 
