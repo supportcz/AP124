@@ -253,12 +253,12 @@ PROGRAM _CYCLIC
 					//send data to robot
 					robotData.layer := actualLayerIndex;
 					robotData.placeFirstHalf := dTrayBehindRotation.lastTray = lastTrayInHalfLayer;
-					robotData.placeSecondHalf := dTrayBehindRotation.lastTray = lastTrayInLayer;
+//					robotData.placeSecondHalf := dTrayBehindRotation.lastTray = lastTrayInLayer;
 					
 					IF actualLayerIndex = 0 THEN
-						robotData.placeSaparator := dActualRecipe.interlayerSheetBottom;
+						robotData.placeSeparator := dActualRecipe.interlayerSheetBottom;
 					ELSE
-						robotData.placeSaparator := TRUE;
+						robotData.placeSeparator := TRUE;
 					END_IF
 
 					IF actualLayerIndex = dActualRecipe.nbOfLayers - 1 THEN
@@ -267,7 +267,7 @@ PROGRAM _CYCLIC
 						robotData.placeSeparatorOnTop := FALSE;
 					END_IF
 					
-					robotData.start := TRUE;
+					robotData.start := TRUE; //transfer data to robot
 					
 					//correct counters
 //					IF counterTraysBehindRotation - firstTrayInLayer = dActualLayout.nbOfTrays THEN

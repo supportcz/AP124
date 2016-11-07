@@ -4,8 +4,7 @@ TYPE
 		start : BOOL;
 		layer : INT;
 		placeFirstHalf : BOOL;
-		placeSecondHalf : BOOL;
-		placeSaparator : BOOL;
+		placeSeparator : BOOL;
 		placeSeparatorOnTop : BOOL;
 	END_STRUCT;
 	PusherDrive : 	STRUCT 
@@ -28,31 +27,27 @@ TYPE
 	StateRobotAuto : 
 		(
 		stateRobotAutoInit,
-		stateRobotAutoStart,
 		stateRobotAutoGoHome,
 		stateRobotAutoGoHome2,
 		stateRobotAutoPrepareHead,
-		stateRobotAutoPrepareHead2,
 		stateRobotAutoGoToTable,
-		stateRobotAutoGoToTable2,
 		stateRobotAutoWaitForBottles,
 		stateRobotAutoRailingDown,
 		stateRobotAutoCenteringForward,
+		stateRobotAutoSwitch1,
 		stateRobotAutoSeparator,
 		stateRobotAutoSeparator2,
 		stateRobotAutoSeparator3,
-		stateRobotAutoSeparator4,
-		stateRobotAutoSeparator5,
-		stateRobotAutoSeparator6,
-		stateRobotAutoSeparator7,
+		stateRobotAutoHideSuckers,
+		stateRobotAutoHideSuckers2,
+		stateRobotAutoWhichHalf,
 		stateRobotAutoPlaceFirstHalf,
 		stateRobotAutoPlaceFirstHalf2,
 		stateRobotAutoPlaceFirstHalf3,
 		stateRobotAutoPlaceFirstHalf4,
-		stateRobotAutoPlaceFirstHalf5,
-		stateRobotAutoPlaceFirstHalf6,
-		stateRobotAutoPlaceFirstHalf7,
-		stateRobotAutoPlaceFirstHalf8
+		stateRobotAutoPlaceSecondHalf,
+		stateRobotAutoPlaceSecondHalf2,
+		stateRobotAutoPlaceSecondHalf3
 		);
 	StateInterlayerAuto : 
 		(

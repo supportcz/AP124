@@ -1,16 +1,31 @@
 
-FUNCTION_BLOCK MakeMove
+FUNCTION_BLOCK Comau
 	VAR_INPUT
-		Execute : BOOL;
+		DriveOn : BOOL;
+		NoDriveOff : BOOL;
+		Start : BOOL;
+		NoHold : BOOL;
+		CancelAlarm : BOOL;
+		SafetySpeed : BOOL;
+		MakeMove : BOOL;
 		MoveType : MoveType;
 		ProductType : USINT;
 		NbOfLayers : USINT;
-		RawInput : UDINT;
+		diSensorBellowHead : BOOL;
+		RawInput1 : UDINT;
+		RawInput2 : UDINT;
 	END_VAR
 	VAR_OUTPUT
-		Done : BOOL;
-		RawOutput : UDINT;
+		NoAlarm : BOOL;
+		DriveOnStatus : BOOL;
+		Start_NoHoldPrgMove : BOOL;
+		Remote : BOOL;
+		SafetySpeedActive : BOOL;
+		HeartBit : BOOL;
+		MoveDone : BOOL;
 		IsItSafeToGoHome : BOOL;
+		RawOutput1 : UDINT;
+		RawOutput2 : UDINT;
 	END_VAR
 	VAR
 		moveActive : BOOL;
@@ -20,6 +35,7 @@ FUNCTION_BLOCK MakeMove
 		startMove : BOOL;
 		tmpRawOutput : UDINT;
 		state : INT;
+		MTBasicsPWM_0 : MTBasicsPWM;
 	END_VAR
 END_FUNCTION_BLOCK
 

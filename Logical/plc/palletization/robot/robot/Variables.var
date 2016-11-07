@@ -1,17 +1,10 @@
 VAR
 	robotEdmError : BOOL;
-END_VAR
-VAR CONSTANT
-	IN_SIZE : USINT := 32;
-	OUT_SIZE : USINT := 32;
-END_VAR
-VAR
-	C5G : C5GMap_typ;
 	robotDoorEdmError : BOOL;
 	MTBasicsPWM_0 : MTBasicsPWM;
 	MTBasicsPWM_1 : MTBasicsPWM;
-	MTBasicsPWM_2 : MTBasicsPWM;
-	MakeMove_0 : MakeMove;
+	Comau_0 : Comau;
 	TON_Robot : TON;
 	dRecipes : REFERENCE TO Recipes;
+	ModuleOk : BOOL;
 END_VAR

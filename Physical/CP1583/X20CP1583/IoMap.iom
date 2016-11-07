@@ -181,10 +181,11 @@ VAR_CONFIG
 	::product_in:diInterlayerSheetPresent AT %IX."I80".DigitalInput16;
 	::product_in:doInterlayerPowerOn AT %QX."Q12".DigitalOutput14;
 	::robot:robotEdmError AT %IX."I18".BOOL009;
-	::robot:C5G.ModuleOk AT %IX."C5Gopen".ModuleOk;
-	::robot:C5G.Raw.IN[0] AT %ID."C5Gopen".Input1_U32_I3100_S01;
-	::robot:MakeMove_0.RawInput AT %ID."C5Gopen".Input2_U32_I3100_S02;
-	::robot:C5G.Raw.OUT[0] AT %QD."C5Gopen".Output1_U32_I3200_S01;
-	::robot:MakeMove_0.RawOutput AT %QD."C5Gopen".Output2_U32_I3200_S02;
+	::robot:ModuleOk AT %IX."C5Gopen".ModuleOk;
+	::robot:Comau_0.RawInput1 AT %ID."C5Gopen".Input1_U32_I3100_S01;
+	::robot:Comau_0.RawInput2 AT %ID."C5Gopen".Input2_U32_I3100_S02;
+	::robot:Comau_0.RawOutput1 AT %QD."C5Gopen".Output1_U32_I3200_S01;
+	::robot:Comau_0.RawOutput2 AT %QD."C5Gopen".Output2_U32_I3200_S02;
 	::robot:robotDoorEdmError AT %IX."I18".BOOL010;
+	::robot:Comau_0.diSensorBellowHead AT %IX."I110".DigitalInput11;
 END_VAR
