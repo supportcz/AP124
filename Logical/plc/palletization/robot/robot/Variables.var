@@ -7,4 +7,5 @@ VAR
 	TON_Robot : TON;
 	dRecipes : REFERENCE TO Recipes;
 	ModuleOk : BOOL;
+	diSeparatorPresent : BOOL;
 END_VAR

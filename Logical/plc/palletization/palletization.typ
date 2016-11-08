@@ -5,7 +5,7 @@ TYPE
 		layer : INT;
 		placeFirstHalf : BOOL;
 		placeSeparator : BOOL;
-		placeSeparatorOnTop : BOOL;
+		placeSeparatorAbove : BOOL;
 	END_STRUCT;
 	PusherDrive : 	STRUCT 
 		cmdAbsolute : BOOL;
@@ -38,6 +38,8 @@ TYPE
 		stateRobotAutoSeparator,
 		stateRobotAutoSeparator2,
 		stateRobotAutoSeparator3,
+		stateRobotAutoSeparator4,
+		stateRobotAutoSeparator5,
 		stateRobotAutoHideSuckers,
 		stateRobotAutoHideSuckers2,
 		stateRobotAutoWhichHalf,
@@ -47,7 +49,11 @@ TYPE
 		stateRobotAutoPlaceFirstHalf4,
 		stateRobotAutoPlaceSecondHalf,
 		stateRobotAutoPlaceSecondHalf2,
-		stateRobotAutoPlaceSecondHalf3
+		stateRobotAutoPlaceSecondHalf3,
+		stateRobotAutoPlaceSecondHalf4,
+		stateRobotAutoPlaceSecondHalf5,
+		stateRobotAutoPlaceSecondHalf6,
+		stateRobotAutoSeparatorAbove
 		);
 	StateInterlayerAuto : 
 		(

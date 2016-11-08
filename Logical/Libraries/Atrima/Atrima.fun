@@ -21,9 +21,11 @@ FUNCTION_BLOCK Comau
 		Start_NoHoldPrgMove : BOOL;
 		Remote : BOOL;
 		SafetySpeedActive : BOOL;
+		ProgrammingMode : BOOL;
 		HeartBit : BOOL;
 		MoveDone : BOOL;
 		IsItSafeToGoHome : BOOL;
+		Error : BOOL;
 		RawOutput1 : UDINT;
 		RawOutput2 : UDINT;
 	END_VAR

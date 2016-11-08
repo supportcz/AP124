@@ -1,8 +1,10 @@
 PROGRAM _INIT
 	
 	Comau_0.NoDriveOff := TRUE;
-	Comau_0.NoHold := TRUE;
+//	Comau_0.NoHold := TRUE;
 	 
+
+	
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -26,18 +28,26 @@ PROGRAM _CYCLIC
 	CASE modeZonePalletization OF
 		
 		modeZoneOff:
+			
+			//stateRobotAuto := stateRobotAutoInit;
 		
 		modeZoneManual:
 			
 			IF modeZonePalletizationOld <> modeZoneManual THEN
-				Comau_0.MakeMove := FALSE;
+//				Comau_0.MakeMove := FALSE;
 				doSuck := FALSE;
 			END_IF
-//			stateRobotAuto := stateRobotAutoInit;
+
+			Comau_0.NoHold := Comau_0.ProgrammingMode;
 		
-		
+			IF Comau_0.ProgrammingMode THEN
+				stateRobotAuto := stateRobotAutoInit;
+			END_IF
+			
 		modeZoneAuto:
 		
+			Comau_0.NoHold := TRUE;
+
 			CASE stateRobotAuto OF
 				
 				stateRobotAutoInit:
@@ -86,7 +96,13 @@ PROGRAM _CYCLIC
 				stateRobotAutoWaitForBottles:
 					
 					IF robotData.start THEN
-						stateRobotAuto := stateRobotAutoRailingDown;
+						IF pusherDrive.actualPositionIndex > 3 OR pusherDrive.requestedPositionIndex > 3 THEN
+							alarmImagePalletization[53] := TRUE;
+						ELSE
+							robotData.start := FALSE;
+							Comau_0.NbOfLayers := INT_TO_USINT(robotData.layer);
+							stateRobotAuto := stateRobotAutoRailingDown;
+						END_IF
 					END_IF	
 				
 				stateRobotAutoRailingDown:
@@ -102,7 +118,7 @@ PROGRAM _CYCLIC
 					centeringForward := TRUE;
 					
 					IF stateCentering = stateCenteringForward THEN
-						stateRobotAuto := stateRobotAutoSeparator;
+						stateRobotAuto := stateRobotAutoSwitch1;
 					END_IF				
 				
 				stateRobotAutoSwitch1:
@@ -128,10 +144,28 @@ PROGRAM _CYCLIC
 				
 					TON_Robot(IN := TRUE, PT := T#2s);
 					IF TON_Robot.Q THEN
-						stateRobotAuto := stateRobotAutoSeparator3;					
+						stateRobotAuto := stateRobotAutoSeparator3;	
 					END_IF
 				
 				stateRobotAutoSeparator3:
+				
+					Comau_0.MoveType := moveTypeVerticalOffset;
+					Comau_0.MakeMove := TRUE;	
+				
+					IF Comau_0.MoveDone THEN
+						stateRobotAuto := stateRobotAutoSeparator4;					
+					END_IF	
+				
+				stateRobotAutoSeparator4:
+					
+					IF diSeparatorPresent THEN
+						stateRobotAuto := stateRobotAutoSeparator5;					
+					ELSE
+						alarmImagePalletization[52] := TRUE;
+						stateRobotAuto := stateRobotAutoSeparator;
+					END_IF			
+				
+				stateRobotAutoSeparator5:
 				
 					Comau_0.MoveType := moveTypePutSeparatorOnPallet;
 					Comau_0.MakeMove := TRUE;
@@ -147,7 +181,11 @@ PROGRAM _CYCLIC
 					Comau_0.MakeMove := TRUE;	
 				
 					IF Comau_0.MoveDone THEN
-						stateRobotAuto := stateRobotAutoHideSuckers2;					
+						IF robotData.placeSeparatorAbove AND Comau_0.NbOfLayers = INT_TO_USINT(robotData.layer) + 1 THEN
+							stateRobotAuto := stateRobotAutoPrepareHead;					
+						ELSE
+							stateRobotAuto := stateRobotAutoHideSuckers2;					
+						END_IF
 					END_IF						
 
 				stateRobotAutoHideSuckers2:
@@ -219,8 +257,62 @@ PROGRAM _CYCLIC
 					END_IF	
 
 				stateRobotAutoPlaceSecondHalf3:
+					
+					Comau_0.MoveType := moveTypeRelativeHorizontalOffset;
+					Comau_0.MakeMove := TRUE;						
+					
+					IF Comau_0.MoveDone THEN
+						stateRobotAuto := stateRobotAutoPlaceSecondHalf4;
+					END_IF	
+				
+				stateRobotAutoPlaceSecondHalf4:
+				
+					cmdRollerOpen := TRUE;
+				
+					IF stateRoller = stateRollerOpened THEN
+						stateRobotAuto := stateRobotAutoPlaceSecondHalf5;
+					END_IF							
+						
+				stateRobotAutoPlaceSecondHalf5:
+				
+					centeringForward := FALSE;
+				
+					IF stateCentering = stateCenteringBack THEN
+						stateRobotAuto := stateRobotAutoPlaceSecondHalf6;
+					END_IF							
+						
+				stateRobotAutoPlaceSecondHalf6:
+				
+					Comau_0.MoveType := moveTypeVerticalOffset2;
+					Comau_0.MakeMove := TRUE;		
+					
+					IF Comau_0.MoveDone THEN
+						IF robotData.placeSeparatorAbove THEN
+							stateRobotAuto := stateRobotAutoSeparatorAbove;
+						ELSE
+							stateRobotAuto := stateRobotAutoPrepareHead;
+						END_IF
+					END_IF				
+				
+				stateRobotAutoSeparatorAbove:
+					
+					Comau_0.NbOfLayers := INT_TO_USINT(robotData.layer) + 1;
 
+					suckersForward := TRUE;
+					railingUp := TRUE;
+					centeringForward := FALSE;
+					cmdRollerClose := TRUE;
+					doSuck := FALSE;
+				
+					IF stateSuckers = stateSuckersForward AND stateRailing = stateRailingUp AND stateCentering = stateCenteringBack AND stateRoller = stateRollerClosed THEN
+						stateRobotAuto := stateRobotAutoSeparator;
+					END_IF
+				
 			END_CASE
+		
+			IF (pusherDrive.actualPositionIndex > 3 OR pusherDrive.requestedPositionIndex > 3) AND stateRobotAuto <> stateRobotAutoWaitForBottles THEN
+				alarmImagePalletization[53] := TRUE;
+			END_IF	
 		
 	END_CASE
 	
@@ -240,6 +332,7 @@ PROGRAM _CYCLIC
 	alarmImagePalletization[46] := robotDoorEdmError;
 	alarmImagePalletization[47] := NOT Comau_0.Remote;
 	alarmImagePalletization[48] := NOT Comau_0.NoAlarm;
+	alarmImagePalletization[51] := Comau_0.Error;	
 	
 	MTBasicsPWM_0(Enable :=  alarmImagePalletization[48] AND NOT acknowledgeImagePalletization[48], Period := 1, DutyCycle := 50);
 	Comau_0.CancelAlarm := MTBasicsPWM_0.Out;
@@ -247,6 +340,17 @@ PROGRAM _CYCLIC
 	//edge alarms
 	IF acknowledgeImagePalletization[49] THEN
 		alarmImagePalletization[49] := FALSE;
+	END_IF
+
+	IF EDGENEG(acknowledgeImagePalletization[51]) THEN
+		Comau_0.MakeMove := FALSE;
+	END_IF
+
+	IF acknowledgeImagePalletization[52] THEN
+		alarmImagePalletization[52] := FALSE;
+	END_IF
+	IF acknowledgeImagePalletization[53] THEN
+		alarmImagePalletization[53] := FALSE;
 	END_IF
 	
 END_PROGRAM

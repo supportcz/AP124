@@ -7,11 +7,14 @@ FUNCTION_BLOCK Comau
 	Start_NoHoldPrgMove	:= RawInput1.2;
 	Remote 				:= RawInput1.3;
 	SafetySpeedActive	:= RawInput1.10;
+	ProgrammingMode		:= RawInput1.11;
 	HeartBit			:= RawInput1.15;
+
 	
 	//RawInput2
 	moveActive := RawInput2.0;
 	IsItSafeToGoHome := RawInput2.1;
+	//MoveCheckOk := RawInput2.2;
 	checkMoveType := UDINT_TO_USINT(SHR(RawInput2, 8));
 	checkProductType := UDINT_TO_USINT(SHR(RawInput2, 16));
 	checkNbOfLayers	:= UDINT_TO_USINT(SHR(RawInput2, 24));
@@ -21,7 +24,7 @@ FUNCTION_BLOCK Comau
 		state := 0;
 		MoveDone := FALSE;
 		startMove := FALSE;
-		Start := FALSE;
+		Error := FALSE;
 	END_IF
 	
 	CASE state OF
@@ -31,6 +34,18 @@ FUNCTION_BLOCK Comau
 			END_IF
 		
 		1:
+			IF moveActive THEN
+				IF MoveType = checkMoveType AND ProductType = checkProductType AND NbOfLayers = checkNbOfLayers THEN
+					state := state + 1;
+				ELSE
+					Error := TRUE;
+					state := 5;
+				END_IF
+			ELSE
+				state := state + 1;				
+			END_IF
+
+		2:
 			MTBasicsPWM_0(Enable :=  TRUE, Period := 1, DutyCycle := 50);
 			Start := MTBasicsPWM_0.Out;
 
@@ -39,13 +54,10 @@ FUNCTION_BLOCK Comau
 				state := state + 1;
 			END_IF
 		
-		2:
-			IF MoveType = checkMoveType AND ProductType = checkProductType AND NbOfLayers = checkNbOfLayers THEN
-				startMove := TRUE;
-				state := state + 1;
-			END_IF
-		
 		3:
+
+			startMove := TRUE;
+
 			IF moveActive THEN
 				startMove := FALSE;
 				state := state + 1;

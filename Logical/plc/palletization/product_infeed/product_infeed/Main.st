@@ -117,6 +117,10 @@ PROGRAM _CYCLIC
 						stateAuto := stateAutoPusherLiftingDown;
 					END_IF
 
+					IF statePusherLifting = stateLowerPosition AND pusherDrive.actualPositionIndex > 3 THEN
+						stateAuto := stateAutoPusherToBasic;
+					END_IF
+					
 					IF statePusherLifting = stateLowerPosition AND pusherDrive.actualPositionIndex = 2 THEN
 						stateAuto := stateAutoPusherToBasic;
 					END_IF
@@ -262,9 +266,9 @@ PROGRAM _CYCLIC
 					END_IF
 
 					IF actualLayerIndex = dActualRecipe.nbOfLayers - 1 THEN
-						robotData.placeSeparatorOnTop := dActualRecipe.interlayerSheetTop;
+						robotData.placeSeparatorAbove := dActualRecipe.interlayerSheetTop;
 					ELSE
-						robotData.placeSeparatorOnTop := FALSE;
+						robotData.placeSeparatorAbove := FALSE;
 					END_IF
 					
 					robotData.start := TRUE; //transfer data to robot

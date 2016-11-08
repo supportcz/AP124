@@ -188,4 +188,5 @@ VAR_CONFIG
 	::robot:Comau_0.RawOutput2 AT %QD."C5Gopen".Output2_U32_I3200_S02;
 	::robot:robotDoorEdmError AT %IX."I18".BOOL010;
 	::robot:Comau_0.diSensorBellowHead AT %IX."I110".DigitalInput11;
+	::robot:diSeparatorPresent AT %IX."I110".DigitalInput12;
 END_VAR
