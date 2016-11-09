@@ -58,6 +58,7 @@ TYPE
 	StateInterlayerAuto : 
 		(
 		stateInterlayerAutoInit,
+		stateInterlayerAutoGoDown,
 		stateInterlayerAutoFill,
 		stateInterlayerAutoEmpty
 		);

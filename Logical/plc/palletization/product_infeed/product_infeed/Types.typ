@@ -1,26 +1,26 @@
 
 TYPE
+	AutomatMode : 
+		(
+		automatModeInit,
+		automatModeParking,
+		automatModeRun
+		);
 	StateAuto : 
 		(
-		stateAutoUndefined,
-		stateAutoStart,
+		stateAutoInit,
+		stateAutoPusherToBasic,
+		stateAutoPusherLiftingDown,
 		stateAutoFillRow,
 		stateAutoLastTray,
 		stateAutoPusherToTable,
 		stateAutoPusherToTable2,
 		stateAutoPusherLiftingUp,
-		stateAutoPusherLiftingUp2,
-		stateAutoPusherToBasic,
-		stateAutoPusherToBasic2,
-		stateAutoPusherLiftingDown,
-		stateAutoPusherLiftingDown2,
 		stateAutoPusherToRobotHead,
 		stateAutoPusherToRobotHead2,
 		stateAutoPusherToRobotHead3,
 		stateAutoPusherToRobotHead4,
-		stateAutoPusherToRobotHead5,
-		stateAutoPusherToRobotHead6,
-		stateAutoPusherToRobotHead7
+		stateAutoPusherToRobotHead5
 		);
 	StateBumper : 
 		(

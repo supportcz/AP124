@@ -38,7 +38,7 @@ ACTION Interlayer:
 			doInterlayerUp := TRUE;
 
 			//position reached?
-			IF diInterlayerUp OR NOT cmdInterlayerUp THEN
+			IF diInterlayerUp OR NOT diNoInterlayerSheet OR NOT cmdInterlayerUp THEN
 				StopInterlayer;
 			END_IF
 			
@@ -55,7 +55,7 @@ ACTION Interlayer:
 			doInterlayerUp := TRUE;
 			doInterlayerDown := FALSE;
 			
-			TON_JumpUp(IN := TRUE, PT := T#0.2s);
+			TON_JumpUp(IN := TRUE, PT := T#0.05s);
 			IF TON_JumpUp.Q THEN
 				stateInterlayer := stateInterlayerGoDown2;
 			END_IF
@@ -99,15 +99,27 @@ ACTION Interlayer:
 				
 				stateInterlayerAutoInit:
 				
-					stateInterlayerAuto := stateInterlayerAutoFill;
+					stateInterlayerAuto := stateInterlayerAutoGoDown;
+				
+				stateInterlayerAutoGoDown:
+				
+					IF diNoInterlayerSheet THEN
+						stateInterlayerAuto := stateInterlayerAutoFill;
+					ELSE
+						cmdInterlayerDown := TRUE;	
+					END_IF
+					cmdInterlayerUp := FALSE;
 				
 				stateInterlayerAutoFill:
-				
-					cmdInterlayerUp := diInterlayerSheetPresent;
+					
+					IF diNoInterlayerSheet THEN
+						cmdInterlayerUp := TRUE;
+					END_IF
+					cmdInterlayerDown := FALSE;	
 				
 					IF stateInterlayer = stateInterlayerUp THEN
 						stateInterlayerAuto := stateInterlayerAutoEmpty;
-					END_IF						
+					END_IF	
 				
 				stateInterlayerAutoEmpty:
 					

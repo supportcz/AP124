@@ -10,8 +10,11 @@ VAR
 	cmdRollerOpen : BOOL;
 	counterTraysBehindRotation : INT;
 	counterTraysInRobotHead : INT;
+	counterTraysOnPallet : INT;
 	counterTraysOnTable : INT;
+	diHeadIsFull : BOOL;
 	doSuck : BOOL;
+	interlayerSheetMagazineEmpty : BOOL;
 	modeZonePalletization : ModeZone;
 	modeZonePalletizationOld : ModeZone;
 END_VAR
@@ -39,5 +42,4 @@ VAR
 	stateRoller : StateRoller;
 	stateSuckers : StateSuckers;
 	suckersForward : BOOL;
-	interlayerSheetMagazineEmpty : BOOL;
 END_VAR

@@ -18,6 +18,8 @@ PROGRAM _CYCLIC
 		RETURN;
 	END_IF
 	
+	dActualRecipe ACCESS ADR(dRecipes.recipe[dRecipes.actualRecipeIndex]);
+	
 	Comau_0.ProductType := INT_TO_USINT(dRecipes.actualRecipeIndex+1);
 
 	//drive on	
@@ -34,7 +36,7 @@ PROGRAM _CYCLIC
 		modeZoneManual:
 			
 			IF modeZonePalletizationOld <> modeZoneManual THEN
-//				Comau_0.MakeMove := FALSE;
+				Comau_0.MakeMove := FALSE;
 				doSuck := FALSE;
 			END_IF
 
@@ -74,14 +76,19 @@ PROGRAM _CYCLIC
 				
 				stateRobotAutoPrepareHead:
 					
-					suckersForward := TRUE;
-					railingUp := TRUE;
-					centeringForward := FALSE;
-					cmdRollerClose := TRUE;
-					doSuck := FALSE;
-				
-					IF stateSuckers = stateSuckersForward AND stateRailing = stateRailingUp AND stateCentering = stateCenteringBack AND stateRoller = stateRollerClosed THEN
+					IF nbOfTraysInRobotHead > 0 THEN
 						stateRobotAuto := stateRobotAutoGoToTable;
+						
+					ELSE
+						suckersForward := TRUE;
+						railingUp := TRUE;
+						centeringForward := FALSE;
+						cmdRollerClose := TRUE;
+						doSuck := FALSE;
+					
+						IF stateSuckers = stateSuckersForward AND stateRailing = stateRailingUp AND stateCentering = stateCenteringBack AND stateRoller = stateRollerClosed THEN
+							stateRobotAuto := stateRobotAutoGoToTable;
+						END_IF
 					END_IF
 
 				stateRobotAutoGoToTable:
@@ -104,6 +111,36 @@ PROGRAM _CYCLIC
 							stateRobotAuto := stateRobotAutoRailingDown;
 						END_IF
 					END_IF	
+				
+					//head full?
+					IF stateSuckers = stateSuckersForward AND stateRailing = stateRailingDown AND stateCentering = stateCenteringForward AND stateRoller = stateRollerClosed 
+						AND nbOfTraysInRobotHead > 0 THEN
+						
+						robotData.layer := nbOfLayersOnPallet;
+						robotData.placeFirstHalf := nbOfTraysInHalfLayer = 0;
+
+						IF nbOfLayersOnPallet = 0 THEN
+							robotData.placeSeparator := dActualRecipe.interlayerSheetBottom;
+						ELSE
+							robotData.placeSeparator := TRUE;
+						END_IF
+
+						IF NOT robotData.placeFirstHalf THEN
+							robotData.placeSeparator := FALSE;
+						END_IF
+							
+						IF nbOfLayersOnPallet = dActualRecipe.nbOfLayers - 1 THEN
+							robotData.placeSeparatorAbove := dActualRecipe.interlayerSheetTop;
+						ELSE
+							robotData.placeSeparatorAbove := FALSE;
+						END_IF
+
+						IF robotData.placeFirstHalf THEN
+							robotData.placeSeparatorAbove := FALSE;
+						END_IF
+
+						stateRobotAuto := stateRobotAutoRailingDown;
+					END_IF
 				
 				stateRobotAutoRailingDown:
 					
@@ -149,7 +186,7 @@ PROGRAM _CYCLIC
 				
 				stateRobotAutoSeparator3:
 				
-					Comau_0.MoveType := moveTypeVerticalOffset;
+					Comau_0.MoveType := moveTypeVerticalOffset2;
 					Comau_0.MakeMove := TRUE;	
 				
 					IF Comau_0.MoveDone THEN
@@ -227,6 +264,7 @@ PROGRAM _CYCLIC
 					centeringForward := FALSE;
 				
 					IF stateRailing = stateRailingUp AND stateCentering = stateCenteringBack THEN
+						counterTraysOnPallet := counterTraysInRobotHead;
 						stateRobotAuto := stateRobotAutoPlaceFirstHalf4;
 					END_IF
 				
@@ -278,6 +316,7 @@ PROGRAM _CYCLIC
 					centeringForward := FALSE;
 				
 					IF stateCentering = stateCenteringBack THEN
+						counterTraysOnPallet := counterTraysInRobotHead;
 						stateRobotAuto := stateRobotAutoPlaceSecondHalf6;
 					END_IF							
 						
@@ -332,7 +371,10 @@ PROGRAM _CYCLIC
 	alarmImagePalletization[46] := robotDoorEdmError;
 	alarmImagePalletization[47] := NOT Comau_0.Remote;
 	alarmImagePalletization[48] := NOT Comau_0.NoAlarm;
-	alarmImagePalletization[51] := Comau_0.Error;	
+	
+	IF Comau_0.Error THEN
+		alarmImagePalletization[51] := TRUE;	
+	END_IF
 	
 	MTBasicsPWM_0(Enable :=  alarmImagePalletization[48] AND NOT acknowledgeImagePalletization[48], Period := 1, DutyCycle := 50);
 	Comau_0.CancelAlarm := MTBasicsPWM_0.Out;
@@ -342,8 +384,8 @@ PROGRAM _CYCLIC
 		alarmImagePalletization[49] := FALSE;
 	END_IF
 
-	IF EDGENEG(acknowledgeImagePalletization[51]) THEN
-		Comau_0.MakeMove := FALSE;
+	IF acknowledgeImagePalletization[51] THEN
+		alarmImagePalletization[51] := FALSE;
 	END_IF
 
 	IF acknowledgeImagePalletization[52] THEN

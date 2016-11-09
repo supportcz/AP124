@@ -9,7 +9,6 @@ ACTION ConveyorP2:
 		
 		stateConveyorStop:
 			
-			//cmdRunConveyorP2 := FALSE;
 			acpI_P11.switchOn := TRUE;
 			acpI_P11.run := FALSE;
 			IF modeZonePalletization <> modeZoneOff THEN
@@ -25,31 +24,11 @@ ACTION ConveyorP2:
 		stateConveyorMoving:
 			
 			acpI_P11.run := TRUE;
-				
-			IF modeZonePalletization = modeZoneAuto THEN
-				//pause?
-				IF NOT TOF_TrayOnInputP1.Q THEN
-					stateConveyorP2 := stateConveyorPause;
-				END_IF
-
-			END_IF
-			
+						
 			IF NOT cmdRunConveyorP2 THEN
 				stateConveyorP2 := stateConveyorStop;
 			END_IF	
 
-		stateConveyorPause:
-			
-			acpI_P11.run := FALSE;
-			
-			//wake up
-			IF TOF_TrayOnInputP1.Q THEN
-				stateConveyorP2 := stateConveyorMoving;
-			END_IF
-			
-//			IF modeZonePalletization <> modeZoneAuto THEN
-//				stateConveyorP2 := stateConveyorStop;
-//			END_IF	
 	END_CASE
 	
 	//control of ACOPOSinverter P14

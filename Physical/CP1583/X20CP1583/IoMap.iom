@@ -178,7 +178,7 @@ VAR_CONFIG
 	::product_in:doInterlayerEnable AT %QX."Q16".DigitalOutput08;
 	::product_in:diInterlayerUpperHwEnd AT %IX."I80".DigitalInput14;
 	::product_in:diInterlayerSafeFrame AT %IX."I80".DigitalInput15;
-	::product_in:diInterlayerSheetPresent AT %IX."I80".DigitalInput16;
+	::product_in:diNoInterlayerSheet AT %IX."I80".DigitalInput16;
 	::product_in:doInterlayerPowerOn AT %QX."Q12".DigitalOutput14;
 	::robot:robotEdmError AT %IX."I18".BOOL009;
 	::robot:ModuleOk AT %IX."C5Gopen".ModuleOk;
@@ -189,4 +189,5 @@ VAR_CONFIG
 	::robot:robotDoorEdmError AT %IX."I18".BOOL010;
 	::robot:Comau_0.diSensorBellowHead AT %IX."I110".DigitalInput11;
 	::robot:diSeparatorPresent AT %IX."I110".DigitalInput12;
+	Cyclic#1.::diHeadIsFull AT %IX."I110".DigitalInput10;
 END_VAR

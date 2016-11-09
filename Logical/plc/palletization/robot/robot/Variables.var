@@ -1,11 +1,12 @@
 VAR
-	robotEdmError : BOOL;
-	robotDoorEdmError : BOOL;
-	MTBasicsPWM_0 : MTBasicsPWM;
-	MTBasicsPWM_1 : MTBasicsPWM;
 	Comau_0 : Comau;
-	TON_Robot : TON;
+	dActualRecipe : REFERENCE TO Recipe;
+	diSeparatorPresent : BOOL;
 	dRecipes : REFERENCE TO Recipes;
 	ModuleOk : BOOL;
-	diSeparatorPresent : BOOL;
+	MTBasicsPWM_0 : MTBasicsPWM;
+	MTBasicsPWM_1 : MTBasicsPWM;
+	robotDoorEdmError : BOOL;
+	robotEdmError : BOOL;
+	TON_Robot : TON;
 END_VAR
