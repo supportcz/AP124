@@ -17,6 +17,7 @@ VAR
 	interlayerSheetMagazineEmpty : BOOL;
 	modeZonePalletization : ModeZone;
 	modeZonePalletizationOld : ModeZone;
+	nbOfTraysInCompletePallet : INT;
 END_VAR
 VAR RETAIN
 	nbOfLayersOnPallet : INT;

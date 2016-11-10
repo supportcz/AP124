@@ -6,10 +6,37 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-
 	
 	HMIS;
 	RFRD;
+	
+	IF adrRecipes = 0 THEN 
+		RETURN;
+	END_IF
+	
+	dRecipes ACCESS adrRecipes;
+	IF dRecipes.actualRecipeIndex < 0 OR dRecipes.actualRecipeIndex > 9 THEN
+		RETURN;
+	END_IF
+	
+	dActualRecipe ACCESS ADR(dRecipes.recipe[dRecipes.actualRecipeIndex]);
+	
+	//correct wrong value in recipe
+	IF dActualRecipe.nbOfLayers < 1 THEN
+		dActualRecipe.nbOfLayers := 1;
+	END_IF
+	
+	//select actual layout
+	IF actualLayerIndex < 0 OR actualLayerIndex > 9 THEN
+		RETURN;
+	END_IF			
+	
+	dActualLayout ACCESS ADR(dRecipes.layout[dActualRecipe.layer[actualLayerIndex]]);
+	
+	//the last tray in layout has to have set flag lastTrayInLayer
+	dActualLayout.tray[dActualLayout.nbOfTrays - 1].lastTray := lastTrayInLayer;
+	
+	nbOfTraysInCompletePallet := dActualRecipe.nbOfLayers*dActualLayout.nbOfTrays;
 	
 	TOF_TrayOnOutputP1(IN := diTrayOnOutputP1, PT := T#30ms);
 	TOF_TrayBehindRotation(IN := diTrayBehindRotation, PT := T#30ms);
@@ -46,32 +73,6 @@ PROGRAM _CYCLIC
 
 		modeZoneAuto:
 			
-			IF adrRecipes = 0 THEN 
-				RETURN;
-			END_IF
-	
-			dRecipes ACCESS adrRecipes;
-			IF dRecipes.actualRecipeIndex < 0 OR dRecipes.actualRecipeIndex > 9 THEN
-				RETURN;
-			END_IF
-	
-			dActualRecipe ACCESS ADR(dRecipes.recipe[dRecipes.actualRecipeIndex]);
-	
-			//correct wrong value in recipe
-			IF dActualRecipe.nbOfLayers < 1 THEN
-				dActualRecipe.nbOfLayers := 1;
-			END_IF
-	
-			//select actual layout
-			IF actualLayerIndex < 0 OR actualLayerIndex > 9 THEN
-				RETURN;
-			END_IF			
-	
-			dActualLayout ACCESS ADR(dRecipes.layout[dActualRecipe.layer[actualLayerIndex]]);
-	
-			//the last tray in layout has to have set flag lastTrayInLayer
-			dActualLayout.tray[dActualLayout.nbOfTrays - 1].lastTray := lastTrayInLayer;
-	
 			CASE automatMode OF
 				automatModeInit:
 				
@@ -87,9 +88,9 @@ PROGRAM _CYCLIC
 					
 					counterTraysOnPallet := nbOfLayersOnPallet * dActualLayout.nbOfTrays;
 					counterTraysOnPallet := counterTraysOnPallet + nbOfTraysInHalfLayer;
-					counterTraysInRobotHead := counterTraysOnPallet + nbOfTraysInRobotHead;
-					counterTraysOnTable := counterTraysInRobotHead + nbOfTraysOnTable;			
-					counterTraysBehindRotation := counterTraysOnTable + nbOfTraysOnP2;
+					counterTraysInRobotHead := (counterTraysOnPallet + nbOfTraysInRobotHead) MOD nbOfTraysInCompletePallet;
+					counterTraysOnTable := (counterTraysInRobotHead + nbOfTraysOnTable) MOD nbOfTraysInCompletePallet;			
+					counterTraysBehindRotation := (counterTraysOnTable + nbOfTraysOnP2) MOD nbOfTraysInCompletePallet;
 					
 					counterTraysOnConveyorP2 := counterTraysBehindRotation;
 					
@@ -257,7 +258,7 @@ PROGRAM _CYCLIC
 								actualLayerIndex := actualLayerIndex + 1;
 								IF actualLayerIndex = dActualRecipe.nbOfLayers THEN
 									//new pallet, reset counters
-									counterTraysOnTable := 0;
+//									counterTraysOnTable := 0;
 									counterTraysBehindRotation := 0;
 									counterTraysOnConveyorP2 := 0;
 									actualLayerIndex := 0;
@@ -295,6 +296,9 @@ PROGRAM _CYCLIC
 						stateAutoPusherToRobotHead5:
 									
 							counterTraysInRobotHead := counterTraysOnTable;
+							IF counterTraysOnTable > counterTraysBehindRotation THEN
+								counterTraysOnTable := 0;
+							END_IF
 					
 							pusherDrive.requestedPositionIndex := 3;
 							pusherDrive.cmdAbsolute := TRUE;
@@ -319,9 +323,9 @@ PROGRAM _CYCLIC
 					//for start dialog
 					nbOfLayersOnPallet := counterTraysOnPallet / dActualLayout.nbOfTrays;
 					nbOfTraysInHalfLayer := counterTraysOnPallet MOD dActualLayout.nbOfTrays;
-					nbOfTraysInRobotHead := counterTraysInRobotHead - counterTraysOnPallet;
-					nbOfTraysOnTable := counterTraysOnTable - counterTraysInRobotHead;
-					nbOfTraysOnP2 := counterTraysBehindRotation - counterTraysOnTable;
+					nbOfTraysInRobotHead := (counterTraysInRobotHead - counterTraysOnPallet + nbOfTraysInCompletePallet) MOD nbOfTraysInCompletePallet;
+					nbOfTraysOnTable := (counterTraysOnTable - counterTraysInRobotHead + nbOfTraysInCompletePallet) MOD nbOfTraysInCompletePallet;
+					nbOfTraysOnP2 := (counterTraysBehindRotation - counterTraysOnTable + nbOfTraysInCompletePallet) MOD nbOfTraysInCompletePallet;
 			
 			END_CASE
 	END_CASE
