@@ -290,7 +290,8 @@
     <Parameter ID="LFRD_LFR_Filter" Value="LFR_RFR" />
     <Parameter ID="ACC" Value="5" />
     <Parameter ID="DEC" Value="5" />
-    <Parameter ID="HSP" Value="600" />
+    <Parameter ID="HSP" Value="800" />
+    <Parameter ID="TFR" Value="800" />
     <Parameter ID="NPR" Value="55" />
     <Parameter ID="COS" Value="77" />
     <Parameter ID="UNS" Value="400" />
@@ -495,6 +496,8 @@
     <Parameter ID="FtpUserPassword1" Value="WTu4FPCiIceACZRqUEgJEtXb7Eb63HUzCfqgyyypU7s=" />
     <Parameter ID="FtpUserSalt1" Value="2eJIzixw" />
     <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="Temp.ProjectDirectory" Value="C:\Work\Atrima\projekt\AP124\" />
+    <Parameter ID="Temp.ConfigurationName" Value="CP1583" />
   </Module>
   <Module Name="X20PS2100a" Type="X20PS2100" Version="1.1.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />

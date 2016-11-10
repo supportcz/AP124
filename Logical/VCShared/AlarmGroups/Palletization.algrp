@@ -668,6 +668,18 @@
       <Property Name="RecordTrigger" Value="True"/>
       <Property Name="TriggerGroupAlarm" Value="False"/>
     </Alarm>
+    <Alarm Index="54">
+      <Property Name="Acknowledge" Value="Possible"/>
+      <Property Name="AcknowledgeActive" Value="Enabled"/>
+      <Property Name="Bypass" Value="Enabled"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Latched" Value="True"/>
+      <Property Name="RecordAcknowledge" Value="True"/>
+      <Property Name="RecordBypass" Value="All"/>
+      <Property Name="RecordReset" Value="All"/>
+      <Property Name="RecordTrigger" Value="True"/>
+      <Property Name="TriggerGroupAlarm" Value="False"/>
+    </Alarm>
     <Alarm Index="Group">
       <Property Name="Acknowledge" Value="Possible"/>
       <Property Name="AcknowledgeActive" Value="Enabled"/>
@@ -737,6 +749,7 @@
       <Text ID="1711" Value="Robot: Unable to start this movement type"/>
       <Text ID="1739" Value="Robot head: separator not sucked"/>
       <Text ID="1767" Value="Robot: Pusher in dangerous area"/>
+      <Text ID="1795" Value="Robot head:unable to open roller when suckers are forward"/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="cs">
@@ -794,6 +807,7 @@
       <Text ID="1711" Value=""/>
       <Text ID="1739" Value=""/>
       <Text ID="1767" Value=""/>
+      <Text ID="1795" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <TextLayer LanguageId="fr">
@@ -851,6 +865,7 @@
       <Text ID="1711" Value=""/>
       <Text ID="1739" Value=""/>
       <Text ID="1767" Value=""/>
+      <Text ID="1795" Value=""/>
       <Text ID="312" Value=""/>
     </TextLayer>
     <IndexMap>
@@ -908,6 +923,7 @@
       <Index ID="1711" Value="51"/>
       <Index ID="1739" Value="52"/>
       <Index ID="1767" Value="53"/>
+      <Index ID="1795" Value="54"/>
       <Index ID="312" Value="Group"/>
     </IndexMap>
   </TextGroup>

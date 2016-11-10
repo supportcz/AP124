@@ -26,6 +26,9 @@ PROGRAM _CYCLIC
 	MTBasicsPWM_1(Enable :=  Comau_0.NoAlarm AND NOT Comau_0.DriveOnStatus, Period := 1, DutyCycle := 50);
 	Comau_0.DriveOn := MTBasicsPWM_1.Out;
 		
+	IF statePalletP14 <> palletPresent THEN
+		palletComplete := FALSE;
+	END_IF
 	
 	CASE modeZonePalletization OF
 		
@@ -37,7 +40,7 @@ PROGRAM _CYCLIC
 			
 			IF modeZonePalletizationOld <> modeZoneManual THEN
 				Comau_0.MakeMove := FALSE;
-				doSuck := FALSE;
+//				doSuck := FALSE;
 			END_IF
 
 			Comau_0.NoHold := Comau_0.ProgrammingMode;
@@ -77,6 +80,13 @@ PROGRAM _CYCLIC
 				stateRobotAutoPrepareHead:
 					
 					IF nbOfTraysInRobotHead > 0 THEN
+						
+						suckersForward := TRUE;
+						
+						IF stateSuckers = stateSuckersForward THEN
+							stateRobotAuto := stateRobotAutoGoToTable;
+						END_IF
+						
 						stateRobotAuto := stateRobotAutoGoToTable;
 						
 					ELSE
@@ -102,19 +112,8 @@ PROGRAM _CYCLIC
 				
 				stateRobotAutoWaitForBottles:
 					
-					IF robotData.start THEN
-						IF pusherDrive.actualPositionIndex > 3 OR pusherDrive.requestedPositionIndex > 3 THEN
-							alarmImagePalletization[53] := TRUE;
-						ELSE
-							robotData.start := FALSE;
-							Comau_0.NbOfLayers := INT_TO_USINT(robotData.layer);
-							stateRobotAuto := stateRobotAutoRailingDown;
-						END_IF
-					END_IF	
-				
 					//head full?
-					IF stateSuckers = stateSuckersForward AND stateRailing = stateRailingDown AND stateCentering = stateCenteringForward AND stateRoller = stateRollerClosed 
-						AND nbOfTraysInRobotHead > 0 THEN
+					IF nbOfTraysInRobotHead > 0 THEN
 						
 						robotData.layer := nbOfLayersOnPallet;
 						robotData.placeFirstHalf := nbOfTraysInHalfLayer = 0;
@@ -139,8 +138,10 @@ PROGRAM _CYCLIC
 							robotData.placeSeparatorAbove := FALSE;
 						END_IF
 
+						Comau_0.NbOfLayers := INT_TO_USINT(robotData.layer);
+
 						stateRobotAuto := stateRobotAutoRailingDown;
-					END_IF
+					END_IF					
 				
 				stateRobotAutoRailingDown:
 					
@@ -203,6 +204,12 @@ PROGRAM _CYCLIC
 					END_IF			
 				
 				stateRobotAutoSeparator5:
+					
+					IF statePalletP14 = palletPresent AND NOT palletComplete THEN
+						stateRobotAuto := stateRobotAutoSeparator6;	
+					END_IF
+				
+				stateRobotAutoSeparator6:
 				
 					Comau_0.MoveType := moveTypePutSeparatorOnPallet;
 					Comau_0.MakeMove := TRUE;
@@ -219,6 +226,7 @@ PROGRAM _CYCLIC
 				
 					IF Comau_0.MoveDone THEN
 						IF robotData.placeSeparatorAbove AND Comau_0.NbOfLayers = INT_TO_USINT(robotData.layer) + 1 THEN
+							palletComplete := TRUE;
 							stateRobotAuto := stateRobotAutoPrepareHead;					
 						ELSE
 							stateRobotAuto := stateRobotAutoHideSuckers2;					
@@ -230,15 +238,17 @@ PROGRAM _CYCLIC
 					suckersForward := FALSE;
 				
 					IF stateSuckers = stateSuckersBack THEN
-						stateRobotAuto := stateRobotAutoWhichHalf;					
+						stateRobotAuto := stateRobotAutoWaitForPallet;					
 					END_IF						
 				
-				stateRobotAutoWhichHalf:
+				stateRobotAutoWaitForPallet:
 					
-					IF robotData.placeFirstHalf THEN
-						stateRobotAuto := stateRobotAutoPlaceFirstHalf;	
-					ELSE
-						stateRobotAuto := stateRobotAutoPlaceSecondHalf;	
+					IF statePalletP14 = palletPresent AND NOT palletComplete THEN
+						IF robotData.placeFirstHalf THEN
+							stateRobotAuto := stateRobotAutoPlaceFirstHalf;	
+						ELSE
+							stateRobotAuto := stateRobotAutoPlaceSecondHalf;	
+						END_IF
 					END_IF
 						
 				stateRobotAutoPlaceFirstHalf:
@@ -264,7 +274,6 @@ PROGRAM _CYCLIC
 					centeringForward := FALSE;
 				
 					IF stateRailing = stateRailingUp AND stateCentering = stateCenteringBack THEN
-						counterTraysOnPallet := counterTraysInRobotHead;
 						stateRobotAuto := stateRobotAutoPlaceFirstHalf4;
 					END_IF
 				
@@ -274,6 +283,8 @@ PROGRAM _CYCLIC
 					Comau_0.MakeMove := TRUE;		
 					
 					IF Comau_0.MoveDone THEN
+						counterTraysOnPallet := counterTraysInRobotHead;
+
 						stateRobotAuto := stateRobotAutoPrepareHead;
 					END_IF	
 				
@@ -316,7 +327,6 @@ PROGRAM _CYCLIC
 					centeringForward := FALSE;
 				
 					IF stateCentering = stateCenteringBack THEN
-						counterTraysOnPallet := counterTraysInRobotHead;
 						stateRobotAuto := stateRobotAutoPlaceSecondHalf6;
 					END_IF							
 						
@@ -326,11 +336,17 @@ PROGRAM _CYCLIC
 					Comau_0.MakeMove := TRUE;		
 					
 					IF Comau_0.MoveDone THEN
+						
 						IF robotData.placeSeparatorAbove THEN
 							stateRobotAuto := stateRobotAutoSeparatorAbove;
 						ELSE
+							IF counterTraysInRobotHead = 0 THEN
+								palletComplete := TRUE;
+							END_IF
 							stateRobotAuto := stateRobotAutoPrepareHead;
 						END_IF
+						
+						counterTraysOnPallet := counterTraysInRobotHead;
 					END_IF				
 				
 				stateRobotAutoSeparatorAbove:

@@ -1,7 +1,5 @@
-VAR RETAIN
-	testAtAtrima : {REDUND_UNREPLICABLE} BOOL;
-END_VAR
 VAR
+	testAtAtrima : BOOL;
 	diActivateAllSafetyCircuits : BOOL; (*button on main cabinet to activate all safety circuits*)
 	diMagazineEDM : BOOL; (*magazine safety zone: 0...contactor switched on*)
 	diPalletizationEDM : BOOL; (*paletization safety zone: 0...contactor switched on*)

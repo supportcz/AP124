@@ -6,8 +6,21 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
+	IF adrRecipes = 0 THEN 
+		RETURN;
+	END_IF
+	
+	dRecipes ACCESS adrRecipes;
+	IF dRecipes.actualRecipeIndex < 0 OR dRecipes.actualRecipeIndex > 9 THEN
+		RETURN;
+	END_IF
+	
+	dActualRecipe ACCESS ADR(dRecipes.recipe[dRecipes.actualRecipeIndex]);
+			
+	doWrapperSortiment1 := dActualRecipe.wrapperSortiment.0;
+	doWrapperSortiment2 := dActualRecipe.wrapperSortiment.1;
+			
 	TON_PalletStopP19(IN := diPalletStopP19, PT := T#200ms);
-
 	
 	CASE modeZoneOutfeed OF
 		
@@ -25,20 +38,6 @@ PROGRAM _CYCLIC
 		
 		modeZoneAuto:
 	
-			IF adrRecipes = 0 THEN 
-				RETURN;
-			END_IF
-	
-			dRecipes ACCESS adrRecipes;
-			IF dRecipes.actualRecipeIndex < 0 OR dRecipes.actualRecipeIndex > 9 THEN
-				RETURN;
-			END_IF
-	
-			dActualRecipe ACCESS ADR(dRecipes.recipe[dRecipes.actualRecipeIndex]);
-			
-			doWrapperSortiment1 := dActualRecipe.wrapperSortiment.0;
-			doWrapperSortiment2 := dActualRecipe.wrapperSortiment.1;
-			
 			//stop sensor not reached
 			TON_ConveyorP18(IN := cmdMovePalletP18, PT := T#20s);
 			alarmImageOutfeed[4] := TON_ConveyorP18.Q;

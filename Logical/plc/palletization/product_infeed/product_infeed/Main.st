@@ -38,7 +38,7 @@ PROGRAM _CYCLIC
 	
 	nbOfTraysInCompletePallet := dActualRecipe.nbOfLayers*dActualLayout.nbOfTrays;
 	
-	TOF_TrayOnOutputP1(IN := diTrayOnOutputP1, PT := T#30ms);
+	TOF_TrayOnOutputP1(IN := diTrayOnOutputP1, PT := T#10ms);
 	TOF_TrayBehindRotation(IN := diTrayBehindRotation, PT := T#30ms);
 	
 	CASE modeZonePalletization OF
@@ -97,7 +97,6 @@ PROGRAM _CYCLIC
 					IF dActualLayout.nbOfTrays > 0 THEN
 						actualLayerIndex := counterTraysBehindRotation / dActualLayout.nbOfTrays;					
 					END_IF
-					firstTrayInLayer := dActualLayout.nbOfTrays * actualLayerIndex; 
 					
 					TON_Parking(IN := FALSE);
 					automatMode := automatModeParking;
@@ -123,9 +122,7 @@ PROGRAM _CYCLIC
 					END_IF
 
 					//select next tray	
-					IF counterTraysOnConveyorP2 - firstTrayInLayer >= 0 AND counterTraysOnConveyorP2 - firstTrayInLayer < dActualLayout.nbOfTrays THEN
-						dNextTray ACCESS ADR(dActualLayout.tray[counterTraysOnConveyorP2 - firstTrayInLayer]); 
-					END_IF	
+					dNextTray ACCESS ADR(dActualLayout.tray[counterTraysOnConveyorP2 MOD dActualLayout.nbOfTrays]); 
 
 					//detect tray behind roration
 					IF TOF_TrayBehindRotation.Q < trayBehindRotationOld THEN
@@ -133,8 +130,8 @@ PROGRAM _CYCLIC
 					END_IF
 
 					//select tray behind rotation
-					IF counterTraysBehindRotation - firstTrayInLayer > 0 AND counterTraysBehindRotation - firstTrayInLayer <= dActualLayout.nbOfTrays THEN
-						dTrayBehindRotation ACCESS ADR(dActualLayout.tray[counterTraysBehindRotation - firstTrayInLayer - 1]);
+					IF counterTraysBehindRotation > 0 THEN
+						dTrayBehindRotation ACCESS ADR(dActualLayout.tray[(counterTraysBehindRotation-1) MOD dActualLayout.nbOfTrays]);
 					END_IF	
 			
 					IF counterTraysBehindRotation = counterTraysOnTable THEN
@@ -263,7 +260,6 @@ PROGRAM _CYCLIC
 									counterTraysOnConveyorP2 := 0;
 									actualLayerIndex := 0;
 								END_IF
-								firstTrayInLayer := counterTraysBehindRotation;
 							END_IF
 					
 							counterTraysOnTable := counterTraysBehindRotation;
@@ -295,16 +291,17 @@ PROGRAM _CYCLIC
 
 						stateAutoPusherToRobotHead5:
 									
-							counterTraysInRobotHead := counterTraysOnTable;
-							IF counterTraysOnTable > counterTraysBehindRotation THEN
-								counterTraysOnTable := 0;
-							END_IF
-					
 							pusherDrive.requestedPositionIndex := 3;
 							pusherDrive.cmdAbsolute := TRUE;
+							
 							IF pusherDrive.actualPositionIndex = 3 THEN
 								//send data to robot
-								robotData.start := TRUE; 
+								counterTraysInRobotHead := counterTraysOnTable;
+								IF counterTraysOnTable > counterTraysBehindRotation THEN
+									counterTraysOnTable := 0;
+								END_IF
+					
+//								robotData.start := TRUE; 
 								stateAuto := stateAutoPusherLiftingUp;
 							END_IF
 					END_CASE

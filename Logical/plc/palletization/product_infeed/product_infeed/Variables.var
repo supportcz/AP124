@@ -45,7 +45,6 @@ VAR
 	doRotationForward : BOOL;
 	dRecipes : REFERENCE TO Recipes;
 	dTrayBehindRotation : REFERENCE TO Tray;
-	firstTrayInLayer : INT;
 	HMIS : UINT;
 	nullTray : Tray;
 	RFRD : INT;

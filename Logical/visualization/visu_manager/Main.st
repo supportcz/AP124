@@ -270,6 +270,7 @@ PROGRAM _CYCLIC
 			ButtonResetTime := 1;
 		ELSE ButtonResetTime := 0;
 		END_IF;
+		PalletCount := 0;
 	END_IF;
 	
 	(***************************************************************************)

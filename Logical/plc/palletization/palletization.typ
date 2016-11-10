@@ -1,7 +1,6 @@
 
 TYPE
 	RobotData : 	STRUCT 
-		start : BOOL;
 		layer : INT;
 		placeFirstHalf : BOOL;
 		placeSeparator : BOOL;
@@ -40,9 +39,10 @@ TYPE
 		stateRobotAutoSeparator3,
 		stateRobotAutoSeparator4,
 		stateRobotAutoSeparator5,
+		stateRobotAutoSeparator6,
 		stateRobotAutoHideSuckers,
 		stateRobotAutoHideSuckers2,
-		stateRobotAutoWhichHalf,
+		stateRobotAutoWaitForPallet,
 		stateRobotAutoPlaceFirstHalf,
 		stateRobotAutoPlaceFirstHalf2,
 		stateRobotAutoPlaceFirstHalf3,

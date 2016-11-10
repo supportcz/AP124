@@ -1,4 +1,5 @@
 VAR
+	palletComplete : BOOL;
 	acknowledgeImagePalletization : ARRAY[0..69] OF BOOL;
 	alarmImagePalletization : ARRAY[0..69] OF BOOL;
 	alarmInZonePalletization : BOOL;

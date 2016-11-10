@@ -58,8 +58,9 @@ PROGRAM _CYCLIC
 				cmdMovePalletP13 := TRUE;
 			END_IF
 
-			IF statePalletP14 <> palletNotPresent AND statePalletP15 = palletNotPresent THEN
+			IF statePalletP14 <> palletNotPresent AND statePalletP15 = palletNotPresent AND palletComplete THEN
 				cmdMovePalletP14 := TRUE;
+				PalletCount := PalletCount + 1;
 			END_IF
 
 			IF statePalletP15 <> palletNotPresent AND statePalletP16 = palletNotPresent THEN

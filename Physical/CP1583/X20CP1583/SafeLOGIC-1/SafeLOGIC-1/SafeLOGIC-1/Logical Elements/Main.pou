@@ -2169,14 +2169,14 @@ END_VAR
   </inVariable>
   <inVariable localId="78" height="4" width="22">
     <position x="54" y="114" />
-    <expression>TIME#1s</expression>
+    <expression>TIME#2s</expression>
     <connectionPointOut>
       <relPosition x="22" y="2" />
     </connectionPointOut>
   </inVariable>
   <inVariable localId="79" height="4" width="26">
     <position x="50" y="122" />
-    <expression>TIME#10s</expression>
+    <expression>TIME#12s</expression>
     <connectionPointOut>
       <relPosition x="26" y="2" />
     </connectionPointOut>
@@ -4261,11 +4261,11 @@ END_VAR
       <relPosition x="26" y="2" />
     </connectionPointOut>
   </inVariable>
-  <inVariable localId="54" height="4" width="16">
-    <position x="42" y="92" />
-    <expression>T#4s</expression>
+  <inVariable localId="54" height="4" width="22">
+    <position x="36" y="92" />
+    <expression>TIME#2s</expression>
     <connectionPointOut>
-      <relPosition x="16" y="2" />
+      <relPosition x="22" y="2" />
     </connectionPointOut>
   </inVariable>
   <inVariable localId="55" height="4" width="26">

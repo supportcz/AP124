@@ -5,11 +5,6 @@ PROGRAM _INIT
 	doSafetyCurtainSupplyP15 := TRUE;
 	doSafetyCurtainSupplyP17 := TRUE;
 	
-//	doSignColumnGreen;
-//	doSignColumnOrange;
-//	doSignColumnRed;
-//	doSignColumnHorn;
-//	 
 END_PROGRAM
 
 PROGRAM _CYCLIC

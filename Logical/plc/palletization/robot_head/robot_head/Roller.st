@@ -46,6 +46,11 @@ ACTION Roller:
 				alarmImagePalletization[40] := TRUE;
 				StopMovement;
 			END_IF
+			
+			IF stateSuckers <> stateSuckersBack THEN
+				alarmImagePalletization[54] := TRUE;
+				StopMovement;
+			END_IF					
 		
 		stateRollerOpened:
 		
@@ -90,6 +95,9 @@ ACTION Roller:
 	END_IF
 	IF acknowledgeImagePalletization[41] THEN
 		alarmImagePalletization[41] := FALSE;
+	END_IF
+	IF acknowledgeImagePalletization[54] THEN
+		alarmImagePalletization[54] := FALSE;
 	END_IF
 
 	

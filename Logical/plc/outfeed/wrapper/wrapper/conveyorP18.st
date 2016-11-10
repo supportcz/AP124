@@ -1,7 +1,7 @@
 ACTION ConveyorP18: 
 	
 	acpI_P18_1.switchOn := TRUE;
-	conveyorP18speed := 500;
+	conveyorP18speed := 635;//500;
 	
 	IF stateTurnTable = stateTurnTableEntryPosition THEN
 		acpI_P18_1.speed := conveyorP18speed;
