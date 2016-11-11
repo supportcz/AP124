@@ -1,7 +1,7 @@
 
 ACTION ConveyorP2: 
 	
-	TOF_acpI_P10(IN := acpI_P10.run, PT := T#10s);
+	TOF_acpI_P10(IN := acpI_P10.run OR pusherDrive.cmdAbsolute, PT := T#10s);
 	
 	IF modeZonePalletization = modeZoneOff OR (modeZonePalletizationOld = modeZoneAuto AND modeZonePalletization <> modeZoneAuto) THEN
 		stateConveyorP2 := stateConveyorStop;  
@@ -20,6 +20,7 @@ ACTION ConveyorP2:
 		stateConveyorWait:
 		
 			IF cmdRunConveyorP2 THEN
+				TOF_acpI_P10(IN := TRUE);
 				stateConveyorP2 := stateConveyorMoving;
 			END_IF
 		

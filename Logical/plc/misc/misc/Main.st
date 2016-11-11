@@ -57,6 +57,7 @@ PROGRAM _CYCLIC
 	doSignColumnOrange := MTBasicsPWM_2.Out OR bypassHorn;
 	
 	doSignColumnHorn := MTBasicsPWM_2.Out AND NOT bypassHorn;
+	
 	IF testAtAtrima THEN
 		doSignColumnHorn := FALSE;
 	END_IF

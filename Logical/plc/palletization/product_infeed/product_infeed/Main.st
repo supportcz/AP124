@@ -316,7 +316,8 @@ PROGRAM _CYCLIC
 					IF TON_TransitTime.Q THEN
 						IF counterTraysOnConveyorP2 > counterTraysBehindRotation THEN
 							alarmImagePalletization[27] := TRUE;
-						ELSE
+						END_IF
+						IF counterTraysOnConveyorP2 < counterTraysBehindRotation THEN
 							alarmImagePalletization[55] := TRUE;
 						END_IF
 					END_IF
