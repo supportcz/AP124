@@ -382,7 +382,9 @@ PROGRAM _CYCLIC
 	alarmImagePalletization[50] := NOT ModuleOk;
 	alarmImagePalletization[45] := robotEdmError;
 	alarmImagePalletization[46] := robotDoorEdmError;
-	alarmImagePalletization[47] := NOT Comau_0.Remote;
+	IF NOT testAtAtrima THEN
+		alarmImagePalletization[47] := NOT Comau_0.Remote;
+	END_IF
 	alarmImagePalletization[48] := NOT Comau_0.NoAlarm;
 	
 	IF Comau_0.Error THEN

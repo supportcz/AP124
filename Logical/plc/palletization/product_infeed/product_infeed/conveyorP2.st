@@ -1,6 +1,8 @@
 
 ACTION ConveyorP2: 
 	
+	TOF_acpI_P10(IN := acpI_P10.run, PT := T#10s);
+	
 	IF modeZonePalletization = modeZoneOff OR (modeZonePalletizationOld = modeZoneAuto AND modeZonePalletization <> modeZoneAuto) THEN
 		stateConveyorP2 := stateConveyorStop;  
 	END_IF
@@ -24,22 +26,32 @@ ACTION ConveyorP2:
 		stateConveyorMoving:
 			
 			acpI_P11.run := TRUE;
-						
+				
+			IF modeZonePalletization = modeZoneAuto THEN
+				//pause?
+				IF NOT TOF_acpI_P10.Q THEN
+					stateConveyorP2 := stateConveyorPause;
+				END_IF
+
+			END_IF
+			
 			IF NOT cmdRunConveyorP2 THEN
 				stateConveyorP2 := stateConveyorStop;
 			END_IF	
 
+		stateConveyorPause:
+			
+			acpI_P11.run := FALSE;
+			
+			//wake up
+			IF TOF_acpI_P10.Q THEN
+				stateConveyorP2 := stateConveyorMoving;
+			END_IF
+			
 	END_CASE
 	
-	//control of ACOPOSinverter P14
+	//control of ACOPOSinverter
 	acpI_P11();
 	
-
-	
-//	//edge alarms
-//	IF acknowledgeImagePalletization[19] THEN
-//		alarmImagePalletization[19] := FALSE;
-//	END_IF	
-
 
 END_ACTION

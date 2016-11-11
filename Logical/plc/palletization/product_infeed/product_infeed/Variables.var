@@ -69,4 +69,5 @@ VAR
 	TON_WaitForLastTray : TON;
 	trayBehindRotationOld : BOOL;
 	trayOnOutputP1old : BOOL;
+	TOF_acpI_P10 : TOF;
 END_VAR
