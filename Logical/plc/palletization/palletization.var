@@ -1,10 +1,9 @@
 VAR
-	palletComplete : BOOL;
 	acknowledgeImagePalletization : ARRAY[0..69] OF BOOL;
 	alarmImagePalletization : ARRAY[0..69] OF BOOL;
 	alarmInZonePalletization : BOOL;
 	centeringForward : BOOL;
-	cmdMovePalletP17 : BOOL;
+	cmdMovePalletP16 : BOOL;
 	cmdPalletizationAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
 	cmdPalletizationManual : BOOL;
 	cmdRollerClose : BOOL;
@@ -18,16 +17,21 @@ VAR
 	interlayerSheetMagazineEmpty : BOOL;
 	modeZonePalletization : ModeZone;
 	modeZonePalletizationOld : ModeZone;
-	nbOfTraysInCompletePallet : INT;
 END_VAR
 VAR RETAIN
 	nbOfLayersOnPallet : INT;
+END_VAR
+VAR
+	nbOfTraysInCompletePallet : INT;
+END_VAR
+VAR RETAIN
 	nbOfTraysInHalfLayer : INT;
 	nbOfTraysInRobotHead : INT;
 	nbOfTraysOnP2 : INT;
 	nbOfTraysOnTable : INT;
 END_VAR
 VAR
+	palletComplete : BOOL;
 	pusherDrive : PusherDrive;
 	railingUp : BOOL;
 	robotData : RobotData;
@@ -38,7 +42,6 @@ VAR
 	statePalletP14 : StatePallet;
 	statePalletP15 : StatePallet;
 	statePalletP16 : StatePallet;
-	statePalletP17 : StatePallet;
 	stateRailing : StateRailing;
 	stateRobotAuto : StateRobotAuto;
 	stateRoller : StateRoller;

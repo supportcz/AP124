@@ -9,11 +9,10 @@ PROGRAM _CYCLIC
 	TON_PalletStopP15(IN := diPalletStopP15, PT := T#200ms);
 	TON_PalletStopP16(IN := diPalletStopP16, PT := T#200ms);
 	TON_PalletStopP17(IN := diPalletStopP17, PT := T#200ms);
-	TON_PalletStopP18(IN := diPalletStopP18, PT := T#200ms);
 	
 	CASE modeZonePalletization OF
 		
-		modeZoneOff: //the automat is not ready to start
+		modeZoneOff: 
 		
 
 		modeZoneManual:
@@ -24,7 +23,6 @@ PROGRAM _CYCLIC
 				cmdMovePalletP14 := FALSE;
 				cmdMovePalletP15 := FALSE;
 				cmdMovePalletP16 := FALSE;
-				cmdMovePalletP17 := FALSE;
 			END_IF
 
 		modeZoneAuto:
@@ -44,9 +42,6 @@ PROGRAM _CYCLIC
 
 			TON_ConveyorP16(IN := cmdMovePalletP16, PT := T#20s);
 			alarmImagePalletization[6] := TON_ConveyorP16.Q;
-			
-			TON_ConveyorP17(IN := cmdMovePalletP17, PT := T#20s);
-			alarmImagePalletization[30] := TON_ConveyorP17.Q;
 			
 			
 			// control conveyors
@@ -71,10 +66,6 @@ PROGRAM _CYCLIC
 				cmdMovePalletP16 := TRUE;
 			END_IF
 
-			IF statePalletP17 <> palletNotPresent AND statePalletP18 = palletNotPresent AND stateTurnTable = stateTurnTableEntryPosition AND diWrapperEntryFree THEN
-				cmdMovePalletP17 := TRUE;
-			END_IF
-		
 			//unexpected pallet
 			IF TON_PalletStopP13.Q AND statePalletP13 = palletNotPresent AND NOT cmdMovePalletP12 THEN
 				alarmImagePalletization[9] := TRUE;
@@ -91,10 +82,6 @@ PROGRAM _CYCLIC
 			IF TON_PalletStopP17.Q AND statePalletP17 = palletNotPresent AND NOT cmdMovePalletP16 THEN
 				alarmImagePalletization[4] := TRUE;
 			END_IF	
-			IF TON_PalletStopP18.Q AND statePalletP18 = palletNotPresent AND NOT cmdMovePalletP17 AND stateTurnTable = stateTurnTableEntryPosition THEN
-				alarmImagePalletization[31] := TRUE;
-			END_IF	
-		
 
 	END_CASE
 
@@ -105,7 +92,6 @@ PROGRAM _CYCLIC
 	ConveyorP14; 
 	ConveyorP15; 
 	ConveyorP16; 
-	ConveyorP17; 
 
 	//stop sensor not reached
 	IF acknowledgeImagePalletization[0] THEN
@@ -123,9 +109,7 @@ PROGRAM _CYCLIC
 	IF acknowledgeImagePalletization[6] THEN
 		alarmImagePalletization[6] := FALSE;
 	END_IF
-	IF acknowledgeImagePalletization[30] THEN
-		alarmImagePalletization[30] := FALSE;
-	END_IF
+
 	
 	
 	//unexpected pallet	
@@ -144,9 +128,7 @@ PROGRAM _CYCLIC
 	IF acknowledgeImagePalletization[4] THEN
 		alarmImagePalletization[4] := FALSE;
 	END_IF	
-	IF acknowledgeImagePalletization[31] THEN
-		alarmImagePalletization[31] := FALSE;
-	END_IF	
+
 	
 
 	
@@ -164,7 +146,5 @@ PROGRAM _CYCLIC
 	alarmImagePalletization[26] := acpI_P16.error;
 	acpI_P16.reset := EDGENEG(acknowledgeImagePalletization[26]);
 
-	alarmImagePalletization[29] := acpI_P17.error;
-	acpI_P17.reset := EDGENEG(acknowledgeImagePalletization[29]);
 
 END_PROGRAM

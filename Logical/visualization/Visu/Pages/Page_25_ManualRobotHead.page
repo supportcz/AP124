@@ -659,7 +659,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.robot_head.robot_head.cmdRollerClose]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.cmdRollerClose]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -675,7 +675,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.robot_head.robot_head.cmdRollerOpen]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.cmdRollerOpen]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

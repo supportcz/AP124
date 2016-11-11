@@ -5,6 +5,7 @@
     <File Description="Cyclic code">Main.st</File>
     <File Description="Local data types" Private="true">Types.typ</File>
     <File Description="Local variables" Private="true">Variables.var</File>
+    <File>conveyorP17.st</File>
     <File>conveyorP19.st</File>
     <File>conveyorP20.st</File>
     <File>conveyorP21.st</File>

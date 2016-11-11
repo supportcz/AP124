@@ -193,7 +193,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="Height" Value="27"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.palletization.statePalletP17]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.plc.outfeed.statePalletP17]"/>
           <Property Name="Left" Value="210"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>

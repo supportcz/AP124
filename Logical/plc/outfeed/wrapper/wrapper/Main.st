@@ -20,7 +20,9 @@ PROGRAM _CYCLIC
 	doWrapperSortiment1 := dActualRecipe.wrapperSortiment.0;
 	doWrapperSortiment2 := dActualRecipe.wrapperSortiment.1;
 			
-	TON_PalletStopP19(IN := diPalletStopP19, PT := T#200ms);
+	IF NOT testAtAtrima THEN
+		TON_PalletStopP19(IN := diPalletStopP19, PT := T#200ms);
+	END_IF
 	
 	CASE modeZoneOutfeed OF
 		

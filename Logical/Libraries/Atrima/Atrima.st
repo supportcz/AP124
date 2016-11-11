@@ -25,6 +25,7 @@ FUNCTION_BLOCK Comau
 		MoveDone := FALSE;
 		startMove := FALSE;
 		Error := FALSE;
+		ErrorHoldPressed := FALSE;
 	END_IF
 	
 	CASE state OF
@@ -55,7 +56,6 @@ FUNCTION_BLOCK Comau
 			END_IF
 		
 		3:
-
 			startMove := TRUE;
 
 			IF moveActive THEN
@@ -69,6 +69,10 @@ FUNCTION_BLOCK Comau
 				state := state + 1;
 			END_IF
 		
+			IF NOT Start_NoHoldPrgMove THEN
+				ErrorHoldPressed := TRUE;
+				state := 5;
+			END_IF
 		5:
 
 		
@@ -99,6 +103,8 @@ FUNCTION_BLOCK Comau
 END_FUNCTION_BLOCK
 		
 FUNCTION_BLOCK DoorLogic
+	
+	diDoorLocked;
 	
 	CASE stateDoor OF
 		

@@ -313,8 +313,12 @@ PROGRAM _CYCLIC
 												
 					//check sensor error
 					TON_TransitTime(IN := TRUE, PT:=T#4s);
-					IF TON_TransitTime.Q AND counterTraysBehindRotation <> counterTraysOnConveyorP2 THEN
-						alarmImagePalletization[27] := TRUE;
+					IF TON_TransitTime.Q THEN
+						IF counterTraysOnConveyorP2 > counterTraysBehindRotation THEN
+							alarmImagePalletization[27] := TRUE;
+						ELSE
+							alarmImagePalletization[55] := TRUE;
+						END_IF
 					END_IF
 				
 					//for start dialog
@@ -353,6 +357,9 @@ PROGRAM _CYCLIC
 	END_IF
 	IF acknowledgeImagePalletization[28] THEN
 		alarmImagePalletization[28] := FALSE;
+	END_IF
+	IF acknowledgeImagePalletization[55] THEN
+		alarmImagePalletization[55] := FALSE;
 	END_IF
 	
 	//problems with motors

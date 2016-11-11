@@ -10,6 +10,5 @@
     <File>conveyorP14.st</File>
     <File>conveyorP15.st</File>
     <File>conveyorP16.st</File>
-    <File>conveyorP17.st</File>
   </Files>
 </Program>

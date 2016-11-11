@@ -2,12 +2,10 @@ VAR
 	acpI_P14 : AcpInoSdc;
 	acpI_P15 : AcpInoSdc;
 	acpI_P16 : AcpInoSdc;
-	acpI_P17 : AcpInoSdc;
 	cmdMovePalletP12 : BOOL;
 	cmdMovePalletP13 : BOOL;
 	cmdMovePalletP14 : BOOL;
 	cmdMovePalletP15 : BOOL;
-	cmdMovePalletP16 : BOOL;
 	diMotorProtectionP12 : BOOL;
 	diMotorProtectionP13 : BOOL;
 	diPalletSlowDownP14 : BOOL;
@@ -16,7 +14,6 @@ VAR
 	diPalletStopP15 : BOOL;
 	diPalletStopP16 : BOOL;
 	diPalletStopP17 : BOOL;
-	diPalletStopP18 : BOOL;
 	doConveyorP12 : BOOL; (*starts conveyor P12*)
 	doConveyorP13 : BOOL;
 	lightCurtainP15 : BOOL;
@@ -25,11 +22,9 @@ VAR
 	TON_ConveyorP14 : TON;
 	TON_ConveyorP15 : TON;
 	TON_ConveyorP16 : TON;
-	TON_ConveyorP17 : TON;
 	TON_PalletStopP13 : TON;
 	TON_PalletStopP14 : TON;
 	TON_PalletStopP15 : TON;
 	TON_PalletStopP16 : TON;
 	TON_PalletStopP17 : TON;
-	TON_PalletStopP18 : TON;
 END_VAR

@@ -1,9 +1,6 @@
 PROGRAM _INIT
 	
 	Comau_0.NoDriveOff := TRUE;
-//	Comau_0.NoHold := TRUE;
-	 
-
 	
 END_PROGRAM
 
@@ -392,6 +389,10 @@ PROGRAM _CYCLIC
 		alarmImagePalletization[51] := TRUE;	
 	END_IF
 	
+	IF Comau_0.ErrorHoldPressed THEN
+		alarmImagePalletization[56] := TRUE;	
+	END_IF
+
 	MTBasicsPWM_0(Enable :=  alarmImagePalletization[48] AND NOT acknowledgeImagePalletization[48], Period := 1, DutyCycle := 50);
 	Comau_0.CancelAlarm := MTBasicsPWM_0.Out;
 	
@@ -410,5 +411,10 @@ PROGRAM _CYCLIC
 	IF acknowledgeImagePalletization[53] THEN
 		alarmImagePalletization[53] := FALSE;
 	END_IF
+
+	IF acknowledgeImagePalletization[56] THEN
+		alarmImagePalletization[56] := FALSE;
+	END_IF
+
 	
 END_PROGRAM

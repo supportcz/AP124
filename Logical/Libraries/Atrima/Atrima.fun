@@ -26,6 +26,7 @@ FUNCTION_BLOCK Comau
 		MoveDone : BOOL;
 		IsItSafeToGoHome : BOOL;
 		Error : BOOL;
+		ErrorHoldPressed : BOOL;
 		RawOutput1 : UDINT;
 		RawOutput2 : UDINT;
 	END_VAR

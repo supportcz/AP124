@@ -2,14 +2,15 @@ VAR
 	acknowledgeImageOutfeed : ARRAY[0..39] OF BOOL;
 	alarmImageOutfeed : ARRAY[0..39] OF BOOL;
 	alarmInZoneOutfeed : BOOL;
+	cmdMovePalletP17 : BOOL;
 	cmdMovePalletP18 : BOOL;
 	cmdOutfeedAuto : BOOL; (*VISU:switches pallet magazine to automatic mode*)
 	cmdOutfeedManual : BOOL;
 	diWrapperDoorCanBeOpened : BOOL;
 	diWrapperEntryFree : BOOL;
 	diWrapperExitFree : BOOL;
-	diWrapperLowFoil : BOOL;
 	diWrapperInAuto : BOOL;
+	diWrapperLowFoil : BOOL;
 	diWrapperNoError : BOOL;
 	diWrappingFinished : BOOL;
 	doWrapperNoExternalStop : BOOL;
@@ -18,6 +19,7 @@ VAR
 	doWrappingStart : BOOL;
 	modeZoneOutfeed : ModeZone;
 	modeZoneOutfeedOld : ModeZone;
+	statePalletP17 : StatePallet;
 	statePalletP18 : StatePallet;
 	statePalletP19 : StatePallet;
 	statePalletP20 : StatePallet;

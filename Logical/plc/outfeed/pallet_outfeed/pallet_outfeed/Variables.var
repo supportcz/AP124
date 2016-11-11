@@ -1,8 +1,10 @@
 VAR
+	acpI_P17 : AcpInoSdc;
 	cmdMovePalletP19 : BOOL;
 	cmdMovePalletP20 : BOOL;
 	cmdMovePalletP21 : BOOL;
 	cmdMovePalletP22 : BOOL;
+	diPalletStopP18 : BOOL;
 	diPalletStopP20 : BOOL;
 	diPalletStopP21 : BOOL;
 	diPalletStopP22 : BOOL;
@@ -10,11 +12,13 @@ VAR
 	doConveyorP20 : BOOL;
 	doConveyorP21 : BOOL;
 	doConveyorP22 : BOOL;
+	TOF_PalletStopP22 : TOF;
+	TON_ConveyorP17 : TON;
 	TON_ConveyorP19 : TON;
 	TON_ConveyorP20 : TON;
+	TON_ConveyorP21 : TON;
+	TON_PalletStopP18 : TON;
 	TON_PalletStopP20 : TON;
 	TON_PalletStopP21 : TON;
 	TON_PalletStopP22 : TON;
-	TON_ConveyorP21 : TON;
-	TOF_PalletStopP22 : TOF;
 END_VAR
