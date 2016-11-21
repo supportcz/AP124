@@ -157,8 +157,8 @@ VAR_CONFIG
 	product_in:doRotationBack AT %QX."Q52".DigitalOutput01;
 	product_in:doRotationForward AT %QX."Q52".DigitalOutput02;
 	product_in:doBumper AT %QX."Q52".DigitalOutput03;
-	pallet_mag:doOpenArms AT %QX."Q71".DigitalOutput01;
-	pallet_mag:doCloseArms AT %QX."Q71".DigitalOutput02;
+	pallet_mag:doOpenArms AT %QX."Q72".DigitalOutput01;
+	pallet_mag:doCloseArms AT %QX."Q72".DigitalOutput02;
 	product_in:acpI_P10.CMDD_Output AT %QW."U10".CMDD_Output;
 	product_in:acpI_P10.ETAD_Input AT %IW."U10".ETAD_Input;
 	product_in:HMIS AT %IW."U10".HMIS_Input;
