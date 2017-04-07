@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio Version=4.2.6.110 SP?>
 <BusConfiguration Version="4.0" ARVersion="42601" SafetyRelease="1.9" Communication="/IF=tcpip /LOPO=11159 /SA=1 /RT=1000 /AM=* /SDT=5 /DAIP=192.168.88.10 /REPO=11159 /ANSL=1 /PT=11169 /PORT=50000">
@@ -1251,3 +1252,9 @@
     <Channel ID="CurrentOK04" Description-de="TRUE bei Strömen zwischen 50 mA und 0.5 A" Description-en="TRUE if current is between 50 mA and 0.5 A" Address="0" BitOffset="7" Direction="IN" Type="BOOL" CrossLink="true" />
   </Module>
 </BusConfiguration>
+=======
+<!--xml version="1.0" encoding="utf-8"-->
+<!--AutomationStudio Version="3.0"-->
+<BusConfiguration Version="3.0" Communication="/IF=tcpip /LOPO=11159 /SA=1  /DAIP=192.168.1.23 /CKDA=0 /REPO=11159 /ANSL=1" SafetyRelease="1.7">
+</BusConfiguration>
+>>>>>>> c94a17debc69eb7b0e356f2ea0310110045f3779
