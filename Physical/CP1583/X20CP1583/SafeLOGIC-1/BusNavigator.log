@@ -20820,3 +20820,387 @@ Reading properties for module "X20SO4110_110".
   ParameterGroup "http://www.br-automation.com" has 9 parameters.
 Module "X20SO4110_110.SL1.SM7" is of type "X20SO4110" and has 21 channels and 8 parameter groups.
 Content "name1" successfully read from "name2"
+
+
+
+LOGAppend on Tuesday 2017/04/04  UTC 09:35:40:678
+
+Reading "C:\Projects\AS_4.2.6\AlgierPal\AP124_04042014\Physical\CP1583\X20CP1583\SafeLOGIC-1\BusNavigator.bnc"...
+Reading Content "BusConfiguration"
+Reading properties for module "IF6.ST11". Beginning at line 3
+  ParameterGroup "Basic" has 96 parameters.
+  ParameterGroup "Safety_Response_Time_Defaults" has 25 parameters.
+  Channel "MFWsiIN" Repeat =0  Actives=0 has 0 parameter groups.
+  ParameterGroup "SafeDigitalInput01" has 6 parameters.
+  Channel "SafeDigitalInput01" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput02" has 6 parameters.
+  Channel "SafeDigitalInput02" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput03" has 6 parameters.
+  Channel "SafeDigitalInput03" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput04" has 6 parameters.
+  Channel "SafeDigitalInput04" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput05" has 6 parameters.
+  Channel "SafeDigitalInput05" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput06" has 6 parameters.
+  Channel "SafeDigitalInput06" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput07" has 6 parameters.
+  Channel "SafeDigitalInput07" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput08" has 6 parameters.
+  Channel "SafeDigitalInput08" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput09" has 6 parameters.
+  Channel "SafeDigitalInput09" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput10" has 6 parameters.
+  Channel "SafeDigitalInput10" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput11" has 6 parameters.
+  Channel "SafeDigitalInput11" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput12" has 6 parameters.
+  Channel "SafeDigitalInput12" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput13" has 6 parameters.
+  Channel "SafeDigitalInput13" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput14" has 6 parameters.
+  Channel "SafeDigitalInput14" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput15" has 6 parameters.
+  Channel "SafeDigitalInput15" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput16" has 6 parameters.
+  Channel "SafeDigitalInput16" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput17" has 6 parameters.
+  Channel "SafeDigitalInput17" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput18" has 6 parameters.
+  Channel "SafeDigitalInput18" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput19" has 6 parameters.
+  Channel "SafeDigitalInput19" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput20" has 6 parameters.
+  Channel "SafeDigitalInput20" Repeat =0  Actives=0 has 1 parameter groups.
+  Channel "SafeTwoChannelInput0102" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput0304" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput0506" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput0708" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput0910" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput1112" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput1314" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput1516" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput1718" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput1920" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "Fuellbit1" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "Fuellbit2" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK04" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK05" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK06" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK07" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK08" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK09" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK10" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK11" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK12" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK13" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK14" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK15" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK16" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK17" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK18" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK19" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK20" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk0102" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk0304" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk0506" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk0708" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk0910" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk1112" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk1314" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk1516" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk1718" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk1920" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "BOOL1" Repeat =64  Actives=24 has 0 parameter groups.
+  Channel "INT1" Repeat =4  Actives=0 has 0 parameter groups.
+  Channel "UINT1" Repeat =4  Actives=0 has 0 parameter groups.
+  Channel "DINT1" Repeat =2  Actives=0 has 0 parameter groups.
+  Channel "UDINT1" Repeat =2  Actives=0 has 0 parameter groups.
+  Channel "BOOL0" Repeat =64  Actives=24 has 0 parameter groups.
+  Channel "INT0" Repeat =4  Actives=0 has 0 parameter groups.
+  Channel "UINT0" Repeat =4  Actives=0 has 0 parameter groups.
+  Channel "DINT0" Repeat =2  Actives=0 has 0 parameter groups.
+  Channel "UDINT0" Repeat =2  Actives=0 has 0 parameter groups.
+Module "IF6.ST11.SL1.SM1" is of type "X20SLX910" and has 111 channels and 2 parameter groups.
+ERROR The query for node "Table" failed! Searching stoped at first line 3
+Module "IF6.ST11.SL1.SM1" is of type "X20SLX910" and has 0 table objects.
+Module "IF6.ST11.SL1.SM1" is of type "X20SLX910" and has 64 external machine option objects.
+ERROR The query for node "RemanentData" failed! Searching stoped at first line 3
+Module "IF6.ST11.SL1.SM1" is of type "X20SLX910" and has 0 remanent data objects.
+Reading properties for module "IF6.ST12". Beginning at line 405
+  ParameterGroup "Basic" has 20 parameters.
+  ParameterGroup "Safety_Response_Time" has 28 parameters.
+  Channel "SafeModuleOk" Repeat =0  Actives=0 has 0 parameter groups.
+  ParameterGroup "SafeDigitalInput01" has 6 parameters.
+  Channel "SafeDigitalInput01" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput02" has 6 parameters.
+  Channel "SafeDigitalInput02" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput03" has 6 parameters.
+  Channel "SafeDigitalInput03" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput04" has 6 parameters.
+  Channel "SafeDigitalInput04" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput05" has 6 parameters.
+  Channel "SafeDigitalInput05" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput06" has 6 parameters.
+  Channel "SafeDigitalInput06" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput07" has 6 parameters.
+  Channel "SafeDigitalInput07" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput08" has 6 parameters.
+  Channel "SafeDigitalInput08" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput09" has 6 parameters.
+  Channel "SafeDigitalInput09" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput10" has 6 parameters.
+  Channel "SafeDigitalInput10" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput11" has 6 parameters.
+  Channel "SafeDigitalInput11" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput12" has 6 parameters.
+  Channel "SafeDigitalInput12" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput13" has 6 parameters.
+  Channel "SafeDigitalInput13" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput14" has 6 parameters.
+  Channel "SafeDigitalInput14" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput15" has 6 parameters.
+  Channel "SafeDigitalInput15" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput16" has 6 parameters.
+  Channel "SafeDigitalInput16" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput17" has 6 parameters.
+  Channel "SafeDigitalInput17" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput18" has 6 parameters.
+  Channel "SafeDigitalInput18" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput19" has 6 parameters.
+  Channel "SafeDigitalInput19" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalInput20" has 6 parameters.
+  Channel "SafeDigitalInput20" Repeat =0  Actives=0 has 1 parameter groups.
+  Channel "SafeTwoChannelInput0102" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput0304" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput0506" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput0708" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput0910" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput1112" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput1314" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput1516" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput1718" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelInput1920" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "Fuellbit1" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "Fuellbit2" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK04" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK05" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK06" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK07" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK08" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK09" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK10" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK11" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK12" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK13" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK14" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK15" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK16" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK17" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK18" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK19" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK20" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk0102" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk0304" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk0506" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk0708" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk0910" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk1112" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk1314" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk1516" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk1718" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeTwoChannelOk1920" Repeat =0  Actives=0 has 0 parameter groups.
+Module "IF6.ST12.SL1.SM2" is of type "X20SI9100" and has 63 channels and 2 parameter groups.
+ERROR The query for node "Table" failed! Searching stoped at first line 405
+Module "IF6.ST12.SL1.SM2" is of type "X20SI9100" and has 0 table objects.
+ERROR The query for node "ExternalMachineOption" failed! Searching stoped at first line 405
+Module "IF6.ST12.SL1.SM2" is of type "X20SI9100" and has 0 external machine option objects.
+ERROR The query for node "RemanentData" failed! Searching stoped at first line 405
+Module "IF6.ST12.SL1.SM2" is of type "X20SI9100" and has 0 remanent data objects.
+Reading properties for module "IF6.ST13". Beginning at line 695
+  ParameterGroup "Basic" has 18 parameters.
+  ParameterGroup "Safety_Response_Time" has 28 parameters.
+  Channel "SafeModuleOk" Repeat =0  Actives=0 has 0 parameter groups.
+  ParameterGroup "SafeDigitalOutput01" has 1 parameters.
+  Channel "SafeDigitalOutput01" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput02" has 1 parameters.
+  Channel "SafeDigitalOutput02" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput03" has 1 parameters.
+  Channel "SafeDigitalOutput03" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput04" has 1 parameters.
+  Channel "SafeDigitalOutput04" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput05" has 1 parameters.
+  Channel "SafeDigitalOutput05" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput06" has 3 parameters.
+  Channel "SafeDigitalOutput06" Repeat =0  Actives=0 has 1 parameter groups.
+  Channel "SafeChannelOK01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK04" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK05" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK06" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput04" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput05" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput06" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel04" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel05" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel06" Repeat =0  Actives=0 has 0 parameter groups.
+Module "IF6.ST13.SL1.SM3" is of type "X20SO6300" and has 25 channels and 2 parameter groups.
+ERROR The query for node "Table" failed! Searching stoped at first line 695
+Module "IF6.ST13.SL1.SM3" is of type "X20SO6300" and has 0 table objects.
+ERROR The query for node "ExternalMachineOption" failed! Searching stoped at first line 695
+Module "IF6.ST13.SL1.SM3" is of type "X20SO6300" and has 0 external machine option objects.
+ERROR The query for node "RemanentData" failed! Searching stoped at first line 695
+Module "IF6.ST13.SL1.SM3" is of type "X20SO6300" and has 0 remanent data objects.
+Reading properties for module "IF6.ST14". Beginning at line 812
+  ParameterGroup "Basic" has 19 parameters.
+  ParameterGroup "Safety_Response_Time" has 28 parameters.
+  Channel "SafeModuleOk" Repeat =0  Actives=0 has 0 parameter groups.
+  ParameterGroup "SafeDigitalOutput01" has 1 parameters.
+  Channel "SafeDigitalOutput01" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput02" has 1 parameters.
+  Channel "SafeDigitalOutput02" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput03" has 1 parameters.
+  Channel "SafeDigitalOutput03" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput04" has 3 parameters.
+  Channel "SafeDigitalOutput04" Repeat =0  Actives=0 has 1 parameter groups.
+  Channel "SafeChannelOK01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK04" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput04" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel1" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel2" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel3" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel4" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "CurrentOK01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "CurrentOK02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "CurrentOK03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "CurrentOK04" Repeat =0  Actives=0 has 0 parameter groups.
+Module "IF6.ST14.SL1.SM4" is of type "X20SO4110" and has 21 channels and 2 parameter groups.
+ERROR The query for node "Table" failed! Searching stoped at first line 812
+Module "IF6.ST14.SL1.SM4" is of type "X20SO4110" and has 0 table objects.
+ERROR The query for node "ExternalMachineOption" failed! Searching stoped at first line 812
+Module "IF6.ST14.SL1.SM4" is of type "X20SO4110" and has 0 external machine option objects.
+ERROR The query for node "RemanentData" failed! Searching stoped at first line 812
+Module "IF6.ST14.SL1.SM4" is of type "X20SO4110" and has 0 remanent data objects.
+Reading properties for module "IF6.ST15". Beginning at line 922
+  ParameterGroup "Basic" has 19 parameters.
+  ParameterGroup "Safety_Response_Time" has 28 parameters.
+  Channel "SafeModuleOk" Repeat =0  Actives=0 has 0 parameter groups.
+  ParameterGroup "SafeDigitalOutput01" has 1 parameters.
+  Channel "SafeDigitalOutput01" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput02" has 1 parameters.
+  Channel "SafeDigitalOutput02" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput03" has 1 parameters.
+  Channel "SafeDigitalOutput03" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput04" has 3 parameters.
+  Channel "SafeDigitalOutput04" Repeat =0  Actives=0 has 1 parameter groups.
+  Channel "SafeChannelOK01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK04" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput04" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel1" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel2" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel3" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel4" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "CurrentOK01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "CurrentOK02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "CurrentOK03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "CurrentOK04" Repeat =0  Actives=0 has 0 parameter groups.
+Module "IF6.ST15.SL1.SM5" is of type "X20SO4110" and has 21 channels and 2 parameter groups.
+ERROR The query for node "Table" failed! Searching stoped at first line 922
+Module "IF6.ST15.SL1.SM5" is of type "X20SO4110" and has 0 table objects.
+ERROR The query for node "ExternalMachineOption" failed! Searching stoped at first line 922
+Module "IF6.ST15.SL1.SM5" is of type "X20SO4110" and has 0 external machine option objects.
+ERROR The query for node "RemanentData" failed! Searching stoped at first line 922
+Module "IF6.ST15.SL1.SM5" is of type "X20SO4110" and has 0 remanent data objects.
+Reading properties for module "IF6.ST16". Beginning at line 1032
+  ParameterGroup "Basic" has 19 parameters.
+  ParameterGroup "Safety_Response_Time" has 28 parameters.
+  Channel "SafeModuleOk" Repeat =0  Actives=0 has 0 parameter groups.
+  ParameterGroup "SafeDigitalOutput01" has 1 parameters.
+  Channel "SafeDigitalOutput01" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput02" has 1 parameters.
+  Channel "SafeDigitalOutput02" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput03" has 1 parameters.
+  Channel "SafeDigitalOutput03" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput04" has 3 parameters.
+  Channel "SafeDigitalOutput04" Repeat =0  Actives=0 has 1 parameter groups.
+  Channel "SafeChannelOK01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK04" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput04" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel1" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel2" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel3" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel4" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "CurrentOK01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "CurrentOK02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "CurrentOK03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "CurrentOK04" Repeat =0  Actives=0 has 0 parameter groups.
+Module "IF6.ST16.SL1.SM6" is of type "X20SO4110" and has 21 channels and 2 parameter groups.
+ERROR The query for node "Table" failed! Searching stoped at first line 1032
+Module "IF6.ST16.SL1.SM6" is of type "X20SO4110" and has 0 table objects.
+ERROR The query for node "ExternalMachineOption" failed! Searching stoped at first line 1032
+Module "IF6.ST16.SL1.SM6" is of type "X20SO4110" and has 0 external machine option objects.
+ERROR The query for node "RemanentData" failed! Searching stoped at first line 1032
+Module "IF6.ST16.SL1.SM6" is of type "X20SO4110" and has 0 remanent data objects.
+Reading properties for module "IF6.ST17". Beginning at line 1142
+  ParameterGroup "Basic" has 19 parameters.
+  ParameterGroup "Safety_Response_Time" has 28 parameters.
+  Channel "SafeModuleOk" Repeat =0  Actives=0 has 0 parameter groups.
+  ParameterGroup "SafeDigitalOutput01" has 1 parameters.
+  Channel "SafeDigitalOutput01" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput02" has 1 parameters.
+  Channel "SafeDigitalOutput02" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput03" has 1 parameters.
+  Channel "SafeDigitalOutput03" Repeat =0  Actives=0 has 1 parameter groups.
+  ParameterGroup "SafeDigitalOutput04" has 3 parameters.
+  Channel "SafeDigitalOutput04" Repeat =0  Actives=0 has 1 parameter groups.
+  Channel "SafeChannelOK01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "SafeChannelOK04" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "ReleaseOutput04" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel1" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel2" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel3" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "PhysicalStateChannel4" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "CurrentOK01" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "CurrentOK02" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "CurrentOK03" Repeat =0  Actives=0 has 0 parameter groups.
+  Channel "CurrentOK04" Repeat =0  Actives=0 has 0 parameter groups.
+Module "IF6.ST17.SL1.SM7" is of type "X20SO4110" and has 21 channels and 2 parameter groups.
+ERROR The query for node "Table" failed! Searching stoped at first line 1142
+Module "IF6.ST17.SL1.SM7" is of type "X20SO4110" and has 0 table objects.
+ERROR The query for node "ExternalMachineOption" failed! Searching stoped at first line 1142
+Module "IF6.ST17.SL1.SM7" is of type "X20SO4110" and has 0 external machine option objects.
+ERROR The query for node "RemanentData" failed! Searching stoped at first line 1142
+Module "IF6.ST17.SL1.SM7" is of type "X20SO4110" and has 0 remanent data objects.
+Content "BusConfiguration" successfully read from "C:\Projects\AS_4.2.6\AlgierPal\AP124_04042014\Physical\CP1583\X20CP1583\SafeLOGIC-1\BusNavigator.bnc"

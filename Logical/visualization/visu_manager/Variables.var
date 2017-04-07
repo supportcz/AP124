@@ -1,28 +1,26 @@
-VAR
-	ButtonColor : UINT;
-	ButtonAlarmColor : BOOL;
-	uiHandle : UDINT;
-	uiStatus : UINT;
-	ButtonColor_tmp : UINT;
-END_VAR
 VAR CONSTANT
 	ALARM_BLINK : UINT := 50;
 END_VAR
 VAR
-	uiAlarmCount : UINT;
-	dRecipes : REFERENCE TO Recipes;
-	i : INT;
-	PalletStatus : ARRAY[12..22] OF BOOL;
-	DTStructureGetTime_0 : DTStructureGetTime;
+	ButtonAlarmColor : BOOL;
+	ButtonColor : UINT;
+	ButtonColor_tmp : UINT;
 	ButtonResetTime : UINT;
 	cmdAuto : BOOL;
-	cmdManual : BOOL;
 	cmdAutoPM : BOOL;
+	cmdManual : BOOL;
 	cmdManualPM : BOOL;
+	dRecipes : REFERENCE TO Recipes;
+	DTStructureGetTime_0 : DTStructureGetTime;
+	i : INT;
 	magazineStatusDatapointAuto : UINT;
 	magazineStatusDatapointManual : UINT;
 	outfeedStatusDatapointAuto : UINT;
 	outfeedStatusDatapointManual : UINT;
 	palletizationStatusDatapointAuto : UINT;
 	palletizationStatusDatapointManu : UINT;
+	PalletStatus : ARRAY[12..22] OF BOOL;
+	uiAlarmCount : UINT;
+	uiHandle : UDINT;
+	uiStatus : UINT;
 END_VAR

@@ -1488,7 +1488,7 @@ END_VAR
 { CodeWorksheet := 'palletization', Type := '.fbd' }
 ﻿<?xml version="1.0" encoding="utf-16" standalone="yes"?><FBD>
   <addData>
-    <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+    <data name="http://www.kw-software.com" handleUnknown="preserve">
       <line localId="0" beginX="187" beginY="151" endX="187" endY="157" />
       <line localId="10" beginX="108" beginY="155" endX="116" endY="155" />
       <line localId="11" beginX="116" beginY="155" endX="117" endY="155" />
@@ -1575,7 +1575,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="137" formalParameter="S_EDM_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="134" />
           </data>
         </addData>
@@ -1592,7 +1592,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="137" formalParameter="S_EDM_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="134" />
           </data>
         </addData>
@@ -1631,7 +1631,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="45" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="43" />
           </data>
         </addData>
@@ -1648,7 +1648,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="45" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="43" />
           </data>
         </addData>
@@ -1680,7 +1680,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="137" formalParameter="Error">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="135" />
           </data>
         </addData>
@@ -1694,7 +1694,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="28" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="23" />
           </data>
         </addData>
@@ -1725,7 +1725,7 @@ END_VAR
   <block localId="28" height="24" width="18" typeName="TP" instanceName="TP_3">
     <position x="204" y="18" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -1735,7 +1735,7 @@ END_VAR
           <relPosition x="0" y="8" />
           <connection refLocalId="29" formalParameter="OR">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="27" />
               </data>
             </addData>
@@ -1744,7 +1744,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="21" inState="129" outState="0" width="5" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -1755,7 +1755,7 @@ END_VAR
           <connection refLocalId="18" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="22" inState="128" outState="0" width="5" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -1768,7 +1768,7 @@ END_VAR
           <relPosition x="18" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="23" inState="0" outState="129" width="3" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -1778,7 +1778,7 @@ END_VAR
           <relPosition x="18" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="24" inState="0" outState="128" width="4" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -1788,7 +1788,7 @@ END_VAR
   <block localId="29" height="24" width="16" typeName="OR">
     <position x="126" y="16" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="1" />
       </data>
     </addData>
@@ -1799,7 +1799,7 @@ END_VAR
           <connection refLocalId="19" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="25" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_BIT" />
           </data>
         </addData>
@@ -1810,7 +1810,7 @@ END_VAR
           <connection refLocalId="20" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="26" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_BIT" />
           </data>
         </addData>
@@ -1823,7 +1823,7 @@ END_VAR
           <relPosition x="16" y="10" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="27" inState="0" outState="641" width="1" height="2" flagType="" dataType="ANY_BIT" />
           </data>
         </addData>
@@ -1847,7 +1847,7 @@ END_VAR
   <block localId="37" height="24" width="18" typeName="TON" instanceName="TON_4">
     <position x="82" y="388" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -1858,7 +1858,7 @@ END_VAR
           <connection refLocalId="31" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="33" inState="129" outState="0" width="5" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -1869,7 +1869,7 @@ END_VAR
           <connection refLocalId="32" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="34" inState="128" outState="0" width="5" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -1882,7 +1882,7 @@ END_VAR
           <relPosition x="18" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="35" inState="0" outState="129" width="3" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -1892,7 +1892,7 @@ END_VAR
           <relPosition x="18" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="36" inState="0" outState="128" width="4" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -1916,7 +1916,7 @@ END_VAR
   <block localId="45" height="24" width="18" typeName="TON" instanceName="TON_5">
     <position x="130" y="570" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -1927,7 +1927,7 @@ END_VAR
           <connection refLocalId="38" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="41" inState="129" outState="0" width="5" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -1938,7 +1938,7 @@ END_VAR
           <connection refLocalId="39" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="42" inState="128" outState="0" width="5" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -1951,7 +1951,7 @@ END_VAR
           <relPosition x="18" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="43" inState="0" outState="129" width="3" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -1961,7 +1961,7 @@ END_VAR
           <relPosition x="18" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="44" inState="0" outState="128" width="4" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -1971,7 +1971,7 @@ END_VAR
   <block localId="53" height="32" width="18" typeName="AND_S">
     <position x="144" y="294" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="1" />
       </data>
     </addData>
@@ -1985,7 +1985,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="50" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -1995,7 +1995,7 @@ END_VAR
           <relPosition x="0" y="16" />
           <connection refLocalId="255" formalParameter="AND_S">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="254" />
               </data>
             </addData>
@@ -2006,7 +2006,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="51" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -2019,7 +2019,7 @@ END_VAR
           <relPosition x="18" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="52" inState="0" outState="641" width="1" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -2033,7 +2033,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="137" formalParameter="S_EDM_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="134" />
           </data>
         </addData>
@@ -2052,7 +2052,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="137" formalParameter="S_EDM_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="134" />
           </data>
         </addData>
@@ -2072,7 +2072,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="137" formalParameter="S_EDM_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="134" />
           </data>
         </addData>
@@ -2093,7 +2093,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="45" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="43" />
           </data>
         </addData>
@@ -2112,7 +2112,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="45" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="43" />
           </data>
         </addData>
@@ -2132,7 +2132,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="45" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="43" />
           </data>
         </addData>
@@ -2174,11 +2174,11 @@ END_VAR
       <relPosition x="22" y="2" />
     </connectionPointOut>
   </inVariable>
-  <inVariable localId="79" height="4" width="26">
-    <position x="50" y="122" />
-    <expression>TIME#12s</expression>
+  <inVariable localId="79" height="4" width="24">
+    <position x="52" y="122" />
+    <expression>TIME#15s</expression>
     <connectionPointOut>
-      <relPosition x="26" y="2" />
+      <relPosition x="24" y="2" />
     </connectionPointOut>
   </inVariable>
   <inVariable localId="80" height="4" width="60">
@@ -2212,7 +2212,7 @@ END_VAR
   <block localId="99" height="88" width="82" typeName="SF_MutingPar_2Sensor_V1_00" instanceName="SF_MutingPar_2Sensor_V1_1">
     <position x="80" y="68" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -2223,7 +2223,7 @@ END_VAR
           <connection refLocalId="75" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="84" inState="128" outState="0" width="11" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -2234,7 +2234,7 @@ END_VAR
           <connection refLocalId="83" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="85" inState="128" outState="0" width="15" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2245,7 +2245,7 @@ END_VAR
           <connection refLocalId="80" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="86" inState="128" outState="0" width="23" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2256,7 +2256,7 @@ END_VAR
           <connection refLocalId="82" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="87" inState="128" outState="0" width="23" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2267,7 +2267,7 @@ END_VAR
           <connection refLocalId="77" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="88" inState="128" outState="0" width="18" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2278,7 +2278,7 @@ END_VAR
           <connection refLocalId="78" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="89" inState="128" outState="0" width="17" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -2289,7 +2289,7 @@ END_VAR
           <connection refLocalId="79" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="90" inState="128" outState="0" width="19" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -2300,7 +2300,7 @@ END_VAR
           <connection refLocalId="81" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="91" inState="128" outState="0" width="17" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -2311,7 +2311,7 @@ END_VAR
           <connection refLocalId="76" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="92" inState="128" outState="0" width="17" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2322,7 +2322,7 @@ END_VAR
           <connection refLocalId="170" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="93" inState="128" outState="0" width="9" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -2335,7 +2335,7 @@ END_VAR
           <relPosition x="82" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="94" inState="0" outState="128" width="8" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -2345,7 +2345,7 @@ END_VAR
           <relPosition x="82" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="95" inState="0" outState="128" width="16" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2355,7 +2355,7 @@ END_VAR
           <relPosition x="82" y="24" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="96" inState="0" outState="128" width="18" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2365,7 +2365,7 @@ END_VAR
           <relPosition x="82" y="32" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="97" inState="0" outState="128" width="7" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -2375,7 +2375,7 @@ END_VAR
           <relPosition x="82" y="40" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="98" inState="0" outState="128" width="12" height="2" flagType="" dataType="WORD" />
           </data>
         </addData>
@@ -2389,7 +2389,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="99" formalParameter="S_AOPD_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="95" />
           </data>
         </addData>
@@ -2407,7 +2407,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="104" formalParameter="SAFEBOOL_TO_BOOL">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="103" />
           </data>
         </addData>
@@ -2419,7 +2419,7 @@ END_VAR
   <block localId="104" height="16" width="46" typeName="SAFEBOOL_TO_BOOL">
     <position x="228" y="76" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="1" />
       </data>
     </addData>
@@ -2429,7 +2429,7 @@ END_VAR
           <relPosition x="0" y="8" />
           <connection refLocalId="99" formalParameter="S_AOPD_Out">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="95" />
               </data>
             </addData>
@@ -2439,7 +2439,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="102" inState="640" outState="0" width="2" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2452,7 +2452,7 @@ END_VAR
           <relPosition x="46" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="103" inState="0" outState="640" width="1" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -2466,7 +2466,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="120" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="116" />
           </data>
         </addData>
@@ -2483,7 +2483,7 @@ END_VAR
   <block localId="120" height="24" width="18" typeName="TON" instanceName="TON_7">
     <position x="234" y="724" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -2493,7 +2493,7 @@ END_VAR
           <relPosition x="0" y="8" />
           <connection refLocalId="121" formalParameter="SAFEBOOL_TO_BOOL">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="119" />
               </data>
             </addData>
@@ -2502,7 +2502,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="114" inState="129" outState="0" width="5" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -2513,7 +2513,7 @@ END_VAR
           <connection refLocalId="113" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="115" inState="128" outState="0" width="5" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -2526,7 +2526,7 @@ END_VAR
           <relPosition x="18" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="116" inState="0" outState="129" width="3" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -2536,7 +2536,7 @@ END_VAR
           <relPosition x="18" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="117" inState="0" outState="128" width="4" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -2546,7 +2546,7 @@ END_VAR
   <block localId="121" height="16" width="46" typeName="SAFEBOOL_TO_BOOL">
     <position x="152" y="724" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="1" />
       </data>
     </addData>
@@ -2560,7 +2560,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="118" inState="640" outState="0" width="2" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2573,7 +2573,7 @@ END_VAR
           <relPosition x="46" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="119" inState="0" outState="640" width="1" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -2594,7 +2594,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="99" formalParameter="S_MutingActive">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="96" />
           </data>
         </addData>
@@ -2604,7 +2604,7 @@ END_VAR
   <block localId="137" height="64" width="66" typeName="SF_EDM_V1_00" instanceName="SF_EDM_V1_00_2">
     <position x="238" y="286" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -2615,7 +2615,7 @@ END_VAR
           <connection refLocalId="4" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="126" inState="128" outState="0" width="11" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -2625,7 +2625,7 @@ END_VAR
           <relPosition x="0" y="16" />
           <connection refLocalId="53" formalParameter="AND_S">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="52" />
               </data>
             </addData>
@@ -2634,7 +2634,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="127" inState="128" outState="0" width="17" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2649,7 +2649,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="128" inState="128" outState="0" width="11" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2665,7 +2665,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="129" inState="128" outState="0" width="11" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2676,7 +2676,7 @@ END_VAR
           <connection refLocalId="3" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="130" inState="128" outState="0" width="19" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -2687,7 +2687,7 @@ END_VAR
           <connection refLocalId="5" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="131" inState="128" outState="0" width="17" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2697,7 +2697,7 @@ END_VAR
           <relPosition x="0" y="56" />
           <connection refLocalId="37" formalParameter="Q">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="35" />
               </data>
             </addData>
@@ -2710,7 +2710,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="132" inState="128" outState="0" width="9" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -2723,7 +2723,7 @@ END_VAR
           <relPosition x="66" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="133" inState="0" outState="128" width="8" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -2733,7 +2733,7 @@ END_VAR
           <relPosition x="66" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="134" inState="0" outState="128" width="14" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2743,7 +2743,7 @@ END_VAR
           <relPosition x="66" y="24" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="135" inState="0" outState="128" width="7" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -2753,7 +2753,7 @@ END_VAR
           <relPosition x="66" y="32" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="136" inState="0" outState="128" width="12" height="2" flagType="" dataType="WORD" />
           </data>
         </addData>
@@ -2763,7 +2763,7 @@ END_VAR
   <block localId="142" height="32" width="16" typeName="OR_S">
     <position x="48" y="324" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="1" />
       </data>
     </addData>
@@ -2774,7 +2774,7 @@ END_VAR
           <connection refLocalId="143" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="139" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -2785,7 +2785,7 @@ END_VAR
           <connection refLocalId="144" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="140" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -2796,7 +2796,7 @@ END_VAR
           <connection refLocalId="146" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="145" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -2809,7 +2809,7 @@ END_VAR
           <relPosition x="16" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="141" inState="0" outState="641" width="1" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -2858,7 +2858,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="167" formalParameter="S_ESPE_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="163" />
           </data>
         </addData>
@@ -2889,7 +2889,7 @@ END_VAR
   <block localId="166" height="32" width="18" typeName="AND_S">
     <position x="58" y="198" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="1" />
       </data>
     </addData>
@@ -2900,7 +2900,7 @@ END_VAR
           <connection refLocalId="147" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="154" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -2911,7 +2911,7 @@ END_VAR
           <connection refLocalId="148" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="155" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -2924,7 +2924,7 @@ END_VAR
           <relPosition x="18" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="156" inState="0" outState="641" width="1" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -2934,7 +2934,7 @@ END_VAR
   <block localId="167" height="48" width="64" typeName="SF_ESPE_V1_00" instanceName="SF_ESPE_V1_00_2">
     <position x="174" y="190" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -2945,7 +2945,7 @@ END_VAR
           <connection refLocalId="151" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="157" inState="128" outState="0" width="11" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -2955,7 +2955,7 @@ END_VAR
           <relPosition x="0" y="16" />
           <connection refLocalId="166" formalParameter="AND_S">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="156" />
               </data>
             </addData>
@@ -2964,7 +2964,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="158" inState="128" outState="0" width="14" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2975,7 +2975,7 @@ END_VAR
           <connection refLocalId="152" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="159" inState="128" outState="0" width="17" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2986,7 +2986,7 @@ END_VAR
           <connection refLocalId="153" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="160" inState="128" outState="0" width="17" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -2997,7 +2997,7 @@ END_VAR
           <connection refLocalId="169" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="161" inState="128" outState="0" width="9" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -3010,7 +3010,7 @@ END_VAR
           <relPosition x="64" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="162" inState="0" outState="128" width="8" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -3020,7 +3020,7 @@ END_VAR
           <relPosition x="64" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="163" inState="0" outState="128" width="15" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -3030,7 +3030,7 @@ END_VAR
           <relPosition x="64" y="24" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="164" inState="0" outState="128" width="7" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -3040,7 +3040,7 @@ END_VAR
           <relPosition x="64" y="32" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="165" inState="0" outState="128" width="12" height="2" flagType="" dataType="WORD" />
           </data>
         </addData>
@@ -3064,7 +3064,7 @@ END_VAR
   <block localId="182" height="64" width="66" typeName="SF_EDM_V1_00" instanceName="SF_EDM_V1_00_5">
     <position x="242" y="392" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -3075,7 +3075,7 @@ END_VAR
           <connection refLocalId="184" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="171" inState="128" outState="0" width="11" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -3086,7 +3086,7 @@ END_VAR
           <connection refLocalId="245" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="172" inState="128" outState="0" width="17" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -3101,7 +3101,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="173" inState="128" outState="0" width="11" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -3117,7 +3117,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="174" inState="128" outState="0" width="11" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -3128,7 +3128,7 @@ END_VAR
           <connection refLocalId="188" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="175" inState="128" outState="0" width="19" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -3139,7 +3139,7 @@ END_VAR
           <connection refLocalId="189" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="176" inState="128" outState="0" width="17" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -3149,7 +3149,7 @@ END_VAR
           <relPosition x="0" y="56" />
           <connection refLocalId="37" formalParameter="Q">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="35" />
               </data>
             </addData>
@@ -3161,7 +3161,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="177" inState="128" outState="0" width="9" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -3174,7 +3174,7 @@ END_VAR
           <relPosition x="66" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="178" inState="0" outState="128" width="8" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -3184,7 +3184,7 @@ END_VAR
           <relPosition x="66" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="179" inState="0" outState="128" width="14" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -3194,7 +3194,7 @@ END_VAR
           <relPosition x="66" y="24" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="180" inState="0" outState="128" width="7" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -3204,7 +3204,7 @@ END_VAR
           <relPosition x="66" y="32" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="181" inState="0" outState="128" width="12" height="2" flagType="" dataType="WORD" />
           </data>
         </addData>
@@ -3246,7 +3246,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="182" formalParameter="Error">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="180" />
           </data>
         </addData>
@@ -3262,7 +3262,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="182" formalParameter="S_EDM_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="179" />
           </data>
         </addData>
@@ -3279,7 +3279,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="182" formalParameter="S_EDM_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="179" />
           </data>
         </addData>
@@ -3297,7 +3297,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="45" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="43" />
           </data>
         </addData>
@@ -3319,7 +3319,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="45" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="43" />
           </data>
         </addData>
@@ -3338,7 +3338,7 @@ END_VAR
   <block localId="220" height="64" width="66" typeName="SF_EDM_V1_00" instanceName="SF_EDM_V1_00_6">
     <position x="242" y="478" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -3349,7 +3349,7 @@ END_VAR
           <connection refLocalId="222" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="209" inState="128" outState="0" width="11" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -3359,7 +3359,7 @@ END_VAR
           <relPosition x="0" y="16" />
           <connection refLocalId="255" formalParameter="AND_S">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="254" />
               </data>
             </addData>
@@ -3371,7 +3371,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="210" inState="128" outState="0" width="17" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -3386,7 +3386,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="211" inState="128" outState="0" width="11" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -3402,7 +3402,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="212" inState="128" outState="0" width="11" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -3413,7 +3413,7 @@ END_VAR
           <connection refLocalId="223" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="213" inState="128" outState="0" width="19" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -3424,7 +3424,7 @@ END_VAR
           <connection refLocalId="224" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="214" inState="128" outState="0" width="17" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -3434,7 +3434,7 @@ END_VAR
           <relPosition x="0" y="56" />
           <connection refLocalId="37" formalParameter="Q">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="35" />
               </data>
             </addData>
@@ -3447,7 +3447,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="215" inState="128" outState="0" width="9" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -3460,7 +3460,7 @@ END_VAR
           <relPosition x="66" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="216" inState="0" outState="128" width="8" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -3470,7 +3470,7 @@ END_VAR
           <relPosition x="66" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="217" inState="0" outState="128" width="14" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -3480,7 +3480,7 @@ END_VAR
           <relPosition x="66" y="24" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="218" inState="0" outState="128" width="7" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -3490,7 +3490,7 @@ END_VAR
           <relPosition x="66" y="32" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="219" inState="0" outState="128" width="12" height="2" flagType="" dataType="WORD" />
           </data>
         </addData>
@@ -3525,7 +3525,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="220" formalParameter="S_EDM_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="217" />
           </data>
         </addData>
@@ -3542,7 +3542,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="220" formalParameter="S_EDM_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="217" />
           </data>
         </addData>
@@ -3560,7 +3560,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="220" formalParameter="Error">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="218" />
           </data>
         </addData>
@@ -3581,7 +3581,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="45" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="43" />
           </data>
         </addData>
@@ -3605,7 +3605,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="45" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="43" />
           </data>
         </addData>
@@ -3633,7 +3633,7 @@ END_VAR
   <block localId="255" height="24" width="18" typeName="AND_S">
     <position x="106" y="324" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="1" />
       </data>
     </addData>
@@ -3643,7 +3643,7 @@ END_VAR
           <relPosition x="0" y="8" />
           <connection refLocalId="142" formalParameter="OR_S">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="141" />
               </data>
             </addData>
@@ -3652,7 +3652,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="252" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -3663,7 +3663,7 @@ END_VAR
           <connection refLocalId="256" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="253" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -3676,7 +3676,7 @@ END_VAR
           <relPosition x="18" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="254" inState="0" outState="641" width="1" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -3694,7 +3694,7 @@ END_VAR
 { CodeWorksheet := 'outfeed', Type := '.fbd' }
 ﻿<?xml version="1.0" encoding="utf-16" standalone="yes"?><FBD>
   <addData>
-    <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+    <data name="http://www.kw-software.com" handleUnknown="preserve">
       <line localId="9" beginX="166" beginY="120" endX="166" endY="126" />
       <line localId="10" beginX="166" beginY="126" endX="171" endY="126" />
       <line localId="11" beginX="166" beginY="120" endX="171" endY="120" />
@@ -3759,7 +3759,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="8" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="6" />
           </data>
         </addData>
@@ -3783,7 +3783,7 @@ END_VAR
   <block localId="8" height="24" width="18" typeName="TP" instanceName="TP_4">
     <position x="142" y="8" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -3794,7 +3794,7 @@ END_VAR
           <connection refLocalId="2" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="4" inState="129" outState="0" width="5" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -3805,7 +3805,7 @@ END_VAR
           <connection refLocalId="1" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="5" inState="128" outState="0" width="5" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -3818,7 +3818,7 @@ END_VAR
           <relPosition x="18" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="6" inState="0" outState="129" width="3" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -3828,7 +3828,7 @@ END_VAR
           <relPosition x="18" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="7" inState="0" outState="128" width="4" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -3842,7 +3842,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="43" formalParameter="S_EDM_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="33" />
           </data>
         </addData>
@@ -3859,7 +3859,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="43" formalParameter="S_EDM_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="33" />
           </data>
         </addData>
@@ -3905,7 +3905,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="43" formalParameter="Error">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="34" />
           </data>
         </addData>
@@ -3936,7 +3936,7 @@ END_VAR
   <block localId="43" height="64" width="66" typeName="SF_EDM_V1_00" instanceName="SF_EDM_V1_00_3">
     <position x="196" y="224" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -3947,7 +3947,7 @@ END_VAR
           <connection refLocalId="17" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="25" inState="128" outState="0" width="11" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -3957,7 +3957,7 @@ END_VAR
           <relPosition x="0" y="16" />
           <connection refLocalId="45" formalParameter="AND_S">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="42" />
               </data>
             </addData>
@@ -3967,7 +3967,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="26" inState="128" outState="0" width="17" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -3982,7 +3982,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="27" inState="128" outState="0" width="11" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -3998,7 +3998,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="28" inState="128" outState="0" width="11" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -4009,7 +4009,7 @@ END_VAR
           <connection refLocalId="16" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="29" inState="128" outState="0" width="19" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -4020,7 +4020,7 @@ END_VAR
           <connection refLocalId="18" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="30" inState="128" outState="0" width="17" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -4030,7 +4030,7 @@ END_VAR
           <relPosition x="0" y="56" />
           <connection refLocalId="44" formalParameter="Q">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="38" />
               </data>
             </addData>
@@ -4043,7 +4043,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="31" inState="128" outState="0" width="9" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4056,7 +4056,7 @@ END_VAR
           <relPosition x="66" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="32" inState="0" outState="128" width="8" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4066,7 +4066,7 @@ END_VAR
           <relPosition x="66" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="33" inState="0" outState="128" width="14" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -4076,7 +4076,7 @@ END_VAR
           <relPosition x="66" y="24" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="34" inState="0" outState="128" width="7" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4086,7 +4086,7 @@ END_VAR
           <relPosition x="66" y="32" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="35" inState="0" outState="128" width="12" height="2" flagType="" dataType="WORD" />
           </data>
         </addData>
@@ -4096,7 +4096,7 @@ END_VAR
   <block localId="44" height="24" width="18" typeName="TON" instanceName="TON_8">
     <position x="78" y="322" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -4107,7 +4107,7 @@ END_VAR
           <connection refLocalId="22" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="36" inState="129" outState="0" width="5" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4118,7 +4118,7 @@ END_VAR
           <connection refLocalId="23" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="37" inState="128" outState="0" width="5" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -4131,7 +4131,7 @@ END_VAR
           <relPosition x="18" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="38" inState="0" outState="129" width="3" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4141,7 +4141,7 @@ END_VAR
           <relPosition x="18" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="39" inState="0" outState="128" width="4" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -4151,7 +4151,7 @@ END_VAR
   <block localId="45" height="40" width="18" typeName="AND_S">
     <position x="104" y="232" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="1" />
       </data>
     </addData>
@@ -4167,7 +4167,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="40" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -4177,7 +4177,7 @@ END_VAR
           <relPosition x="0" y="16" />
           <connection refLocalId="119" formalParameter="OR_S">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="118" />
               </data>
             </addData>
@@ -4188,7 +4188,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="41" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -4199,7 +4199,7 @@ END_VAR
           <connection refLocalId="132" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="127" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -4209,7 +4209,7 @@ END_VAR
           <relPosition x="0" y="32" />
           <connection refLocalId="206" formalParameter="OR_S">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="204" />
               </data>
             </addData>
@@ -4220,7 +4220,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="198" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -4233,7 +4233,7 @@ END_VAR
           <relPosition x="18" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="42" inState="0" outState="643" width="1" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -4268,11 +4268,11 @@ END_VAR
       <relPosition x="22" y="2" />
     </connectionPointOut>
   </inVariable>
-  <inVariable localId="55" height="4" width="26">
-    <position x="40" y="100" />
-    <expression>TIME#12s</expression>
+  <inVariable localId="55" height="4" width="24">
+    <position x="42" y="100" />
+    <expression>TIME#15s</expression>
     <connectionPointOut>
-      <relPosition x="26" y="2" />
+      <relPosition x="24" y="2" />
     </connectionPointOut>
   </inVariable>
   <inVariable localId="56" height="4" width="16">
@@ -4303,7 +4303,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="81" formalParameter="S_AOPD_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="77" />
           </data>
         </addData>
@@ -4321,7 +4321,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="64" formalParameter="SAFEBOOL_TO_BOOL">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="63" />
           </data>
         </addData>
@@ -4337,7 +4337,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="81" formalParameter="S_MutingActive">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="78" />
           </data>
         </addData>
@@ -4347,7 +4347,7 @@ END_VAR
   <block localId="64" height="16" width="46" typeName="SAFEBOOL_TO_BOOL">
     <position x="218" y="54" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="1" />
       </data>
     </addData>
@@ -4357,7 +4357,7 @@ END_VAR
           <relPosition x="0" y="8" />
           <connection refLocalId="81" formalParameter="S_AOPD_Out">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="77" />
               </data>
             </addData>
@@ -4367,7 +4367,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="62" inState="640" outState="0" width="2" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -4380,7 +4380,7 @@ END_VAR
           <relPosition x="46" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="63" inState="0" outState="640" width="1" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4390,7 +4390,7 @@ END_VAR
   <block localId="81" height="88" width="82" typeName="SF_MutingPar_2Sensor_V1_00" instanceName="SF_MutingPar_2Sensor_V1_2">
     <position x="70" y="46" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -4401,7 +4401,7 @@ END_VAR
           <connection refLocalId="51" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="66" inState="128" outState="0" width="11" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4412,7 +4412,7 @@ END_VAR
           <connection refLocalId="82" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="67" inState="128" outState="0" width="15" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -4423,7 +4423,7 @@ END_VAR
           <connection refLocalId="83" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="68" inState="128" outState="0" width="23" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -4434,7 +4434,7 @@ END_VAR
           <connection refLocalId="57" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="69" inState="128" outState="0" width="23" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -4445,7 +4445,7 @@ END_VAR
           <connection refLocalId="53" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="70" inState="128" outState="0" width="18" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -4459,7 +4459,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="71" inState="128" outState="0" width="17" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -4470,7 +4470,7 @@ END_VAR
           <connection refLocalId="55" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="72" inState="128" outState="0" width="19" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -4481,7 +4481,7 @@ END_VAR
           <connection refLocalId="56" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="73" inState="128" outState="0" width="17" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4492,7 +4492,7 @@ END_VAR
           <connection refLocalId="52" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="74" inState="128" outState="0" width="17" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -4503,7 +4503,7 @@ END_VAR
           <connection refLocalId="58" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="75" inState="128" outState="0" width="9" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4516,7 +4516,7 @@ END_VAR
           <relPosition x="82" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="76" inState="0" outState="128" width="8" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4526,7 +4526,7 @@ END_VAR
           <relPosition x="82" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="77" inState="0" outState="128" width="16" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -4536,7 +4536,7 @@ END_VAR
           <relPosition x="82" y="24" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="78" inState="0" outState="128" width="18" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -4546,7 +4546,7 @@ END_VAR
           <relPosition x="82" y="32" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="79" inState="0" outState="128" width="7" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4556,7 +4556,7 @@ END_VAR
           <relPosition x="82" y="40" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="80" inState="0" outState="128" width="12" height="2" flagType="" dataType="WORD" />
           </data>
         </addData>
@@ -4615,7 +4615,7 @@ END_VAR
   <block localId="105" height="24" width="18" typeName="TON" instanceName="TON_10">
     <position x="146" y="430" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -4626,7 +4626,7 @@ END_VAR
           <connection refLocalId="89" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="95" inState="129" outState="0" width="5" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4637,7 +4637,7 @@ END_VAR
           <connection refLocalId="90" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="96" inState="128" outState="0" width="5" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -4650,7 +4650,7 @@ END_VAR
           <relPosition x="18" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="97" inState="0" outState="129" width="3" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4660,7 +4660,7 @@ END_VAR
           <relPosition x="18" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="98" inState="0" outState="128" width="4" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -4670,7 +4670,7 @@ END_VAR
   <block localId="106" height="24" width="18" typeName="TON" instanceName="TON_11">
     <position x="242" y="508" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -4680,7 +4680,7 @@ END_VAR
           <relPosition x="0" y="8" />
           <connection refLocalId="107" formalParameter="SAFEBOOL_TO_BOOL">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="104" />
               </data>
             </addData>
@@ -4689,7 +4689,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="99" inState="129" outState="0" width="5" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4700,7 +4700,7 @@ END_VAR
           <connection refLocalId="93" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="100" inState="128" outState="0" width="5" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -4713,7 +4713,7 @@ END_VAR
           <relPosition x="18" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="101" inState="0" outState="129" width="3" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4723,7 +4723,7 @@ END_VAR
           <relPosition x="18" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="102" inState="0" outState="128" width="4" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -4733,7 +4733,7 @@ END_VAR
   <block localId="107" height="16" width="46" typeName="SAFEBOOL_TO_BOOL">
     <position x="160" y="508" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="1" />
       </data>
     </addData>
@@ -4744,7 +4744,7 @@ END_VAR
           <connection refLocalId="94" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="103" inState="640" outState="0" width="2" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -4757,7 +4757,7 @@ END_VAR
           <relPosition x="46" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="104" inState="0" outState="640" width="1" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4771,7 +4771,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="105" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="97" />
           </data>
         </addData>
@@ -4788,7 +4788,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="105" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="97" />
           </data>
         </addData>
@@ -4806,7 +4806,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="106" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="101" />
           </data>
         </addData>
@@ -4816,7 +4816,7 @@ END_VAR
   <block localId="119" height="32" width="16" typeName="OR_S">
     <position x="46" y="242" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="1" />
       </data>
     </addData>
@@ -4827,7 +4827,7 @@ END_VAR
           <connection refLocalId="24" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="116" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -4838,7 +4838,7 @@ END_VAR
           <connection refLocalId="123" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="117" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -4849,7 +4849,7 @@ END_VAR
           <connection refLocalId="126" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="122" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -4862,7 +4862,7 @@ END_VAR
           <relPosition x="16" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="118" inState="0" outState="641" width="1" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -4904,7 +4904,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="149" formalParameter="S_ESPE_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="146" />
           </data>
         </addData>
@@ -4942,7 +4942,7 @@ END_VAR
   <block localId="149" height="48" width="64" typeName="SF_ESPE_V1_00" instanceName="SF_ESPE_V1_00_3">
     <position x="76" y="154" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -4953,7 +4953,7 @@ END_VAR
           <connection refLocalId="136" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="140" inState="128" outState="0" width="11" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -4964,7 +4964,7 @@ END_VAR
           <connection refLocalId="133" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="141" inState="128" outState="0" width="14" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -4975,7 +4975,7 @@ END_VAR
           <connection refLocalId="137" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="142" inState="128" outState="0" width="17" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -4986,7 +4986,7 @@ END_VAR
           <connection refLocalId="138" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="143" inState="128" outState="0" width="17" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -4997,7 +4997,7 @@ END_VAR
           <connection refLocalId="139" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="144" inState="128" outState="0" width="9" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -5010,7 +5010,7 @@ END_VAR
           <relPosition x="64" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="145" inState="0" outState="128" width="8" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -5020,7 +5020,7 @@ END_VAR
           <relPosition x="64" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="146" inState="0" outState="128" width="15" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -5030,7 +5030,7 @@ END_VAR
           <relPosition x="64" y="24" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="147" inState="0" outState="128" width="7" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -5040,7 +5040,7 @@ END_VAR
           <relPosition x="64" y="32" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="148" inState="0" outState="128" width="12" height="2" flagType="" dataType="WORD" />
           </data>
         </addData>
@@ -5054,7 +5054,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="162" formalParameter="S_EDM_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="159" />
           </data>
         </addData>
@@ -5068,7 +5068,7 @@ END_VAR
   <block localId="162" height="64" width="66" typeName="SF_EDM_V1_00" instanceName="SF_EDM_V1_00_4">
     <position x="196" y="330" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="0" />
       </data>
     </addData>
@@ -5079,7 +5079,7 @@ END_VAR
           <connection refLocalId="164" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="151" inState="128" outState="0" width="11" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -5089,7 +5089,7 @@ END_VAR
           <relPosition x="0" y="16" />
           <connection refLocalId="45" formalParameter="AND_S">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="42" />
               </data>
             </addData>
@@ -5100,7 +5100,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="152" inState="128" outState="0" width="17" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -5115,7 +5115,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="153" inState="128" outState="0" width="11" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -5131,7 +5131,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="154" inState="128" outState="0" width="11" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -5142,7 +5142,7 @@ END_VAR
           <connection refLocalId="181" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="155" inState="128" outState="0" width="19" height="2" flagType="" dataType="TIME" />
           </data>
         </addData>
@@ -5153,7 +5153,7 @@ END_VAR
           <connection refLocalId="180" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="156" inState="128" outState="0" width="17" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -5163,7 +5163,7 @@ END_VAR
           <relPosition x="0" y="56" />
           <connection refLocalId="44" formalParameter="Q">
             <addData>
-              <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+              <data name="http://www.kw-software.com" handleUnknown="preserve">
                 <connectedFormalparameter refLocalId="38" />
               </data>
             </addData>
@@ -5174,7 +5174,7 @@ END_VAR
           </connection>
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="157" inState="128" outState="0" width="9" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -5187,7 +5187,7 @@ END_VAR
           <relPosition x="66" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="158" inState="0" outState="128" width="8" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -5197,7 +5197,7 @@ END_VAR
           <relPosition x="66" y="16" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="159" inState="0" outState="128" width="14" height="2" flagType="" dataType="SAFEBOOL" />
           </data>
         </addData>
@@ -5207,7 +5207,7 @@ END_VAR
           <relPosition x="66" y="24" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="160" inState="0" outState="128" width="7" height="2" flagType="" dataType="BOOL" />
           </data>
         </addData>
@@ -5217,7 +5217,7 @@ END_VAR
           <relPosition x="66" y="32" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="161" inState="0" outState="128" width="12" height="2" flagType="" dataType="WORD" />
           </data>
         </addData>
@@ -5238,7 +5238,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="162" formalParameter="S_EDM_Out">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="159" />
           </data>
         </addData>
@@ -5278,7 +5278,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="105" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="97" />
           </data>
         </addData>
@@ -5299,7 +5299,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="105" formalParameter="Q">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="97" />
           </data>
         </addData>
@@ -5321,7 +5321,7 @@ END_VAR
       <relPosition x="0" y="2" />
       <connection refLocalId="162" formalParameter="Error">
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <connectedFormalparameter refLocalId="160" />
           </data>
         </addData>
@@ -5352,7 +5352,7 @@ END_VAR
   <block localId="206" height="32" width="16" typeName="OR_S">
     <position x="54" y="280" />
     <addData>
-      <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+      <data name="http://www.kw-software.com" handleUnknown="preserve">
         <fbData fbFuType="1" />
       </data>
     </addData>
@@ -5363,7 +5363,7 @@ END_VAR
           <connection refLocalId="199" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="202" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -5374,7 +5374,7 @@ END_VAR
           <connection refLocalId="200" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="203" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -5385,7 +5385,7 @@ END_VAR
           <connection refLocalId="201" />
         </connectionPointIn>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="205" inState="1665" outState="0" width="2" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>
@@ -5398,7 +5398,7 @@ END_VAR
           <relPosition x="16" y="8" />
         </connectionPointOut>
         <addData>
-          <data name="http://www.phoenixcontact-software.com" handleUnknown="preserve">
+          <data name="http://www.kw-software.com" handleUnknown="preserve">
             <fp localId="204" inState="0" outState="641" width="1" height="2" flagType="" dataType="ANY_SAFEBIT" />
           </data>
         </addData>

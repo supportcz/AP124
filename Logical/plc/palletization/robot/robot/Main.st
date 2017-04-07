@@ -177,7 +177,7 @@ PROGRAM _CYCLIC
 					
 					doSuck := TRUE;
 				
-					TON_Robot(IN := TRUE, PT := T#2s);
+					TON_Robot(IN := TRUE, PT := T#0.5s);
 					IF TON_Robot.Q THEN
 						stateRobotAuto := stateRobotAutoSeparator3;	
 					END_IF

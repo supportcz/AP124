@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.2.5.388?>
+<?AutomationStudio Version=4.2.6.110 SP?>
 <Cpu xmlns="http://br-automation.co.at/AS/Cpu">
   <Objects>
     <Object Type="File" Description="Software configuration">Cpu.sw</Object>
@@ -15,12 +15,12 @@
     <Object Type="File" Description="SafeDESIGNER project">SafeLOGIC-1.swt</Object>
   </Objects>
   <Configuration ModuleId="X20CP1583">
-    <AutomationRuntime Version="J4.25" />
+    <AutomationRuntime Version="A4.26" />
     <Build AdditionalBuildOptions="-W 9881 9283" GccVersion="4.1.2" />
     <DefaultTargetMemory Tasks="UserROM" />
     <Transfer DownloadMode="Copy" />
-    <Vc FirmwareVersion="V4.26.0" />
-    <Safety SafetyRelease="1.10" />
+    <Vc FirmwareVersion="V4.26.1" />
+    <Safety SafetyRelease="1.9" />
     <OnlineConfiguration Name="X20CP1583" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=1" ConnectionParameters="/RT=1000 /AM=* /SDT=5 /DAIP=192.168.88.10 /REPO=11159 /ANSL=1 /PT=11169" Description="" />
   </Configuration>
 </Cpu>
