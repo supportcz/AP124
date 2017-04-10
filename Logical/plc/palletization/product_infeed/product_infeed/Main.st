@@ -264,14 +264,14 @@ PROGRAM _CYCLIC
 					
 							counterTraysOnTable := counterTraysBehindRotation;
 							stateAuto := stateAutoPusherToRobotHead3;
-						
 
-						stateAutoPusherToRobotHead3:
-					
 							dTrayBehindRotation ACCESS ADR(nullTray);
 
 							//run conveyors
 							cmdRunConveyorP1 := TRUE;
+											
+
+						stateAutoPusherToRobotHead3:
 					
 							//push to robot head
 							IF diPusherBlockedByTray THEN
