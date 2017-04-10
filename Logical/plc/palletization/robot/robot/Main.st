@@ -81,10 +81,10 @@ PROGRAM _CYCLIC
 						suckersForward := TRUE;
 						
 						IF stateSuckers = stateSuckersForward THEN
-							stateRobotAuto := stateRobotAutoGoToTable;
+							stateRobotAuto := stateRobotAutoPreGoToTable;
 						END_IF
 						
-						stateRobotAuto := stateRobotAutoGoToTable;
+						stateRobotAuto := stateRobotAutoPreGoToTable;
 						
 					ELSE
 						suckersForward := TRUE;
@@ -93,14 +93,28 @@ PROGRAM _CYCLIC
 						cmdRollerClose := TRUE;
 						doSuck := FALSE;
 					
-						IF stateSuckers = stateSuckersForward AND stateRailing = stateRailingUp AND stateCentering = stateCenteringBack AND stateRoller = stateRollerClosed THEN
-							stateRobotAuto := stateRobotAutoGoToTable;
+						IF (suckersForward = TRUE) AND (railingUp = TRUE) AND (centeringForward = FALSE) AND (doSuck = FALSE) THEN
+							stateRobotAuto := stateRobotAutoPreGoToTable;
 						END_IF
 					END_IF
-
-				stateRobotAutoGoToTable:
+				
+				stateRobotAutoPreGoToTable:
 					
 					Comau_0.MoveType := moveTypeGoToTable;
+					Comau_0.MakeMove := TRUE;			
+					
+					IF Comau_0.MoveDone THEN
+						stateRobotAuto := stateRobotAutoGoingToTable;
+					END_IF
+					
+				stateRobotAutoGoingToTable:
+					IF stateSuckers = stateSuckersForward AND stateRailing = stateRailingUp AND stateCentering = stateCenteringBack AND stateRoller = stateRollerClosed THEN
+						stateRobotAuto := stateRobotAutoGoToTable;
+					END_IF
+				
+				stateRobotAutoGoToTable:
+					
+					Comau_0.MoveType := moveTypeEndGoToTable;
 					Comau_0.MakeMove := TRUE;			
 					
 					IF Comau_0.MoveDone THEN
@@ -177,7 +191,7 @@ PROGRAM _CYCLIC
 					
 					doSuck := TRUE;
 				
-					TON_Robot(IN := TRUE, PT := T#0.5s);
+					TON_Robot(IN := TRUE, PT := T#0.2s);
 					IF TON_Robot.Q THEN
 						stateRobotAuto := stateRobotAutoSeparator3;	
 					END_IF

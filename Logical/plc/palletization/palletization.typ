@@ -29,6 +29,8 @@ TYPE
 		stateRobotAutoGoHome,
 		stateRobotAutoGoHome2,
 		stateRobotAutoPrepareHead,
+		stateRobotAutoPreGoToTable,
+		stateRobotAutoGoingToTable,
 		stateRobotAutoGoToTable,
 		stateRobotAutoWaitForBottles,
 		stateRobotAutoRailingDown,

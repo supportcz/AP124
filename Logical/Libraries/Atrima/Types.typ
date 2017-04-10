@@ -23,6 +23,7 @@ TYPE
 		moveTypePlaceFirstHalf,
 		moveTypePlaceSecondHalf,
 		moveTypeRelativeHorizontalOffset,
-		moveTypeVerticalOffset2
+		moveTypeVerticalOffset2,
+		moveTypeEndGoToTable
 		);
 END_TYPE
