@@ -95,7 +95,11 @@ PROGRAM _CYCLIC
 					counterTraysOnConveyorP2 := counterTraysBehindRotation;
 					
 					IF dActualLayout.nbOfTrays > 0 THEN
-						actualLayerIndex := counterTraysBehindRotation / dActualLayout.nbOfTrays;					
+						IF counterTraysBehindRotation > 0 THEN
+							actualLayerIndex := (counterTraysBehindRotation - 1) / dActualLayout.nbOfTrays;	
+						ELSE
+							actualLayerIndex := 0;
+						END_IF
 					END_IF
 					
 					TON_Parking(IN := FALSE);
