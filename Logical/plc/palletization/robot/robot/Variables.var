@@ -9,4 +9,5 @@ VAR
 	robotDoorEdmError : BOOL;
 	robotEdmError : BOOL;
 	TON_Robot : TON;
+	tmpBOOL : BOOL;
 END_VAR

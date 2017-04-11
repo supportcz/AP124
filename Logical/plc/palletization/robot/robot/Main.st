@@ -394,6 +394,11 @@ PROGRAM _CYCLIC
 
 	Comau_0();
 	
+	IF cpuIsSimulated THEN
+		tmpBOOL := TRUE;
+		memcpy(ADR(Comau_0.MoveDone),ADR(tmpBOOL), SIZEOF(tmpBOOL));
+	END_IF
+	
 	//alarms
 	alarmImagePalletization[50] := NOT ModuleOk;
 	alarmImagePalletization[45] := robotEdmError;

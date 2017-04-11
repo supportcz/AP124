@@ -134,7 +134,8 @@ PROGRAM _CYCLIC
 
 					//detect tray behind rotation
 					IF TOF_TrayBehindRotation.Q < trayBehindRotationOld THEN
-						counterTraysBehindRotation := (counterTraysBehindRotation + 1) MOD nbOfTraysInCompletePallet;						
+						counterTraysBehindRotation := counterTraysBehindRotation MOD nbOfTraysInCompletePallet;
+						counterTraysBehindRotation := counterTraysBehindRotation + 1;						
 					END_IF
 
 					//select tray behind rotation
@@ -142,9 +143,9 @@ PROGRAM _CYCLIC
 						dTrayBehindRotation ACCESS ADR(dActualLayout.tray[(counterTraysBehindRotation-1) MOD dActualLayout.nbOfTrays]);
 					END_IF	
 			
-//					IF counterTraysBehindRotation = counterTraysOnTable THEN
-//						dTrayBehindRotation ACCESS ADR(nullTray);
-//					END_IF				
+					IF counterTraysBehindRotation = counterTraysOnTable THEN
+						dTrayBehindRotation ACCESS ADR(nullTray);
+					END_IF				
 
 					acpI_P10.speed := dActualRecipe.conveyorP1speed;
 					acpI_P11.speed := dActualRecipe.conveyorP2speed;
@@ -171,7 +172,7 @@ PROGRAM _CYCLIC
 					
 							cmdPusherLiftingDown := TRUE;
 
-							IF statePusherLifting = stateLowerPosition THEN
+							IF statePusherLifting = stateLowerPosition OR cpuIsSimulated THEN
 								stateAuto := stateAutoFillRow;
 							END_IF
 				
@@ -217,7 +218,7 @@ PROGRAM _CYCLIC
 					
 							cmdPusherLiftingUp := TRUE;
 				
-							IF statePusherLifting = stateUpperPosition THEN
+							IF statePusherLifting = stateUpperPosition OR cpuIsSimulated THEN
 								stateAuto := stateAutoPusherToBasic;	
 							END_IF
 
