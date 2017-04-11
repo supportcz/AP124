@@ -194,5 +194,9 @@ PROGRAM _CYCLIC
 		acpI_P12.reset := TRUE;
 		FI_12.cmd.acknowledge := TRUE;
 	END_IF
+	
+	IF cpuIsSimulated THEN
+		pusherDrive.actualPositionIndex := pusherDrive.requestedPositionIndex;
+	END_IF
 	 
 END_PROGRAM
