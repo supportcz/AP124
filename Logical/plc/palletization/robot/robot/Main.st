@@ -108,7 +108,7 @@ PROGRAM _CYCLIC
 					END_IF
 					
 				stateRobotAutoGoingToTable:
-					IF stateSuckers = stateSuckersForward AND stateRailing = stateRailingUp AND stateCentering = stateCenteringBack AND stateRoller = stateRollerClosed THEN
+					IF (stateSuckers = stateSuckersForward AND stateRailing = stateRailingUp AND stateCentering = stateCenteringBack AND stateRoller = stateRollerClosed) OR cpuIsSimulated THEN
 						stateRobotAuto := stateRobotAutoGoToTable;
 					END_IF
 				
@@ -158,7 +158,7 @@ PROGRAM _CYCLIC
 					
 					railingUp := FALSE;
 						
-					IF stateRailing = stateRailingDown THEN
+					IF stateRailing = stateRailingDown OR cpuIsSimulated THEN
 						stateRobotAuto := stateRobotAutoCenteringForward;
 					END_IF		
 					
@@ -166,7 +166,7 @@ PROGRAM _CYCLIC
 					
 					centeringForward := TRUE;
 					
-					IF stateCentering = stateCenteringForward THEN
+					IF stateCentering = stateCenteringForward OR cpuIsSimulated THEN
 						stateRobotAuto := stateRobotAutoSwitch1;
 					END_IF				
 				
@@ -248,7 +248,7 @@ PROGRAM _CYCLIC
 					
 					suckersForward := FALSE;
 				
-					IF stateSuckers = stateSuckersBack THEN
+					IF stateSuckers = stateSuckersBack OR cpuIsSimulated THEN
 						stateRobotAuto := stateRobotAutoWaitForPallet;					
 					END_IF						
 				
@@ -275,7 +275,7 @@ PROGRAM _CYCLIC
 	
 					cmdRollerOpen := TRUE;
 				
-					IF stateRoller = stateRollerOpened THEN
+					IF stateRoller = stateRollerOpened OR cpuIsSimulated THEN
 						stateRobotAuto := stateRobotAutoPlaceFirstHalf3;
 					END_IF		
 				
@@ -284,7 +284,7 @@ PROGRAM _CYCLIC
 					railingUp := TRUE;
 					centeringForward := FALSE;
 				
-					IF stateRailing = stateRailingUp AND stateCentering = stateCenteringBack THEN
+					IF (stateRailing = stateRailingUp AND stateCentering = stateCenteringBack) OR cpuIsSimulated THEN
 						stateRobotAuto := stateRobotAutoPlaceFirstHalf4;
 					END_IF
 				
@@ -312,7 +312,7 @@ PROGRAM _CYCLIC
 					
 					railingUp := TRUE;
 						
-					IF stateRailing = stateRailingUp THEN
+					IF stateRailing = stateRailingUp OR cpuIsSimulated THEN
 						stateRobotAuto := stateRobotAutoPlaceSecondHalf3;
 					END_IF	
 
@@ -329,7 +329,7 @@ PROGRAM _CYCLIC
 				
 					cmdRollerOpen := TRUE;
 				
-					IF stateRoller = stateRollerOpened THEN
+					IF stateRoller = stateRollerOpened OR cpuIsSimulated THEN
 						stateRobotAuto := stateRobotAutoPlaceSecondHalf5;
 					END_IF							
 						
@@ -337,7 +337,7 @@ PROGRAM _CYCLIC
 				
 					centeringForward := FALSE;
 				
-					IF stateCentering = stateCenteringBack THEN
+					IF stateCentering = stateCenteringBack OR cpuIsSimulated THEN
 						stateRobotAuto := stateRobotAutoPlaceSecondHalf6;
 					END_IF							
 						
@@ -397,6 +397,7 @@ PROGRAM _CYCLIC
 	IF cpuIsSimulated THEN
 		tmpBOOL := TRUE;
 		memcpy(ADR(Comau_0.MoveDone),ADR(tmpBOOL), SIZEOF(tmpBOOL));
+		memcpy(ADR(Comau_0.IsItSafeToGoHome),ADR(tmpBOOL), SIZEOF(tmpBOOL));
 	END_IF
 	
 	//alarms
