@@ -124,7 +124,8 @@ PROGRAM _CYCLIC
 
 					//detect tray on output of conveyor P1
 					IF TOF_TrayOnOutputP1.Q < trayOnOutputP1old THEN
-						counterTraysOnConveyorP2 := (counterTraysOnConveyorP2 + 1) MOD nbOfTraysInCompletePallet;
+						counterTraysOnConveyorP2 := counterTraysOnConveyorP2 MOD nbOfTraysInCompletePallet;
+						counterTraysOnConveyorP2 := counterTraysOnConveyorP2 + 1;
 						//reset timer
 						TON_TransitTime(IN := FALSE);
 					END_IF
