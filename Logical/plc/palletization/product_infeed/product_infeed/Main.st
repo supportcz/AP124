@@ -89,8 +89,8 @@ PROGRAM _CYCLIC
 					counterTraysOnPallet := nbOfLayersOnPallet * dActualLayout.nbOfTrays;
 					counterTraysOnPallet := counterTraysOnPallet + nbOfTraysInHalfLayer;
 					counterTraysInRobotHead := (counterTraysOnPallet + nbOfTraysInRobotHead)(* MOD nbOfTraysInCompletePallet*);
-					counterTraysOnTable := (counterTraysInRobotHead + nbOfTraysOnTable)(* MOD nbOfTraysInCompletePallet*);			
-					counterTraysBehindRotation := (counterTraysOnTable + nbOfTraysOnP2)(* MOD nbOfTraysInCompletePallet*);
+					counterTraysOnTable := (counterTraysInRobotHead + nbOfTraysOnTable) (*MOD nbOfTraysInCompletePallet*);			
+					counterTraysBehindRotation := (counterTraysOnTable + nbOfTraysOnP2) (*MOD nbOfTraysInCompletePallet*);
 					
 					counterTraysOnConveyorP2 := counterTraysBehindRotation;
 					
@@ -100,6 +100,10 @@ PROGRAM _CYCLIC
 						ELSE
 							actualLayerIndex := 0;
 						END_IF
+					END_IF
+					
+					IF counterTraysOnPallet  = nbOfTraysInCompletePallet THEN
+						palletComplete := TRUE;
 					END_IF
 					
 					TON_Parking(IN := FALSE);
@@ -120,7 +124,7 @@ PROGRAM _CYCLIC
 
 					//detect tray on output of conveyor P1
 					IF TOF_TrayOnOutputP1.Q < trayOnOutputP1old THEN
-						counterTraysOnConveyorP2 := counterTraysOnConveyorP2 + 1;
+						counterTraysOnConveyorP2 := (counterTraysOnConveyorP2 + 1) MOD nbOfTraysInCompletePallet;
 						//reset timer
 						TON_TransitTime(IN := FALSE);
 					END_IF
@@ -128,9 +132,9 @@ PROGRAM _CYCLIC
 					//select next tray	
 					dNextTray ACCESS ADR(dActualLayout.tray[counterTraysOnConveyorP2 MOD dActualLayout.nbOfTrays]); 
 
-					//detect tray behind roration
+					//detect tray behind rotation
 					IF TOF_TrayBehindRotation.Q < trayBehindRotationOld THEN
-						counterTraysBehindRotation := counterTraysBehindRotation + 1;						
+						counterTraysBehindRotation := (counterTraysBehindRotation + 1) MOD nbOfTraysInCompletePallet;						
 					END_IF
 
 					//select tray behind rotation
@@ -138,9 +142,9 @@ PROGRAM _CYCLIC
 						dTrayBehindRotation ACCESS ADR(dActualLayout.tray[(counterTraysBehindRotation-1) MOD dActualLayout.nbOfTrays]);
 					END_IF	
 			
-					IF counterTraysBehindRotation = counterTraysOnTable THEN
-						dTrayBehindRotation ACCESS ADR(nullTray);
-					END_IF				
+//					IF counterTraysBehindRotation = counterTraysOnTable THEN
+//						dTrayBehindRotation ACCESS ADR(nullTray);
+//					END_IF				
 
 					acpI_P10.speed := dActualRecipe.conveyorP1speed;
 					acpI_P11.speed := dActualRecipe.conveyorP2speed;
