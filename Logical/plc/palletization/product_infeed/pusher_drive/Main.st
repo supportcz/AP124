@@ -17,8 +17,8 @@ PROGRAM _INIT
 	pusherDrive.positions[1] := 925;
 	pusherDrive.positions[2] := 1470;
 	pusherDrive.positions[3] := 1650;
-	pusherDrive.positions[4] := 1970;
-	pusherDrive.positions[5] := 2040;//FI_12.init.positiveSwLimit-tolerance;
+	pusherDrive.positions[4] := 1920;
+	pusherDrive.positions[5] := 2000;//FI_12.init.positiveSwLimit-tolerance;
 	pusherDrive.speed := 500;
 	
 	acpI_P12.run := TRUE;
