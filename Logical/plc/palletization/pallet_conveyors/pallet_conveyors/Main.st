@@ -55,6 +55,7 @@ PROGRAM _CYCLIC
 
 			IF statePalletP14 <> palletNotPresent AND statePalletP15 = palletNotPresent AND palletComplete THEN
 				cmdMovePalletP14 := TRUE;
+				counterTraysOnPallet := 0;
 				PalletCount := PalletCount + 1;
 			END_IF
 

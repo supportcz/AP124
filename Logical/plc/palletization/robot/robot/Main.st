@@ -348,16 +348,18 @@ PROGRAM _CYCLIC
 					
 					IF Comau_0.MoveDone THEN
 						
+						counterTraysOnPallet := counterTraysInRobotHead;
+
 						IF robotData.placeSeparatorAbove THEN
 							stateRobotAuto := stateRobotAutoSeparatorAbove;
 						ELSE
-							IF counterTraysInRobotHead = 0 THEN
+							IF counterTraysInRobotHead MOD nbOfTraysInCompletePallet = 0 THEN
+								counterTraysInRobotHead := 0;
 								palletComplete := TRUE;
 							END_IF
 							stateRobotAuto := stateRobotAutoPrepareHead;
 						END_IF
 						
-						counterTraysOnPallet := counterTraysInRobotHead;
 					END_IF				
 				
 				stateRobotAutoSeparatorAbove:

@@ -88,9 +88,9 @@ PROGRAM _CYCLIC
 					
 					counterTraysOnPallet := nbOfLayersOnPallet * dActualLayout.nbOfTrays;
 					counterTraysOnPallet := counterTraysOnPallet + nbOfTraysInHalfLayer;
-					counterTraysInRobotHead := (counterTraysOnPallet + nbOfTraysInRobotHead) MOD nbOfTraysInCompletePallet;
-					counterTraysOnTable := (counterTraysInRobotHead + nbOfTraysOnTable) MOD nbOfTraysInCompletePallet;			
-					counterTraysBehindRotation := (counterTraysOnTable + nbOfTraysOnP2) MOD nbOfTraysInCompletePallet;
+					counterTraysInRobotHead := (counterTraysOnPallet + nbOfTraysInRobotHead)(* MOD nbOfTraysInCompletePallet*);
+					counterTraysOnTable := (counterTraysInRobotHead + nbOfTraysOnTable)(* MOD nbOfTraysInCompletePallet*);			
+					counterTraysBehindRotation := (counterTraysOnTable + nbOfTraysOnP2)(* MOD nbOfTraysInCompletePallet*);
 					
 					counterTraysOnConveyorP2 := counterTraysBehindRotation;
 					
@@ -252,7 +252,10 @@ PROGRAM _CYCLIC
 							IF robotData.placeFirstHalf THEN
 								robotData.placeSeparatorAbove := FALSE;
 							END_IF
-							
+
+							//remember value for next states
+							counterTraysOnTable := counterTraysBehindRotation;
+
 							//correct counters
 							IF dTrayBehindRotation.lastTray = lastTrayInLayer THEN
 								//start new layer
@@ -266,7 +269,6 @@ PROGRAM _CYCLIC
 								END_IF
 							END_IF
 					
-							counterTraysOnTable := counterTraysBehindRotation;
 							stateAuto := stateAutoPusherToRobotHead3;
 
 							dTrayBehindRotation ACCESS ADR(nullTray);
