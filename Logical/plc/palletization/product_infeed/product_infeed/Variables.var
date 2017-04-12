@@ -2,7 +2,11 @@ VAR
 	acpI_P10 : AcpInoSdc;
 	acpI_P11 : AcpInoSdc;
 	actualLayerIndex : INT;
+END_VAR
+VAR RETAIN
 	actualRecipeIndexOld : INT;
+END_VAR
+VAR
 	automatMode : AutomatMode;
 	bumperAuto : BOOL;
 	bumperForward : BOOL;
